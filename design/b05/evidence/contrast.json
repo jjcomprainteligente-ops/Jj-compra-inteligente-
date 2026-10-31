@@ -1,0 +1,82 @@
+{
+  "method": "WCAG relative luminance for solid colors; not native reader validation",
+  "checks": [
+    {
+      "name": "Cuerpo",
+      "fg": "#253D2B",
+      "bg": "#FFF9EF",
+      "ratio": 11.257,
+      "passed": true
+    },
+    {
+      "name": "Auxiliar",
+      "fg": "#5C6651",
+      "bg": "#FFF9EF",
+      "ratio": 5.77,
+      "passed": true
+    },
+    {
+      "name": "Bot\u00f3n",
+      "fg": "#FFFFFF",
+      "bg": "#167347",
+      "ratio": 5.87,
+      "passed": true
+    },
+    {
+      "name": "Personas",
+      "fg": "#5C6651",
+      "bg": "#F8EDCA",
+      "ratio": 5.169,
+      "passed": true
+    },
+    {
+      "name": "Duplicado",
+      "fg": "#5C6651",
+      "bg": "#FAEDC9",
+      "ratio": 5.187,
+      "passed": true
+    },
+    {
+      "name": "Seleccionado",
+      "fg": "#FFFFFF",
+      "bg": "#214633",
+      "ratio": 10.561,
+      "passed": true
+    },
+    {
+      "name": "Enlace",
+      "fg": "#167347",
+      "bg": "#FFF9EF",
+      "ratio": 5.604,
+      "passed": true
+    },
+    {
+      "name": "Paso",
+      "fg": "#167347",
+      "bg": "#FFF9EF",
+      "ratio": 5.604,
+      "passed": true
+    },
+    {
+      "name": "Error",
+      "fg": "#913C2B",
+      "bg": "#FCEEE8",
+      "ratio": 6.424,
+      "passed": true
+    },
+    {
+      "name": "Tarjeta",
+      "fg": "#253D2B",
+      "bg": "#FFFFFF",
+      "ratio": 11.791,
+      "passed": true
+    },
+    {
+      "name": "Aviso",
+      "fg": "#5C6651",
+      "bg": "#EAF0E0",
+      "ratio": 5.192,
+      "passed": true
+    }
+  ]
+}

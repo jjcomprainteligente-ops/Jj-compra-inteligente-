@@ -1,0 +1,889 @@
+{
+  "generatedAt": "2026-10-30T16:43:27.265Z",
+  "origin": "http://127.0.0.1:8081",
+  "app": "Production app exported in dist",
+  "method": "Chromium screenshots at CSS iPhone viewports, deviceScaleFactor 2; not native iOS",
+  "data": "Fictional shops, prices and manual references in isolated review contexts only; never a commercial verification",
+  "integrations": "No retailer API, scraping, verified feed or payments",
+  "nativeChecksPending": [
+    "iPhone usage/screenshots",
+    "VoiceOver",
+    "Dynamic Type",
+    "native keyboard",
+    "safe areas and gestures"
+  ],
+  "security": "Existing Expo tooling advisories remain unresolved; see technical delivery",
+  "screenshots": 41,
+  "runtimeErrors": [],
+  "checks": [
+    {
+      "id": "savings-entry",
+      "label": "Ahorro · entrada al piloto",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "savings-entry-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-price",
+      "label": "Piloto · sin observaciones",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-price-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "ranking",
+      "label": "Importes por unidad · aportaciones ficticias",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "ranking-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "ranking-exclusions",
+      "label": "Excepciones · fecha, origen, calidad y unidad",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "ranking-exclusions-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "new-observation",
+      "label": "Nueva observación · sin guardar",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "new-observation-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "edit-observation",
+      "label": "Editar observación · datos revisables",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "edit-observation-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "reference-picker",
+      "label": "Elegir referencia declarada",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "reference-picker-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "demo-reference",
+      "label": "Demostración · excluida de la comparación",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "demo-reference-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-quantity",
+      "label": "Cantidad inválida · datos conservados",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-quantity-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-future",
+      "label": "Fecha futura · corrección obligatoria",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-future-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "corrupt-load",
+      "label": "Datos ilegibles · sin sobrescritura",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "corrupt-load-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "write-error",
+      "label": "Error al guardar · formulario conservado",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "write-error-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "delete-confirm",
+      "label": "Eliminar observación · confirmación",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "delete-confirm-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "savings-entry",
+      "label": "Ahorro · entrada al piloto",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "savings-entry-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-price",
+      "label": "Piloto · sin observaciones",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-price-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "ranking",
+      "label": "Importes por unidad · aportaciones ficticias",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "ranking-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "ranking-exclusions",
+      "label": "Excepciones · fecha, origen, calidad y unidad",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "ranking-exclusions-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "new-observation",
+      "label": "Nueva observación · sin guardar",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "new-observation-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "edit-observation",
+      "label": "Editar observación · datos revisables",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "edit-observation-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "reference-picker",
+      "label": "Elegir referencia declarada",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "reference-picker-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "demo-reference",
+      "label": "Demostración · excluida de la comparación",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "demo-reference-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-quantity",
+      "label": "Cantidad inválida · datos conservados",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-quantity-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-future",
+      "label": "Fecha futura · corrección obligatoria",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-future-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "corrupt-load",
+      "label": "Datos ilegibles · sin sobrescritura",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "corrupt-load-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "write-error",
+      "label": "Error al guardar · formulario conservado",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "write-error-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "delete-confirm",
+      "label": "Eliminar observación · confirmación",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "delete-confirm-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "savings-entry",
+      "label": "Ahorro · entrada al piloto",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "savings-entry-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-price",
+      "label": "Piloto · sin observaciones",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-price-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "ranking",
+      "label": "Importes por unidad · aportaciones ficticias",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "ranking-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "ranking-exclusions",
+      "label": "Excepciones · fecha, origen, calidad y unidad",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "ranking-exclusions-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "new-observation",
+      "label": "Nueva observación · sin guardar",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "new-observation-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "edit-observation",
+      "label": "Editar observación · datos revisables",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "edit-observation-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "reference-picker",
+      "label": "Elegir referencia declarada",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "reference-picker-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "demo-reference",
+      "label": "Demostración · excluida de la comparación",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "demo-reference-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-quantity",
+      "label": "Cantidad inválida · datos conservados",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-quantity-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-future",
+      "label": "Fecha futura · corrección obligatoria",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-future-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "corrupt-load",
+      "label": "Datos ilegibles · sin sobrescritura",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "corrupt-load-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "write-error",
+      "label": "Error al guardar · formulario conservado",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "write-error-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "delete-confirm",
+      "label": "Eliminar observación · confirmación",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "delete-confirm-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": null
+    },
+    {
+      "id": "text-130-ranking",
+      "label": "Importes por unidad · aportaciones ficticias",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "text-130-ranking-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": {
+        "multiplier": 1.3,
+        "textElements": 135,
+        "method": "DOM font-size and line-height; not native iOS Dynamic Type"
+      }
+    },
+    {
+      "id": "text-130-new-observation",
+      "label": "Nueva observación · sin guardar",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "text-130-new-observation-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "previousKeysUnchanged": true,
+      "priceFixtureUnchanged": true,
+      "fictionalData": true,
+      "sourceKindsInFixture": [
+        "manual",
+        "demo",
+        "unknown"
+      ],
+      "textScaleSimulation": {
+        "multiplier": 1.3,
+        "textElements": 166,
+        "method": "DOM font-size and line-height; not native iOS Dynamic Type"
+      }
+    }
+  ]
+}

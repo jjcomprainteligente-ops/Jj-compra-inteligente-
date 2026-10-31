@@ -1,0 +1,12 @@
+{
+  "file": "I18N_Entrega.zip",
+  "bytes": 12462370,
+  "sha256": "e30b12cc4e0bb768273d50f70287a8ea04f394a36642355487b674de163aa3d7",
+  "files": 305,
+  "scope": "Current source, tests, docs, isolated web/iOS/Android JS export, prepared static preview, final audit/gallery and prior run summaries. No node_modules dependency tree, env files, credentials or browser user data. Previous source backup remains separately in archives.",
+  "webPassed": 124,
+  "unitPassed": 496,
+  "screenshots": 120,
+  "previousArtifactsPreserved": true,
+  "previewPublished": false
+}

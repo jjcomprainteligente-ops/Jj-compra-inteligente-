@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "JJ · B02 · Pantallas y experiencia",
+    "slug": "jj-b02-pantallas-ux",
+    "version": "0.2.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF9EF",
+    "web": {
+      "name": "JJ Compra Inteligente · B02",
+      "themeColor": "#167347"
+    }
+  }
+}

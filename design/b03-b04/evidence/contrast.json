@@ -1,0 +1,103 @@
+{
+  "method": "WCAG relative luminance for solid colors; not native screen-reader validation",
+  "checks": [
+    {
+      "name": "Texto",
+      "foreground": "#253D2B",
+      "background": "#FFF9EF",
+      "ratio": 11.257,
+      "passesNormalText": true
+    },
+    {
+      "name": "Secundario",
+      "foreground": "#5C6651",
+      "background": "#FFF9EF",
+      "ratio": 5.77,
+      "passesNormalText": true
+    },
+    {
+      "name": "Texto tarjeta",
+      "foreground": "#253D2B",
+      "background": "#FFFFFF",
+      "ratio": 11.791,
+      "passesNormalText": true
+    },
+    {
+      "name": "Auxiliar tarjeta",
+      "foreground": "#5C6651",
+      "background": "#FFFFFF",
+      "ratio": 6.044,
+      "passesNormalText": true
+    },
+    {
+      "name": "Bot\u00f3n primario",
+      "foreground": "#FFFFFF",
+      "background": "#167347",
+      "ratio": 5.87,
+      "passesNormalText": true
+    },
+    {
+      "name": "Presupuesto",
+      "foreground": "#214633",
+      "background": "#F6D66B",
+      "ratio": 7.417,
+      "passesNormalText": true
+    },
+    {
+      "name": "Exceso presupuesto",
+      "foreground": "#913C2B",
+      "background": "#F6D66B",
+      "ratio": 5.112,
+      "passesNormalText": true
+    },
+    {
+      "name": "Aviso",
+      "foreground": "#214633",
+      "background": "#EAF0E0",
+      "ratio": 9.071,
+      "passesNormalText": true
+    },
+    {
+      "name": "Auxiliar aviso",
+      "foreground": "#5C6651",
+      "background": "#EAF0E0",
+      "ratio": 5.192,
+      "passesNormalText": true
+    },
+    {
+      "name": "Error",
+      "foreground": "#913C2B",
+      "background": "#FCEEE8",
+      "ratio": 6.424,
+      "passesNormalText": true
+    },
+    {
+      "name": "Auxiliar error",
+      "foreground": "#5C6651",
+      "background": "#FCEEE8",
+      "ratio": 5.334,
+      "passesNormalText": true
+    },
+    {
+      "name": "Selecci\u00f3n",
+      "foreground": "#FFFFFF",
+      "background": "#214633",
+      "ratio": 10.561,
+      "passesNormalText": true
+    },
+    {
+      "name": "Texto pesta\u00f1a",
+      "foreground": "#5C6651",
+      "background": "#FFF9EF",
+      "ratio": 5.77,
+      "passesNormalText": true
+    },
+    {
+      "name": "Enlace",
+      "foreground": "#167347",
+      "background": "#FFF9EF",
+      "ratio": 5.604,
+      "passesNormalText": true
+    }
+  ]
+}

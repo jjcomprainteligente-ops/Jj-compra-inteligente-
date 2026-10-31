@@ -1,0 +1,14 @@
+{
+  "method": "Prior audit reference; not a new audit",
+  "source": "design/b03-b04/evidence/npm-audit.json",
+  "dependencyFilesUnchanged": true,
+  "vulnerabilities": {
+    "info": 0,
+    "low": 5,
+    "moderate": 0,
+    "high": 3,
+    "critical": 0,
+    "total": 8
+  },
+  "status": "Expo tooling advisories remain open; no forced incompatible dependency updates"
+}

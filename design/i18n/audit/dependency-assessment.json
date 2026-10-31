@@ -1,0 +1,39 @@
+{
+  "scope": "Full npm audit; existing Expo toolchain plus new localization dependency",
+  "audit": "npm-audit.json",
+  "installedVersions": {
+    "expo": "58.0.21",
+    "zod": "3.25.76",
+    "glob": "13.0.6",
+    "minimatch": "10.2.6",
+    "deepmerge": "4.3.1",
+    "expo-localization": "58.0.5",
+    "rtl-detect": "1.1.2",
+    "@expo/cli": "58.1.17"
+  },
+  "addedPackages": [
+    {
+      "path": "node_modules/expo-localization",
+      "version": "58.0.5"
+    },
+    {
+      "path": "node_modules/rtl-detect",
+      "version": "1.1.2"
+    }
+  ],
+  "changedVersions": [],
+  "advisoryOrigins": [
+    "zod",
+    "deepmerge",
+    "glob",
+    "minimatch"
+  ],
+  "finding": "Affected versions predate i18n. Only expo-localization and rtl-detect were added. No compatible fixed versions in the parent ranges checked during the audit.",
+  "constraints": {
+    "zod": "CLI58 requires ^3.25.76; advisory fixed in 4.6.6+",
+    "glob": "CLI58 requires ^13.0.0; advisory affects through14.0.1",
+    "minimatch": "Installed10.2.6; advisory fixed in11.0.1+",
+    "deepmerge": "Installed and latest version checked4.3.1 remains affected"
+  },
+  "decision": "No forced major override or downgrade to Expo51. Advisories remain open before distribution."
+}

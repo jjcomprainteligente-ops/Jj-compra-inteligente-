@@ -1,0 +1,28 @@
+{
+  "generatedAt": "2026-10-30T09:05:14.816217+00:00",
+  "status": "B05 deterministic implementation in review; owner iPhone trial next",
+  "typecheck": "npm run check exited 0",
+  "unitTests": 228,
+  "webTests": {
+    "startTime": "2026-10-30T08:58:34.779Z",
+    "duration": 81423.62999999999,
+    "expected": 36,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "screenshots": 38,
+  "runtimeErrors": 0,
+  "layoutFailures": 0,
+  "reviewWrites": 0,
+  "contrastPairs": 11,
+  "native": "iOS/Android Hermes export passed; physical validation pending",
+  "dependencies": "unchanged; prior Expo tooling advisories remain open",
+  "preservation": {
+    "baselineFiles": 63,
+    "unchanged": 56,
+    "changed": 7,
+    "removed": 0,
+    "previousEvidenceUnchanged": true
+  }
+}

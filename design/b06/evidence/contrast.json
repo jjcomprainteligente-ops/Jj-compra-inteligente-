@@ -1,0 +1,82 @@
+{
+  "method": "Solid-color WCAG text contrast; not native reader validation",
+  "checks": [
+    {
+      "name": "Texto",
+      "fg": "#253D2B",
+      "bg": "#FFF9EF",
+      "ratio": 11.257,
+      "passed": true
+    },
+    {
+      "name": "Auxiliar",
+      "fg": "#5C6651",
+      "bg": "#FFF9EF",
+      "ratio": 5.77,
+      "passed": true
+    },
+    {
+      "name": "Bot\u00f3n",
+      "fg": "#FFFFFF",
+      "bg": "#167347",
+      "ratio": 5.87,
+      "passed": true
+    },
+    {
+      "name": "Destacado",
+      "fg": "#214633",
+      "bg": "#F1F4E7",
+      "ratio": 9.471,
+      "passed": true
+    },
+    {
+      "name": "Auxiliar destacado",
+      "fg": "#5C6651",
+      "bg": "#F1F4E7",
+      "ratio": 5.421,
+      "passed": true
+    },
+    {
+      "name": "Referencia",
+      "fg": "#5C6651",
+      "bg": "#F8EDCA",
+      "ratio": 5.169,
+      "passed": true
+    },
+    {
+      "name": "Aportaci\u00f3n",
+      "fg": "#214633",
+      "bg": "#E8F1E2",
+      "ratio": 9.108,
+      "passed": true
+    },
+    {
+      "name": "Antiguo/demo",
+      "fg": "#214633",
+      "bg": "#FAEAB1",
+      "ratio": 8.785,
+      "passed": true
+    },
+    {
+      "name": "Origen desconocido",
+      "fg": "#214633",
+      "bg": "#F0F0E7",
+      "ratio": 9.214,
+      "passed": true
+    },
+    {
+      "name": "Error",
+      "fg": "#913C2B",
+      "bg": "#FCEEE8",
+      "ratio": 6.424,
+      "passed": true
+    },
+    {
+      "name": "Selecci\u00f3n",
+      "fg": "#FFFFFF",
+      "bg": "#214633",
+      "ratio": 10.561,
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "command": "EXPO_NO_TELEMETRY=1 EXPO_OFFLINE=1 __UNSAFE_EXPO_HOME_DIRECTORY=/tmp/jj-expo-b06 expo export --platform all --max-workers 2",
+  "exitCode": 0,
+  "artifacts": [
+    {
+      "platform": "android",
+      "file": "dist/_expo/static/js/android/index-df9de8c09fe2f9ce37cda8b79b60acef.hbc",
+      "bytes": 4342644,
+      "sha256": "5cbf2f865eb44735b4493ef2061d19e457042f2087c1241e87754d7f6ed86c2c"
+    },
+    {
+      "platform": "ios",
+      "file": "dist/_expo/static/js/ios/index-be686784d9d3488a7966a8c7d2d0b78b.hbc",
+      "bytes": 4336344,
+      "sha256": "af2c671b7bee2e2d90f7d5a1d7768157907aafcddf2beb360f98993b4314772f"
+    },
+    {
+      "platform": "web",
+      "file": "dist/_expo/static/js/web/index-e53c1922849ce8efc44c24dd3afece9a.js",
+      "bytes": 3073553,
+      "sha256": "0c0f77cd5b6f9946d43edf1c9631a1ad6aa13e5fe600cc31633212f935e5d065"
+    }
+  ],
+  "limits": "Not IPA/APK; native usage remains unvalidated"
+}

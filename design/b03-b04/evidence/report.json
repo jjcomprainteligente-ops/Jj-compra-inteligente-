@@ -1,0 +1,726 @@
+{
+  "generatedAt": "2026-10-30T08:38:05.141Z",
+  "origin": "http://127.0.0.1:8081",
+  "app": "Production export from dist; no design/b02 app",
+  "method": "Chromium screenshots; deviceScaleFactor 2; web CSS viewports, not native iOS",
+  "data": "Fictitious localStorage seeds in isolated review contexts only; production starts empty",
+  "nativeChecksPending": [
+    "iPhone screenshots",
+    "VoiceOver",
+    "Dynamic Type",
+    "native keyboard",
+    "native safe areas and gestures"
+  ],
+  "screenshots": 50,
+  "runtimeErrors": [],
+  "checks": [
+    {
+      "id": "empty-home",
+      "label": "Inicio · sin listas",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-home-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-list",
+      "label": "Mi compra · sin listas",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-list-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "home",
+      "label": "Inicio · lista guardada",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "home-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list",
+      "label": "Mi compra · 12 productos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list-products",
+      "label": "Mi compra · productos al desplazar",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-products-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list-end",
+      "label": "Mi compra · final de 12 productos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-end-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "savings",
+      "label": "Ahorro · importes separados",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "savings-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "over-budget",
+      "label": "Ahorro · previsión sobre presupuesto",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "over-budget-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "menus",
+      "label": "Menús · vista previa explícita",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "menus-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "profile",
+      "label": "Perfil · datos locales",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "profile-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "add-product",
+      "label": "Añadir producto · formulario",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "add-product-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-product",
+      "label": "Cantidad inválida · formulario conservado",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-product-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "write-error",
+      "label": "Fallo de guardado · borrador conservado",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "write-error-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "budget",
+      "label": "Editar presupuesto",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "budget-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "delete-product",
+      "label": "Confirmación de eliminación",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "delete-product-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "load-error",
+      "label": "Error de lectura · datos intactos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "load-error-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-home",
+      "label": "Inicio · sin listas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-home-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-list",
+      "label": "Mi compra · sin listas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-list-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "home",
+      "label": "Inicio · lista guardada",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "home-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list",
+      "label": "Mi compra · 12 productos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list-products",
+      "label": "Mi compra · productos al desplazar",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-products-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list-end",
+      "label": "Mi compra · final de 12 productos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-end-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "savings",
+      "label": "Ahorro · importes separados",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "savings-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "over-budget",
+      "label": "Ahorro · previsión sobre presupuesto",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "over-budget-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "menus",
+      "label": "Menús · vista previa explícita",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "menus-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "profile",
+      "label": "Perfil · datos locales",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "profile-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "add-product",
+      "label": "Añadir producto · formulario",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "add-product-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-product",
+      "label": "Cantidad inválida · formulario conservado",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-product-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "write-error",
+      "label": "Fallo de guardado · borrador conservado",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "write-error-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "budget",
+      "label": "Editar presupuesto",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "budget-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "delete-product",
+      "label": "Confirmación de eliminación",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "delete-product-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "load-error",
+      "label": "Error de lectura · datos intactos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "load-error-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-home",
+      "label": "Inicio · sin listas",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-home-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "empty-list",
+      "label": "Mi compra · sin listas",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-list-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "home",
+      "label": "Inicio · lista guardada",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "home-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list",
+      "label": "Mi compra · 12 productos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list-products",
+      "label": "Mi compra · productos al desplazar",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-products-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "list-end",
+      "label": "Mi compra · final de 12 productos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "list-end-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "savings",
+      "label": "Ahorro · importes separados",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "savings-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "over-budget",
+      "label": "Ahorro · previsión sobre presupuesto",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "over-budget-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "menus",
+      "label": "Menús · vista previa explícita",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "menus-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "profile",
+      "label": "Perfil · datos locales",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "profile-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "add-product",
+      "label": "Añadir producto · formulario",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "add-product-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "invalid-product",
+      "label": "Cantidad inválida · formulario conservado",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "invalid-product-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "write-error",
+      "label": "Fallo de guardado · borrador conservado",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "write-error-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "budget",
+      "label": "Editar presupuesto",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "budget-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "delete-product",
+      "label": "Confirmación de eliminación",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "delete-product-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "load-error",
+      "label": "Error de lectura · datos intactos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "load-error-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": false,
+      "textScaleSimulation": null
+    },
+    {
+      "id": "text-130-list",
+      "label": "Mi compra · 12 productos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "text-130-list-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": {
+        "multiplier": 1.3,
+        "textElements": 51,
+        "method": "DOM font-size and line-height only; not native iOS Dynamic Type"
+      }
+    },
+    {
+      "id": "text-130-savings",
+      "label": "Ahorro · importes separados",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "text-130-savings-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": {
+        "multiplier": 1.3,
+        "textElements": 34,
+        "method": "DOM font-size and line-height only; not native iOS Dynamic Type"
+      }
+    }
+  ]
+}

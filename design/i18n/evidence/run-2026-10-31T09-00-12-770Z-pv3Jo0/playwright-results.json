@@ -1,0 +1,5248 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/jjcompraintelwgiemt/node_modules/@playwright/test/cli.js",
+      "test",
+      "--reporter=list,json,html",
+      "--output",
+      "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results"
+    ],
+    "configFile": "/workspace/jjcompraintelwgiemt/playwright.config.ts",
+    "rootDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "desktop",
+        "name": "desktop",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "mobile",
+        "name": "mobile",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "desktop",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "snapshotDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8081",
+          "locale": "es-ES",
+          "storageState": {
+            "cookies": [],
+            "origins": [
+              {
+                "origin": "http://127.0.0.1:8081",
+                "localStorage": [
+                  {
+                    "name": "jjcompraintelwgiemt.preferences.v1",
+                    "value": "{\"version\":1,\"language\":\"es\",\"welcomeCompleted\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium"
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 1000
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "mobile",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "snapshotDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.@(spec|test).?(c|m)[jt]s?(x)",
+        "timeout": 60000,
+        "use": {
+          "baseURL": "http://127.0.0.1:8081",
+          "locale": "es-ES",
+          "storageState": {
+            "cookies": [],
+            "origins": [
+              {
+                "origin": "http://127.0.0.1:8081",
+                "localStorage": [
+                  {
+                    "name": "jjcompraintelwgiemt.preferences.v1",
+                    "value": "{\"version\":1,\"language\":\"es\",\"welcomeCompleted\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/usr/bin/chromium"
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list"
+      ],
+      [
+        "json"
+      ],
+      [
+        "html"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npx expo start --web --offline --port 8081 --max-workers 2",
+      "url": "http://127.0.0.1:8081",
+      "reuseExistingServer": true,
+      "timeout": 120000,
+      "env": {
+        "EXPO_NO_TELEMETRY": "1"
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "comparisons.spec.ts",
+      "file": "comparisons.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "crea, ordena, empata, edita y elimina; conserva los datos al recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:14.198Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0f325a1a01063f2777e1-fff42dad8af18df33dad",
+          "file": "comparisons.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "un error al guardar mantiene el formulario y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1634,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:18.564Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0f325a1a01063f2777e1-baa1f970efdc3a9bb31f",
+          "file": "comparisons.spec.ts",
+          "line": 81,
+          "column": 5
+        },
+        {
+          "title": "no reemplaza datos corruptos y permite volver a cargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1410,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:20.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0f325a1a01063f2777e1-4d375c08940a3c63364a",
+          "file": "comparisons.spec.ts",
+          "line": 101,
+          "column": 5
+        },
+        {
+          "title": "crea, ordena, empata, edita y elimina; conserva los datos al recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3412,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:44.453Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0f325a1a01063f2777e1-46b8882b841f3ce405b0",
+          "file": "comparisons.spec.ts",
+          "line": 19,
+          "column": 5
+        },
+        {
+          "title": "un error al guardar mantiene el formulario y permite reintentar",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1542,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"No se pudieron guardar\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-live=\"assertive\" class=\"css-g5y9jx r-1habvwh r-vmhfuw r-1g2slux r-1q9bdsx r-rs99b7 r-18u37iz r-uaa2di r-117bsoe r-1slz7xr\">…</div> aka locator('#root').getByRole('alert')\n    2) <div role=\"alert\" aria-live=\"assertive\" class=\"css-g5y9jx r-1habvwh r-vmhfuw r-1g2slux r-1q9bdsx r-rs99b7 r-18u37iz r-uaa2di r-117bsoe r-1slz7xr\">…</div> aka getByRole('alert').nth(1)\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"No se pudieron guardar\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-live=\"assertive\" class=\"css-g5y9jx r-1habvwh r-vmhfuw r-1g2slux r-1q9bdsx r-rs99b7 r-18u37iz r-uaa2di r-117bsoe r-1slz7xr\">…</div> aka locator('#root').getByRole('alert')\n    2) <div role=\"alert\" aria-live=\"assertive\" class=\"css-g5y9jx r-1habvwh r-vmhfuw r-1g2slux r-1q9bdsx r-rs99b7 r-18u37iz r-uaa2di r-117bsoe r-1slz7xr\">…</div> aka getByRole('alert').nth(1)\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n    at /workspace/jjcompraintelwgiemt/tests/e2e/comparisons.spec.ts:92:41",
+                    "location": {
+                      "file": "/workspace/jjcompraintelwgiemt/tests/e2e/comparisons.spec.ts",
+                      "column": 41,
+                      "line": 92
+                    },
+                    "snippet": "  90 |   });\n  91 |   await page.getByTestId('save-offer').click();\n> 92 |   await expect(page.getByRole('alert')).toContainText('No se pudieron guardar');\n     |                                         ^\n  93 |   await expect(page.getByRole('textbox', { name: 'Precio del producto (€)' })).toHaveValue('25.99');\n  94 |   const stored = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), storageKey);\n  95 |   expect(stored.comparisons[0].offers).toHaveLength(0);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/comparisons.spec.ts",
+                        "column": 41,
+                        "line": 92
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('alert')\nExpected substring: \u001b[32m\"No se pudieron guardar\"\u001b[39m\nError: strict mode violation: getByRole('alert') resolved to 2 elements:\n    1) <div role=\"alert\" aria-live=\"assertive\" class=\"css-g5y9jx r-1habvwh r-vmhfuw r-1g2slux r-1q9bdsx r-rs99b7 r-18u37iz r-uaa2di r-117bsoe r-1slz7xr\">…</div> aka locator('#root').getByRole('alert')\n    2) <div role=\"alert\" aria-live=\"assertive\" class=\"css-g5y9jx r-1habvwh r-vmhfuw r-1g2slux r-1q9bdsx r-rs99b7 r-18u37iz r-uaa2di r-117bsoe r-1slz7xr\">…</div> aka getByRole('alert').nth(1)\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('alert')\u001b[22m\n\n\n  90 |   });\n  91 |   await page.getByTestId('save-offer').click();\n> 92 |   await expect(page.getByRole('alert')).toContainText('No se pudieron guardar');\n     |                                         ^\n  93 |   await expect(page.getByRole('textbox', { name: 'Precio del producto (€)' })).toHaveValue('25.99');\n  94 |   const stored = await page.evaluate(key => JSON.parse(localStorage.getItem(key)!), storageKey);\n  95 |   expect(stored.comparisons[0].offers).toHaveLength(0);\n    at /workspace/jjcompraintelwgiemt/tests/e2e/comparisons.spec.ts:92:41"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:48.088Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/comparisons-un-error-al-gu-66ff3-ulario-y-permite-reintentar-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/comparisons-un-error-al-gu-66ff3-ulario-y-permite-reintentar-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/comparisons-un-error-al-gu-66ff3-ulario-y-permite-reintentar-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/comparisons.spec.ts",
+                    "column": 41,
+                    "line": 92
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0f325a1a01063f2777e1-8f0de2ab23d471f76898",
+          "file": "comparisons.spec.ts",
+          "line": 81,
+          "column": 5
+        },
+        {
+          "title": "no reemplaza datos corruptos y permite volver a cargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1488,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:50.137Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0f325a1a01063f2777e1-397e3075c4eb54511aea",
+          "file": "comparisons.spec.ts",
+          "line": 101,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts",
+      "file": "i18n-integrity.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "dos pestañas vacías: la segunda escritura rechaza el estado obsoleto y conserva el borrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:21.657Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-3d5aa8361dd5830bf210",
+          "file": "i18n-integrity.spec.ts",
+          "line": 88,
+          "column": 5
+        },
+        {
+          "title": "dos guardados simultáneos usan un bloqueo compartido: gana uno y el otro conserva su formulario",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 7232,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('app-sheet').getByRole('alert')\nExpected substring: \u001b[32m\"Otra pestaña\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('app-sheet').getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('app-sheet').getByRole('alert')\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('app-sheet').getByRole('alert')\nExpected substring: \u001b[32m\"Otra pestaña\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('app-sheet').getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('app-sheet').getByRole('alert')\u001b[22m\n\n    at /workspace/jjcompraintelwgiemt/tests/e2e/i18n-integrity.spec.ts:133:42",
+                    "location": {
+                      "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n-integrity.spec.ts",
+                      "column": 42,
+                      "line": 133
+                    },
+                    "snippet": "  131 |   const successful = winner === 'Carrera A' ? a : b;\n  132 |   await expect(successful).toHaveCount(0);\n> 133 |   await expect(loser.getByRole('alert')).toContainText('Otra pestaña');\n      |                                          ^\n  134 |   await expect(loser.getByRole('textbox')).toHaveValue(winner === 'Carrera A' ? 'Carrera B' : 'Carrera A');\n  135 |   expect(await names(second)).toEqual([winner]);\n  136 | });"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n-integrity.spec.ts",
+                        "column": 42,
+                        "line": 133
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByTestId('app-sheet').getByRole('alert')\nExpected substring: \u001b[32m\"Otra pestaña\"\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" getByTestId('app-sheet').getByRole('alert') with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByTestId('app-sheet').getByRole('alert')\u001b[22m\n\n\n  131 |   const successful = winner === 'Carrera A' ? a : b;\n  132 |   await expect(successful).toHaveCount(0);\n> 133 |   await expect(loser.getByRole('alert')).toContainText('Otra pestaña');\n      |                                          ^\n  134 |   await expect(loser.getByRole('textbox')).toHaveValue(winner === 'Carrera A' ? 'Carrera B' : 'Carrera A');\n  135 |   expect(await names(second)).toEqual([winner]);\n  136 | });\n    at /workspace/jjcompraintelwgiemt/tests/e2e/i18n-integrity.spec.ts:133:42"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:23.921Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/i18n-integrity-dos-guardad-ec57a-otro-conserva-su-formulario-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/i18n-integrity-dos-guardad-ec57a-otro-conserva-su-formulario-desktop/test-failed-2.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/i18n-integrity-dos-guardad-ec57a-otro-conserva-su-formulario-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/i18n-integrity-dos-guardad-ec57a-otro-conserva-su-formulario-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n-integrity.spec.ts",
+                    "column": 42,
+                    "line": 133
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-cb414ec10104e499f1b4",
+          "file": "i18n-integrity.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "el navegador sin Web Locks rechaza el guardado antes de sobrescribir y mantiene el borrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1642,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:31.904Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-d499e4eabc29a850c24b",
+          "file": "i18n-integrity.spec.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "title": "un cambio de idioma desde otra pestaña mantiene campos, números y texto propio del editor abierto",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2381,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:33.913Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-6e1468a9c29146157d18",
+          "file": "i18n-integrity.spec.ts",
+          "line": 150,
+          "column": 5
+        },
+        {
+          "title": "un cambio remoto de bienvenida no desmonta el espacio ya abierto ni elimina un borrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2089,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:36.309Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-b57e11ece9f37b706de4",
+          "file": "i18n-integrity.spec.ts",
+          "line": 169,
+          "column": 5
+        },
+        {
+          "title": "los cuatro idiomas y el modo dispositivo solo escriben preferencias y conservan las cuatro claves de negocio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1798,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:38.414Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-c69733bc5712cbbf5602",
+          "file": "i18n-integrity.spec.ts",
+          "line": 184,
+          "column": 5
+        },
+        {
+          "title": "las preferencias corruptas se conservan al continuar la sesión y recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1499,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:40.230Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-c46294c48f8608dfabfd",
+          "file": "i18n-integrity.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "las preferencias de versión futura se conservan al continuar la sesión y recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1457,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:41.743Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-711a60d95deb439ca556",
+          "file": "i18n-integrity.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "un fallo al guardar preferencias mantiene idioma y datos actuales y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1450,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:43.213Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-39c2511b1d8b73e1ba46",
+          "file": "i18n-integrity.spec.ts",
+          "line": 225,
+          "column": 5
+        },
+        {
+          "title": "las preferencias sin Web Locks no pierden el idioma anterior ni cambian datos de negocio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1198,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:44.678Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-5e4e9d2378511c721ea4",
+          "file": "i18n-integrity.spec.ts",
+          "line": 249,
+          "column": 5
+        },
+        {
+          "title": "un evento de preferencias durante una escritura conserva el último idioma persistido en ambas pestañas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2127,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:45.895Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-591d800e863614ecb54c",
+          "file": "i18n-integrity.spec.ts",
+          "line": 262,
+          "column": 5
+        },
+        {
+          "title": "un enlace legado con credenciales sigue legible pero no se abre ni transmite credenciales",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1231,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:48.033Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-9932ff92c0f50050bd1c",
+          "file": "i18n-integrity.spec.ts",
+          "line": 298,
+          "column": 5
+        },
+        {
+          "title": "dos pestañas vacías: la segunda escritura rechaza el estado obsoleto y conserva el borrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:51.845Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-6d7b4a39931d2cbd7586",
+          "file": "i18n-integrity.spec.ts",
+          "line": 88,
+          "column": 5
+        },
+        {
+          "title": "dos guardados simultáneos usan un bloqueo compartido: gana uno y el otro conserva su formulario",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1978,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:54.143Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-9024b262dddc90dc1217",
+          "file": "i18n-integrity.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "el navegador sin Web Locks rechaza el guardado antes de sobrescribir y mantiene el borrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:56.136Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-9a50e3ff18483a13421f",
+          "file": "i18n-integrity.spec.ts",
+          "line": 138,
+          "column": 5
+        },
+        {
+          "title": "un cambio de idioma desde otra pestaña mantiene campos, números y texto propio del editor abierto",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2211,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:57.357Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-9a0b53d54ae18137bd5f",
+          "file": "i18n-integrity.spec.ts",
+          "line": 150,
+          "column": 5
+        },
+        {
+          "title": "un cambio remoto de bienvenida no desmonta el espacio ya abierto ni elimina un borrador",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1878,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:59.587Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-1e877ba46b3adf7a441d",
+          "file": "i18n-integrity.spec.ts",
+          "line": 169,
+          "column": 5
+        },
+        {
+          "title": "los cuatro idiomas y el modo dispositivo solo escriben preferencias y conservan las cuatro claves de negocio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1700,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:01.477Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-294ff3d945cf4b2e65b9",
+          "file": "i18n-integrity.spec.ts",
+          "line": 184,
+          "column": 5
+        },
+        {
+          "title": "las preferencias corruptas se conservan al continuar la sesión y recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1518,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:03.194Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-9eefdb471f791f147dda",
+          "file": "i18n-integrity.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "las preferencias de versión futura se conservan al continuar la sesión y recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1717,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:04.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-328179fcfd80a8dab0b2",
+          "file": "i18n-integrity.spec.ts",
+          "line": 206,
+          "column": 7
+        },
+        {
+          "title": "un fallo al guardar preferencias mantiene idioma y datos actuales y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1698,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:06.458Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-da4d08c450bb7bf8a6be",
+          "file": "i18n-integrity.spec.ts",
+          "line": 225,
+          "column": 5
+        },
+        {
+          "title": "las preferencias sin Web Locks no pierden el idioma anterior ni cambian datos de negocio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2589,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:08.178Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-22ea2ee1629aa1f20683",
+          "file": "i18n-integrity.spec.ts",
+          "line": 249,
+          "column": 5
+        },
+        {
+          "title": "un evento de preferencias durante una escritura conserva el último idioma persistido en ambas pestañas",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:10.795Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-2fe42210f1e91ed4951f",
+          "file": "i18n-integrity.spec.ts",
+          "line": 262,
+          "column": 5
+        },
+        {
+          "title": "un enlace legado con credenciales sigue legible pero no se abre ni transmite credenciales",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1117,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:12.862Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "92f045c3dc1ed5627a3a-255b06bd7a2263a0a9ee",
+          "file": "i18n-integrity.spec.ts",
+          "line": 298,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "i18n.spec.ts",
+      "file": "i18n.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "idioma de dispositivo es-MX → es, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 781,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:49.317Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-e21a2ef6b84605ae1a34",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo en-US → en, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 843,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:50.108Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-eefc1d121c7224e2c75f",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo de-AT → de, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 770,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:50.962Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-804cd5e9f7ac9a145603",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo fr-CA → fr, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:51.740Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-31f7a5ab8fd7abdb07ff",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo pt-BR → es, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 828,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:52.601Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-d91852615251fab92339",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "es: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3326,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:53.446Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-959566aabbd1cfde4988",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "en: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:00:56.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-25c8bd060aff70b0e3ea",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "de: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:00.289Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-509a69f7d149a2b46a5b",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "fr: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3430,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:03.648Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-c2eb88408b4b3e0b6966",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "usa el siguiente idioma compatible de la lista del dispositivo antes de recurrir al español",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 870,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:07.095Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-ec1c5124852fd5b33faf",
+          "file": "i18n.spec.ts",
+          "line": 227,
+          "column": 5
+        },
+        {
+          "title": "Perfil → Idioma: cada elección y volver al dispositivo preservan exactamente nombres, IDs, céntimos y cantidades",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3154,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:07.973Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-967235ea2678e63d2654",
+          "file": "i18n.spec.ts",
+          "line": 236,
+          "column": 5
+        },
+        {
+          "title": "un fallo al guardar idioma conserva la elección anterior y permite reintentar sin tocar compras",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1136,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:11.141Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-5c8243702a4960717571",
+          "file": "i18n.spec.ts",
+          "line": 260,
+          "column": 5
+        },
+        {
+          "title": "es: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1131,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:12.290Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-8593fede945b74e62bc4",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "en: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1081,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:13.431Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-089191a5686ba248f01f",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "de: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1103,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:14.532Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-d377e1816aaa736901ab",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "fr: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1037,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:15.648Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-5f02cf87f245e1cb79c6",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "preferencia corrupta se conserva y continuar por sesión permite usar la compra sin borrar datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 883,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:16.701Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-94a7500f014403c6cc23",
+          "file": "i18n.spec.ts",
+          "line": 306,
+          "column": 5
+        },
+        {
+          "title": "auditoría visual es 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2326,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:17.595Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-f33200c86f10e5087258",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual es 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2456,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:19.937Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-92aff78c682855bc11fe",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual es 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2836,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:22.405Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-46cef1e4060f30e125a5",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual en 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2419,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:25.261Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-39dee6979aedf7cbfdb7",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual en 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2422,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:27.696Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-706342f0743aa0c8f227",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual en 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2892,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:30.130Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-8892def47bbdbaa160e6",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual de 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2415,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:33.034Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-95a0fdc5e771132aae0e",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual de 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2455,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:35.464Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-ffad407ec7f70a0ec916",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual de 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2745,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:37.927Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-5088e5a05c9550240a32",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual fr 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:40.684Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-cf4b7778c8f6129dc253",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual fr 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2513,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:43.169Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-8ae1ab18e4552d2b6c33",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual fr 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2549,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:45.696Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-8fca3110ca3100fdc881",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo es-MX → es, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 779,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:14.019Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-c380a26dd15968b16652",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo en-US → en, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 783,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:14.812Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-028098471f293abab41c",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo de-AT → de, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 822,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:15.607Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-aeb579b0a8f88174671b",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo fr-CA → fr, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 784,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:16.439Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-3bab7dfc291d2ec4acde",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "idioma de dispositivo pt-BR → es, bienvenida vacía y sin escrituras de compra",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 762,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:17.235Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-06387eceff53d6ba6c04",
+          "file": "i18n.spec.ts",
+          "line": 142,
+          "column": 7
+        },
+        {
+          "title": "es: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2972,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:18.008Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-829b076966bc890affdc",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "en: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3219,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:20.990Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-c8c6207b0f426dee5389",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "de: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3188,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:24.227Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-d814ce048571e198d9bf",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "fr: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2917,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:27.432Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-f01dac4a6d575942ef73",
+          "file": "i18n.spec.ts",
+          "line": 155,
+          "column": 7
+        },
+        {
+          "title": "usa el siguiente idioma compatible de la lista del dispositivo antes de recurrir al español",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 834,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:30.367Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-512f731701939d60fbf5",
+          "file": "i18n.spec.ts",
+          "line": 227,
+          "column": 5
+        },
+        {
+          "title": "Perfil → Idioma: cada elección y volver al dispositivo preservan exactamente nombres, IDs, céntimos y cantidades",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3232,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:31.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-9430a1be4849b7bcc34b",
+          "file": "i18n.spec.ts",
+          "line": 236,
+          "column": 5
+        },
+        {
+          "title": "un fallo al guardar idioma conserva la elección anterior y permite reintentar sin tocar compras",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1052,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:34.461Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-d6a9a3e1c007ab2afa4a",
+          "file": "i18n.spec.ts",
+          "line": 260,
+          "column": 5
+        },
+        {
+          "title": "es: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1022,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:35.519Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-e145f1e2877dd7fc3e27",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "en: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1060,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:36.571Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-9b910011277d91d0d411",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "de: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1044,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:37.637Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-eef015017edef7bd9320",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "fr: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1150,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:38.688Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-78e8205ae5df8e2974ba",
+          "file": "i18n.spec.ts",
+          "line": 287,
+          "column": 7
+        },
+        {
+          "title": "preferencia corrupta se conserva y continuar por sesión permite usar la compra sin borrar datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 925,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:39.849Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-0a54e8be0127bf756e4f",
+          "file": "i18n.spec.ts",
+          "line": 306,
+          "column": 5
+        },
+        {
+          "title": "auditoría visual es 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.789Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-21d0e435b0d6450b6c58",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual es 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.799Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-7f0efdecda10f1f9f9ce",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual es 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.805Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-f0058e0d7cfafcfe5fc3",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual en 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.813Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-3ed08de94df92e487fbb",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual en 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.818Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-1aacffa56b036fb1ac4f",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual en 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.823Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-49a5837b1d8f77807df7",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual de 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.828Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-da2a9acd72a65b245de0",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual de 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.833Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-3f1e0b4cc6ebc535908e",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual de 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.838Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-2abf81d3bb4c56f250ae",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual fr 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.842Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-cd3c4f9c125b04f64410",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual fr 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.848Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-a4e9411bd157af52e6e0",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        },
+        {
+          "title": "auditoría visual fr 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                  "location": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                    "line": 323,
+                    "column": 10
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.853Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "The matrix already creates explicit fresh desktop/mobile contexts.",
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/i18n.spec.ts",
+                        "line": 323,
+                        "column": 10
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "1c708d8d2348e8ed7c9f-05b89c9c25784694ebbc",
+          "file": "i18n.spec.ts",
+          "line": 322,
+          "column": 7
+        }
+      ]
+    },
+    {
+      "title": "menus.spec.ts",
+      "file": "menus.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "prepara y edita cinco cenas sin red y conserva el plan al recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2025,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:48.268Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-1ccd787a0f2084332df1",
+          "file": "menus.spec.ts",
+          "line": 87,
+          "column": 5
+        },
+        {
+          "title": "cancelar la revisión no modifica las compras; confirmar añade solo lo revisado y permite deshacer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2168,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:50.312Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-95ce261c410e40d5f190",
+          "file": "menus.spec.ts",
+          "line": 120,
+          "column": 5
+        },
+        {
+          "title": "resuelve duplicados g/kg explícitamente y protege el precio y el estado de productos anteriores",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1801,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:52.494Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-b199fdf6e25da1297800",
+          "file": "menus.spec.ts",
+          "line": 158,
+          "column": 5
+        },
+        {
+          "title": "una línea ambigua impide la importación parcial y el texto no se almacena como historial",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1797,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:54.306Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-0b77b6591d2ee1377c6f",
+          "file": "menus.spec.ts",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "title": "un fallo de escritura conserva la revisión y permite reintentar sin duplicar ingredientes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1972,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:56.123Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-db95e0bb698d5dd683ee",
+          "file": "menus.spec.ts",
+          "line": 205,
+          "column": 5
+        },
+        {
+          "title": "un menú corrupto no se reemplaza ni impide utilizar las compras locales",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1507,
+                  "error": {
+                    "message": "Error: locator.uncheck: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Pan', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Marcar Pan\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n",
+                    "stack": "Error: locator.uncheck: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Pan', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Marcar Pan\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n    at /workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts:233:20",
+                    "location": {
+                      "file": "/workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts",
+                      "column": 20,
+                      "line": 233
+                    },
+                    "snippet": "  231 |   await page.getByRole('tab', { name: 'Mi compra', exact: true }).click();\n  232 |   const oldProduct = page.getByRole('checkbox', { name: 'Marcar Pan', exact: true });\n> 233 |   await oldProduct.uncheck();\n      |                    ^\n  234 |   await expect(oldProduct).not.toBeChecked();\n  235 |   await expect.poll(async () => (await readShopping(page)).state.lists[0].items[0].checked).toBe(false);\n  236 |   expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBe('{menu-corrupto');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts",
+                        "column": 20,
+                        "line": 233
+                      },
+                      "message": "Error: locator.uncheck: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Pan', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Marcar Pan\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n\n  231 |   await page.getByRole('tab', { name: 'Mi compra', exact: true }).click();\n  232 |   const oldProduct = page.getByRole('checkbox', { name: 'Marcar Pan', exact: true });\n> 233 |   await oldProduct.uncheck();\n      |                    ^\n  234 |   await expect(oldProduct).not.toBeChecked();\n  235 |   await expect.poll(async () => (await readShopping(page)).state.lists[0].items[0].checked).toBe(false);\n  236 |   expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBe('{menu-corrupto');\n    at /workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts:233:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:01:58.111Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/menus-un-menú-corrupto-no--0c8de-tilizar-las-compras-locales-desktop/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/menus-un-menú-corrupto-no--0c8de-tilizar-las-compras-locales-desktop/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/menus-un-menú-corrupto-no--0c8de-tilizar-las-compras-locales-desktop/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts",
+                    "column": 20,
+                    "line": 233
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-907bd1bb135d3904c848",
+          "file": "menus.spec.ts",
+          "line": 225,
+          "column": 5
+        },
+        {
+          "title": "un fallo al guardar el menú no anuncia un plan guardado y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1538,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:00.095Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-984ecf7784e3930a98ba",
+          "file": "menus.spec.ts",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "crea una lista nueva solo al confirmar y permite deshacer todo el grupo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1861,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:01.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-183b2d1ae9cfc76e6f0e",
+          "file": "menus.spec.ts",
+          "line": 256,
+          "column": 5
+        },
+        {
+          "title": "prepara y edita cinco cenas sin red y conserva el plan al recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2139,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:40.864Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-1a9b40d9b878fc55549f",
+          "file": "menus.spec.ts",
+          "line": 87,
+          "column": 5
+        },
+        {
+          "title": "cancelar la revisión no modifica las compras; confirmar añade solo lo revisado y permite deshacer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2712,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:43.018Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-1ff05435776874268a37",
+          "file": "menus.spec.ts",
+          "line": 120,
+          "column": 5
+        },
+        {
+          "title": "resuelve duplicados g/kg explícitamente y protege el precio y el estado de productos anteriores",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1853,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:45.755Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-b9cf8f8e3b8f574e1fc1",
+          "file": "menus.spec.ts",
+          "line": 158,
+          "column": 5
+        },
+        {
+          "title": "una línea ambigua impide la importación parcial y el texto no se almacena como historial",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2011,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:47.624Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-a8db7dd5f6ebb91d7c81",
+          "file": "menus.spec.ts",
+          "line": 183,
+          "column": 5
+        },
+        {
+          "title": "un fallo de escritura conserva la revisión y permite reintentar sin duplicar ingredientes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2391,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:49.657Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-f8ab89b37c6e8ff1db59",
+          "file": "menus.spec.ts",
+          "line": 205,
+          "column": 5
+        },
+        {
+          "title": "un menú corrupto no se reemplaza ni impide utilizar las compras locales",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 1807,
+                  "error": {
+                    "message": "Error: locator.uncheck: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Pan', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Marcar Pan\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n",
+                    "stack": "Error: locator.uncheck: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Pan', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Marcar Pan\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n    at /workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts:233:20",
+                    "location": {
+                      "file": "/workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts",
+                      "column": 20,
+                      "line": 233
+                    },
+                    "snippet": "  231 |   await page.getByRole('tab', { name: 'Mi compra', exact: true }).click();\n  232 |   const oldProduct = page.getByRole('checkbox', { name: 'Marcar Pan', exact: true });\n> 233 |   await oldProduct.uncheck();\n      |                    ^\n  234 |   await expect(oldProduct).not.toBeChecked();\n  235 |   await expect.poll(async () => (await readShopping(page)).state.lists[0].items[0].checked).toBe(false);\n  236 |   expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBe('{menu-corrupto');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts",
+                        "column": 20,
+                        "line": 233
+                      },
+                      "message": "Error: locator.uncheck: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Pan', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"true\" aria-label=\"Marcar Pan\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n\n  231 |   await page.getByRole('tab', { name: 'Mi compra', exact: true }).click();\n  232 |   const oldProduct = page.getByRole('checkbox', { name: 'Marcar Pan', exact: true });\n> 233 |   await oldProduct.uncheck();\n      |                    ^\n  234 |   await expect(oldProduct).not.toBeChecked();\n  235 |   await expect.poll(async () => (await readShopping(page)).state.lists[0].items[0].checked).toBe(false);\n  236 |   expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBe('{menu-corrupto');\n    at /workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts:233:20"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:52.067Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/menus-un-menú-corrupto-no--0c8de-tilizar-las-compras-locales-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/menus-un-menú-corrupto-no--0c8de-tilizar-las-compras-locales-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/menus-un-menú-corrupto-no--0c8de-tilizar-las-compras-locales-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/menus.spec.ts",
+                    "column": 20,
+                    "line": 233
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-58ea7485d3c41234bb8c",
+          "file": "menus.spec.ts",
+          "line": 225,
+          "column": 5
+        },
+        {
+          "title": "un fallo al guardar el menú no anuncia un plan guardado y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2190,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:54.489Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-55e37018107e274e6377",
+          "file": "menus.spec.ts",
+          "line": 240,
+          "column": 5
+        },
+        {
+          "title": "crea una lista nueva solo al confirmar y permite deshacer todo el grupo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1958,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:56.986Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6714747fbe11c9646e23-1688f911e5fe586c2da3",
+          "file": "menus.spec.ts",
+          "line": 256,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts",
+      "file": "price-observations.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "crea y edita dos formatos equivalentes; ordena por kg y conserva fecha y procedencia al recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3329,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:03.716Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-8170a6d0b12b9ea07a5b",
+          "file": "price-observations.spec.ts",
+          "line": 105,
+          "column": 5
+        },
+        {
+          "title": "convierte ml y L para comparar el contenido completo por litro",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2290,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:07.058Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-598e60dcddc1170deb7c",
+          "file": "price-observations.spec.ts",
+          "line": 162,
+          "column": 5
+        },
+        {
+          "title": "explica los datos excluidos y las diferencias de calidad o unidad sin presentarlos como verificados",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1848,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:09.361Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-4353f99ca4b864e4dbd4",
+          "file": "price-observations.spec.ts",
+          "line": 181,
+          "column": 5
+        },
+        {
+          "title": "rechaza una fecha futura y un enlace javascript, conserva el borrador y permite corregirlo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1928,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:11.224Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-1a5b3a75ce4d21945c3c",
+          "file": "price-observations.spec.ts",
+          "line": 212,
+          "column": 5
+        },
+        {
+          "title": "un fallo de escritura de observaciones mantiene los datos y el formulario hasta reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2667,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:13.162Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-1bd03e0dbb8d348371de",
+          "file": "price-observations.spec.ts",
+          "line": 236,
+          "column": 5
+        },
+        {
+          "title": "conserva JSON corrupto y versiones incompatibles, permite recuperar y no altera compras, menús ni comparaciones",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2710,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:15.845Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-824d40b12b45fb17a014",
+          "file": "price-observations.spec.ts",
+          "line": 270,
+          "column": 5
+        },
+        {
+          "title": "confirma antes de eliminar y permite deshacer el borrado con todos sus datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2295,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:18.565Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-b4c2b1d68f71793d0cee",
+          "file": "price-observations.spec.ts",
+          "line": 290,
+          "column": 5
+        },
+        {
+          "title": "al cambiar el día retira una observación de ocho días y actualiza su estado sin editar ni recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2688,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:20.881Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-bb81b6fb893495f885fa",
+          "file": "price-observations.spec.ts",
+          "line": 319,
+          "column": 5
+        },
+        {
+          "title": "crea y edita dos formatos equivalentes; ordena por kg y conserva fecha y procedencia al recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3098,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:03:58.983Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-5cde14c86bbd4cd9cdbb",
+          "file": "price-observations.spec.ts",
+          "line": 105,
+          "column": 5
+        },
+        {
+          "title": "convierte ml y L para comparar el contenido completo por litro",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:02.092Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-45016b8b6895518e1487",
+          "file": "price-observations.spec.ts",
+          "line": 162,
+          "column": 5
+        },
+        {
+          "title": "explica los datos excluidos y las diferencias de calidad o unidad sin presentarlos como verificados",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1714,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:04.617Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-8368bbda14951011d98a",
+          "file": "price-observations.spec.ts",
+          "line": 181,
+          "column": 5
+        },
+        {
+          "title": "rechaza una fecha futura y un enlace javascript, conserva el borrador y permite corregirlo",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:06.346Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-2492b39c274a26fedb3a",
+          "file": "price-observations.spec.ts",
+          "line": 212,
+          "column": 5
+        },
+        {
+          "title": "un fallo de escritura de observaciones mantiene los datos y el formulario hasta reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2672,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:08.359Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-fdfd3c2a2c8feca69af5",
+          "file": "price-observations.spec.ts",
+          "line": 236,
+          "column": 5
+        },
+        {
+          "title": "conserva JSON corrupto y versiones incompatibles, permite recuperar y no altera compras, menús ni comparaciones",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2821,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:11.056Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-280b8ab388c438027c53",
+          "file": "price-observations.spec.ts",
+          "line": 270,
+          "column": 5
+        },
+        {
+          "title": "confirma antes de eliminar y permite deshacer el borrado con todos sus datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2465,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:13.893Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-5850487ccc9285e6fb5c",
+          "file": "price-observations.spec.ts",
+          "line": 290,
+          "column": 5
+        },
+        {
+          "title": "al cambiar el día retira una observación de ocho días y actualiza su estado sin editar ni recargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1793,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:16.377Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "0b3d7f03a5898fc02b3b-74eceea646161603d889",
+          "file": "price-observations.spec.ts",
+          "line": 319,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "shopping.spec.ts",
+      "file": "shopping.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "conserva doce productos, funciona sin conexión y distingue gasto, estimaciones y precios pendientes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8081,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:23.607Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-82ead2788038233b7b69",
+          "file": "shopping.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "pide una decisión ante duplicados y mantiene las listas separadas al renombrar, eliminar y deshacer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3729,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:31.746Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-7953e20ec1d0ff12236a",
+          "file": "shopping.spec.ts",
+          "line": 200,
+          "column": 5
+        },
+        {
+          "title": "un fallo de escritura conserva el formulario y los datos anteriores, y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2018,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:35.493Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-7bcc65f8a6e3ef2d67dd",
+          "file": "shopping.spec.ts",
+          "line": 256,
+          "column": 5
+        },
+        {
+          "title": "no reemplaza JSON corrupto ni altera el comparador y permite volver a cargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1218,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:37.526Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-8f2952392babaf53d82a",
+          "file": "shopping.spec.ts",
+          "line": 291,
+          "column": 7
+        },
+        {
+          "title": "no reemplaza versión no compatible ni altera el comparador y permite volver a cargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1191,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:38.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-538e48c2ebfb8be75671",
+          "file": "shopping.spec.ts",
+          "line": 291,
+          "column": 7
+        },
+        {
+          "title": "los nombres y notas se muestran como texto y no ejecutan contenido HTML",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2016,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:39.963Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-94ccfb89982393aadd2d",
+          "file": "shopping.spec.ts",
+          "line": 308,
+          "column": 5
+        },
+        {
+          "title": "protege un borrador al cerrar y permite entrar y volver del comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "desktop",
+              "projectName": "desktop",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:02:42.003Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-b5c10aec3a5f7ff0fd4d",
+          "file": "shopping.spec.ts",
+          "line": 325,
+          "column": 5
+        },
+        {
+          "title": "conserva doce productos, funciona sin conexión y distingue gasto, estimaciones y precios pendientes",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 180000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6228,
+                  "error": {
+                    "message": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Leche', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"false\" aria-label=\"Marcar Leche\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n",
+                    "stack": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Leche', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"false\" aria-label=\"Marcar Leche\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n    at /workspace/jjcompraintelwgiemt/tests/e2e/shopping.spec.ts:147:14",
+                    "location": {
+                      "file": "/workspace/jjcompraintelwgiemt/tests/e2e/shopping.spec.ts",
+                      "column": 14,
+                      "line": 147
+                    },
+                    "snippet": "  145 |\n  146 |   const milk = page.getByRole('checkbox', { name: 'Marcar Leche', exact: true });\n> 147 |   await milk.check();\n      |              ^\n  148 |   await expect(milk).toBeChecked();\n  149 |   const rice = page.getByRole('checkbox', { name: 'Marcar Arroz', exact: true });\n  150 |   await rice.check();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/jjcompraintelwgiemt/tests/e2e/shopping.spec.ts",
+                        "column": 14,
+                        "line": 147
+                      },
+                      "message": "Error: locator.check: Clicking the checkbox did not change its state\nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Marcar Leche', exact: true })\u001b[22m\n\u001b[2m    - locator resolved to <div tabindex=\"0\" role=\"checkbox\" aria-checked=\"false\" aria-label=\"Marcar Leche\" class=\"css-g5y9jx r-1loqt21 r-1otgn73 r-1awozwy r-peo1c r-vmopo1 r-usgzl9\">…</div>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m    - element is visible, enabled and stable\u001b[22m\n\u001b[2m    - scrolling into view if needed\u001b[22m\n\u001b[2m    - done scrolling\u001b[22m\n\u001b[2m    - performing click action\u001b[22m\n\u001b[2m    - click action done\u001b[22m\n\u001b[2m    - waiting for scheduled navigations to finish\u001b[22m\n\u001b[2m    - navigations have finished\u001b[22m\n\n\n  145 |\n  146 |   const milk = page.getByRole('checkbox', { name: 'Marcar Leche', exact: true });\n> 147 |   await milk.check();\n      |              ^\n  148 |   await expect(milk).toBeChecked();\n  149 |   const rice = page.getByRole('checkbox', { name: 'Marcar Arroz', exact: true });\n  150 |   await rice.check();\n    at /workspace/jjcompraintelwgiemt/tests/e2e/shopping.spec.ts:147:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:18.203Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/shopping-conserva-doce-pro-4e9b2-ciones-y-precios-pendientes-mobile/test-failed-1.png"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/shopping-conserva-doce-pro-4e9b2-ciones-y-precios-pendientes-mobile/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/jjcompraintelwgiemt/design/i18n/evidence/run-2026-10-31T09-00-12-770Z-pv3Jo0/test-results/shopping-conserva-doce-pro-4e9b2-ciones-y-precios-pendientes-mobile/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/jjcompraintelwgiemt/tests/e2e/shopping.spec.ts",
+                    "column": 14,
+                    "line": 147
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-ed10cd688960d5549f6b",
+          "file": "shopping.spec.ts",
+          "line": 108,
+          "column": 5
+        },
+        {
+          "title": "pide una decisión ante duplicados y mantiene las listas separadas al renombrar, eliminar y deshacer",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3897,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:25.197Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-232e1cdd44cd8b367e6b",
+          "file": "shopping.spec.ts",
+          "line": 200,
+          "column": 5
+        },
+        {
+          "title": "un fallo de escritura conserva el formulario y los datos anteriores, y permite reintentar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:29.349Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-72377fbadd68458bd4df",
+          "file": "shopping.spec.ts",
+          "line": 256,
+          "column": 5
+        },
+        {
+          "title": "no reemplaza JSON corrupto ni altera el comparador y permite volver a cargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1196,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:31.543Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-af6db9b542a91f5da19d",
+          "file": "shopping.spec.ts",
+          "line": 291,
+          "column": 7
+        },
+        {
+          "title": "no reemplaza versión no compatible ni altera el comparador y permite volver a cargar",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1217,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:32.757Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-4e7a88a6aee539e76fba",
+          "file": "shopping.spec.ts",
+          "line": 291,
+          "column": 7
+        },
+        {
+          "title": "los nombres y notas se muestran como texto y no ejecutan contenido HTML",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1919,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:33.991Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-95736265420529d3b77c",
+          "file": "shopping.spec.ts",
+          "line": 308,
+          "column": 5
+        },
+        {
+          "title": "protege un borrador al cerrar y permite entrar y volver del comparador conservado",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "mobile",
+              "projectName": "mobile",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-31T09:04:35.926Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f177f4eaa9abb9f5894f-9c31b06c4e51f7ff75e8",
+          "file": "shopping.spec.ts",
+          "line": 325,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-31T09:00:13.328Z",
+    "duration": 264579.448,
+    "expected": 117,
+    "skipped": 12,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

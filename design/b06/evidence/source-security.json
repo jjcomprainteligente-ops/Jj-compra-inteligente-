@@ -1,0 +1,6 @@
+{
+  "method": "Limited literal-key scan; not a full security certification",
+  "filesScanned": 28,
+  "findings": [],
+  "dataBoundaries": "New observation store only; external links open on explicit user action; no automatic store price retrieval."
+}

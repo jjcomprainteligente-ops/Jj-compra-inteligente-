@@ -1,0 +1,598 @@
+{
+  "generatedAt": "2026-10-30T09:00:55.756Z",
+  "origin": "http://127.0.0.1:8081",
+  "app": "Production app exported in dist",
+  "method": "Chromium screenshots at CSS iPhone viewports, deviceScaleFactor 2; not native iOS",
+  "data": "Isolated localStorage fixtures only; no production seeding or price feed",
+  "integrations": "No connected AI, voice, backend or commercial price source",
+  "nativeChecksPending": [
+    "iPhone usage/screenshots",
+    "VoiceOver",
+    "Dynamic Type",
+    "native keyboard",
+    "native safe areas and gestures"
+  ],
+  "security": "Existing Expo tooling dependency advisories remain unresolved; see delivery documents",
+  "screenshots": 38,
+  "runtimeErrors": [],
+  "checks": [
+    {
+      "id": "empty-menus",
+      "label": "Menús · sin plan guardado",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-menus-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "plan",
+      "label": "Menús · cinco cenas para dos personas",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "plan-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "plan-bottom",
+      "label": "Menús · últimas cenas y revisión",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "plan-bottom-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "recipe",
+      "label": "Receta · cantidades y pasos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "recipe-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-menu",
+      "label": "Esto he entendido · primeros ingredientes",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-menu-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-menu-last",
+      "label": "Esto he entendido · últimos ingredientes",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-menu-last-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-duplicates",
+      "label": "Duplicado · sumar gramos a kilogramos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-duplicates-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "import-text",
+      "label": "Traer ingredientes en texto",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "import-text-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "parse-issues",
+      "label": "Texto ambiguo · corregir antes de continuar",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "parse-issues-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-text",
+      "label": "Texto revisable · sin cambios silenciosos",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-text-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "menu-loaderror",
+      "label": "Menú ilegible · compras independientes",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "menu-loaderror-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "shopping-savefailure",
+      "label": "Fallo al guardar · propuesta conservada",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "shopping-savefailure-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "empty-menus",
+      "label": "Menús · sin plan guardado",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-menus-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "plan",
+      "label": "Menús · cinco cenas para dos personas",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "plan-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "plan-bottom",
+      "label": "Menús · últimas cenas y revisión",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "plan-bottom-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "recipe",
+      "label": "Receta · cantidades y pasos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "recipe-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-menu",
+      "label": "Esto he entendido · primeros ingredientes",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-menu-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-menu-last",
+      "label": "Esto he entendido · últimos ingredientes",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-menu-last-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-duplicates",
+      "label": "Duplicado · sumar gramos a kilogramos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-duplicates-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "import-text",
+      "label": "Traer ingredientes en texto",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "import-text-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "parse-issues",
+      "label": "Texto ambiguo · corregir antes de continuar",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "parse-issues-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-text",
+      "label": "Texto revisable · sin cambios silenciosos",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-text-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "menu-loaderror",
+      "label": "Menú ilegible · compras independientes",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "menu-loaderror-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "shopping-savefailure",
+      "label": "Fallo al guardar · propuesta conservada",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "deviceScaleFactor": 2,
+      "filename": "shopping-savefailure-390.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "empty-menus",
+      "label": "Menús · sin plan guardado",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "empty-menus-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "plan",
+      "label": "Menús · cinco cenas para dos personas",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "plan-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "plan-bottom",
+      "label": "Menús · últimas cenas y revisión",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "plan-bottom-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "recipe",
+      "label": "Receta · cantidades y pasos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "recipe-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-menu",
+      "label": "Esto he entendido · primeros ingredientes",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-menu-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-menu-last",
+      "label": "Esto he entendido · últimos ingredientes",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-menu-last-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-duplicates",
+      "label": "Duplicado · sumar gramos a kilogramos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-duplicates-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "import-text",
+      "label": "Traer ingredientes en texto",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "import-text-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "parse-issues",
+      "label": "Texto ambiguo · corregir antes de continuar",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "parse-issues-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "review-text",
+      "label": "Texto revisable · sin cambios silenciosos",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "review-text-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "menu-loaderror",
+      "label": "Menú ilegible · compras independientes",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "menu-loaderror-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "shopping-savefailure",
+      "label": "Fallo al guardar · propuesta conservada",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "deviceScaleFactor": 2,
+      "filename": "shopping-savefailure-430.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": null,
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "text-130-plan",
+      "label": "Menús · cinco cenas para dos personas",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "text-130-plan-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": {
+        "multiplier": 1.3,
+        "textElements": 43,
+        "method": "DOM font-size and line-height; not native Dynamic Type"
+      },
+      "shoppingFixtureUnchanged": true
+    },
+    {
+      "id": "text-130-review-menu",
+      "label": "Esto he entendido · primeros ingredientes",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "deviceScaleFactor": 2,
+      "filename": "text-130-review-menu-375.png",
+      "noHorizontalOverflow": true,
+      "visibleTextOutsideViewport": [],
+      "demonstrationData": true,
+      "textScaleSimulation": {
+        "multiplier": 1.3,
+        "textElements": 212,
+        "method": "DOM font-size and line-height; not native Dynamic Type"
+      },
+      "shoppingFixtureUnchanged": true
+    }
+  ]
+}

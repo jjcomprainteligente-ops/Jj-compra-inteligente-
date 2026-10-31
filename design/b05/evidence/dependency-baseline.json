@@ -1,0 +1,14 @@
+{
+  "method": "Reference to prior audit, not a fresh registry audit. Package files verified unchanged in this block.",
+  "source": "design/b03-b04/evidence/npm-audit.json",
+  "vulnerabilities": {
+    "info": 0,
+    "low": 5,
+    "moderate": 0,
+    "high": 3,
+    "critical": 0,
+    "total": 8
+  },
+  "dependencyFilesUnchanged": true,
+  "status": "Open Expo tooling advisories, compatible correction not identified in prior registry checks; no forced downgrade."
+}

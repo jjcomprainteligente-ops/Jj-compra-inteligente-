@@ -1,0 +1,5 @@
+{
+  "method": "Limited static scan of application source for common literal key formats; not a complete security certification",
+  "filesScanned": 18,
+  "findings": []
+}

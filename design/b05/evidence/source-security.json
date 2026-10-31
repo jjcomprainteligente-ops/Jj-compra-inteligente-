@@ -1,0 +1,6 @@
+{
+  "method": "Limited static scan for common literal key formats; not a complete certification",
+  "filesScanned": 24,
+  "findings": [],
+  "network": "Menu implementation has no AI calls; external searches remain outside the app."
+}

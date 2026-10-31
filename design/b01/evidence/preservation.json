@@ -1,0 +1,113 @@
+{
+  "timestamp": "2026-10-29T21:00:10.700043+00:00",
+  "files": [
+    {
+      "path": "package-lock.json",
+      "before": "079ef090af8d39b09fa813d69ffed3ddd5f25088cad246fee3697040c4360485",
+      "after": "079ef090af8d39b09fa813d69ffed3ddd5f25088cad246fee3697040c4360485",
+      "unchanged": true
+    },
+    {
+      "path": "app.json",
+      "before": "31eab6d6afa9146d4a26a5ae8a675a473c8810e313e11cb4301d4daa4cf988d3",
+      "after": "31eab6d6afa9146d4a26a5ae8a675a473c8810e313e11cb4301d4daa4cf988d3",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "before": "a53c2c74c0173801e40b87300fd0964fff2e91f4607755f5fbdc1680a5061769",
+      "after": "a53c2c74c0173801e40b87300fd0964fff2e91f4607755f5fbdc1680a5061769",
+      "unchanged": true
+    },
+    {
+      "path": "index.ts",
+      "before": "913e5246bb3c53d86bf3687e2195e543c13eff628ffe053042637570254cfba1",
+      "after": "913e5246bb3c53d86bf3687e2195e543c13eff628ffe053042637570254cfba1",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "before": "2c5a213a79d2b0317a77dce21b121426d33f76c75ca480eef6d2b9df86f068d3",
+      "after": "2c5a213a79d2b0317a77dce21b121426d33f76c75ca480eef6d2b9df86f068d3",
+      "unchanged": true
+    },
+    {
+      "path": ".gitignore",
+      "before": "20a726a6ded6b29f4421d97d4ce5d625e30e401fb8ce5bb231335be574ce4073",
+      "after": "20a726a6ded6b29f4421d97d4ce5d625e30e401fb8ce5bb231335be574ce4073",
+      "unchanged": true
+    },
+    {
+      "path": "App.tsx",
+      "before": "c0137b55a45e881c04346238365cb238d940f8ea302106e830fef0702ec92d68",
+      "after": "c0137b55a45e881c04346238365cb238d940f8ea302106e830fef0702ec92d68",
+      "unchanged": true
+    },
+    {
+      "path": "vitest.config.mts",
+      "before": "0f5d83ce5784d200e4142e8d244bdacfa001036c40817ce6839aab8f158eebfa",
+      "after": "0f5d83ce5784d200e4142e8d244bdacfa001036c40817ce6839aab8f158eebfa",
+      "unchanged": true
+    },
+    {
+      "path": "tsconfig.json",
+      "before": "81bc1b6a6e14c0cacbc72fa9d5d89f5dc4807d76811344045f7fb445f33d91d8",
+      "after": "81bc1b6a6e14c0cacbc72fa9d5d89f5dc4807d76811344045f7fb445f33d91d8",
+      "unchanged": true
+    },
+    {
+      "path": "playwright.config.ts",
+      "before": "3b823c68636be759a423a16428785da0dfeb8721c6b1ba48bc55471056c32a04",
+      "after": "3b823c68636be759a423a16428785da0dfeb8721c6b1ba48bc55471056c32a04",
+      "unchanged": true
+    },
+    {
+      "path": "src/screens.tsx",
+      "before": "e67aa400ddad23293c00ebdf319e18b2a87ed79162a79c66dcb96a1572cedeb1",
+      "after": "e67aa400ddad23293c00ebdf319e18b2a87ed79162a79c66dcb96a1572cedeb1",
+      "unchanged": true
+    },
+    {
+      "path": "src/theme.ts",
+      "before": "9bcaa650fd690086a226f7a0a7407e42533255386400a34b62f625981986817b",
+      "after": "9bcaa650fd690086a226f7a0a7407e42533255386400a34b62f625981986817b",
+      "unchanged": true
+    },
+    {
+      "path": "tests/storage.test.ts",
+      "before": "ee5761ac28ae1ac5c15da7907039575573a154002754fd096443174ecb04c288",
+      "after": "ee5761ac28ae1ac5c15da7907039575573a154002754fd096443174ecb04c288",
+      "unchanged": true
+    },
+    {
+      "path": "tests/comparisons.test.ts",
+      "before": "9ee822164bced209747db1d1254aa5571ef90402263ab396117e4c45c7c899f1",
+      "after": "9ee822164bced209747db1d1254aa5571ef90402263ab396117e4c45c7c899f1",
+      "unchanged": true
+    },
+    {
+      "path": "src/domain/comparisons.ts",
+      "before": "485074b80ba82517021cc3cf628dd44316f47c35ac204e20f9e592e1eb03aa46",
+      "after": "485074b80ba82517021cc3cf628dd44316f47c35ac204e20f9e592e1eb03aa46",
+      "unchanged": true
+    },
+    {
+      "path": "src/storage/comparisons.ts",
+      "before": "8c70a5ec0c169ed0d14243ba01872efc3cbf888d2f75c5db96f98aaf13239a5e",
+      "after": "8c70a5ec0c169ed0d14243ba01872efc3cbf888d2f75c5db96f98aaf13239a5e",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/ui.tsx",
+      "before": "dcf79139d60a0412b68e00c83b8c8b33d1c95edcfb2927bceeeeb4950b33e65c",
+      "after": "dcf79139d60a0412b68e00c83b8c8b33d1c95edcfb2927bceeeeb4950b33e65c",
+      "unchanged": true
+    },
+    {
+      "path": "tests/e2e/comparisons.spec.ts",
+      "before": "3371d3ad98d41dbc67fd4c063121a68a1e4f1c12f041d8afa349640d0b73954a",
+      "after": "3371d3ad98d41dbc67fd4c063121a68a1e4f1c12f041d8afa349640d0b73954a",
+      "unchanged": true
+    }
+  ]
+}

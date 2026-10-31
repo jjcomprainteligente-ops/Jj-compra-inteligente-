@@ -1,0 +1,32 @@
+{
+  "command": "EXPO_NO_TELEMETRY=1 EXPO_OFFLINE=1 __UNSAFE_EXPO_HOME_DIRECTORY=/tmp/jj-expo-i18n expo export --platform all --output-dir dist-i18n --max-workers 2",
+  "exitCode": 0,
+  "artifacts": [
+    {
+      "path": "dist-i18n/_expo/static/js/ios/index-37dca6536c35fdd1c2f674fd3a8baba8.hbc",
+      "bytes": 4626666,
+      "sha256": "9021341872075ed67f581d1faac3904bc29f9c8371426ea7762291c8f89b2c89"
+    },
+    {
+      "path": "dist-i18n/_expo/static/js/web/index-4ca7f8849ec212e4a68386b7f6b92e0e.js",
+      "bytes": 3325857,
+      "sha256": "daac04335e9c233edfc3a020c77ed547bced49b0a8613db4e6bdefa5a6e19348"
+    },
+    {
+      "path": "dist-i18n/_expo/static/js/android/index-056db44c4324a2da09018f8acfde7fbd.hbc",
+      "bytes": 4632238,
+      "sha256": "ee858871b65288a033e3a499479103087829c5cb7c2a8d7391def1e16e4438a4"
+    }
+  ],
+  "limits": "JavaScript/Hermes exports, not IPA/APK or native device validation",
+  "preparedPreview": "previews/i18n-web",
+  "preparedFiles": 17,
+  "fontRewrites": 7,
+  "fixtureMarkersAbsent": [
+    "Familia Äna — été",
+    "Carrera A",
+    "Café Órbita edición Å",
+    "jj-integrity-test-seeded"
+  ],
+  "scopeOfScan": "Selected known test fixture markers in compiled web JS; not a universal secret scan"
+}

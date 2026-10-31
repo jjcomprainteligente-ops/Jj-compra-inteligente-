@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "JJ Compra Inteligente",
+    "slug": "jjcompraintelwgiemt",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFF9EF",
+    "plugins": [["expo-localization", { "supportedLocales": ["es", "en", "de", "fr"] }]],
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.jjcompra.inteligente" },
+    "android": { "package": "com.jjcompra.inteligente" },
+    "web": { "name": "JJ Compra Inteligente", "shortName": "JJ Compra", "backgroundColor": "#FFF9EF", "themeColor": "#167347" }
+  }
+}

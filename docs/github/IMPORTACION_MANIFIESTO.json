@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "repository": "jjcomprainteligente-ops/Jj-compra-inteligente-",
+  "baseCommit": "16ea5dde3067066f52a7fec519c0ebd4fc24cdab",
+  "purpose": "Comprobar la conservación del código actual al importarlo; no certifica fidelidad visual V2.",
+  "excluded": [
+    "node_modules",
+    "dist y dist-*",
+    "previews",
+    "archives y ZIP locales",
+    "trazas y reportes Playwright generados",
+    "credenciales y datos locales"
+  ],
+  "files": [
+    {
+      "path": "App.tsx",
+      "bytes": 15237,
+      "sha256": "8e695d576fa46ad8e3da979884c63a7d3c26bd140dba9fe545f57bc3124feded"
+    },
+    {
+      "path": "app.json",
+      "bytes": 579,
+      "sha256": "5658b7e064ebbf393b520339792d929fd4d2f4d723e3d51d213ecfd40b22ad64"
+    },
+    {
+      "path": "index.ts",
+      "bytes": 350,
+      "sha256": "87eb2393e2cb67df3f983c92aa248b436e01cdce5c9b3245a4a410d47d18d89b"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 276008,
+      "sha256": "5a69f2f3cc58c346bce7ff2286665f3a810cc31da7071563dcb0a97ebbf6744a"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1291,
+      "sha256": "0bd3b86aefe995be036dfcfb79e64f2bf62c162b52632b19305823f6fc72909d"
+    },
+    {
+      "path": "playwright.config.ts",
+      "bytes": 1332,
+      "sha256": "7654f895bcbc63c048871f74bef2b97489bec302e6bddae0a5ed54b086cd68fb"
+    },
+    {
+      "path": "scripts/capture-b03-b04.cjs",
+      "bytes": 14048,
+      "sha256": "664bc010ce50d4938b4222ae83e40c7e45761ad5b60396e6394702de50692d26"
+    },
+    {
+      "path": "scripts/capture-b05.cjs",
+      "bytes": 14586,
+      "sha256": "fe9d7e2cdb9d1f2bc00a3024dd9dd6aa40fa67926a34fc93836534c56a821ab4"
+    },
+    {
+      "path": "scripts/capture-b06.cjs",
+      "bytes": 17183,
+      "sha256": "7497d4a47cd9788377589ec0a7c3b1e331dd151252231e2440a3b5058b5ea58e"
+    },
+    {
+      "path": "scripts/verify-b05-hosted.cjs",
+      "bytes": 5361,
+      "sha256": "9ae99a751590db7bf33dd637c5ec6efbca377376f406f7017c29536a0cababad"
+    },
+    {
+      "path": "scripts/verify-b05.cjs",
+      "bytes": 2480,
+      "sha256": "decc7b589ccbc9366eca96a910f252e455cca46c023b05f0fe8e2497b8067bdf"
+    },
+    {
+      "path": "scripts/verify-b06.cjs",
+      "bytes": 2484,
+      "sha256": "af0743749005c2ebffbc18cc73b222444bea0fd7ff62955fae9c9e597001f113"
+    },
+    {
+      "path": "scripts/verify-i18n-hosted.cjs",
+      "bytes": 10164,
+      "sha256": "c1081489ebe152671ba67a9947977d717d70d022504850a7038bfec4b7612267"
+    },
+    {
+      "path": "scripts/verify-i18n.cjs",
+      "bytes": 8880,
+      "sha256": "3d695932d10070a5e90fdc16079908c43b80955663d921ea2c9e1aec5d14ac93"
+    },
+    {
+      "path": "scripts/verify-web.cjs",
+      "bytes": 2387,
+      "sha256": "92ba9a372b4f2d74c9cf2ed4e61e6204dcd9ced3f225eebd33cec9693ab5c263"
+    },
+    {
+      "path": "src/app/ShoppingApp.tsx",
+      "bytes": 24154,
+      "sha256": "7842049a902e9f448e211b547a25483d119c378bd87727748a1f2419578e07a4"
+    },
+    {
+      "path": "src/app/components/Brand.tsx",
+      "bytes": 1061,
+      "sha256": "80b5263daa0f9c500b19b02257bc0777044f3a3df02b32fce01fce220463623a"
+    },
+    {
+      "path": "src/app/components/Illustrations.tsx",
+      "bytes": 2096,
+      "sha256": "42be17f68eaf59b2dee7334cf229dcc213b0bb38b813b6ef15d2a8e03f61aedb"
+    },
+    {
+      "path": "src/app/components/ui.tsx",
+      "bytes": 11053,
+      "sha256": "df75dedbb0c68d8fff6bfdf57c7d79e1ae850eeb1db852018f2b5671088ae6ee"
+    },
+    {
+      "path": "src/app/screens/HomeList.tsx",
+      "bytes": 13590,
+      "sha256": "c460c949ca978f716bd69654ef3f79013f8ef354e002a21f01e280e7cb332ffb"
+    },
+    {
+      "path": "src/app/screens/LanguageScreen.tsx",
+      "bytes": 5825,
+      "sha256": "4a97f42408b433483b20f24a6b758fb9ded4cacda7b646e209e04344e6c4b88a"
+    },
+    {
+      "path": "src/app/screens/MenuWorkspace.tsx",
+      "bytes": 26961,
+      "sha256": "d852c888ac80169c3abf56579e686eede2e0409c503fca9d4f25fcae23c3bc52"
+    },
+    {
+      "path": "src/app/screens/PriceWorkspace.tsx",
+      "bytes": 25254,
+      "sha256": "a3164fa3c13915fa16f519377bdb73205b2e2f5172dd12f7f9aff7f0346d58ce"
+    },
+    {
+      "path": "src/app/screens/SecondaryScreens.tsx",
+      "bytes": 15323,
+      "sha256": "3820a0852a479c24b4cba2dd63e5b8b3d5c53bc0f194daae3c7f464700530536"
+    },
+    {
+      "path": "src/app/theme.ts",
+      "bytes": 430,
+      "sha256": "08698b56cb67a7b670be220c53936c4a55927f28d33347898e8e6a4da3a77876"
+    },
+    {
+      "path": "src/app/types.ts",
+      "bytes": 464,
+      "sha256": "2fe6d9274e7a1b0615c93c49e8bef2ac2958e0b3f33cbb0fc24edee52bc0f9c4"
+    },
+    {
+      "path": "src/app/useMealPlan.ts",
+      "bytes": 2559,
+      "sha256": "aaa896564a2834defe6f68a84eeca860de6378bd644b1cd9d16c77d4466ada5c"
+    },
+    {
+      "path": "src/app/usePriceObservations.ts",
+      "bytes": 3290,
+      "sha256": "5987df508f9dd13b69541a3cbf6dc3ced33ecad9716ca1172cd5be2fa8610168"
+    },
+    {
+      "path": "src/app/useShopping.ts",
+      "bytes": 2849,
+      "sha256": "a66909768af4d6a8222fc1e776a11e7c8857dff940f7809ddef4be35d4afda60"
+    },
+    {
+      "path": "src/components/ui.tsx",
+      "bytes": 7652,
+      "sha256": "3d6077d5c29514e824ce1dbe43991fb77321e03e166feada534a6a03db95cb74"
+    },
+    {
+      "path": "src/data/recipes.ts",
+      "bytes": 8581,
+      "sha256": "48e19098710bec77c4c4cdbd0c487b62e43f5e20db2ae306c94de063bb288f80"
+    },
+    {
+      "path": "src/domain/comparisons.ts",
+      "bytes": 4767,
+      "sha256": "df8cb857c333737ac2b2fa48aca3f3b780b91ec9a2b61d282934594e7c7e8774"
+    },
+    {
+      "path": "src/domain/ingredientImport.ts",
+      "bytes": 10481,
+      "sha256": "e367448864139f263b3c434d4808fd994d2555d817295762abdeadbdc8480d9c"
+    },
+    {
+      "path": "src/domain/menus.ts",
+      "bytes": 8453,
+      "sha256": "6cfbe6c0d8360b0a0c058eaac2ba8b983aa1f9ff2bbf4b12ee1931773070fbd2"
+    },
+    {
+      "path": "src/domain/priceObservations.ts",
+      "bytes": 12283,
+      "sha256": "acb859e8e07c007fb43d4383f7535edfc3e26cb31e38f0e63fd2536e6b94f15a"
+    },
+    {
+      "path": "src/domain/shopping.ts",
+      "bytes": 7497,
+      "sha256": "72aef089f0f497eef1c9a0f52dece1dbc187894a182bb086d4b20a3898845629"
+    },
+    {
+      "path": "src/i18n/LanguageProvider.tsx",
+      "bytes": 9023,
+      "sha256": "84962802024510fddfe962d4c625f755ce41039f60cbf43dd2a28fd4fc36b82a"
+    },
+    {
+      "path": "src/i18n/assistantLanguage.ts",
+      "bytes": 1529,
+      "sha256": "e05c8b39f8776657f21adbc991741dec2389ef5a48e37468451cedcc2d650bd6"
+    },
+    {
+      "path": "src/i18n/catalogs/app.ts",
+      "bytes": 27932,
+      "sha256": "894f60001dd40787c6bf4ed75bcfea47e2db1d3a4c0a197b76e4f6d56a7a192e"
+    },
+    {
+      "path": "src/i18n/catalogs/common.ts",
+      "bytes": 8495,
+      "sha256": "cb6d69a2b6e20d1d41b28752571e670c48d87c9254b33d2b12e89c1baf6c9d64"
+    },
+    {
+      "path": "src/i18n/catalogs/errors.ts",
+      "bytes": 51837,
+      "sha256": "bb6a06b3a31d5b717f31a7aba20a2fc71bcac74fc8a60feec7d8c6483121154e"
+    },
+    {
+      "path": "src/i18n/catalogs/language.ts",
+      "bytes": 5327,
+      "sha256": "b2540652fd236d9ec483e95689cd059adcd132aa98748e55b4653d978450413a"
+    },
+    {
+      "path": "src/i18n/catalogs/legacy.ts",
+      "bytes": 19732,
+      "sha256": "b31e31a52b5885cc27ae12742828f35cede4e6a4ca58e6949faa532cc6416948"
+    },
+    {
+      "path": "src/i18n/catalogs/menus.ts",
+      "bytes": 33269,
+      "sha256": "ce2ca23fb09832d879b534329d67a718da13b3671b91bffaccf749be3cc3f0f6"
+    },
+    {
+      "path": "src/i18n/catalogs/prices.ts",
+      "bytes": 30013,
+      "sha256": "4bd0486fd806fb4e81a6fa2ca4a45b07c53148cfae8facc692174d10d3bcf4fd"
+    },
+    {
+      "path": "src/i18n/catalogs/recipes.ts",
+      "bytes": 22884,
+      "sha256": "430ce4d68ff6532306c135de1685b9fd1751b0d4ada4a696b0282a5efcbea1a0"
+    },
+    {
+      "path": "src/i18n/catalogs/secondary.ts",
+      "bytes": 31035,
+      "sha256": "fb1eb8d19ae5bcc7aee4155038ddcff96c32c9e4bbfd9babdc8ac5a233461e3a"
+    },
+    {
+      "path": "src/i18n/core.ts",
+      "bytes": 6789,
+      "sha256": "b4b25de14076aaaab495d1743ceac3d2676385def05248cd65b9b743a2d0816f"
+    },
+    {
+      "path": "src/i18n/errors.ts",
+      "bytes": 4559,
+      "sha256": "5c312d1953332f7ae5a2f04dd9b429e4ae48390ee9aec2b9fbd291c89fb9cdac"
+    },
+    {
+      "path": "src/i18n/preferences.ts",
+      "bytes": 6263,
+      "sha256": "455b38ea4cee316087791ab44ccaca8888698ff3d005824525242c3e976c26b4"
+    },
+    {
+      "path": "src/i18n/recipes.ts",
+      "bytes": 2134,
+      "sha256": "e8e42345089698c878f3b9fe3b37eda8b5c1217b9da5fd0b3d851977229a2483"
+    },
+    {
+      "path": "src/i18n/resources.ts",
+      "bytes": 714,
+      "sha256": "eaeb40a26fb5499caca2fd4a9394f059b8b9d2572a253f8b15b415ba710fa991"
+    },
+    {
+      "path": "src/i18n/types.ts",
+      "bytes": 1069,
+      "sha256": "31c191eb26c6dbebccf65b1cb3d583d85bf1a4dd3bcf0e555d8e6ef776021ea9"
+    },
+    {
+      "path": "src/screens.tsx",
+      "bytes": 27529,
+      "sha256": "5326f56aa0c28b234f15223ce3f7c69666c67dc5002db9776004b64dd62c742e"
+    },
+    {
+      "path": "src/storage/comparisons.ts",
+      "bytes": 4770,
+      "sha256": "88ab0bd0e675dcb734662d678f21e026f934662a930051bcda29c31d073b5b51"
+    },
+    {
+      "path": "src/storage/menus.ts",
+      "bytes": 1506,
+      "sha256": "f18ebca1c32245e24e4af383050f32760eaae4434b496199c922992a1f88298e"
+    },
+    {
+      "path": "src/storage/priceObservations.ts",
+      "bytes": 2211,
+      "sha256": "6b3fb7c75cf8bd16a1bd8c8cd3716a3dddcd044f5ccec073bce59c2d51e8f63f"
+    },
+    {
+      "path": "src/storage/shopping.ts",
+      "bytes": 4449,
+      "sha256": "d13e194f3b059fb4bd23147970869ecaf6485384b109d6b11b675e622fcd641d"
+    },
+    {
+      "path": "src/storage/writeCoordinator.ts",
+      "bytes": 6219,
+      "sha256": "980ef19c7376458749ccf59148994b96d39b6ac3df8f6c57a13e48d1ba72687b"
+    },
+    {
+      "path": "src/storage/writeFence.ts",
+      "bytes": 10947,
+      "sha256": "7c1a0a748fad043bcd822b82335e7825b73986ed2c41137b1a690fcad365e4e7"
+    },
+    {
+      "path": "src/theme.ts",
+      "bytes": 715,
+      "sha256": "9bcaa650fd690086a226f7a0a7407e42533255386400a34b62f625981986817b"
+    },
+    {
+      "path": "tests/comparisons.test.ts",
+      "bytes": 4197,
+      "sha256": "00d6547fa3a6759ae153ad43e6af71e97c6153550a73080f6aedd839374f09e6"
+    },
+    {
+      "path": "tests/e2e/comparisons.spec.ts",
+      "bytes": 6675,
+      "sha256": "703525f450ed852d40515477bff38901918d97699e386d34b8ecc6dac7ce6678"
+    },
+    {
+      "path": "tests/e2e/i18n-integrity.spec.ts",
+      "bytes": 21171,
+      "sha256": "1be6f3be1edcee4e118bd18fd48665aad721d465c861f4eb461a44de7aff5b0a"
+    },
+    {
+      "path": "tests/e2e/i18n.spec.ts",
+      "bytes": 26266,
+      "sha256": "cfe060efbb74c616da8c0c9ce960c8b86cd781b96c6fefa9aec6b700e9550f8b"
+    },
+    {
+      "path": "tests/e2e/menus.spec.ts",
+      "bytes": 17309,
+      "sha256": "d34664a4e68d493106feb56a3f9f5d276750093534547a6ba01602c8efa56b1e"
+    },
+    {
+      "path": "tests/e2e/price-observations.spec.ts",
+      "bytes": 21989,
+      "sha256": "326b254bdb86bff83c3001ba33352db49066e7de798882243ed7d7e62b82f17d"
+    },
+    {
+      "path": "tests/e2e/shopping.spec.ts",
+      "bytes": 17868,
+      "sha256": "4c9d372c3f0c3f4eb86f32b727401b81961d9d6554a1ec6632d9630fdfe11fe4"
+    },
+    {
+      "path": "tests/i18n-core.test.ts",
+      "bytes": 6862,
+      "sha256": "b79163dbcebd8cc6ef9074b31cbafe6f0a21ba945b750e2454e0c37c76c45be8"
+    },
+    {
+      "path": "tests/i18n-errors.test.ts",
+      "bytes": 8142,
+      "sha256": "929429d6ef2e4acb766faa3eef74ccebd63d9df9e762991a4be26c66b6415820"
+    },
+    {
+      "path": "tests/i18n-preferences.test.ts",
+      "bytes": 14492,
+      "sha256": "a5d5a0f6a9051a96382835198acd4729950f66658d35e95e8e459fe9f9320abd"
+    },
+    {
+      "path": "tests/i18n-resources.test.ts",
+      "bytes": 1506,
+      "sha256": "7709ef8d495709027d490fd9eb971066c52093a80fe3c80c23595582b8694ad9"
+    },
+    {
+      "path": "tests/ingredient-import.test.ts",
+      "bytes": 11867,
+      "sha256": "c17b6e306c18cb48a9032bf5284de828c8e3d6df85f9059df13c4585642819d1"
+    },
+    {
+      "path": "tests/menus-storage.test.ts",
+      "bytes": 6517,
+      "sha256": "89944d894d343bb431664c7bd7d60d9ab64cf1e4dfcca59d025e945d088f693f"
+    },
+    {
+      "path": "tests/menus.test.ts",
+      "bytes": 10428,
+      "sha256": "5accda77d981ea460255fbd5e90d226ee9e4c63b7f52463818d7e0cbc85a334e"
+    },
+    {
+      "path": "tests/price-observations-storage.test.ts",
+      "bytes": 10514,
+      "sha256": "c4ce757b4a87ed68cbd513cc2be802a677ab9d99d5ab5b97cd90b51756e74605"
+    },
+    {
+      "path": "tests/price-observations.test.ts",
+      "bytes": 13877,
+      "sha256": "6b4fc0e015d420ddd9b2708ac9cd6de8201fc70278a610fadf65baccb60b2ef1"
+    },
+    {
+      "path": "tests/recipe-localization.test.ts",
+      "bytes": 5464,
+      "sha256": "3a0dd5ea0d2496fc0cf71c3bd058cf7e941bbc7c16dce9dfb8aa427b4728d18e"
+    },
+    {
+      "path": "tests/shopping-storage.test.ts",
+      "bytes": 7744,
+      "sha256": "6fd0dc270174931ddbe35dd665bad507fda9f6242ee286832adc840db484d025"
+    },
+    {
+      "path": "tests/shopping.test.ts",
+      "bytes": 8390,
+      "sha256": "c2e615ddd07dff210f876eae4a528f053ebab169c10741bedcee38b651fb1b6f"
+    },
+    {
+      "path": "tests/storage.test.ts",
+      "bytes": 3477,
+      "sha256": "ee5761ac28ae1ac5c15da7907039575573a154002754fd096443174ecb04c288"
+    },
+    {
+      "path": "tests/write-coordinator.test.ts",
+      "bytes": 15433,
+      "sha256": "db2bbaf3112e3da970c10a5b76cb7deaf6e3b7f69482e216fc2181d8c6412088"
+    },
+    {
+      "path": "tests/write-fence.test.ts",
+      "bytes": 14848,
+      "sha256": "3d0c7652d000a403b559544941f241252cbfb3b65c1c9c0c1ad9627deb216efc"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 133,
+      "sha256": "81bc1b6a6e14c0cacbc72fa9d5d89f5dc4807d76811344045f7fb445f33d91d8"
+    },
+    {
+      "path": "vitest.config.mts",
+      "bytes": 165,
+      "sha256": "0f5d83ce5784d200e4142e8d244bdacfa001036c40817ce6839aab8f158eebfa"
+    }
+  ]
+}

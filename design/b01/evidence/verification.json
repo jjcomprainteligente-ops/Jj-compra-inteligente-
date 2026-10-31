@@ -1,0 +1,281 @@
+{
+  "timestamp": "2026-10-29T20:59:14.814Z",
+  "method": "Chromium web, CSS viewport sizes; not iPhone hardware or iOS Safari",
+  "runtimeErrors": 0,
+  "homeNavigationChecks": 3,
+  "emptyNavigationChecks": 3,
+  "prototypeNoticeChecks": 3,
+  "localStorageChecks": 3,
+  "checks": [
+    {
+      "variant": "v1",
+      "screen": "home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "empty",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "list",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "empty",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "list",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "home",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "empty",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "list",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "home",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "empty",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "list",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "home",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "empty",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "list",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "home",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "empty",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "list",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "home",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "empty",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v1",
+      "screen": "list",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "home",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "empty",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v2",
+      "screen": "list",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "home",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "empty",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    },
+    {
+      "variant": "v3",
+      "screen": "list",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "noHorizontalOverflow": true,
+      "ctaVisible": true
+    }
+  ]
+}

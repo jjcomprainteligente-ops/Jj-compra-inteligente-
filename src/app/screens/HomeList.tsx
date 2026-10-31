@@ -1,0 +1,152 @@
+import React from 'react';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Check, ChevronDown, ChevronRight, Leaf, ListChecks, Pencil, Plus, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
+import { CATEGORIES, itemTotalCents, summarizeList, type ShoppingItem, type ShoppingList } from '../../domain/shopping';
+import { useI18n } from '../../i18n/LanguageProvider';
+import { translateIngredientName, translateIngredientNote } from '../../i18n/recipes';
+import { MealArt } from '../components/Illustrations';
+import { Button, Card, IconButton, Notice, Pill, Section, Title, c, f, ui } from '../components/ui';
+
+interface Props {
+  active?: ShoppingList; busy: boolean; onCreate(): void; onOpenList(): void; onMenus(): void;
+  onChoose(): void; onBudget(): void; onAdd(): void; onRename(): void; onDeleteList(): void;
+  onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void;
+}
+
+export function HomeScreen(p: Props) {
+  const { t } = useI18n();
+  const small = useWindowDimensions().height < 750;
+  const summary = p.active ? summarizeList(p.active) : undefined;
+  const primaryAction = <View style={{ marginTop: 16 }}><Button label={t(p.active ? 'app.continueShopping' : 'app.createFirstList')}
+    onPress={p.active ? p.onOpenList : p.onCreate} disabled={p.busy} testID={p.active ? 'main-cta' : 'create-list'} /></View>;
+  return <View style={ui.page}>
+    <Title kicker={t('app.homeKicker')} title={t('app.homeTitle')}
+      subtitle={t('app.homeSubtitle')} />
+    <Pressable accessibilityRole="button" accessibilityLabel={t('app.quickEntryA11y')} disabled={p.busy}
+      onPress={p.active ? p.onAdd : p.onCreate} style={styles.quickEntry}>
+      <Plus color={c.primary} size={20} /><Text style={styles.quickText}>{t('app.quickEntry')}</Text><ChevronRight color={c.primary} size={19} />
+    </Pressable>
+    {small && primaryAction}
+    <View style={{ marginTop: 18 }}>{p.active ? <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} /> : <Card style={styles.budget}>
+      <View style={styles.between}><Text style={[ui.note, { color: c.deep }]}>{t('app.listBudget')}</Text><Wallet size={20} color={c.deep} /></View>
+      <Text style={[styles.budgetValue, { marginTop: 7 }]}>{t('app.undefined')}</Text>
+      <Text style={[ui.note, { color: c.deep, marginTop: 11 }]}>{t('app.emptyBudgetBody')}</Text>
+    </Card>}</View>
+    {!small && primaryAction}
+    <Section title={t('app.weeklyShopping')} action={p.active ? t('app.viewList') : undefined} onPress={p.onOpenList} />
+    <Pressable accessibilityRole="button" accessibilityLabel={p.active ? t('app.openShoppingA11y', { name: p.active.name }) : t('app.createShoppingA11y')}
+      disabled={p.busy} onPress={p.active ? p.onOpenList : p.onCreate} style={styles.listPreview}>
+      <View style={styles.listPreviewIcon}><ListChecks color={c.primary} size={24} /></View>
+      <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{p.active?.name ?? t('app.emptyPreviewTitle')}</Text>
+        <Text style={ui.note}>{summary ? t('app.previewCounts', { count: summary.itemCount, checked: summary.checkedCount }) : t('app.emptyPreviewBody')}</Text></View>
+      <ChevronRight color={c.primary} size={18} />
+    </Pressable>
+    <Section title={t('app.ideaToday')} action={t('app.tabMenus')} onPress={p.onMenus} />
+    <Pressable accessibilityRole="button" accessibilityLabel={t('app.viewMenusA11y')} disabled={p.busy} onPress={p.onMenus} style={styles.mealCard}>
+      <View style={{ flex: 1 }}><Pill label={t('app.cookSimple')} tone="yellow" />
+        <Text style={[ui.strong, { marginTop: 12 }]}>{t('recipes.arroz-verduras.title')}</Text><Text style={[ui.note, { marginTop: 5 }]}>{t('app.mealMeta', { minutes: 25 })}</Text>
+      </View><MealArt size={100} />
+    </Pressable>
+    {p.active && <View style={{ marginTop: 19 }}><Button label={t('app.createAnotherList')} secondary onPress={p.onCreate} disabled={p.busy} testID="create-list" icon={Plus} /></View>}
+    <View style={styles.footerNote}><Leaf size={19} color={c.primary} /><Text style={[ui.note, { flex: 1 }]}>{t('app.localListsNote')}</Text></View>
+  </View>;
+}
+
+export function ListScreen(p: Props) {
+  const { t, categoryLabel } = useI18n();
+  const summary = p.active ? summarizeList(p.active) : undefined;
+  return <View style={ui.page}>
+    <Title kicker={t('app.listKicker')} title={t('app.listTitle')} />
+    {!p.active || !summary ? <Card>
+      <ShoppingBag size={40} color={c.primary} /><Text style={[styles.emptyTitle, { marginTop: 19 }]}>{t('app.emptyListTitle')}</Text>
+      <Text style={[ui.note, { marginTop: 10, marginBottom: 23 }]}>{t('app.emptyListBody')}</Text>
+      <Button label={t('app.createMyList')} onPress={p.onCreate} testID="create-list" disabled={p.busy} icon={Plus} />
+    </Card> : <>
+      <Pressable accessibilityRole="button" accessibilityLabel={t('app.chooseList')} disabled={p.busy} onPress={p.onChoose} style={styles.listSelector}>
+        <Text style={[ui.strong, { fontSize: 18, flex: 1 }]}>{p.active.name}</Text><ChevronDown size={21} color={c.primary} />
+      </Pressable>
+      <View style={styles.listActions}><Pressable accessibilityRole="button" accessibilityLabel={t('app.renameList')} disabled={p.busy} onPress={p.onRename} style={styles.textAction}><Pencil size={16} color={c.primary} /><Text style={ui.link}>{t('app.rename')}</Text></Pressable>
+        <Pressable accessibilityRole="button" accessibilityLabel={t('app.deleteList')} disabled={p.busy} onPress={p.onDeleteList} style={styles.textAction}><Trash2 size={16} color={c.danger} /><Text style={[ui.link, { color: c.danger }]}>{t('app.deleteList')}</Text></Pressable>
+      </View>
+      <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} compact />
+      <View style={styles.listCount}><Text accessibilityRole="header" style={ui.strong}>{t('app.listCount', { count: summary.itemCount })}</Text>
+        <Text style={[ui.note, { flex: 1, textAlign: 'right' }]}>{t('app.progressCounts', { checked: summary.checkedCount, pending: summary.itemCount - summary.checkedCount })}</Text></View>
+      {summary.itemCount === 0 && <Card><Text style={ui.strong}>{t('app.noItemsTitle')}</Text><Text style={[ui.note, { marginTop: 8 }]}>{t('app.noItemsBody')}</Text></Card>}
+      {CATEGORIES.map(category => {
+        const items = p.active!.items.filter(item => item.category === category);
+        return items.length > 0 && <View key={category} style={{ marginBottom: 18 }}>
+          <Text accessibilityRole="header" style={styles.category}>{categoryLabel(category)}</Text>
+          <Card style={{ paddingHorizontal: 12, paddingVertical: 0 }}>{items.map(item => <ItemRow key={item.id} item={item} {...p} />)}</Card>
+        </View>;
+      })}
+      {summary.missingPriceCount > 0 && <Notice title={t('app.incompleteForecast')} text={t('app.missingPricesBody', { count: summary.missingPriceCount })} />}
+    </>}
+  </View>;
+}
+
+function Budget({ active, onBudget, busy, compact = false }: { active: ShoppingList; onBudget(): void; busy: boolean; compact?: boolean }) {
+  const { t, formatMoney } = useI18n();
+  const summary = summarizeList(active);
+  const hasPrices = summary.itemCount > summary.missingPriceCount;
+  const budgetValue = active.budgetCents === null ? t('app.undefined') : formatMoney(active.budgetCents);
+  return <Card style={[styles.budget, compact && styles.compactBudget]}>
+    <View style={[styles.between, compact && { flexWrap: 'wrap', gap: 6 }]}><View style={{ flex: 1, minWidth: compact ? 80 : undefined, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+      {!compact && <Wallet size={18} color={c.deep} />}
+      <Text style={[ui.note, { color: c.deep, flex: 1 }]}>{t(compact ? 'app.budget' : 'app.listBudget')}</Text></View>
+      {compact && <Text style={[styles.budgetValue, styles.compactBudgetValue]}>{budgetValue}</Text>}
+      <Pressable accessibilityRole="button" accessibilityLabel={t(active.budgetCents === null ? 'app.defineBudget' : 'app.editBudget')}
+        onPress={onBudget} testID="edit-budget" disabled={busy} style={styles.budgetEdit}><Pencil size={19} color={c.deep} /></Pressable>
+    </View>
+    {!compact && <Text style={[styles.budgetValue, { marginTop: 2 }]}>{budgetValue}</Text>}
+    <View style={[styles.budgetRow, compact && { marginTop: 4, paddingTop: 8 }]}><Text style={[ui.note, { color: c.deep, flex: 1, minWidth: 120 }]}>{t(hasPrices && summary.missingPriceCount > 0 ? 'app.knownPartialForecast' : 'app.knownForecast')}</Text>
+      <Text style={[ui.strong, { flex: 1, minWidth: 120, textAlign: 'right' }]}>{hasPrices ? formatMoney(summary.knownTotalCents) : t('app.noPricesYet')}</Text></View>
+    {summary.excessCents > 0 && <Text style={[ui.note, { color: c.danger, marginTop: 8 }]}>{t('app.overBudget', { amount: formatMoney(summary.excessCents) })}</Text>}
+    <Text style={[ui.note, { color: c.deep, marginTop: compact ? 5 : 9 }]}>{summary.itemCount === 0 ? t('app.emptyBudgetList') : summary.missingPriceCount > 0 ? t(hasPrices ? 'app.unpricedPartial' : 'app.unpriced', { count: summary.missingPriceCount }) : t('app.includesEstimates')}</Text>
+  </Card>;
+}
+
+function ItemRow({ item, busy, onToggle, onEdit, onDelete }: Props & { item: ShoppingItem }) {
+  const { t, formatMoney, formatQuantity, unitLabel } = useI18n();
+  const name = translateIngredientName(item.name, t);
+  const note = translateIngredientNote(item.note, t);
+  const total = itemTotalCents(item);
+  return <View testID="shopping-item" style={styles.item}>
+    <View style={styles.itemTop}>
+      <Pressable accessibilityRole="checkbox" accessibilityLabel={t('app.checkItemA11y', { name })} accessibilityState={{ checked: item.checked, disabled: busy }} aria-checked={item.checked}
+        disabled={busy} onPress={() => onToggle(item)} style={styles.checkboxTarget}>
+        <View style={[styles.checkbox, item.checked && { backgroundColor: c.primary, borderColor: c.primary }]}>{item.checked && <Check size={18} color="#fff" />}</View>
+      </Pressable>
+      <View style={{ flex: 1, gap: 5 }}><Text style={[ui.strong, item.checked && { textDecorationLine: 'line-through', color: c.muted }]}>{name}</Text>
+        <Text style={ui.note}>{formatQuantity(item.quantityMilli)} {unitLabel(item.unit)} · {total === null ? t('app.noPrice') : item.priceKind === 'estimated' ? t('app.estimatedAmount', { amount: formatMoney(total) }) : formatMoney(total)}</Text>
+        {!!note && <Text style={ui.note}>{note}</Text>}
+      </View>
+    </View>
+    <View style={styles.itemActions}><IconButton label={t('app.editItemA11y', { name })} icon={Pencil} onPress={() => onEdit(item)} disabled={busy} />
+      <IconButton label={t('app.deleteItemA11y', { name })} icon={Trash2} onPress={() => onDelete(item)} danger disabled={busy} /></View>
+  </View>;
+}
+
+const styles = StyleSheet.create({
+  quickEntry: { minHeight: 54, borderRadius: 14, borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, flexDirection: 'row', alignItems: 'center', gap: 9, paddingHorizontal: 14 },
+  quickText: { flex: 1, fontFamily: f.medium, fontSize: 14, lineHeight: 22, color: c.muted },
+  budget: { backgroundColor: '#F6D66B', borderColor: '#E4C452', borderRadius: 15, paddingVertical: 11 },
+  compactBudget: { paddingHorizontal: 14, paddingVertical: 7 },
+  compactBudgetValue: { fontSize: 22, lineHeight: 29, letterSpacing: -.5, flexShrink: 1, textAlign: 'right' },
+  budgetEdit: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  listPreview: { borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, borderRadius: 15, padding: 16, flexDirection: 'row', alignItems: 'center', gap: 12 },
+  listPreviewIcon: { backgroundColor: c.soft, width: 42, height: 45, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
+  mealCard: { backgroundColor: '#F5E9C6', borderRadius: 16, flexDirection: 'row', alignItems: 'center', paddingLeft: 17, paddingRight: 6, paddingVertical: 15, gap: 8 },
+  between: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
+  emptyTitle: { fontFamily: f.extra, fontSize: 24, lineHeight: 32, letterSpacing: -.7, color: c.deep },
+  footerNote: { marginTop: 25, flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
+  listSelector: { minHeight: 52, backgroundColor: '#F8EDCA', borderRadius: 14, padding: 12, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  listActions: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', gap: 8, marginBottom: 8 },
+  textAction: { minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 7, paddingHorizontal: 3 },
+  listCount: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 9, marginTop: 17, marginBottom: 12 },
+  budgetValue: { fontFamily: f.extra, color: c.deep, fontSize: 29, lineHeight: 38, letterSpacing: -.8 },
+  budgetRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 13, paddingTop: 13, borderTopWidth: 1, borderTopColor: '#DCDDC5' },
+  category: { fontFamily: f.bold, color: c.deep, fontSize: 14, lineHeight: 22, marginBottom: 8 },
+  item: { paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: c.line }, itemTop: { flexDirection: 'row', alignItems: 'flex-start', gap: 2 },
+  checkboxTarget: { width: 44, minHeight: 44, alignItems: 'center', paddingTop: 2 }, checkbox: { width: 25, height: 25, borderRadius: 8, borderWidth: 1.5, borderColor: '#748268', alignItems: 'center', justifyContent: 'center' },
+  itemActions: { flexDirection: 'row', justifyContent: 'flex-end', marginTop: 2 },
+});

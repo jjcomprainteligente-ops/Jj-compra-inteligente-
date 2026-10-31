@@ -1,0 +1,13 @@
+{
+  "registryChecks": {
+    "deepmergeLatest": "4.3.1",
+    "expoCompatibleRange": "~58.0.21",
+    "expoNewestCompatible": "58.0.21",
+    "expoCliCompatibleRange": "^58.1.17",
+    "expoCliNewestCompatible": "58.1.17",
+    "expoCliZodRange": "^3.25.76"
+  },
+  "status": "No compatible corrected release identified by registry query; dependency files unchanged.",
+  "risk": "Build and development tooling chain. No identified application-input path; not a guarantee of absence.",
+  "avoid": "Do not run npm audit fix --force (suggested downgrade to Expo 51) or override Zod across major versions without validation."
+}

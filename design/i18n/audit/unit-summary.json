@@ -1,0 +1,13 @@
+{
+  "command": "npm run check",
+  "typecheckExitCode": 0,
+  "vitest": {
+    "files": 16,
+    "passed": 496,
+    "failed": 0,
+    "startTime": "2026-10-31T14:42:05Z",
+    "durationSeconds": 3.87
+  },
+  "method": "Summary captured from executed command output; complete browser results recorded separately",
+  "sourceChangesAfterCheck": "Documentation and package script aliases only; no client code, dependencies or test logic changed."
+}

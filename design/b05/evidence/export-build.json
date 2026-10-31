@@ -1,0 +1,25 @@
+{
+  "command": "EXPO_NO_TELEMETRY=1 EXPO_OFFLINE=1 __UNSAFE_EXPO_HOME_DIRECTORY=/tmp/jj-expo-b05 expo export --platform all --max-workers 2",
+  "exitCode": 0,
+  "artifacts": [
+    {
+      "platform": "ios",
+      "path": "dist/_expo/static/js/ios/index-0f8391d8578788bbccb7da70e049f99b.hbc",
+      "bytes": 4279679,
+      "sha256": "b43b3594dabae554daf19ef963aeb51728cb4b77e30e17c145e833ac34e6e9d0"
+    },
+    {
+      "platform": "android",
+      "path": "dist/_expo/static/js/android/index-79be1c7bac4ebf0eac017f46a671aa0d.hbc",
+      "bytes": 4285618,
+      "sha256": "b9ca1f61ddb72ea253237bc23061c8c2c5ea6311c3ea93d0ba8c2485587d52b5"
+    },
+    {
+      "platform": "web",
+      "path": "dist/_expo/static/js/web/index-8af4e805238fbf59fa096d0478793882.js",
+      "bytes": 3042185,
+      "sha256": "925616c882beb201f1afb184285f15a4a0365c756879924c1f54801546ba6a34"
+    }
+  ],
+  "limits": "JavaScript/Hermes exports, not IPA/APK or native device validation"
+}

@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "JJ · B01 · Propuestas visuales",
+    "slug": "jj-b01-identidad-visual",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#F7FAF6",
+    "web": { "name": "JJ Compra Inteligente · B01", "themeColor": "#167347" }
+  }
+}
