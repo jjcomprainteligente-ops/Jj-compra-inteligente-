@@ -238,3 +238,10 @@ Entrega: docs/I18N_ENTREGA_Y_AUDITORIA.md. No se certifica ausencia absoluta de 
 - **DIFERENCIA CONFIRMADA:** la app actual mantiene M3 provisional y Verde Mercado anterior. No coincide con GPT-6 V2. Las alternativas antiguas B01 «V2 Verde Noche» son una referencia distinta.
 - **DEPENDENCIA ABIERTA:** originales GPT-6 V2/Premium no encontrados en el entorno ni sus entregas. Se solicita recuperarlos para comparar pantallas y reutilizar el logo exacto; no redibujarlo ni declarar fidelidad desde el recuerdo.
 - **LÍMITES VIGENTES:** no se añaden integraciones ni se convierte el marcado de productos en pagos confirmados. Siguen abiertos los avisos de dependencias y la validación física iPhone/Safari.
+
+
+### Cierre comprobado G00 — 31/10/2026
+
+GitHub confirma el commit de importación `732d1817f3b856384e98191dd82cb92241011271` en `main`. Clon independiente: instalación, TypeScript, 496 pruebas y exportación web correctos. La preview staging `dpl_Ewmo9hTVBK4WTkkjagSscWy5qj4g` incluye metadatos del mismo commit y pasó comprobaciones remotas en cuatro idiomas y 23 recursos/URLs. Fuentes de ejecución idénticas permiten reutilizar la exportación i18n auditada; no se presenta como una nueva corrección visual ni como un binario recompilado idéntico a la exportación web nueva. Informes en `github/G00_ENTREGA_Y_AUDITORIA.md` y `design/github-g00/`.
+
+La dependencia pendiente para V00/V01 es recuperar los originales V2; el diagnóstico no autoriza inventar la marca ni certificar dieciséis pantallas terminadas. Los riesgos técnicos/nativos anteriores permanecen registrados.

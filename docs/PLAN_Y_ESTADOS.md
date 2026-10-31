@@ -223,3 +223,12 @@ El propietario ordena copiar el código al repositorio `jjcomprainteligente-ops/
 | V01/V02 — Corrección visual | PENDIENTE DE REFERENCIAS | No aplicar una interpretación nueva del diseño. Preservar idiomas, lógica y datos; cotejar originales antes de corregir. |
 
 GitHub pasa a ser la fuente principal; Vercel conserva su función de preview. La fidelidad V2, Safari/iPhone físico y avisos de dependencias no quedan resueltos por esta importación.
+
+
+## 31/10/2026 — Cierre G00 verificado en GitHub y preview
+
+- **G00 VERIFICADO:** código visible en `main`, commit `732d1817f3b856384e98191dd82cb92241011271`; tres commits previos preservados. Clon independiente: npm ci, TypeScript, 496 pruebas y exportación web correctos; manifiesto 85/85.
+- **PREVIEW VERIFICADA:** despliegue staging `dpl_Ewmo9hTVBK4WTkkjagSscWy5qj4g`, metadatos del commit de origen, cuatro idiomas y 23 recursos/URLs correctos. Reutiliza el artefacto i18n conservado con fuentes runtime idénticas; no incorpora cambios visuales.
+- **AUDITORÍA DE ENTREGA:** revisión de importación, secretos/artefactos excluidos, conservación, reproducción y prueba remota en `github/G00_ENTREGA_Y_AUDITORIA.md`, con evidencia `design/github-g00/`.
+- **V00 BLOQUEADO EN RECUPERACIÓN DE ORIGINALES:** diagnóstico de diferencias completado; se han solicitado de nuevo los adjuntos V2/Premium. V01/V02 pendientes de esos archivos. No se etiqueta la preview actual como V2.
+- **ABIERTOS:** avisos de dependencias, iPhone/Safari físico y separación de pagos confirmados. Sin nuevas funciones comerciales ni servicios.

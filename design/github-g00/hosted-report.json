@@ -1,0 +1,233 @@
+{
+  "origin": "https://jj-compra-inteligente-7uot2tons-cmj2hwhc6b-1051.vercel.app",
+  "startedAt": "2026-10-31T21:00:16.802Z",
+  "status": "passed",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "method": "Chromium mobile viewport; HTTPS requests use Playwright Node client and configured CA with TLS verification enabled. No browser trust-store change or physical-iPhone claim.",
+  "languageChecks": [
+    {
+      "language": "es",
+      "manualPreferenceAfterReload": "en",
+      "passed": true,
+      "checks": [
+        "Device language and welcome",
+        "Four translated tabs",
+        "Local list save with secure coordination",
+        "Recipe review and cancellation without shopping changes",
+        "Profile language preference persists over device language and reload",
+        "Business documents unchanged by language change",
+        "Exact audited bundle and font resources"
+      ]
+    },
+    {
+      "language": "en",
+      "manualPreferenceAfterReload": "de",
+      "passed": true,
+      "checks": [
+        "Device language and welcome",
+        "Four translated tabs",
+        "Local list save with secure coordination",
+        "Recipe review and cancellation without shopping changes",
+        "Profile language preference persists over device language and reload",
+        "Business documents unchanged by language change",
+        "Exact audited bundle and font resources"
+      ]
+    },
+    {
+      "language": "de",
+      "manualPreferenceAfterReload": "fr",
+      "passed": true,
+      "checks": [
+        "Device language and welcome",
+        "Four translated tabs",
+        "Local list save with secure coordination",
+        "Recipe review and cancellation without shopping changes",
+        "Profile language preference persists over device language and reload",
+        "Business documents unchanged by language change",
+        "Exact audited bundle and font resources"
+      ]
+    },
+    {
+      "language": "fr",
+      "manualPreferenceAfterReload": "es",
+      "passed": true,
+      "checks": [
+        "Device language and welcome",
+        "Four translated tabs",
+        "Local list save with secure coordination",
+        "Recipe review and cancellation without shopping changes",
+        "Profile language preference persists over device language and reload",
+        "Business documents unchanged by language change",
+        "Exact audited bundle and font resources"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "/index.html",
+      "status": 200,
+      "size": 1222,
+      "sha1": "be58c6c516c3c09b104a6fee66673f8965e79472",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/assets/8b432e90d552ee87adaea8fa1244fc68",
+      "status": 200,
+      "size": 97904,
+      "sha1": "0426b4cafd7e37c81e9f881b532b572a62979335",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/ec05fba6bf4223e33f1a5402cbbf7491",
+      "status": 200,
+      "size": 98080,
+      "sha1": "ff241f166dd8c6dbcc7b7c8494037fb8358f2584",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/33e6a451fdf22e8244d143288b957ba0",
+      "status": 200,
+      "size": 97996,
+      "sha1": "a2ce9eba3156407cc1194946ee9527f89cb9ffb2",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/d7c844e508c4dbacda2468f820e0b4b4",
+      "status": 200,
+      "size": 98120,
+      "sha1": "842b52cae7d844c45f98d354cc31ffec329973d4",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "status": 200,
+      "size": 97996,
+      "sha1": "a2ce9eba3156407cc1194946ee9527f89cb9ffb2",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/bf7f0a128c232a15714167173b998717",
+      "status": 200,
+      "size": 98584,
+      "sha1": "b304b6eb02d3d2fe4e38910cb1bed8eb6dc0f917",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "status": 200,
+      "size": 98584,
+      "sha1": "b304b6eb02d3d2fe4e38910cb1bed8eb6dc0f917",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "status": 200,
+      "size": 98080,
+      "sha1": "ff241f166dd8c6dbcc7b7c8494037fb8358f2584",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "status": 200,
+      "size": 97904,
+      "sha1": "0426b4cafd7e37c81e9f881b532b572a62979335",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/bd3f6311d61e60094df4c83d68779675",
+      "status": 200,
+      "size": 98004,
+      "sha1": "b51db9724637aa7892d84926399697ca3439fc2a",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "status": 200,
+      "size": 97872,
+      "sha1": "4bb92a973e093388351a5fee8969f8a34b49feb2",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/3b88abd10509dbd972f179a2fc60d3bf",
+      "status": 200,
+      "size": 97872,
+      "sha1": "4bb92a973e093388351a5fee8969f8a34b49feb2",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "status": 200,
+      "size": 98004,
+      "sha1": "b51db9724637aa7892d84926399697ca3439fc2a",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "status": 200,
+      "size": 98120,
+      "sha1": "842b52cae7d844c45f98d354cc31ffec329973d4",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/_expo/static/js/web/index-4ca7f8849ec212e4a68386b7f6b92e0e.js",
+      "status": 200,
+      "size": 3325857,
+      "sha1": "a2b1ca72372ffcbdc438116305ca2b1b4af25bef",
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/400Regular/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "status": 200,
+      "size": 98004,
+      "sha1": "b51db9724637aa7892d84926399697ca3439fc2a",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/700Bold/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "status": 200,
+      "size": 97996,
+      "sha1": "a2ce9eba3156407cc1194946ee9527f89cb9ffb2",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/300Light/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "status": 200,
+      "size": 97904,
+      "sha1": "0426b4cafd7e37c81e9f881b532b572a62979335",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/600SemiBold/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "status": 200,
+      "size": 98120,
+      "sha1": "842b52cae7d844c45f98d354cc31ffec329973d4",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/200ExtraLight/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "status": 200,
+      "size": 97872,
+      "sha1": "4bb92a973e093388351a5fee8969f8a34b49feb2",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/500Medium/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "status": 200,
+      "size": 98080,
+      "sha1": "ff241f166dd8c6dbcc7b7c8494037fb8358f2584",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/800ExtraBold/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "status": 200,
+      "size": 98584,
+      "sha1": "b304b6eb02d3d2fe4e38910cb1bed8eb6dc0f917",
+      "contentType": "font/ttf"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-10-31T21:00:37.906Z"
+}

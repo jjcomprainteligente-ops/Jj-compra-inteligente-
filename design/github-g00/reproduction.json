@@ -1,0 +1,49 @@
+{
+  "commit": "732d1817f3b856384e98191dd82cb92241011271",
+  "sourceStatus": "",
+  "files": [
+    {
+      "path": "_expo/static/js/web/index-2f84154acc631ede41b9fa8e3b565f41.js",
+      "bytes": 3323975,
+      "sha256": "1cb5c33c9be6d2dee6704253f61f99d0fdb7701b04bb2601b07ed6d82d463c10"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/200ExtraLight/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "bytes": 97872,
+      "sha256": "df775e16d1a1eb117045137b60593f00f57af63e96d65a3eaccc3373be046411"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/300Light/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "bytes": 97904,
+      "sha256": "0caaec24441fc52f3f855ec3f8616b14835f192277ab23b2f87d7b26f74c8951"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/400Regular/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "bytes": 98004,
+      "sha256": "b5e3105945aac85a820133ec66b516a4514e6fb242b31f2696b15adf43683d46"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/500Medium/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "bytes": 98080,
+      "sha256": "107539ab6cbcd87601737a1a37ca3693fc7b32cb3939550a88ac583e1cedbd6d"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/600SemiBold/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "bytes": 98120,
+      "sha256": "7efdba6b327f92764469e8c2d21f9db8638f9e7b4423cb7d65006f8e8d08024c"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/700Bold/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "bytes": 97996,
+      "sha256": "42f1d9457585365aff770da0605923d5adceb8a390761c031a60ae076e93b0db"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/800ExtraBold/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "bytes": 98584,
+      "sha256": "3182b364667e58b58a7ff05a91abfebdd927f1fedbb702df3fb91d20cee23e4f"
+    }
+  ],
+  "unitTestsPassed": 496,
+  "unitFilesPassed": 16,
+  "manifestMatched": 85
+}

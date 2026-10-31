@@ -1,4 +1,7 @@
 # Dirección de arte y sistema visual | JJ Compra Inteligente
+
+> **Prioridad vigente — 31/10/2026:** el propietario solicita que la implementación corresponda a la maqueta GPT-6 V2 / Verde Mercado Premium entregada posteriormente. La app actual todavía conserva V3/M3 y no cumple esa correspondencia. Consultar [conciliación V2](V2_CONCILIACION_VISUAL_2026-10-31.md): los originales y el logo exacto deben recuperarse antes de corregir la UI. Las decisiones y alternativas antiguas que siguen se conservan como antecedentes, no como sustituto de GPT-6 V2. «V2 Verde Noche» del estudio B01 es una propuesta diferente.
+
 **Estado vigente:** V3 Verde Mercado seleccionada; M3 provisional, logotipo definitivo pendiente. | **Prioridad de la fase:** máxima
 
 ## Selección del propietario — 2026-10-29
