@@ -1,5 +1,8 @@
 # Preview V2 verificada — 06/11/2026
 
+> **Nota de alcance:** publicación y pruebas remotas correctas de la aplicación existente; preparación total V2 incompleta. Consultar la [auditoría integral](AUDITORIA_COMPLETITUD_V2.md).
+
+
 Estado: READY, destino staging, proyecto existente JJ Compra Inteligente. No se promociona producción ni se retira su protección.
 
 - Despliegue: `dpl_FEo2wA8AwT4zmcZeGFxSBWpgaL7A`.

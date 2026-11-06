@@ -1,5 +1,8 @@
 # JJ Compra Inteligente
 
+> **Verificación integral posterior:** la preparación completa de los seis adjuntos sigue pendiente. La app no cubre todas las 16 pantallas ni los nueve estados. Véase [auditoría de completitud](docs/AUDITORIA_COMPLETITUD_V2.md), con requisito, código, brecha y criterio de cierre. Los resultados de pruebas previos se conservan y no acreditan por sí solos la totalidad del encargo.
+
+
 > **Estado actualizado 06/11/2026:** base visual GPT-6 V2 implementada sobre las pantallas existentes, con logo original y cuatro idiomas. La [entrega y auditoría V01/V02](docs/V2_ENTREGA_V01_V02_Y_AUDITORIA.md) contiene las pruebas y límites. Los originales ya están [recuperados](docs/V2_REFERENCIAS_RECUPERADAS.md). Los estados históricos siguientes se conservan como antecedentes.
 
 

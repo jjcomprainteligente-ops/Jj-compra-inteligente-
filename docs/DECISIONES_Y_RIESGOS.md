@@ -260,3 +260,10 @@ La dependencia pendiente para V00/V01 es recuperar los originales V2; el diagnó
 ## 06/11/2026 — Publicación V2 comprobada
 
 Preview staging READY `dpl_FEo2wA8AwT4zmcZeGFxSBWpgaL7A`, código `3dbcff9435a6d2aad97e7766e2e38d0fabe790c7`, [PR #1](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/1). Cuatro idiomas, 27 recursos/URLs y 12 capturas remotas correctos; JavaScript decodificado y logo coinciden en hashes. Se conserva protección y producción. Enlace temporal fuera de Git. Detalles en `V2_PUBLICACION_VERIFICADA.md`. Estado de V01/V02: EN REVISIÓN VISUAL; avisos de dependencias, pruebas físicas y módulos futuros permanecen abiertos.
+
+
+## Verificación de totalidad solicitada por el propietario
+
+La aplicación publicada no completa todo el paquete recibido. Siete pantallas y cinco estados carecen de preparación; Presupuesto, receta e ingredientes no corresponden a subpantallas canónicas completas. Se registran además deshacer manual incompleto y detección manual de duplicados limitada a misma unidad. Las pruebas existentes son válidas en su alcance; 120 capturas corresponden a 10 escenas, no a 25 objetivos. Esta revisión solo incorpora documentación y corrige el estado de completitud, sin alterar la app.
+
+No se cuentan como trabajo realizado recursos de marca no preparados, ni se interpreta la petición de totalidad como autorización para fingir pagos, permisos, fuentes comerciales, hogares o 3D aprobado. Los requisitos, referencias y criterios pendientes están en `AUDITORIA_COMPLETITUD_V2.md`.

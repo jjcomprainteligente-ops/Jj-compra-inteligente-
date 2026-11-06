@@ -244,3 +244,20 @@ La auditoría de la pareja está en `V2_ENTREGA_V01_V02_Y_AUDITORIA.md`; preview
 ## 06/11/2026 — Publicación V2 comprobada
 
 Preview staging READY `dpl_FEo2wA8AwT4zmcZeGFxSBWpgaL7A`, código `3dbcff9435a6d2aad97e7766e2e38d0fabe790c7`, [PR #1](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/1). Cuatro idiomas, 27 recursos/URLs y 12 capturas remotas correctos; JavaScript decodificado y logo coinciden en hashes. Se conserva protección y producción. Enlace temporal fuera de Git. Detalles en `V2_PUBLICACION_VERIFICADA.md`. Estado de V01/V02: EN REVISIÓN VISUAL; avisos de dependencias, pruebas físicas y módulos futuros permanecen abiertos.
+
+
+## Verificación integral de los seis adjuntos — baseline 416c787
+
+**Estado del encargo completo: PARCIAL / SIN CIERRE.** La revisión anterior de V01/V02 abarca las vistas que ya existían. Su publicación y 128pruebas correctas no completan por sí solas 16pantallas y 9 estados. Auditoría trazable: `AUDITORIA_COMPLETITUD_V2.md`; diferencias visuales: `AUDITORIA_CORRESPONDENCIA_VISUAL_V2.md`.
+
+| Área | Estado comprobado | Cierre pendiente |
+|---|---|---|
+| Referencias y logo horizontal | Conservados y verificados | Mantener originales; derivados y demo de marca tienen etapas separadas. |
+| Pantallas canónicas | 6 vistas centrales presentes, 2 paneles parciales, 1 presupuesto en formulario, 7 ausentes | Completar rutas y composición: Buscar producto, Detalle producto, Voz, Escáner, Mis tiendas, Historial y Notificaciones; Presupuesto completo; receta/ingredientes como páginas. |
+| Estados B03.14 | 4 variantes parciales, 5 ausentes | Preparación ejecutable de los nueve, acciones útiles y pruebas por estado; no simular servicios ni permisos. |
+| Datos y confirmación | Listas/menús/comparadores locales útiles | Deshacer altas/ediciones manuales, revisión manual de equivalencias g/kg y registro separado de gastos cuando se implemente Historial. |
+| Evidencia | 128 pruebas web y 120 capturas de 10 escenas existentes | Matriz 16+9 con pruebas/capturas de cada objetivo en cuatro idiomas; QA física y accesibilidad pendientes. |
+| Marca adicional | PNG horizontal estático | Isotipo/iconos/variantes/vector/tamaños/movimiento y demo aislada según B01-L, con aprobación antes de integrar cambios de marca/3D. |
+| B07/IA/B09 | Condicionados o bloqueados | No activar cuentas, sincronización, backend IA, precios comerciales ni checkout sin su alcance, permisos y validación. |
+
+Orden de entregas pequeñas para completar la preparación: A) navegación/subpantallas locales, campana y tiendas/presupuesto/historial/notificaciones; B) búsqueda/ficha/entradas manuales y nueve estados; auditoría A+B; C) receta/ingredientes completos y CTA de Menús; D) cotejo visual/idiomas/cobertura 25 y criterios de aceptación; auditoría C+D. Las funciones de hardware/servicios y marca se tratan en sus bloques, sin declararlas listas por preparar la apariencia.

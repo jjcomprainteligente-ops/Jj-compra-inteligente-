@@ -1,5 +1,8 @@
 # V2 — V01/V02: identidad y pantallas existentes
 
+> **Alcance corregido tras verificación integral:** esta entrega es parcial respecto al paquete completo. La [matriz de completitud](AUDITORIA_COMPLETITUD_V2.md) identifica siete pantallas ausentes, Presupuesto/receta/ingredientes parciales y cinco estados no preparados. La preview y sus pruebas no constituyen aceptación de las 16 vistas y nueve estados.
+
+
 > **Cierre:** preview publicada y comprobada; [publicación verificada](V2_PUBLICACION_VERIFICADA.md). Las notas de preparación posteriores se conservan como historia.
 
 Fecha: 06/11/2026. Estado: código y regresiones comprobados; preview en preparación y revisión visual del propietario pendiente.
