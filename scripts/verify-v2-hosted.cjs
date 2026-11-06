@@ -135,6 +135,10 @@ async function readPackage() {
 
 async function assertRenderedAssets(page) {
   const loaded = await page.evaluate(async () => {
+    // Browsers defer unused font faces; exercise every declared app family,
+    // including weights that the welcome screen does not render yet.
+    const families = ['Manrope_400Regular', 'Manrope_500Medium', 'Manrope_600SemiBold', 'Manrope_700Bold', 'Manrope_800ExtraBold'];
+    await Promise.all(families.map(family => document.fonts.load('16px "' + family + '"')));
     await document.fonts.ready;
     return [...document.fonts].filter(face => face.status === 'loaded').map(face => face.family.replace(/["']/g, ''));
   });

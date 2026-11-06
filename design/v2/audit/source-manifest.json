@@ -406,8 +406,8 @@
   },
   {
     "file": "scripts/verify-v2-hosted.cjs",
-    "bytes": 22974,
-    "sha256": "a38c385ccd21aaf6245bac67558bd079f1a656132474e18dcd889e060d401cb3"
+    "bytes": 23346,
+    "sha256": "de824aa041c20879032328bc251f4e9a445d003906845458c3ce945dc242440e"
   },
   {
     "file": "scripts/verify-v2.cjs",

@@ -1,5 +1,7 @@
 # V2 — V01/V02: identidad y pantallas existentes
 
+> **Cierre:** preview publicada y comprobada; [publicación verificada](V2_PUBLICACION_VERIFICADA.md). Las notas de preparación posteriores se conservan como historia.
+
 Fecha: 06/11/2026. Estado: código y regresiones comprobados; preview en preparación y revisión visual del propietario pendiente.
 
 ## Resultado y fuente de verdad
