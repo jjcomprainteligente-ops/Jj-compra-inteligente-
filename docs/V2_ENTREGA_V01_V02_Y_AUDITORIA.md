@@ -55,3 +55,10 @@ Siguen pendientes Safari/iPhone físico, VoiceOver/DynamicType, teclado y safe a
 ## Continuación
 
 Entregar preview remota verificada y PR de revisión visual. Después resolver diferencias concretas aprobadas y continuar las pantallas ausentes en bloques separados, con auditoría después de cada pareja. No activar funciones futuras desde una apariencia de maqueta.
+
+
+## Preparación del transporte de la preview
+
+El código está en GitHub, rama `codex/v2-visual`, PR#1. La transferencia directa del JavaScript grande no confirmó su recepción dentro del límite de espera. El intento de construir desde Git terminó con `git_info_fail`; se conserva el despliegue fallido `dpl_2w9PsFKZqRpZprbdbXvFz9tKMfab` como diagnóstico, sin cambiar producción.
+
+Se prepara el mismo JavaScript mediante compresión HTTP Brotli:3.350.985bytes se transfieren como385.119bytes, sin cargador, eval ni modificación de la app. El contenido descomprimido conserva SHA-256 `08d9e75e028ea07d448f00b8061224cfc990506cc15f39a8c25d09070f8e690d`. El blob comprimido tiene SHA-1 `d286f24ae82d6003852c61ff0407359a42d877e3`. El paquete distingue ambas firmas; el verificador exigirá las cabeceras adecuadas, el hash del contenido descomprimido y los recorridos remotos. La publicación no se da por verificada por aceptar los blobs.

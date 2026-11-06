@@ -4,6 +4,7 @@ const { chromium, expect } = require('@playwright/test');
 const fs = require('node:fs/promises');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const zlib = require('node:zlib');
 
 const brand = 'JJ Compra Inteligente';
 const approvedLogoSha256 = 'ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596';
@@ -97,6 +98,13 @@ async function readPackage() {
   if (!knownBundle || !/^_expo\/static\/js\/web\/[^/]+\.js$/.test(bundle.file) ||
     files.size === 0 || [...files.keys()].filter(file => file.endsWith('.js')).length !== 1 ||
     ['size', 'sha1', 'sha256'].some(key => knownBundle[key] !== bundle[key])) throw new Error('Invalid web bundle manifest.');
+  if (bundle.contentEncoding !== 'br' || !Number.isSafeInteger(bundle.decodedSize) || bundle.decodedSize <= 0 || bundle.decodedSize > 32 * 1024 * 1024 ||
+    !/^[a-f0-9]{40}$/.test(bundle.decodedSha1 ?? '') || !/^[a-f0-9]{64}$/.test(bundle.decodedSha256 ?? '')) throw new Error('Invalid Brotli bundle metadata.');
+  const encodedBundle = await fs.readFile(await containedFile(preview, bundle.file));
+  const decodedBundle = zlib.brotliDecompressSync(encodedBundle, { maxOutputLength: bundle.decodedSize });
+  if (decodedBundle.length !== bundle.decodedSize || hash(decodedBundle, 'sha1') !== bundle.decodedSha1 || hash(decodedBundle, 'sha256') !== bundle.decodedSha256) {
+    throw new Error('Brotli package does not preserve the expected application JavaScript.');
+  }
   const assets = [...files.values()].filter(file => file.file.startsWith('assets/'));
   if (manifest.assets.length !== assets.length || new Set(manifest.assets.map(file => file.file)).size !== assets.length ||
     manifest.assets.some(file => !files.has(file.file) || !file.file.startsWith('assets/') || ['size', 'sha1', 'sha256'].some(key => files.get(file.file)[key] !== file[key]))) {
@@ -107,6 +115,12 @@ async function readPackage() {
   if (!manifest.logo || !logos.some(file => file.file === manifest.logo.file &&
     ['size', 'sha1', 'sha256'].every(key => file[key] === manifest.logo[key]))) throw new Error('The canonical logo manifest is inconsistent.');
   const config = JSON.parse(await fs.readFile(await containedFile(preview, 'vercel.json'), 'utf8'));
+  const bundleHeaders = config.headers?.find(rule => rule.source === '/' + bundle.file)?.headers;
+  if (!Array.isArray(bundleHeaders) || !bundleHeaders.some(header => header.key.toLowerCase() === 'content-encoding' && header.value === 'br') ||
+      !bundleHeaders.some(header => header.key.toLowerCase() === 'content-type' && /^application\/javascript(?:;|$)/i.test(header.value)) ||
+      !bundleHeaders.some(header => header.key.toLowerCase() === 'vary' && header.value.toLowerCase().split(',').map(value => value.trim()).includes('accept-encoding'))) {
+    throw new Error('The exact bundle path must declare its Brotli JavaScript transport headers.');
+  }
   if (!Array.isArray(config.rewrites) || config.rewrites.length !== 7 || new Set(config.rewrites.map(rewrite => rewrite.source)).size !== 7) {
     throw new Error('Expected seven distinct packaged font rewrites.');
   }
@@ -145,13 +159,19 @@ async function verifyResources(context, origin, packaged, report) {
       const response = await context.request.get(origin + file.path, { timeout: 45000 });
       const bytes = await response.body();
       const headers = response.headers();
-      if (response.status() !== 200 || bytes.length !== file.size || hash(bytes, 'sha1') !== file.sha1 || hash(bytes, 'sha256') !== file.sha256) {
+      const isBundle = file.file === packaged.bundle.file;
+      const expected = isBundle ? { size: packaged.bundle.decodedSize, sha1: packaged.bundle.decodedSha1, sha256: packaged.bundle.decodedSha256 } : file;
+      if (isBundle && (headers['content-encoding']?.toLowerCase().trim() !== 'br' || !/^application\/javascript(?:;|$)/i.test(headers['content-type'] ?? ''))) {
+        throw new Error('Expected Brotli JavaScript response headers are missing: ' + file.path);
+      }
+      if (response.status() !== 200 || bytes.length !== expected.size || hash(bytes, 'sha1') !== expected.sha1 || hash(bytes, 'sha256') !== expected.sha256) {
         throw new Error('Published file differs from its package: ' + file.path);
       }
       if (headers['x-content-type-options']?.toLowerCase() !== 'nosniff' || !headers['x-robots-tag']?.toLowerCase().includes('noindex')) {
         throw new Error('Expected preview response headers are missing: ' + file.path);
       }
-      return { path: file.path, status: response.status(), size: bytes.length, sha1: file.sha1, sha256: file.sha256, contentType: headers['content-type'] };
+      return { path: file.path, status: response.status(), size: bytes.length, sha1: expected.sha1, sha256: expected.sha256,
+        ...(isBundle ? { contentEncoding: 'br', packagedTransferSize: file.size, packagedTransferSha1: file.sha1, packagedTransferSha256: file.sha256 } : {}), contentType: headers['content-type'] };
     }));
     for (const result of batch) {
       if (result.status === 'rejected') throw result.reason;
@@ -176,7 +196,7 @@ async function verifyResources(context, origin, packaged, report) {
   const report = { schemaVersion: 1, origin, source: packaged.manifest.source, bundle: packaged.bundle,
     expectedLogoSha256: packaged.manifest.expectedLogoSha256,
     startedAt: new Date().toISOString(), status: 'running', viewport: { width: 390, height: 844 },
-    method: 'Chromium mobile viewport; Node HTTPS responses use the inherited proxy and CA with TLS verification enabled. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.',
+    method: 'Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.',
     languageChecks: [], files: [], errors: [] };
   let browser;
   try {
@@ -200,14 +220,22 @@ async function verifyResources(context, origin, packaged, report) {
         try {
           const response = await route.fetch({ timeout: 45000 });
           const pathname = new URL(route.request().url()).pathname;
+          const bytes = await response.body();
           if (response.status() === 200 && (pathname === '/' + packaged.bundle.file || packaged.logos.some(logo => pathname === '/' + logo.file))) {
-            const bytes = await response.body();
-            const expected = pathname === '/' + packaged.bundle.file ? packaged.bundle.sha256 : packaged.manifest.expectedLogoSha256;
+            const isBundle = pathname === '/' + packaged.bundle.file;
+            const expected = isBundle ? packaged.bundle.decodedSha256 : packaged.manifest.expectedLogoSha256;
+            const headers = response.headers();
+            if (isBundle && (headers['content-encoding']?.toLowerCase().trim() !== 'br' || !/^application\/javascript(?:;|$)/i.test(headers['content-type'] ?? ''))) errors.push('Unexpected bundle transport headers: ' + pathname);
+            if (isBundle && bytes.length !== packaged.bundle.decodedSize) errors.push('Unexpected decoded bundle size: ' + pathname);
             if (hash(bytes, 'sha256') !== expected) errors.push('Unexpected deployed asset hash: ' + pathname);
             else if (pathname === '/' + packaged.bundle.file) bundleVerified = true;
             else logoVerified = true;
           }
-          await route.fulfill({ response });
+          // APIResponse.body() is already decoded. Do not ask Chromium to decode it again.
+          const bridgedHeaders = { ...response.headers() };
+          delete bridgedHeaders['content-encoding'];
+          delete bridgedHeaders['content-length'];
+          await route.fulfill({ response, headers: bridgedHeaders, body: bytes });
         } catch (error) { errors.push(safeMessage(error)); await route.abort().catch(() => {}); }
       });
       try {

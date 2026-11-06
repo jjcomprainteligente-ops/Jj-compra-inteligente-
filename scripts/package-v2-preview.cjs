@@ -3,6 +3,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
+const zlib = require('node:zlib');
 const { execFileSync } = require('node:child_process');
 
 const project = path.resolve(__dirname, '..');
@@ -88,17 +89,30 @@ function main() {
     prepared.set('assets/licenses/' + name, fs.readFileSync(filename));
   }
   const template = JSON.parse(fs.readFileSync(path.join(project, 'deployment/preview/vercel.json'), 'utf8'));
-  const headers = template.headers;
-  if (!Array.isArray(headers) || !headers.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Robots-Tag' && header.value === 'noindex, nofollow')) ||
-      !headers.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Content-Type-Options' && header.value === 'nosniff'))) {
+  const baseHeaders = template.headers;
+  if (!Array.isArray(baseHeaders) || !baseHeaders.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Robots-Tag' && header.value === 'noindex, nofollow')) ||
+      !baseHeaders.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Content-Type-Options' && header.value === 'nosniff'))) {
     throw new Error('The reviewed preview security headers are required.');
   }
-  prepared.set('vercel.json', Buffer.from(JSON.stringify({ $schema: 'https://openapi.vercel.sh/vercel.json', rewrites, headers }, null, 2) + '\n'));
-  const files = [...prepared].sort(([a], [b]) => a.localeCompare(b)).map(([file, bytes]) => ({ file, size: bytes.length, ...digests(bytes) }));
   const html = prepared.get('index.html').toString('utf8');
   const entry = html.match(/<script\b[^>]*\bsrc=["']\/(\_expo\/static\/js\/web\/[^"']+\.js)["']/i)?.[1];
-  const bundle = files.find(file => file.file === entry);
-  if (!bundle) throw new Error('The web entry bundle referenced by index.html is missing.');
+  const decoded = entry && prepared.get(entry);
+  if (!decoded || [...prepared.keys()].filter(file => file.endsWith('.js')).length !== 1) throw new Error('One reviewed web entry bundle referenced by index.html is required.');
+  if (decoded.length === 0 || decoded.length > 32 * 1024 * 1024) throw new Error('Review the unexpected web bundle size before packaging.');
+  // Only transport encoding changes. The export and application JavaScript stay untouched.
+  const encoded = zlib.brotliCompressSync(decoded, { params: { [zlib.constants.BROTLI_PARAM_QUALITY]: 11 } });
+  if (!zlib.brotliDecompressSync(encoded, { maxOutputLength: decoded.length }).equals(decoded)) throw new Error('Brotli transport did not preserve the reviewed JavaScript.');
+  const decodedDigests = digests(decoded);
+  prepared.set(entry, encoded);
+  const headers = [...baseHeaders, { source: '/' + entry, headers: [
+    { key: 'Content-Encoding', value: 'br' },
+    { key: 'Content-Type', value: 'application/javascript; charset=utf-8' },
+    { key: 'Vary', value: 'Accept-Encoding' },
+  ] }];
+  prepared.set('vercel.json', Buffer.from(JSON.stringify({ $schema: 'https://openapi.vercel.sh/vercel.json', rewrites, headers }, null, 2) + '\n'));
+  const files = [...prepared].sort(([a], [b]) => a.localeCompare(b)).map(([file, bytes]) => ({ file, size: bytes.length, ...digests(bytes) }));
+  const bundle = { ...files.find(file => file.file === entry), contentEncoding: 'br', decodedSize: decoded.length,
+    decodedSha1: decodedDigests.sha1, decodedSha256: decodedDigests.sha256 };
   const logoFiles = files.filter(file => /^assets\/assets\/brand\/jj-logo-horizontal\.[a-f0-9]{32}\.png$/.test(file.file));
   if (logoFiles.length !== 1 || logoFiles[0].sha256 !== expectedLogoSha256) throw new Error('The approved, unaltered V2 logo is required.');
   const logo = logoFiles[0];
@@ -122,7 +136,8 @@ function main() {
   fs.writeFileSync(path.join(output, '.vercel/files.json'), JSON.stringify(files.map(({ file, size, sha1 }) => ({ file, size, sha: sha1 })), null, 2) + '\n', { flag: 'wx' });
   fs.writeFileSync(path.join(output, '.vercel/manifest.json'), JSON.stringify(manifest, null, 2) + '\n', { flag: 'wx' });
   console.log(JSON.stringify({ previewDirectory: path.relative(project, output).split(path.sep).join('/'), sourceCommit: source.commit,
-    bundleSha256: bundle.sha256, logoSha256: logo.sha256, uploadFiles: manifest.upload.files, uploadBytes: manifest.upload.bytes }));
+    bundleSha256: bundle.sha256, decodedBundleSha256: bundle.decodedSha256, bundleContentEncoding: bundle.contentEncoding,
+    logoSha256: logo.sha256, uploadFiles: manifest.upload.files, uploadBytes: manifest.upload.bytes }));
 }
 
 try { main(); }

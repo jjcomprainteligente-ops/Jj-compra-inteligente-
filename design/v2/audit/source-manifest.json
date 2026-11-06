@@ -376,8 +376,8 @@
   },
   {
     "file": "scripts/package-v2-preview.cjs",
-    "bytes": 9041,
-    "sha256": "bf17f3cb852a80affa50cd2b88bc7d54ebff3f1cffa451fbb16c8c72004f059f"
+    "bytes": 10295,
+    "sha256": "a88a9aefe89c590863cf45835fbc086ed16aa5ea768aa6a10a54e6d674abd739"
   },
   {
     "file": "scripts/verify-b05-hosted.cjs",
@@ -406,8 +406,8 @@
   },
   {
     "file": "scripts/verify-v2-hosted.cjs",
-    "bytes": 20020,
-    "sha256": "dd113d8e8435c10ac12048b6400f57807dc7184ea0d9d2303e99af64c7dbdf77"
+    "bytes": 22974,
+    "sha256": "a38c385ccd21aaf6245bac67558bd079f1a656132474e18dcd889e060d401cb3"
   },
   {
     "file": "scripts/verify-v2.cjs",
