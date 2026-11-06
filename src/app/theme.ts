@@ -1,7 +1,7 @@
 export const c = {
-  background: '#FFF9EF', surface: '#FFFFFF', primary: '#167347', deep: '#214633',
-  ink: '#253D2B', muted: '#5C6651', line: '#E5E5D1', soft: '#F2F2DF',
-  accent: '#F2C94C', paleYellow: '#FAEAB1', danger: '#913C2B', dangerBg: '#FCEEE8',
+  background: '#FFF8E7', surface: '#FFFFFF', primary: '#167347', deep: '#103F2D',
+  ink: '#143E2C', muted: '#566B5F', line: '#D6E3D3', soft: '#E6F1E6',
+  accent: '#FFD24A', paleYellow: '#FFF0AE', neutral: '#F7F4EA', danger: '#913C2B', dangerBg: '#FCEEE8',
 };
 
 export const f = {

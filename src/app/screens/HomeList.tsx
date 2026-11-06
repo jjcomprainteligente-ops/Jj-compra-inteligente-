@@ -1,53 +1,61 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import { Check, ChevronDown, ChevronRight, Leaf, ListChecks, Pencil, Plus, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
-import { CATEGORIES, itemTotalCents, summarizeList, type ShoppingItem, type ShoppingList } from '../../domain/shopping';
+import { Check, ChevronDown, ChevronRight, Leaf, Pencil, Plus, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
+import { CATEGORIES, itemTotalCents, summarizeList, type Category, type ShoppingItem, type ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { translateIngredientName, translateIngredientNote } from '../../i18n/recipes';
-import { MealArt } from '../components/Illustrations';
 import { Button, Card, IconButton, Notice, Pill, Section, Title, c, f, ui } from '../components/ui';
 
 interface Props {
-  active?: ShoppingList; busy: boolean; onCreate(): void; onOpenList(): void; onMenus(): void;
-  onChoose(): void; onBudget(): void; onAdd(): void; onRename(): void; onDeleteList(): void;
+  active?: ShoppingList; busy: boolean; onCreate(): void; onOpenList(): void; onMenus(): void; onDiscover(): void;
+  onChoose(): void; onBudget(): void; onAdd(category?: Category): void; onRename(): void; onDeleteList(): void;
   onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void;
 }
 
 export function HomeScreen(p: Props) {
   const { t } = useI18n();
   const small = useWindowDimensions().height < 750;
-  const summary = p.active ? summarizeList(p.active) : undefined;
-  const primaryAction = <View style={{ marginTop: 16 }}><Button label={t(p.active ? 'app.continueShopping' : 'app.createFirstList')}
+  const primaryAction = <View style={{ marginTop: 18 }}><Button label={t(p.active ? 'app.continueShopping' : 'app.createFirstList')}
     onPress={p.active ? p.onOpenList : p.onCreate} disabled={p.busy} testID={p.active ? 'main-cta' : 'create-list'} /></View>;
+  const categories = [
+    { label: 'visual.fruit', category: 'Fruta y verdura' },
+    { label: 'visual.fresh', category: 'Lácteos y huevos' },
+    { label: 'visual.pantry', category: 'Despensa' },
+    { label: 'visual.more', category: 'Otros' },
+  ] as const;
   return <View style={ui.page}>
-    <Title kicker={t('app.homeKicker')} title={t('app.homeTitle')}
-      subtitle={t('app.homeSubtitle')} />
+    <View style={{ marginTop: 14 }}><Pill label={t('visual.localMode')} /></View>
+    <Title kicker={t('app.homeKicker')} title={t('visual.homeTitle')} />
     <Pressable accessibilityRole="button" accessibilityLabel={t('app.quickEntryA11y')} disabled={p.busy}
-      onPress={p.active ? p.onAdd : p.onCreate} style={styles.quickEntry}>
-      <Plus color={c.primary} size={20} /><Text style={styles.quickText}>{t('app.quickEntry')}</Text><ChevronRight color={c.primary} size={19} />
+      onPress={p.active ? () => p.onAdd() : p.onCreate} style={styles.quickEntry}>
+      <Text style={styles.quickText}>{t('app.quickEntry')}</Text>
+      <View style={styles.quickAdd}><Plus color={c.surface} size={22} /></View>
     </Pressable>
     {small && primaryAction}
+    <Section title={t('visual.categories')} />
+    <View style={styles.categories}>{categories.map(({ label, category }) =>
+      <Pressable key={label} accessibilityRole="button" disabled={p.busy}
+        accessibilityLabel={t(p.active ? 'visual.categoryAction' : 'app.createShoppingA11y', { category: t(label) })}
+        onPress={p.active ? () => p.onAdd(category) : p.onCreate} style={styles.categoryTile}>
+        <Text style={styles.categoryText}>{t(label)}</Text>
+      </Pressable>)}</View>
     <View style={{ marginTop: 18 }}>{p.active ? <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} /> : <Card style={styles.budget}>
-      <View style={styles.between}><Text style={[ui.note, { color: c.deep }]}>{t('app.listBudget')}</Text><Wallet size={20} color={c.deep} /></View>
-      <Text style={[styles.budgetValue, { marginTop: 7 }]}>{t('app.undefined')}</Text>
-      <Text style={[ui.note, { color: c.deep, marginTop: 11 }]}>{t('app.emptyBudgetBody')}</Text>
+      <Text style={[ui.note, { color: c.deep }]}>{t('app.listBudget')}</Text>
+      <Text style={styles.budgetValue}>{t('app.undefined')}</Text>
+      <Text style={[ui.note, { color: c.deep, marginTop: 6 }]}>{t('visual.actualSpend')}</Text>
+      <Text style={[ui.note, { marginTop: 8 }]}>{t('app.emptyBudgetBody')}</Text>
     </Card>}</View>
     {!small && primaryAction}
-    <Section title={t('app.weeklyShopping')} action={p.active ? t('app.viewList') : undefined} onPress={p.onOpenList} />
-    <Pressable accessibilityRole="button" accessibilityLabel={p.active ? t('app.openShoppingA11y', { name: p.active.name }) : t('app.createShoppingA11y')}
-      disabled={p.busy} onPress={p.active ? p.onOpenList : p.onCreate} style={styles.listPreview}>
-      <View style={styles.listPreviewIcon}><ListChecks color={c.primary} size={24} /></View>
-      <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{p.active?.name ?? t('app.emptyPreviewTitle')}</Text>
-        <Text style={ui.note}>{summary ? t('app.previewCounts', { count: summary.itemCount, checked: summary.checkedCount }) : t('app.emptyPreviewBody')}</Text></View>
-      <ChevronRight color={c.primary} size={18} />
-    </Pressable>
-    <Section title={t('app.ideaToday')} action={t('app.tabMenus')} onPress={p.onMenus} />
-    <Pressable accessibilityRole="button" accessibilityLabel={t('app.viewMenusA11y')} disabled={p.busy} onPress={p.onMenus} style={styles.mealCard}>
-      <View style={{ flex: 1 }}><Pill label={t('app.cookSimple')} tone="yellow" />
-        <Text style={[ui.strong, { marginTop: 12 }]}>{t('recipes.arroz-verduras.title')}</Text><Text style={[ui.note, { marginTop: 5 }]}>{t('app.mealMeta', { minutes: 25 })}</Text>
-      </View><MealArt size={100} />
-    </Pressable>
-    {p.active && <View style={{ marginTop: 19 }}><Button label={t('app.createAnotherList')} secondary onPress={p.onCreate} disabled={p.busy} testID="create-list" icon={Plus} /></View>}
+    <Section title={t('visual.cookingIdeas')} />
+    <View style={styles.ideas}>
+      <Pressable accessibilityRole="button" accessibilityLabel={t('visual.thisWeek')} onPress={p.onMenus} disabled={p.busy} style={[styles.idea, { backgroundColor: c.soft }]}>
+        <Text style={ui.body}>{t('visual.thisWeek')}</Text><ChevronRight size={18} color={c.primary} />
+      </Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel={t('visual.discoverRecipes')} onPress={p.onDiscover} disabled={p.busy} style={styles.idea}>
+        <Text style={ui.body}>{t('visual.discoverRecipes')}</Text><ChevronRight size={18} color={c.primary} />
+      </Pressable>
+    </View>
+    {p.active && <View style={{ marginTop: 20 }}><Button label={t('app.createAnotherList')} secondary onPress={p.onCreate} disabled={p.busy} testID="create-list" icon={Plus} /></View>}
     <View style={styles.footerNote}><Leaf size={19} color={c.primary} /><Text style={[ui.note, { flex: 1 }]}>{t('app.localListsNote')}</Text></View>
   </View>;
 }
@@ -76,7 +84,7 @@ export function ListScreen(p: Props) {
         const items = p.active!.items.filter(item => item.category === category);
         return items.length > 0 && <View key={category} style={{ marginBottom: 18 }}>
           <Text accessibilityRole="header" style={styles.category}>{categoryLabel(category)}</Text>
-          <Card style={{ paddingHorizontal: 12, paddingVertical: 0 }}>{items.map(item => <ItemRow key={item.id} item={item} {...p} />)}</Card>
+          <View style={{ gap: 8 }}>{items.map(item => <ItemRow key={item.id} item={item} {...p} />)}</View>
         </View>;
       })}
       {summary.missingPriceCount > 0 && <Notice title={t('app.incompleteForecast')} text={t('app.missingPricesBody', { count: summary.missingPriceCount })} />}
@@ -98,10 +106,11 @@ function Budget({ active, onBudget, busy, compact = false }: { active: ShoppingL
         onPress={onBudget} testID="edit-budget" disabled={busy} style={styles.budgetEdit}><Pencil size={19} color={c.deep} /></Pressable>
     </View>
     {!compact && <Text style={[styles.budgetValue, { marginTop: 2 }]}>{budgetValue}</Text>}
-    <View style={[styles.budgetRow, compact && { marginTop: 4, paddingTop: 8 }]}><Text style={[ui.note, { color: c.deep, flex: 1, minWidth: 120 }]}>{t(hasPrices && summary.missingPriceCount > 0 ? 'app.knownPartialForecast' : 'app.knownForecast')}</Text>
+    {!compact && <Text style={[ui.note, { color: c.deep, marginTop: 5 }]}>{t('visual.actualSpend')}</Text>}
+    {compact && <><View style={[styles.budgetRow, compact && { marginTop: 4, paddingTop: 8 }]}><Text style={[ui.note, { color: c.deep, flex: 1, minWidth: 120 }]}>{t(hasPrices && summary.missingPriceCount > 0 ? 'app.knownPartialForecast' : 'app.knownForecast')}</Text>
       <Text style={[ui.strong, { flex: 1, minWidth: 120, textAlign: 'right' }]}>{hasPrices ? formatMoney(summary.knownTotalCents) : t('app.noPricesYet')}</Text></View>
     {summary.excessCents > 0 && <Text style={[ui.note, { color: c.danger, marginTop: 8 }]}>{t('app.overBudget', { amount: formatMoney(summary.excessCents) })}</Text>}
-    <Text style={[ui.note, { color: c.deep, marginTop: compact ? 5 : 9 }]}>{summary.itemCount === 0 ? t('app.emptyBudgetList') : summary.missingPriceCount > 0 ? t(hasPrices ? 'app.unpricedPartial' : 'app.unpriced', { count: summary.missingPriceCount }) : t('app.includesEstimates')}</Text>
+    <Text style={[ui.note, { color: c.deep, marginTop: compact ? 5 : 9 }]}>{summary.itemCount === 0 ? t('app.emptyBudgetList') : summary.missingPriceCount > 0 ? t(hasPrices ? 'app.unpricedPartial' : 'app.unpriced', { count: summary.missingPriceCount }) : t('app.includesEstimates')}</Text></>}
   </Card>;
 }
 
@@ -127,26 +136,29 @@ function ItemRow({ item, busy, onToggle, onEdit, onDelete }: Props & { item: Sho
 }
 
 const styles = StyleSheet.create({
-  quickEntry: { minHeight: 54, borderRadius: 14, borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, flexDirection: 'row', alignItems: 'center', gap: 9, paddingHorizontal: 14 },
+  categories: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  categoryTile: { flex: 1, minWidth: 68, minHeight: 72, paddingVertical: 16, paddingHorizontal: 6, backgroundColor: c.neutral, borderRadius: 15, justifyContent: 'center', alignItems: 'center' },
+  categoryText: { fontFamily: f.medium, fontSize: 13, lineHeight: 20, color: c.deep, textAlign: 'center' },
+  quickAdd: { width: 44, height: 44, backgroundColor: c.primary, borderRadius: 16, justifyContent: 'center', alignItems: 'center' },
+  ideas: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+  idea: { flex: 1, minWidth: 140, minHeight: 58, padding: 12, borderRadius: 16, backgroundColor: c.neutral, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 6 },
+  quickEntry: { minHeight: 54, borderRadius: 14, borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, flexDirection: 'row', alignItems: 'center', gap: 9, paddingHorizontal: 8, paddingVertical: 7 },
   quickText: { flex: 1, fontFamily: f.medium, fontSize: 14, lineHeight: 22, color: c.muted },
-  budget: { backgroundColor: '#F6D66B', borderColor: '#E4C452', borderRadius: 15, paddingVertical: 11 },
+  budget: { backgroundColor: c.paleYellow, borderColor: c.line, borderRadius: 15, paddingVertical: 11 },
   compactBudget: { paddingHorizontal: 14, paddingVertical: 7 },
   compactBudgetValue: { fontSize: 22, lineHeight: 29, letterSpacing: -.5, flexShrink: 1, textAlign: 'right' },
   budgetEdit: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
-  listPreview: { borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, borderRadius: 15, padding: 16, flexDirection: 'row', alignItems: 'center', gap: 12 },
-  listPreviewIcon: { backgroundColor: c.soft, width: 42, height: 45, borderRadius: 12, alignItems: 'center', justifyContent: 'center' },
-  mealCard: { backgroundColor: '#F5E9C6', borderRadius: 16, flexDirection: 'row', alignItems: 'center', paddingLeft: 17, paddingRight: 6, paddingVertical: 15, gap: 8 },
   between: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10 },
   emptyTitle: { fontFamily: f.extra, fontSize: 24, lineHeight: 32, letterSpacing: -.7, color: c.deep },
   footerNote: { marginTop: 25, flexDirection: 'row', alignItems: 'flex-start', gap: 10 },
-  listSelector: { minHeight: 52, backgroundColor: '#F8EDCA', borderRadius: 14, padding: 12, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  listSelector: { minHeight: 52, backgroundColor: c.soft, borderRadius: 14, padding: 12, flexDirection: 'row', alignItems: 'center', gap: 10 },
   listActions: { flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'space-between', gap: 8, marginBottom: 8 },
   textAction: { minHeight: 44, flexDirection: 'row', alignItems: 'center', gap: 7, paddingHorizontal: 3 },
   listCount: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 9, marginTop: 17, marginBottom: 12 },
   budgetValue: { fontFamily: f.extra, color: c.deep, fontSize: 29, lineHeight: 38, letterSpacing: -.8 },
   budgetRow: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 13, paddingTop: 13, borderTopWidth: 1, borderTopColor: '#DCDDC5' },
-  category: { fontFamily: f.bold, color: c.deep, fontSize: 14, lineHeight: 22, marginBottom: 8 },
-  item: { paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: c.line }, itemTop: { flexDirection: 'row', alignItems: 'flex-start', gap: 2 },
+  category: { fontFamily: f.bold, color: c.deep, fontSize: 19, lineHeight: 27, marginBottom: 10 },
+  item: { paddingVertical: 10, paddingHorizontal: 8, borderWidth: 1, borderColor: c.line, borderRadius: 16, backgroundColor: c.surface, flexDirection: 'row', alignItems: 'center', gap: 4 }, itemTop: { flex: 1, flexDirection: 'row', alignItems: 'center', gap: 2 },
   checkboxTarget: { width: 44, minHeight: 44, alignItems: 'center', paddingTop: 2 }, checkbox: { width: 25, height: 25, borderRadius: 8, borderWidth: 1.5, borderColor: '#748268', alignItems: 'center', justifyContent: 'center' },
-  itemActions: { flexDirection: 'row', justifyContent: 'flex-end', marginTop: 2 },
+  itemActions: { flexDirection: 'row', justifyContent: 'flex-end' },
 });

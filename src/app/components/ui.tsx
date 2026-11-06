@@ -10,14 +10,14 @@ import { useI18n } from '../../i18n/LanguageProvider';
 
 export { c, f };
 
-export function Button({ label, onPress, secondary, danger, disabled, busy, icon: Icon = ArrowRight, testID }: {
+export function Button({ label, onPress, secondary, accent, danger, disabled, busy, icon: Icon = ArrowRight, testID }: {
   label: string; onPress: () => void; secondary?: boolean; danger?: boolean;
-  disabled?: boolean; busy?: boolean; icon?: LucideIcon; testID?: string;
+  accent?: boolean; disabled?: boolean; busy?: boolean; icon?: LucideIcon; testID?: string;
 }) {
-  const color = danger ? c.danger : secondary ? c.deep : '#fff';
+  const color = danger ? c.danger : secondary || accent ? c.deep : '#fff';
   return <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={label}
     accessibilityState={{ disabled: !!disabled || !!busy }} disabled={disabled || busy} onPress={onPress}
-    style={({ pressed }) => [ui.button, secondary && ui.secondary, danger && ui.dangerButton, (disabled || busy || pressed) && { opacity: 0.65 }]}>
+    style={({ pressed }) => [ui.button, secondary && ui.secondary, accent && ui.accent, danger && ui.dangerButton, (disabled || busy || pressed) && { opacity: 0.65 }]}>
     <Text style={[ui.buttonText, { color }]}>{label}</Text>
     {busy ? <ActivityIndicator color={color} /> : <Icon size={20} color={color} strokeWidth={1.9} />}
   </Pressable>;
@@ -40,7 +40,7 @@ export function Title({ kicker, title, subtitle, action }: {
   kicker: string; title: string; subtitle?: string; action?: React.ReactNode;
 }) {
   return <View style={ui.titleRow}><View style={{ flex: 1 }}>
-    <Text style={ui.kicker}>{kicker}</Text><Text accessibilityRole="header" style={ui.title}>{title}</Text>
+    <Text accessibilityRole="header" style={ui.title}>{title}</Text>
     {subtitle && <Text style={ui.subtitle}>{subtitle}</Text>}
   </View>{action}</View>;
 }
@@ -54,7 +54,7 @@ export function Section({ title, action, onPress }: { title: string; action?: st
 }
 
 export function Pill({ label, tone = 'green' }: { label: string; tone?: 'green' | 'yellow' | 'neutral' | 'danger' }) {
-  return <View style={[ui.pill, { backgroundColor: tone === 'danger' ? '#FBE9E3' : tone === 'yellow' ? c.paleYellow : tone === 'neutral' ? '#F0F0E7' : '#E8F1E2' }]}>
+  return <View style={[ui.pill, { backgroundColor: tone === 'danger' ? c.dangerBg : tone === 'yellow' ? c.paleYellow : tone === 'neutral' ? c.neutral : c.soft }]}>
     <Text style={[ui.pillText, tone === 'danger' && { color: c.danger }]}>{label}</Text>
   </View>;
 }
@@ -64,7 +64,7 @@ export function Notice({ title, text, kind = 'info', action, onPress }: {
 }) {
   const Icon = kind === 'error' || kind === 'warning' ? AlertCircle : kind === 'success' ? Check : CircleHelp;
   return <View accessibilityRole={kind === 'error' ? 'alert' : undefined} aria-live={kind === 'error' ? 'assertive' : 'polite'}
-    style={[ui.notice, { backgroundColor: kind === 'error' ? c.dangerBg : kind === 'warning' ? '#FAEDC9' : '#EAF0E0' }]}>
+    style={[ui.notice, { backgroundColor: kind === 'error' ? c.dangerBg : kind === 'warning' ? '#FAEDC9' : c.soft }]}>
     <Icon size={19} color={kind === 'error' ? c.danger : c.deep} />
     <View style={{ flex: 1, gap: 5 }}><Text style={[ui.noticeTitle, kind === 'error' && { color: c.danger }]}>{title}</Text>
       <Text style={ui.note}>{text}</Text>{action && <Pressable accessibilityRole="button" onPress={onPress} style={ui.noticeAction}>
@@ -115,18 +115,18 @@ export function Sheet({ visible, title, subtitle, children, footer, onClose, bus
 }
 
 export const ui = StyleSheet.create({
-  page: { paddingHorizontal: 24, paddingBottom: 24 }, titleRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 24, marginBottom: 23 },
-  kicker: { color: c.muted, fontFamily: f.bold, fontSize: 11, lineHeight: 17, letterSpacing: 1.2 }, title: { fontFamily: f.extra, color: c.ink, fontSize: 29, lineHeight: 36, letterSpacing: -1, marginTop: 9 },
-  subtitle: { fontFamily: f.regular, color: c.muted, fontSize: 14, lineHeight: 22, marginTop: 9 }, card: { backgroundColor: c.surface, borderWidth: 1, borderColor: c.line, borderRadius: 18, padding: 19 },
+  page: { paddingHorizontal: 18, paddingBottom: 24 }, titleRow: { flexDirection: 'row', alignItems: 'center', gap: 12, marginTop: 22, marginBottom: 18 },
+  kicker: { color: c.muted, fontFamily: f.bold, fontSize: 11, lineHeight: 17, letterSpacing: 1.2 }, title: { fontFamily: f.extra, color: c.ink, fontSize: 26, lineHeight: 34, letterSpacing: -0.7 },
+  subtitle: { fontFamily: f.regular, color: c.muted, fontSize: 14, lineHeight: 22, marginTop: 9 }, card: { backgroundColor: c.surface, borderWidth: 1, borderColor: c.line, borderRadius: 16, padding: 16 },
   button: { minHeight: 54, paddingHorizontal: 19, paddingVertical: 15, backgroundColor: c.primary, borderRadius: 13, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10, width: '100%' },
-  secondary: { backgroundColor: '#fff', borderWidth: 1, borderColor: '#748268' }, dangerButton: { backgroundColor: '#FBE9E3', borderWidth: 1, borderColor: '#D9B9AA' }, buttonText: { fontFamily: f.bold, fontSize: 16, lineHeight: 23, flexShrink: 1 },
+  secondary: { backgroundColor: c.neutral, borderWidth: 1, borderColor: c.line }, accent: { backgroundColor: c.accent }, dangerButton: { backgroundColor: '#FBE9E3', borderWidth: 1, borderColor: '#D9B9AA' }, buttonText: { fontFamily: f.bold, fontSize: 16, lineHeight: 23, flexShrink: 1 },
   iconButton: { width: 44, height: 44, justifyContent: 'center', alignItems: 'center' }, section: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 10, marginTop: 23, marginBottom: 12 },
   sectionTitle: { fontFamily: f.bold, color: c.ink, fontSize: 20, letterSpacing: -0.6, flexShrink: 1 }, sectionAction: { minHeight: 44, minWidth: 64, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: 3 },
-  link: { fontFamily: f.bold, fontSize: 13, color: c.primary, lineHeight: 20 }, pill: { alignSelf: 'flex-start', paddingHorizontal: 9, paddingVertical: 6, borderRadius: 7, maxWidth: '100%' }, pillText: { color: c.deep, fontFamily: f.bold, fontSize: 11, lineHeight: 16 },
+  link: { fontFamily: f.bold, fontSize: 13, color: c.primary, lineHeight: 20 }, pill: { alignSelf: 'flex-start', paddingHorizontal: 9, paddingVertical: 6, borderRadius: 7, maxWidth: '100%' }, pillText: { color: c.deep, fontFamily: f.bold, fontSize: 12, lineHeight: 18 },
   notice: { borderRadius: 13, padding: 15, gap: 10, flexDirection: 'row', alignItems: 'flex-start', marginBottom: 16 }, noticeTitle: { fontFamily: f.bold, color: c.deep, fontSize: 14, lineHeight: 21 }, noticeAction: { minHeight: 44, flexDirection: 'row', gap: 8, alignItems: 'center', alignSelf: 'flex-start' },
   note: { fontFamily: f.regular, fontSize: 13, lineHeight: 21, color: c.muted }, body: { fontFamily: f.medium, fontSize: 15, lineHeight: 24, color: c.ink }, strong: { fontFamily: f.bold, fontSize: 16, lineHeight: 23, color: c.ink }, number: { fontFamily: f.extra, fontSize: 34, lineHeight: 43, letterSpacing: -1.2, color: c.deep },
-  row: { minHeight: 73, paddingVertical: 15, flexDirection: 'row', alignItems: 'center', gap: 12, borderBottomWidth: 1, borderBottomColor: c.line }, rowIcon: { width: 42, height: 42, borderRadius: 13, backgroundColor: c.soft, justifyContent: 'center', alignItems: 'center' }, rowTitle: { fontFamily: f.semi, color: c.ink, fontSize: 15, lineHeight: 22 },
-  field: { marginBottom: 21, gap: 9 }, fieldLabel: { fontFamily: f.bold, color: c.ink, fontSize: 13, lineHeight: 20 }, input: { minHeight: 54, borderWidth: 1, borderColor: '#748268', borderRadius: 12, paddingHorizontal: 15, paddingVertical: 14, backgroundColor: '#fff', fontFamily: f.medium, color: c.ink, fontSize: 16, lineHeight: 24, outlineWidth: 0 },
-  backdrop: { flex: 1, backgroundColor: 'rgba(20,39,26,0.38)', justifyContent: 'flex-end', alignItems: 'center' }, sheet: { width: '100%', maxWidth: 600, maxHeight: '92%', backgroundColor: c.background, borderTopLeftRadius: 27, borderTopRightRadius: 27, overflow: 'hidden' }, sheetTop: { paddingTop: 9, paddingHorizontal: 24, paddingBottom: 17, borderBottomWidth: 1, borderBottomColor: c.line },
+  row: { minHeight: 64, paddingVertical: 12, paddingHorizontal: 10, borderRadius: 14, marginBottom: 8, borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, flexDirection: 'row', alignItems: 'center', gap: 12, borderBottomWidth: 1, borderBottomColor: c.line }, rowIcon: { width: 42, height: 42, borderRadius: 13, backgroundColor: c.soft, justifyContent: 'center', alignItems: 'center' }, rowTitle: { fontFamily: f.semi, color: c.ink, fontSize: 15, lineHeight: 22 },
+  field: { marginBottom: 21, gap: 9 }, fieldLabel: { fontFamily: f.bold, color: c.ink, fontSize: 13, lineHeight: 20 }, input: { minHeight: 54, borderWidth: 1, borderColor: c.muted, borderRadius: 12, paddingHorizontal: 15, paddingVertical: 14, backgroundColor: '#fff', fontFamily: f.medium, color: c.ink, fontSize: 16, lineHeight: 24, outlineWidth: 0 },
+  backdrop: { flex: 1, backgroundColor: 'rgba(20,39,26,0.38)', justifyContent: 'flex-end', alignItems: 'center' }, sheet: { width: '100%', maxWidth: 600, maxHeight: '92%', backgroundColor: c.surface, borderTopLeftRadius: 24, borderTopRightRadius: 24, overflow: 'hidden' }, sheetTop: { paddingTop: 9, paddingHorizontal: 24, paddingBottom: 17, borderBottomWidth: 1, borderBottomColor: c.line },
   handle: { width: 35, height: 4, backgroundColor: '#BFC9B7', borderRadius: 3, alignSelf: 'center', marginBottom: 16 }, sheetHeading: { flexDirection: 'row', alignItems: 'flex-start', gap: 9 }, sheetTitle: { fontFamily: f.extra, fontSize: 24, lineHeight: 31, letterSpacing: -0.8, color: c.ink }, sheetBody: { paddingHorizontal: 24, paddingTop: 21, paddingBottom: 28 }, sheetFooter: { borderTopWidth: 1, borderTopColor: c.line, padding: 16, paddingHorizontal: 24, gap: 9 },
 });

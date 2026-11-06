@@ -1,5 +1,8 @@
 # JJ Compra Inteligente
 
+> **Estado actualizado 06/11/2026:** base visual GPT-6 V2 implementada sobre las pantallas existentes, con logo original y cuatro idiomas. La [entrega y auditoría V01/V02](docs/V2_ENTREGA_V01_V02_Y_AUDITORIA.md) contiene las pruebas y límites. Los originales ya están [recuperados](docs/V2_REFERENCIAS_RECUPERADAS.md). Los estados históricos siguientes se conservan como antecedentes.
+
+
 Aplicación de compra alimentaria con inteligencia artificial para Tenerife.
 
 ## Código fuente recuperado — 31/10/2026
