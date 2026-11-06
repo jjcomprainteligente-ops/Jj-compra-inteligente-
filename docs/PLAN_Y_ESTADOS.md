@@ -232,3 +232,15 @@ GitHub pasa a ser la fuente principal; Vercel conserva su función de preview. L
 - **AUDITORÍA DE ENTREGA:** revisión de importación, secretos/artefactos excluidos, conservación, reproducción y prueba remota en `github/G00_ENTREGA_Y_AUDITORIA.md`, con evidencia `design/github-g00/`.
 - **V00 BLOQUEADO EN RECUPERACIÓN DE ORIGINALES:** diagnóstico de diferencias completado; se han solicitado de nuevo los adjuntos V2/Premium. V01/V02 pendientes de esos archivos. No se etiqueta la preview actual como V2.
 - **ABIERTOS:** avisos de dependencias, iPhone/Safari físico y separación de pagos confirmados. Sin nuevas funciones comerciales ni servicios.
+
+
+## 06/11/2026 — V01/V02 comprobados; cierre de auditoría
+
+Originales V2 recuperados y preservados en GitHub. Base visual y pantallas existentes implementadas con logo exacto, cuatro idiomas y datos locales conservados. TypeScript y 496 pruebas unitarias correctos;128 recorridos web correctos,0 fallos/0 intermitentes,12 skip deliberados y 120 capturas saludables. Exportación web/iOS/Android correcta. Evidencia final `design/v2/evidence/run-2026-11-06T15-03-13-733Z-1VEvNi/`.
+
+La auditoría de la pareja está en `V2_ENTREGA_V01_V02_Y_AUDITORIA.md`; preview remota y PR de revisión se están preparando. No se declaran terminadas las 16 pantallas ni nueve estados. Quedan abiertos10 paquetes con avisos (2 altos), pruebas físicas y módulos futuros. Siguiente: entregar la preview de este commit y recoger diferencias visuales concretas antes de ampliar funciones.
+
+
+## 06/11/2026 — Publicación V2 comprobada
+
+Preview staging READY `dpl_FEo2wA8AwT4zmcZeGFxSBWpgaL7A`, código `3dbcff9435a6d2aad97e7766e2e38d0fabe790c7`, [PR #1](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/1). Cuatro idiomas, 27 recursos/URLs y 12 capturas remotas correctos; JavaScript decodificado y logo coinciden en hashes. Se conserva protección y producción. Enlace temporal fuera de Git. Detalles en `V2_PUBLICACION_VERIFICADA.md`. Estado de V01/V02: EN REVISIÓN VISUAL; avisos de dependencias, pruebas físicas y módulos futuros permanecen abiertos.
