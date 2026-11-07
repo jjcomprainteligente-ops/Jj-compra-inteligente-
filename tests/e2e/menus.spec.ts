@@ -284,3 +284,82 @@ test('crea una lista nueva solo al confirmar y permite deshacer todo el grupo', 
   await expect.poll(async () => await readShopping(page)).toEqual(empty);
   expect(await page.evaluate(key => localStorage.getItem(key), comparisonKey)).toBe(comparisonData);
 });
+
+test('las raciones de una receta se revisan sin cambiar el plan semanal ni escribir compras', async ({ page }) => {
+  const savedMenu = JSON.stringify({ version: 1, plan: { servings: 4, recipeIds: firstRecipes } });
+  await seed(page, shopping([]), savedMenu);
+  const before = await page.evaluate(key => localStorage.getItem(key), shoppingKey);
+  await openMenus(page);
+  await page.getByRole('button', { name: 'Receta de Arroz con verduras', exact: true }).click();
+  const flow = page.getByTestId('menu-sheet');
+  await expect(flow.getByRole('heading', { name: 'Detalle receta', exact: true })).toBeVisible();
+  await expect(flow.getByRole('tab')).toHaveCount(4);
+  await expect(flow.getByTestId('recipe-servings')).toHaveText('4');
+  await flow.getByRole('button', { name: 'Aumentar raciones de esta receta', exact: true }).click();
+  await expect(flow.getByTestId('recipe-servings')).toHaveText('5');
+  expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBe(savedMenu);
+  await flow.getByRole('button', { name: 'Revisar ingredientes de esta receta', exact: true }).click();
+  const rice = await namedIngredientRow(flow, 'Arroz');
+  await expect(rice.getByRole('textbox', { name: /^Cantidad del ingrediente \d+$/ })).toHaveValue('400');
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+  await flow.getByRole('button', { name: 'Cancelar propuesta', exact: true }).click();
+  await flow.getByRole('button', { name: 'Cancelar sin añadir', exact: true }).click();
+  await flow.waitFor({ state: 'detached' });
+  await expect(page.getByTestId('menu-servings')).toHaveText('4');
+  expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBe(savedMenu);
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+});
+
+test('cambiar de pestaña conserva la revisión hasta cancelar explícitamente el borrador', async ({ page }) => {
+  await seed(page, shopping([]));
+  await openMenus(page);
+  const before = await page.evaluate(key => localStorage.getItem(key), shoppingKey);
+  const flow = await importText(page, '500 g Arroz');
+  const rice = await namedIngredientRow(flow, 'Arroz');
+  await rice.getByRole('textbox', { name: /^Cantidad del ingrediente \d+$/ }).fill('750');
+  await flow.getByTestId('flow-tab-home').click();
+  await expect(flow.getByRole('heading', { name: '¿Cancelar esta propuesta?', exact: true })).toBeVisible();
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+  await flow.getByRole('button', { name: 'Seguir revisando', exact: true }).click();
+  await expect((await namedIngredientRow(flow, 'Arroz')).getByRole('textbox', { name: /^Cantidad del ingrediente \d+$/ })).toHaveValue('750');
+  await flow.getByTestId('flow-tab-list').click();
+  await flow.getByRole('button', { name: 'Cancelar sin añadir', exact: true }).click();
+  await flow.waitFor({ state: 'detached' });
+  await expect(page.getByTestId('tab-list')).toHaveAttribute('aria-selected', 'true');
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+});
+
+test('una captura cuyo total excede el límite conserva el texto editable sin escribir compras', async ({ page }) => {
+  await seed(page, shopping([]));
+  const before = await page.evaluate(key => localStorage.getItem(key), shoppingKey);
+  const oversized = '1000000 g Arroz\n1000000 g Arroz';
+  await page.getByTestId('open-voice').click();
+  await page.getByTestId('voice-transcript').fill(oversized);
+  await page.getByTestId('voice-review').click();
+  const panel = page.getByTestId('menu-sheet');
+  await expect(panel.getByTestId('ingredient-text')).toHaveValue(oversized);
+  await expect(panel.getByRole('alert')).toBeVisible();
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+  await panel.getByTestId('ingredient-text').fill('500 g Arroz');
+  await panel.getByTestId('parse-ingredients').click();
+  await expect(panel.getByRole('heading', { name: 'Esto he entendido', exact: true })).toBeVisible();
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+});
+
+test('cerrar un texto pendiente pide confirmación y permite continuar editando sin pérdida', async ({ page }) => {
+  await seed(page, shopping([]));
+  await openMenus(page);
+  const before = await page.evaluate(key => localStorage.getItem(key), shoppingKey);
+  await page.getByTestId('import-text').click();
+  const panel = page.getByTestId('menu-sheet');
+  await panel.getByTestId('ingredient-text').fill('500 g Arroz');
+  await panel.getByRole('button', { name: 'Cerrar', exact: true }).click();
+  await expect(panel.getByRole('heading', { name: '¿Cancelar esta propuesta?', exact: true })).toBeVisible();
+  await panel.getByRole('button', { name: 'Seguir revisando', exact: true }).click();
+  await expect(panel.getByTestId('ingredient-text')).toHaveValue('500 g Arroz');
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+  await panel.getByRole('button', { name: 'Cerrar', exact: true }).click();
+  await panel.getByRole('button', { name: 'Cancelar sin añadir', exact: true }).click();
+  await panel.waitFor({ state: 'detached' });
+  expect(await page.evaluate(key => localStorage.getItem(key), shoppingKey)).toBe(before);
+});

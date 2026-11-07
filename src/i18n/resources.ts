@@ -12,6 +12,15 @@ import { visualSecondaryMessages } from './catalogs/visualSecondary';
 import { visualMenusMessages } from './catalogs/visualMenus';
 import { languageMessages } from './catalogs/language';
 
+import { moneyMessages } from './catalogs/money';
+import { moneyViewsMessages } from './catalogs/moneyViews';
+import { entryMessages } from './catalogs/entry';
+import { localSettingsMessages } from './catalogs/localSettings';
+import { flowPagesMessages } from './catalogs/flowPages';
+import { statesMessages } from './catalogs/states';
+import { shellMessages } from './catalogs/shell';
+
 export const resources = mergeMessageCatalogs(
+  moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,
   commonMessages, appMessages, menusMessages, pricesMessages, recipeMessages, legacyMessages, errorMessages, secondaryMessages, languageMessages, visualMessages, visualSecondaryMessages, visualMenusMessages,
 );

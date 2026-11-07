@@ -7,7 +7,9 @@ const zlib = require('node:zlib');
 const { execFileSync } = require('node:child_process');
 
 const project = path.resolve(__dirname, '..');
-const exported = path.join(project, 'dist-v2');
+const exportName = process.env.JJ_EXPORT_DIRECTORY || 'dist-v2';
+if (!/^dist(?:-[a-zA-Z0-9-]+)?$/.test(exportName)) throw new Error('Invalid export directory name.');
+const exported = path.join(project, exportName);
 const previews = path.join(project, 'previews');
 const repository = 'https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-';
 const expectedLogoSha256 = 'ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596';
@@ -129,7 +131,7 @@ function main() {
     fs.writeFileSync(destination, bytes, { flag: 'wx' });
   }
   fs.mkdirSync(path.join(output, '.vercel'));
-  const manifest = { schemaVersion: 1, createdAt, input: 'dist-v2', source, bundle, logo, expectedLogoSha256,
+  const manifest = { schemaVersion: 1, createdAt, input: exportName, source, bundle, logo, expectedLogoSha256,
     assets: files.filter(file => file.file.startsWith('assets/')), files,
     upload: { files: files.length, bytes: files.reduce((total, file) => total + file.size, 0) },
     scope: 'Reviewed compiled web client, approved logo, fonts with their existing license notices and preview configuration only; no native bundles, source, fixtures, local data or credentials.' };
