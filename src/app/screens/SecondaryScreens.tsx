@@ -13,9 +13,9 @@ import {
 } from '../components/ui';
 import type { SecondaryProps } from '../types';
 
-/** Local annotations stay separate from actual spending: no confirmed-payment model exists. */
+/** User-confirmed expenses remain separate from list estimates and checked items. */
 export function SavingsScreen({
-  active, busy, onNavigate, onBudget, onCreateList,
+  active, busy, onNavigate, onBudget, onCreateList, actualSpentCents, expensesLoading, expensesError,
 }: SecondaryProps) {
   const { t, formatMoney, formatNumber } = useI18n();
   const summary = active ? summarizeList(active) : undefined;
@@ -24,6 +24,7 @@ export function SavingsScreen({
   const markedWithEnteredPrice = summary ? summary.checkedCount - summary.spentIncompleteCount : 0;
   const hasKnownPrices = !!summary && summary.itemCount > summary.missingPriceCount;
   const budgetValue = !active || active.budgetCents === null ? t('secondary.undefined') : formatMoney(active.budgetCents);
+  const actualSpending = expensesLoading ? t('common.loading') : expensesError ? t('shell.spendingUnavailable') : actualSpentCents == null ? t('visualSecondary.notRecorded') : formatMoney(actualSpentCents);
   const budgetAction = active ? active.budgetCents === null ? t('secondary.defineBudget') : t('secondary.editBudget') : t('secondary.createList');
 
   return <View style={ui.page}>
@@ -33,7 +34,7 @@ export function SavingsScreen({
     </View>
 
     <Pressable accessibilityRole="button" accessibilityLabel={budgetAction} accessibilityState={{ disabled: busy }}
-      testID="edit-budget" accessibilityHint={t('visualSecondary.budgetA11y', { budget: budgetValue, spending: t('visualSecondary.notRecorded') })} disabled={busy} onPress={active ? onBudget : onCreateList}
+      testID="edit-budget" accessibilityHint={t('visualSecondary.budgetA11y', { budget: budgetValue, spending: actualSpending })} disabled={busy} onPress={active ? onBudget : onCreateList}
       style={({ pressed }) => [ui.card, styles.budgetCard, (pressed || busy) && { opacity: 0.7 }]}>
       <View style={styles.cardHeading}>
         <Text style={[ui.strong, { flex: 1 }]}>{active ? t('secondary.budgetFor', { name: active.name }) : t('secondary.weeklyBudget')}</Text>
@@ -44,7 +45,7 @@ export function SavingsScreen({
       </Text>
       <View style={styles.realSpending}>
         <Text style={styles.budgetNote}>{t('visualSecondary.actualSpending')}</Text>
-        <Text testID="actual-spend-total" style={styles.budgetNote}>{t('visualSecondary.notRecorded')}</Text>
+        <Text testID="actual-spend-total" style={styles.budgetNote}>{actualSpending}</Text>
       </View>
     </Pressable>
 
@@ -96,6 +97,10 @@ export function SavingsScreen({
       </View>}
     </>}
 
+    <Section title={t('shell.yourRecords')} />
+    <View style={{ gap: 10 }}><Button secondary label={t('shell.budget')} testID="open-budget-page" disabled={busy} onPress={() => onNavigate('budget')} />
+      <Button secondary label={t('shell.history')} testID="open-history" disabled={busy} onPress={() => onNavigate('history')} />
+      <Button secondary label={t('shell.stores')} testID="open-stores" disabled={busy} onPress={() => onNavigate('stores')} /></View>
     <Section title={t('visualSecondary.manualTools')} />
     <View style={{ gap: 12 }}>
       <Text style={ui.note}>{t('visualSecondary.manualToolsHelp')}</Text>
@@ -142,7 +147,7 @@ export function MenusScreen({ busy, onRecipe, onInfo }: SecondaryProps) {
 }
 
 export function ProfileScreen({
-  active, lists, busy, onBudget, onCreateList, onInfo, onLanguage,
+  active, lists, busy, onNavigate, onInfo, onLanguage,
 }: SecondaryProps) {
   const { t, language, source, formatMoney, formatNumber } = useI18n();
   const itemCount = lists.reduce((count, list) => count + list.items.length, 0);
@@ -158,9 +163,11 @@ export function ProfileScreen({
         onPress={() => onInfo('secondary.sharePermissionTitle', 'secondary.sharePermissionInfo')} />
       <ProfileRow title={t('secondary.weeklyBudget')} icon={Wallet} disabled={busy}
         subtitle={!active ? t('secondary.createForBudget') : active.budgetCents === null ? t('secondary.noActiveBudget') : `${formatMoney(active.budgetCents)} · ${active.name}`}
-        onPress={active ? onBudget : onCreateList} />
+        testID="profile-budget" onPress={() => onNavigate('budget')} />
       <ProfileRow testID="language-settings" title={t('common.language')} subtitle={`${LANGUAGE_NAMES[language]} · ${t(source === 'manual' ? 'common.manualSource' : 'common.deviceSource')}`}
         icon={Globe} disabled={busy} onPress={onLanguage} />
+      <ProfileRow testID="profile-stores" title={t('shell.stores')} subtitle={t('shell.storesHelp')} icon={MapPin} disabled={busy} onPress={() => onNavigate('stores')} />
+      <ProfileRow testID="profile-notifications" title={t('shell.notifications')} subtitle={t('shell.notificationsHelp')} icon={Clock} disabled={busy} onPress={() => onNavigate('notifications')} />
       <ProfileRow title={t('secondary.privacy')} subtitle={t('secondary.privacySubtitle')} icon={ShieldCheck} disabled={busy}
         onPress={() => onInfo('secondary.privacy', 'secondary.privacyInfo')} />
     </View>
@@ -179,6 +186,7 @@ export function ProfileScreen({
       <ProfileRow title={t('secondary.help')} subtitle={t('secondary.about')} icon={BookOpen} disabled={busy}
         onPress={() => onInfo('secondary.helpTitle', 'secondary.helpInfo')} />
     </View>
+    <Button secondary label={t('shell.states')} testID="open-state-review" disabled={busy} onPress={() => onNavigate('states')} />
     <Text style={[ui.note, styles.localSummary]}>
       {t(lists.length === 1 ? 'secondary.listCountOne' : 'secondary.listCountMany', { count: formatNumber(lists.length) })} · {t(itemCount === 1 ? 'secondary.productCountOne' : 'secondary.productCountMany', { count: formatNumber(itemCount) })}
     </Text>

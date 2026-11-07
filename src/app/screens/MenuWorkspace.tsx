@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 import { BookOpen, Check, ChevronRight, FileText, Minus, Plus, RefreshCw, ShoppingBag, Utensils } from 'lucide-react-native';
 import { RECIPES } from '../../data/recipes';
@@ -16,6 +16,7 @@ import { useI18n } from '../../i18n/LanguageProvider';
 import { menusMessages } from '../../i18n/catalogs/menus';
 import { localizedRecipe, translateIngredientName, translateIngredientNote } from '../../i18n/recipes';
 import { Button, Card, Field, IconButton, Notice, Pill, Section, Sheet, c, f, ui } from '../components/ui';
+import { FlowPage, type FlowDestination, type FlowPageProps } from '../components/FlowPage';
 
 interface Props {
   initialSection?: 'week' | 'discover';
@@ -24,6 +25,9 @@ interface Props {
   shoppingError: string;
   onApply: (targetListId: string | null, newListName: string, drafts: IngredientDraft[]) => Promise<boolean>;
   onNavigateList: () => void;
+  onNavigateMain: (screen: FlowDestination) => void;
+  initialEntry?: { id: string; text: string } | null;
+  onEntryConsumed?: () => void;
 }
 type Panel = { kind: 'text' } | { kind: 'review' } | { kind: 'recipe'; recipe: Recipe } | { kind: 'replace'; index: number };
 const dayIds = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
@@ -33,7 +37,7 @@ class MenuFeedback extends Error {
 }
 
 /** Offline planning and explicit ingredient review; no AI request or voice recording. */
-export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList }: Props) {
+export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed }: Props) {
   const { t, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
   const meal = useMealPlan();
   const feedback = (value: unknown) => value instanceof MenuFeedback ? t(value.key, value.values) : translateError(value);
@@ -54,10 +58,13 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const [applying, setApplying] = useState(false);
   const [applyAttempted, setApplyAttempted] = useState(false);
   const [discard, setDiscard] = useState(false);
+  const [pendingDestination, setPendingDestination] = useState<FlowDestination | null>(null);
+  const [recipeServings, setRecipeServings] = useState(2);
   const [expanded, setExpanded] = useState<string | null>(null);
   const applyLock = useRef(false);
   const planLock = useRef(false);
   const draftCounter = useRef(0);
+  const consumedEntry = useRef<string | null>(null);
   const servings = meal.plan?.servings ?? people;
   const busy = meal.busy || shoppingBusy || applying;
   const target = shopping.lists.find(list => list.id === targetId);
@@ -68,11 +75,25 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const sourceLabel = source.kind === 'text' ? t('menus.textSource') : source.kind === 'plan' ? plural('menus.reviewPlanSource', source.servings) : plural('menus.recipeSource', source.servings, { title: localizedRecipe(source.recipe, t).title });
 
   const close = () => {
-    if (busy) return;
-    if (panel?.kind === 'review' && !discard) { setDiscard(true); return; }
+    if (busy || applyLock.current || planLock.current) return;
+    if (panel?.kind === 'review' || (panel?.kind === 'text' && text.trim())) { setPendingDestination(null); setDiscard(!discard); return; }
     setPanel(null); setError(''); setDiscard(false);
   };
-  const open = (next: Panel) => { if (!busy) { setPanel(next); setError(''); setDiscard(false); } };
+  const open = (next: Panel) => { if (!busy) {
+    if (next.kind === 'recipe') setRecipeServings(servings);
+    setPanel(next); setError(''); setDiscard(false); setPendingDestination(null);
+  } };
+  const navigateMain = (destination: FlowDestination) => {
+    if (busy || applyLock.current || planLock.current) return;
+    if (panel?.kind === 'review' || (panel?.kind === 'text' && text.trim())) { setPendingDestination(destination); setDiscard(true); return; }
+    setPanel(null); setError(''); onNavigateMain(destination);
+  };
+  const discardProposal = () => {
+    if (busy || applyLock.current || planLock.current) return;
+    const destination = pendingDestination;
+    setPanel(null); setDiscard(false); setError(''); setPendingDestination(null);
+    if (destination !== null) onNavigateMain(destination);
+  };
   const savePlan = async (next: Parameters<typeof meal.save>[0], after?: () => void) => {
     if (planLock.current || busy) return;
     planLock.current = true; setError('');
@@ -98,8 +119,9 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
       setDrafts(nextDrafts);
       setEditedNames(new Set(origin.kind === 'text' ? nextDrafts.map(row => row.id) : []));
       setEditedNotes(new Set(origin.kind === 'text' ? nextDrafts.map(row => row.id) : []));
-      setTargetId(activeId); setSource(origin); setExpanded(null); setPanel({ kind: 'review' }); setDiscard(false); setError(''); setApplyAttempted(false);
-    } catch (failure) { setError(failure); }
+      setTargetId(activeId); setSource(origin); setExpanded(null); setPanel({ kind: 'review' }); setDiscard(false); setPendingDestination(null); setError(''); setApplyAttempted(false);
+      return true;
+    } catch (failure) { setError(failure); return false; }
   };
   const parseText = () => {
     setError('');
@@ -111,6 +133,21 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
       review(parsed.ingredients.map(ingredient => ({ ...ingredient, rounded: ingredient.rounded ?? false })), { kind: 'text' });
     } catch (failure) { setError(failure); }
   };
+  useEffect(() => {
+    if (!initialEntry || consumedEntry.current === initialEntry.id || busy || panel) return;
+    consumedEntry.current = initialEntry.id;
+    setText(initialEntry.text); setError(''); setDiscard(false); setPendingDestination(null);
+    try {
+      const parsed = parseIngredientText(initialEntry.text);
+      setIssues(parsed.issues);
+      if (parsed.issues.length || !parsed.ingredients.length) setPanel({ kind: 'text' });
+      else if (!review(parsed.ingredients.map(ingredient => ({ ...ingredient, rounded: ingredient.rounded ?? false })), { kind: 'text' })) {
+        // Keep incoming text editable if otherwise valid lines cannot be combined safely.
+        setPanel({ kind: 'text' });
+      }
+    } catch (failure) { setError(failure); setPanel({ kind: 'text' }); }
+    onEntryConsumed?.();
+  }, [initialEntry, busy, panel, onEntryConsumed]);
   const updateRow = (id: string, change: Partial<IngredientDraft>, resetDecision = false) => {
     if (busy) return;
     setError(''); setApplyAttempted(false);
@@ -144,6 +181,21 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const panelTitle = discard ? t("menus.discardTitle") : panel?.kind === 'text' ? t("menus.importText") :
     panel?.kind === 'review' ? t("menus.reviewTitle") : panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t).title : panel?.kind === 'replace' ? t('menus.dayDinnerPanel', { day: day(panel.index) }) : '';
   const panelError = (panel?.kind === 'review' && applyAttempted && !applying ? shoppingError : '') || error || (panel?.kind === 'replace' ? meal.saveError : '');
+  const reviewRows = drafts.map((row, index) => {
+    let matches: ReturnType<typeof matchingItems> = [];
+    try { if (target && row.name.trim()) matches = matchingItems(target, row.name, row.unit); } catch { /* Inline validation remains on confirmation. */ }
+    const repeatedSuggestion = drafts.slice(0, index).some(previous => {
+      if (!previous.included || previous.decision === 'skip') return false;
+      try { return normalizeIngredientName(previous.name) === normalizeIngredientName(row.name) && canonicalMeasure(1000, previous.unit).dimension === canonicalMeasure(1000, row.unit).dimension; }
+      catch { return false; }
+    });
+    return { row, index, matches, repeatedSuggestion };
+  });
+  const reviewGroups = [
+    { key: 'have', rows: reviewRows.filter(({ row }) => !row.included || row.decision === 'skip') },
+    { key: 'existing', rows: reviewRows.filter(({ row, matches, repeatedSuggestion }) => row.included && row.decision !== 'skip' && (matches.length > 0 || repeatedSuggestion)) },
+    { key: 'missing', rows: reviewRows.filter(({ row, matches, repeatedSuggestion }) => row.included && row.decision !== 'skip' && matches.length === 0 && !repeatedSuggestion) },
+  ];
 
   return <View style={ui.page}>
     <Text accessibilityRole="header" style={styles.pageTitle}>{t('visualMenus.title')}</Text>
@@ -176,6 +228,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
       </> : <>
         <Section title={t('visualMenus.yourWeek')} />
         <Text style={[ui.note, { marginBottom: 15 }]}>{plural('menus.forPeopleSaved', servings)}</Text>
+        <View style={{ marginBottom: 14 }}><Button label={t("menus.reviewMenu")} testID="review-menu" accent disabled={busy} icon={ShoppingBag} onPress={() => { if (meal.plan) review(planIngredients(meal.plan), { kind: 'plan', servings }); }} /></View>
         {meal.plan.recipeIds.map((id, index) => {
           const recipe = RECIPES.find(item => item.id === id)!;
           return <Card key={`${index}-${id}`} style={styles.mealCard}>
@@ -186,7 +239,6 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
             <IconButton label={t('menus.changeMealA11y', { day: day(index) })} icon={RefreshCw} disabled={busy} onPress={() => open({ kind: 'replace', index })} />
           </Card>;
         })}
-        <Button label={t("menus.reviewMenu")} testID="review-menu" accent disabled={busy} icon={ShoppingBag} onPress={() => { if (meal.plan) review(planIngredients(meal.plan), { kind: 'plan', servings }); }} />
       </>}
       <Section title={t('visualMenus.discoverRecipes')} />
       <Pressable accessibilityRole="button" accessibilityLabel={t('visualMenus.localCatalogue')} disabled={busy} onPress={() => setSection('discover')} style={styles.discoveryRow}>
@@ -208,11 +260,14 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
       <Notice title={t('menus.decisionTitle')} text={t('menus.decisionText')} />
     </>}
 
-    <Sheet visible={!!panel} title={panelTitle} busy={busy} onClose={close} testID="menu-sheet"
+    <MenuPanel fullPage={panel?.kind === 'review' || panel?.kind === 'recipe'} visible={!!panel}
+      title={!discard && panel?.kind === 'recipe' ? t('flow.recipeHeader') : !discard && panel?.kind === 'review' ? t('flow.reviewHeader') : panelTitle}
+      busy={busy} onClose={close} onNavigateMain={navigateMain} testID="menu-sheet"
       subtitle={panel?.kind === 'review' && !discard ? plural('menus.groupedSource', drafts.length, { source: sourceLabel }) : undefined}
       footer={!discard && panel?.kind === 'review' ? <><Text style={ui.note}>{plural('menus.selectedFooter', selectedCount)}</Text><Button label={t("menus.confirm")} testID="confirm-ingredients" accent busy={applying} disabled={busy || selectedCount === 0} onPress={() => void confirm()} icon={Check} /><Button label={t("menus.cancelProposal")} secondary disabled={busy} onPress={close} /></> :
-        !discard && panel?.kind === 'text' ? <Button label={t("menus.parseText")} testID="parse-ingredients" disabled={busy} onPress={parseText} /> : undefined}>
-      {discard ? <View style={{ gap: 16 }}><Text style={ui.body}>{t("menus.discardText")}</Text><Button label={t("menus.continueReview")} onPress={() => setDiscard(false)} /><Button label={t("menus.cancelWithoutAdd")} secondary onPress={() => { setPanel(null); setDiscard(false); setError(''); }} /></View> : <>
+        !discard && panel?.kind === 'text' ? <Button label={t("menus.parseText")} testID="parse-ingredients" disabled={busy} onPress={parseText} /> :
+        !discard && panel?.kind === 'recipe' ? <Button label={t("menus.reviewRecipe")} icon={ShoppingBag} disabled={busy} onPress={() => review(scaleRecipe(panel.recipe, recipeServings), { kind: 'recipe', recipe: panel.recipe, servings: recipeServings })} /> : undefined}>
+      {discard ? <View style={{ gap: 16 }}><Text style={ui.body}>{t("menus.discardText")}</Text><Button label={t("menus.continueReview")} disabled={busy} onPress={() => { setDiscard(false); setPendingDestination(null); }} /><Button label={t("menus.cancelWithoutAdd")} secondary disabled={busy} onPress={discardProposal} /></View> : <>
         {!!panelError && <Notice kind="error" title={applyAttempted && shoppingError && panel?.kind === 'review' ? t("menus.saveIngredientErrorTitle") : t("menus.reviewProposalTitle")} text={feedback(panelError)} />}
         {panel?.kind === 'text' ? <>
           <Text style={[ui.note, { marginBottom: 18 }]}>{t("menus.textGuidance")}</Text>
@@ -220,19 +275,18 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           {issues.length > 0 && <Notice kind="error" title={t("menus.linesIssueTitle")} text={issues.map(issue => t('menus.lineIssue', { line: formatNumber(issue.line), message: translateError(issue.message) })).join('\n')} />}
           <Text style={ui.note}>{t("menus.ambiguousText")}</Text>
         </> : panel?.kind === 'review' ? <>
-          <Text accessibilityRole="header" style={[ui.strong, { marginBottom: 11 }]}>{t("menus.destinationTitle")}</Text>
-          <View style={[styles.options, { marginBottom: 18 }]}>{shopping.lists.map(list => <Choice key={list.id} label={list.name} a11y={t('menus.destinationA11y', { name: list.name })} selected={targetId === list.id} disabled={busy} onPress={() => chooseTarget(list.id)} />)}
-            <Choice label={t("menus.newList")} a11y={t("menus.newListA11y")} selected={targetId === null} disabled={busy} onPress={() => chooseTarget(null)} /></View>
-          {targetId === null ? <Field label={t("menus.newListName")} value={newListName} maxLength={80} editable={!busy} onChangeText={setNewName} hint={t("menus.newListHint")} /> : <Text style={[ui.note, { marginBottom: 16 }]}>{t('menus.destinationInfo', { name: target?.name ?? t('menus.destinationNotAvailable') })}</Text>}
-          <Notice title={t("menus.reviewNoticeTitle")} text={t("menus.reviewNoticeText")} />
-          {drafts.map((row, index) => {
-            let matches: ReturnType<typeof matchingItems> = [];
-            try { if (target && row.name.trim()) matches = matchingItems(target, row.name, row.unit); } catch { /* Inline validation is shown on confirmation. */ }
-            const repeatedSuggestion = drafts.slice(0, index).some(previous => {
-              if (!previous.included || previous.decision === 'skip') return false;
-              try { return normalizeIngredientName(previous.name) === normalizeIngredientName(row.name) && canonicalMeasure(1000, previous.unit).dimension === canonicalMeasure(1000, row.unit).dimension; }
-              catch { return false; }
-            });
+          <Text accessibilityRole="header" style={styles.flowTitle}>{t('menus.reviewTitle')}</Text>
+          <Text style={[ui.strong, { marginBottom: 8 }]}>{t('flow.beforeAdding')}</Text>
+          <Text testID="ingredient-group-counts" style={[ui.note, { marginBottom: 12 }]}>{t('flow.groupCounts', {
+            have: formatNumber(reviewGroups[0].rows.length), existing: formatNumber(reviewGroups[1].rows.length),
+            missing: formatNumber(reviewGroups[2].rows.length),
+          })}</Text>
+          {reviewGroups.filter(group => group.rows.length > 0).map(group => <View key={group.key} style={styles.reviewGroup}>
+            <View style={[styles.groupHeading, group.key === 'have' && { backgroundColor: c.soft }, group.key === 'existing' && { backgroundColor: c.neutral }]}>
+              <Text accessibilityRole="header" style={styles.groupTitle}>{t(`flow.${group.key}Title`)}</Text>
+              <Text style={ui.note}>{t(`flow.${group.key}Hint`)}</Text>
+            </View>
+            {group.rows.map(({ row, index, matches, repeatedSuggestion }) => {
             const canCombine = matches.length === 1 && !matches[0].checked && matches[0].unitPriceCents === null;
             return <Card key={row.id} style={styles.reviewCard}>
               <View testID="ingredient-review-row" style={{ gap: 12 }}>
@@ -262,22 +316,40 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
                 </View>}
               </View>
             </Card>;
-          })}
+            })}
+          </View>)}
+          <Section title={t("menus.destinationTitle")} />
+          <View style={[styles.options, { marginBottom: 18 }]}>{shopping.lists.map(list => <Choice key={list.id} label={list.name} a11y={t('menus.destinationA11y', { name: list.name })} selected={targetId === list.id} disabled={busy} onPress={() => chooseTarget(list.id)} />)}
+            <Choice label={t("menus.newList")} a11y={t("menus.newListA11y")} selected={targetId === null} disabled={busy} onPress={() => chooseTarget(null)} /></View>
+          {targetId === null ? <Field label={t("menus.newListName")} value={newListName} maxLength={80} editable={!busy} onChangeText={setNewName} hint={t("menus.newListHint")} /> : <Text style={[ui.note, { marginBottom: 16 }]}>{t('menus.destinationInfo', { name: target?.name ?? t('menus.destinationNotAvailable') })}</Text>}
+          <Notice title={t("menus.reviewNoticeTitle")} text={t("menus.reviewNoticeText")} />
         </> : panel?.kind === 'recipe' ? <>
-          <Pill label={plural('menus.recipePill', servings, { minutes: formatNumber(panel.recipe.minutes) })} />
+          <Text accessibilityRole="header" style={styles.flowTitle}>{localizedRecipe(panel.recipe, t).title}</Text>
+          <Pill label={plural('menus.recipePill', recipeServings, { minutes: formatNumber(panel.recipe.minutes) })} />
+          <Card style={styles.servingsCard}>
+            <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{t('flow.servings')}</Text><Text style={ui.note}>{t('flow.servingsHint')}</Text></View>
+            <View style={styles.counter}>
+              <IconButton label={t('flow.reduceServings')} icon={Minus} disabled={busy || recipeServings <= 1} onPress={() => setRecipeServings(value => Math.max(1, value - 1))} />
+              <Text testID="recipe-servings" style={styles.people}>{formatNumber(recipeServings)}</Text>
+              <IconButton label={t('flow.increaseServings')} icon={Plus} disabled={busy || recipeServings >= 12} onPress={() => setRecipeServings(value => Math.min(12, value + 1))} />
+            </View>
+          </Card>
           <Section title={t("menus.ingredientsTitle")} />
-          {scaleRecipe(panel.recipe, servings).map((ingredient, index) => <View key={index} style={styles.ingredientLine}><Text style={[ui.body, { flex: 1 }]}>{translateIngredientName(ingredient.name, t)}</Text><Text style={[ui.strong, { textAlign: 'right' }]}>{formatQuantity(ingredient.quantityMilli)} {unitLabel(ingredient.unit)}</Text>{ingredient.rounded && <Text style={[ui.note, { width: '100%' }]}>{t("menus.roundNoteLong")}</Text>}</View>)}
+          {scaleRecipe(panel.recipe, recipeServings).map((ingredient, index) => <View key={index} style={styles.ingredientLine}><Text style={[ui.body, { flex: 1 }]}>{translateIngredientName(ingredient.name, t)}</Text><Text style={[ui.strong, { textAlign: 'right' }]}>{formatQuantity(ingredient.quantityMilli)} {unitLabel(ingredient.unit)}</Text>{ingredient.rounded && <Text style={[ui.note, { width: '100%' }]}>{t("menus.roundNoteLong")}</Text>}</View>)}
           <Section title={t("menus.stepsTitle")} />
           {localizedRecipe(panel.recipe, t).steps.map((step, index) => <View key={index} style={styles.step}><Text style={styles.stepNumber}>{formatNumber(index + 1)}</Text><Text style={[ui.body, { flex: 1 }]}>{step}</Text></View>)}
           <View style={{ marginTop: 19 }}><Notice title={t("menus.allergensTitle")} text={localizedRecipe(panel.recipe, t).allergenNote} /></View>
-          <Button label={t("menus.reviewRecipe")} icon={ShoppingBag} onPress={() => review(scaleRecipe(panel.recipe, servings), { kind: 'recipe', recipe: panel.recipe, servings })} />
         </> : panel?.kind === 'replace' && meal.plan ? <>
           <Text style={[ui.note, { marginBottom: 18 }]}>{t("menus.replaceIntro")}</Text>
           <View style={{ gap: 12 }}>{RECIPES.filter(recipe => !meal.plan!.recipeIds.includes(recipe.id)).map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={meal.busy} icon={BookOpen} onPress={() => { try { if (meal.plan) void savePlan(replaceMeal(meal.plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
         </> : null}
       </>}
-    </Sheet>
+    </MenuPanel>
   </View>;
+}
+
+function MenuPanel({ fullPage, ...props }: FlowPageProps & { fullPage: boolean }) {
+  return fullPage ? <FlowPage {...props} /> : <Sheet {...props} />;
 }
 
 function Choice({ label, a11y, selected, disabled, onPress }: { label: string; a11y: string; selected: boolean; disabled: boolean; onPress: () => void }) {
@@ -286,6 +358,7 @@ function Choice({ label, a11y, selected, disabled, onPress }: { label: string; a
 }
 
 const styles = StyleSheet.create({
+  flowTitle: { fontFamily: f.extra, color: c.ink, fontSize: 25, lineHeight: 33, letterSpacing: -.6, marginBottom: 14 },
   pageTitle: { fontFamily: f.extra, color: c.ink, fontSize: 26, lineHeight: 34, letterSpacing: -.6, marginTop: 24, marginBottom: 16 },
   sectionChoices: { flexDirection: 'row', gap: 8, marginBottom: 20 },
   sectionChoice: { minHeight: 44, flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: c.neutral, borderRadius: 22, paddingHorizontal: 12, paddingVertical: 10 },
@@ -293,7 +366,7 @@ const styles = StyleSheet.create({
   sectionChoiceText: { color: c.deep, fontFamily: f.semi, fontSize: 14, lineHeight: 21 },
   sectionChoiceTextSelected: { color: '#fff' },
   loading: { minHeight: 190, alignItems: 'center', justifyContent: 'center', gap: 17 },
-  servingsCard: { backgroundColor: c.neutral, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 12, marginTop: 16, padding: 14 },
+  servingsCard: { backgroundColor: c.neutral, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8, marginTop: 12, padding: 12 },
   counter: { flexDirection: 'row', alignItems: 'center', gap: 2 }, people: { fontFamily: f.extra, fontSize: 27, lineHeight: 36, color: c.deep, minWidth: 32, textAlign: 'center' },
   empty: { alignItems: 'center', paddingVertical: 24, paddingHorizontal: 8, gap: 12 }, emptyTitle: { fontFamily: f.bold, fontSize: 21, lineHeight: 29, letterSpacing: -.4, color: c.deep, textAlign: 'center' },
   recipeSymbol: { width: 52, height: 52, backgroundColor: c.soft, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
@@ -305,6 +378,7 @@ const styles = StyleSheet.create({
   options: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   choice: { minHeight: 44, maxWidth: '100%', paddingHorizontal: 12, paddingVertical: 11, borderRadius: 10, borderWidth: 1, borderColor: '#748268', backgroundColor: '#fff', justifyContent: 'center' }, choiceText: { fontFamily: f.semi, fontSize: 13, lineHeight: 20, color: c.deep },
   reviewCard: { marginTop: 12, padding: 12 }, ingredientSummary: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }, includeRow: { minHeight: 48, minWidth: 150, flex: 1, flexDirection: 'row', alignItems: 'center', gap: 11 }, check: { width: 28, height: 28, borderRadius: 9, borderWidth: 1.5, borderColor: '#748268', alignItems: 'center', justifyContent: 'center' },
+  reviewGroup: { marginBottom: 16 }, groupHeading: { borderRadius: 16, padding: 14, gap: 7 }, groupTitle: { fontFamily: f.bold, fontSize: 18, lineHeight: 26, color: c.deep },
   detailAction: { minHeight: 44, minWidth: 44, paddingHorizontal: 4, justifyContent: 'center', alignItems: 'center' }, duplicate: { padding: 12, borderRadius: 12, backgroundColor: c.neutral, gap: 10 },
   ingredientLine: { paddingVertical: 13, paddingHorizontal: 12, borderWidth: 1, borderColor: c.line, borderRadius: 14, marginBottom: 8, backgroundColor: c.surface, flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8 },
   step: { flexDirection: 'row', alignItems: 'flex-start', gap: 12, marginBottom: 17 }, stepNumber: { fontFamily: f.bold, color: c.primary, fontSize: 16, lineHeight: 24, minWidth: 22 },

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import { Check, ChevronDown, ChevronRight, Leaf, Pencil, Plus, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
+import { Barcode, Check, ChevronDown, ChevronRight, Leaf, Mic, Pencil, Plus, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
 import { CATEGORIES, itemTotalCents, summarizeList, type Category, type ShoppingItem, type ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { translateIngredientName, translateIngredientNote } from '../../i18n/recipes';
 import { Button, Card, IconButton, Notice, Pill, Section, Title, c, f, ui } from '../components/ui';
 
 interface Props {
-  active?: ShoppingList; busy: boolean; onCreate(): void; onOpenList(): void; onMenus(): void; onDiscover(): void;
-  onChoose(): void; onBudget(): void; onAdd(category?: Category): void; onRename(): void; onDeleteList(): void;
+  active?: ShoppingList; busy: boolean; actualSpentCents?: number | null; expensesLoading?: boolean; expensesError?: string; onCreate(): void; onOpenList(): void; onMenus(): void; onDiscover(): void;
+  onSearch(category?: Category): void; onVoice(): void; onScanner(): void; onChoose(): void; onBudget(): void; onAdd(category?: Category): void; onRename(): void; onDeleteList(): void;
   onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void;
 }
 
@@ -26,11 +26,14 @@ export function HomeScreen(p: Props) {
   return <View style={ui.page}>
     <View style={{ marginTop: 14 }}><Pill label={t('visual.localMode')} /></View>
     <Title kicker={t('app.homeKicker')} title={t('visual.homeTitle')} />
-    <Pressable accessibilityRole="button" accessibilityLabel={t('app.quickEntryA11y')} disabled={p.busy}
-      onPress={p.active ? () => p.onAdd() : p.onCreate} style={styles.quickEntry}>
-      <Text style={styles.quickText}>{t('app.quickEntry')}</Text>
-      <View style={styles.quickAdd}><Plus color={c.surface} size={22} /></View>
-    </Pressable>
+    <View style={styles.quickEntry}>
+      <Pressable accessibilityRole="button" accessibilityLabel={t('shell.search')} disabled={p.busy}
+        testID="open-search" onPress={() => p.onSearch()} style={{ flex: 1, minHeight: 44, justifyContent: 'center' }}>
+        <Text style={styles.quickText}>{t('app.quickEntry')}</Text>
+      </Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel={t('shell.voice')} testID="open-voice" disabled={p.busy} onPress={p.onVoice} style={styles.quickAdd}><Mic color={c.surface} size={21} /></Pressable>
+      <Pressable accessibilityRole="button" accessibilityLabel={t('shell.scanner')} testID="open-scanner" disabled={p.busy} onPress={p.onScanner} style={styles.quickAdd}><Barcode color={c.surface} size={21} /></Pressable>
+    </View>
     {small && primaryAction}
     <Section title={t('visual.categories')} />
     <View style={styles.categories}>{categories.map(({ label, category }) =>
@@ -39,7 +42,7 @@ export function HomeScreen(p: Props) {
         onPress={p.active ? () => p.onAdd(category) : p.onCreate} style={styles.categoryTile}>
         <Text style={styles.categoryText}>{t(label)}</Text>
       </Pressable>)}</View>
-    <View style={{ marginTop: 18 }}>{p.active ? <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} /> : <Card style={styles.budget}>
+    <View style={{ marginTop: 18 }}>{p.active ? <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} actualSpentCents={p.actualSpentCents} expensesLoading={p.expensesLoading} expensesError={p.expensesError} /> : <Card style={styles.budget}>
       <Text style={[ui.note, { color: c.deep }]}>{t('app.listBudget')}</Text>
       <Text style={styles.budgetValue}>{t('app.undefined')}</Text>
       <Text style={[ui.note, { color: c.deep, marginTop: 6 }]}>{t('visual.actualSpend')}</Text>
@@ -65,6 +68,7 @@ export function ListScreen(p: Props) {
   const summary = p.active ? summarizeList(p.active) : undefined;
   return <View style={ui.page}>
     <Title kicker={t('app.listKicker')} title={t('app.listTitle')} />
+    <View style={{ gap: 8, marginBottom: 16 }}><Button secondary label={t('shell.search')} onPress={() => p.onSearch()} testID="list-open-search" disabled={p.busy} /></View>
     {!p.active || !summary ? <Card>
       <ShoppingBag size={40} color={c.primary} /><Text style={[styles.emptyTitle, { marginTop: 19 }]}>{t('app.emptyListTitle')}</Text>
       <Text style={[ui.note, { marginTop: 10, marginBottom: 23 }]}>{t('app.emptyListBody')}</Text>
@@ -76,7 +80,7 @@ export function ListScreen(p: Props) {
       <View style={styles.listActions}><Pressable accessibilityRole="button" accessibilityLabel={t('app.renameList')} disabled={p.busy} onPress={p.onRename} style={styles.textAction}><Pencil size={16} color={c.primary} /><Text style={ui.link}>{t('app.rename')}</Text></Pressable>
         <Pressable accessibilityRole="button" accessibilityLabel={t('app.deleteList')} disabled={p.busy} onPress={p.onDeleteList} style={styles.textAction}><Trash2 size={16} color={c.danger} /><Text style={[ui.link, { color: c.danger }]}>{t('app.deleteList')}</Text></Pressable>
       </View>
-      <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} compact />
+      <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} actualSpentCents={p.actualSpentCents} expensesLoading={p.expensesLoading} expensesError={p.expensesError} compact />
       <View style={styles.listCount}><Text accessibilityRole="header" style={ui.strong}>{t('app.listCount', { count: summary.itemCount })}</Text>
         <Text style={[ui.note, { flex: 1, textAlign: 'right' }]}>{t('app.progressCounts', { checked: summary.checkedCount, pending: summary.itemCount - summary.checkedCount })}</Text></View>
       {summary.itemCount === 0 && <Card><Text style={ui.strong}>{t('app.noItemsTitle')}</Text><Text style={[ui.note, { marginTop: 8 }]}>{t('app.noItemsBody')}</Text></Card>}
@@ -92,7 +96,7 @@ export function ListScreen(p: Props) {
   </View>;
 }
 
-function Budget({ active, onBudget, busy, compact = false }: { active: ShoppingList; onBudget(): void; busy: boolean; compact?: boolean }) {
+function Budget({ active, onBudget, busy, compact = false, actualSpentCents, expensesLoading, expensesError }: { active: ShoppingList; onBudget(): void; busy: boolean; compact?: boolean; actualSpentCents?: number | null; expensesLoading?: boolean; expensesError?: string }) {
   const { t, formatMoney } = useI18n();
   const summary = summarizeList(active);
   const hasPrices = summary.itemCount > summary.missingPriceCount;
@@ -106,7 +110,7 @@ function Budget({ active, onBudget, busy, compact = false }: { active: ShoppingL
         onPress={onBudget} testID="edit-budget" disabled={busy} style={styles.budgetEdit}><Pencil size={19} color={c.deep} /></Pressable>
     </View>
     {!compact && <Text style={[styles.budgetValue, { marginTop: 2 }]}>{budgetValue}</Text>}
-    {!compact && <Text style={[ui.note, { color: c.deep, marginTop: 5 }]}>{t('visual.actualSpend')}</Text>}
+    {!compact && <Text testID="home-actual-spend" style={[ui.note, { color: c.deep, marginTop: 5 }]}>{t('visualSecondary.actualSpending')}: {expensesLoading ? t('common.loading') : expensesError ? t('shell.spendingUnavailable') : actualSpentCents == null ? t('visualSecondary.notRecorded') : formatMoney(actualSpentCents)}</Text>}
     {compact && <><View style={[styles.budgetRow, compact && { marginTop: 4, paddingTop: 8 }]}><Text style={[ui.note, { color: c.deep, flex: 1, minWidth: 120 }]}>{t(hasPrices && summary.missingPriceCount > 0 ? 'app.knownPartialForecast' : 'app.knownForecast')}</Text>
       <Text style={[ui.strong, { flex: 1, minWidth: 120, textAlign: 'right' }]}>{hasPrices ? formatMoney(summary.knownTotalCents) : t('app.noPricesYet')}</Text></View>
     {summary.excessCents > 0 && <Text style={[ui.note, { color: c.danger, marginTop: 8 }]}>{t('app.overBudget', { amount: formatMoney(summary.excessCents) })}</Text>}

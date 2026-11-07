@@ -15,7 +15,7 @@ const locales = {
   fr: { locale: 'fr-FR', tabs: ['Accueil', 'Mes courses', 'Économies', 'Menus'], cancel: 'Annuler la proposition', discard: 'Annuler sans ajouter' },
 };
 const keys = ['jjcompraintelwgiemt.shopping.v1', 'jjcompraintelwgiemt.menus.v1',
-  'jjcompraintelwgiemt.comparisons.v1', 'jjcompraintelwgiemt.price-observations.v1'];
+  'jjcompraintelwgiemt.comparisons.v1', 'jjcompraintelwgiemt.price-observations.v1', 'jjcompraintelwgiemt.expenses.v1', 'jjcompraintelwgiemt.local-settings.v1'];
 const preferenceKey = 'jjcompraintelwgiemt.preferences.v1';
 const hash = (bytes, algorithm) => crypto.createHash(algorithm).update(bytes).digest('hex');
 const snapshot = page => page.evaluate(names => names.map(name => localStorage.getItem(name)), keys);
