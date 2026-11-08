@@ -1,0 +1,313 @@
+{
+  "language": "es",
+  "viewport": {
+    "width": 375,
+    "height": 754
+  },
+  "engine": "Chromium web",
+  "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+  "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+  "checks": [
+    {
+      "scene": "01_bienvenida",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+      "filename": "es-375-01_bienvenida.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "02_inicio",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+      "filename": "es-375-02_inicio.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "03_mi_compra",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+      "filename": "es-375-03_mi_compra.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "04_ahorro",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+      "filename": "es-375-04_ahorro.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "05_menus",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/05_menus.png",
+      "filename": "es-375-05_menus.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "06_detalle_receta",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+      "filename": "es-375-06_detalle_receta.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "07_ingredientes",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+      "filename": "es-375-07_ingredientes.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "08_buscar_producto",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+      "filename": "es-375-08_buscar_producto.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "09_detalle_producto",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+      "filename": "es-375-09_detalle_producto.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "10_voz",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/10_voz.png",
+      "filename": "es-375-10_voz.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "11_escaner",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+      "filename": "es-375-11_escaner.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "12_mis_tiendas",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+      "filename": "es-375-12_mis_tiendas.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "13_presupuesto",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+      "filename": "es-375-13_presupuesto.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "14_historial",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/14_historial.png",
+      "filename": "es-375-14_historial.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "15_perfil_hogar",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+      "filename": "es-375-15_perfil_hogar.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "16_notificaciones",
+      "kind": "screen",
+      "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+      "filename": "es-375-16_notificaciones.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_01_empty",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+      "filename": "es-375-estado_01_empty.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_02_no_price",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+      "filename": "es-375-estado_02_no_price.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_03_offline",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+      "filename": "es-375-estado_03_offline.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_04_network",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/04_error_red.png",
+      "filename": "es-375-estado_04_network.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_05_microphone_denied",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+      "filename": "es-375-estado_05_microphone_denied.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_06_camera_denied",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+      "filename": "es-375-estado_06_camera_denied.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_07_unknown_barcode",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+      "filename": "es-375-estado_07_unknown_barcode.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_08_duplicate",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+      "filename": "es-375-estado_08_duplicate.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "estado_09_success",
+      "kind": "example-state",
+      "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+      "filename": "es-375-estado_09_success.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    }
+  ],
+  "errors": []
+}
