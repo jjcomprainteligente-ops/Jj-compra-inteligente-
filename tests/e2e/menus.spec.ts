@@ -65,18 +65,17 @@ async function importText(page: Page, text: string): Promise<Locator> {
 async function namedIngredientRow(sheet: Locator, name: string): Promise<Locator> {
   // Identify the ingredient by its accessible checkbox, not its position.
   // V2 keeps editing behind a per-row disclosure; exercise that same user action.
-  const rows = sheet.getByTestId('ingredient-review-row');
   const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  for (let index = 0; index < await rows.count(); index++) {
-    const row = rows.nth(index);
-    if (await row.getByRole('checkbox', { name: new RegExp(`: ${escapedName}$`) }).count()) {
-      const field = row.getByRole('textbox', { name: /^Nombre del ingrediente \d+$/ });
-      if (!await field.isVisible()) await row.getByTestId('edit-ingredient').click();
-      await expect(field).toHaveValue(name);
-      return row;
-    }
-  }
-  throw new Error(`No se encontró el ingrediente ${name}`);
+  // Review groups can move a row after exclusion. Resolve by its checkbox on
+  // every action instead of retaining its former ordinal position.
+  const row = sheet.getByTestId('ingredient-review-row').filter({
+    has: sheet.page().getByRole('checkbox', { name: new RegExp(`: ${escapedName}$`) }),
+  });
+  await expect(row).toHaveCount(1);
+  const field = row.getByRole('textbox', { name: /^Nombre del ingrediente \d+$/ });
+  if (!await field.isVisible()) await row.getByTestId('edit-ingredient').click();
+  await expect(field).toHaveValue(name);
+  return row;
 }
 async function rejectWrites(page: Page, key: string): Promise<void> {
   await page.evaluate(blocked => {

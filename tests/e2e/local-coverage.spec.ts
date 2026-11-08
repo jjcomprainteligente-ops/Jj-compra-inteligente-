@@ -121,7 +121,9 @@ test('registrar gasto exige confirmar un pago y revisar; historial permite edita
   await editor.getByTestId('expense-review').click();
   await expect(editor.getByRole('alert')).toBeVisible();
   expect(await expenses(page)).toHaveLength(0);
-  await editor.getByTestId('expense-paid-confirmation').click();
+  await expect(editor.getByTestId('expense-paid-confirmation')).toHaveAttribute('aria-checked', 'false');
+  await editor.getByTestId('expense-paid-confirmation').check();
+  await expect(editor.getByTestId('expense-paid-confirmation')).toHaveAttribute('aria-checked', 'true');
   await editor.getByTestId('expense-review').click();
   await expect(editor.getByRole('heading', { name: 'Revisar antes de guardar', exact: true })).toBeVisible();
   expect(await expenses(page)).toHaveLength(0);

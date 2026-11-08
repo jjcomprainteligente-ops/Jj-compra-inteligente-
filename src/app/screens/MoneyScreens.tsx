@@ -355,7 +355,7 @@ function ExpenseEditor({ session, store, lists, active, onClose }: {
             onPress={() => { setDraft(previous => ({ ...previous, listId: list.id, listName: list.name })); setLocalError(null); }} />)}
         </View>
         <Pressable testID="expense-paid-confirmation" accessibilityRole="checkbox" accessibilityLabel={t('moneyViews.paidConfirm')}
-          accessibilityState={{ checked: draft.confirmed, disabled: busy }} disabled={busy}
+          accessibilityState={{ checked: draft.confirmed, disabled: busy }} aria-checked={draft.confirmed} disabled={busy}
           onPress={() => update('confirmed', !draft.confirmed)} style={({ pressed }) => [styles.confirmation, pressed && styles.dimmed]}>
           <View style={[styles.checkbox, draft.confirmed && styles.checkboxSelected]}>
             {draft.confirmed && <Check size={18} color="#fff" strokeWidth={2.2} />}
@@ -369,7 +369,7 @@ function ExpenseEditor({ session, store, lists, active, onClose }: {
 }
 
 function ListChoice({ label, checked, disabled, onPress }: { label: string; checked: boolean; disabled: boolean; onPress(): void }) {
-  return <Pressable accessibilityRole="radio" accessibilityLabel={label} accessibilityState={{ checked, disabled }}
+  return <Pressable accessibilityRole="radio" accessibilityLabel={label} accessibilityState={{ checked, disabled }} aria-checked={checked}
     disabled={disabled} onPress={onPress} style={({ pressed }) => [styles.listChoice, checked && styles.listChoiceSelected, (pressed || disabled) && styles.dimmed]}>
     <Text style={[ui.body, styles.flex]}>{label}</Text>
     <View style={[styles.radio, checked && styles.radioSelected]}>{checked && <View style={styles.radioDot} />}</View>
