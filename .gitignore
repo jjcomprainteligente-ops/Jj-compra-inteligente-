@@ -9,6 +9,7 @@ coverage/
 android/
 ios/
 test-results/
+test-results-*/
 playwright-report/
 
 # Fuentes en Git; datos locales y artefactos fuera del repositorio.
@@ -35,3 +36,12 @@ design/**/test-results/
 
 # Originales documentales del propietario: conservar estos ZIP, no artefactos.
 !referencias/gpt6-v2/originales/*.zip
+
+# Evidencia completa local; selección e informes públicos en entrega-local-2026-11-07.
+design/v2/evidence/run-2026-11-07T09-37-39-620Z-hGoYP7/
+design/v2/evidence/run-2026-11-07T16-48-40-655Z-p3mv4e/
+design/v2/evidence/menu-relocation-2026-11-07/
+
+# Capturas y galería local pendientes de autorización específica para GitHub público.
+design/v2/entrega-local-2026-11-07/screenshots/
+design/v2/entrega-local-2026-11-07/index.html

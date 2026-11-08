@@ -261,3 +261,30 @@ Preview staging READY `dpl_FEo2wA8AwT4zmcZeGFxSBWpgaL7A`, código `3dbcff9435a6d
 | B07/IA/B09 | Condicionados o bloqueados | No activar cuentas, sincronización, backend IA, precios comerciales ni checkout sin su alcance, permisos y validación. |
 
 Orden de entregas pequeñas para completar la preparación: A) navegación/subpantallas locales, campana y tiendas/presupuesto/historial/notificaciones; B) búsqueda/ficha/entradas manuales y nueve estados; auditoría A+B; C) receta/ingredientes completos y CTA de Menús; D) cotejo visual/idiomas/cobertura 25 y criterios de aceptación; auditoría C+D. Las funciones de hardware/servicios y marca se tratan en sus bloques, sin declararlas listas por preparar la apariencia.
+
+
+## 07/11/2026 — V2: dos bloques locales y auditoría automatizada completada
+
+El propietario autorizó continuar la preparación que faltaba. El código está guardado en GitHub: `dfd2a4eb917ef6d49aab794a0d36d799eed6c77d`, rama `codex/v2-cobertura-local`, [PR #2 en borrador](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/2), con base en el PR visual anterior y su historial conservado. El alcance de esta pareja es la navegación y los flujos locales V2; no sustituye las puertas de aceptación de B07–B09 o de marca.
+
+| Entrega | Estado vigente | Alcance comprobable / límite |
+|---|---|---|
+| A — Navegación y entradas locales | IMPLEMENTADA; EN REVISIÓN | Buscar y Detalle de productos guardados, voz y escáner opcionales con consentimiento, favoritas y avisos internos. Cuatro pestañas y cuatro idiomas; sin catálogo comercial ni notificaciones del teléfono. |
+| B — Dinero, revisión y estados | IMPLEMENTADA; EN REVISIÓN | Presupuesto completo, gastos confirmados separados de productos marcados, Historial, receta e ingredientes como páginas, deshacer y duplicados g/kg y ml/L con decisión explícita. Nueve estados rotulados como ejemplos; no simulan permisos o servicios. |
+| Auditoría tras la pareja A+B | VERIFICACIÓN AUTOMATIZADA COMPLETA | TypeScript, 660 pruebas unitarias y 182 pruebas web correctas; cero fallos y cero intermitentes. 24 duplicados deliberados de matriz omitidos. Exportaciones web/iOS/Android completadas. |
+| Correspondencia visual 16+9 | EN REVISIÓN, SIN APROBACIÓN ESTÉTICA | Matriz de 16 pantallas y nueve ejemplos en es/en/de/fr a tres tamaños CSS. Una captura ejecutable no acredita igualdad píxel a píxel ni aceptación del propietario. |
+| Preview de esta entrega | PENDIENTE DE VERIFICACIÓN Y PUBLICACIÓN | GitHub precede a Vercel. Publicar staging y verificar el código/recursos antes de entregar el enlace; mantener protección y producción. |
+
+Las cinco claves anteriores y el logo horizontal original se conservan. Se añaden dos almacenes versionados independientes: gastos confirmados y preferencias de tiendas/avisos. Ambos utilizan la protección de escritura existente; se corrigió su admisión en la lista de claves protegidas. Voz y cámara solo se activan en navegadores compatibles tras consentimiento y una acción explícita; nativo mantiene entrada manual. No hay nuevas cuentas, sincronización, pagos, backend de IA o fuentes comerciales.
+
+Seguridad de dependencias: Expo 58.0.21 → 58.0.23, dentro de la misma versión mayor y sin `overrides`. El informe npm posterior registra cinco avisos moderados, cero altos y cero críticos. No se declara ausencia absoluta de vulnerabilidades; las cinco advertencias y sus cadenas de herramientas siguen abiertas.
+
+Auditoría detallada: [V2_COBERTURA_LOCAL_Y_AUDITORIA.md](V2_COBERTURA_LOCAL_Y_AUDITORIA.md). Informe final: `design/v2/evidence/run-2026-11-07T16-48-40-655Z-p3mv4e/report.json`. Registra 182 pruebas web correctas de 206 registradas, 24 omisiones deliberadas de matrices duplicadas, cero fallos/intermitentes y 420 capturas sin errores de ejecución, claves visibles, recortes ni desbordamientos detectados. Son 300 capturas nuevas de 16 pantallas más nueve ejemplos y 120 de las diez escenas anteriores, en cuatro idiomas y tres tamaños. La comprobación de integridad confirma que los artefactos anteriores permanecen idénticos. La navegación visual conserva las seis claves de negocio de sus contextos de prueba. Los sensores se verifican mediante APIs simuladas, sin atribuir pruebas físicas.
+
+Quedan pendientes revisión visual del propietario/ChatGPT, piloto físico iPhone/Safari y Android, accesibilidad nativa, variantes de marca/3D y los módulos comerciales, cuentas y hogares condicionados. La entrega no completa por sí sola todos los seis paquetes ni B00–B09.
+
+### Cierre de publicación y ajuste accesible — 2026-11-08
+
+Código final de la preview: `746395e614e68624e012e76d13e0fa377e241c6a`. Tras los 182 casos de la suite completa se añadieron dos atributos `aria-checked` al formulario de gastos; los 20 casos locales se repitieron y pasan, sin fallos ni intermitentes. Exportación web/iOS/Android repetida. Preview staging READY, protección conservada y verificación remota en cuatro idiomas / 27 recursos correcta. El enlace temporal se entrega en la conversación y caduca el 9 de noviembre a las 09:00 UTC; su credencial no se guarda en GitHub.
+
+La publicación de código e informes está cerrada; la aprobación estética y el piloto físico siguen pendientes. La revisión automática bloqueó publicar las 100 capturas seleccionadas en GitHub público por posible información sensible y falta de autorización específica. Se mantienen locales, con petición de autorización separada; los informes de texto se conservan en `design/v2/entrega-local-2026-11-07/reports/`. Este bloqueo de imágenes no bloquea la app publicada ni modifica el resultado de pruebas.

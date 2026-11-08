@@ -1,0 +1,21 @@
+{
+  "change": "Explicit aria-checked for custom expense confirmation checkbox and expense list-choice radios",
+  "applicationFiles": [
+    "src/app/screens/MoneyScreens.tsx"
+  ],
+  "regressionFile": "tests/e2e/local-coverage.spec.ts",
+  "typecheck": "passed",
+  "diffCheck": "passed",
+  "behaviorAndDataModel": "unchanged",
+  "expectedExport": "dist-v2-coverage-a11y",
+  "e2e": "passed",
+  "statistics": {
+    "startTime": "2026-11-08T09:58:28.071Z",
+    "duration": 44391.917,
+    "expected": 20,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "evidence": "/workspace/scratch/expense-a11y"
+}

@@ -15,7 +15,7 @@ const locales = {
   fr: { locale: 'fr-FR', tabs: ['Accueil', 'Mes courses', 'Économies', 'Menus'], cancel: 'Annuler la proposition', discard: 'Annuler sans ajouter' },
 };
 const keys = ['jjcompraintelwgiemt.shopping.v1', 'jjcompraintelwgiemt.menus.v1',
-  'jjcompraintelwgiemt.comparisons.v1', 'jjcompraintelwgiemt.price-observations.v1'];
+  'jjcompraintelwgiemt.comparisons.v1', 'jjcompraintelwgiemt.price-observations.v1', 'jjcompraintelwgiemt.expenses.v1', 'jjcompraintelwgiemt.local-settings.v1'];
 const preferenceKey = 'jjcompraintelwgiemt.preferences.v1';
 const hash = (bytes, algorithm) => crypto.createHash(algorithm).update(bytes).digest('hex');
 const snapshot = page => page.evaluate(names => names.map(name => localStorage.getItem(name)), keys);
@@ -150,7 +150,7 @@ async function assertRenderedAssets(page) {
   if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw new Error('Horizontal overflow.');
   const rawKeys = await page.evaluate(() => {
     const labels = [...document.querySelectorAll('[aria-label]')].map(element => element.getAttribute('aria-label')).join('\n');
-    return [...new Set(((document.body.innerText + '\n' + labels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus)\.[a-zA-Z][\w.-]*/g) ?? []))];
+    return [...new Set(((document.body.innerText + '\n' + labels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus|entry|flow|states|shell|money|moneyViews|localSettings)\.[a-zA-Z][\w.-]*/g) ?? []))];
   });
   if (rawKeys.length) throw new Error('Untranslated resource keys: ' + rawKeys.join(', '));
 }
@@ -280,6 +280,35 @@ async function verifyResources(context, origin, packaged, report) {
         await review.getByRole('button', { name: spec.discard, exact: true }).click();
         await expect(review).toHaveCount(0);
         if (await page.evaluate(key => localStorage.getItem(key), keys[0]) !== before) throw new Error('Cancelling changed the shopping document.');
+        await page.getByTestId('tab-home').click();
+        await page.getByTestId('open-search').click();
+        await expect(page.getByTestId('product-search-screen')).toBeVisible();
+        await page.getByTestId('tab-home').click();
+        await page.getByTestId('open-voice').click();
+        await expect(page.getByTestId('voice-screen')).toBeVisible();
+        await page.getByTestId('tab-home').click();
+        await page.getByTestId('open-scanner').click();
+        await expect(page.getByTestId('scanner-screen')).toBeVisible();
+        await page.getByTestId('open-profile').click();
+        await page.getByTestId('profile-stores').click();
+        await page.getByTestId('favorite-hiperdino').click();
+        await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.preferences?.favoriteStores, keys[5])).toEqual(['hiperdino']);
+        await page.getByTestId('open-notifications').click();
+        await expect(page.getByTestId('notifications-screen')).toBeVisible();
+        await page.getByTestId('tab-savings').click();
+        await page.getByTestId('open-budget-page').click();
+        await page.getByTestId('record-expense').click();
+        const expense = page.getByTestId('expense-editor');
+        await expense.getByTestId('expense-amount').fill(code === 'en' ? '1.23' : '1,23');
+        await expense.getByTestId('expense-store').fill('Comercio ficticio de prueba');
+        await expense.getByTestId('expense-paid-confirmation').check();
+        await expense.getByTestId('expense-review').click();
+        await expense.getByTestId('expense-confirm-save').click();
+        await expect(expense).toHaveCount(0);
+        await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.data?.expenses?.map(item => item.amountCents), keys[4])).toEqual([123]);
+        await page.getByTestId('open-expense-history').click();
+        await expect(page.getByTestId('expenses-period-total')).toBeVisible();
+        await page.screenshot({ path: path.join(evidence, code + '-history.png'), fullPage: true });
         const businessBefore = await snapshot(page);
         await page.getByTestId('open-profile').click();
         await page.getByTestId('language-settings').click();
@@ -297,7 +326,7 @@ async function verifyResources(context, origin, packaged, report) {
         report.languageChecks.push({ language: code, manualPreferenceAfterReload: next, passed: true, bundleVerified, logoVerified,
           checks: ['Device language and official welcome logo', 'Four translated tabs', 'Loaded Manrope fonts and images',
             'Local list save', 'Recipe review and cancellation without shopping changes', 'Manual language preference persists after reload',
-            'Four business documents preserved by language changes', 'Exact packaged bundle, logo, fonts, and resource hashes'] });
+            'Six business documents preserved by language changes', 'Local search, voice, scanner and notification routes', 'Favourite store and confirmed expense save with both new durable fences on HTTPS', 'Exact packaged bundle, logo, fonts, and resource hashes'] });
         console.log(JSON.stringify({ language: code, status: 'passed' }));
       } catch (error) {
         await page.screenshot({ path: path.join(evidence, code + '-failure.png'), fullPage: true }).catch(() => {});
