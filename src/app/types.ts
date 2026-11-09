@@ -1,6 +1,6 @@
 import type { ShoppingList } from '../domain/shopping';
 
-export type Screen = 'home' | 'list' | 'savings' | 'menus' | 'profile' | 'comparisons' | 'prices' | 'language' | 'search' | 'product' | 'voice' | 'scanner' | 'stores' | 'budget' | 'history' | 'notifications' | 'states';
+export type Screen = 'home' | 'list' | 'savings' | 'menus' | 'profile' | 'comparisons' | 'prices' | 'language' | 'search' | 'product' | 'voice' | 'scanner' | 'stores' | 'budget' | 'history' | 'notifications' | 'states' | 'privacy';
 
 export interface SecondaryProps {
   active?: ShoppingList;

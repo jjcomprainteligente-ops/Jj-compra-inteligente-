@@ -20,7 +20,11 @@ import { flowPagesMessages } from './catalogs/flowPages';
 import { statesMessages } from './catalogs/states';
 import { shellMessages } from './catalogs/shell';
 
+import { menuFiltersMessages } from './catalogs/menuFilters';
+import { privacyMessages } from './catalogs/privacy';
+
 export const resources = mergeMessageCatalogs(
+  menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,
   commonMessages, appMessages, menusMessages, pricesMessages, recipeMessages, legacyMessages, errorMessages, secondaryMessages, languageMessages, visualMessages, visualSecondaryMessages, visualMenusMessages,
 );

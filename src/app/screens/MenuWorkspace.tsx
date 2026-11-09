@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
-import { BookOpen, Check, ChevronRight, FileText, Minus, Plus, RefreshCw, ShoppingBag, Utensils } from 'lucide-react-native';
+import { BookOpen, Check, ChevronRight, FileText, Minus, Plus, RefreshCw, ShoppingBag, SlidersHorizontal, Utensils } from 'lucide-react-native';
 import { RECIPES } from '../../data/recipes';
 import {
-  canonicalMeasure, combineIngredients, createMealPlan, normalizeIngredientName, planIngredients, replaceMeal, scaleRecipe,
-  type Recipe, type ScaledIngredient,
+  canonicalMeasure, combineIngredients, normalizeIngredientName, planIngredients, replaceMeal, scaleRecipe,
+  type MealPlan, type Recipe, type ScaledIngredient,
 } from '../../domain/menus';
+import { buildFilteredMealPlan, defaultMenuFilters, filterRecipes, MenuFilterError } from '../../domain/menuFilters';
 import { matchingItems, parseIngredientText, type IngredientDraft } from '../../domain/ingredientImport';
 import {
   CATEGORIES, UNITS, validateItemInput, validateListName,
@@ -17,6 +18,7 @@ import { menusMessages } from '../../i18n/catalogs/menus';
 import { localizedRecipe, translateIngredientName, translateIngredientNote } from '../../i18n/recipes';
 import { Button, Card, Field, IconButton, Notice, Pill, Section, Sheet, c, f, ui } from '../components/ui';
 import { FlowPage, type FlowDestination, type FlowPageProps } from '../components/FlowPage';
+import { MenuFilterPanel } from '../components/MenuFilterPanel';
 
 interface Props {
   initialSection?: 'week' | 'discover';
@@ -28,8 +30,10 @@ interface Props {
   onNavigateMain: (screen: FlowDestination) => void;
   initialEntry?: { id: string; text: string } | null;
   onEntryConsumed?: () => void;
+  budgetCents?: number | null;
+  onBudget?: () => void;
 }
-type Panel = { kind: 'text' } | { kind: 'review' } | { kind: 'recipe'; recipe: Recipe } | { kind: 'replace'; index: number };
+type Panel = { kind: 'text' } | { kind: 'review' } | { kind: 'recipe'; recipe: Recipe } | { kind: 'replace'; index: number } | { kind: 'proposal'; plan: MealPlan };
 const dayIds = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
 type ReviewSource = { kind: 'text' } | { kind: 'plan'; servings: number } | { kind: 'recipe'; recipe: Recipe; servings: number };
 class MenuFeedback extends Error {
@@ -37,14 +41,16 @@ class MenuFeedback extends Error {
 }
 
 /** Offline planning and explicit ingredient review; no AI request or voice recording. */
-export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed }: Props) {
-  const { t, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
+export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed, budgetCents, onBudget }: Props) {
+  const { t, formatMoney, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
   const meal = useMealPlan();
-  const feedback = (value: unknown) => value instanceof MenuFeedback ? t(value.key, value.values) : translateError(value);
+  const feedback = (value: unknown) => value instanceof MenuFeedback || value instanceof MenuFilterError ? t(value.key, value.values) : translateError(value);
   const day = (index: number) => t('menus.day.' + dayIds[index]);
   const plural = (key: string, count: number, values: Record<string, string | number> = {}) => t(key + (count === 1 ? '.one' : '.other'), { ...values, count: formatNumber(count) });
   const [people, setPeople] = useState(2);
   const [section, setSection] = useState<'week' | 'discover'>(initialSection);
+  const [filters, setFilters] = useState(defaultMenuFilters);
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [panel, setPanel] = useState<Panel | null>(null);
   const [text, setText] = useState('');
   const [issues, setIssues] = useState<{ line: number; message: string }[]>([]);
@@ -67,6 +73,11 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const consumedEntry = useRef<string | null>(null);
   const servings = meal.plan?.servings ?? people;
   const busy = meal.busy || shoppingBusy || applying;
+  const filterControlsDisabled = busy || meal.loading || !!meal.loadError;
+  const visibleRecipes = filterRecipes(RECIPES, filters);
+  const activeFilterCount = Number(filters.maxMinutes !== null) + Number(filters.preference !== 'any') + filters.excludedIngredients.length;
+  const replacementRecipes = panel?.kind === 'replace' && meal.plan
+    ? visibleRecipes.filter(recipe => !meal.plan!.recipeIds.includes(recipe.id)) : [];
   const target = shopping.lists.find(list => list.id === targetId);
   const selectedCount = drafts.filter(row => row.included && row.decision !== 'skip').length;
   const newListName = newName ?? t('menus.defaultListName');
@@ -100,6 +111,14 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
     try { if (await meal.save(next)) after?.(); }
     catch (failure) { setError(failure); }
     finally { planLock.current = false; }
+  };
+  const prepareFilteredPlan = () => {
+    if (busy || planLock.current || meal.loading || meal.loadError) return;
+    try {
+      const next = buildFilteredMealPlan(servings, filters);
+      if (meal.plan) open({ kind: 'proposal', plan: next });
+      else void savePlan(next);
+    } catch (failure) { setError(failure); }
   };
   const changePeople = (next: number) => {
     if (next < 1 || next > 12 || busy) return;
@@ -179,8 +198,8 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
     finally { applyLock.current = false; setApplying(false); }
   };
   const panelTitle = discard ? t("menus.discardTitle") : panel?.kind === 'text' ? t("menus.importText") :
-    panel?.kind === 'review' ? t("menus.reviewTitle") : panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t).title : panel?.kind === 'replace' ? t('menus.dayDinnerPanel', { day: day(panel.index) }) : '';
-  const panelError = (panel?.kind === 'review' && applyAttempted && !applying ? shoppingError : '') || error || (panel?.kind === 'replace' ? meal.saveError : '');
+    panel?.kind === 'review' ? t("menus.reviewTitle") : panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t).title : panel?.kind === 'replace' ? t('menus.dayDinnerPanel', { day: day(panel.index) }) : panel?.kind === 'proposal' ? t('menuFilters.proposalTitle') : '';
+  const panelError = (panel?.kind === 'review' && applyAttempted && !applying ? shoppingError : '') || error || (panel?.kind === 'replace' || panel?.kind === 'proposal' ? meal.saveError : '');
   const reviewRows = drafts.map((row, index) => {
     let matches: ReturnType<typeof matchingItems> = [];
     try { if (target && row.name.trim()) matches = matchingItems(target, row.name, row.unit); } catch { /* Inline validation remains on confirmation. */ }
@@ -207,12 +226,19 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
         style={[styles.sectionChoice, section === value && styles.sectionChoiceSelected]}>
         <Text style={[styles.sectionChoiceText, section === value && styles.sectionChoiceTextSelected]}>{t(value === 'week' ? 'visualMenus.thisWeek' : 'visualMenus.discover')}</Text>
       </Pressable>)}
+      <Pressable accessibilityRole="button" testID="menu-filters-open"
+        accessibilityLabel={activeFilterCount ? t('menuFilters.openActive', { count: formatNumber(activeFilterCount) }) : t('menuFilters.open')}
+        accessibilityState={{ selected: activeFilterCount > 0, disabled: filterControlsDisabled }} aria-pressed={activeFilterCount > 0}
+        disabled={filterControlsDisabled} onPress={() => { setFiltersOpen(true); setError(''); }}
+        style={[styles.filterTrigger, activeFilterCount > 0 && { backgroundColor: c.paleYellow }]}>
+        <SlidersHorizontal color={c.primary} size={21} />
+      </Pressable>
     </View>
     {meal.loading ? <Card style={styles.loading}><ActivityIndicator color={c.primary} /><Text style={ui.body}>{t("menus.loading")}</Text></Card> : meal.loadError ? <>
       <Notice kind="error" title={t("menus.loadErrorTitle")} text={feedback(meal.loadError)} action={t("menus.reload")} onPress={() => void meal.reload()} />
       <Button label={t("menus.continueShopping")} onPress={onNavigateList} icon={ShoppingBag} />
     </> : <>
-      {!!(meal.saveError || (!panel && error)) && <Notice kind="error" title={t("menus.notSaved")} text={feedback(meal.saveError || error)} />}
+      {!!(meal.saveError || (!panel && error)) && <Notice kind="error" title={t(error instanceof MenuFilterError ? 'menuFilters.reviewFilters' : 'menus.notSaved')} text={feedback(error || meal.saveError)} />}
       {section === 'week' ? <>
       <Pill label={t("menus.localPlanning")} />
       <Card style={styles.servingsCard}>
@@ -224,7 +250,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
       </Card>
       {!meal.plan ? <>
         <View style={styles.empty}><View style={styles.recipeSymbol}><Utensils size={25} color={c.primary} strokeWidth={1.7} /></View><Text style={styles.emptyTitle}>{t("menus.emptyTitle")}</Text><Text style={[ui.note, { textAlign: 'center' }]}>{t("menus.emptyText")}</Text></View>
-        <Button label={t("menus.prepareMenu")} testID="prepare-menu" busy={meal.busy} disabled={busy} onPress={() => { try { void savePlan(createMealPlan(servings)); } catch (failure) { setError(failure); } }} icon={Utensils} />
+        <Button label={t("menus.prepareMenu")} testID="prepare-menu" busy={meal.busy} disabled={busy} onPress={prepareFilteredPlan} icon={Utensils} />
       </> : <>
         <Section title={t('visualMenus.yourWeek')} />
         <Text style={[ui.note, { marginBottom: 15 }]}>{plural('menus.forPeopleSaved', servings)}</Text>
@@ -239,6 +265,11 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
             <IconButton label={t('menus.changeMealA11y', { day: day(index) })} icon={RefreshCw} disabled={busy} onPress={() => open({ kind: 'replace', index })} />
           </Card>;
         })}
+        <View style={{ gap: 10, marginTop: 4 }}>
+          {activeFilterCount > 0 && <Text style={ui.note}>{t('menuFilters.activeHint')}</Text>}
+          <Button label={t('menuFilters.propose')} testID="menu-new-proposal" secondary disabled={busy}
+            onPress={prepareFilteredPlan} icon={RefreshCw} />
+        </View>
       </>}
       <Section title={t('visualMenus.discoverRecipes')} />
       <Pressable accessibilityRole="button" accessibilityLabel={t('visualMenus.localCatalogue')} disabled={busy} onPress={() => setSection('discover')} style={styles.discoveryRow}>
@@ -246,8 +277,13 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
       </Pressable>
       </> : <>
         <Section title={t('visualMenus.discoverRecipes')} />
-        <Text style={[ui.note, { marginBottom: 15 }]}>{t("menus.localInfo")}</Text>
-        {RECIPES.map(recipe => <Pressable key={recipe.id} accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })}
+        <Text testID="menu-catalog-count" style={[ui.note, { marginBottom: 15 }]}>{t('menuFilters.count', { count: formatNumber(visibleRecipes.length), total: formatNumber(RECIPES.length) })}</Text>
+        {visibleRecipes.length === 0 && <View testID="menu-catalog-empty" style={{ gap: 8, marginBottom: 16 }}>
+          <Notice title={t('menuFilters.catalogEmptyTitle')} text={t('menuFilters.catalogEmptyBody')} />
+          <Button label={t('menuFilters.reset')} testID="menu-catalog-reset" secondary disabled={busy}
+            onPress={() => { setFilters(defaultMenuFilters()); setError(''); }} />
+        </View>}
+        {visibleRecipes.map(recipe => <Pressable key={recipe.id} testID={'menu-catalog-recipe-' + recipe.id} accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })}
           disabled={busy} onPress={() => open({ kind: 'recipe', recipe })} style={styles.discoveryRow}>
           <View style={styles.mealSymbol}><Utensils size={20} color={c.primary} strokeWidth={1.7} /></View><View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{plural('menus.minutesPeople', servings, { minutes: formatNumber(recipe.minutes) })}</Text></View><ChevronRight color={c.primary} size={18} />
         </Pressable>)}
@@ -256,17 +292,31 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
         onPress={() => { setIssues([]); open({ kind: 'text' }); }} style={styles.discoveryRow}>
         <View style={styles.mealSymbol}><FileText size={20} color={c.primary} strokeWidth={1.7} /></View><View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{t("menus.importText")}</Text><Text style={ui.note}>{t('visualMenus.importHint')}</Text></View><ChevronRight color={c.primary} size={18} />
       </Pressable>
+      {budgetCents !== undefined && <Card style={{ backgroundColor: c.paleYellow, gap: 8, marginTop: 10 }}>
+        <Text style={ui.strong}>{t('menuFilters.budgetTitle')}</Text>
+        <Text style={ui.strong}>{budgetCents === null ? t('menuFilters.noBudget') : formatMoney(budgetCents)}</Text>
+        <Text style={ui.note}>{t('menuFilters.budgetHelp')}</Text>
+        {onBudget && <Button label={t('menuFilters.editBudget')} secondary disabled={busy} onPress={onBudget} />}
+      </Card>}
       <Text style={styles.localNote}>{t("menus.localInfo")}</Text>
       <Notice title={t('menus.decisionTitle')} text={t('menus.decisionText')} />
     </>}
 
+    {filtersOpen && <MenuFilterPanel filters={filters} busy={busy} budgetCents={budgetCents}
+      onClose={() => { if (!busy) setFiltersOpen(false); }}
+      onApply={next => { if (!busy) { setFilters(next); setFiltersOpen(false); setError(''); } }} />}
     <MenuPanel fullPage={panel?.kind === 'review' || panel?.kind === 'recipe'} visible={!!panel}
       title={!discard && panel?.kind === 'recipe' ? t('flow.recipeHeader') : !discard && panel?.kind === 'review' ? t('flow.reviewHeader') : panelTitle}
-      busy={busy} onClose={close} onNavigateMain={navigateMain} testID="menu-sheet"
+      busy={busy} onClose={close} onNavigateMain={navigateMain} testID={panel?.kind === 'proposal' ? 'menu-plan-proposal-sheet' : 'menu-sheet'}
       subtitle={panel?.kind === 'review' && !discard ? plural('menus.groupedSource', drafts.length, { source: sourceLabel }) : undefined}
       footer={!discard && panel?.kind === 'review' ? <><Text style={ui.note}>{plural('menus.selectedFooter', selectedCount)}</Text><Button label={t("menus.confirm")} testID="confirm-ingredients" accent busy={applying} disabled={busy || selectedCount === 0} onPress={() => void confirm()} icon={Check} /><Button label={t("menus.cancelProposal")} secondary disabled={busy} onPress={close} /></> :
         !discard && panel?.kind === 'text' ? <Button label={t("menus.parseText")} testID="parse-ingredients" disabled={busy} onPress={parseText} /> :
-        !discard && panel?.kind === 'recipe' ? <Button label={t("menus.reviewRecipe")} icon={ShoppingBag} disabled={busy} onPress={() => review(scaleRecipe(panel.recipe, recipeServings), { kind: 'recipe', recipe: panel.recipe, servings: recipeServings })} /> : undefined}>
+        !discard && panel?.kind === 'recipe' ? <Button label={t("menus.reviewRecipe")} icon={ShoppingBag} disabled={busy} onPress={() => review(scaleRecipe(panel.recipe, recipeServings), { kind: 'recipe', recipe: panel.recipe, servings: recipeServings })} /> :
+        !discard && panel?.kind === 'proposal' ? <View style={{ gap: 9 }}>
+          <Button label={t('menuFilters.confirmPlan')} testID="confirm-menu-plan" accent busy={meal.busy} disabled={busy}
+            onPress={() => { void savePlan(panel.plan, () => setPanel(null)); }} icon={Check} />
+          <Button label={t('menuFilters.cancelPlan')} testID="cancel-menu-plan" secondary disabled={busy} onPress={close} />
+        </View> : undefined}>
       {discard ? <View style={{ gap: 16 }}><Text style={ui.body}>{t("menus.discardText")}</Text><Button label={t("menus.continueReview")} disabled={busy} onPress={() => { setDiscard(false); setPendingDestination(null); }} /><Button label={t("menus.cancelWithoutAdd")} secondary disabled={busy} onPress={discardProposal} /></View> : <>
         {!!panelError && <Notice kind="error" title={applyAttempted && shoppingError && panel?.kind === 'review' ? t("menus.saveIngredientErrorTitle") : t("menus.reviewProposalTitle")} text={feedback(panelError)} />}
         {panel?.kind === 'text' ? <>
@@ -339,9 +389,22 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           <Section title={t("menus.stepsTitle")} />
           {localizedRecipe(panel.recipe, t).steps.map((step, index) => <View key={index} style={styles.step}><Text style={styles.stepNumber}>{formatNumber(index + 1)}</Text><Text style={[ui.body, { flex: 1 }]}>{step}</Text></View>)}
           <View style={{ marginTop: 19 }}><Notice title={t("menus.allergensTitle")} text={localizedRecipe(panel.recipe, t).allergenNote} /></View>
+        </> : panel?.kind === 'proposal' ? <>
+          <View style={{ gap: 12 }}>
+            <Text style={ui.body}>{t('menuFilters.proposalHelp')}</Text>
+            {panel.plan.recipeIds.map((id, index) => {
+              const recipe = RECIPES.find(value => value.id === id)!;
+              return <Card key={id} style={{ gap: 5 }}>
+                <Text style={ui.note}>{day(index)}</Text>
+                <Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text>
+                <Text style={ui.note}>{plural('menus.minutesPeople', panel.plan.servings, { minutes: formatNumber(recipe.minutes) })}</Text>
+              </Card>;
+            })}
+          </View>
         </> : panel?.kind === 'replace' && meal.plan ? <>
           <Text style={[ui.note, { marginBottom: 18 }]}>{t("menus.replaceIntro")}</Text>
-          <View style={{ gap: 12 }}>{RECIPES.filter(recipe => !meal.plan!.recipeIds.includes(recipe.id)).map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={meal.busy} icon={BookOpen} onPress={() => { try { if (meal.plan) void savePlan(replaceMeal(meal.plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
+          {replacementRecipes.length === 0 && <Notice title={t('menuFilters.reviewFilters')} text={t('menuFilters.noReplacement')} />}
+          <View style={{ gap: 12 }}>{replacementRecipes.map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={meal.busy} icon={BookOpen} onPress={() => { try { if (meal.plan) void savePlan(replaceMeal(meal.plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
         </> : null}
       </>}
     </MenuPanel>
@@ -363,6 +426,7 @@ const styles = StyleSheet.create({
   sectionChoices: { flexDirection: 'row', gap: 8, marginBottom: 20 },
   sectionChoice: { minHeight: 44, flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: c.neutral, borderRadius: 22, paddingHorizontal: 12, paddingVertical: 10 },
   sectionChoiceSelected: { backgroundColor: c.primary },
+  filterTrigger: { width: 44, height: 44, borderRadius: 14, borderWidth: 1, borderColor: c.line, justifyContent: 'center', alignItems: 'center', backgroundColor: c.surface },
   sectionChoiceText: { color: c.deep, fontFamily: f.semi, fontSize: 14, lineHeight: 21 },
   sectionChoiceTextSelected: { color: '#fff' },
   loading: { minHeight: 190, alignItems: 'center', justifyContent: 'center', gap: 17 },

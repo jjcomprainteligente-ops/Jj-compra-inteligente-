@@ -168,8 +168,8 @@ export function ProfileScreen({
         icon={Globe} disabled={busy} onPress={onLanguage} />
       <ProfileRow testID="profile-stores" title={t('shell.stores')} subtitle={t('shell.storesHelp')} icon={MapPin} disabled={busy} onPress={() => onNavigate('stores')} />
       <ProfileRow testID="profile-notifications" title={t('shell.notifications')} subtitle={t('shell.notificationsHelp')} icon={Clock} disabled={busy} onPress={() => onNavigate('notifications')} />
-      <ProfileRow title={t('secondary.privacy')} subtitle={t('secondary.privacySubtitle')} icon={ShieldCheck} disabled={busy}
-        onPress={() => onInfo('secondary.privacy', 'secondary.privacyInfo')} />
+      <ProfileRow testID="profile-privacy" title={t('secondary.privacy')} subtitle={t('privacy.profileSubtitle')} icon={ShieldCheck} disabled={busy}
+        onPress={() => onNavigate('privacy')} />
     </View>
 
     <Card style={styles.householdCard}>

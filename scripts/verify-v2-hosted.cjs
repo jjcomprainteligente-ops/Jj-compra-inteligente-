@@ -150,7 +150,7 @@ async function assertRenderedAssets(page) {
   if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw new Error('Horizontal overflow.');
   const rawKeys = await page.evaluate(() => {
     const labels = [...document.querySelectorAll('[aria-label]')].map(element => element.getAttribute('aria-label')).join('\n');
-    return [...new Set(((document.body.innerText + '\n' + labels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus|entry|flow|states|shell|money|moneyViews|localSettings)\.[a-zA-Z][\w.-]*/g) ?? []))];
+    return [...new Set(((document.body.innerText + '\n' + labels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus|entry|flow|states|shell|money|moneyViews|localSettings|menuFilters|privacy)\.[a-zA-Z][\w.-]*/g) ?? []))];
   });
   if (rawKeys.length) throw new Error('Untranslated resource keys: ' + rawKeys.join(', '));
 }
@@ -309,6 +309,39 @@ async function verifyResources(context, origin, packaged, report) {
         await page.getByTestId('open-expense-history').click();
         await expect(page.getByTestId('expenses-period-total')).toBeVisible();
         await page.screenshot({ path: path.join(evidence, code + '-history.png'), fullPage: true });
+        const beforeFilters = await snapshot(page);
+        await page.getByTestId('tab-menus').click();
+        await page.getByTestId('menu-filters-open').click();
+        const filters = page.getByTestId('menu-filter-sheet');
+        await filters.getByTestId('menu-filter-time-20').click();
+        await filters.getByTestId('menu-filters-apply').click();
+        await expect(filters).toHaveCount(0);
+        if (JSON.stringify(await snapshot(page)) !== JSON.stringify(beforeFilters)) throw new Error('Applying filters changed saved documents.');
+        await page.getByTestId('open-profile').click();
+        await page.getByTestId('profile-privacy').click();
+        await expect(page.getByTestId('privacy-screen')).toBeVisible();
+        const downloadEvent = page.waitForEvent('download');
+        await page.getByTestId('privacy-export-all').click();
+        const download = await downloadEvent;
+        const backup = JSON.parse(await fs.readFile(await download.path(), 'utf8'));
+        const expectedBackupKeys = [...keys, preferenceKey].sort();
+        if (backup.format !== 'jj-local-backup' || backup.version !== 1 || backup.currency !== 'EUR' ||
+          JSON.stringify(backup.documents.map(document => document.key).sort()) !== JSON.stringify(expectedBackupKeys)) throw new Error('The downloaded backup has unexpected scope or format.');
+        const backupDocuments = new Map(backup.documents.map(document => [document.key, document.raw]));
+        const beforeDeletion = await snapshot(page);
+        for (let index = 0; index < keys.length; index++) if (backupDocuments.get(keys[index]) !== beforeDeletion[index]) throw new Error('A downloaded document differs from local storage.');
+        await page.getByTestId('privacy-delete-expenses').click();
+        const deletion = page.getByTestId('privacy-delete-dialog');
+        await deletion.getByTestId('privacy-delete-review-next').click();
+        await expect(deletion.getByTestId('privacy-delete-confirm')).toBeDisabled();
+        await deletion.getByTestId('privacy-delete-word').fill({ es: 'BORRAR', en: 'DELETE', de: 'LÖSCHEN', fr: 'EFFACER' }[code]);
+        await deletion.getByTestId('privacy-delete-ack').check();
+        await deletion.getByTestId('privacy-delete-confirm').click();
+        await expect(deletion).toHaveCount(0);
+        await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.data?.expenses, keys[4])).toEqual([]);
+        const afterDeletion = await snapshot(page);
+        if (afterDeletion.some((value, index) => index !== 4 && value !== beforeDeletion[index])) throw new Error('Deleting expenses changed another category.');
+        await assertRenderedAssets(page);
         const businessBefore = await snapshot(page);
         await page.getByTestId('open-profile').click();
         await page.getByTestId('language-settings').click();
@@ -326,7 +359,7 @@ async function verifyResources(context, origin, packaged, report) {
         report.languageChecks.push({ language: code, manualPreferenceAfterReload: next, passed: true, bundleVerified, logoVerified,
           checks: ['Device language and official welcome logo', 'Four translated tabs', 'Loaded Manrope fonts and images',
             'Local list save', 'Recipe review and cancellation without shopping changes', 'Manual language preference persists after reload',
-            'Six business documents preserved by language changes', 'Local search, voice, scanner and notification routes', 'Favourite store and confirmed expense save with both new durable fences on HTTPS', 'Exact packaged bundle, logo, fonts, and resource hashes'] });
+            'Six business documents preserved by language changes', 'Local search, voice, scanner and notification routes', 'Favourite store and confirmed expense save with both new durable fences on HTTPS', 'Session menu filters preserve saved documents', 'Downloaded backup contains exactly seven allowed documents', 'Confirmed category deletion preserves the other stores', 'Exact packaged bundle, logo, fonts, and resource hashes'] });
         console.log(JSON.stringify({ language: code, status: 'passed' }));
       } catch (error) {
         await page.screenshot({ path: path.join(evidence, code + '-failure.png'), fullPage: true }).catch(() => {});

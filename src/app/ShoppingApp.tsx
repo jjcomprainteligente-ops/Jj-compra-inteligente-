@@ -30,6 +30,8 @@ import { BudgetScreen, HistoryScreen } from './screens/MoneyScreens';
 import { StoresScreen } from './screens/LocalSettingsScreens';
 import { NotificationsWorkspace } from './screens/NotificationsWorkspace';
 import { StateReviewScreen } from './screens/StateReviewScreen';
+import { DataPrivacyScreen } from './screens/DataPrivacyScreen';
+import type { PrivacyScope } from '../domain/dataPrivacy';
 import { usePriceObservations } from './usePriceObservations';
 import type { Screen, SecondaryProps } from './types';
 
@@ -72,7 +74,9 @@ function Workspace() {
   const expenses = useExpenses();
   const localPreferences = useLocalPreferences();
   const connectivity = useConnectivity();
-  const navigationBusy = store.busy || priceStore.busy || expenses.busy || localPreferences.busy || languageBusy;
+  const [privacyBusy, setPrivacyBusy] = useState(false);
+  const externalBusy = store.busy || priceStore.busy || expenses.busy || localPreferences.busy || languageBusy;
+  const navigationBusy = externalBusy || privacyBusy;
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [mainScreen, setMainScreen] = useState<MainScreen>('home');
   const [searchCategory, setSearchCategory] = useState<Category>();
@@ -96,7 +100,7 @@ function Workspace() {
   const disabled = store.busy || store.loading || !!store.loadError;
   const navigate = (value: Screen) => {
     if (navigationBusy) return;
-    if (value === 'profile' && screen !== 'profile' && screen !== 'language') profileReturnScreen.current = screen;
+    if (value === 'profile' && screen !== 'profile' && screen !== 'language' && screen !== 'privacy') profileReturnScreen.current = screen;
     if (tabs.some(tab => tab.key === value)) setMainScreen(value as MainScreen);
     else if (['prices', 'budget', 'history', 'stores'].includes(value) && screen !== 'profile') setMainScreen('savings');
     else if (['search', 'product', 'voice', 'scanner'].includes(value)) setMainScreen('list');
@@ -205,6 +209,12 @@ function Workspace() {
     onBudget: editBudget, onCreateList: createList,
     ...actualSpending, onLanguage: () => navigate('language'),
     onRecipe: () => info('app.recipePreviewTitle', 'app.recipePreviewBody') };
+  const reloadDeletedScope = async (scope: PrivacyScope) => {
+    if (scope === 'shopping') await store.reload();
+    else if (scope === 'observations') await priceStore.reload();
+    else if (scope === 'expenses') await expenses.reload();
+    else if (scope === 'settings') await localPreferences.reload();
+  };
   const titleKey = discard ? 'app.discardTitle' : duplicate ? 'app.duplicateTitle' : editor?.kind === 'list' ? editor.id ? 'app.renameList' : 'app.nextShopping' :
     editor?.kind === 'budget' ? 'app.yourBudget' : editor?.kind === 'item' ? editor.id ? 'app.editItem' : 'app.addItem' : editor?.kind === 'choose' ? 'app.yourLists' : editor?.title ?? '';
   const title = titleKey ? t(titleKey) : '';
@@ -215,11 +225,11 @@ function Workspace() {
       <LegacyComparisons />
     </View> : <View style={styles.shell}>
       <View style={styles.header}>
-        <Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'prices' ? 'app.tabSavings' : tabs.find(tab => tab.key === screen)?.label ?? `shell.${screen}`)}</Text>
+        <Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'privacy' ? 'privacy.title' : screen === 'prices' ? 'app.tabSavings' : tabs.find(tab => tab.key === screen)?.label ?? `shell.${screen}`)}</Text>
         <Pressable accessibilityRole="button" testID="open-notifications" accessibilityLabel={t('shell.notifications')} disabled={navigationBusy} onPress={() => navigate('notifications')} style={styles.headerAction}><Bell size={22} color={c.surface} /></Pressable>
         <Pressable accessibilityRole="button" testID="open-profile" accessibilityLabel={t('app.openProfile')} disabled={navigationBusy} onPress={() => navigate('profile')} style={styles.avatar}><UserRound size={22} color={c.deep} /></Pressable>
       </View>
-      {!['home', 'list', 'savings', 'menus', 'profile', 'language', 'prices'].includes(screen) && <Pressable accessibilityRole="button" testID="subpage-back" accessibilityLabel={t('shell.back')} disabled={navigationBusy} onPress={() => navigate(screen === 'product' ? 'search' : screen === 'history' ? 'budget' : mainScreen)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={ui.link}>{t('shell.back')}</Text></Pressable>}
+      {!['home', 'list', 'savings', 'menus', 'profile', 'language', 'prices'].includes(screen) && <Pressable accessibilityRole="button" testID="subpage-back" accessibilityLabel={t('shell.back')} disabled={navigationBusy} onPress={() => navigate(screen === 'product' ? 'search' : screen === 'history' ? 'budget' : screen === 'privacy' ? 'profile' : mainScreen)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={ui.link}>{t('shell.back')}</Text></Pressable>}
       {screen === 'profile' && <Pressable accessibilityRole="button" testID="profile-back" accessibilityLabel={t('app.backToSection', { section: t(tabs.find(tab => tab.key === mainScreen)!.label) })} disabled={navigationBusy} onPress={() => navigate(profileReturnScreen.current)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={[ui.link, { flex: 1 }]}>{t('app.backToSection', { section: t(tabs.find(tab => tab.key === mainScreen)!.label) })}</Text></Pressable>}
       <ScrollView ref={scroll} keyboardShouldPersistTaps="handled" contentContainerStyle={{ paddingBottom: 24 }}>
         {connectivity.online === false && <View style={[ui.page, { paddingTop: 16, paddingBottom: 0 }]}><Notice title={t('states.offline.title')} text={t('states.offline.description')} /></View>}
@@ -227,8 +237,9 @@ function Workspace() {
           <Notice kind="error" title={t('common.language')} text={preferenceError} action={t('common.retry')}
             onPress={() => { void retryPreferences(); }} />
         </View>}
-        {screen === 'language' ? <LanguageScreen onBack={() => navigate('profile')} /> : store.loading ? <View style={styles.loading}><ActivityIndicator color={c.primary} /><Text style={ui.body}>{t('app.loadingLists')}</Text></View> : store.loadError ? <View style={[ui.page, { paddingTop: 28 }]}>
+        {screen === 'language' ? <LanguageScreen onBack={() => navigate('profile')} /> : screen === 'privacy' ? <DataPrivacyScreen busy={externalBusy} onBusyChange={setPrivacyBusy} onDeleted={reloadDeletedScope} onBack={() => navigate('profile')} /> : store.loading ? <View style={styles.loading}><ActivityIndicator color={c.primary} /><Text style={ui.body}>{t('app.loadingLists')}</Text></View> : store.loadError ? <View style={[ui.page, { paddingTop: 28 }]}>
           <Notice kind="error" title={t('app.dataAttention')} text={loadErrorsWithDataNotice.has(store.loadError) ? translateError(store.loadError) : t('app.loadErrorBody', { detail: translateError(store.loadError) })} action={t('app.reload')} onPress={() => void store.reload()} />
+          <Button label={t('privacy.title')} secondary onPress={() => navigate('privacy')} testID="data-error-privacy" />
           <Button label={t('app.openComparator')} secondary onPress={() => navigate('comparisons')} />
         </View> : <>
           {!!store.saveError && !editor && <View style={[ui.page, { paddingTop: 18, paddingBottom: 0 }]}><Notice kind="error" title={t('app.saveFailed')} text={translateError(store.saveError)} /></View>}
@@ -236,7 +247,7 @@ function Workspace() {
             action={t('app.undo')} onPress={() => { if (!store.busy) void store.undoLast(); }} /></View>}
           {screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
             <PriceWorkspace store={priceStore} onBack={() => navigate('savings')} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
-            <MenuWorkspace initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate} initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
+            <MenuWorkspace budgetCents={active?.budgetCents ?? null} onBudget={active ? editBudget : createList} initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate} initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
           screen === 'search' ? <SearchScreen lists={store.data.lists} busy={disabled} initialCategory={searchCategory} onSelect={(listId, itemId) => { setSelectedProduct({ listId, itemId }); navigate('product'); }} onAdd={category => openItem(undefined, category)} /> :
           screen === 'product' ? <ProductScreen list={productList} item={product} busy={disabled} onEdit={() => product && openItem(product, undefined, productList?.id)} onBack={() => navigate('search')} /> :
           screen === 'voice' ? <VoiceScreen busy={disabled} draft={voiceDraft} onDraftChange={setVoiceDraft} onReview={text => { setPendingEntry({ id: createId(), text }); setMenuSection('week'); navigate('menus'); }} onBack={backToMain} /> :
