@@ -1,0 +1,32 @@
+{
+  "sourceCommit": "fd78ecb09a2d141a9c23426be4a80d087908b1b5",
+  "exportDirectory": "dist-menus-privacy-review",
+  "native": "Web and Hermes compilation; not physical device validation",
+  "files": [
+    {
+      "path": "dist-menus-privacy-review/index.html",
+      "bytes": 1222,
+      "sha256": "2b1fdd430774a03e617d570c3d70c17ce19972aa9078a3262b425d1b6693e67d"
+    },
+    {
+      "path": "dist-menus-privacy-review/_expo/static/js/ios/index-d13bc53b2797039e8db77f07d5a48139.hbc",
+      "bytes": 4931425,
+      "sha256": "f2f6be6d3ffe264ff345f3fd83c15b148ad1b7b4d6e01cb9c19b55640926e1a8"
+    },
+    {
+      "path": "dist-menus-privacy-review/_expo/static/js/web/index-396cd5b3db97b40c16d40b76e9201121.js",
+      "bytes": 3579689,
+      "sha256": "8693be1e936f547edaa367125d5ba98441d0bd48e262e983e5259f6a4406f805"
+    },
+    {
+      "path": "dist-menus-privacy-review/_expo/static/js/android/index-7af1544d8661d4a47eb43c298c088b67.hbc",
+      "bytes": 4938243,
+      "sha256": "edb45f3537306b9b5a3846b5929785bd540adf91d39bd42d1b410e7f5ca18206"
+    },
+    {
+      "path": "assets/brand/jj-logo-horizontal.png",
+      "bytes": 255528,
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+    }
+  ]
+}

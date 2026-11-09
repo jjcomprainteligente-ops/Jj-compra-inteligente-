@@ -288,3 +288,20 @@ Quedan pendientes revisión visual del propietario/ChatGPT, piloto físico iPhon
 Código final de la preview: `746395e614e68624e012e76d13e0fa377e241c6a`. Tras los 182 casos de la suite completa se añadieron dos atributos `aria-checked` al formulario de gastos; los 20 casos locales se repitieron y pasan, sin fallos ni intermitentes. Exportación web/iOS/Android repetida. Preview staging READY, protección conservada y verificación remota en cuatro idiomas / 27 recursos correcta. El enlace temporal se entrega en la conversación y caduca el 9 de noviembre a las 09:00 UTC; su credencial no se guarda en GitHub.
 
 La publicación de código e informes está cerrada; la aprobación estética y el piloto físico siguen pendientes. La revisión automática bloqueó publicar las 100 capturas seleccionadas en GitHub público por posible información sensible y falta de autorización específica. Se mantienen locales, con petición de autorización separada; los informes de texto se conservan en `design/v2/entrega-local-2026-11-07/reports/`. Este bloqueo de imágenes no bloquea la app publicada ni modifica el resultado de pruebas.
+
+## Entrega de filtros y privacidad local — 2026-11-09
+
+Continúa la construcción autorizada mientras el propietario termina las traducciones de sus 150 recetas. La elección visual vigente y el código anterior se conservan.
+
+| Bloque de esta pareja | Estado | Evidencia y límite |
+|---|---|---|
+| A · Filtros de Menús | IMPLEMENTADO; EN REVISIÓN | Tiempo, preferencia e ingredientes excluidos solo en sesión; propuestas de cinco recetas únicas; confirmación antes de cambiar un plan; presupuesto orientativo sin costes inventados. Catálogo inicial de siete recetas. |
+| B · Copias y borrado local | IMPLEMENTADO; EN REVISIÓN | Copia JSON de siete documentos permitidos; seis categorías de borrado independientes con revisión, palabra/casilla, CAS y limpieza de deshacer. No borra documentos corruptos o futuros; permite conservarlos exportándolos. |
+| Auditoría tras la pareja | VERIFICACIÓN AUTOMATIZADA COMPLETA | TypeScript, 758pruebas unitarias y 222 casos web correctos,0 fallos / 0 intermitentes. 24 omisiones deliberadas de matrices duplicadas. Los 40 casos nuevos también se probaron por separado. |
+| Preview de esta pareja | PUBLICADA Y VERIFICADA | Staging READY desde `fd78ecb09a2d141a9c23426be4a80d087908b1b5`, cuatro idiomas y 27 recursos verificados, incluida descarga JSON y borrado confirmado aislado. Protección conservada. |
+
+Código y revisión: [PR #3](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/3), base PR #2. Auditoría y límites: [MENUS_PRIVACIDAD_Y_AUDITORIA.md](MENUS_PRIVACIDAD_Y_AUDITORIA.md). Informes públicos en `design/menus-privacy/reports/`. Las 420 capturas base y 24 nuevas se conservan localmente; no se publican imágenes o archivos personales de copia.
+
+La preview usa el mismo código de aplicación comprobado y su enlace se entrega por la conversación, con caducidad el 10 de noviembre a las 09:10 UTC y sin guardar la credencial en GitHub. No es aprobación estética ni prueba física iPhone/Safari. `npm audit` mantiene cinco avisos moderados, cero altos/críticos. No se añadieron dependencias o servicios externos.
+
+Pendientes: recibir e incorporar las 150 recetas con su biblioteca persistente, revisión visual, piloto físico y de accesibilidad, trabajo de marca adicional por etapas. Hogares/cuentas/sincronización y comercio real siguen condicionados. No se declara terminada toda la fase por cerrar esta pareja.
