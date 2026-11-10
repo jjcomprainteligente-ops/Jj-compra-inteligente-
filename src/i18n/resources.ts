@@ -22,8 +22,10 @@ import { shellMessages } from './catalogs/shell';
 
 import { menuFiltersMessages } from './catalogs/menuFilters';
 import { privacyMessages } from './catalogs/privacy';
+import { storePilotMessages } from './catalogs/storePilot';
 
 export const resources = mergeMessageCatalogs(
+  storePilotMessages,
   menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,
   commonMessages, appMessages, menusMessages, pricesMessages, recipeMessages, legacyMessages, errorMessages, secondaryMessages, languageMessages, visualMessages, visualSecondaryMessages, visualMenusMessages,

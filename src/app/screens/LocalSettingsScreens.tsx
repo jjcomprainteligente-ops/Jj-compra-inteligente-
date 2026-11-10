@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { ActivityIndicator, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
-import { Bell, ChevronRight, ListChecks, Minus, Star, Store, Utensils } from 'lucide-react-native';
+import { ActivityIndicator, Linking, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
+import { ArrowUpRight, Bell, ChevronRight, ListChecks, Minus, Star, Store, Utensils } from 'lucide-react-native';
 import { deriveLocalNotices, STORE_IDS } from '../../domain/localPreferences';
+import { allPilotStoresSelected, publicStoreDestination, selectAllPilotStores, type StoreId } from '../../domain/stores';
 import type { MealPlan } from '../../domain/menus';
 import type { ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
-import { Card, Notice, Pill, Section, c, f, ui } from '../components/ui';
+import { Button, Card, Notice, Pill, Section, c, f, ui } from '../components/ui';
 import type { LocalPreferencesStore } from '../useLocalPreferences';
 
 function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
@@ -21,31 +22,62 @@ function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
 }
 
 export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack(): void }) {
-  const { t } = useI18n();
+  const { t, formatNumber } = useI18n();
+  const [visitError, setVisitError] = useState(false);
   const disabled = store.loading || store.busy || !!store.loadError;
+  const allSelected = allPilotStoresSelected(store.data.favoriteStores);
+  const visit = async (id: StoreId) => {
+    const destination = publicStoreDestination(id);
+    if (!destination) return;
+    setVisitError(false);
+    try { await Linking.openURL(destination.url); }
+    catch { setVisitError(true); }
+  };
   return <View style={ui.page} testID="stores-screen">
     <Text accessibilityRole="header" style={styles.heading}>{t('localSettings.stores')}</Text>
     <Pill label={t('localSettings.zone')} />
+    <Text style={[ui.body, styles.noteText]}>{t('storePilot.chooseHelp')}</Text>
     <View style={styles.feedback}><StorageFeedback store={store} /></View>
+    <View style={styles.storeActions}>
+      <Button secondary label={t('storePilot.selectAll')} testID="stores-select-all" disabled={disabled || allSelected}
+        onPress={() => { void store.commit(previous => ({ ...previous, favoriteStores: selectAllPilotStores(previous.favoriteStores) })); }} />
+      <Button secondary label={t('storePilot.clear')} testID="stores-clear" disabled={disabled || store.data.favoriteStores.length === 0}
+        onPress={() => { void store.commit(previous => ({ ...previous, favoriteStores: [] })); }} />
+    </View>
+    {!store.loading && !store.loadError && <Text testID="stores-selection-summary" accessibilityLiveRegion="polite" style={[ui.note, styles.noteText]}>
+      {t(store.data.favoriteStores.length ? 'storePilot.selectedCount' : 'storePilot.noSelection', { count: formatNumber(store.data.favoriteStores.length) })}
+    </Text>}
+    {visitError && <Notice kind="error" title={t('storePilot.openErrorTitle')} text={t('storePilot.openError')} />}
     {STORE_IDS.map(id => {
       const selected = store.data.favoriteStores.includes(id);
       const name = t(`localSettings.store.${id}`);
-      return <View key={id} style={ui.row}>
-        <View style={ui.rowIcon}><Store color={c.primary} size={19} strokeWidth={1.7} /></View>
-        <View style={styles.rowCopy}><Text style={ui.rowTitle}>{name}</Text><Text style={ui.note}>{t('localSettings.noCatalog')}</Text></View>
-        <Pressable testID={`favorite-${id}`} accessibilityRole="button"
-          accessibilityLabel={t(selected ? 'localSettings.removeFavorite' : 'localSettings.addFavorite', { store: name })}
-          accessibilityState={{ selected, disabled }} disabled={disabled}
-          onPress={() => { void store.commit(previous => ({ ...previous, favoriteStores: previous.favoriteStores.includes(id)
-            ? previous.favoriteStores.filter(value => value !== id) : [...previous.favoriteStores, id] })); }}
-          style={({ pressed }) => [ui.iconButton, (pressed || disabled) && styles.dim]}>
-          <Star size={22} color={c.primary} fill={selected ? c.primary : 'transparent'} strokeWidth={1.7} />
-        </Pressable>
+      const destination = publicStoreDestination(id);
+      return <View key={id} testID={`store-row-${id}`}>
+        <View style={ui.row}>
+          <View style={ui.rowIcon}><Store color={c.primary} size={19} strokeWidth={1.7} /></View>
+          <View style={styles.rowCopy}><Text style={ui.rowTitle}>{name}</Text><Text style={ui.note}>{t('localSettings.noCatalog')}</Text></View>
+          <Pressable testID={`favorite-${id}`} accessibilityRole="button"
+            accessibilityLabel={t(selected ? 'localSettings.removeFavorite' : 'localSettings.addFavorite', { store: name })}
+            accessibilityState={{ selected, disabled }} disabled={disabled}
+            onPress={() => { void store.commit(previous => ({ ...previous, favoriteStores: previous.favoriteStores.includes(id)
+              ? previous.favoriteStores.filter(value => value !== id) : [...previous.favoriteStores, id] })); }}
+            style={({ pressed }) => [ui.iconButton, (pressed || disabled) && styles.dim]}>
+            <Star size={22} color={c.primary} fill={selected ? c.primary : 'transparent'} strokeWidth={1.7} />
+          </Pressable>
+        </View>
+        {selected && destination && <View style={styles.destination} testID={`store-destination-${id}`}>
+          <Text style={ui.note}>{t(`storePilot.${destination.kind}Help`)}</Text>
+          <Button secondary label={t(`storePilot.${destination.kind}Action`, { store: name })} testID={`store-open-${id}`}
+            icon={ArrowUpRight} disabled={disabled} onPress={() => { void visit(id); }} />
+        </View>}
       </View>;
     })}
     <Card style={styles.storeNote}>
       <Text accessibilityRole="header" style={ui.strong}>{t('localSettings.noAgreements')}</Text>
       <Text style={[ui.note, styles.noteText]}>{t('localSettings.storesHelp')}</Text>
+      <Text style={[ui.note, styles.noteText]}>{t('storePilot.priceScope')}</Text>
+      <Text style={[ui.note, styles.noteText]}>{t('storePilot.externalPayment')}</Text>
+      <Text style={[ui.note, styles.noteText]}>{t('storePilot.noCartTransfer')}</Text>
     </Card>
   </View>;
 }
@@ -125,6 +157,8 @@ const styles = StyleSheet.create({
   dim: { opacity: 0.65 },
   storeNote: { backgroundColor: c.soft, marginTop: 21, paddingVertical: 20 },
   noteText: { marginTop: 9 },
+  storeActions: { gap: 9, marginTop: 4 },
+  destination: { gap: 10, paddingBottom: 18 },
   filters: { flexDirection: 'row', gap: 10, marginBottom: 24 },
   filter: { flex: 1, minHeight: 44, borderRadius: 22, backgroundColor: c.neutral, paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'center', alignItems: 'center' },
   filterSelected: { backgroundColor: c.primary },

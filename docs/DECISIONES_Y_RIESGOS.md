@@ -314,3 +314,6 @@ La publicación de código e informes está cerrada; la aprobación estética y 
 | Aprobación visual y marca | Pendiente del propietario/ChatGPT; tokens y PNG original conservados. Variantes, iconos y 3D siguen revisión aparte. |
 
 La publicación verificada es `dpl_DN9HdAtWMEm7sVCLkoMnGwsgYdpo`, destino `staging`, protección conservada; el enlace temporal se entrega en la conversación y vence el 10 de noviembre a las 09:10 UTC. Su secreto queda fuera del repositorio. Los despliegues e informes previos permanecen conservados.
+# Tiendas y pago externo · decisión del propietario 10/11/2026
+
+La selección admite una, varias o todas las tiendas del piloto. HiperDino, SuperDino y Express tienen identificadores independientes; no heredan catálogo/precio entre formatos o sucursales. La compra y el pago serán siempre del comercio elegido. La consulta pública demuestra acceso a páginas y ofertas, no una integración oficial: catálogo automatizado, cobertura por CP/sucursal, transferencia de carrito y stock quedan sin confirmar. Se conserva «Sin precio verificado» y el comparador manual independiente. No se envían solicitudes a cadenas en esta entrega. [Investigación, contrato y límites](PILOTO_TIENDAS_Y_PRECIOS_2026-11-10.md).
