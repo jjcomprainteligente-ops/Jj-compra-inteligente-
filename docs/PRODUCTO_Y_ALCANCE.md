@@ -58,3 +58,12 @@ Acuerdos comerciales, catálogo, disponibilidad, operaciones de checkout, devolu
 - Tecnologías: Expo + React Native + TypeScript, Supabase y backend IA, solo si la auditoría avala ese camino.
 - Navegación de 4 pestañas: Inicio, Mi compra, Ahorro, Menús; Perfil desde avatar.
 - Concepto visual recomendado: `Verde Esencial`.
+
+## Enmienda de alcance — 10/11/2026: compra y pago fuera de JJ
+**Decisión explícita posterior del propietario, prevalece sobre redacciones de fase 3 y B09 que sugieran checkout dentro de JJ.**
+
+JJ genera recetas, listas, presupuestos, análisis de gasto y comparaciones. La persona elige **una tienda, varias tiendas o todas**, con establecimientos específicos cuando se conozcan. **JJ no vende, cobra ni recibe pagos nunca.** La decisión y el pago se completan exclusivamente en la tienda, su app/web o en caja física. Un enlace externo no implica carrito importado, pedido confirmado o disponibilidad.
+
+Se permite preparar un piloto con precios/ofertas públicos **solo de manera legal y transparente**, con referencias documentadas y sin scraping masivo ni APIs privadas sin autorización. Posteriormente se negociará acceso oficial a datos de producto/precio por zona y, si procede, enlaces admitidos a carritos externos. «Mercado» incluye provisionalmente Mercadona y mercados locales; la separación mayorista/minorista es obligatoria.
+
+Especificación de producto y pruebas pendientes: [Piloto de precios y salida externa](PILOTO_PRECIOS_TENERIFE_Y_SALIDA_A_TIENDAS_2026-11-10.md). Ninguna integración minorista ni checkout se considera implementada por esta enmienda.

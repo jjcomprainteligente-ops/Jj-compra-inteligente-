@@ -232,3 +232,16 @@ GitHub pasa a ser la fuente principal; Vercel conserva su función de preview. L
 - **AUDITORÍA DE ENTREGA:** revisión de importación, secretos/artefactos excluidos, conservación, reproducción y prueba remota en `github/G00_ENTREGA_Y_AUDITORIA.md`, con evidencia `design/github-g00/`.
 - **V00 BLOQUEADO EN RECUPERACIÓN DE ORIGINALES:** diagnóstico de diferencias completado; se han solicitado de nuevo los adjuntos V2/Premium. V01/V02 pendientes de esos archivos. No se etiqueta la preview actual como V2.
 - **ABIERTOS:** avisos de dependencias, iPhone/Safari físico y separación de pagos confirmados. Sin nuevas funciones comerciales ni servicios.
+
+## Encargo de producto para piloto de precios — 10/11/2026
+**Estado:** investigación externa realizada, alcance de producto definido y documento preparado; **Codex NO ha implementado ni validado la función**. Conservar B06 manual y el resto de módulos sin modificarlos.
+
+| Subbloque propuesto | Estado | Entrada | Criterio de cierre |
+|---|---|---|---|
+| P-PRECIOS-0 fuentes y legalidad | INVESTIGACIÓN DOCUMENTADA | [Especificación de piloto](PILOTO_PRECIOS_TENERIFE_Y_SALIDA_A_TIENDAS_2026-11-10.md) | Fuentes y derechos revisados, precios rotulados por fecha/tienda/región; datos de muestra no inventados como reales |
+| P-PRECIOS-1 selector 1/varias/todas | PENDIENTE CODEX | B03–B06 actuales | Pruebas en iPhone/web: filtros, formatos HiperDino, cobertura de cesta y estados sin precio |
+| P-PRECIOS-2 indicador datos abiertos | PENDIENTE CODEX | Dataset Cabildo/Mercatenerife CC Attribution | Importación y atribución probadas; mayorista aislado de precios minoristas |
+| P-PRECIOS-3 salida externa | PENDIENTE CODEX | Destinos oficiales validados | Nunca checkout/pagos internos, no transferencia de cesta prometida; cada tienda mantiene su propio cierre |
+| P-PRECIOS-4 acuerdos feeds | BLOQUEADO | permisos escritos y demo probada | Contratos/API documentados y cobertura realmente verificable |
+
+No publicar estos bloques como terminados por existir la especificación. Respetar AGENTS.md: Codex es desarrollador; auditoría, pruebas y preview de staging después de un bloque terminado.
