@@ -49,3 +49,7 @@ design/v2/entrega-local-2026-11-07/index.html
 # Pruebas completas de filtros/privacidad: artefactos locales, informes públicos separados.
 design/v2/evidence/run-2026-11-09T10-01-49-632Z-6DC7ol/
 design/menus-privacy/local-evidence/
+
+# Auditoría móvil: capturas/trazas locales; informes de texto publicados aparte.
+design/v2/evidence/run-2026-11-10*/
+design/mobile-readiness/local-evidence/

@@ -305,3 +305,25 @@ Código y revisión: [PR #3](https://github.com/jjcomprainteligente-ops/Jj-compr
 La preview usa el mismo código de aplicación comprobado y su enlace se entrega por la conversación, con caducidad el 10 de noviembre a las 09:10 UTC y sin guardar la credencial en GitHub. No es aprobación estética ni prueba física iPhone/Safari. `npm audit` mantiene cinco avisos moderados, cero altos/críticos. No se añadieron dependencias o servicios externos.
 
 Pendientes: recibir e incorporar las 150 recetas con su biblioteca persistente, revisión visual, piloto físico y de accesibilidad, trabajo de marca adicional por etapas. Hogares/cuentas/sincronización y comercio real siguen condicionados. No se declara terminada toda la fase por cerrar esta pareja.
+
+## Paneles accesibles y compatibilidad WebKit — 2026-11-10
+
+Continúa la construcción autorizada mientras se prepara la biblioteca de recetas del propietario. Se conserva GPT-6 V2 / Verde Mercado Premium y el PNG oficial exacto. Esta pareja no cambia la arquitectura de datos ni añade servicios.
+
+| Bloque | Estado | Comprobación y límite |
+|---|---|---|
+| A · Paneles y campos compartidos | IMPLEMENTADO; EN REVISIÓN | Zona segura inferior, foco interior/retorno al disparador, cierre táctil accesible, ayudas de campos y desplazamiento integral cuando texto/cabecera/pie dejan sin espacio al cuerpo. Borradores y bloqueos conservados. |
+| B · WebKit y preparación del piloto | IMPLEMENTADO; VERIFICADO EN MOTOR | Suite independiente de 42 casos en cuatro idiomas y dos tamaños; capacidades reales Web Locks/WebCrypto/IndexedDB strict. Guía física preparada. WebKit Linux no certifica Safari iOS ni iPhone físico. |
+| Auditoría tras la pareja | VERIFICACIÓN AUTOMATIZADA COMPLETA | TypeScript, 758 pruebas unitarias, 248 casos Chromium y 42 WebKit correctos; cero fallos/intermitentes en las pasadas finales. 24 omisiones deliberadas de matrices duplicadas de Chromium. Exportaciones web/iOS/Android completadas. |
+| Publicación | PENDIENTE DE VERIFICACIÓN REMOTA | Guardar esta fuente en GitHub antes de subir la compilación comprobada a Vercel staging; conservar protección y despliegues anteriores. |
+
+La nueva matriz de paneles incluye 26 casos de teclado, borrador, guardado ocupado y texto CSS al 200 % en 320×568, en es/en/de/fr. Las 420 capturas base y las adicionales de paneles/WebKit se mantienen locales. Los informes públicos se guardan en `design/mobile-readiness/reports/`. Se verificó la integridad de los 75 archivos originales/extractos; no se modifica la marca.
+
+[Auditoría y comandos](PANELES_WEBKIT_Y_AUDITORIA.md) · [Guía de aceptación física](IPHONE_PRUEBA_DE_PANELES.md). Cinco avisos moderados de herramientas continúan abiertos; no existe un parche oficial compatible hoy. Sin overrides ni degradación de Expo. Pendientes: revisión visual, iPhone/Safari físico y accesibilidad nativa, incorporación de las 150 recetas cuando se reciban, variantes de marca/3D y módulos condicionados de hogares/comercio. No se declara terminada toda la aplicación ni B00–B09.
+
+
+### Publicación verificada — 2026-11-10
+
+Fuente de aplicación: `23bde4371aa041a6ab96ab2f62afe815a6f5c472`, [PR #7](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/7), base en la entrega de filtros/privacidad. Preview `staging` READY: `dpl_BX1bmmAu4j653jPPJ3oS9AqjFp6K`, URL base https://jj-compra-inteligente-e3qq1imu1-cmj2hwhc6b-1051.vercel.app . Protección conservada. Verificación remota correcta en es/en/de/fr y 27 recursos por bytes/hash, incluidos filtros, guardado, menús, copia JSON exacta y borrado confirmado aislado. El enlace temporal se entrega únicamente en la conversación; vence el 11 de noviembre de 2026 a las 15:00:33 UTC. Su credencial queda fuera de GitHub. Informe: `design/mobile-readiness/reports/hosted-verification.json`.
+
+Los borradores separados [PR #4, piloto de tiendas](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/4) y [PR #5, especificación de precios y salida externa](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/5) se localizaron en GitHub y permanecen intactos. No forman parte de esta preview ni se fusionaron automáticamente; su validación e integración es una entrega posterior. Se conserva el historial y no se promueve a producción. La prueba física, la revisión visual, las 150 recetas y los cinco avisos moderados siguen pendientes.

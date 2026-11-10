@@ -1,0 +1,455 @@
+{
+  "date": "2026-11-10T15:46:39.166969+00:00",
+  "engine": "WebKit",
+  "version": "27.2",
+  "playwrightVersion": "1.64.1",
+  "physicalIPhone": false,
+  "target": "http://127.0.0.1:8081",
+  "export": "dist-mobile-readiness-final",
+  "webAsset": "_expo/static/js/web/index-fe02e3bce353424b4b19f01c54ffcddc.js",
+  "webAssetSHA256": "0a529f2fdb11c628e012fdf1a71786a59deeddfdc4500d3238279d537897c409",
+  "languages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "viewports": [
+    {
+      "width": 390,
+      "height": 844
+    },
+    {
+      "width": 1280,
+      "height": 1000
+    }
+  ],
+  "stats": {
+    "startTime": "2026-11-10T10:36:46.114Z",
+    "duration": 71230.896,
+    "expected": 42,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "runtimeErrors": [],
+  "capabilities": [
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "physicalIPhone": false,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "capabilities": {
+        "secureContext": true,
+        "locks": true,
+        "crypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "durabilityError": ""
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "physicalIPhone": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "capabilities": {
+        "secureContext": true,
+        "locks": true,
+        "crypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "durabilityError": ""
+      }
+    }
+  ],
+  "assertions": [
+    "device-language welcome and manually selected language persistence",
+    "local list creation, item input with Unicode, locale decimal syntax, EUR budget and reload persistence",
+    "menu ingredient review leaves documents unchanged on cancellation and adds unpriced ingredients only after confirmation",
+    "privacy downloads exactly seven allowlisted documents and excludes unrelated storage without writing any document",
+    "missing Web Locks rejects writes while preserving entered item draft and all original documents",
+    "no horizontal overflow, clipped visible text, or untranslated keys in checked states"
+  ],
+  "screenshots": {
+    "count": 40,
+    "manifest": "/workspace/scratch/webkit-2026-11-10/screenshots-final-01/manifest.json",
+    "scenes": [
+      "welcome",
+      "home",
+      "item-editor",
+      "menu-review",
+      "privacy"
+    ],
+    "visualSpotCheck": [
+      "de-390-item-editor",
+      "fr-390-menu-review"
+    ]
+  },
+  "tests": [
+    {
+      "title": "WebKit engine and real storage capabilities are recorded without claiming physical iPhone coverage",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "WebKit engine and real storage capabilities are recorded without claiming physical iPhone coverage",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "filesAdded": [
+    "playwright.webkit.config.ts",
+    "tests/webkit/webkit-readiness.spec.ts"
+  ],
+  "appCodeChangedByThisTask": false,
+  "packageDependenciesChangedByThisTask": false,
+  "systemPackagesInstalled": false,
+  "additionalChecks": {
+    "typecheck": "passed",
+    "testDiscovery": 42
+  },
+  "initialHarnessRun": {
+    "directory": "/workspace/scratch/webkit-2026-11-10/run-01",
+    "status": "interrupted",
+    "reason": "QA fixture used fractional quantity with integer unit; corrected to kg before the completed run. This was a test setup error, not an application defect.",
+    "subsequentChecks": "Final run follows shared focus restoration and whole-panel scroll fixes; previous successful review build is retained separately."
+  },
+  "limitations": [
+    "Linux WebKit automation is not physical iPhone, Safari on Apple hardware, keyboard safe-area, VoiceOver, or native Expo runtime validation.",
+    "Current release contains seven static recipes; user has not yet provided the150 prepared recipes."
+  ],
+  "finalResultPath": "run-final-01/results.json"
+}
