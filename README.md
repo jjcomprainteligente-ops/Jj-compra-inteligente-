@@ -8,6 +8,10 @@
 
 Aplicación de compra alimentaria con inteligencia artificial para Tenerife.
 
+## Piloto de tiendas · 10/11/2026
+
+Mis tiendas admite Lidl, ALDI, HiperDino, SuperDino, HiperDino Express y Mercadona, de una en una, varias o todas. Guarda la selección y abre la web oficial de compra, ofertas o establecimientos. No importa precios ni transfiere el carrito. La compra y el pago se completan siempre en la tienda externa. Se preservan las favoritas anteriores y las funciones de recetas, listas y gastos. [Investigación y alcance del piloto](docs/PILOTO_TIENDAS_Y_PRECIOS_2026-11-10.md).
+
 ## Código fuente recuperado — 31/10/2026
 
 GitHub es la base principal del código y la documentación. Vercel se utiliza para previews de prueba; cada nueva entrega debe identificar el commit que contiene y verificarse antes de compartirse.

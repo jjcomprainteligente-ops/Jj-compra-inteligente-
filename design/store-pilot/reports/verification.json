@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-10",
+  "base": "936459d",
+  "unitTests": {
+    "passed": 759,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "exportedPlatforms": [
+    "web",
+    "ios",
+    "android"
+  ],
+  "publicDestinations": {
+    "checked": 6,
+    "http200": 6
+  },
+  "localBrowserSuite": {
+    "status": "blocked-before-test-bodies",
+    "cause": "Chromium ProcessSingleton socket() Operation not permitted"
+  },
+  "livePriceFeedConnected": false,
+  "paymentsInJJ": false,
+  "remoteBrowserReview": "pending"
+}

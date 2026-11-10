@@ -1,8 +1,8 @@
 import type { MealPlan } from './menus';
 import type { ShoppingList } from './shopping';
+import { STORE_IDS, type StoreId } from './stores';
 
-export const STORE_IDS = ['hiperdino', 'carrefour', 'mercadona', 'other'] as const;
-export type StoreId = typeof STORE_IDS[number];
+export { STORE_IDS, type StoreId } from './stores';
 
 export interface LocalPreferences {
   favoriteStores: StoreId[];
