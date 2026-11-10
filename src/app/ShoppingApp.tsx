@@ -3,17 +3,16 @@ import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, Text, V
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
 import { useFonts, Manrope_400Regular, Manrope_500Medium, Manrope_600SemiBold, Manrope_700Bold, Manrope_800ExtraBold } from '@expo-google-fonts/manrope';
-import { ArrowLeft, Check, Home, ListChecks, Plus, UserRound, Utensils, Wallet } from 'lucide-react-native';
+import { ArrowLeft, Check, ChartNoAxesColumnIncreasing, Home, Plus, ShoppingCart, UserRound, Utensils } from 'lucide-react-native';
 import LegacyComparisons from '../../App';
 import { createId } from '../domain/comparisons';
 import { applyIngredientReview, type IngredientDraft } from '../domain/ingredientImport';
 import { CATEGORIES, UNITS, findDuplicate, validateBudget, validateItemInput, validateListName,
-  type ItemInput, type ShoppingItem, type ShoppingList, type ShoppingState } from '../domain/shopping';
+  type Category, type ItemInput, type ShoppingItem, type ShoppingList, type ShoppingState } from '../domain/shopping';
 import { useI18n } from '../i18n/LanguageProvider';
 import { appError } from '../i18n/errors';
 import { translateIngredientName } from '../i18n/recipes';
 import type { TranslationValues } from '../i18n/types';
-import { Brand } from './components/Brand';
 import { Button, Field, Notice, Sheet, c, f, ui } from './components/ui';
 import { HomeScreen, ListScreen } from './screens/HomeList';
 import { ProfileScreen, SavingsScreen } from './screens/SecondaryScreens';
@@ -30,8 +29,8 @@ type Editor = { kind: 'list'; id?: string } | { kind: 'budget'; id: string } |
   { kind: 'confirm'; title: string; body: string; values?: TranslationValues; action: string; run: () => Promise<boolean> };
 const blankItem = (): ItemInput => ({ name: '', quantity: '1', unit: 'ud', category: 'Otros', note: '', price: '', priceKind: 'entered' });
 const tabs = [
-  { key: 'home', label: 'app.tabHome', icon: Home }, { key: 'list', label: 'app.tabList', icon: ListChecks },
-  { key: 'savings', label: 'app.tabSavings', icon: Wallet }, { key: 'menus', label: 'app.tabMenus', icon: Utensils },
+  { key: 'home', label: 'app.tabHome', icon: Home }, { key: 'list', label: 'app.tabList', icon: ShoppingCart },
+  { key: 'savings', label: 'app.tabSavings', icon: ChartNoAxesColumnIncreasing }, { key: 'menus', label: 'app.tabMenus', icon: Utensils },
 ] as const;
 type MainScreen = typeof tabs[number]['key'];
 const loadErrorsWithDataNotice = new Set([
@@ -50,7 +49,7 @@ export default function ShoppingApp() {
   const workspaceEntered = useRef(false);
   if ((fontsLoaded || fontError) && ready) bootstrapped.current = true;
   if (bootstrapped.current && welcomeComplete) workspaceEntered.current = true;
-  return <SafeAreaProvider><StatusBar style="dark" />
+  return <SafeAreaProvider><StatusBar style="light" />
     {bootstrapped.current ? workspaceEntered.current ? <Workspace /> : <WelcomeScreen /> : <View style={styles.loading}><ActivityIndicator color={c.primary} /><Text>{t('app.loadingApp')}</Text></View>}
   </SafeAreaProvider>;
 }
@@ -63,6 +62,7 @@ function Workspace() {
   const navigationBusy = store.busy || priceStore.busy || languageBusy;
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [mainScreen, setMainScreen] = useState<MainScreen>('home');
+  const [menuSection, setMenuSection] = useState<'week' | 'discover'>('week');
   const profileReturnScreen = useRef<Screen>(initialScreen());
   const [editor, setEditor] = useState<Editor | null>(null);
   const [name, setName] = useState('');
@@ -89,10 +89,10 @@ function Workspace() {
   const createList = () => { setName(''); begin({ kind: 'list' }, ''); };
   const editList = () => { if (active) { setName(active.name); begin({ kind: 'list', id: active.id }, active.name); } };
   const editBudget = () => { if (active) { const value = formatMoneyInput(active.budgetCents); setBudget(value); begin({ kind: 'budget', id: active.id }, value); } };
-  const openItem = (item?: ShoppingItem) => {
+  const openItem = (item?: ShoppingItem, category?: Category) => {
     if (!active) return;
     const value: ItemInput = item ? { name: item.name, quantity: formatQuantity(item.quantityMilli), unit: item.unit,
-      category: item.category, note: item.note, price: formatMoneyInput(item.unitPriceCents), priceKind: item.priceKind ?? 'entered' } : blankItem();
+      category: item.category, note: item.note, price: formatMoneyInput(item.unitPriceCents), priceKind: item.priceKind ?? 'entered' } : { ...blankItem(), ...(category ? { category } : {}) };
     setDraft(value); begin({ kind: 'item', listId: active.id, id: item?.id }, JSON.stringify(value));
   };
   const close = () => {
@@ -162,8 +162,8 @@ function Workspace() {
     const reviewed = applyIngredientReview(list, drafts, createId);
     return { lists: [...state.lists, reviewed], activeListId: list.id };
   }, 'app.undoIngredientsAdded');
-  const common = { active, busy: disabled, onCreate: createList, onOpenList: () => navigate('list'), onMenus: () => navigate('menus'),
-    onChoose: () => begin({ kind: 'choose' }), onBudget: editBudget, onAdd: () => openItem(), onRename: editList, onDeleteList: confirmDeleteList,
+  const common = { active, busy: disabled, onCreate: createList, onOpenList: () => navigate('list'), onMenus: () => { setMenuSection('week'); navigate('menus'); }, onDiscover: () => { setMenuSection('discover'); navigate('menus'); },
+    onChoose: () => begin({ kind: 'choose' }), onBudget: editBudget, onAdd: (category?: Category) => openItem(undefined, category), onRename: editList, onDeleteList: confirmDeleteList,
     onEdit: openItem, onDelete: confirmDeleteItem, onToggle: (item: ShoppingItem) => { if (active) void store.commit(state => changeList(state, active.id,
       list => ({ ...list, items: list.items.map(value => value.id === item.id ? { ...value, checked: !value.checked } : value) })), item.checked ? 'app.undoItemUnchecked' : 'app.undoItemChecked'); } };
   const secondary: SecondaryProps = { active, lists: store.data.lists, busy: disabled, onNavigate: navigate, onInfo: info,
@@ -173,12 +173,12 @@ function Workspace() {
     editor?.kind === 'budget' ? 'app.yourBudget' : editor?.kind === 'item' ? editor.id ? 'app.editItem' : 'app.addItem' : editor?.kind === 'choose' ? 'app.yourLists' : editor?.title ?? '';
   const title = titleKey ? t(titleKey) : '';
   const error = formError || store.saveError;
-  return <SafeAreaView style={styles.safe}>
+  return <SafeAreaView edges={['top', 'left', 'right']} style={[styles.safe, screen === 'comparisons' && styles.legacySafe]}>
     {screen === 'comparisons' ? <View style={{ flex: 1 }}>
       <Pressable accessibilityRole="button" accessibilityLabel={t('app.backToList')} onPress={() => navigate('list')} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={ui.link}>{t('app.backToList')}</Text></Pressable>
       <LegacyComparisons />
     </View> : <View style={styles.shell}>
-      <View style={styles.header}><Brand /><Pressable accessibilityRole="button" testID="open-profile" accessibilityLabel={t('app.openProfile')} disabled={navigationBusy} onPress={() => navigate('profile')} style={[styles.avatar, (screen === 'profile' || screen === 'language') && { borderColor: c.primary }]}><UserRound size={22} color={c.deep} /></Pressable></View>
+      <View style={styles.header}><Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'prices' ? 'app.tabSavings' : tabs.find(tab => tab.key === screen)?.label ?? 'app.tabHome')}</Text><Pressable accessibilityRole="button" testID="open-profile" accessibilityLabel={t('app.openProfile')} disabled={navigationBusy} onPress={() => navigate('profile')} style={[styles.avatar, (screen === 'profile' || screen === 'language') && { borderColor: c.primary }]}><UserRound size={22} color={c.deep} /></Pressable></View>
       {screen === 'profile' && <Pressable accessibilityRole="button" testID="profile-back" accessibilityLabel={t('app.backToSection', { section: t(tabs.find(tab => tab.key === mainScreen)!.label) })} disabled={navigationBusy} onPress={() => navigate(profileReturnScreen.current)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={[ui.link, { flex: 1 }]}>{t('app.backToSection', { section: t(tabs.find(tab => tab.key === mainScreen)!.label) })}</Text></Pressable>}
       <ScrollView ref={scroll} keyboardShouldPersistTaps="handled" contentContainerStyle={{ paddingBottom: 24 }}>
         {screen !== 'language' && !!preferenceError && <View style={[ui.page, { paddingTop: 16, paddingBottom: 0 }]}>
@@ -194,19 +194,19 @@ function Workspace() {
             action={t('app.undo')} onPress={() => { if (!store.busy) void store.undoLast(); }} /></View>}
           {screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
             <PriceWorkspace store={priceStore} onBack={() => navigate('savings')} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
-            <MenuWorkspace shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate('list')} /> : <ProfileScreen {...secondary} />}
+            <MenuWorkspace initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate('list')} /> : <ProfileScreen {...secondary} />}
         </>}
       </ScrollView>
       {screen === 'list' && active && !store.loading && !store.loadError && <View style={styles.addBar}>
-        <Button label={t('app.addItem')} testID="add-item" icon={Plus} disabled={store.busy} onPress={() => openItem()} />
+        <Button accent label={t('app.addItem')} testID="add-item" icon={Plus} disabled={store.busy} onPress={() => openItem()} />
       </View>}
-      <View accessibilityRole="tablist" style={styles.tabs}>{tabs.map(tab => {
+      <SafeAreaView edges={['bottom']} style={styles.tabsSafe}><View accessibilityRole="tablist" style={styles.tabs}>{tabs.map(tab => {
         const selected = screen === tab.key || (screen === 'prices' && tab.key === 'savings') || ((screen === 'profile' || screen === 'language') && mainScreen === tab.key);
         return <Pressable key={tab.key} testID={`tab-${tab.key}`} accessibilityRole="tab" accessibilityLabel={t(tab.label)}
           accessibilityState={{ selected, disabled: navigationBusy }} aria-selected={selected} disabled={navigationBusy}
-          onPress={() => navigate(tab.key)} style={styles.tab}><View style={[styles.tabIcon, selected && { backgroundColor: '#E7EDD9' }]}><tab.icon size={22} color={selected ? c.primary : c.muted} strokeWidth={selected ? 2 : 1.6} /></View>
+          onPress={() => navigate(tab.key)} style={[styles.tab, selected && styles.tabSelected]}><View style={[styles.tabIcon, selected && { backgroundColor: c.paleYellow }]}><tab.icon size={22} color={selected ? c.primary : c.muted} strokeWidth={selected ? 2 : 1.6} /></View>
           <Text style={[styles.tabLabel, selected && { color: c.primary, fontFamily: f.extra }]}>{t(tab.label)}</Text></Pressable>;
-      })}</View>
+      })}</View></SafeAreaView>
     </View>}
     <Sheet visible={!!editor} title={title} onClose={close} busy={store.busy} testID={editor?.kind === 'confirm' ? 'confirmation-dialog' : 'app-sheet'}
       footer={editor && !discard && !duplicate ? editor.kind === 'list' ? <Button label={t('app.saveList')} testID="save-list" busy={store.busy} onPress={() => void saveList()} icon={Check} /> :
@@ -246,14 +246,17 @@ function Choice({ label, a11y, selected, disabled, onPress }: { label: string; a
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: c.background }, shell: { flex: 1, width: '100%', maxWidth: 600, alignSelf: 'center', backgroundColor: c.background },
+  safe: { flex: 1, backgroundColor: c.deep }, legacySafe: { backgroundColor: c.background }, shell: { flex: 1, width: '100%', maxWidth: 600, alignSelf: 'center', backgroundColor: c.surface },
   loading: { flex: 1, padding: 32, minHeight: 250, gap: 16, justifyContent: 'center', alignItems: 'center', backgroundColor: c.background },
-  header: { paddingHorizontal: 24, paddingVertical: 15, borderBottomWidth: 1, borderBottomColor: c.line, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  avatar: { height: 44, width: 44, backgroundColor: '#F1E4B8', borderRadius: 22, borderWidth: 1, borderColor: '#DCD7BF', alignItems: 'center', justifyContent: 'center' },
-  tabs: { flexDirection: 'row', paddingTop: 8, paddingBottom: 8, backgroundColor: c.background, borderTopWidth: 1, borderTopColor: c.line },
-  tab: { flex: 1, minHeight: 57, alignItems: 'center', justifyContent: 'center', gap: 4 }, tabIcon: { width: 49, height: 29, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
-  tabLabel: { color: c.muted, fontFamily: f.semi, fontSize: 11, lineHeight: 17 },
-  addBar: { paddingHorizontal: 24, paddingVertical: 10, borderTopWidth: 1, borderTopColor: c.line, backgroundColor: c.background },
+  header: { paddingHorizontal: 18, paddingTop: 12, paddingBottom: 14, borderBottomLeftRadius: 24, borderBottomRightRadius: 24, backgroundColor: c.deep, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  headerTitle: { flex: 1, fontFamily: f.bold, fontSize: 19, lineHeight: 28, color: c.surface, marginRight: 12 },
+  tabsSafe: { backgroundColor: c.surface },
+  tabSelected: { backgroundColor: c.paleYellow },
+  avatar: { height: 44, width: 44, backgroundColor: c.soft, borderRadius: 22, borderWidth: 1, borderColor: c.soft, alignItems: 'center', justifyContent: 'center' },
+  tabs: { flexDirection: 'row', paddingTop: 8, paddingBottom: 8, paddingHorizontal: 8, backgroundColor: c.surface, borderTopWidth: 1, borderTopColor: c.line },
+  tab: { flex: 1, minHeight: 58, borderRadius: 15, paddingHorizontal: 3, paddingVertical: 5, marginHorizontal: 2, alignItems: 'center', justifyContent: 'center', gap: 4 }, tabIcon: { width: 49, height: 29, borderRadius: 16, alignItems: 'center', justifyContent: 'center' },
+  tabLabel: { color: c.muted, fontFamily: f.semi, fontSize: 12, lineHeight: 18 },
+  addBar: { paddingHorizontal: 18, paddingVertical: 10, borderTopWidth: 1, borderTopColor: c.line, backgroundColor: c.surface },
   return: { minHeight: 48, paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', gap: 9, borderBottomWidth: 1, borderBottomColor: c.line },
   choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 9, marginBottom: 23 },
   choice: { minHeight: 44, borderRadius: 10, borderWidth: 1, borderColor: '#748268', backgroundColor: '#fff', paddingHorizontal: 13, paddingVertical: 11, justifyContent: 'center', maxWidth: '100%' },

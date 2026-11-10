@@ -35,7 +35,7 @@ async function readMenu(page: Page): Promise<StoredMenu | null> {
 }
 async function seed(page: Page, value: StoredShopping, menu?: string): Promise<void> {
   await page.goto('/');
-  await page.getByRole('heading', { name: 'Tu compra,\nbajo control.', exact: true }).waitFor();
+  await page.getByRole('heading', { name: '¿Qué compramos hoy?', exact: true }).waitFor();
   await page.evaluate(({ shoppingStorage, menuStorage, comparisonStorage, shoppingData, menuData, comparisons }) => {
     localStorage.setItem(shoppingStorage, shoppingData);
     localStorage.setItem(comparisonStorage, comparisons);
@@ -63,10 +63,18 @@ async function importText(page: Page, text: string): Promise<Locator> {
   return sheet;
 }
 async function namedIngredientRow(sheet: Locator, name: string): Promise<Locator> {
-  // Scope by the editable value, rather than row position: category grouping can change.
+  // Identify the ingredient by its accessible checkbox, not its position.
+  // V2 keeps editing behind a per-row disclosure; exercise that same user action.
   const rows = sheet.getByTestId('ingredient-review-row');
+  const escapedName = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   for (let index = 0; index < await rows.count(); index++) {
-    if (await rows.nth(index).getByRole('textbox', { name: /^Nombre del ingrediente \d+$/ }).inputValue() === name) return rows.nth(index);
+    const row = rows.nth(index);
+    if (await row.getByRole('checkbox', { name: new RegExp(`: ${escapedName}$`) }).count()) {
+      const field = row.getByRole('textbox', { name: /^Nombre del ingrediente \d+$/ });
+      if (!await field.isVisible()) await row.getByTestId('edit-ingredient').click();
+      await expect(field).toHaveValue(name);
+      return row;
+    }
   }
   throw new Error(`No se encontró el ingrediente ${name}`);
 }

@@ -32,3 +32,6 @@ storageState*.json
 design/**/build/
 design/**/playwright-report/
 design/**/test-results/
+
+# Originales documentales del propietario: conservar estos ZIP, no artefactos.
+!referencias/gpt6-v2/originales/*.zip

@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ArrowLeft, Check, Globe } from 'lucide-react-native';
+import { ArrowLeft, Check, ChevronDown, Globe } from 'lucide-react-native';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { LANGUAGES, SUPPORTED_LANGUAGES } from '../../i18n/types';
-import { Brand } from '../components/Brand';
-import { Button, Card, Notice, Title, c, ui } from '../components/ui';
+import { BRAND_NAME, Brand } from '../components/Brand';
+import { Button, Card, Notice, Title, c, f, ui } from '../components/ui';
 
 /** Language is a presentation preference; it never edits a shopping document. */
 function LanguageChoices() {
@@ -45,22 +45,31 @@ function PreferenceError() {
 }
 
 export function WelcomeScreen() {
-  const { t, busy, preferenceError, completeWelcome, dismissWelcomeForSession } = useI18n();
+  const { t, language, busy, preferenceError, completeWelcome, dismissWelcomeForSession } = useI18n();
+  const [showLanguages, setShowLanguages] = useState(false);
   return <SafeAreaView style={styles.safe}>
     <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={styles.welcomeScroll}>
       <View style={styles.welcomeContent}>
-        <Brand />
-        <Title kicker={t('language.welcomeKicker')} title={t('language.welcomeTitle')} subtitle={t('language.welcomeBody')} />
-        <Card><Text accessibilityRole="header" style={ui.sectionTitle}>{t('common.chooseLanguage')}</Text>
+        <View style={styles.logoCard}><Brand /></View>
+        <Text testID="welcome-title" accessibilityRole="header" style={styles.welcomeTitle}>{BRAND_NAME}</Text>
+        <Text style={styles.tagline}>{t('visual.welcomeTagline')}</Text>
+        <View style={styles.summary}><Text style={styles.summaryText}>{t('visual.welcomeSummary')}</Text></View>
+        <Pressable testID="welcome-language-toggle" accessibilityRole="button" accessibilityLabel={t('common.chooseLanguage')}
+          accessibilityState={{ expanded: showLanguages, disabled: busy }} aria-expanded={showLanguages}
+          disabled={busy} onPress={() => setShowLanguages(value => !value)} style={styles.languageToggle}>
+          <Globe size={20} color={c.surface} /><Text style={styles.languageLabel}>{t('language.selected', { language: LANGUAGES[language].name })}</Text>
+          <ChevronDown size={18} color={c.surface} />
+        </Pressable>
+        {showLanguages && <Card><Text accessibilityRole="header" style={ui.sectionTitle}>{t('common.chooseLanguage')}</Text>
           <Text style={[ui.note, { marginTop: 10, marginBottom: 18 }]}>{t('language.welcomeHint')}</Text>
           <LanguageChoices />
-        </Card>
+        </Card>}
         <PreferenceError />
         <View style={{ marginTop: 20, gap: 12 }}>
-          <Button label={t('language.start')} testID="start-app" busy={busy} onPress={() => { void completeWelcome(); }} />
+          <Button accent label={t('language.start')} testID="start-app" busy={busy} onPress={() => { void completeWelcome(); }} />
           {!!preferenceError && <Button label={t('common.continueWithoutPreference')} testID="preferences-session-continue"
             secondary disabled={busy} onPress={dismissWelcomeForSession} />}
-          <Text style={ui.note}>{t('language.localOnly')}</Text>
+          <Text style={styles.localNote}>{t('language.localOnly')}</Text>
         </View>
       </View>
     </ScrollView>
@@ -83,9 +92,17 @@ export function LanguageScreen({ onBack }: { onBack(): void }) {
 }
 
 const styles = StyleSheet.create({
-  safe: { flex: 1, backgroundColor: c.background },
+  safe: { flex: 1, backgroundColor: c.deep },
   welcomeScroll: { flexGrow: 1, justifyContent: 'center', alignItems: 'center', paddingHorizontal: 24, paddingVertical: 24 },
   welcomeContent: { width: '100%', maxWidth: 552 },
+  logoCard: { minHeight: 180, padding: 20, backgroundColor: c.background, borderRadius: 28, justifyContent: 'center' },
+  welcomeTitle: { fontFamily: f.bold, fontSize: 25, lineHeight: 34, color: c.surface, textAlign: 'center', marginTop: 32 },
+  tagline: { fontFamily: f.regular, fontSize: 16, lineHeight: 25, color: c.surface, textAlign: 'center', marginTop: 12 },
+  summary: { alignSelf: 'center', backgroundColor: c.soft, paddingHorizontal: 18, paddingVertical: 8, borderRadius: 18, marginTop: 26 },
+  summaryText: { fontFamily: f.medium, fontSize: 13, lineHeight: 20, color: c.deep, textAlign: 'center' },
+  languageToggle: { minHeight: 48, marginTop: 20, marginBottom: 10, paddingHorizontal: 12, paddingVertical: 10, borderWidth: 1, borderColor: c.soft, borderRadius: 14, flexDirection: 'row', alignItems: 'center', gap: 10 },
+  languageLabel: { flex: 1, fontFamily: f.medium, color: c.surface, fontSize: 14, lineHeight: 22 },
+  localNote: { fontFamily: f.regular, color: c.soft, fontSize: 12, lineHeight: 20, textAlign: 'center' },
   choices: { gap: 10 },
   choice: { minHeight: 52, paddingHorizontal: 14, paddingVertical: 13, borderRadius: 12, borderWidth: 1,
     borderColor: c.line, backgroundColor: c.surface, flexDirection: 'row', alignItems: 'center', gap: 12 },
