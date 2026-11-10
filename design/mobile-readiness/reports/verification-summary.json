@@ -41,5 +41,17 @@
     "src/app/components/ui.tsx": "249374983739872d9b1e8fbcb67bca294986112d07fa8d001e4131f5f58ceaf0",
     "src/components/ui.tsx": "1617abaead2c603483e0869fe44857ff3f2ce8aa7a1fd91c247d6c68b165869f",
     "src/components/useSheetFocus.ts": "fbb7b306fa881b8cc65d7ce5f5cff59da73b505a65dc24b058db0a2e2c133ab6"
+  },
+  "publication": {
+    "status": "READY",
+    "target": "staging",
+    "applicationCommit": "23bde4371aa041a6ab96ab2f62afe815a6f5c472",
+    "pullRequest": 7,
+    "deploymentId": "dpl_BX1bmmAu4j653jPPJ3oS9AqjFp6K",
+    "url": "https://jj-compra-inteligente-e3qq1imu1-cmj2hwhc6b-1051.vercel.app",
+    "protectionPreserved": true,
+    "verifiedLanguages": 4,
+    "verifiedResources": 27,
+    "shareExpiresUTC": "2026-11-11T15:00:33Z"
   }
 }
