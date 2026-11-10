@@ -1,0 +1,45 @@
+{
+  "completedAt": "2026-11-10T15:56:22.985780+00:00",
+  "typecheck": "passed",
+  "unitTests": {
+    "command": "npm run check",
+    "files": 23,
+    "passed": 758
+  },
+  "chromium": {
+    "stats": {
+      "startTime": "2026-11-10T15:47:00.621Z",
+      "duration": 534527.275,
+      "expected": 248,
+      "skipped": 24,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "baseScreenshots": 420,
+    "newPanelScreenshots": 48,
+    "export": "dist-mobile-readiness-final"
+  },
+  "webkit": {
+    "passed": 42,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0,
+    "engine": "27.2",
+    "screenshots": 40
+  },
+  "references": {
+    "files": 75,
+    "unchanged": true
+  },
+  "physicalDevicesTested": false,
+  "dependencyWarnings": {
+    "moderate": 5,
+    "high": 0,
+    "critical": 0
+  },
+  "sourceFiles": {
+    "src/app/components/ui.tsx": "249374983739872d9b1e8fbcb67bca294986112d07fa8d001e4131f5f58ceaf0",
+    "src/components/ui.tsx": "1617abaead2c603483e0869fe44857ff3f2ce8aa7a1fd91c247d6c68b165869f",
+    "src/components/useSheetFocus.ts": "fbb7b306fa881b8cc65d7ce5f5cff59da73b505a65dc24b058db0a2e2c133ab6"
+  }
+}

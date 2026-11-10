@@ -314,3 +314,21 @@ La publicación de código e informes está cerrada; la aprobación estética y 
 | Aprobación visual y marca | Pendiente del propietario/ChatGPT; tokens y PNG original conservados. Variantes, iconos y 3D siguen revisión aparte. |
 
 La publicación verificada es `dpl_DN9HdAtWMEm7sVCLkoMnGwsgYdpo`, destino `staging`, protección conservada; el enlace temporal se entrega en la conversación y vence el 10 de noviembre a las 09:10 UTC. Su secreto queda fuera del repositorio. Los despliegues e informes previos permanecen conservados.
+
+## Decisiones y auditoría de paneles/WebKit — 2026-11-10
+
+- **ALCANCE AUTORIZADO:** continuar la construcción y auditar cada pareja de bloques. Se completan mejoras compartidas de accesibilidad y la verificación real de WebKit; no se crean funciones comerciales, cuentas, sincronización o IA conectada. La preferencia visual aprobada y los recursos originales se conservan.
+- **FOCO:** RNWeb conserva su trap, Escape y restauración normal. Un hook compartido repara el foco perdido al cambiar de paso y complementa el retorno cuando el autofocus había ocultado el disparador. Solo web, sin listeners globales; el fallback espera el cierre, exige foco en body y un disparador conectado/habilitado. No enfoca una acción destructiva. Las pruebas detectaron el fallo de retorno que no encontró la primera revisión estática y comprobaron la corrección.
+- **TEXTO GRANDE:** la revisión visual encontró un recorte real que una primera comprobación de foco no detectaba. Las pruebas exigen visibilidad y toque, conservando el 200 % en nodos remontados. Si cabecera y acciones medidas agotan el cuerpo, el panel pasa a un solo desplazamiento hasta cerrar. Los valores y decisiones importantes pertenecen al padre; no se escriben ni descartan al cambiar la disposición.
+- **VERIFICACIÓN FINAL:** TypeScript; 758 unitarias; 248 Chromium y 42 WebKit correctos, sin fallos ni intermitentes. Chromium registra 24 omisiones deliberadas de matrices duplicadas. Exportaciones web/iOS/Android, 420 capturas base y comprobación de integridad de 75 referencias. Informes en `design/mobile-readiness/reports/`.
+
+| Riesgo / puerta | Estado y tratamiento |
+|---|---|
+| Teclado y zona segura físicos | Pendiente iPhone/Safari, VoiceOver/TalkBack y Dynamic Type. El cálculo usa ventana/inset; no mide directamente el área reducida por el teclado. WebKit Linux y CSS al 200 % no cierran esta puerta. |
+| Cambio de disposición | Puede reiniciar cursor, selección y scroll al remontar controles. Los borradores actuales son controlados por componentes propietarios; futuros hijos con estado interno necesitan revisión específica. |
+| Futuros pasos de modal | El foco se repara con cambios de título/disposición, no mediante un observador general de contenido. Una nueva transición que elimine el control activo sin cambiar esas claves exige validación de teclado. |
+| Seguridad de dependencias | Consulta del 10/11: cinco moderados, cero altos/críticos. Dos advisories transitivos glob/minimatch en herramientas Expo; versiones corregidas exceden los rangos oficiales. Mantener seguimiento sin ocultar avisos ni forzar mayores/downgrades. No existe JSON guardado de la consulta nueva; el informe de texto identifica los comandos y versiones. |
+| Datos y privacidad | No se modificaron claves, migraciones, coordinación durable ni confirmaciones de borrado. Pruebas con datos ficticios; copias personales, trazas y capturas quedan fuera de GitHub. |
+| Recetas, marca y aceptación | Las 150 recetas siguen pendientes de recepción. Se mantiene el catálogo inicial de siete; variantes/3D y revisión estética siguen por etapas. Hogares y comercio real continúan condicionados. |
+
+La publicación de esta entrega se registrará tras verificar la preview protegida desde el commit guardado en GitHub. No implica promoción a producción ni aceptación visual o física.

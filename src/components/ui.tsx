@@ -3,6 +3,7 @@ import { ActivityIndicator, KeyboardAvoidingView, Modal, Platform, Pressable, Sc
 import { AlertCircle, ArrowUpRight, Check, X, type LucideIcon } from 'lucide-react-native';
 import { colors as c, fonts as f } from '../theme';
 import { useI18n } from '../i18n/LanguageProvider';
+import { useSheetFocus } from './useSheetFocus';
 
 export function Button({ label, onPress, icon: Icon, variant = 'primary', disabled, loading, compact, testID }: {
   label: string; onPress: () => void; icon?: LucideIcon; variant?: 'primary' | 'secondary' | 'danger' | 'ghost'; disabled?: boolean; loading?: boolean; compact?: boolean; testID?: string;
@@ -22,15 +23,23 @@ export function IconButton({ label, icon: Icon, onPress, danger, disabled }: { l
   </Pressable>;
 }
 
-export function Field({ label, hint, icon: Icon, ...props }: TextInputProps & { label: string; hint?: string; icon?: LucideIcon }) {
+export function Field({ label, hint, icon: Icon, onFocus, onBlur, 'aria-describedby': describedBy, ...props }: TextInputProps & {
+  label: string; hint?: string; icon?: LucideIcon; 'aria-describedby'?: string;
+}) {
   const [focused, setFocused] = React.useState(false);
+  const hintId = React.useId();
+  const descriptionIds = [describedBy, hint ? hintId : undefined].filter(Boolean).join(' ') || undefined;
   return <View style={s.field}>
     <Text style={s.label}>{label}</Text>
     <View style={[s.inputWrap, focused && s.inputFocused, props.editable === false && { opacity: 0.6 }]}>
       {Icon && <Icon size={18} color={focused ? c.green : c.muted} />}
-      <TextInput {...props} accessibilityLabel={label} placeholderTextColor="#9AA39A" onFocus={() => setFocused(true)} onBlur={() => setFocused(false)} style={[s.input, props.style]} />
+      <TextInput {...props} accessibilityLabel={label} placeholderTextColor="#9AA39A"
+        accessibilityHint={props.accessibilityHint ?? hint}
+        aria-describedby={Platform.OS === 'web' ? descriptionIds : undefined}
+        onFocus={event => { setFocused(true); onFocus?.(event); }}
+        onBlur={event => { setFocused(false); onBlur?.(event); }} style={[s.input, props.style]} />
     </View>
-    {hint && <Text style={s.hint}>{hint}</Text>}
+    {hint && <Text nativeID={hintId} style={s.hint}>{hint}</Text>}
   </View>;
 }
 
@@ -44,10 +53,14 @@ export function ErrorBanner({ message, values }: { message: string; values?: Rec
 
 export function Sheet({ visible, title, subtitle, children, onClose, busy = false }: { visible: boolean; title: string; subtitle?: string; children: React.ReactNode; onClose: () => void; busy?: boolean }) {
   const { t } = useI18n();
-  return <Modal visible={visible} transparent animationType="fade" onRequestClose={() => { if (!busy) onClose(); }}>
+  const { dialogRef, onDismiss } = useSheetFocus<React.ElementRef<typeof View>>(visible, title);
+  return <Modal visible={visible} transparent animationType="fade" onDismiss={onDismiss} onRequestClose={() => { if (!busy) onClose(); }}>
     <KeyboardAvoidingView style={s.modalBackdrop} behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
-      <Pressable style={StyleSheet.absoluteFill} accessibilityRole="button" accessibilityLabel={t('legacy.closeWindow')} disabled={busy} onPress={onClose} />
-      <View style={s.sheet} accessibilityViewIsModal>
+      <View accessible={false} accessibilityElementsHidden importantForAccessibility="no-hide-descendants" aria-hidden
+        style={StyleSheet.absoluteFill} onStartShouldSetResponder={() => !busy}
+        onResponderRelease={() => { if (!busy) onClose(); }} />
+      <View ref={dialogRef} style={s.sheet} accessibilityViewIsModal role="dialog" aria-label={title}
+        tabIndex={Platform.OS === 'web' ? -1 : undefined}>
         <ScrollView keyboardShouldPersistTaps="handled" contentContainerStyle={s.sheetContent}>
           <View style={s.sheetTop}><View style={{ flex: 1 }}><Text accessibilityRole="header" style={s.sheetTitle}>{title}</Text></View><IconButton label={t('legacy.closeWindow')} icon={X} onPress={onClose} disabled={busy} /></View>
           {subtitle && <Text style={s.sheetSubtitle}>{subtitle}</Text>}
@@ -82,7 +95,7 @@ const s = StyleSheet.create({
   error: { backgroundColor: '#FBECE7', borderWidth: 1, borderColor: '#F2D4CA', padding: 14, borderRadius: 12, flexDirection: 'row', gap: 10, marginBottom: 20, alignItems: 'flex-start' },
   errorText: { flex: 1, color: c.danger, fontFamily: f.medium, fontSize: 13, lineHeight: 21 },
   modalBackdrop: { flex: 1, backgroundColor: 'rgba(19, 37, 29, 0.38)', justifyContent: 'center', alignItems: 'center', padding: 22 },
-  sheet: { backgroundColor: c.background, width: '100%', maxWidth: 470, maxHeight: '85%', borderRadius: 24, overflow: 'hidden' },
+  sheet: { backgroundColor: c.background, width: '100%', maxWidth: 470, maxHeight: '85%', borderRadius: 24, overflow: 'hidden', outlineWidth: 0 },
   sheetContent: { padding: 25 }, sheetTop: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 6 }, sheetTitle: { fontFamily: f.extra, fontSize: 23, letterSpacing: -0.7, color: c.ink }, sheetSubtitle: { color: c.muted, fontFamily: f.regular, fontSize: 14, lineHeight: 22, marginBottom: 26 },
   badge: { flexDirection: 'row', alignItems: 'center', gap: 5, paddingVertical: 5, paddingHorizontal: 8, borderRadius: 7, backgroundColor: '#E6EEDC', alignSelf: 'flex-start', flexShrink: 1 }, badgeText: { fontFamily: f.bold, fontSize: 10, color: c.green, flexShrink: 1 },
   eyebrow: { fontFamily: f.bold, fontSize: 10, letterSpacing: 1.8, color: c.muted }, textLink: { flexDirection: 'row', gap: 5, alignItems: 'center', minHeight: 44 }, textLinkText: { fontFamily: f.bold, fontSize: 13, color: c.green },
