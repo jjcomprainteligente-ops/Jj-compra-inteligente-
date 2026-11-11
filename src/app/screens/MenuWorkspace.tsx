@@ -22,6 +22,7 @@ import { MenuFilterPanel } from '../components/MenuFilterPanel';
 
 interface Props {
   initialSection?: 'week' | 'discover';
+  initialServings?: number;
   shopping: ShoppingState;
   shoppingBusy: boolean;
   shoppingError: string;
@@ -41,13 +42,13 @@ class MenuFeedback extends Error {
 }
 
 /** Offline planning and explicit ingredient review; no AI request or voice recording. */
-export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed, budgetCents, onBudget }: Props) {
+export function MenuWorkspace({ initialSection = 'week', initialServings = 2, shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed, budgetCents, onBudget }: Props) {
   const { t, formatMoney, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
   const meal = useMealPlan();
   const feedback = (value: unknown) => value instanceof MenuFeedback || value instanceof MenuFilterError ? t(value.key, value.values) : translateError(value);
   const day = (index: number) => t('menus.day.' + dayIds[index]);
   const plural = (key: string, count: number, values: Record<string, string | number> = {}) => t(key + (count === 1 ? '.one' : '.other'), { ...values, count: formatNumber(count) });
-  const [people, setPeople] = useState(2);
+  const [people, setPeople] = useState(initialServings);
   const [section, setSection] = useState<'week' | 'discover'>(initialSection);
   const [filters, setFilters] = useState(defaultMenuFilters);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -65,7 +66,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const [applyAttempted, setApplyAttempted] = useState(false);
   const [discard, setDiscard] = useState(false);
   const [pendingDestination, setPendingDestination] = useState<FlowDestination | null>(null);
-  const [recipeServings, setRecipeServings] = useState(2);
+  const [recipeServings, setRecipeServings] = useState(initialServings);
   const [expanded, setExpanded] = useState<string | null>(null);
   const applyLock = useRef(false);
   const planLock = useRef(false);

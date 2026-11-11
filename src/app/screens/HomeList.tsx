@@ -8,6 +8,7 @@ import { Button, Card, IconButton, Notice, Pill, Section, Title, c, f, ui } from
 
 interface Props {
   active?: ShoppingList; busy: boolean; actualSpentCents?: number | null; expensesLoading?: boolean; expensesError?: string; onCreate(): void; onOpenList(): void; onMenus(): void; onDiscover(): void;
+  onStartRecipes(): void; onStartBudget(): void;
   onSearch(category?: Category): void; onVoice(): void; onScanner(): void; onChoose(): void; onBudget(): void; onAdd(category?: Category): void; onRename(): void; onDeleteList(): void;
   onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void;
 }
@@ -26,6 +27,14 @@ export function HomeScreen(p: Props) {
   return <View style={ui.page}>
     <View style={{ marginTop: 14 }}><Pill label={t('visual.localMode')} /></View>
     <Title kicker={t('app.homeKicker')} title={t('visual.homeTitle')} />
+    <Card style={styles.planStart}>
+      <Text accessibilityRole="header" style={styles.planTitle}>{t('mealJourney.startTitle')}</Text>
+      <Text style={[ui.note, { marginBottom: 12 }]}>{t('mealJourney.startSubtitle')}</Text>
+      <View style={styles.planActions}>
+        <Button label={t('mealJourney.recipes')} testID="start-with-recipes" disabled={p.busy} onPress={p.onStartRecipes} />
+        <Button label={t('mealJourney.budget')} testID="start-with-budget" secondary disabled={p.busy} onPress={p.onStartBudget} />
+      </View>
+    </Card>
     <View style={styles.quickEntry}>
       <Pressable accessibilityRole="button" accessibilityLabel={t('shell.search')} disabled={p.busy}
         testID="open-search" onPress={() => p.onSearch()} style={{ flex: 1, minHeight: 44, justifyContent: 'center' }}>
@@ -140,6 +149,9 @@ function ItemRow({ item, busy, onToggle, onEdit, onDelete }: Props & { item: Sho
 }
 
 const styles = StyleSheet.create({
+  planStart: { marginTop: 12, marginBottom: 16, paddingVertical: 18 },
+  planTitle: { color: c.deep, fontFamily: f.extra, fontSize: 21, lineHeight: 29, marginBottom: 5 },
+  planActions: { gap: 9 },
   categories: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   categoryTile: { flex: 1, minWidth: 68, minHeight: 72, paddingVertical: 16, paddingHorizontal: 6, backgroundColor: c.neutral, borderRadius: 15, justifyContent: 'center', alignItems: 'center' },
   categoryText: { fontFamily: f.medium, fontSize: 13, lineHeight: 20, color: c.deep, textAlign: 'center' },

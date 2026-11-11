@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ActivityIndicator, Linking, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
 import { ArrowUpRight, Bell, ChevronRight, ListChecks, Minus, Star, Store, Utensils } from 'lucide-react-native';
 import { deriveLocalNotices, STORE_IDS } from '../../domain/localPreferences';
-import { allPilotStoresSelected, publicStoreDestination, selectAllPilotStores, type StoreId } from '../../domain/stores';
+import { PILOT_STORE_IDS, allPilotStoresSelected, publicStoreDestination, selectAllPilotStores, type StoreId } from '../../domain/stores';
 import type { MealPlan } from '../../domain/menus';
 import type { ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
@@ -21,7 +21,7 @@ function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
     action={t('localSettings.reload')} onPress={() => { void store.reload(); }} />;
 }
 
-export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack(): void }) {
+export function StoresScreen({ store, onContinue, continueLabel = 'mealJourney.compare' }: { store: LocalPreferencesStore; onBack(): void; onContinue?: () => void; continueLabel?: string }) {
   const { t, formatNumber } = useI18n();
   const [visitError, setVisitError] = useState(false);
   const disabled = store.loading || store.busy || !!store.loadError;
@@ -47,6 +47,15 @@ export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack()
     {!store.loading && !store.loadError && <Text testID="stores-selection-summary" accessibilityLiveRegion="polite" style={[ui.note, styles.noteText]}>
       {t(store.data.favoriteStores.length ? 'storePilot.selectedCount' : 'storePilot.noSelection', { count: formatNumber(store.data.favoriteStores.length) })}
     </Text>}
+    {onContinue && <View style={styles.storeJourney}>
+      <Text accessibilityRole="header" style={ui.strong}>{t('mealJourney.chooseStores')}</Text>
+      <Text style={ui.note}>{t('mealJourney.storeHelp')}</Text>
+      {!PILOT_STORE_IDS.some(id => store.data.favoriteStores.includes(id)) &&
+        <Text style={ui.note}>{t('mealJourney.selectionRequired')}</Text>}
+      <Button label={t(continueLabel)} testID="stores-continue-to-prices"
+        disabled={disabled || !PILOT_STORE_IDS.some(id => store.data.favoriteStores.includes(id))}
+        onPress={onContinue} />
+    </View>}
     {visitError && <Notice kind="error" title={t('storePilot.openErrorTitle')} text={t('storePilot.openError')} />}
     {STORE_IDS.map(id => {
       const selected = store.data.favoriteStores.includes(id);
@@ -156,6 +165,7 @@ const styles = StyleSheet.create({
   loading: { paddingVertical: 12, flexDirection: 'row', gap: 10, alignItems: 'center', flexWrap: 'wrap' },
   dim: { opacity: 0.65 },
   storeNote: { backgroundColor: c.soft, marginTop: 21, paddingVertical: 20 },
+  storeJourney: { gap: 9, marginVertical: 18, padding: 14, backgroundColor: c.soft, borderRadius: 15 },
   noteText: { marginTop: 9 },
   storeActions: { gap: 9, marginTop: 4 },
   destination: { gap: 10, paddingBottom: 18 },
