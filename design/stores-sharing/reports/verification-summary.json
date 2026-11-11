@@ -45,5 +45,18 @@
   "parents": [
     "338ba24a99b61ddf79ef1f9af27dbd00465869ca",
     "2ae8d27adb07cafbc69e9627237b50a7f8f7127b"
-  ]
+  ],
+  "publication": {
+    "status": "READY",
+    "target": "staging",
+    "applicationCommit": "c0c7a312e5ad91313a059c25c8594a12ea48a6dc",
+    "pullRequest": 8,
+    "deploymentId": "dpl_5HaNVgJxEtpz9zX2gpWScLFnXRWU",
+    "url": "https://jj-compra-inteligente-3y5pjf63u-cmj2hwhc6b-1051.vercel.app",
+    "verifiedLanguages": 4,
+    "verifiedResources": 29,
+    "protectionPreserved": true,
+    "shareExpiresUTC": "2026-11-12T11:21:05Z",
+    "b07ProposalPullRequest": 9
+  }
 }
