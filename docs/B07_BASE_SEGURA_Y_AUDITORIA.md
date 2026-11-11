@@ -1,3 +1,5 @@
+> **Actualización posterior — 11/11/2026:** [corrección del permiso Auth](B07_CORRECCION_PERMISO_AUTH.md). Hubo una ejecución real fallida, ya corregida; regresión de lectura y limpieza comprobadas. La matriz completa posterior sigue pendiente de aceptación nativa. El texto inicial que sigue se conserva como historial.
+
 # B07.1–B07.2 · Contratos y base de datos aislada
 
 Entrega del 11/11/2026. **B07.1 construido y probado. B07.2 aplicado, con la matriz dinámica de permisos pendiente. B07 completo no está terminado.**

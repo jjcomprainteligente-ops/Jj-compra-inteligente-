@@ -1,3 +1,5 @@
+> **Actualización de la tercera migración:** [permiso Auth corregido y límites de verificación](../docs/B07_CORRECCION_PERMISO_AUTH.md). El lector sigue sin Auth USAGE. La batería completa no está aprobada; la regresión `tests/policy_actor_lookup.sql` es solo lectura. Validar sus flags con `node scripts/verify-b07-policy-report.cjs design/b07/reports/policy-actor-lookup-readonly.json` desde la raíz.
+
 # Supabase · B07 en desarrollo
 
 Proyecto aislado JJ Compra Inteligente, UE (`eu-central-1`), plan gratuito. No hay cuentas ni datos de usuario importados. La app local no está conectada a esta base todavía.

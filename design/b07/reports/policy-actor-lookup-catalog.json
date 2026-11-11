@@ -1,0 +1,117 @@
+{
+  "helpers": [
+    {
+      "name": "attach_resource_id",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "can_read_household",
+      "owner": "jj_policy_reader",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": true,
+      "service_role_execute": false,
+      "authenticated_execute": true
+    },
+    {
+      "name": "check_household_owner",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "has_live_session",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": true,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "jwt_actor_id",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": true,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "lock_membership_household",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "protect_resource_lifecycle",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "public_execute": false,
+      "reader_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    }
+  ],
+  "checked_at": "2026-11-11T19:56:38.416431+00:00",
+  "row_counts": {
+    "items": 0,
+    "lists": 0,
+    "accounts": 0,
+    "auth_users": 0,
+    "households": 0,
+    "invitations": 0,
+    "memberships": 0,
+    "resource_ids": 0,
+    "auth_sessions": 0,
+    "migration_batches": 0,
+    "operation_receipts": 0,
+    "membership_requests": 0,
+    "ownership_transfers": 0,
+    "session_revocations": 0,
+    "household_namespaces": 0,
+    "account_deletion_jobs": 0
+  },
+  "reader_auth_usage": false,
+  "remaining_jj_temp_routines": 0,
+  "remaining_jj_temp_relations": 0
+}

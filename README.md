@@ -1,3 +1,5 @@
+> **Corrección B07.2 — 11/11/2026:** [permiso de lectura Auth corregido](docs/B07_CORRECCION_PERMISO_AUTH.md), regresión de lectura comprobada y base sin datos de prueba. La batería completa de hogares continúa pendiente del aviso nativo de Supabase.
+
 > **Avance B07 — 11/11/2026:** [contratos y base Supabase aislada](docs/B07_BASE_SEGURA_Y_AUDITORIA.md). B07.1 probado; B07.2 aplicado con matriz dinámica pendiente de confirmación. La app conserva el modo local; cuentas y sincronización no están activadas.
 
 > **Estado vigente — 11/11/2026:** consulta [el inventario actual de construcción y pendientes](docs/ESTADO_ACTUAL_Y_PENDIENTES.md) y [la entrega de tiendas y listas compartibles](docs/TIENDAS_COMPARTIR_Y_AUDITORIA.md). Los apartados fechados anteriores se conservan como historial.

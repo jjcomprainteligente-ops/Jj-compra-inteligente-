@@ -1,0 +1,30 @@
+{
+  "suite": "managed_auth_actor_lookup_read_only",
+  "client": {
+    "runtimeRole": "authenticated",
+    "missingActorDenied": true,
+    "readerNotInherited": true,
+    "bridgeNotExecutable": true
+  },
+  "reader": {
+    "runtimeRole": "jj_policy_reader",
+    "authSchemaUsage": false,
+    "absentActorIsNull": true,
+    "absentSessionDenied": true,
+    "absentHouseholdDenied": true
+  },
+  "subject": {
+    "missingProviderSessionDenied": true,
+    "subjectAvailableWithoutAuthUsage": true
+  },
+  "malformed": {
+    "invalidSubjectDenied": true,
+    "invalidSubjectIsNull": true
+  },
+  "tableWrites": false,
+  "fullHouseholdMatrixExecuted": false,
+  "authLoginOrJwtSignatureVerified": false,
+  "checkedAt": "2026-11-11T19:55:55.203Z",
+  "readOnlyRegressionPassed": true,
+  "behavioralChecksPassed": 10
+}
