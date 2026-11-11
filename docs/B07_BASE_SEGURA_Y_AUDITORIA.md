@@ -71,3 +71,14 @@ Se mantiene la auditoría después de cada pareja. La preview de esta entrega co
 La pasada final de Chromium terminó con 298 pruebas correctas, cero inesperadas/intermitentes y 24 omisiones deliberadas de matrices duplicadas. Incluye cuatro idiomas, 120 capturas de recorridos y 300 de cobertura canónica/estados; artefactos anteriores intactos. La primera pasada quedó interrumpida y se conserva sin contarla como aprobada. [Informe resumido](../design/b07/reports/browser-summary.json). La matriz dinámica SQL sigue pendiente; las comprobaciones web no la sustituyen.
 
 Para nuevas funciones SQL, revocar EXECUTE explícitamente tras CREATE y conceder solo la firma necesaria: no confiar únicamente en ALTER DEFAULT PRIVILEGES por schema para retirar un grant global preexistente. Los seis helpers actuales tienen sus ACL inspeccionados.
+
+
+### Publicación y verificación remota — 11/11/2026
+
+Fuente compilada `3fa95b99910617121e513533b265be5a8ecee047`, [PR #10](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/10), rama `codex/b07-base-segura`. Commit con dos padres: conserva `914fa2e` y la propuesta `4e0fb2a`; árbol publicado verificado contra el índice local. GitHub recibió el código antes de publicar la vista.
+
+Vercel staging READY `dpl_9cxY4peum9BMcEneBzwnSnPA18WJ`, origen https://jj-compra-inteligente-4ahqufx66-cmj2hwhc6b-1051.vercel.app . Protección del proyecto conservada. Compilado web SHA-256 `6f57257d52de2a76106a4d41fee185dddeb0b0a935283748403eccd905e45d74`; logo original intacto. Transporte Brotli y 23 archivos publicados; no fuentes de app, paquetes nativos, fixtures, listas del propietario ni credenciales.
+
+Verificación remota correcta en es/en/de/fr y 29 recursos/URLs por hash, incluidas selección de tiendas, copia TXT revisada y foco, datos locales y exportación/borrado aislado, preferencias de idioma y lámina de raster con CSP. Informe público `design/b07/reports/hosted-verification.json`; imágenes y URL de acceso temporales fuera de Git. El enlace compartido vence el **12/11/2026 a las 17:28:39 UTC**.
+
+La vista sigue siendo la aplicación local: B07.1 está construido/probado, B07.2 sigue abierto por la confirmación caducada de la matriz SQL. Esta publicación no activa cuentas, invitaciones, BFF, importación ni sincronización y no sustituye su prueba de permisos. El PR permanece borrador.
