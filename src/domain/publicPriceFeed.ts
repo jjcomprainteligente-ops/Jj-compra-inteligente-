@@ -132,7 +132,7 @@ export function publicPriceGroups(records: readonly PublicPrice[]): Array<{
 export function estimateListLine(item: ShoppingItem, group: ReturnType<typeof publicPriceGroups>[number]): number | null {
   const itemName = normalizePublicName(item.name);
   const publicName = normalizePublicName(group.product);
-  if (!itemName || !(itemName === publicName || (itemName.length >= 5 && publicName.startsWith(itemName + ' ')))) return null;
+  if (!itemName || itemName !== publicName) return null;
   let quantity: number;
   if (group.unit === 'kg') {
     if (item.unit !== 'kg' && item.unit !== 'g') return null;
