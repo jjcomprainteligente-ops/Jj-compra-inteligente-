@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-11T18:10:54.230Z",
+  "passed": true,
+  "scope": "Real HTTP with a publishable key and no user JWT; GET only; no fixtures or user data.",
+  "signedInAuthVerified": false,
+  "checks": [
+    {
+      "check": "anonymous-cannot-read-jj_households",
+      "status": 401,
+      "code": "42501"
+    },
+    {
+      "check": "anonymous-cannot-read-jj_shopping_lists",
+      "status": 401,
+      "code": "42501"
+    },
+    {
+      "check": "anonymous-cannot-read-jj_shopping_items",
+      "status": 401,
+      "code": "42501"
+    },
+    {
+      "check": "private-schema-not-exposed",
+      "status": 406,
+      "code": "PGRST106"
+    }
+  ]
+}

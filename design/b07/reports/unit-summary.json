@@ -1,0 +1,11 @@
+{
+  "checkedAt": "2026-11-11T18:16:13.509489+00:00",
+  "typecheck": "passed",
+  "unit": {
+    "passed": 963,
+    "failed": 0,
+    "files": 26,
+    "newContractTests": 147
+  },
+  "rawEvidence": "/workspace/scratch/b07-authorization/unit-results.json"
+}
