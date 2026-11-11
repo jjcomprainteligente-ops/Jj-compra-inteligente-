@@ -75,7 +75,7 @@ async function readPackage() {
   const files = new Map();
   for (const file of manifest.files) {
     if (!validFileName(file.file) || file.file.split('/').includes('node_modules') ||
-      !(file.file === 'index.html' || file.file === 'vercel.json' || file.file.startsWith('assets/') || /^_expo\/static\/js\/web\/[^/]+\.js$/.test(file.file)) ||
+      !(file.file === 'index.html' || file.file === 'vercel.json' || ['review/brand/index.html', 'review/brand/review.css'].includes(file.file) || file.file.startsWith('assets/') || /^_expo\/static\/js\/web\/[^/]+\.js$/.test(file.file)) ||
       !Number.isSafeInteger(file.size) || file.size < 0 ||
       !/^[a-f0-9]{40}$/.test(file.sha1 ?? '') || !/^[a-f0-9]{64}$/.test(file.sha256 ?? '') || files.has(file.file)) {
       throw new Error('Invalid or duplicate package manifest entry.');
@@ -150,7 +150,7 @@ async function assertRenderedAssets(page) {
   if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw new Error('Horizontal overflow.');
   const rawKeys = await page.evaluate(() => {
     const labels = [...document.querySelectorAll('[aria-label]')].map(element => element.getAttribute('aria-label')).join('\n');
-    return [...new Set(((document.body.innerText + '\n' + labels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus|entry|flow|states|shell|money|moneyViews|localSettings|menuFilters|privacy)\.[a-zA-Z][\w.-]*/g) ?? []))];
+    return [...new Set(((document.body.innerText + '\n' + labels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus|entry|flow|states|shell|money|moneyViews|localSettings|menuFilters|privacy|storePilot|listSharing)\.[a-zA-Z][\w.-]*/g) ?? []))];
   });
   if (rawKeys.length) throw new Error('Untranslated resource keys: ' + rawKeys.join(', '));
 }
@@ -171,8 +171,11 @@ async function verifyResources(context, origin, packaged, report) {
       if (response.status() !== 200 || bytes.length !== expected.size || hash(bytes, 'sha1') !== expected.sha1 || hash(bytes, 'sha256') !== expected.sha256) {
         throw new Error('Published file differs from its package: ' + file.path);
       }
-      if (headers['x-content-type-options']?.toLowerCase() !== 'nosniff' || !headers['x-robots-tag']?.toLowerCase().includes('noindex')) {
+      if (headers['x-content-type-options']?.toLowerCase() !== 'nosniff' || !headers['x-robots-tag']?.toLowerCase().includes('noindex') || headers['referrer-policy']?.toLowerCase() !== 'no-referrer') {
         throw new Error('Expected preview response headers are missing: ' + file.path);
+      }
+      if (file.file.startsWith('review/brand/') && !headers['content-security-policy']?.includes("default-src 'none'")) {
+        throw new Error('The isolated brand board must forbid scripts and external resources.');
       }
       return { path: file.path, status: response.status(), size: bytes.length, sha1: expected.sha1, sha256: expected.sha256,
         ...(isBundle ? { contentEncoding: 'br', packagedTransferSize: file.size, packagedTransferSha1: file.sha1, packagedTransferSha256: file.sha256 } : {}), contentType: headers['content-type'] };
@@ -293,6 +296,45 @@ async function verifyResources(context, origin, packaged, report) {
         await page.getByTestId('profile-stores').click();
         await page.getByTestId('favorite-hiperdino').click();
         await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.preferences?.favoriteStores, keys[5])).toEqual(['hiperdino']);
+        await page.getByTestId('stores-select-all').click();
+        const pilotIds = ['lidl', 'aldi', 'hiperdino', 'superdino', 'hiperdino-express', 'mercadona'];
+        await expect.poll(() => page.evaluate(key => JSON.parse(localStorage.getItem(key) || 'null')?.preferences?.favoriteStores, keys[5])).toEqual(pilotIds);
+        for (const id of pilotIds) await expect(page.getByTestId('favorite-' + id)).toHaveAttribute('aria-checked', 'true');
+        await page.evaluate(() => {
+          window.__hostedStoreOpens = [];
+          window.open = (url, target, features) => { window.__hostedStoreOpens.push({ url: String(url), target, features }); return null; };
+        });
+        const beforeStoreLinks = await snapshot(page);
+        for (const id of pilotIds) await page.getByTestId('store-open-' + id).click();
+        const storeOpens = await page.evaluate(() => window.__hostedStoreOpens);
+        if (storeOpens.length !== 6 || storeOpens.some(value => {
+          const url = new URL(value.url);
+          return url.protocol !== 'https:' || url.username || url.password || url.search || url.hash || value.target !== '_blank' ||
+            !value.features?.split(',').includes('noopener') || !value.features?.split(',').includes('noreferrer');
+        }) || JSON.stringify(await snapshot(page)) !== JSON.stringify(beforeStoreLinks)) throw new Error('Store links changed data or used an unexpected navigation contract.');
+        await page.getByTestId('tab-list').click();
+        await page.getByTestId('add-item').click();
+        const productEditor = page.getByTestId('app-sheet');
+        await productEditor.getByRole('textbox').first().fill('QA producto compartido ' + code);
+        await productEditor.getByRole('textbox').last().fill('QA_PRIVATE_NOTE_NOT_SHARED');
+        await productEditor.getByTestId('save-item').click();
+        await expect(productEditor).toHaveCount(0);
+        const beforeSharing = await snapshot(page);
+        const preferenceBeforeSharing = await page.evaluate(key => localStorage.getItem(key), preferenceKey);
+        await page.getByTestId('share-list').click();
+        const listShare = page.getByTestId('list-share-sheet');
+        const reviewedText = await listShare.getByTestId('list-share-preview').innerText();
+        if (!reviewedText.includes('QA producto compartido ' + code) || reviewedText.includes('QA_PRIVATE_NOTE_NOT_SHARED')) throw new Error('The shared copy has unexpected data.');
+        const listDownloadEvent = page.waitForEvent('download');
+        await listShare.getByTestId('list-share-download').click();
+        const listDownload = await listDownloadEvent;
+        if (listDownload.suggestedFilename() !== 'jj-shopping-list.txt' || await fs.readFile(await listDownload.path(), 'utf8') !== reviewedText) throw new Error('The text download differs from the reviewed copy.');
+        await page.screenshot({ path: path.join(evidence, code + '-share.png'), fullPage: true });
+        await listShare.getByTestId('list-share-close').click();
+        await expect(listShare).toHaveCount(0);
+        await expect(page.getByTestId('share-list')).toBeFocused();
+        if (JSON.stringify(await snapshot(page)) !== JSON.stringify(beforeSharing) ||
+            await page.evaluate(key => localStorage.getItem(key), preferenceKey) !== preferenceBeforeSharing) throw new Error('Sharing a copy changed saved documents.');
         await page.getByTestId('open-notifications').click();
         await expect(page.getByTestId('notifications-screen')).toBeVisible();
         await page.getByTestId('tab-savings').click();
@@ -330,6 +372,7 @@ async function verifyResources(context, origin, packaged, report) {
         const backupDocuments = new Map(backup.documents.map(document => [document.key, document.raw]));
         const beforeDeletion = await snapshot(page);
         for (let index = 0; index < keys.length; index++) if (backupDocuments.get(keys[index]) !== beforeDeletion[index]) throw new Error('A downloaded document differs from local storage.');
+        if (backupDocuments.get(preferenceKey) !== await page.evaluate(key => localStorage.getItem(key), preferenceKey)) throw new Error('The downloaded preference document differs from local storage.');
         await page.getByTestId('privacy-delete-expenses').click();
         const deletion = page.getByTestId('privacy-delete-dialog');
         await deletion.getByTestId('privacy-delete-review-next').click();
@@ -355,11 +398,19 @@ async function verifyResources(context, origin, packaged, report) {
         const preference = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), preferenceKey);
         if (preference.language !== next || !preference.welcomeCompleted) throw new Error('Manual language preference was not retained.');
         if (!bundleVerified || !logoVerified || errors.length) throw new Error(JSON.stringify({ bundleVerified, logoVerified, errors }));
-        if (code === 'es') await verifyResources(context, origin, packaged, report);
+        if (code === 'es') {
+          await verifyResources(context, origin, packaged, report);
+          if (packaged.files.has('review/brand/index.html')) {
+            await page.goto(origin + '/review/brand/index.html', { waitUntil: 'networkidle' });
+            await expect(page.getByRole('heading', { name: 'El original, a cada escala.', exact: true })).toBeVisible();
+            await expect.poll(() => page.evaluate(() => document.images.length === 11 && [...document.images].every(image => image.complete && image.naturalWidth === 936 && image.naturalHeight === 330))).toBe(true);
+            if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)) throw new Error('The isolated brand board overflows the viewport.');
+          }
+        }
         report.languageChecks.push({ language: code, manualPreferenceAfterReload: next, passed: true, bundleVerified, logoVerified,
           checks: ['Device language and official welcome logo', 'Four translated tabs', 'Loaded Manrope fonts and images',
             'Local list save', 'Recipe review and cancellation without shopping changes', 'Manual language preference persists after reload',
-            'Six business documents preserved by language changes', 'Local search, voice, scanner and notification routes', 'Favourite store and confirmed expense save with both new durable fences on HTTPS', 'Session menu filters preserve saved documents', 'Downloaded backup contains exactly seven allowed documents', 'Confirmed category deletion preserves the other stores', 'Exact packaged bundle, logo, fonts, and resource hashes'] });
+            'Six business documents preserved by language changes', 'Local search, voice, scanner and notification routes', 'Favourite store and confirmed expense save with both new durable fences on HTTPS', 'Six pilot stores persist with checkbox semantics', 'External destinations use noopener,noreferrer without saved-data changes; window.open is simulated', 'Reviewed plain-text list download excludes private notes and changes no documents', 'Closing list sharing restores keyboard focus', 'Session menu filters preserve saved documents', 'Downloaded backup contains exactly seven allowed documents', 'Confirmed category deletion preserves the other stores', 'Exact packaged bundle, logo, fonts, and resource hashes; optional isolated brand board'] });
         console.log(JSON.stringify({ language: code, status: 'passed' }));
       } catch (error) {
         await page.screenshot({ path: path.join(evidence, code + '-failure.png'), fullPage: true }).catch(() => {});

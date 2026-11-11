@@ -1,0 +1,397 @@
+{
+  "date": "2026-11-10T23:43:04.525Z",
+  "scope": "Isolated original raster size and context review; not new brand assets, icon approval, physical iPhone or app completion",
+  "engine": "Chromium",
+  "sourceUnchanged": true,
+  "expectedLogoSHA256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+  "screenshotsLocalOnly": true,
+  "results": [
+    {
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "passed": true,
+      "measurements": {
+        "documentLanguage": "es",
+        "horizontalOverflow": 0,
+        "images": [
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, logotipo horizontal original con carrito amarillo e iniciales verdes"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 32 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 48 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 64 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 128 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 256 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 512 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original de JJ Compra Inteligente sobre un contexto crema"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original de JJ Compra Inteligente sobre un contexto blanco"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original opaco de JJ Compra Inteligente sobre un contexto verde profundo"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original opaco de JJ Compra Inteligente sobre un contexto amarillo"
+          }
+        ],
+        "widths": [
+          {
+            "width": 32,
+            "height": 11.28125
+          },
+          {
+            "width": 48,
+            "height": 16.921875
+          },
+          {
+            "width": 64,
+            "height": 22.5625
+          },
+          {
+            "width": 128,
+            "height": 45.125
+          },
+          {
+            "width": 256,
+            "height": 90.25
+          },
+          {
+            "width": 512,
+            "height": 180.5
+          }
+        ],
+        "large": {
+          "scrollWidth": 544,
+          "clientWidth": 299
+        },
+        "animations": 0
+      },
+      "keyboardScroll": "passed",
+      "runtimeErrors": [],
+      "requestedPaths": [
+        "/design/brand-original-review/",
+        "/design/brand-original-review/review.css",
+        "/assets/brand/jj-logo-horizontal.png"
+      ],
+      "screenshot": "original-375.png"
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "passed": true,
+      "measurements": {
+        "documentLanguage": "es",
+        "horizontalOverflow": 0,
+        "images": [
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, logotipo horizontal original con carrito amarillo e iniciales verdes"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 32 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 48 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 64 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 128 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 256 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 512 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original de JJ Compra Inteligente sobre un contexto crema"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original de JJ Compra Inteligente sobre un contexto blanco"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original opaco de JJ Compra Inteligente sobre un contexto verde profundo"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original opaco de JJ Compra Inteligente sobre un contexto amarillo"
+          }
+        ],
+        "widths": [
+          {
+            "width": 32,
+            "height": 11.28125
+          },
+          {
+            "width": 48,
+            "height": 16.921875
+          },
+          {
+            "width": 64,
+            "height": 22.5625
+          },
+          {
+            "width": 128,
+            "height": 45.125
+          },
+          {
+            "width": 256,
+            "height": 90.25
+          },
+          {
+            "width": 512,
+            "height": 180.5
+          }
+        ],
+        "large": {
+          "scrollWidth": 544,
+          "clientWidth": 354
+        },
+        "animations": 0
+      },
+      "keyboardScroll": "passed",
+      "runtimeErrors": [],
+      "requestedPaths": [
+        "/design/brand-original-review/",
+        "/design/brand-original-review/review.css",
+        "/assets/brand/jj-logo-horizontal.png"
+      ],
+      "screenshot": "original-430.png"
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "passed": true,
+      "measurements": {
+        "documentLanguage": "es",
+        "horizontalOverflow": 0,
+        "images": [
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, logotipo horizontal original con carrito amarillo e iniciales verdes"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 32 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 48 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 64 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 128 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 256 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "JJ Compra Inteligente, original a 512 px de ancho"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original de JJ Compra Inteligente sobre un contexto crema"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original de JJ Compra Inteligente sobre un contexto blanco"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original opaco de JJ Compra Inteligente sobre un contexto verde profundo"
+          },
+          {
+            "source": "/assets/brand/jj-logo-horizontal.png",
+            "loaded": true,
+            "naturalWidth": 936,
+            "naturalHeight": 330,
+            "alt": "Original opaco de JJ Compra Inteligente sobre un contexto amarillo"
+          }
+        ],
+        "widths": [
+          {
+            "width": 32,
+            "height": 11.28125
+          },
+          {
+            "width": 48,
+            "height": 16.921875
+          },
+          {
+            "width": 64,
+            "height": 22.5625
+          },
+          {
+            "width": 128,
+            "height": 45.125
+          },
+          {
+            "width": 256,
+            "height": 90.25
+          },
+          {
+            "width": 512,
+            "height": 180.5
+          }
+        ],
+        "large": {
+          "scrollWidth": 1028,
+          "clientWidth": 1028
+        },
+        "animations": 0
+      },
+      "keyboardScroll": "not required at this width",
+      "runtimeErrors": [],
+      "requestedPaths": [
+        "/design/brand-original-review/",
+        "/design/brand-original-review/review.css",
+        "/assets/brand/jj-logo-horizontal.png"
+      ],
+      "screenshot": "original-1280.png"
+    }
+  ]
+}

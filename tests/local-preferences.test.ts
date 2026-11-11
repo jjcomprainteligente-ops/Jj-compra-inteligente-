@@ -10,6 +10,7 @@ import type { ShoppingList } from '../src/domain/shopping';
 import { loadLocalPreferences, saveLocalPreferences, STORAGE_KEY } from '../src/storage/localPreferences';
 import { createWriteCoordinator } from '../src/storage/writeCoordinator';
 import { localSettingsMessages } from '../src/i18n/catalogs/localSettings';
+import { PILOT_STORE_IDS, selectAllPilotStores } from '../src/domain/stores';
 
 beforeEach(() => {
   storage.documents.clear();
@@ -19,12 +20,12 @@ beforeEach(() => {
 });
 
 describe('local preference validation', () => {
-  it('accepts all four distinct store IDs and returns a detached allowlisted value', () => {
+  it('accepts the expanded stores and returns a detached allowlisted value', () => {
     const input = { favoriteStores: [...STORE_IDS], inAppReminders: true, password: 'never persist this' };
     const validated = validateLocalPreferences(input);
     expect(validated).toEqual({ favoriteStores: [...STORE_IDS], inAppReminders: true });
     input.favoriteStores.pop();
-    expect(validated.favoriteStores).toHaveLength(4);
+    expect(validated.favoriteStores).toHaveLength(STORE_IDS.length);
     expect(validated).not.toHaveProperty('password');
   });
 
@@ -50,6 +51,18 @@ describe('local preference validation', () => {
 });
 
 describe('independent local preference storage', () => {
+  it('upgrades the original four-store selection without losing favourites or reminders', async () => {
+    storage.documents.set(STORAGE_KEY, JSON.stringify({ version: 1, preferences: {
+      favoriteStores: ['hiperdino', 'carrefour', 'mercadona', 'other'], inAppReminders: true,
+    } }));
+    const previous = await loadLocalPreferences();
+    await saveLocalPreferences({ ...previous, favoriteStores: selectAllPilotStores(previous.favoriteStores) });
+    const saved = await loadLocalPreferences();
+    expect(saved.inAppReminders).toBe(true);
+    expect(saved.favoriteStores).toEqual(expect.arrayContaining([...PILOT_STORE_IDS, 'carrefour', 'other']));
+    expect(new Set(saved.favoriteStores).size).toBe(8);
+  });
+
   it('loads missing preferences without writing defaults or touching another key', async () => {
     await expect(loadLocalPreferences()).resolves.toEqual(emptyLocalPreferences());
     expect(storage.getItem).toHaveBeenCalledExactlyOnceWith('jjcompraintelwgiemt.local-settings.v1');

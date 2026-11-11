@@ -90,10 +90,34 @@ function main() {
     }
     prepared.set('assets/licenses/' + name, fs.readFileSync(filename));
   }
+  // Optional, isolated technical board: the original raster is reused byte for byte.
+  // No application route, scripts, external resources or generated image is added.
+  if (process.env.JJ_INCLUDE_BRAND_REVIEW === '1') {
+    const boardRoot = path.join(project, 'design/brand-original-review');
+    const readBoard = name => {
+      const filename = path.join(boardRoot, name);
+      if (!fs.lstatSync(filename).isFile() || fs.lstatSync(filename).isSymbolicLink() || fs.realpathSync(filename) !== filename) {
+        throw new Error('The reviewed brand board must contain regular source files.');
+      }
+      return fs.readFileSync(filename, 'utf8');
+    };
+    const logoPath = [...prepared.keys()].find(file => /^assets\/assets\/brand\/jj-logo-horizontal\.[a-f0-9]{32}\.png$/.test(file));
+    if (!logoPath || digests(prepared.get(logoPath)).sha256 !== expectedLogoSha256) throw new Error('Brand board requires the approved original logo.');
+    const markup = readBoard('index.html');
+    const css = readBoard('review.css');
+    const references = [...markup.matchAll(/(?:src|href)="([^"]+)"/g)].map(match => match[1]);
+    if (/<(?:script|iframe|object|embed|form)\b|\son[a-z]+\s*=/i.test(markup) || /@import|url\s*\(/i.test(css) ||
+        !references.length || references.some(value => !['review.css', '../../assets/brand/jj-logo-horizontal.png'].includes(value))) {
+      throw new Error('Review the changed brand board resources before packaging.');
+    }
+    prepared.set('review/brand/index.html', Buffer.from(markup.split('../../assets/brand/jj-logo-horizontal.png').join('/' + logoPath)));
+    prepared.set('review/brand/review.css', Buffer.from(css));
+  }
   const template = JSON.parse(fs.readFileSync(path.join(project, 'deployment/preview/vercel.json'), 'utf8'));
   const baseHeaders = template.headers;
   if (!Array.isArray(baseHeaders) || !baseHeaders.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Robots-Tag' && header.value === 'noindex, nofollow')) ||
-      !baseHeaders.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Content-Type-Options' && header.value === 'nosniff'))) {
+      !baseHeaders.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'X-Content-Type-Options' && header.value === 'nosniff')) ||
+      !baseHeaders.some(rule => rule.source === '/(.*)' && rule.headers?.some(header => header.key === 'Referrer-Policy' && header.value === 'no-referrer'))) {
     throw new Error('The reviewed preview security headers are required.');
   }
   const html = prepared.get('index.html').toString('utf8');
@@ -111,6 +135,10 @@ function main() {
     { key: 'Content-Type', value: 'application/javascript; charset=utf-8' },
     { key: 'Vary', value: 'Accept-Encoding' },
   ] }];
+  if (prepared.has('review/brand/index.html')) headers.push({ source: '/review/brand/(.*)', headers: [{
+    key: 'Content-Security-Policy',
+    value: "default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'; frame-ancestors 'none'",
+  }] });
   prepared.set('vercel.json', Buffer.from(JSON.stringify({ $schema: 'https://openapi.vercel.sh/vercel.json', rewrites, headers }, null, 2) + '\n'));
   const files = [...prepared].sort(([a], [b]) => a.localeCompare(b)).map(([file, bytes]) => ({ file, size: bytes.length, ...digests(bytes) }));
   const bundle = { ...files.find(file => file.file === entry), contentEncoding: 'br', decodedSize: decoded.length,
@@ -134,7 +162,7 @@ function main() {
   const manifest = { schemaVersion: 1, createdAt, input: exportName, source, bundle, logo, expectedLogoSha256,
     assets: files.filter(file => file.file.startsWith('assets/')), files,
     upload: { files: files.length, bytes: files.reduce((total, file) => total + file.size, 0) },
-    scope: 'Reviewed compiled web client, approved logo, fonts with their existing license notices and preview configuration only; no native bundles, source, fixtures, local data or credentials.' };
+    scope: 'Reviewed compiled web client, approved logo, fonts with their existing license notices, preview configuration and optional isolated technical brand board; no native bundles, application source, fixtures, local data or credentials.' };
   fs.writeFileSync(path.join(output, '.vercel/files.json'), JSON.stringify(files.map(({ file, size, sha1 }) => ({ file, size, sha: sha1 })), null, 2) + '\n', { flag: 'wx' });
   fs.writeFileSync(path.join(output, '.vercel/manifest.json'), JSON.stringify(manifest, null, 2) + '\n', { flag: 'wx' });
   console.log(JSON.stringify({ previewDirectory: path.relative(project, output).split(path.sep).join('/'), sourceCommit: source.commit,

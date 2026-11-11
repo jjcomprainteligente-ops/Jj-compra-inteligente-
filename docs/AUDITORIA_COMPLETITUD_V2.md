@@ -1,3 +1,5 @@
+> **Auditoría histórica del 06/11/2026.** Su matriz describe aquel código. El [inventario vigente](ESTADO_ACTUAL_Y_PENDIENTES.md) y [la nueva entrega](TIENDAS_COMPARTIR_Y_AUDITORIA.md) recogen las pantallas y funciones construidas después; el texto original se conserva íntegro.
+
 # Verificación integral de lo solicitado — V2
 
 **Dictamen: preparación incompleta.** Baseline auditado: `416c787`, con la misma aplicación que el cliente publicado desde `3dbcff9`. Esta entrega documenta la inspección; no modifica funciones, datos, dependencias ni diseño de la app.
