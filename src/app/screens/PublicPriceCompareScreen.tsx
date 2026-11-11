@@ -16,6 +16,8 @@ type Props = {
   list?: ShoppingList;
   onBack: () => void;
   onStores: () => void;
+  planningBudgetCents?: number | null;
+  planningMeals?: number;
 };
 const SUPPORTED: PublicPriceChain[] = ['hiperdino', 'mercadona'];
 const nameOf = (chain: PublicPriceChain) => chain === 'hiperdino' ? 'HiperDino' : 'Mercadona';
@@ -36,7 +38,7 @@ async function loadPublicPrices(): Promise<PublicPrice[]> {
 }
 
 /** Comparison is done inside JJ. Prices are attributed aggregated indicators, not shelf quotes. */
-export function PublicPriceCompareScreen({ selectedStores, list, onBack, onStores }: Props) {
+export function PublicPriceCompareScreen({ selectedStores, list, onBack, onStores, planningBudgetCents, planningMeals = 5 }: Props) {
   const { t, formatMoney, formatNumber } = useI18n();
   const [prices, setPrices] = useState<PublicPrice[]>([]);
   const [loading, setLoading] = useState(false);
@@ -77,6 +79,9 @@ export function PublicPriceCompareScreen({ selectedStores, list, onBack, onStore
   return <View testID="public-price-screen" style={ui.page}>
     <Title kicker={t('openPrices.comparison')} title={t('openPrices.title')} subtitle={t('openPrices.subtitle')} />
     <Button secondary testID="public-prices-stores" label={t('openPrices.selectStores')} onPress={onStores} />
+    {planningBudgetCents != null && <Notice kind="info"
+      title={t('mealJourney.goal', { amount: formatMoney(planningBudgetCents), count: formatNumber(planningMeals) })}
+      text={t('mealJourney.goalWarning')} />}
     <Notice kind="info" title={t('openPrices.limited')} text={t('openPrices.partial')} />
     {!selectedStores.length ? <Notice title={t('openPrices.emptyStores')} text={t('openPrices.noCoverage')} /> :
       !selected.length ? <Notice title={t('openPrices.noCoverage')} text={t('openPrices.limited')} /> : null}
