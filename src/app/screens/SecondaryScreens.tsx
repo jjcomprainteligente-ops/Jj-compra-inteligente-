@@ -100,7 +100,8 @@ export function SavingsScreen({
     <Section title={t('shell.yourRecords')} />
     <View style={{ gap: 10 }}><Button secondary label={t('shell.budget')} testID="open-budget-page" disabled={busy} onPress={() => onNavigate('budget')} />
       <Button secondary label={t('shell.history')} testID="open-history" disabled={busy} onPress={() => onNavigate('history')} />
-      <Button secondary label={t('shell.stores')} testID="open-stores" disabled={busy} onPress={() => onNavigate('stores')} /></View>
+      <Button secondary label={t('shell.stores')} testID="open-stores" disabled={busy} onPress={() => onNavigate('stores')} />
+      <Button label={t('openPrices.open')} testID="open-public-prices" disabled={busy} onPress={() => onNavigate('public-prices')} /></View>
     <Section title={t('visualSecondary.manualTools')} />
     <View style={{ gap: 12 }}>
       <Text style={ui.note}>{t('visualSecondary.manualToolsHelp')}</Text>
