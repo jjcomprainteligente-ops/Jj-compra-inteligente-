@@ -11,7 +11,7 @@ export const publicPriceFeedMessages = {
     'openPrices.emptyStores': 'Elige primero una o varias tiendas en Mis tiendas.',
     'openPrices.selectStores': 'Elegir mis tiendas',
     'openPrices.noCoverage': 'No hay datos abiertos de estas tiendas por ahora.',
-    'openPrices.limited': 'Fuente parcial: medias de precios por unidad, no productos exactos ni precios de Tenerife.',
+    'openPrices.limited': 'Fuente parcial: medianas de precios por unidad, no productos exactos ni precios de Tenerife.',
     'openPrices.outdated': 'Datos antiguos: se muestran como referencia histórica, no como ofertas actuales.',
     'openPrices.partial': 'Comparación orientativa. No incluye envases, transporte, promociones ni stock.',
     'openPrices.noBasket': 'No hay coincidencias fiables con tu lista. No calculamos un total falso.',
