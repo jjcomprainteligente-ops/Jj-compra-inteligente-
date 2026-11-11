@@ -18,6 +18,7 @@ import { HomeScreen, ListScreen } from './screens/HomeList';
 import { ProfileScreen, SavingsScreen } from './screens/SecondaryScreens';
 import { MenuWorkspace } from './screens/MenuWorkspace';
 import { PriceWorkspace } from './screens/PriceWorkspace';
+import { PublicPriceCompareScreen } from './screens/PublicPriceCompareScreen';
 import { LanguageScreen, WelcomeScreen } from './screens/LanguageScreen';
 import { useShopping } from './useShopping';
 import { useExpenses } from './useExpenses';
@@ -102,7 +103,7 @@ function Workspace() {
     if (navigationBusy) return;
     if (value === 'profile' && screen !== 'profile' && screen !== 'language' && screen !== 'privacy') profileReturnScreen.current = screen;
     if (tabs.some(tab => tab.key === value)) setMainScreen(value as MainScreen);
-    else if (['prices', 'budget', 'history', 'stores'].includes(value) && screen !== 'profile') setMainScreen('savings');
+    else if (['prices', 'public-prices', 'budget', 'history', 'stores'].includes(value) && screen !== 'profile') setMainScreen('savings');
     else if (['search', 'product', 'voice', 'scanner'].includes(value)) setMainScreen('list');
     setScreen(value); scroll.current?.scrollTo({ y: 0, animated: false });
   };
@@ -225,7 +226,7 @@ function Workspace() {
       <LegacyComparisons />
     </View> : <View style={styles.shell}>
       <View style={styles.header}>
-        <Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'privacy' ? 'privacy.title' : screen === 'prices' ? 'app.tabSavings' : tabs.find(tab => tab.key === screen)?.label ?? `shell.${screen}`)}</Text>
+        <Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'privacy' ? 'privacy.title' : screen === 'prices' ? 'app.tabSavings' : screen === 'public-prices' ? 'openPrices.title' : tabs.find(tab => tab.key === screen)?.label ?? `shell.${screen}`)}</Text>
         <Pressable accessibilityRole="button" testID="open-notifications" accessibilityLabel={t('shell.notifications')} disabled={navigationBusy} onPress={() => navigate('notifications')} style={styles.headerAction}><Bell size={22} color={c.surface} /></Pressable>
         <Pressable accessibilityRole="button" testID="open-profile" accessibilityLabel={t('app.openProfile')} disabled={navigationBusy} onPress={() => navigate('profile')} style={styles.avatar}><UserRound size={22} color={c.deep} /></Pressable>
       </View>
@@ -245,7 +246,7 @@ function Workspace() {
           {!!store.saveError && !editor && <View style={[ui.page, { paddingTop: 18, paddingBottom: 0 }]}><Notice kind="error" title={t('app.saveFailed')} text={translateError(store.saveError)} /></View>}
           {store.undo && <View style={[ui.page, { paddingTop: 16, paddingBottom: 0 }]}><Notice kind="success" title={t(store.undo.label)} text={t('app.undoBody')}
             action={t('app.undo')} onPress={() => { if (!store.busy) void store.undoLast(); }} /></View>}
-          {screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
+          {screen === 'public-prices' ? <PublicPriceCompareScreen selectedStores={localPreferences.data.favoriteStores} list={active} onBack={() => navigate('savings')} onStores={() => navigate('stores')} /> : screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
             <PriceWorkspace store={priceStore} onBack={() => navigate('savings')} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
             <MenuWorkspace budgetCents={active?.budgetCents ?? null} onBudget={active ? editBudget : createList} initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate} initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
           screen === 'search' ? <SearchScreen lists={store.data.lists} busy={disabled} initialCategory={searchCategory} onSelect={(listId, itemId) => { setSelectedProduct({ listId, itemId }); navigate('product'); }} onAdd={category => openItem(undefined, category)} /> :
