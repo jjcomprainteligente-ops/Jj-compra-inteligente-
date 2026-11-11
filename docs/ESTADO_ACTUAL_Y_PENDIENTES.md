@@ -2,6 +2,16 @@
 
 Actualizado el 11 de noviembre de 2026. Este inventario distingue código construido, comprobación técnica, aceptación visual y funciones condicionadas. Las auditorías y entregas fechadas anteriores se conservan como historial.
 
+## Prioridad de prueba iPhone · 11/11/2026
+
+El propietario ha fijado **menú → revisión de ingredientes → lista → compra → presupuesto/gasto confirmado** como próximo recorrido de aceptación. Se prepara sobre la app existente, sin rehacer diseño ni activar cuentas/hogares. La [guía del piloto diario](IPHONE_PILOTO_RECORRIDO_DIARIO.md) contiene pasos, resultados esperados y registro físico pendiente.
+
+Los perfiles EAS `iphone-preview` y `iphone-testflight` están preparados; no existe todavía binario instalable, envío a TestFlight ni ejecución en un iPhone físico. La nueva preview de Safari está pendiente de publicación y comprobación. Un motor WebKit con tamaños móviles en Linux no sustituye esa aceptación.
+
+En esta preparación pasaron TypeScript, 963 pruebas unitarias, la comprobación oficial de dependencias de Expo y las exportaciones web/iOS/Android. El audit actualizado registra **tres avisos moderados**, cero altos y cero críticos, en herramientas de Expo/minimatch; los recuentos anteriores se conservan como historia. La regresión completa pasó 298 casos Chromium con 24 omisiones duplicadas deliberadas. Los ocho casos WebKit focalizados pasaron en cuatro idiomas y dos tamaños CSS, con 80 capturas y ocho informes; verificaron una receta de dos a cuatro personas, un ingrediente excluido, coincidencia exacta de los ingredientes revisados/guardados y persistencia del recorrido. [Informes técnico](../design/iphone-pilot/reports/technical-verification.json), [Chromium](../design/iphone-pilot/reports/chromium-regression.json) y [WebKit](../design/iphone-pilot/reports/webkit-daily-journey.json). La publicación y verificación remota siguen pendientes.
+
+Las siete recetas iniciales siguen disponibles; las 150 del propietario continúan pendientes. Se conservan las siete claves locales y la protección de escritura, sin datos de pruebas preinstalados. B07.2 sigue abierto y separado de este piloto local; los apartados siguientes incluyen sus avances y publicaciones históricas.
+
 ## Funciones locales construidas
 
 - Bienvenida, idioma del dispositivo y elección manual persistente en español, inglés, alemán y francés; formatos locales y compras en euros.
@@ -27,7 +37,7 @@ Actualizado el 11 de noviembre de 2026. Este inventario distingue código constr
 | B05 · Menús | Motor local, filtros, cantidades y revisión construidos; búsquedas con ChatGPT fuera de JJ. | Recibir las 150 recetas traducidas e implementar su colección persistente con validación. No se inventa su contenido. |
 | B06 · Comparador | Observaciones y comparación manual; selección de tiendas y salida externa construidas. | Fuentes comerciales autorizadas/localizadas antes de importar precios o afirmar ahorro/stock. |
 | B07 · Cuentas y hogares | B07.1: contratos y proyección probados. B07.2: proyecto Supabase gratuito UE, esquema/RLS aplicados; grants y HTTP anónimo comprobados. | Matriz dinámica SQL pendiente de confirmación de Supabase; cuentas/BFF, invitaciones, RPC, migración y sincronización todavía no activados. [Auditoría B07](B07_BASE_SEGURA_Y_AUDITORIA.md). |
-| B08 · QA y piloto | Suites estáticas, unitarias y de navegador; auditoría después de parejas y previews verificadas. | Piloto físico, accesibilidad nativa, distribución y feedback de personas. Cinco avisos moderados de herramientas siguen abiertos. |
+| B08 · QA y piloto | Suites estáticas, unitarias y de navegador; auditoría después de parejas y previews verificadas. | Piloto físico, accesibilidad nativa, distribución y feedback de personas. Tres avisos moderados de herramientas siguen abiertos en el audit del piloto iPhone. |
 | B09 · Comercio | Salida a páginas oficiales sin datos de lista ni pago dentro de JJ. | Acuerdos, cobertura, derechos de datos y responsabilidades antes de otras integraciones. No hay pedidos, stock ni pagos procesados por JJ. |
 
 ## Verificación de la entrega de tiendas y compartir
