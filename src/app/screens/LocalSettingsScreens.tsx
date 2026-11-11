@@ -21,7 +21,7 @@ function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
     action={t('localSettings.reload')} onPress={() => { void store.reload(); }} />;
 }
 
-export function StoresScreen({ store, onContinue }: { store: LocalPreferencesStore; onBack(): void; onContinue?: () => void }) {
+export function StoresScreen({ store, onContinue, continueLabel = 'mealJourney.compare' }: { store: LocalPreferencesStore; onBack(): void; onContinue?: () => void; continueLabel?: string }) {
   const { t, formatNumber } = useI18n();
   const [visitError, setVisitError] = useState(false);
   const disabled = store.loading || store.busy || !!store.loadError;
@@ -52,7 +52,7 @@ export function StoresScreen({ store, onContinue }: { store: LocalPreferencesSto
       <Text style={ui.note}>{t('mealJourney.storeHelp')}</Text>
       {!PILOT_STORE_IDS.some(id => store.data.favoriteStores.includes(id)) &&
         <Text style={ui.note}>{t('mealJourney.selectionRequired')}</Text>}
-      <Button label={t('mealJourney.compare')} testID="stores-continue-to-prices"
+      <Button label={t(continueLabel)} testID="stores-continue-to-prices"
         disabled={disabled || !PILOT_STORE_IDS.some(id => store.data.favoriteStores.includes(id))}
         onPress={onContinue} />
     </View>}
