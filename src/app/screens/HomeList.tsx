@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
-import { Barcode, Check, ChevronDown, ChevronRight, Leaf, Mic, Pencil, Plus, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
+import { Barcode, Check, ChevronDown, ChevronRight, Leaf, Mic, Pencil, Plus, Share2, ShoppingBag, Trash2, Wallet } from 'lucide-react-native';
 import { CATEGORIES, itemTotalCents, summarizeList, type Category, type ShoppingItem, type ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { translateIngredientName, translateIngredientNote } from '../../i18n/recipes';
@@ -9,7 +9,7 @@ import { Button, Card, IconButton, Notice, Pill, Section, Title, c, f, ui } from
 interface Props {
   active?: ShoppingList; busy: boolean; actualSpentCents?: number | null; expensesLoading?: boolean; expensesError?: string; onCreate(): void; onOpenList(): void; onMenus(): void; onDiscover(): void;
   onSearch(category?: Category): void; onVoice(): void; onScanner(): void; onChoose(): void; onBudget(): void; onAdd(category?: Category): void; onRename(): void; onDeleteList(): void;
-  onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void;
+  onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void; onShare(): void; shareDisabled: boolean;
 }
 
 export function HomeScreen(p: Props) {
@@ -78,6 +78,7 @@ export function ListScreen(p: Props) {
         <Text style={[ui.strong, { fontSize: 18, flex: 1 }]}>{p.active.name}</Text><ChevronDown size={21} color={c.primary} />
       </Pressable>
       <View style={styles.listActions}><Pressable accessibilityRole="button" accessibilityLabel={t('app.renameList')} disabled={p.busy} onPress={p.onRename} style={styles.textAction}><Pencil size={16} color={c.primary} /><Text style={ui.link}>{t('app.rename')}</Text></Pressable>
+        <Pressable testID="share-list" accessibilityRole="button" accessibilityLabel={t('listSharing.openA11y')} disabled={p.shareDisabled || p.active.items.length === 0} onPress={p.onShare} style={styles.textAction}><Share2 size={16} color={c.primary} /><Text style={ui.link}>{t('listSharing.open')}</Text></Pressable>
         <Pressable accessibilityRole="button" accessibilityLabel={t('app.deleteList')} disabled={p.busy} onPress={p.onDeleteList} style={styles.textAction}><Trash2 size={16} color={c.danger} /><Text style={[ui.link, { color: c.danger }]}>{t('app.deleteList')}</Text></Pressable>
       </View>
       <Budget active={p.active} onBudget={p.onBudget} busy={p.busy} actualSpentCents={p.actualSpentCents} expensesLoading={p.expensesLoading} expensesError={p.expensesError} compact />

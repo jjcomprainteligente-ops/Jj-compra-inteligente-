@@ -31,6 +31,7 @@ import { StoresScreen } from './screens/LocalSettingsScreens';
 import { NotificationsWorkspace } from './screens/NotificationsWorkspace';
 import { StateReviewScreen } from './screens/StateReviewScreen';
 import { DataPrivacyScreen } from './screens/DataPrivacyScreen';
+import { ListShareSheet } from './components/ListShareSheet';
 import type { PrivacyScope } from '../domain/dataPrivacy';
 import { usePriceObservations } from './usePriceObservations';
 import type { Screen, SecondaryProps } from './types';
@@ -75,8 +76,10 @@ function Workspace() {
   const localPreferences = useLocalPreferences();
   const connectivity = useConnectivity();
   const [privacyBusy, setPrivacyBusy] = useState(false);
+  const [shareBusy, setShareBusy] = useState(false);
+  const [shareList, setShareList] = useState<ShoppingList | null>(null);
   const externalBusy = store.busy || priceStore.busy || expenses.busy || localPreferences.busy || languageBusy;
-  const navigationBusy = externalBusy || privacyBusy;
+  const navigationBusy = externalBusy || privacyBusy || shareBusy || !!shareList;
   const [screen, setScreen] = useState<Screen>(initialScreen);
   const [mainScreen, setMainScreen] = useState<MainScreen>('home');
   const [searchCategory, setSearchCategory] = useState<Category>();
@@ -200,8 +203,12 @@ function Workspace() {
   const productList = selectedProduct ? store.data.lists.find(list => list.id === selectedProduct.listId) : undefined;
   const product = productList?.items.find(item => item.id === selectedProduct?.itemId);
   const backToMain = () => navigate(mainScreen);
+  const openShare = () => {
+    if (navigationBusy || disabled || !active?.items.length || editor) return;
+    setShareList({ ...active, items: active.items.map(item => ({ ...item })) });
+  };
   const actualSpending = { actualSpentCents: active && expenses.data.expenses.some(record => record.listId === active.id) ? totalExpenses(expenses.data.expenses, active.id) : null, expensesLoading: expenses.loading, expensesError: expenses.loadError };
-  const common = { ...actualSpending, active, busy: disabled, onCreate: createList, onOpenList: () => navigate('list'), onMenus: () => { setMenuSection('week'); navigate('menus'); }, onDiscover: () => { setMenuSection('discover'); navigate('menus'); },
+  const common = { ...actualSpending, active, busy: disabled || !!shareList, shareDisabled: disabled, onShare: openShare, onCreate: createList, onOpenList: () => navigate('list'), onMenus: () => { setMenuSection('week'); navigate('menus'); }, onDiscover: () => { setMenuSection('discover'); navigate('menus'); },
     onSearch: openSearch, onVoice: () => navigate('voice'), onScanner: () => navigate('scanner'), onChoose: () => begin({ kind: 'choose' }), onBudget: editBudget, onAdd: (category?: Category) => openItem(undefined, category), onRename: editList, onDeleteList: confirmDeleteList,
     onEdit: (item: ShoppingItem) => openItem(item), onDelete: confirmDeleteItem, onToggle: (item: ShoppingItem) => { if (active) void store.commit(state => changeList(state, active.id,
       list => ({ ...list, items: list.items.map(value => value.id === item.id ? { ...value, checked: !value.checked } : value) })), item.checked ? 'app.undoItemUnchecked' : 'app.undoItemChecked'); } };
@@ -271,6 +278,7 @@ function Workspace() {
           <Text style={[styles.tabLabel, selected && { color: c.primary, fontFamily: f.extra }]}>{t(tab.label)}</Text></Pressable>;
       })}</View></SafeAreaView>
     </View>}
+    {shareList && <ListShareSheet list={shareList} onBusyChange={setShareBusy} onClose={() => { if (!shareBusy) setShareList(null); }} />}
     <Sheet visible={!!editor} title={title} onClose={close} busy={store.busy} testID={editor?.kind === 'confirm' ? 'confirmation-dialog' : 'app-sheet'}
       footer={editor && !discard && !duplicate ? editor.kind === 'list' ? <Button label={t('app.saveList')} testID="save-list" busy={store.busy} onPress={() => void saveList()} icon={Check} /> :
         editor.kind === 'budget' ? <Button label={t('app.saveBudget')} testID="save-budget" busy={store.busy} onPress={() => void saveBudget()} icon={Check} /> :
