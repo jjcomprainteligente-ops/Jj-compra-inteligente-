@@ -198,7 +198,7 @@ function Workspace() {
     if (targetListId !== null) {
       return { ...changeList(state, targetListId, list => applyIngredientReview(list, drafts, createId)), activeListId: targetListId };
     }
-    const list: ShoppingList = { id: createId(), name: validateListName(newListName), budgetCents: null, items: [] };
+    const list: ShoppingList = { id: createId(), name: validateListName(newListName), budgetCents: mealJourney?.mode === 'budget' ? mealJourney.budgetCents : null, items: [] };
     const reviewed = applyIngredientReview(list, drafts, createId);
     return { lists: [...state.lists, reviewed], activeListId: list.id };
   }, 'app.undoIngredientsAdded');
@@ -255,12 +255,12 @@ function Workspace() {
           {store.undo && <View style={[ui.page, { paddingTop: 16, paddingBottom: 0 }]}><Notice kind="success" title={t(store.undo.label)} text={t('app.undoBody')}
             action={t('app.undo')} onPress={() => { if (!store.busy) void store.undoLast(); }} /></View>}
           {screen === 'plan-budget' ? <PlanBudgetScreen onBack={() => navigate('home')} onContinue={(budgetCents, servings) => {
-              setMealJourney({ mode: 'budget', budgetCents, servings }); setMenuSection('week'); navigate('menus');
+              setMealJourney({ mode: 'budget', budgetCents, servings }); setMenuSection('week'); navigate('stores');
             }} /> : screen === 'public-prices' ? <PublicPriceCompareScreen selectedStores={localPreferences.data.favoriteStores} list={active}
               planningBudgetCents={mealJourney?.budgetCents} planningMeals={5}
               onBack={() => { setMealJourney(null); navigate('savings'); }} onStores={() => navigate('stores')} /> : screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
             <PriceWorkspace store={priceStore} onBack={() => navigate('savings')} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
-            <MenuWorkspace budgetCents={mealJourney?.budgetCents ?? active?.budgetCents ?? null} initialServings={mealJourney?.servings ?? 2} onBudget={active ? editBudget : createList} initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate(mealJourney ? 'stores' : 'list')} onNavigateMain={navigate} initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
+            <MenuWorkspace budgetCents={mealJourney?.budgetCents ?? active?.budgetCents ?? null} initialServings={mealJourney?.servings ?? 2} onBudget={active ? editBudget : createList} initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate(mealJourney ? (mealJourney.mode === 'budget' ? 'public-prices' : 'stores') : 'list')} onNavigateMain={navigate} initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
           screen === 'search' ? <SearchScreen lists={store.data.lists} busy={disabled} initialCategory={searchCategory} onSelect={(listId, itemId) => { setSelectedProduct({ listId, itemId }); navigate('product'); }} onAdd={category => openItem(undefined, category)} /> :
           screen === 'product' ? <ProductScreen list={productList} item={product} busy={disabled} onEdit={() => product && openItem(product, undefined, productList?.id)} onBack={() => navigate('search')} /> :
           screen === 'voice' ? <VoiceScreen busy={disabled} draft={voiceDraft} onDraftChange={setVoiceDraft} onReview={text => { setPendingEntry({ id: createId(), text }); setMenuSection('week'); navigate('menus'); }} onBack={backToMain} /> :
@@ -268,7 +268,8 @@ function Workspace() {
           screen === 'budget' ? <BudgetScreen active={active} lists={store.data.lists} store={expenses} onBudget={editBudget} onCreateList={createList} onHistory={() => navigate('history')} onBack={backToMain} /> :
           screen === 'history' ? <HistoryScreen active={active} lists={store.data.lists} store={expenses} onBack={() => navigate('budget')} /> :
           screen === 'stores' ? <StoresScreen store={localPreferences} onBack={backToMain}
-            onContinue={mealJourney ? () => navigate('public-prices') : undefined} /> :
+            onContinue={mealJourney ? () => navigate(mealJourney.mode === 'budget' ? 'menus' : 'public-prices') : undefined}
+            continueLabel={mealJourney?.mode === 'budget' ? 'mealJourney.continueRecipes' : 'mealJourney.compare'} /> :
           screen === 'notifications' ? <NotificationsWorkspace store={localPreferences} lists={store.data.lists} onOpenList={id => { void store.commit(state => { if (!state.lists.some(list => list.id === id)) throw appError('errors.listGone'); return { ...state, activeListId: id }; }).then(ok => { if (ok) navigate('list'); }); }} onMenus={() => navigate('menus')} /> :
           screen === 'states' ? <StateReviewScreen onBack={backToMain} onShopping={() => navigate('list')} onMenus={() => navigate('menus')} /> : <ProfileScreen {...secondary} />}
 
