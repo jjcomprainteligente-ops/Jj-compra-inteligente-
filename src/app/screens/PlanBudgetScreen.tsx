@@ -52,7 +52,14 @@ export function PlanBudgetScreen({ onContinue, onBack }: {
     </Card>
     {!!error && <Notice kind="error" title={t('mealJourney.invalid')} text={error} />}
     <Notice title={t('mealJourney.limitTitle')} text={t('mealJourney.limitHelp')} />
-    <Button label={t('mealJourney.continueRecipes')} testID="meal-budget-continue" onPress={submit} />
+    <Button label={t('mealJourney.chooseStores')} testID="meal-budget-continue" onPress={submit} />
     <Button secondary label={t('shell.back')} onPress={onBack} />
   </View>;
 }
+
+const styles = StyleSheet.create({
+  label: { fontFamily: f.bold, color: c.ink, fontSize: 15, marginTop: 12, marginBottom: 7 },
+  input: { borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, borderRadius: 12,
+    color: c.ink, fontSize: 18, minHeight: 48, paddingHorizontal: 12 },
+  help: { marginTop: 8 },
+});
