@@ -57,3 +57,7 @@ design/mobile-readiness/local-evidence/
 # Pareja tiendas/compartir: evidencia completa local e informes públicos separados.
 design/v2/evidence/run-2026-11-11*/
 design/stores-sharing/local-evidence/
+
+# Estado local del CLI de Supabase; solo migraciones, pruebas y documentación en Git.
+supabase/.temp/
+supabase/.branches/

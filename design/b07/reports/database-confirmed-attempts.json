@@ -1,0 +1,23 @@
+{
+  "recordedAt": "2026-11-11T19:58:14.017Z",
+  "originalSuite": "supabase/tests/household_security.sql",
+  "originalSuiteSha256": "e8cc847184e641ea53663a8be34f921c0a66967cf6ec7dbef9dfbc422a1606d1",
+  "firstConfirmedExecution": {
+    "executed": true,
+    "completed": false,
+    "sqlState": "42501",
+    "message": "permission denied for schema auth",
+    "function": "jj_private.can_read_household"
+  },
+  "cause": "postgres has USAGE without grant option on the managed auth schema; the initial GRANT did not give jj_policy_reader effective USAGE.",
+  "fixMigration": "20261111190357_jj_policy_actor_lookup.sql",
+  "fixSha256": "8fb74ba1c327bcc0841769884fd480aa55c5bc6a7043f6c518162c2d6fbe2f94",
+  "afterFixFullSuite": {
+    "completed": false,
+    "passed": null,
+    "providerConfirmationExpirations": 2
+  },
+  "readOnlyRegression": "policy-actor-lookup-readonly.json",
+  "postRunCatalog": "policy-actor-lookup-catalog.json",
+  "authLoginOrJwtSignatureVerified": false
+}

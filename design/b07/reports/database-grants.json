@@ -1,0 +1,537 @@
+{
+  "tables": [
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "account_controls",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "account_deletion_jobs",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "household_namespaces",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "invitations",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "membership_requests",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "memberships",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "migration_batches",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "operation_receipts",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "ownership_transfers",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "resource_ids",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "session_revocations",
+      "schema": "jj_private",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": true,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "jj_households",
+      "schema": "public",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": true,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "jj_shopping_items",
+      "schema": "public",
+      "force_rls": true
+    },
+    {
+      "rls": true,
+      "roles": [
+        {
+          "role": "anon",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "authenticated",
+          "delete": false,
+          "insert": false,
+          "select": true,
+          "update": false,
+          "truncate": false
+        },
+        {
+          "role": "service_role",
+          "delete": false,
+          "insert": false,
+          "select": false,
+          "update": false,
+          "truncate": false
+        }
+      ],
+      "table": "jj_shopping_lists",
+      "schema": "public",
+      "force_rls": true
+    }
+  ],
+  "helpers": [
+    {
+      "name": "attach_resource_id",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "can_read_household",
+      "owner": "jj_policy_reader",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": true
+    },
+    {
+      "name": "check_household_owner",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "has_live_session",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "lock_membership_household",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    },
+    {
+      "name": "protect_resource_lifecycle",
+      "owner": "postgres",
+      "config": [
+        "search_path=\"\""
+      ],
+      "definer": true,
+      "anon_execute": false,
+      "service_role_execute": false,
+      "authenticated_execute": false
+    }
+  ],
+  "checked_at": "2026-11-11T18:12:13.997223+00:00",
+  "row_counts": {
+    "items": 0,
+    "lists": 0,
+    "accounts": 0,
+    "auth_users": 0,
+    "households": 0,
+    "resource_ids": 0,
+    "auth_sessions": 0
+  },
+  "policy_reader": {
+    "login": false,
+    "superuser": false,
+    "bypass_rls": false
+  },
+  "catalogAuditPassed": true,
+  "behavioralMatrixExecuted": false
+}
