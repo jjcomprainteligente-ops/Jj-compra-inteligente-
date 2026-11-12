@@ -1,8 +1,8 @@
-> **Publicación V83 autorizada · 12/11/2026:** el propietario confirmó expresamente «Si publica las 120» al responder a la publicación de recetas, cinco traducciones y manifiestos en el repositorio público. Se reanuda GitHub primero y después la preview protegida. Las otras 30 siguen retenidas por sus estados editoriales. [Registro de autorización y bloqueo anterior](V83_PUBLICACION_PENDIENTE_DE_AUTORIZACION.md).
+> **V83 publicada y comprobada · 12/11/2026:** 120 recetas nuevas y las siete anteriores disponibles. Código y fuente seleccionada en [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), fuente compilada `0ea49b597f45b401747e20d7d880c07f670b3073`. Preview staging protegida comprobada en es/en/de/fr, con 127 recetas y 29 recursos/URLs por hash. El enlace temporal se entrega fuera de Git y vence el **13/11/2026 a las 15:56:07 UTC**. Las 30 retenidas y la prueba física siguen pendientes. [Entrega y límites](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md).
 
 # V83 · Integración de recetas y auditoría
 
-Integración del 12/11/2026 en `codex/v83-recetas-auditadas`, sobre la base `dbb703f62486ac4f639947da429761ed42c062d8`. **Código comprobado: TypeScript, 981 unitarias, exportaciones web/iOS/Android, 298 casos Chromium y 16 WebKit correctos. La subida a GitHub y la nueva preview V83 siguen pendientes.** La comprobación documental se distingue de las pruebas ejecutadas sobre la aplicación; ninguna sustituye la validación en un iPhone físico.
+Integración del 12/11/2026 en `codex/v83-recetas-auditadas`, sobre la base `dbb703f62486ac4f639947da429761ed42c062d8`. **Código comprobado: TypeScript, 981 unitarias, exportaciones web/iOS/Android, 298 casos Chromium y 16 WebKit correctos. Código y fuente seleccionada publicados en GitHub; nueva preview V83 protegida y comprobada.** La comprobación documental se distingue de las pruebas ejecutadas sobre la aplicación; ninguna sustituye la validación en un iPhone físico.
 
 ## Fuente recibida y verificada
 
@@ -21,7 +21,7 @@ Los originales y los cinco idiomas se conservan sin reescribir sus bytes. El paq
 
 ## Fuente pública y conservación local
 
-El repositorio de GitHub es **público**. El ZIP completo de 150 recetas se conserva intacto en `referencias/recetas-v83/originales/`, carpeta ignorada por Git. No se sube ese original ni el XLSX que contiene a GitHub o a la preview: hacerlo expondría las 30 recetas retenidas aunque la aplicación no las mostrara.
+El repositorio de GitHub es **público**. El ZIP completo de 150 recetas se conserva intacto en `referencias/recetas-v83/originales/`, carpeta ignorada por Git. No se sube ese ZIP original a GitHub ni a la preview: contiene las 30 recetas retenidas y las expondría aunque la aplicación no las mostrara. El XLSX del lote final se conserva junto al original; la fuente pública seleccionada permite reproducir la integración sin ese archivo.
 
 La [fuente pública reproducible](../referencias/recetas-v83/README.md) contiene solo las **120 recetas seleccionadas y sus cinco idiomas: 600 fichas**. Su ZIP `fuente-publica/JJ_V83_120_RECETAS_FUENTE_PUBLICA.zip` tiene SHA-256 `5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62`. La comparación independiente con decimales exactos confirmó que sus 120 registros conservan íntegros los valores originales. De las 30 retenidas solo se conserva públicamente ID, posición, motivo y hash, sin títulos, ingredientes o instrucciones.
 
@@ -89,8 +89,19 @@ La matriz Chromium terminó con **298 casos correctos y 24 omisiones deliberadas
 | Regresión Chromium | 298 correctos y 24 omisiones deliberadas de duplicados; artefactos anteriores intactos. |
 | UI de recetas nuevas en cuatro idiomas y dos tamaños | Correcta en WebKit Linux, incluidos tiempo desconocido, unidades especiales, avisos largos, paginación y persistencia de la última receta seleccionada. |
 | Transferencia exacta revisada, cancelación y siete documentos protegidos | Correctas en los 16 recorridos WebKit: coincidencia entre lo revisado y guardado, ingredientes sin medida excluidos, presupuesto/producto manual conservados y documentos ajenos a cada escritura intactos. |
-| GitHub, commit de origen y preview protegida | Pendientes de publicación. Subir el código comprobado a GitHub antes de publicar y comprobar el staging antes de entregar su enlace. |
+| GitHub, commit de origen y preview protegida | Publicados y comprobados: [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), fuente `0ea49b597f45b401747e20d7d880c07f670b3073`, staging READY `dpl_Ba9JkTFd9o1pNG6TknGriMgMxVGs`; es/en/de/fr, 29 recursos/URLs por hash y catálogo remoto de 127 recetas verificados. |
 | Aclaración editorial de las 30 retenidas | Pendiente de respuesta del propietario; no activar entretanto. |
 | Safari/iPhone físico y aceptación visual | Pendientes. WebKit en Linux no sustituye esas pruebas. |
+
+
+## Publicación protegida comprobada
+
+El propietario autorizó expresamente publicar las 120 recetas seleccionadas, sus cinco traducciones y los manifiestos en el repositorio público. El código y la fuente llegaron a [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15) antes de desplegar. La fuente de la aplicación publicada es `0ea49b597f45b401747e20d7d880c07f670b3073`, rama `codex/v83-recetas-auditadas`. El original completo y los contenidos de las 30 retenidas siguen fuera de Git y de la preview.
+
+Staging READY `dpl_Ba9JkTFd9o1pNG6TknGriMgMxVGs`, origen protegido https://jj-compra-inteligente-np116q25a-cmj2hwhc6b-1051.vercel.app. La protección `all_except_custom_domains` se conservó; el origen sin credencial no es un acceso público. El enlace temporal se comparte por la conversación y vence el **13/11/2026 a las 15:56:07 UTC**; su credencial, las capturas y el estado del navegador no se guardan en Git.
+
+La verificación remota terminó correctamente en es/en/de/fr, sin errores, con 29 recursos/URLs comprobados por hash. En cada idioma se comprobó explícitamente el catálogo de **127 recetas** y la receta V83 `JJ-E03-001`, además de guardado local, copia de listas, preferencias y los recorridos del verificador. [Informe remoto](../design/v83/reports/hosted-verification.json), [registro del despliegue](../design/v83/reports/deployment.json) y [comprobación independiente de publicación](../design/v83/reports/publication-check.md).
+
+El commit de cierre incorpora la verificación remota y documentación; conserva los inputs de la aplicación compilada del commit de origen. Publicar esta prueba web no confirma las catas de las otras 30 recetas, certificaciones comerciales o alimentarias, aceptación visual física ni distribución nativa.
 
 Los perfiles EAS preparados continúan sin binario firmado ni envío a TestFlight. Las cuentas/hogares y la matriz completa de B07.2 siguen pendientes y separadas. No se declara B00–B09 terminado por ampliar el catálogo o publicar una preview.

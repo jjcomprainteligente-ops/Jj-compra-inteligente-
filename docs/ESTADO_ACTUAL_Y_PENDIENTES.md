@@ -1,4 +1,4 @@
-> **Publicación V83 autorizada · 12/11/2026:** el propietario confirmó expresamente «Si publica las 120» al responder a la publicación de recetas, cinco traducciones y manifiestos en el repositorio público. Se reanuda GitHub primero y después la preview protegida. Las otras 30 siguen retenidas por sus estados editoriales. [Registro de autorización y bloqueo anterior](V83_PUBLICACION_PENDIENTE_DE_AUTORIZACION.md).
+> **V83 publicada y comprobada · 12/11/2026:** 120 recetas nuevas y las siete anteriores disponibles. Código y fuente seleccionada en [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), fuente compilada `0ea49b597f45b401747e20d7d880c07f670b3073`. Preview staging protegida comprobada en es/en/de/fr, con 127 recetas y 29 recursos/URLs por hash. El enlace temporal se entrega fuera de Git y vence el **13/11/2026 a las 15:56:07 UTC**. Las 30 retenidas y la prueba física siguen pendientes. [Entrega y límites](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md).
 
 # Estado vigente de construcción
 
@@ -16,7 +16,7 @@ La implementación mantiene revisión/confirmación, avisos localizados, diseño
 
 La regresión V83 pasó **298 casos Chromium**, con 24 omisiones deliberadas de duplicados y artefactos anteriores intactos. WebKit pasó **16/16 casos**, cero omitidos o intermitentes: recorrido diario y recetas nuevas en cuatro idiomas y dos tamaños CSS, con 120 capturas lógicas. Se comprobaron la transferencia exacta revisada, cancelación sin cambios, ingredientes al gusto fuera de la compra, paginación, presupuesto conservado y persistencia de un ID V83. [Informes de la entrega](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md#comprobaciones-de-esta-entrega).
 
-La subida a GitHub y la nueva publicación V83 siguen pendientes. Los resultados y la publicación del piloto iPhone siguiente corresponden a `54fc7efe` y se conservan como entrega anterior. La instalación nativa, prueba física, aceptación visual y B07.2 siguen pendientes; WebKit Linux no acredita un iPhone físico.
+Código y fuente seleccionada publicados en [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), antes de desplegar la fuente `0ea49b597f45b401747e20d7d880c07f670b3073`. Staging READY `dpl_Ba9JkTFd9o1pNG6TknGriMgMxVGs`, origen protegido https://jj-compra-inteligente-np116q25a-cmj2hwhc6b-1051.vercel.app y protección `all_except_custom_domains` conservada. Verificación remota correcta en es/en/de/fr: 29 recursos/URLs por hash y catálogo de 127 recetas con `JJ-E03-001` comprobados. [Informe remoto](../design/v83/reports/hosted-verification.json) · [despliegue](../design/v83/reports/deployment.json). El enlace se entrega fuera de Git y vence el **13/11/2026 a las 15:56:07 UTC**. Los resultados del piloto iPhone siguiente, fuente `54fc7efe`, se conservan como entrega anterior. La instalación nativa, prueba física, aceptación visual y B07.2 siguen pendientes; WebKit Linux no acredita un iPhone físico.
 
 ## Piloto iPhone anterior · 11/11/2026
 
@@ -34,7 +34,7 @@ En aquel commit estaban disponibles las siete recetas iniciales y seguían pendi
 - Cuatro pestañas y las 16 vistas de preparación V2. Los nueve estados de la galería se identifican como ejemplos; no representan servicios o permisos activados.
 - Listas, productos, cantidades y unidades, categorías, revisión de duplicados, presupuestos y deshacer. Guardado con protección frente a datos corruptos, conflictos y resultados inciertos.
 - Búsqueda entre productos guardados y ficha local. Voz/cámara opcionales en navegadores compatibles tras consentimiento y gesto; alternativa manual y limpieza de recursos.
-- Menús de cinco cenas, personas, sustitución, filtros y revisión de ingredientes antes de añadir. El código conserva las siete recetas iniciales e integra 120 V83; unitarias, exportaciones y matrices de navegador correctas, con nueva publicación todavía pendiente.
+- Menús de cinco cenas, personas, sustitución, filtros y revisión de ingredientes antes de añadir. El código conserva las siete recetas iniciales e integra 120 V83; unitarias, exportaciones y matrices de navegador correctas, con preview V83 protegida publicada y comprobada.
 - Gastos confirmados introducidos por la persona e historial, separados de estimaciones y productos marcados.
 - Comparador manual de formatos equivalentes con tienda, fecha, fuente y cobertura explícitas; sin precios comerciales importados.
 - Preferencias y avisos internos locales, exportación JSON y borrado independiente por categoría con confirmación. No hay restauración automática de backups.
@@ -50,7 +50,7 @@ En aquel commit estaban disponibles las siete recetas iniciales y seguían pendi
 | B02 · UX | Pantallas locales y componentes con cuatro idiomas y estados; referencia canónica conservada. | Aceptación estética del propietario/ChatGPT y contraste/usabilidad completos en dispositivo. |
 | B03 · Prototipo iPhone | App Expo y exportaciones web/iOS/Android; navegador a varios tamaños y motor WebKit. | Instalación/ejecución física, teclado, zonas seguras, gestos, Safari y lectores nativos. Exportar no acredita este criterio. |
 | B04 · Listas y presupuesto | Funciones locales, revisión y persistencia construidas; compartir texto añadido. | Aceptación física y uso real con listas del piloto. |
-| B05 · Menús | Motor local, filtros, cantidades y revisión construidos; V83 integra 120 nuevas más siete anteriores, con unitarias, exportaciones y navegador correctos. Fuente pública reproducible de 120 × 5; original de 150 conservado localmente y excluido de Git. Búsquedas con ChatGPT fuera de JJ. | Publicar y verificar V83 y aclarar las 30 retenidas; validar por separado cualquier colección editable/persistente del usuario. No inventar tiempos, medidas ni aprobaciones. |
+| B05 · Menús | Motor local, filtros, cantidades y revisión construidos; V83 integra 120 nuevas más siete anteriores, con unitarias, exportaciones y navegador correctos. Fuente pública reproducible de 120 × 5; original de 150 conservado localmente y excluido de Git. Búsquedas con ChatGPT fuera de JJ. | Aclarar las 30 retenidas; validar por separado cualquier colección editable/persistente del usuario. No inventar tiempos, medidas ni aprobaciones. |
 | B06 · Comparador | Observaciones y comparación manual; selección de tiendas y salida externa construidas. | Fuentes comerciales autorizadas/localizadas antes de importar precios o afirmar ahorro/stock. |
 | B07 · Cuentas y hogares | B07.1: contratos y proyección probados. B07.2: proyecto Supabase gratuito UE, esquema/RLS aplicados; grants y HTTP anónimo comprobados. | Matriz dinámica SQL pendiente de confirmación de Supabase; cuentas/BFF, invitaciones, RPC, migración y sincronización todavía no activados. [Auditoría B07](B07_BASE_SEGURA_Y_AUDITORIA.md). |
 | B08 · QA y piloto | Suites estáticas, unitarias y de navegador; auditoría después de parejas y previews verificadas. | Piloto físico, accesibilidad nativa, distribución y feedback de personas. Tres avisos moderados de herramientas siguen abiertos en el audit del piloto iPhone. |
@@ -63,7 +63,7 @@ TypeScript y 816 pruebas unitarias correctos. Exportaciones web/iOS/Android comp
 ## Lo que todavía requiere trabajo de construcción
 
 1. Completar las etapas de recursos de marca con revisión y aprobación de las propuestas; la lámina del raster original no es un SVG ni un icono nuevo.
-2. Publicar y verificar V83 tras las unitarias, exportaciones y navegador correctos, conservando IDs y las siete recetas anteriores; resolver las 30 retenidas. La biblioteca editable/persistente y sus controles de copia/borrado son capacidades separadas todavía pendientes.
+2. Resolver las 30 recetas retenidas. V83 ya está publicada y comprobada con las 120 seleccionadas, preservando los IDs y las siete recetas anteriores. La biblioteca editable/persistente y sus controles de copia/borrado son capacidades separadas todavía pendientes.
 3. Preparar y aprobar la arquitectura de cuentas/hogares, y después implementar y probar los permisos y la sincronización. Compartir texto no sustituye ese trabajo.
 4. Completar distribución y validación física con feedback real. No se publica un resultado de piloto sin ejecutarlo.
 5. Incorporar datos de comercios únicamente cuando existan fuentes y permisos adecuados; las páginas oficiales abiertas no constituyen un feed autorizado.
