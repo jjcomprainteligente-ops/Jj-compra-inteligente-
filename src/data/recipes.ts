@@ -1,8 +1,9 @@
 import type { Recipe } from '../domain/menus';
 import { recipeMessages } from '../i18n/catalogs/recipes';
+import { V83_RECIPES } from './recipesV83';
 
 /** Stable culinary data. The Spanish fallback catalog preserves existing identities and saved lists. */
-export const RECIPES: readonly Recipe[] = [
+export const LEGACY_RECIPES: readonly Recipe[] = [
   {
     id: "arroz-verduras", title: recipeMessages.es["recipes.arroz-verduras.title"], minutes: 25, baseServings: 2,
     ingredients: [
@@ -126,3 +127,6 @@ export const RECIPES: readonly Recipe[] = [
     allergenNote: recipeMessages.es["recipes.cuscus-verduras.allergen"],
   },
 ];
+
+/** Keep prior IDs and the existing default plan; append the approved editorial content. */
+export const RECIPES: readonly Recipe[] = [...LEGACY_RECIPES, ...V83_RECIPES];

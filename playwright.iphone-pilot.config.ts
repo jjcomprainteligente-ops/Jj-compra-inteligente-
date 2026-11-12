@@ -9,7 +9,7 @@ const evidence = process.env.IPHONE_PILOT_EVIDENCE_DIR ?? path.resolve(
 
 export default defineConfig({
   testDir: './tests/iphone-pilot',
-  testMatch: 'purchase-journey.spec.ts',
+  testMatch: ['purchase-journey.spec.ts', 'v83-recipes.spec.ts'],
   fullyParallel: false,
   workers: 1,
   retries: 0,

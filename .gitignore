@@ -65,3 +65,8 @@ supabase/.branches/
 # Prueba iPhone: capturas, trazas y estado del navegador solo en el entorno local.
 design/iphone-pilot/local-evidence/
 design/v2/evidence/run-2026-11-12*/
+
+# Recetas V83: original completo retenido localmente; el repositorio es público.
+referencias/recetas-v83/originales/
+!referencias/recetas-v83/fuente-publica/JJ_V83_120_RECETAS_FUENTE_PUBLICA.zip
+__pycache__/

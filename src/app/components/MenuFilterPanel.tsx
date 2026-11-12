@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import {
   defaultMenuFilters, filterRecipes, MAX_EXCLUDED_INGREDIENTS, MAX_MENU_MINUTES, menuIngredientOptions,
@@ -16,15 +16,18 @@ interface Props {
   onApply(filters: MenuFilters): void;
   onClose(): void;
 }
+const INGREDIENT_PAGE_SIZE = 40;
 
 /** Filter drafts are presentation state only; nothing is persisted by this panel. */
 export function MenuFilterPanel({ filters, busy, budgetCents, onApply, onClose }: Props) {
-  const { t, formatMoney, formatNumber } = useI18n();
+  const { language, t, formatMoney, formatNumber } = useI18n();
   const [draft, setDraft] = useState<MenuFilters>(() => ({
     ...filters, excludedIngredients: [...filters.excludedIngredients],
   }));
-  const ingredients = menuIngredientOptions();
-  const count = filterRecipes(RECIPES, draft).length;
+  const [ingredientLimit, setIngredientLimit] = useState(INGREDIENT_PAGE_SIZE);
+  const ingredients = useMemo(() => menuIngredientOptions(), []);
+  const count = useMemo(() => filterRecipes(RECIPES, draft).length, [draft]);
+  useEffect(() => { setIngredientLimit(INGREDIENT_PAGE_SIZE); }, [language]);
   const selectIngredient = (key: string) => setDraft(previous => {
     const included = previous.excludedIngredients.includes(key);
     if (!included && previous.excludedIngredients.length >= MAX_EXCLUDED_INGREDIENTS) return previous;
@@ -49,6 +52,7 @@ export function MenuFilterPanel({ filters, busy, budgetCents, onApply, onClose }
         checked={draft.maxMinutes === value} disabled={busy}
         onPress={() => setDraft(previous => ({ ...previous, maxMinutes: value }))} />)}
     </View>
+    <Text style={[ui.note, { marginTop: 12 }]}>{t('catalogV83Ui.timeFilterHelp')}</Text>
     <Section title={t('menuFilters.preference')} />
     <View accessibilityRole="radiogroup" accessibilityLabel={t('menuFilters.preference')} style={styles.choices}>
       {(['any', 'vegetarian', 'vegan'] as const).map(value => <FilterChoice key={value}
@@ -57,10 +61,11 @@ export function MenuFilterPanel({ filters, busy, budgetCents, onApply, onClose }
         onPress={() => setDraft(previous => ({ ...previous, preference: value }))} />)}
     </View>
     <Text style={[ui.note, { marginTop: 12 }]}>{t('menuFilters.preferenceHelp')}</Text>
+    <Text style={[ui.note, { marginTop: 8 }]}>{t('catalogV83Ui.preferenceHelp')}</Text>
     <Section title={t('menuFilters.exclusions')} />
     <Text style={[ui.note, { marginBottom: 12 }]}>{t('menuFilters.exclusionsHelp')}</Text>
     <View style={styles.choices}>
-      {ingredients.map(ingredient => {
+      {ingredients.slice(0, ingredientLimit).map(ingredient => {
         const checked = draft.excludedIngredients.includes(ingredient.key);
         const disabled = busy || (!checked && draft.excludedIngredients.length >= MAX_EXCLUDED_INGREDIENTS);
         const name = translateIngredientName(ingredient.name, t);
@@ -74,6 +79,11 @@ export function MenuFilterPanel({ filters, busy, budgetCents, onApply, onClose }
         </Pressable>;
       })}
     </View>
+    {ingredients.length > INGREDIENT_PAGE_SIZE && <View style={{ gap: 10, marginTop: 14 }}>
+      <Text accessibilityRole="status" testID="menu-filter-ingredients-shown" style={ui.note}>{t('catalogV83Ui.shownIngredients', { shown: formatNumber(Math.min(ingredientLimit, ingredients.length)), total: formatNumber(ingredients.length) })}</Text>
+      {ingredientLimit < ingredients.length && <Button label={t('catalogV83Ui.showMoreIngredients')} testID="show-more-filter-ingredients" secondary disabled={busy}
+        onPress={() => setIngredientLimit(value => value + INGREDIENT_PAGE_SIZE)} />}
+    </View>}
     <View style={{ marginTop: 20, gap: 12 }}>
       <Card style={{ backgroundColor: c.soft }}>
         <Text testID="menu-filter-count" accessibilityRole="status" style={ui.strong}>
