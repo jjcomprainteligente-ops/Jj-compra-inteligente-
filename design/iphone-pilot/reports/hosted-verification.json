@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "origin": "https://jj-compra-inteligente-34ekbbs6j-cmj2hwhc6b-1051.vercel.app",
+  "source": {
+    "commit": "54fc7efe3980f4295f3e873aa7710276903c3f7a",
+    "tree": "9c875b72300463a5d95f4badd30a4dbbc03e42a7",
+    "branch": "codex/iphone-prueba-recorrido",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-"
+  },
+  "bundle": {
+    "file": "_expo/static/js/web/index-2501c68e89766432621abe6a49aadd68.js",
+    "size": 436557,
+    "sha1": "db18f38484bac5226a0c2e49a63b480b2ca5ae3c",
+    "sha256": "638860e96f4d15e299eff2daa8aa0949e856516b5cb0096153fdb8d769f583ae",
+    "contentEncoding": "br",
+    "decodedSize": 3613930,
+    "decodedSha1": "699bd9137f107e3a9533851872f846c1c13c057e",
+    "decodedSha256": "a7392554b4de1a91a7921ce9916fd3d572dd9a1b8036b0de44abfbc3c51d15c9"
+  },
+  "expectedLogoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+  "startedAt": "2026-11-11T23:57:21.736Z",
+  "status": "passed",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+  "languageChecks": [
+    {
+      "language": "es",
+      "manualPreferenceAfterReload": "en",
+      "passed": true,
+      "bundleVerified": true,
+      "logoVerified": true,
+      "checks": [
+        "Device language and official welcome logo",
+        "Four translated tabs",
+        "Loaded Manrope fonts and images",
+        "Local list save",
+        "Recipe review and cancellation without shopping changes",
+        "Manual language preference persists after reload",
+        "Six business documents preserved by language changes",
+        "Local search, voice, scanner and notification routes",
+        "Favourite store and confirmed expense save with both new durable fences on HTTPS",
+        "Six pilot stores persist with checkbox semantics",
+        "External destinations use noopener,noreferrer without saved-data changes; window.open is simulated",
+        "Reviewed plain-text list download excludes private notes and changes no documents",
+        "Closing list sharing restores keyboard focus",
+        "Session menu filters preserve saved documents",
+        "Downloaded backup contains exactly seven allowed documents",
+        "Confirmed category deletion preserves the other stores",
+        "Exact packaged bundle, logo, fonts, and resource hashes; optional isolated brand board"
+      ]
+    },
+    {
+      "language": "en",
+      "manualPreferenceAfterReload": "de",
+      "passed": true,
+      "bundleVerified": true,
+      "logoVerified": true,
+      "checks": [
+        "Device language and official welcome logo",
+        "Four translated tabs",
+        "Loaded Manrope fonts and images",
+        "Local list save",
+        "Recipe review and cancellation without shopping changes",
+        "Manual language preference persists after reload",
+        "Six business documents preserved by language changes",
+        "Local search, voice, scanner and notification routes",
+        "Favourite store and confirmed expense save with both new durable fences on HTTPS",
+        "Six pilot stores persist with checkbox semantics",
+        "External destinations use noopener,noreferrer without saved-data changes; window.open is simulated",
+        "Reviewed plain-text list download excludes private notes and changes no documents",
+        "Closing list sharing restores keyboard focus",
+        "Session menu filters preserve saved documents",
+        "Downloaded backup contains exactly seven allowed documents",
+        "Confirmed category deletion preserves the other stores",
+        "Exact packaged bundle, logo, fonts, and resource hashes; optional isolated brand board"
+      ]
+    },
+    {
+      "language": "de",
+      "manualPreferenceAfterReload": "fr",
+      "passed": true,
+      "bundleVerified": true,
+      "logoVerified": true,
+      "checks": [
+        "Device language and official welcome logo",
+        "Four translated tabs",
+        "Loaded Manrope fonts and images",
+        "Local list save",
+        "Recipe review and cancellation without shopping changes",
+        "Manual language preference persists after reload",
+        "Six business documents preserved by language changes",
+        "Local search, voice, scanner and notification routes",
+        "Favourite store and confirmed expense save with both new durable fences on HTTPS",
+        "Six pilot stores persist with checkbox semantics",
+        "External destinations use noopener,noreferrer without saved-data changes; window.open is simulated",
+        "Reviewed plain-text list download excludes private notes and changes no documents",
+        "Closing list sharing restores keyboard focus",
+        "Session menu filters preserve saved documents",
+        "Downloaded backup contains exactly seven allowed documents",
+        "Confirmed category deletion preserves the other stores",
+        "Exact packaged bundle, logo, fonts, and resource hashes; optional isolated brand board"
+      ]
+    },
+    {
+      "language": "fr",
+      "manualPreferenceAfterReload": "es",
+      "passed": true,
+      "bundleVerified": true,
+      "logoVerified": true,
+      "checks": [
+        "Device language and official welcome logo",
+        "Four translated tabs",
+        "Loaded Manrope fonts and images",
+        "Local list save",
+        "Recipe review and cancellation without shopping changes",
+        "Manual language preference persists after reload",
+        "Six business documents preserved by language changes",
+        "Local search, voice, scanner and notification routes",
+        "Favourite store and confirmed expense save with both new durable fences on HTTPS",
+        "Six pilot stores persist with checkbox semantics",
+        "External destinations use noopener,noreferrer without saved-data changes; window.open is simulated",
+        "Reviewed plain-text list download excludes private notes and changes no documents",
+        "Closing list sharing restores keyboard focus",
+        "Session menu filters preserve saved documents",
+        "Downloaded backup contains exactly seven allowed documents",
+        "Confirmed category deletion preserves the other stores",
+        "Exact packaged bundle, logo, fonts, and resource hashes; optional isolated brand board"
+      ]
+    }
+  ],
+  "files": [
+    {
+      "path": "/_expo/static/js/web/index-2501c68e89766432621abe6a49aadd68.js",
+      "status": 200,
+      "size": 3613930,
+      "sha1": "699bd9137f107e3a9533851872f846c1c13c057e",
+      "sha256": "a7392554b4de1a91a7921ce9916fd3d572dd9a1b8036b0de44abfbc3c51d15c9",
+      "contentEncoding": "br",
+      "packagedTransferSize": 436557,
+      "packagedTransferSha1": "db18f38484bac5226a0c2e49a63b480b2ca5ae3c",
+      "packagedTransferSha256": "638860e96f4d15e299eff2daa8aa0949e856516b5cb0096153fdb8d769f583ae",
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "path": "/assets/077221c4ff13aa63777d1fc4bad2855d",
+      "status": 200,
+      "size": 255528,
+      "sha1": "655c0d9f079854218ab4d777a0a1e5695a07ac06",
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/33e6a451fdf22e8244d143288b957ba0",
+      "status": 200,
+      "size": 97996,
+      "sha1": "a2ce9eba3156407cc1194946ee9527f89cb9ffb2",
+      "sha256": "42f1d9457585365aff770da0605923d5adceb8a390761c031a60ae076e93b0db",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/3b88abd10509dbd972f179a2fc60d3bf",
+      "status": 200,
+      "size": 97872,
+      "sha1": "4bb92a973e093388351a5fee8969f8a34b49feb2",
+      "sha256": "df775e16d1a1eb117045137b60593f00f57af63e96d65a3eaccc3373be046411",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/8b432e90d552ee87adaea8fa1244fc68",
+      "status": 200,
+      "size": 97904,
+      "sha1": "0426b4cafd7e37c81e9f881b532b572a62979335",
+      "sha256": "0caaec24441fc52f3f855ec3f8616b14835f192277ab23b2f87d7b26f74c8951",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/assets/brand/jj-logo-horizontal.077221c4ff13aa63777d1fc4bad2855d.png",
+      "status": 200,
+      "size": 255528,
+      "sha1": "655c0d9f079854218ab4d777a0a1e5695a07ac06",
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+      "contentType": "image/png"
+    },
+    {
+      "path": "/assets/bd3f6311d61e60094df4c83d68779675",
+      "status": 200,
+      "size": 98004,
+      "sha1": "b51db9724637aa7892d84926399697ca3439fc2a",
+      "sha256": "b5e3105945aac85a820133ec66b516a4514e6fb242b31f2696b15adf43683d46",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/bf7f0a128c232a15714167173b998717",
+      "status": 200,
+      "size": 98584,
+      "sha1": "b304b6eb02d3d2fe4e38910cb1bed8eb6dc0f917",
+      "sha256": "3182b364667e58b58a7ff05a91abfebdd927f1fedbb702df3fb91d20cee23e4f",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/d7c844e508c4dbacda2468f820e0b4b4",
+      "status": 200,
+      "size": 98120,
+      "sha1": "842b52cae7d844c45f98d354cc31ffec329973d4",
+      "sha256": "7efdba6b327f92764469e8c2d21f9db8638f9e7b4423cb7d65006f8e8d08024c",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/ec05fba6bf4223e33f1a5402cbbf7491",
+      "status": 200,
+      "size": 98080,
+      "sha1": "ff241f166dd8c6dbcc7b7c8494037fb8358f2584",
+      "sha256": "107539ab6cbcd87601737a1a37ca3693fc7b32cb3939550a88ac583e1cedbd6d",
+      "contentType": "application/octet-stream"
+    },
+    {
+      "path": "/assets/licenses/Manrope-LICENSE_FONT.txt",
+      "status": 200,
+      "size": 4387,
+      "sha1": "12c29b4c541b7ba0f0d5d86818697558c1c28d76",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/licenses/Manrope-LICENSE.txt",
+      "status": 200,
+      "size": 1061,
+      "sha1": "37df6742670945cc81eedae31e2ec43abe3ca6fe",
+      "sha256": "f81a99a72ec5e64e3f74fad0db3df27ab69ab0edd4878368f83379d3e4fc9313",
+      "contentType": "text/plain; charset=utf-8"
+    },
+    {
+      "path": "/assets/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "status": 200,
+      "size": 97872,
+      "sha1": "4bb92a973e093388351a5fee8969f8a34b49feb2",
+      "sha256": "df775e16d1a1eb117045137b60593f00f57af63e96d65a3eaccc3373be046411",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "status": 200,
+      "size": 97904,
+      "sha1": "0426b4cafd7e37c81e9f881b532b572a62979335",
+      "sha256": "0caaec24441fc52f3f855ec3f8616b14835f192277ab23b2f87d7b26f74c8951",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "status": 200,
+      "size": 98004,
+      "sha1": "b51db9724637aa7892d84926399697ca3439fc2a",
+      "sha256": "b5e3105945aac85a820133ec66b516a4514e6fb242b31f2696b15adf43683d46",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "status": 200,
+      "size": 98080,
+      "sha1": "ff241f166dd8c6dbcc7b7c8494037fb8358f2584",
+      "sha256": "107539ab6cbcd87601737a1a37ca3693fc7b32cb3939550a88ac583e1cedbd6d",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "status": 200,
+      "size": 98120,
+      "sha1": "842b52cae7d844c45f98d354cc31ffec329973d4",
+      "sha256": "7efdba6b327f92764469e8c2d21f9db8638f9e7b4423cb7d65006f8e8d08024c",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "status": 200,
+      "size": 97996,
+      "sha1": "a2ce9eba3156407cc1194946ee9527f89cb9ffb2",
+      "sha256": "42f1d9457585365aff770da0605923d5adceb8a390761c031a60ae076e93b0db",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "status": 200,
+      "size": 98584,
+      "sha1": "b304b6eb02d3d2fe4e38910cb1bed8eb6dc0f917",
+      "sha256": "3182b364667e58b58a7ff05a91abfebdd927f1fedbb702df3fb91d20cee23e4f",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/index.html",
+      "status": 200,
+      "size": 1222,
+      "sha1": "04f3f81caf8ab39005a735c868bd9ab9740a00b0",
+      "sha256": "77e8cb6eacaf4b6c52804dc138512ba612e2b886ecc533ed05ad415441458743",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/review/brand/index.html",
+      "status": 200,
+      "size": 8593,
+      "sha1": "a0f72b7ec8bf4755ce3e5f8d8de3999536593e46",
+      "sha256": "aef4af682af49540732099d4dca16ed2700e94db08210f8e03130ad45943559b",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/review/brand/review.css",
+      "status": 200,
+      "size": 3801,
+      "sha1": "05ed138c9f1b60c46e7aadfd6678057e0f2b0142",
+      "sha256": "994b8afbbe7a95bce8ec34d1475d5e368dd10dcff071b188cb5bc140a3cc3a9a",
+      "contentType": "text/css; charset=utf-8"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/200ExtraLight/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "status": 200,
+      "size": 97872,
+      "sha1": "4bb92a973e093388351a5fee8969f8a34b49feb2",
+      "sha256": "df775e16d1a1eb117045137b60593f00f57af63e96d65a3eaccc3373be046411",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/300Light/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "status": 200,
+      "size": 97904,
+      "sha1": "0426b4cafd7e37c81e9f881b532b572a62979335",
+      "sha256": "0caaec24441fc52f3f855ec3f8616b14835f192277ab23b2f87d7b26f74c8951",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/400Regular/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "status": 200,
+      "size": 98004,
+      "sha1": "b51db9724637aa7892d84926399697ca3439fc2a",
+      "sha256": "b5e3105945aac85a820133ec66b516a4514e6fb242b31f2696b15adf43683d46",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/500Medium/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "status": 200,
+      "size": 98080,
+      "sha1": "ff241f166dd8c6dbcc7b7c8494037fb8358f2584",
+      "sha256": "107539ab6cbcd87601737a1a37ca3693fc7b32cb3939550a88ac583e1cedbd6d",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/600SemiBold/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "status": 200,
+      "size": 98120,
+      "sha1": "842b52cae7d844c45f98d354cc31ffec329973d4",
+      "sha256": "7efdba6b327f92764469e8c2d21f9db8638f9e7b4423cb7d65006f8e8d08024c",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/700Bold/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "status": 200,
+      "size": 97996,
+      "sha1": "a2ce9eba3156407cc1194946ee9527f89cb9ffb2",
+      "sha256": "42f1d9457585365aff770da0605923d5adceb8a390761c031a60ae076e93b0db",
+      "contentType": "font/ttf"
+    },
+    {
+      "path": "/assets/node_modules/@expo-google-fonts/manrope/800ExtraBold/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "status": 200,
+      "size": 98584,
+      "sha1": "b304b6eb02d3d2fe4e38910cb1bed8eb6dc0f917",
+      "sha256": "3182b364667e58b58a7ff05a91abfebdd927f1fedbb702df3fb91d20cee23e4f",
+      "contentType": "font/ttf"
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-11T23:57:52.484Z"
+}

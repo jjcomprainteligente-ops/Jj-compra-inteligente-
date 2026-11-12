@@ -61,3 +61,7 @@ design/stores-sharing/local-evidence/
 # Estado local del CLI de Supabase; solo migraciones, pruebas y documentación en Git.
 supabase/.temp/
 supabase/.branches/
+
+# Prueba iPhone: capturas, trazas y estado del navegador solo en el entorno local.
+design/iphone-pilot/local-evidence/
+design/v2/evidence/run-2026-11-12*/

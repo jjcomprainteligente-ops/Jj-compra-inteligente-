@@ -1,3 +1,7 @@
+> **Prioridad actual · 11/11/2026:** validar **menú → lista → compra → presupuesto/gasto confirmado** sobre la app existente y preparar su prueba en iPhone. [Guía del recorrido diario y distribución](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md). Los perfiles EAS están preparados, pero no hay binario instalable ni prueba física realizada. Preview staging publicada y verificada desde `54fc7efe3980f4295f3e873aa7710276903c3f7a` en [PR #12](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/12); GitHub sigue siendo la base del código. El enlace temporal de acceso se entrega por la conversación y vence el **12/11/2026 a las 22:56:56 UTC**.
+
+> **Verificación local del piloto:** 963 unitarias, 298 Chromium y ocho recorridos WebKit correctos; Chromium omite 24 capturas duplicadas deliberadas. WebKit cubre cuatro idiomas y dos tamaños CSS, con 80 capturas. [Informe técnico](design/iphone-pilot/reports/technical-verification.json) · [Chromium](design/iphone-pilot/reports/chromium-regression.json) · [WebKit diario](design/iphone-pilot/reports/webkit-daily-journey.json). Verificación remota correcta en los cuatro idiomas y 29 recursos/URLs por hash: [informe remoto](design/iphone-pilot/reports/hosted-verification.json) · [despliegue](design/iphone-pilot/reports/deployment.json). No sustituye la prueba en un iPhone físico.
+
 > **Corrección B07.2 — 11/11/2026:** [permiso de lectura Auth corregido](docs/B07_CORRECCION_PERMISO_AUTH.md), regresión de lectura comprobada y base sin datos de prueba. La batería completa de hogares continúa pendiente del aviso nativo de Supabase.
 
 > **Avance B07 — 11/11/2026:** [contratos y base Supabase aislada](docs/B07_BASE_SEGURA_Y_AUDITORIA.md). B07.1 probado; B07.2 aplicado con matriz dinámica pendiente de confirmación. La app conserva el modo local; cuentas y sincronización no están activadas.
@@ -68,7 +72,7 @@ No hay fuentes verificadas conectadas ni precios en tiempo real. El piloto admit
 
 ## Ejecutar en Android e iPhone
 
-Necesitas Node.js 24 LTS, npm y una versión de Expo Go compatible con Expo SDK 58. Si tu versión de Expo Go no admite este SDK, utiliza una compilación de desarrollo compatible de Expo.
+Necesitas Node.js 24 LTS y npm. El proyecto mantiene Expo SDK 58. Para iPhone, la versión pública de Expo Go de la App Store descrita en la documentación consultada sigue en SDK 54: no se debe asumir compatibilidad al escanear el QR. La [guía de prueba iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md) distingue Safari, un cliente compatible y los perfiles de compilación nativa preparados, con sus requisitos pendientes.
 
 ```sh
 cd jjcompraintelwgiemt
@@ -76,9 +80,9 @@ npm ci
 npm start
 ```
 
-Mantén el ordenador y el teléfono en la misma red y sigue las instrucciones de Expo para abrir el proyecto. En Android, escanea el QR desde Expo Go. En iPhone, escanéalo con la cámara y ábrelo en Expo Go.
+Mantén el ordenador y el teléfono en la misma red si usas el servidor de desarrollo y sigue las instrucciones de Expo con un cliente que admita este SDK. Para probar ahora en iPhone, usar el enlace temporal verificado de la preview HTTPS de Safari entregado por la conversación; sus datos locales son independientes de otras versiones.
 
-Con un emulador Android configurado puedes usar `npm run android`. Para un simulador iOS utiliza `npm run ios`; el simulador requiere macOS y Xcode. La ejecución en dispositivos físicos y simuladores nativos está pendiente de validación.
+Con un emulador Android configurado puedes usar `npm run android`. Para un simulador iOS utiliza `npm run ios`; SDK 58 requiere macOS y Xcode 26.4 o posterior, e iOS 16.4 o posterior. El entorno actual es Linux. `eas.json` contiene los perfiles `iphone-preview` y `iphone-testflight`, sin build ni envío iniciados. La ejecución física y en simuladores nativos permanece pendiente.
 
 ## Vista previa en el navegador
 
@@ -116,7 +120,7 @@ Los cambios se muestran como guardados después de que finalice la escritura. Si
 npm run check
 ```
 
-Este comando ejecuta TypeScript y las pruebas de Vitest. También puedes ejecutar `npm run typecheck`, `npm test` o `npm run test:watch` por separado. Las 496 pruebas actuales cubren importes exactos, cantidades, presupuestos, duplicados, validación, traducciones, preferencias y almacenamiento local, incluidos datos corruptos, conflictos entre instancias y fallos de lectura, reserva o confirmación de escritura.
+Este comando ejecuta TypeScript y las pruebas de Vitest. También puedes ejecutar `npm run typecheck`, `npm test` o `npm run test:watch` por separado. La cifra histórica de 496 pruebas cubría importes exactos, cantidades, presupuestos, duplicados, validación, traducciones, preferencias y almacenamiento local, incluidos datos corruptos, conflictos entre instancias y fallos de lectura, reserva o confirmación de escritura.
 
 Para la validación manual, comprueba en Android e iOS: crear una comparación, añadir dos ofertas con diferentes gastos de envío, empatar sus totales, editar y eliminar con confirmación, abrir un enlace y cerrar/abrir la aplicación para verificar la persistencia. Revisa también el teclado decimal y los formularios con el teclado visible.
 
@@ -141,7 +145,7 @@ Necesitas Chromium instalado por Playwright (`npx playwright install chromium`) 
 
 La web protege las escrituras con Web Locks y huellas transaccionales en IndexedDB; requiere HTTPS o localhost y un navegador con durabilidad estricta disponible. No se reemplazan los cuatro almacenes existentes. Una reserva pendiente o un resultado incierto bloquea nuevas escrituras para proteger los datos. Una IP de la red local por HTTP puede carecer de estas capacidades. El acceso nativo de Expo utiliza su cola local, sin IndexedDB.
 
-La auditoría completa de dependencias sigue abierta: el informe actual registra 13 paquetes afectados en herramientas de Expo (2 altos, 9 moderados, 2 bajos, 0 críticos). No hay parches compatibles en los rangos consultados; no forzar cambios de versión mayores ni una rebaja a Expo 51. Los detalles, límites y requisitos antes de distribución están en [la auditoría multilingüe](docs/I18N_ENTREGA_Y_AUDITORIA.md).
+La auditoría histórica multilingüe registró 13 paquetes afectados en herramientas de Expo (2 altos, 9 moderados, 2 bajos, 0 críticos). No hay parches compatibles en los rangos consultados; no forzar cambios de versión mayores ni una rebaja a Expo 51. Los detalles de aquella revisión están en [la auditoría multilingüe](docs/I18N_ENTREGA_Y_AUDITORIA.md). La comprobación del 11/11/2026 para el piloto iPhone registra 963 pruebas unitarias correctas y tres avisos moderados, cero altos y cero críticos; véase [el estado de esta entrega](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md).
 
 
 ## GitHub y estado visual
