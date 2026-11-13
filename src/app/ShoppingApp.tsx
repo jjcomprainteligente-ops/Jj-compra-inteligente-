@@ -331,6 +331,6 @@ const styles = StyleSheet.create({
   addBar: { paddingHorizontal: 18, paddingVertical: 10, borderTopWidth: 1, borderTopColor: c.line, backgroundColor: c.surface },
   return: { minHeight: 48, paddingHorizontal: 20, flexDirection: 'row', alignItems: 'center', gap: 9, borderBottomWidth: 1, borderBottomColor: c.line },
   choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 9, marginBottom: 23 },
-  choice: { minHeight: 44, borderRadius: 10, borderWidth: 1, borderColor: '#748268', backgroundColor: '#fff', paddingHorizontal: 13, paddingVertical: 11, justifyContent: 'center', maxWidth: '100%' },
+  choice: { minHeight: 44, minWidth: 44, borderRadius: 10, borderWidth: 1, borderColor: '#748268', backgroundColor: '#fff', paddingHorizontal: 13, paddingVertical: 11, justifyContent: 'center', maxWidth: '100%' },
   choiceText: { fontFamily: f.semi, color: c.deep, fontSize: 13, lineHeight: 20 },
 });

@@ -1,0 +1,155 @@
+{
+  "generatedAt": "2026-11-13T14:03:14.049444+00:00",
+  "baseCommit": "5795f299e35186f372c325299d8a6828993df720",
+  "branch": "codex/cierre-seguridad-y-calidad",
+  "publication": {
+    "githubCommit": null,
+    "remoteCiRun": null,
+    "vercelDeployment": null,
+    "status": "pending; publication evidence belongs to the subsequent release record"
+  },
+  "privacy": "Sanitized public summaries only; raw screenshots, traces and browser state remain outside Git.",
+  "currentInputsSha256": {
+    "package.json": "0ef801dfba4b4a3127696b6e8126f1d9cc932a9c0fc7609efdf65e2210114da8",
+    "package-lock.json": "c4e900f8a079693bcd960ca93d4fd91f5c3a52715f1bab764557312314615a15",
+    "src/app/ShoppingApp.tsx": "aea2902865e26ab2755ff18f4c512c4711e242660abc224fe7b5c01a08d18dca",
+    "src/app/components/MenuFilterPanel.tsx": "e06ca9aec4039222b7e29a582671bd86d39aaebb74f5eb92634e79a8e93cdfae",
+    "src/app/components/ui.tsx": "67b692995fe516cf838df8a2fa96e3c4e5eb146d78d1bbb3fc39a3330c76fce2",
+    "src/app/screens/LocalSettingsScreens.tsx": "a5994899cc5f6701742d0795642191eb48abb325678d9d1dc0148fae2a4f297b",
+    "src/app/screens/MenuWorkspace.tsx": "18c6ba397ba5feebfacbb2a92a82054fe72ce66a292fde3de05c5e1b5f8358e3",
+    "src/app/screens/ProductScreens.tsx": "217fea0e808cc0c669e448a6d5ad1f1dbaf271772e0c821852f7583c7d1022b9"
+  },
+  "finalExport": {
+    "directory": "dist-closeout",
+    "webSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+    "platforms": [
+      {
+        "platform": "android",
+        "file": "_expo/static/js/android/index-6e2a9cd8e41f78b807ff933f266eaf2f.hbc",
+        "bytes": 6316810,
+        "sha256": "62021d5908ae3531153486f4622067a94495b978978d3454d4127585892fd321",
+        "status": "exported, not a native installation or store build"
+      },
+      {
+        "platform": "ios",
+        "file": "_expo/static/js/ios/index-566e5126b8bab471aaac9e52d8c868d0.hbc",
+        "bytes": 6313266,
+        "sha256": "ab231aed71603179e8de7830ca4ed18cf904c80dc51d570090859c2c4e627b60",
+        "status": "exported, not a native installation or store build"
+      },
+      {
+        "platform": "web",
+        "file": "_expo/static/js/web/index-bcf066a36299566d2b1f8d9429ed155e.js",
+        "bytes": 5157292,
+        "sha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+        "status": "exported, not a native installation or store build"
+      }
+    ],
+    "evidence": {
+      "artifact": "export-closeout.log",
+      "sha256": "6ed02bb16b833314d3253882ce53686322ab81454bb6b6d6796b084ff1e9000f",
+      "rawEvidencePublished": false
+    }
+  },
+  "typecheck": {
+    "passed": true,
+    "command": "npm run typecheck",
+    "evidence": {
+      "artifact": "typecheck-closeout.log",
+      "sha256": "d6a82592403a49db17cd11d76d24a4cba27ed0ce9074afbc93eff199eaa533cd",
+      "rawEvidencePublished": false
+    }
+  },
+  "unitTests": {
+    "command": "npm test -- --maxWorkers=2",
+    "passed": 981,
+    "failed": 0,
+    "skipped": 0,
+    "testFiles": 27,
+    "startedAt": "2026-11-13T13:55:11.277000+00:00",
+    "evidence": {
+      "artifact": "unit-closeout-results.json",
+      "sha256": "851f022d594aa18044c2a1a0130c4a11b4c01808d8bbb49a8998a0a11f737622",
+      "rawEvidencePublished": false
+    }
+  },
+  "cleanInstallationReproduction": {
+    "status": "passed",
+    "initialInstallation": "npm ci --ignore-scripts in an isolated copy without the private 150-recipe ZIP",
+    "initialFullCheck": "public V83 reproduction, types, 981 unit tests, npm audit, Expo compatibility, web export passed",
+    "finalSourceOverlay": "Final source including ProductScreens minWidth44 was overlaid onto that isolated installation, then public V83 reproduction, types, 981 unit tests with maxWorkers2 and web export passed.",
+    "evidence": {
+      "artifact": "clean-ci-bounded.log",
+      "sha256": "53155af374b01496a08cd20c76b536e249c6d5188557051fa56adebaf6c66f13",
+      "rawEvidencePublished": false
+    },
+    "intermediateFailure": {
+      "occurred": true,
+      "testFile": "tests/data-privacy.test.ts",
+      "test": "enforces UTF-8 document and final JSON limits, including escaping overhead",
+      "reasonObserved": "5000ms test timeout under concurrent CPU load; 980 other tests passed",
+      "resolution": "Bound concurrency to 2 workers; unchanged assertions, timeout and test coverage pass 981/981",
+      "skipsOrTimeoutRelaxationIntroduced": false,
+      "evidence": {
+        "artifact": "clean-ci-final.log",
+        "sha256": "ef2bb61e5fbd00b0a9da661745bdd48ba15e19ae5a999792a0691693fb936e69",
+        "rawEvidencePublished": false
+      }
+    }
+  },
+  "completeBrowserSuites": {
+    "compiledWebSha256": "349e6e981b1d1894fd2deb18da3f0321b4e9e8c436879a9eb628c173c636b4eb",
+    "export": "dist-cierre-verified",
+    "scopeDifferenceFromFinal": "Final application adds only minWidth:44 to the ProductScreens filter after these complete suites. That final change is covered separately by the English 375/430 quality rerun in b08-quality.json. The complete browser suites are not attributed to the final bundle.",
+    "chromium": {
+      "stats": {
+        "startTime": "2026-11-12T20:56:06.127Z",
+        "duration": 1074391.854,
+        "expected": 298,
+        "skipped": 24,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "runtimeErrorCount": 0,
+      "failedVisualCheckCount": 0,
+      "originalCaptures": 120,
+      "inventoryCaptures": 300,
+      "inventoryComplete": true,
+      "protectedArtifactsUnchanged": true,
+      "skipReason": "24 intentionally omitted duplicate captures in the existing suite",
+      "evidence": {
+        "artifact": "report.json",
+        "sha256": "3f51b71099c546512e88fc6edc563f82d3d3ba8038a13409e0a0c3409069262a",
+        "rawEvidencePublished": false
+      }
+    },
+    "webkit": {
+      "stats": {
+        "startTime": "2026-11-12T20:56:06.948Z",
+        "duration": 788005.049,
+        "expected": 16,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "scope": "Daily use and V83 recipe flows across es/en/de/fr and CSS widths375/430; desktop WebKit, not physical iPhone Safari",
+      "evidence": {
+        "artifact": "results.json",
+        "sha256": "17fc7dc202c6391547288b3df458c69847a20c8ed6d16704b8826175081278e7",
+        "rawEvidencePublished": false
+      }
+    }
+  },
+  "remoteCi": {
+    "status": "not yet observed",
+    "workflow": ".github/workflows/check.yml",
+    "permissions": "contents: read",
+    "secretsOrDeploymentSteps": false,
+    "actionVersions": "Pinned official checkout/setup-node commit SHAs",
+    "checkoutPersistsCredentials": false
+  },
+  "limits": [
+    "No physical iPhone or Android validation is claimed.",
+    "No release approval or pixel-level design approval is inferred from browser checks."
+  ]
+}

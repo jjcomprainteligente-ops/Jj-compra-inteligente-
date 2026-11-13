@@ -17,9 +17,11 @@ export function Button({ label, onPress, secondary, accent, danger, disabled, bu
   accent?: boolean; disabled?: boolean; busy?: boolean; icon?: LucideIcon; testID?: string;
 }) {
   const color = danger ? c.danger : secondary || accent ? c.deep : '#fff';
+  const pressedBackground = danger ? c.neutral : accent ? c.paleYellow : secondary ? c.soft : c.deep;
   return <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={label}
     accessibilityState={{ disabled: !!disabled || !!busy }} disabled={disabled || busy} onPress={onPress}
-    style={({ pressed }) => [ui.button, secondary && ui.secondary, accent && ui.accent, danger && ui.dangerButton, (disabled || busy || pressed) && { opacity: 0.65 }]}>
+    style={({ pressed }) => [ui.button, secondary && ui.secondary, accent && ui.accent, danger && ui.dangerButton,
+      disabled || busy ? { opacity: 0.65 } : pressed && { backgroundColor: pressedBackground }]}>
     <Text style={[ui.buttonText, { color }]}>{label}</Text>
     {busy ? <ActivityIndicator color={color} /> : <Icon size={20} color={color} strokeWidth={1.9} />}
   </Pressable>;
@@ -29,7 +31,7 @@ export function IconButton({ label, icon: Icon, onPress, danger, disabled }: {
   label: string; icon: LucideIcon; onPress: () => void; danger?: boolean; disabled?: boolean;
 }) {
   return <Pressable accessibilityRole="button" accessibilityLabel={label} disabled={disabled}
-    onPress={onPress} style={({ pressed }) => [ui.iconButton, (disabled || pressed) && { opacity: 0.55 }]}>
+    onPress={onPress} style={({ pressed }) => [ui.iconButton, disabled ? { opacity: 0.55 } : pressed && { backgroundColor: c.soft, borderRadius: 22 }]}>
     <Icon size={20} color={danger ? c.danger : c.primary} strokeWidth={1.7} />
   </Pressable>;
 }

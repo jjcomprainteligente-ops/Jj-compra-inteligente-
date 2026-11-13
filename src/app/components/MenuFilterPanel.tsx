@@ -116,7 +116,7 @@ function FilterChoice({ label, checked, disabled, testID, onPress }: {
 
 const styles = StyleSheet.create({
   choices: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  choice: { minHeight: 44, maxWidth: '100%', borderWidth: 1, borderColor: c.muted, borderRadius: 12, backgroundColor: c.surface, paddingHorizontal: 12, paddingVertical: 11, justifyContent: 'center' },
+  choice: { minHeight: 44, minWidth: 44, maxWidth: '100%', borderWidth: 1, borderColor: c.muted, borderRadius: 12, backgroundColor: c.surface, paddingHorizontal: 12, paddingVertical: 11, justifyContent: 'center' },
   selected: { backgroundColor: c.deep, borderColor: c.deep },
   choiceText: { color: c.deep, fontFamily: f.semi, fontSize: 13, lineHeight: 20, flexShrink: 1 },
   selectedText: { color: c.surface },

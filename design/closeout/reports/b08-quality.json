@@ -1,0 +1,390 @@
+{
+  "generatedAt": "2026-11-13T14:03:14.049444+00:00",
+  "baseCommit": "5795f299e35186f372c325299d8a6828993df720",
+  "branch": "codex/cierre-seguridad-y-calidad",
+  "publication": {
+    "githubCommit": null,
+    "remoteCiRun": null,
+    "vercelDeployment": null,
+    "status": "pending; publication evidence belongs to the subsequent release record"
+  },
+  "privacy": "Sanitized public summaries only; raw screenshots, traces and browser state remain outside Git.",
+  "engine": "Chromium with CSS mobile viewport, not physical iPhone",
+  "previousCompleteMatrix": {
+    "compiledWebSha256": "349e6e981b1d1894fd2deb18da3f0321b4e9e8c436879a9eb628c173c636b4eb",
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "viewports": [
+      {
+        "width": 375,
+        "height": 754
+      },
+      {
+        "width": 430,
+        "height": 932
+      }
+    ],
+    "statistics": {
+      "startTime": "2026-11-12T20:56:35.302Z",
+      "duration": 312599.78599999996,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "scenes": 296,
+    "measuredChecks": {
+      "textChecked": 7920,
+      "iconsChecked": 1704,
+      "fieldBoundariesChecked": 104,
+      "activeControls": 4584
+    },
+    "failureCounts": {
+      "textFailures": 0,
+      "iconFailures": 0,
+      "fieldBoundaryFailures": 0,
+      "switchPaintFailures": 0,
+      "targetsBelow24": 0,
+      "unsupported": 0
+    },
+    "stateIndicatorPaintReviewRecords": 1272,
+    "iphone44RecommendationsBeforeLastFix": [
+      {
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "scene": "08_buscar_producto",
+        "selector": "[data-testid=\"product-search-screen\"] > div:nth-child(4) > button:nth-child(1)",
+        "scope": "product-search-screen",
+        "role": "button",
+        "width": 41.45,
+        "height": 44
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "scene": "08_buscar_producto",
+        "selector": "[data-testid=\"product-search-screen\"] > div:nth-child(4) > button:nth-child(1)",
+        "scope": "product-search-screen",
+        "role": "button",
+        "width": 41.45,
+        "height": 44
+      }
+    ],
+    "evidence": {
+      "artifact": "b08-quality-summary.json",
+      "sha256": "d77eda73ef972be1881c56a87b16a224cb10d73c8c8ce632adde0028a1cdebc5",
+      "rawEvidencePublished": false
+    }
+  },
+  "finalTargetedRerun": {
+    "compiledWebSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+    "sourceExport": "dist-closeout",
+    "changeUnderTest": "ProductScreens filter minWidth:44; closes the two English All-chip recommendations (same chip at two sizes)",
+    "statistics": {
+      "startTime": "2026-11-13T14:00:59.624Z",
+      "duration": 18658.717,
+      "expected": 2,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "en-375-coverage.json",
+          "sha256": "4ad4af27d800730a58ed515d0f8947aace14221a1277e7072150dbe1e893b019",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "en-430-coverage.json",
+          "sha256": "fdbf31dcf1273cbaa96d8a244cd256e5fbaf02123f4ccedc656bc87c59113be7",
+          "rawEvidencePublished": false
+        }
+      }
+    ],
+    "auditScenes": 74,
+    "measuredChecks": {
+      "textChecked": 1980,
+      "iconsChecked": 426,
+      "fieldBoundariesChecked": 26,
+      "activeControls": 1146
+    },
+    "failureCounts": {
+      "textFailures": 0,
+      "iconFailures": 0,
+      "fieldBoundaryFailures": 0,
+      "switchPaintFailures": 0,
+      "targetsBelow24": 0,
+      "unsupported": 0
+    },
+    "iphone44Recommendations": 0,
+    "initialSandboxAttempt": {
+      "status": "browser launch failed before app navigation",
+      "reason": "Chromium SIGTRAP: setsockopt Operation not permitted in restricted execution environment",
+      "appAssertionsRun": 0,
+      "preservedSeparately": true,
+      "evidence": {
+        "artifact": "quality-closeout-en.log",
+        "sha256": "bdf2a3336daf0b627de38cfc044d7a1b2db93196399e9c69d36cb48366ecb8b2",
+        "rawEvidencePublished": false
+      }
+    },
+    "rerunMethod": "Same tests and source with permitted browser execution; no assertions or app behavior weakened"
+  },
+  "heldPointer": {
+    "statistics": {
+      "startTime": "2026-11-12T20:56:28.698Z",
+      "duration": 148014.15,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": [
+      {
+        "language": "de",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "d57c0f84246763561065874212105daf530d0f3933b964a937d3c4b74091e505"
+      },
+      {
+        "language": "de",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "853af6e2fb1acc671636fbe03929eb41b9cc709b6fe1abce94da486063195ff1"
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "ce71d96502be56675365c4a44d766e8ae3e28e0366440d07d581109f9ea8411a"
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "3441abd74666c494fe2c4ba66cba3bbc9452902a5881dbcc765610e4f8cf4b42"
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "4125cac8428ea861af4a9cf55c53211b87a3e9a362e6b4031f69f0bdbfa3f9b4"
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "7bfb8a402572a33af7041ceab665f0cd5a612bf1c8d6ba205ae0bccd29f28a18"
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "cce0a009e426c2240406ac222758383200feb95bbff943a22c198037067d6ff3"
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "reportSha256": "c4c453a5629e1f2ff6713e58e5aab042f48634009aa8f5f62ff65c128a7bf1c3"
+      }
+    ],
+    "variants": [
+      "accent",
+      "primary",
+      "icon",
+      "secondary",
+      "danger"
+    ],
+    "sustainedPresses": 40,
+    "businessWritesDuringHoldAndCancel": 0,
+    "groupOpacityForActivePressedControls": 1,
+    "logicalScreenshots": 40
+  },
+  "keyboardFocus": {
+    "statistics": {
+      "startTime": "2026-11-12T21:00:45.409Z",
+      "duration": 18498.537,
+      "expected": 1,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "sharedControls": [
+      "button",
+      "icon",
+      "switch"
+    ],
+    "method": "Actual Tab traversal, no programmatic focus",
+    "outlineObserved": "Chromium :focus-visible auto 1px rgb(16,16,16), opacity 1",
+    "logicalScreenshots": 3,
+    "reportSha256": "9a488a3f793a71191b391eb5d64a93ee2b7dc460cdd9a07bcc5dd9561733b191"
+  },
+  "calibration": {
+    "statistics": {
+      "startTime": "2026-11-12T20:47:41.139Z",
+      "duration": 3060.822,
+      "expected": 5,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "cases": 5,
+    "negativeControlsDetected": true,
+    "reportSha256": "a15ed2ab3f07d5436ce6cc2021a9cfca91ebdada0e4634a6c885fa60ed603617"
+  },
+  "beforeFix": {
+    "actualPrimaryHeldContrast": 2.898336651911526,
+    "requiredNormalText": 4.5,
+    "actualPrimaryGroupOpacity": 0.65,
+    "findingFile": "pressed-button-finding.json",
+    "sustainedRegressionAgainstPreviousExportFailedAsExpected": true
+  },
+  "dataPrivacy": {
+    "realOwnerData": false,
+    "fixtures": "explicit isolated QA documents; main navigation never changes its six business documents",
+    "textOrInputValuesInContrastResults": false,
+    "screenshotsAndRawBrowserEvidenceKeptOutsideGit": true
+  },
+  "limits": [
+    "No full WCAG certificate; complex state-indicator semantics and all focus appearances require separate review",
+    "Supported solid backgrounds only; unresolved group opacity/images reported, not assumed passing",
+    "AA target geometry uses the specified 24px spacing alternative; 44px reported separately as an iPhone recommendation",
+    "Native widgets, OS keyboard, VoiceOver, Dynamic Type, actual safe areas and physical iPhone not certified",
+    "Gallery permission/error states are labelled examples, not asserted real permission events",
+    "Counts include repeated controls across scenes, not unique application controls",
+    "Held-pointer, keyboard-focus and DOM calibration results belong to the complete pre-minWidth44 verification batch, not to a new execution of those suites on the final bundle.",
+    "The full es/en/de/fr matrix was not repeated after the single final width property; English at both affected widths was repeated with 37 scenes each."
+  ]
+}
