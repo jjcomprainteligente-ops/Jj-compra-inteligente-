@@ -521,3 +521,22 @@ El plan aprobado del PR #16 pide expresamente «Guardar diagnóstico reproducibl
 - Open Prices: API/documentación/export 200; 27 observaciones históricas en siete lugares Tenerife, 0 del 07–13/11. Export completo de 7.881 lugares coincide. ODbL exige atribución y condiciones de base derivada; no mezclar automáticamente con datos propietarios ni derechos de imágenes.
 - Ambas fuentes `needs_review`, `enabled=false` para PVP local actual. No hay cesta local completa ni ranking cercano acreditados. B06.2 queda pendiente de revisión de fuente/licencia/alcance; posibles indicadores históricos separados, sin llamarlos PVP Tenerife vigente. Borradores comerciales sin enviar.
 - Evidencia pública saneada: URL/HTTP/UTC/hash/contadores; sin cuerpos completos, filas de precios, imágenes, contribuidores ni localizaciones detalladas. Evidencia original privada conservada.
+
+
+## Bloque 01 maestro · consolidación iniciada · 13/11/2026
+
+El propietario autorizó comenzar el primer bloque posterior a la auditoría, conservando el producto existente. Base revisada: `abb3bca53953e4523af61118e375df90d1a8d416`; `main` permanece en `d22d66eff03c5d107f5170ee38cd2bc3167865e2`. Se crearon referencias local/remota `codex/respaldo-base-2026-11-13` y `codex/integracion-maestra-2026-11-13`, ambas sobre ABB, sin merges ni cambios de código de aplicación.
+
+- Copia privada local del ZIP150 y restauración comprobadas: 937.580 bytes, SHA-256 `151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034`, 13/13 entradas del manifiesto y 14 archivos restaurados, 150 IDs/750 fichas. El original se conserva. **Respaldo externo independiente pendiente**, no declarado completo; el usuario tiene una pregunta de destino y un enlace privado de descarga. Ver [estado público saneado](MAESTRO/RESPALDO_ESTADO_PUBLICO.json). No subir el ZIP privado ni su restauración al repositorio público o Vercel.
+- Documentos originales del nuevo plan conservados byte a byte en [fuentes del maestro](MAESTRO/fuentes/JJ_PLAN_MAESTRO_CODEX_2026-11-13.md), con manifiesto de recepción. El mensaje de auditoría se conserva como instrucción histórica de Bloque00; no anula la autorización posterior de Bloque01.
+- Incorporados selectivamente los tres documentos de producto del PR #16 desde `95686b3ac4541f7179ee7cfd858be97628d4be99`: plan, contrato y cuatro borradores. Blobs idénticos `5b1529d2a76ff4fe18b8fd9d23f378c967b883d5`, `b8c12c8115f079611ba3e30c186006d3d494c888`, `5dbacc3526acb3dee05f1d9ed2abc68140cb5f23`. No se fusiona su rama antigua ni el código del PR #11; borradores sin enviar y fuentes PVP desactivadas.
+- Inventario único, política de integración y distinción entre documentación vigente e historia en preparación. El historial se conserva.
+- Comprobaciones nuevas ejecutándose en copia limpia aislada de ABB sin ZIP privado, credenciales o estado del navegador. Resultados y fuente final todavía pendientes; los informes anteriores conservan su SHA y no se reutilizan como una ejecución nueva.
+- Bloque01 sigue **EN_CURSO**; no se abre otro bloque, no se modifica aplicación mientras el requisito de respaldo permanezca abierto y no se promueve producción.
+
+
+### Baseline limpio comprobado antes del primer commit documental · Bloque01
+
+Sobre ABB se instaló desde el lockfile sin scripts, en copia aislada sin original privado 150 ni datos locales. Importador público, tipos, 981/981 unitarias (0 fallidas/omitidas), auditoría npm 0, compatibilidad Expo y exports web/iOS/Android correctos. El bundle web coincide exactamente con C3f publicado; los HBC nativos conservan sus hashes propios de entorno/ruta. [Reporte saneado](../design/master-integration/reports/baseline-existing-app.json).
+
+El primer commit de integración solo consolida documentación y los documentos exactos de PR16. La matriz de navegador se ejecutará sobre ese árbol identificado, verificando que todos los inputs de aplicación coinciden con el export. El respaldo externo sigue pendiente; no se declara Bloque01 cerrado ni se modifica código de aplicación.

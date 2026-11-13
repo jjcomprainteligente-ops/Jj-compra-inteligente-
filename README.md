@@ -1,3 +1,58 @@
+# JJ Compra Inteligente
+
+**Estado documental · 13/11/2026 · Bloque 01 maestro EN_CURSO.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+
+El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
+
+## Punto de partida comprobado
+
+- Repositorio canónico: [jjcomprainteligente-ops/Jj-compra-inteligente-](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-).
+- Base auditada: `abb3bca53953e4523af61118e375df90d1a8d416`, PR #20; 28 commits por delante de `main` en la auditoría del 13/11. `main` seguía en `d22d66eff03c5d107f5170ee38cd2bc3167865e2`.
+- Último origen compilado de staging comprobado: `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`, PR #19. Los cierres posteriores a ese origen añadieron documentos e informes; no cambiaron inputs de app o dependencias.
+- La rama `codex/integracion-maestra-2026-11-13` y la referencia `codex/respaldo-base-2026-11-13` se crearon desde esa base, sin rehacer el producto ni fusionar a producción. Su cierre requiere resultados nuevos sobre el árbol final; esta actualización documental no los sustituye.
+
+## Qué contiene la app existente
+
+Expo SDK 58, React Native y TypeScript. Cuatro pestañas: Inicio, Mi compra, Ahorro y Menús; Perfil, notificaciones y tiendas son subpantallas. Las listas, revisión de ingredientes, cantidades, presupuesto, gastos confirmados, comparación manual y preferencias funcionan en modo local. El gasto procede de registros explícitos de gastos; marcar un producto comprado no crea un gasto por sí solo.
+
+El catálogo contiene **120 recetas V83 y siete anteriores: 127 accesibles**. La fuente privada reúne 150 IDs y 750 fichas en es/en/de/fr/bg. Las posiciones 11–20, 31–40 y 111–120 siguen retenidas por controles pendientes o contradictorios. No se cambia ningún ID ni se infieren aprobaciones.
+
+La interfaz está en **es/en/de/fr**, con detección del dispositivo, elección manual persistente, respaldo al español y compras en euros. BG está en las fuentes V83, todavía no en la interfaz completa. Las fotografías definitivas de recetas no están vinculadas; sus originales V38–V83 no se han localizado en los materiales accesibles.
+
+Mis tiendas conserva Lidl, ALDI, HiperDino, SuperDino, HiperDino Express y Mercadona. La selección y los enlaces oficiales no implican importación de precios ni transferencia de carrito. La [auditoría B06.1](docs/auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md) no habilitó PVP local actual. Las dos entradas propuestas por recetas/presupuesto están en el PR #11 y no se consideran integradas.
+
+IA, cuentas, hogares y sincronización no están activados. B07 conserva contratos y migraciones, pero la matriz dinámica de permisos sigue sin resultado nativo. El modo sin cuenta permanece como base de trabajo.
+
+## Conservación y respaldo
+
+Los siete documentos locales y sus protecciones de escritura se conservan. Borrar los datos del navegador/dispositivo puede eliminarlos; la exportación local no equivale a sincronización ni a restauración automática.
+
+El ZIP privado completo de 150 recetas está localizado e ignorado por Git. **El respaldo privado independiente sigue PENDIENTE de destino y verificación**; una segunda copia en esta misma máquina no se contará como tal. El ZIP público de 120 recetas no respalda las 30 retenidas. Antes de modificar código se debe cumplir la puerta de respaldo del plan maestro. El repositorio público y las previews no reciben el ZIP privado ni contenidos retenidos.
+
+## Evidencia anterior y comprobaciones del bloque
+
+La [entrega de seguridad y calidad](docs/CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md), el [registro del despliegue](design/closeout/reports/deployment.json) y los [resultados de CI](design/closeout/reports/github-actions.json) documentan sus propios orígenes. La [CI existente de `abb3bca`](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43453268489) terminó correctamente: 981 unitarias en 27 archivos, tipos, auditoría de dependencias y export web. La regresión completa de 298 Chromium/24 omisiones deliberadas y 16 WebKit pertenece a un bundle anterior, identificado en el inventario. El bundle final de `17d5fbc` tiene 8/8 casos de calidad y 9/9 de pulsación/foco.
+
+**Baseline nuevo del Bloque 01 comprobado en una copia aislada de ABB:** instalación limpia, reproducción V83, tipos, 981/981 unitarias sin fallos ni omisiones, audit con cero avisos conocidos, compatibilidad Expo y exportaciones web/iOS/Android. El bundle web conserva el hash `c3f6a11f…`. La regresión de navegador sobre el árbol final, su CI y nueva staging siguen pendientes. La aceptación estética y la prueba física en iPhone siguen pendientes. Un export iOS no es una app firmada, TestFlight ni una ejecución física.
+
+Para reproducir las comprobaciones del proyecto, usa Node.js 24 y el lockfile del árbol revisado:
+
+```sh
+npm ci --ignore-scripts
+npm run typecheck
+npm test -- --maxWorkers=2
+npm run build:web
+```
+
+La prueba web completa y la multilingüe tienen sus instrucciones en [la guía iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md) y [la entrega i18n](docs/I18N_ENTREGA_Y_AUDITORIA.md). Ejecutar esos comandos no acredita por sí solo el cierre de todo el plan.
+
+## Historial documental conservado
+
+El texto previo se conserva íntegro a continuación. Sus cifras, enlaces temporales y expresiones como «estado vigente», «M3 provisional», «originales ausentes» o «publicación pendiente» describen sus fechas originales; no sustituyen este punto de partida ni el inventario maestro. Los nombres B00–B09 del kit antiguo no son la numeración 00–14 del plan maestro del 13/11.
+
+<details>
+<summary>ARCHIVO_HISTORICO — README anterior a la consolidación documental del Bloque 01</summary>
+
 > **Entrega vigente · 13/11/2026:** seguridad y accesibilidad publicadas en [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), origen final `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`. [CI remota correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596); 981 unitarias, exports web/iOS/Android, matriz final de calidad 8/8 y pulsación/foco 9/9; audit npm sin vulnerabilidades conocidas. Preview protegida verificada en cuatro idiomas y 29 recursos/URLs. [Informe](docs/CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md) · [despliegue](design/closeout/reports/deployment.json). Acceso temporal por conversación, hasta 14/11/2026 a las 14:23:22 UTC. Auditoría de tiendas en entrega documental separada.
 
 > **Seguridad y calidad · 13/11/2026:** corrección de los tres avisos moderados anteriores, audit actualizado con **cero vulnerabilidades**, Expo 58.0.25 dentro de SDK 58 y correcciones medidas de contraste/áreas de interacción. Conserva Verde Mercado Premium, logo, siete documentos y 127 recetas. Regresión completa: 298 Chromium y 16 WebKit; auditoría de 296 escenas en es/en/de/fr, 40 estados pulsados y 24 ejecuciones de rendimiento anónimo. La última ampliación del filtro inglés pasó por separado 2/2 casos y 74 escenas sobre el compilado final; exportaciones web/iOS/Android y reproducción limpia con 981 unitarias correctas. [Informe, fuentes y límites](docs/CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md). Publicación de esta entrega y CI remota todavía pendientes; los enlaces V83 siguientes acreditan la versión anterior. B07, prueba física y criterios externos siguen abiertos; no se declaran terminados todos los bloques.
@@ -161,3 +216,5 @@ La auditoría histórica multilingüe registró 13 paquetes afectados en herrami
 El código importado y su reproducción desde un clon nuevo están documentados en [Entrega G00 y auditoría](docs/github/G00_ENTREGA_Y_AUDITORIA.md). GitHub es la base principal; las previews Vercel identifican su commit de origen.
 
 La [conciliación GPT-6 V2](docs/V2_CONCILIACION_VISUAL_2026-10-31.md) registra las diferencias actuales y la recuperación pendiente de los originales. La vista actual continúa con M3 provisional y el diseño anterior.
+
+</details>

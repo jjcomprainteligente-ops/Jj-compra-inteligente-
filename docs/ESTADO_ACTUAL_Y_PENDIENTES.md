@@ -1,6 +1,49 @@
+# Estado vigente de construcción
+
+**Actualización documental · 13/11/2026 · Bloque 01 maestro EN_CURSO.** El propietario autorizó consolidar la aplicación existente, conservando historial y trabajo previo. Este documento resume el estado; el detalle por requisito y evidencia está en el [inventario único](MAESTRO/INVENTARIO_UNICO.md).
+
+## Estado de referencia auditado
+
+| Área | Hecho comprobado y límite |
+|---|---|
+| GitHub | Base auditada `abb3bca53953e4523af61118e375df90d1a8d416`; 28 commits delante de `main` (`d22d66e`). Hay 15 PR abiertos en el registro del Bloque 00. Ninguna integración a `main` está acreditada por esta actualización. |
+| App y staging | Última app compilada comprobada desde `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`; cierres posteriores documentales. Staging `dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz`, `READY`, protección conservada. [Registro](../design/closeout/reports/deployment.json). La producción principal apunta a otro despliegue. |
+| Recetas | 150 IDs/750 fichas en fuente privada; 120 V83 + siete anteriores = 127 accesibles. Los tres lotes retenidos siguen fuera del runtime. |
+| Fotografías | Cero correspondencias definitivas foto→ID integradas. Originales V38–V83 no localizados entre los materiales accesibles; no se declaran borrados ni respaldados. |
+| Diseño | Verde Mercado Premium / GPT-6 V2 y logo oficial exacto; 16 vistas y nueve ejemplos de estado. Aceptación estética y prueba física pendientes. |
+| Idiomas | es/en/de/fr en UI; BG en fuentes de recetas. Completar BG corresponde al futuro Bloque 09 maestro. |
+| Compras y gasto | Listas y presupuesto locales; gasto mediante registros confirmados, separado de productos marcados y estimaciones. Siete documentos con sus protecciones de escritura. |
+| Tiendas y precios | Seis modalidades seleccionables y enlaces oficiales; comparación manual conservada. Sin PVP local automático habilitado, CP/radios ni cesta local completa acreditados. [Auditoría B06.1](auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md). |
+| Cuentas/IA | IA no conectada. B07 tiene contratos/migraciones, matriz dinámica sin resultado y cuentas/hogares/sincronización sin activar. El snapshot de 14 tablas RLS/FORCE y cero filas es del 12/11, no una inspección nueva. |
+| Conservación | ZIP completo localizado; respaldo privado externo PENDIENTE. Los originales grandes/históricos citados por el ZIP ligero y las fotos no están accesibles. |
+
+## Calidad: separar resultados por origen
+
+La [CI existente de `abb3bca`](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43453268489) terminó con 981 unitarias correctas en 27 archivos, tipos, audit sin avisos conocidos y export web. No se vuelve a etiquetar esa ejecución como prueba del Bloque 01.
+
+- Regresión completa histórica: 298 Chromium, 24 omisiones deliberadas y 16 WebKit sobre bundle `349e6e98…`.
+- Export final de `17d5fbc`: bundle `c3f6a11f…`, calidad 8/8 y pulsación/foco 9/9; verificación HTTPS anterior en cuatro idiomas y 29 recursos/URLs por hash.
+- Baseline nuevo del Bloque 01 sobre ABB: **correcto** en copia aislada; instalación limpia, selección pública V83, tipos, 981/981 unitarias sin fallos/omisiones, audit con cero avisos conocidos, Expo y exports web/iOS/Android. Bundle web `c3f6a11f…`, idéntico al publicado anterior. Regresión de navegador del árbol final, CI y nueva staging: **PENDIENTES**.
+- iPhone físico, VoiceOver, teclado, safe areas y aceptación humana: **PENDIENTES**.
+
+[Entrega de seguridad y límites](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md#publicación-final-del-ajuste-visual) · [Política de integración](MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md).
+
+## Puerta actual y una acción siguiente
+
+Antes de modificar código se necesita materializar el respaldo privado independiente del ZIP de 150 y comprobar su restauración. Las copias locales preparatorias no acreditan esa independencia. La documentación puede consolidarse sin alterar la app mientras se resuelve el destino.
+
+La siguiente acción es cerrar esa verificación de respaldo. La rama `codex/integracion-maestra-2026-11-13` y la referencia `codex/respaldo-base-2026-11-13` ya parten de ABB; no se reconstruye el producto ni se aplica el árbol antiguo de un PR sobre el actual.
+
+## Historial documental conservado
+
+Los apartados siguientes conservan su texto y cifras de entrega. Las afirmaciones de publicación pendiente, M3, fuentes todavía no recibidas o confirmaciones caducadas no constituyen un estado nuevo. B07 vigente: `no_result_native_control_unresolved`; cero aserciones de la matriz contadas. Los nombres B00–B09 son del kit anterior.
+
+<details>
+<summary>ARCHIVO_HISTORICO — Estado anterior a la consolidación documental del Bloque 01</summary>
+
 > **Origen final comprobado · 13/11/2026:** [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), fuente `17d5fbc8adf9f8cbd07f7bd930a19a086931a841` y [CI correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596). Incluye interruptor web centrado, matriz de calidad 8/8 y pulsación/foco 9/9. Preview staging protegida, cuatro idiomas y 29 recursos/URLs verificados; acceso temporal hasta 14/11/2026 a las 14:23:22 UTC. [Registro final](../design/closeout/reports/deployment.json). Los apartados fechados previos conservan su alcance histórico.
 
-> **Publicación comprobada · 13/11/2026:** [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19) y [CI remota correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526) sobre `096330d2b3a3123dc759a1ef0a6123aa67a0d249`. Preview staging `READY`, protegida y verificada en cuatro idiomas, 29 recursos/URLs y 127 recetas. [Evidencia del cierre](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md#publicaci%C3%B3n-comprobada-de-esta-entrega). Acceso temporal hasta 14/11/2026 13:08:31 UTC, sin token en Git. Las menciones siguientes a publicación pendiente describen el estado anterior a este cierre.
+> **Publicación comprobada · 13/11/2026:** [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19) y [CI remota correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526) sobre `096330d2b3a3123dc759a1ef0a6123aa67a0d249`. Preview staging `READY`, protegida y verificada en cuatro idiomas, 29 recursos/URLs y 127 recetas. [Evidencia del cierre](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md#publicación-inicial-comprobada-de-esta-entrega). Acceso temporal hasta 14/11/2026 13:08:31 UTC, sin token en Git. Las menciones siguientes a publicación pendiente describen el estado anterior a este cierre.
 
 > **Estado actual · 13/11/2026:** [cierre de seguridad y calidad](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md) sobre la app existente. Audit actualizado: **cero vulnerabilidades**; Expo 58.0.25, correcciones de contraste/áreas y evidencia de B08 en cuatro idiomas. Regresión completa de 298 Chromium y 16 WebKit, 296 escenas de calidad y 24 mediciones anónimas. La última ampliación del filtro inglés pasó por separado 2/2 casos y 74 escenas; exportaciones finales y reproducción limpia con 981 unitarias correctas. GitHub, nueva preview y CI remota de esta entrega siguen pendientes de resultado. La entrega V83 siguiente es la última publicación acreditada, no una prueba de estos cambios. B07, validación física y criterios comerciales no están cerrados.
 
@@ -137,3 +180,5 @@ Código y evidencia en [PR #10](https://github.com/jjcomprainteligente-ops/Jj-co
 Staging READY `dpl_2xBghJgvxxnS5qvNwBsjw9N3hHVT`, origen https://jj-compra-inteligente-aqqtwd6or-cmj2hwhc6b-1051.vercel.app . Publicación protegida y comprobada en es/en/de/fr con 29 recursos/URLs por hash, conservando flujo local, copia de lista, preferencias, backup/borrado aislado y raster oficial. Informe `design/b07/reports/policy-actor-lookup-hosted.json`; URL temporal y capturas fuera de Git. El enlace de acceso vence el 12/11/2026 a las 19:06:23 UTC.
 
 La corrección está aplicada en Supabase y su regresión acotada de lectura pasó. La matriz completa después de corregir sigue sin resultado por confirmación nativa caducada; B07.2 permanece abierto y el PR continúa borrador. No se activan cuentas ni sincronización. La autorización del propietario ya está registrada.
+
+</details>
