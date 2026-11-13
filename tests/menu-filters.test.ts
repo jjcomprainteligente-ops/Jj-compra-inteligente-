@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { RECIPES } from '../src/data/recipes';
+import { LEGACY_RECIPES as RECIPES } from '../src/data/recipes';
 import { createMealPlan, type Recipe } from '../src/domain/menus';
 import {
   buildFilteredMealPlan, defaultMenuFilters, filterRecipes, MAX_EXCLUDED_INGREDIENTS,
@@ -59,11 +59,11 @@ describe('session menu filters', () => {
   });
 
   it('offers each actual canonical ingredient once, independent from the labels of the interface', () => {
-    const options = menuIngredientOptions();
+    const options = menuIngredientOptions(RECIPES);
     expect(options.find(option => option.key === 'calabacin')).toEqual({ key: 'calabacin', name: 'Calabacín' });
     expect(options.filter(option => option.key === 'aceite de oliva')).toHaveLength(1);
     expect(options).toHaveLength(17);
-    expect(validateMenuFilters(filters({ excludedIngredients: ['CALABACÍN'] })).excludedIngredients).toEqual(['calabacin']);
+    expect(validateMenuFilters(filters({ excludedIngredients: ['CALABACÍN'] }), RECIPES).excludedIngredients).toEqual(['calabacin']);
   });
 
   it('combines exclusions, time and preference without changing the original recipe or filters', () => {
@@ -81,7 +81,7 @@ describe('session menu filters', () => {
     expect(() => buildFilteredMealPlan(2, filters({ preference: 'vegan' }))).toThrow(MenuFilterError);
     try { buildFilteredMealPlan(2, filters({ preference: 'vegan' })); }
     catch (error) { expect(error).toMatchObject({ key: 'menuFilters.notEnough', values: { count: 4 } }); }
-    expect(() => buildFilteredMealPlan(2, filters({ excludedIngredients: ['aceite de oliva'] }))).toThrow('menuFilters.notEnough');
+    expect(() => buildFilteredMealPlan(2, filters({ excludedIngredients: ['aceite de oliva'] }), RECIPES)).toThrow('menuFilters.notEnough');
     expect(original).toEqual(createMealPlan(2));
   });
 

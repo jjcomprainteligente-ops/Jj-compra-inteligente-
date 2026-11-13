@@ -130,6 +130,9 @@ test('los filtros se aplican solo a la sesión; menos de cinco recetas no reempl
   await page.getByTestId('tab-menus').click();
   const filters = await openFilters(page);
   await filters.getByTestId('menu-filter-time-20').click();
+  // New V83 recipes have no reviewed dietary label. This combination still
+  // isolates the single reviewed legacy recipe and exercises the <5 guard.
+  await filters.getByTestId('menu-filter-preference-vegetarian').click();
   await applyFilters(page);
   expect(await snapshot(page)).toEqual(before);
   await page.getByTestId('prepare-menu').click();
@@ -144,7 +147,7 @@ test('los filtros se aplican solo a la sesión; menos de cinco recetas no reempl
   await expect(page.getByTestId('menu-catalog-empty')).toBeVisible();
   await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(0);
   await page.getByTestId('menu-catalog-reset').click();
-  await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(7);
+  await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(20);
   expect(await snapshot(page)).toEqual(before);
   // Reapply one filter to prove leaving/reopening the session clears it.
   const sessionFilters = await openFilters(page);
@@ -153,7 +156,7 @@ test('los filtros se aplican solo a la sesión; menos de cinco recetas no reempl
   await page.reload();
   await page.getByTestId('tab-menus').click();
   await page.getByTestId('menus-section-discover').click();
-  await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(7);
+  await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(20);
   expect(await snapshot(page)).toEqual(before);
 });
 

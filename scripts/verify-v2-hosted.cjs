@@ -17,6 +17,10 @@ const locales = {
 const keys = ['jjcompraintelwgiemt.shopping.v1', 'jjcompraintelwgiemt.menus.v1',
   'jjcompraintelwgiemt.comparisons.v1', 'jjcompraintelwgiemt.price-observations.v1', 'jjcompraintelwgiemt.expenses.v1', 'jjcompraintelwgiemt.local-settings.v1'];
 const preferenceKey = 'jjcompraintelwgiemt.preferences.v1';
+const expectedCatalogTotal = process.env.JJ_EXPECT_CATALOG_TOTAL;
+const expectedCatalogRecipeId = process.env.JJ_EXPECT_CATALOG_RECIPE_ID;
+if (expectedCatalogTotal !== undefined && !/^[1-9]\d{0,2}$/.test(expectedCatalogTotal)) throw new Error('Invalid expected catalogue count.');
+if (expectedCatalogRecipeId !== undefined && !/^[A-Za-z0-9-]{1,100}$/.test(expectedCatalogRecipeId)) throw new Error('Invalid expected catalogue recipe ID.');
 const hash = (bytes, algorithm) => crypto.createHash(algorithm).update(bytes).digest('hex');
 const snapshot = page => page.evaluate(names => names.map(name => localStorage.getItem(name)), keys);
 const inside = (parent, child) => child.startsWith(parent + path.sep);
@@ -353,6 +357,17 @@ async function verifyResources(context, origin, packaged, report) {
         await page.screenshot({ path: path.join(evidence, code + '-history.png'), fullPage: true });
         const beforeFilters = await snapshot(page);
         await page.getByTestId('tab-menus').click();
+        if (expectedCatalogTotal || expectedCatalogRecipeId) {
+          await page.getByTestId('menus-section-discover').click();
+          if (expectedCatalogTotal) {
+            const countText = await page.getByTestId('menu-catalog-count').innerText();
+            expect(countText.match(/\d+/g)).toEqual([expectedCatalogTotal, expectedCatalogTotal]);
+          }
+          if (expectedCatalogRecipeId) await expect(page.getByTestId('menu-catalog-recipe-' + expectedCatalogRecipeId)).toBeVisible();
+          await page.screenshot({ path: path.join(evidence, code + '-catalogue.png'), fullPage: true });
+          await page.getByTestId('menus-section-week').click();
+          if (JSON.stringify(await snapshot(page)) !== JSON.stringify(beforeFilters)) throw new Error('Browsing the imported catalogue changed saved documents.');
+        }
         await page.getByTestId('menu-filters-open').click();
         const filters = page.getByTestId('menu-filter-sheet');
         await filters.getByTestId('menu-filter-time-20').click();
@@ -408,6 +423,7 @@ async function verifyResources(context, origin, packaged, report) {
           }
         }
         report.languageChecks.push({ language: code, manualPreferenceAfterReload: next, passed: true, bundleVerified, logoVerified,
+          ...(expectedCatalogTotal || expectedCatalogRecipeId ? { catalogueCheck: { expectedTotal: expectedCatalogTotal, recipeId: expectedCatalogRecipeId, passed: true } } : {}),
           checks: ['Device language and official welcome logo', 'Four translated tabs', 'Loaded Manrope fonts and images',
             'Local list save', 'Recipe review and cancellation without shopping changes', 'Manual language preference persists after reload',
             'Six business documents preserved by language changes', 'Local search, voice, scanner and notification routes', 'Favourite store and confirmed expense save with both new durable fences on HTTPS', 'Six pilot stores persist with checkbox semantics', 'External destinations use noopener,noreferrer without saved-data changes; window.open is simulated', 'Reviewed plain-text list download excludes private notes and changes no documents', 'Closing list sharing restores keyboard focus', 'Session menu filters preserve saved documents', 'Downloaded backup contains exactly seven allowed documents', 'Confirmed category deletion preserves the other stores', 'Exact packaged bundle, logo, fonts, and resource hashes; optional isolated brand board'] });

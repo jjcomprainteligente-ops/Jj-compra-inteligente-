@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-native';
 import { BookOpen, Check, ChevronRight, FileText, Minus, Plus, RefreshCw, ShoppingBag, SlidersHorizontal, Utensils } from 'lucide-react-native';
 import { RECIPES } from '../../data/recipes';
@@ -35,6 +35,7 @@ interface Props {
 }
 type Panel = { kind: 'text' } | { kind: 'review' } | { kind: 'recipe'; recipe: Recipe } | { kind: 'replace'; index: number } | { kind: 'proposal'; plan: MealPlan };
 const dayIds = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
+const RECIPE_PAGE_SIZE = 20;
 type ReviewSource = { kind: 'text' } | { kind: 'plan'; servings: number } | { kind: 'recipe'; recipe: Recipe; servings: number };
 class MenuFeedback extends Error {
   constructor(readonly key: string, readonly values?: Record<string, string | number>) { super(key); }
@@ -42,15 +43,20 @@ class MenuFeedback extends Error {
 
 /** Offline planning and explicit ingredient review; no AI request or voice recording. */
 export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed, budgetCents, onBudget }: Props) {
-  const { t, formatMoney, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
+  const { language, t, formatMoney, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
   const meal = useMealPlan();
   const feedback = (value: unknown) => value instanceof MenuFeedback || value instanceof MenuFilterError ? t(value.key, value.values) : translateError(value);
   const day = (index: number) => t('menus.day.' + dayIds[index]);
   const plural = (key: string, count: number, values: Record<string, string | number> = {}) => t(key + (count === 1 ? '.one' : '.other'), { ...values, count: formatNumber(count) });
+  const recipeMeta = (recipe: Recipe, count: number, detail = false) => recipe.minutes === null
+    ? plural('catalogV83Ui.unknownTimePeople', count)
+    : plural(recipe.id.startsWith('JJ-') ? 'catalogV83Ui.minutesPeople' : detail ? 'menus.recipePill' : 'menus.minutesPeople', count, { minutes: formatNumber(recipe.minutes) });
   const [people, setPeople] = useState(2);
   const [section, setSection] = useState<'week' | 'discover'>(initialSection);
   const [filters, setFilters] = useState(defaultMenuFilters);
   const [filtersOpen, setFiltersOpen] = useState(false);
+  const [catalogLimit, setCatalogLimit] = useState(RECIPE_PAGE_SIZE);
+  const [replacementLimit, setReplacementLimit] = useState(RECIPE_PAGE_SIZE);
   const [panel, setPanel] = useState<Panel | null>(null);
   const [text, setText] = useState('');
   const [issues, setIssues] = useState<{ line: number; message: string }[]>([]);
@@ -74,7 +80,9 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const servings = meal.plan?.servings ?? people;
   const busy = meal.busy || shoppingBusy || applying;
   const filterControlsDisabled = busy || meal.loading || !!meal.loadError;
-  const visibleRecipes = filterRecipes(RECIPES, filters);
+  const visibleRecipes = useMemo(() => filterRecipes(RECIPES, filters), [filters]);
+  const detailedRecipe = useMemo(() => panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t) : null, [panel, t]);
+  const scaledRecipeIngredients = useMemo(() => panel?.kind === 'recipe' ? scaleRecipe(panel.recipe, recipeServings) : [], [panel, recipeServings]);
   const activeFilterCount = Number(filters.maxMinutes !== null) + Number(filters.preference !== 'any') + filters.excludedIngredients.length;
   const replacementRecipes = panel?.kind === 'replace' && meal.plan
     ? visibleRecipes.filter(recipe => !meal.plan!.recipeIds.includes(recipe.id)) : [];
@@ -85,6 +93,8 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const displayNote = (row: IngredientDraft) => editedNotes.has(row.id) ? row.note : row.note.split(' · ').map(part => part === menusMessages.es['menus.roundNoteShort'] ? t('menus.roundNoteShort') : translateIngredientNote(part, t)).join(' · ');
   const sourceLabel = source.kind === 'text' ? t('menus.textSource') : source.kind === 'plan' ? plural('menus.reviewPlanSource', source.servings) : plural('menus.recipeSource', source.servings, { title: localizedRecipe(source.recipe, t).title });
 
+  useEffect(() => { setCatalogLimit(RECIPE_PAGE_SIZE); setReplacementLimit(RECIPE_PAGE_SIZE); }, [filters, language]);
+
   const close = () => {
     if (busy || applyLock.current || planLock.current) return;
     if (panel?.kind === 'review' || (panel?.kind === 'text' && text.trim())) { setPendingDestination(null); setDiscard(!discard); return; }
@@ -92,6 +102,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   };
   const open = (next: Panel) => { if (!busy) {
     if (next.kind === 'recipe') setRecipeServings(servings);
+    if (next.kind === 'replace') setReplacementLimit(RECIPE_PAGE_SIZE);
     setPanel(next); setError(''); setDiscard(false); setPendingDestination(null);
   } };
   const navigateMain = (destination: FlowDestination) => {
@@ -260,7 +271,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           return <Card key={`${index}-${id}`} style={styles.mealCard}>
             <Pressable accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })} disabled={busy} onPress={() => open({ kind: 'recipe', recipe })} style={styles.recipeLink}>
               <View style={styles.mealSymbol}><Utensils size={19} color={c.primary} strokeWidth={1.6} /></View>
-              <View style={{ flex: 1, gap: 3 }}><Text style={styles.day}>{day(index)}</Text><Text style={styles.mealName}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{plural('menus.minutesPeople', servings, { minutes: formatNumber(recipe.minutes) })}</Text></View><ChevronRight color={c.primary} size={18} />
+              <View style={{ flex: 1, gap: 3 }}><Text style={styles.day}>{day(index)}</Text><Text style={styles.mealName}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{recipeMeta(recipe, servings)}</Text></View><ChevronRight color={c.primary} size={18} />
             </Pressable>
             <IconButton label={t('menus.changeMealA11y', { day: day(index) })} icon={RefreshCw} disabled={busy} onPress={() => open({ kind: 'replace', index })} />
           </Card>;
@@ -283,10 +294,15 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           <Button label={t('menuFilters.reset')} testID="menu-catalog-reset" secondary disabled={busy}
             onPress={() => { setFilters(defaultMenuFilters()); setError(''); }} />
         </View>}
-        {visibleRecipes.map(recipe => <Pressable key={recipe.id} testID={'menu-catalog-recipe-' + recipe.id} accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })}
+        {visibleRecipes.slice(0, catalogLimit).map(recipe => <Pressable key={recipe.id} testID={'menu-catalog-recipe-' + recipe.id} accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })}
           disabled={busy} onPress={() => open({ kind: 'recipe', recipe })} style={styles.discoveryRow}>
-          <View style={styles.mealSymbol}><Utensils size={20} color={c.primary} strokeWidth={1.7} /></View><View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{plural('menus.minutesPeople', servings, { minutes: formatNumber(recipe.minutes) })}</Text></View><ChevronRight color={c.primary} size={18} />
+          <View style={styles.mealSymbol}><Utensils size={20} color={c.primary} strokeWidth={1.7} /></View><View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{recipeMeta(recipe, servings)}</Text></View><ChevronRight color={c.primary} size={18} />
         </Pressable>)}
+        {visibleRecipes.length > RECIPE_PAGE_SIZE && <View style={{ gap: 10, marginBottom: 16 }}>
+          <Text accessibilityRole="status" testID="menu-catalog-shown" style={ui.note}>{t('catalogV83Ui.shownRecipes', { shown: formatNumber(Math.min(catalogLimit, visibleRecipes.length)), total: formatNumber(visibleRecipes.length) })}</Text>
+          {catalogLimit < visibleRecipes.length && <Button label={t('catalogV83Ui.showMoreRecipes')} testID="show-more-recipes" secondary disabled={busy}
+            onPress={() => setCatalogLimit(value => value + RECIPE_PAGE_SIZE)} />}
+        </View>}
       </>}
       <Pressable accessibilityRole="button" accessibilityLabel={t("menus.importText")} testID="import-text" disabled={busy}
         onPress={() => { setIssues([]); open({ kind: 'text' }); }} style={styles.discoveryRow}>
@@ -373,9 +389,10 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
             <Choice label={t("menus.newList")} a11y={t("menus.newListA11y")} selected={targetId === null} disabled={busy} onPress={() => chooseTarget(null)} /></View>
           {targetId === null ? <Field label={t("menus.newListName")} value={newListName} maxLength={80} editable={!busy} onChangeText={setNewName} hint={t("menus.newListHint")} /> : <Text style={[ui.note, { marginBottom: 16 }]}>{t('menus.destinationInfo', { name: target?.name ?? t('menus.destinationNotAvailable') })}</Text>}
           <Notice title={t("menus.reviewNoticeTitle")} text={t("menus.reviewNoticeText")} />
-        </> : panel?.kind === 'recipe' ? <>
-          <Text accessibilityRole="header" style={styles.flowTitle}>{localizedRecipe(panel.recipe, t).title}</Text>
-          <Pill label={plural('menus.recipePill', recipeServings, { minutes: formatNumber(panel.recipe.minutes) })} />
+        </> : panel?.kind === 'recipe' && detailedRecipe ? <>
+          <Text accessibilityRole="header" style={styles.flowTitle}>{detailedRecipe.title}</Text>
+          <Pill label={recipeMeta(panel.recipe, recipeServings, true)} />
+          {panel.recipe.id.startsWith('JJ-') && <Text testID="recipe-time-scope" style={[ui.note, { marginTop: 10 }]}>{t('catalogV83Ui.timeScope')}</Text>}
           <Card style={styles.servingsCard}>
             <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{t('flow.servings')}</Text><Text style={ui.note}>{t('flow.servingsHint')}</Text></View>
             <View style={styles.counter}>
@@ -385,10 +402,16 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
             </View>
           </Card>
           <Section title={t("menus.ingredientsTitle")} />
-          {scaleRecipe(panel.recipe, recipeServings).map((ingredient, index) => <View key={index} style={styles.ingredientLine}><Text style={[ui.body, { flex: 1 }]}>{translateIngredientName(ingredient.name, t)}</Text><Text style={[ui.strong, { textAlign: 'right' }]}>{formatQuantity(ingredient.quantityMilli)} {unitLabel(ingredient.unit)}</Text>{ingredient.rounded && <Text style={[ui.note, { width: '100%' }]}>{t("menus.roundNoteLong")}</Text>}</View>)}
+          {scaledRecipeIngredients.map((ingredient, index) => <View key={index} style={styles.ingredientLine}><Text style={[ui.body, { flex: 1 }]}>{detailedRecipe.ingredients[index]?.name ?? translateIngredientName(ingredient.name, t)}</Text><Text style={[ui.strong, { textAlign: 'right' }]}>{formatQuantity(ingredient.quantityMilli)} {unitLabel(ingredient.unit)}</Text>{panel.recipe.id.startsWith('JJ-') && ingredient.note && <Text style={[ui.note, { width: '100%' }]}>{detailedRecipe.ingredients[index]?.note ?? translateIngredientNote(ingredient.note, t)}</Text>}{ingredient.rounded && <Text style={[ui.note, { width: '100%' }]}>{t("menus.roundNoteLong")}</Text>}</View>)}
+          {detailedRecipe.unmeasuredIngredients?.map((ingredient, index) => <View key={'unmeasured-' + index} testID="recipe-unmeasured-ingredient" style={styles.ingredientLine}>
+            <Text style={[ui.body, { width: '100%' }]}>{ingredient.name}</Text>
+            <Text style={[ui.note, { width: '100%' }]}>{t('catalogV83Ui.toTaste')}</Text>
+            {!!ingredient.note && <Text style={[ui.note, { width: '100%' }]}>{ingredient.note}</Text>}
+          </View>)}
           <Section title={t("menus.stepsTitle")} />
-          {localizedRecipe(panel.recipe, t).steps.map((step, index) => <View key={index} style={styles.step}><Text style={styles.stepNumber}>{formatNumber(index + 1)}</Text><Text style={[ui.body, { flex: 1 }]}>{step}</Text></View>)}
-          <View style={{ marginTop: 19 }}><Notice title={t("menus.allergensTitle")} text={localizedRecipe(panel.recipe, t).allergenNote} /></View>
+          {detailedRecipe.steps.map((step, index) => <View key={index} style={styles.step}><Text style={styles.stepNumber}>{formatNumber(index + 1)}</Text><Text style={[ui.body, { flex: 1 }]}>{step}</Text></View>)}
+          {!!detailedRecipe.editorialNotes?.length && <View testID="recipe-editorial-notes" style={{ marginTop: 10 }}><Notice title={t('catalogV83Ui.editorialTitle')} text={detailedRecipe.editorialNotes.join('\n\n')} /></View>}
+          <View style={{ marginTop: 19 }}><Notice title={t("menus.allergensTitle")} text={detailedRecipe.allergenNote} /></View>
         </> : panel?.kind === 'proposal' ? <>
           <View style={{ gap: 12 }}>
             <Text style={ui.body}>{t('menuFilters.proposalHelp')}</Text>
@@ -397,14 +420,19 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
               return <Card key={id} style={{ gap: 5 }}>
                 <Text style={ui.note}>{day(index)}</Text>
                 <Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text>
-                <Text style={ui.note}>{plural('menus.minutesPeople', panel.plan.servings, { minutes: formatNumber(recipe.minutes) })}</Text>
+                <Text style={ui.note}>{recipeMeta(recipe, panel.plan.servings)}</Text>
               </Card>;
             })}
           </View>
         </> : panel?.kind === 'replace' && meal.plan ? <>
           <Text style={[ui.note, { marginBottom: 18 }]}>{t("menus.replaceIntro")}</Text>
           {replacementRecipes.length === 0 && <Notice title={t('menuFilters.reviewFilters')} text={t('menuFilters.noReplacement')} />}
-          <View style={{ gap: 12 }}>{replacementRecipes.map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={meal.busy} icon={BookOpen} onPress={() => { try { if (meal.plan) void savePlan(replaceMeal(meal.plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
+          <View style={{ gap: 12 }}>{replacementRecipes.slice(0, replacementLimit).map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={meal.busy} icon={BookOpen} onPress={() => { try { if (meal.plan) void savePlan(replaceMeal(meal.plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
+          {replacementRecipes.length > RECIPE_PAGE_SIZE && <View style={{ gap: 10, marginTop: 16 }}>
+            <Text accessibilityRole="status" style={ui.note}>{t('catalogV83Ui.shownRecipes', { shown: formatNumber(Math.min(replacementLimit, replacementRecipes.length)), total: formatNumber(replacementRecipes.length) })}</Text>
+            {replacementLimit < replacementRecipes.length && <Button label={t('catalogV83Ui.showMoreRecipes')} testID="show-more-replacement-recipes" secondary disabled={busy}
+              onPress={() => setReplacementLimit(value => value + RECIPE_PAGE_SIZE)} />}
+          </View>}
         </> : null}
       </>}
     </MenuPanel>

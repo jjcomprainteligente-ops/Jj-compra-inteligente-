@@ -1,3 +1,5 @@
+> **Catálogo V83 · 12/11/2026:** ya se recibieron las 150 recetas. La [entrega V83](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md) incorpora 120 y conserva las siete anteriores; las otras 30 permanecen retenidas por sus estados editoriales. Esta guía conserva los pasos e informes de la entrega anterior; las referencias siguientes a recetas pendientes corresponden a aquel momento.
+
 # Prueba iPhone del recorrido diario
 
 Preparación del 11/11/2026 sobre la aplicación existente. La prioridad fijada por el propietario es **menú → revisión de ingredientes → lista → compra → presupuesto y gasto confirmado**. Esta entrega conserva Verde Mercado Premium, el logotipo oficial, los cuatro idiomas y el guardado local; no rehace las pantallas ni activa cuentas o sincronización.

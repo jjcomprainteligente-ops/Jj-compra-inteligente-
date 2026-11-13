@@ -56,7 +56,7 @@ test('V2 abre la categoría y el catálogo desde Inicio sin guardar una compra n
   await page.getByRole('button', { name: 'Descubrir recetas', exact: true }).click();
   await expect(page.getByTestId('tab-menus')).toHaveAttribute('aria-selected', 'true');
   await expect(page.getByTestId('menus-section-discover')).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(7);
+  await expect(page.getByRole('button', { name: /^Receta de / })).toHaveCount(20);
   await expect(page.getByRole('button', { name: 'Receta de Arroz con verduras', exact: true })).toBeVisible();
   expect(await businessSnapshot(page)).toEqual(before);
   expect(await page.evaluate(key => localStorage.getItem(key), menusKey)).toBeNull();

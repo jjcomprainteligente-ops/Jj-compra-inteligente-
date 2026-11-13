@@ -1,0 +1,29 @@
+{
+  "startedAt": "2026-11-12T15:23:08.122Z",
+  "finishedAt": "2026-11-12T15:37:22.789Z",
+  "method": "Chromium browser contexts at CSS 375×667, 430×932 and 1280×1000; not physical iPhone, native iOS or Safari",
+  "scope": "Entire Playwright suite against the selected web export; original 120 captures plus 300 inventory captures (16 screens and 9 labelled examples across 4 languages and 3 CSS sizes); not pixel-level design approval",
+  "nativeChecksPending": [
+    "Physical iPhone and Android",
+    "VoiceOver/TalkBack",
+    "Dynamic Type",
+    "Native keyboard, gestures and safe areas"
+  ],
+  "suiteStatistics": {
+    "startTime": "2026-11-12T15:23:08.793Z",
+    "duration": 852818.1190000001,
+    "expected": 298,
+    "skipped": 24,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suitePassed": true,
+  "interrupted": false,
+  "completeMatrix": true,
+  "screenshots": 120,
+  "runtimeErrors": [],
+  "failedVisualChecks": [],
+  "protectedArtifactsUnchanged": true,
+  "inventorySceneCount": 300,
+  "rawReportSha256": "5399ca93f5d3e89f359668fd0e81b4594daa038d559112a325cca8ac2a14035e"
+}

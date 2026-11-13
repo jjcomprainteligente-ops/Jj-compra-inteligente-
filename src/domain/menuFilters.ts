@@ -94,13 +94,18 @@ function validateCatalog(recipes: readonly Recipe[]): void {
   const ids = new Set<string>();
   for (const recipe of recipes) {
     if (!recipe || typeof recipe !== 'object' || !cleanName(recipe.id) || recipe.id !== recipe.id.trim() || ids.has(recipe.id)
-      || !cleanName(recipe.title) || !Number.isInteger(recipe.minutes) || recipe.minutes < 1 || recipe.minutes > 1440
+      || !cleanName(recipe.title) || (recipe.minutes !== null && (!Number.isInteger(recipe.minutes) || recipe.minutes < 1 || recipe.minutes > 1440))
       || !Array.isArray(recipe.ingredients) || recipe.ingredients.length === 0 || recipe.ingredients.length > 2000
       || Array.from(recipe.ingredients).some((ingredient: unknown) => !ingredient || typeof ingredient !== 'object'
         || !('name' in ingredient) || !cleanName(ingredient.name))) {
       throw new MenuFilterError('menuFilters.catalogInvalid');
     }
-    ingredientCount += recipe.ingredients.length;
+    if (recipe.unmeasuredIngredients !== undefined && (!Array.isArray(recipe.unmeasuredIngredients)
+      || recipe.unmeasuredIngredients.length > 2000 || Array.from(recipe.unmeasuredIngredients).some((ingredient: unknown) =>
+        !ingredient || typeof ingredient !== 'object' || !('name' in ingredient) || !cleanName(ingredient.name)))) {
+      throw new MenuFilterError('menuFilters.catalogInvalid');
+    }
+    ingredientCount += recipe.ingredients.length + (recipe.unmeasuredIngredients?.length ?? 0);
     if (ingredientCount > MAX_TOTAL_INGREDIENTS) throw new MenuFilterError('menuFilters.catalogInvalid');
     try { scaleRecipe(recipe, recipe.baseServings); }
     catch { throw new MenuFilterError('menuFilters.catalogInvalid'); }
@@ -110,7 +115,7 @@ function validateCatalog(recipes: readonly Recipe[]): void {
 
 function ingredientOptions(recipes: readonly Recipe[]): { key: string; name: string }[] {
   const options = new Map<string, string>();
-  for (const recipe of recipes) for (const ingredient of recipe.ingredients) {
+  for (const recipe of recipes) for (const ingredient of [...recipe.ingredients, ...recipe.unmeasuredIngredients ?? []]) {
     const key = normalizeIngredientName(ingredient.name);
     if (!options.has(key)) options.set(key, ingredient.name.trim());
   }
@@ -156,8 +161,8 @@ export function filterRecipes(recipes: readonly Recipe[], filters: MenuFilters):
   const selected = validatedFilters(filters, recipes);
   const excluded = new Set(selected.excludedIngredients);
   return recipes.filter(recipe => {
-    if (selected.maxMinutes !== null && recipe.minutes > selected.maxMinutes) return false;
-    if (recipe.ingredients.some(ingredient => excluded.has(normalizeIngredientName(ingredient.name)))) return false;
+    if (selected.maxMinutes !== null && (recipe.minutes === null || recipe.minutes > selected.maxMinutes)) return false;
+    if ([...recipe.ingredients, ...recipe.unmeasuredIngredients ?? []].some(ingredient => excluded.has(normalizeIngredientName(ingredient.name)))) return false;
     if (selected.preference === 'any') return true;
     const reviewed = reviewedPreferences.get(recipe.id);
     if (!reviewed || reviewed.signature !== ingredientSignature(recipe.ingredients.map(ingredient =>
