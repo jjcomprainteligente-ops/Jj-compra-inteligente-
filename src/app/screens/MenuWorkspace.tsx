@@ -468,7 +468,7 @@ const styles = StyleSheet.create({
   discoveryRow: { minHeight: 76, flexDirection: 'row', alignItems: 'center', gap: 12, borderWidth: 1, borderColor: c.line, borderRadius: 16, paddingVertical: 12, paddingHorizontal: 12, marginBottom: 10, backgroundColor: c.surface },
   localNote: { fontFamily: f.regular, fontSize: 13, lineHeight: 21, color: c.muted, marginTop: 8 },
   options: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-  choice: { minHeight: 44, maxWidth: '100%', paddingHorizontal: 12, paddingVertical: 11, borderRadius: 10, borderWidth: 1, borderColor: '#748268', backgroundColor: '#fff', justifyContent: 'center' }, choiceText: { fontFamily: f.semi, fontSize: 13, lineHeight: 20, color: c.deep },
+  choice: { minHeight: 44, minWidth: 44, maxWidth: '100%', paddingHorizontal: 12, paddingVertical: 11, borderRadius: 10, borderWidth: 1, borderColor: '#748268', backgroundColor: '#fff', justifyContent: 'center' }, choiceText: { fontFamily: f.semi, fontSize: 13, lineHeight: 20, color: c.deep },
   reviewCard: { marginTop: 12, padding: 12 }, ingredientSummary: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }, includeRow: { minHeight: 48, minWidth: 150, flex: 1, flexDirection: 'row', alignItems: 'center', gap: 11 }, check: { width: 28, height: 28, borderRadius: 9, borderWidth: 1.5, borderColor: '#748268', alignItems: 'center', justifyContent: 'center' },
   reviewGroup: { marginBottom: 16 }, groupHeading: { borderRadius: 16, padding: 14, gap: 7 }, groupTitle: { fontFamily: f.bold, fontSize: 18, lineHeight: 26, color: c.deep },
   detailAction: { minHeight: 44, minWidth: 44, paddingHorizontal: 4, justifyContent: 'center', alignItems: 'center' }, duplicate: { padding: 12, borderRadius: 12, backgroundColor: c.neutral, gap: 10 },

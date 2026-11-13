@@ -100,7 +100,7 @@ export function ProductScreen({ list, item, busy, onEdit, onBack }: {
 
 const styles = StyleSheet.create({
   flex: { flex: 1, gap: 3 }, filters: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginTop: 10, marginBottom: 20 },
-  filter: { minHeight: 44, paddingHorizontal: 12, paddingVertical: 11, borderWidth: 1, borderColor: c.line, borderRadius: 10, justifyContent: 'center', backgroundColor: c.surface },
+  filter: { minHeight: 44, minWidth: 44, paddingHorizontal: 12, paddingVertical: 11, borderWidth: 1, borderColor: c.line, borderRadius: 10, justifyContent: 'center', backgroundColor: c.surface },
   selectedFilter: { backgroundColor: c.primary, borderColor: c.primary }, filterText: { color: c.ink, fontFamily: f.semi, fontSize: 13, lineHeight: 20 },
   selectedFilterText: { color: '#fff' }, resultHeading: { flexDirection: 'row', alignItems: 'center', gap: 9, marginBottom: 14 },
   result: { minHeight: 82, flexDirection: 'row', alignItems: 'center', gap: 12, borderRadius: 16, borderWidth: 1, borderColor: c.line, backgroundColor: c.surface, padding: 12, marginBottom: 10 },

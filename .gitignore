@@ -70,3 +70,6 @@ design/v2/evidence/run-2026-11-12*/
 referencias/recetas-v83/originales/
 !referencias/recetas-v83/fuente-publica/JJ_V83_120_RECETAS_FUENTE_PUBLICA.zip
 __pycache__/
+
+# Auditorías de calidad: capturas y mediciones locales, sin datos del propietario en Git.
+design/quality/local-evidence/

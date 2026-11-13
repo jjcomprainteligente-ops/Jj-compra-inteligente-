@@ -1,0 +1,119 @@
+{
+  "generatedAt": "2026-11-13T14:03:14.049444+00:00",
+  "baseCommit": "5795f299e35186f372c325299d8a6828993df720",
+  "branch": "codex/cierre-seguridad-y-calidad",
+  "publication": {
+    "githubCommit": null,
+    "remoteCiRun": null,
+    "vercelDeployment": null,
+    "status": "pending; publication evidence belongs to the subsequent release record"
+  },
+  "privacy": "Sanitized public summaries only; raw screenshots, traces and browser state remain outside Git.",
+  "scope": "Known npm advisories and bounded compatibility verification of the existing Expo SDK 58 application",
+  "npmAudit": {
+    "observedAt": "2026-11-13T13:54:51.799225+00:00",
+    "before": {
+      "info": 0,
+      "low": 0,
+      "moderate": 3,
+      "high": 0,
+      "critical": 0,
+      "total": 3
+    },
+    "after": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "inventory": {
+      "prod": 494,
+      "dev": 50,
+      "optional": 39,
+      "peer": 0,
+      "peerOptional": 0,
+      "total": 566
+    },
+    "advisory": "https://github.com/advisories/GHSA-g3hv-75wg-m249",
+    "advisoryCount": 1,
+    "previousAffectedPackageEntries": 3,
+    "evidence": {
+      "artifact": "npm-audit-closeout.json",
+      "sha256": "bfd8a731b2ea97621a9a05c72e2d93e9d23534ad7732b065bde071c284d076b4",
+      "rawEvidencePublished": false
+    }
+  },
+  "changes": {
+    "expo": {
+      "before": "58.0.24",
+      "after": "58.0.25",
+      "sdkMajor": 58
+    },
+    "override": {
+      "@expo/fingerprint@0.21.10": {
+        "minimatch": "11.0.8"
+      }
+    },
+    "consumer": "@expo/fingerprint@0.21.10",
+    "minimatch": {
+      "before": "10.2.6",
+      "after": "11.0.8"
+    },
+    "newTransitivePackage": "@isaacs/nonrecursive-glob-match@1.1.0",
+    "forcedAuditFixOrSdkDowngrade": false
+  },
+  "boundedCompatibility": {
+    "matcherComparison": {
+      "previous": "Minimatch",
+      "patched": "Minimatch",
+      "previousVersion": "10.2.6",
+      "patchedVersion": "11.0.8",
+      "fingerprintPathModuleSha256": "9fda9128a2961e8cfd708f0a473a201d463d21cb7bfa8bb41c4ce2604a23dfa6",
+      "patterns": 48,
+      "paths": 102,
+      "optionSets": 4,
+      "directAssertions": 19584,
+      "adapterAssertions": 8160,
+      "directoryAssertions": 4080,
+      "semanticMismatches": 0,
+      "comparedUsedApi": [
+        "Minimatch constructor",
+        "match()",
+        "pattern",
+        "negate",
+        "actual Expo Path helper functions"
+      ],
+      "limits": "Bounded representative/default Expo ignore patterns; not proof of equivalence for all arbitrary globs. v11 intentionally changes its internal set representation, unused by this consumer."
+    },
+    "totalComparisons": 31824,
+    "fingerprintFixture": {
+      "beforeHash": "b88978baf3c3dca506ed641b9a2a8f527b2411fa",
+      "afterHash": "b88978baf3c3dca506ed641b9a2a8f527b2411fa",
+      "sourcesBefore": 17,
+      "sourcesAfter": 17,
+      "fakeProject": true,
+      "nativeBuildStarted": false,
+      "scope": "Override-only comparison on Expo 58.0.24; the Expo 58.0.25 patch is separately covered by compatibility checks, unit tests and platform exports."
+    }
+  },
+  "installation": {
+    "command": "npm ci --ignore-scripts",
+    "ciNodeMajor": 24,
+    "packageLockSha256": "c4e900f8a079693bcd960ca93d4fd91f5c3a52715f1bab764557312314615a15"
+  },
+  "expoCompatibility": {
+    "passed": true,
+    "evidence": {
+      "artifact": "expo-closeout.log",
+      "sha256": "8152e1dfe2839254529bd71a5c9d6f299c93bc1132025c5930dcc5dc042489db",
+      "rawEvidencePublished": false
+    }
+  },
+  "limits": [
+    "Zero known npm advisories is not a guarantee of application security.",
+    "Matcher fixtures cover the API used by Expo and representative patterns; not all possible glob inputs.",
+    "Export success does not prove native device behavior."
+  ]
+}
