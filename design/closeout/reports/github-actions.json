@@ -1,0 +1,108 @@
+{
+  "generatedAt": "2026-11-13T14:09:19.057914+00:00",
+  "repository": "jjcomprainteligente-ops/Jj-compra-inteligente-",
+  "sourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+  "workflow": ".github/workflows/check.yml",
+  "workflowSha256": "d38857ef9da85d4729fe0d0d9d8e00e86d4f826087646cd4238c4f34dd6e408a",
+  "run": {
+    "id": 43439536526,
+    "name": "Checks",
+    "status": "completed",
+    "conclusion": "success",
+    "event": "pull_request",
+    "html_url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526",
+    "created_at": "2026-11-13T14:06:02Z",
+    "updated_at": "2026-11-13T14:06:47Z",
+    "head_sha": "096330d2b3a3123dc759a1ef0a6123aa67a0d249"
+  },
+  "jobs": [
+    {
+      "id": 131933230968,
+      "name": "app",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Check out source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Use Node.js 24",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install reviewed lockfile without lifecycle scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Reproduce the public recipe selection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Check types",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Run unit tests with bounded workers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Audit dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Verify Expo compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Build the web application",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Post Use Node.js 24",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        },
+        {
+          "name": "Post Check out source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21
+        }
+      ]
+    }
+  ],
+  "scope": "Actual remote GitHub Actions pull-request run for the compiled-source commit. Separate from local browser matrices and later documentation-only closure.",
+  "privacy": "No logs, credentials, environment values or browser state are published."
+}

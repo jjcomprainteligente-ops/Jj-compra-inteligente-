@@ -84,4 +84,19 @@ No se reintenta por otro canal, no se crean usuarios ni se envían correos. La a
 
 Una colección personal editable de recetas y una restauración automática de backups son posibles ampliaciones separadas. La revisión del encargo original no las identifica como requisitos obligatorios omitidos: no se utilizan para afirmar que la integración V83 esté incompleta.
 
-La última entrega publicada acreditada sigue siendo [V83, PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), con fuente compilada `0ea49b597f45b401747e20d7d880c07f670b3073`. Su preview protegida y su caducidad pertenecen a esa entrega anterior; no acreditan los cambios descritos aquí.
+## Publicación comprobada de esta entrega
+
+El código está publicado en [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), commit de origen `096330d2b3a3123dc759a1ef0a6123aa67a0d249`, árbol `29c3a5f5b8ede861f99af80d4a8206f1eb5d4d6a`. [GitHub Actions](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526) terminó correctamente. El despliegue `dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3` está `READY` en `staging`, conserva `all_except_custom_domains` y declara ese mismo commit.
+
+La verificación HTTPS pasó en **es/en/de/fr**, con **29 recursos/URLs comprobados por hash**, logotipo exacto y catálogo de **127 recetas**. También comprobó preferencia manual persistente, guardados locales, cancelación sin cambios, compartir sin notas privadas, copia de siete documentos y borrado por categoría aislado. [Informe remoto](../design/closeout/reports/hosted-verification.json) · [despliegue](../design/closeout/reports/deployment.json).
+
+El acceso temporal se entrega únicamente por la conversación y vence el **14/11/2026 a las 13:08:31 UTC**; el token no se guarda en Git. El commit de cierre solo actualiza documentación/evidencia: el compilado continúa correspondiendo al commit de origen indicado. No se publican capturas, trazas, datos del propietario ni las 30 recetas retenidas.
+
+
+## Corrección visual posterior de la misma entrega
+
+La inspección de las capturas del primer despliegue detectó que React Native Web centraba la pista sobre un área mínima de 44 px, pero dejaba el pulgar de 20 px al inicio del contenedor. La prueba negativa real midió un desfase vertical de 11,99 px. Se añade `justifyContent: center` exclusivamente en web, sin cambiar colores, dimensiones ni el componente nativo.
+
+La nueva exportación `dist-alignment` pasa web/iOS/Android y TypeScript; su JavaScript web tiene SHA-256 `c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7`. La repetición completa de calidad pasa ocho casos/296 escenas sin fallos medidos ni recomendaciones de 44 px pendientes. Las nueve pruebas de pulsación/foco pasan e incluyen ambos estados del interruptor: área 44×44 y diferencia entre centros de 0,008 px. Se ha inspeccionado la captura final.
+
+[Informe del ajuste](../design/closeout/reports/switch-alignment.json). Las matrices completas Chromium/WebKit y el benchmark anteriores conservan su alcance y hash. El nuevo commit de origen y la publicación de este ajuste se registrarán por separado tras comprobar el despliegue; el primer despliegue descrito arriba permanece conservado.

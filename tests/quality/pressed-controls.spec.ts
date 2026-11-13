@@ -121,9 +121,30 @@ test('shared controls retain visible keyboard focus after pointer paint correcti
     await page.getByTestId('start-app').click(); await page.getByTestId('tab-menus').click();
     await focusByKeyboard('icon', page.getByRole('button', { name: createTranslator('es', resources)('menus.reducePeople'), exact: true }));
     await page.getByTestId('open-notifications').click();
-    await focusByKeyboard('switch', page.getByTestId('in-app-reminders').getByRole('switch'));
+    const reminderSwitch = page.getByTestId('in-app-reminders');
+    const switchInput = reminderSwitch.getByRole('switch');
+    await focusByKeyboard('switch', switchInput);
+    for (const checked of [false, true]) {
+      if (await switchInput.isChecked() !== checked) await switchInput.click();
+      await expect(switchInput).toBeChecked({ checked });
+      await expect(switchInput).toBeEnabled();
+      const geometry = await reminderSwitch.evaluate(element => {
+        const [track, thumb] = Array.from(element.children).filter(child => child.tagName === 'DIV');
+        const bounds = element.getBoundingClientRect();
+        const trackBounds = track.getBoundingClientRect(), thumbBounds = thumb.getBoundingClientRect();
+        return { width: bounds.width, height: bounds.height,
+          trackCenterY: trackBounds.y + trackBounds.height / 2,
+          thumbCenterY: thumbBounds.y + thumbBounds.height / 2 };
+      });
+      checks.push({ kind: 'switch-alignment', checked, geometry });
+      expect(geometry.width).toBeGreaterThanOrEqual(44);
+      expect(geometry.height).toBeGreaterThanOrEqual(44);
+      expect(Math.abs(geometry.trackCenterY - geometry.thumbCenterY),
+        'Switch thumb stays vertically centered within its track at a 44px touch target').toBeLessThanOrEqual(1);
+      await page.screenshot({ path: info.outputPath(`switch-${checked ? 'on' : 'off'}-alignment.png`), animations: 'disabled' });
+    }
   } finally {
-    await fs.writeFile(info.outputPath('keyboard-focus.json'), JSON.stringify({ method: 'Real Tab traversal, no programmatic focus; Chromium CSS, not native accessibility certification.', checks }, null, 2) + '\n');
+    await fs.writeFile(info.outputPath('keyboard-focus.json'), JSON.stringify({ method: 'Real Tab traversal, no programmatic focus; switch alignment measured in both states in an isolated context; Chromium CSS, not native accessibility certification.', checks }, null, 2) + '\n');
     await context.close();
   }
 });

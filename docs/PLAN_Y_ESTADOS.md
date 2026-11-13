@@ -493,3 +493,13 @@ Tras esa matriz siguen pendientes de construcción/validación BFF/cuentas, RPC,
 ### Seguridad y calidad · verificación final local, 13/11/2026
 
 Exportación final `dist-closeout` correcta para web/iOS/Android; JavaScript web SHA-256 `f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b`. El filtro inglés corregido pasó **2/2 casos, 74 escenas a 375×754 y 430×932**, sin fallos medidos ni observaciones bajo 44 px. Se conserva un intento previo que no llegó a iniciar Chromium por el sandbox del entorno; no se cuenta como ejecución de la aplicación. La fuente de trabajo pasa 981 unitarias; la reproducción limpia con dos workers pasa 981/981 en 27 archivos y export web. La matriz completa/benchmark permanecen identificados con su fuente anterior `349e6e…`; la última diferencia de app es solo el ancho mínimo del filtro. Continúan pendientes GitHub, ejecución CI remota, nueva preview protegida y verificación del contenido publicado. [Informe actualizado](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md).
+
+
+## Cierre publicado de seguridad y calidad · 13/11/2026
+
+- [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), fuente `096330d2b3a3123dc759a1ef0a6123aa67a0d249` y árbol `29c3a5f5b8ede861f99af80d4a8206f1eb5d4d6a`. [CI remota](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526) correcta para ese commit.
+- Export final web `f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b`; ajuste final inglés comprobado en dos casos/74 escenas, sin fallos medidos ni recomendaciones de 44 px pendientes. La matriz completa previa conserva su hash y su alcance.
+- Preview `dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3`, `READY`, `staging`, protección conservada. Verificación HTTPS correcta en cuatro idiomas y 29 recursos/URLs por hash; catálogo de 127 recetas. [Informes](../design/closeout/reports/deployment.json).
+- Enlace temporal solo en conversación, caduca 14/11/2026 13:08:31 UTC. Cierre documental separado, sin cambios de app, lockfile, almacenamiento, logo ni datos del propietario.
+- B07 sigue sin resultado del control nativo; no se cuentan aserciones. Prueba física y 30 recetas retenidas siguen pendientes. No se afirma cierre de B00–B09 ni seguridad absoluta.
+- Nueva instrucción: verificar las aportaciones recientes de tiendas en GitHub y continuar en una entrega separada, preservando lo existente. No se activa una fuente comercial por su mera presencia en un repositorio.

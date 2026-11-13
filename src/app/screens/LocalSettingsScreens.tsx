@@ -141,7 +141,8 @@ export function NotificationsScreen({ store, lists, mealPlan, onOpenList, onMenu
         testID="in-app-reminders" accessibilityLabel={t('localSettings.inAppReminders')}
         accessibilityHint={t('localSettings.inAppOnly')} disabled={disabled} value={store.data.inAppReminders}
         onValueChange={value => { void store.commit(previous => ({ ...previous, inAppReminders: value })); }}
-        trackColor={{ false: c.muted, true: c.primary }} thumbColor={c.surface} style={styles.reminderSwitch} />
+        trackColor={{ false: c.muted, true: c.primary }} thumbColor={c.surface}
+        style={[styles.reminderSwitch, Platform.OS === 'web' && styles.webReminderSwitch]} />
     </View>
     <Text style={[ui.note, styles.inAppHelp]}>{t('localSettings.inAppOnly')}</Text>
     <View style={ui.row} accessibilityLabel={`${t('localSettings.offers')}. ${t('localSettings.unavailable')}. ${t('localSettings.noSources')}`}>
@@ -174,4 +175,5 @@ const styles = StyleSheet.create({
   notices: { marginTop: 4, marginBottom: 14 },
   inAppHelp: { marginTop: 2, marginBottom: 15, paddingHorizontal: 2 },
   reminderSwitch: { minHeight: 44, minWidth: 44 },
+  webReminderSwitch: { justifyContent: 'center' },
 });
