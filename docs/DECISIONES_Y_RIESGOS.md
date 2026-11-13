@@ -520,3 +520,14 @@ Exportación final `dist-closeout` correcta para web/iOS/Android; JavaScript web
 - Origen final `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`, [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), [CI correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596). Ajuste web del pulgar centrado, con prueba negativa previa y positiva sobre compilado; 8/8 calidad y 9/9 pulsación/foco. Los informes anteriores mantienen sus hashes y alcance.
 - Preview `dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz`, READY/staging/protección conservada; cuatro idiomas y 29 recursos/URLs comprobados por hash. Catálogo 127, logo exacto y siete documentos locales preservados.
 - Acceso temporal hasta 14/11/2026 a las 14:23:22 UTC, solo en conversación. [Despliegue final](../design/closeout/reports/deployment.json). Cierre documental sin cambios de app/dependencias. B07 y prueba física siguen abiertos.
+
+
+## B06.1 · Auditoría real de fuentes, entrega documental · 13/11/2026
+
+El plan aprobado del PR #16 pide expresamente «Guardar diagnóstico reproducible y conclusiones en PR documental». Este registro contiene solo documentación y conteos; no cambia aplicación, dependencias, BD ni producción y no crea preview B06. [Informe reproducible](auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md) · [revisión del repositorio](auditorias/b06-1-2026-11-13/REVISION_REPOSITORIO_TIENDAS_2026-11-13.md).
+
+- Leídos PR #16 (`95686b3`) y PR #11 (`2562d98`), issues #13/#14/#17/#18 y contrato. Las seis tiendas ya están en la app; la nueva necesidad son fuentes de precios dentro de JJ. No se fusiona el código no probado del PR #11.
+- tuTándem: HTTP 200, esquema correcto, 1.471 filas/28 productos/cinco cadenas; observación más reciente 03/11/2026, diez días. Medianas nacionales sin GTIN/tienda/localización. CC BY 4.0 declarada, con atribución y revisión de procedencia. CORS observado no permite fallback directo desde Vercel.
+- Open Prices: API/documentación/export 200; 27 observaciones históricas en siete lugares Tenerife, 0 del 07–13/11. Export completo de 7.881 lugares coincide. ODbL exige atribución y condiciones de base derivada; no mezclar automáticamente con datos propietarios ni derechos de imágenes.
+- Ambas fuentes `needs_review`, `enabled=false` para PVP local actual. No hay cesta local completa ni ranking cercano acreditados. B06.2 queda pendiente de revisión de fuente/licencia/alcance; posibles indicadores históricos separados, sin llamarlos PVP Tenerife vigente. Borradores comerciales sin enviar.
+- Evidencia pública saneada: URL/HTTP/UTC/hash/contadores; sin cuerpos completos, filas de precios, imágenes, contribuidores ni localizaciones detalladas. Evidencia original privada conservada.
