@@ -151,5 +151,11 @@
   "limits": [
     "No physical iPhone or Android validation is claimed.",
     "No release approval or pixel-level design approval is inferred from browser checks."
-  ]
+  ],
+  "snapshotScope": {
+    "compiledSourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+    "subsequentSwitchCorrection": "switch-alignment.json",
+    "finalReleaseRecord": "deployment.json",
+    "note": "Original verification facts and hashes preserved; the subsequent web-only Switch alignment has its own tested export."
+  }
 }

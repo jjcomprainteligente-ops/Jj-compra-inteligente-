@@ -1,23 +1,23 @@
 {
-  "generatedAt": "2026-11-13T14:09:19.057914+00:00",
+  "generatedAt": "2026-11-13T15:24:03.598974+00:00",
   "repository": "jjcomprainteligente-ops/Jj-compra-inteligente-",
-  "sourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+  "sourceCommit": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
   "workflow": ".github/workflows/check.yml",
   "workflowSha256": "d38857ef9da85d4729fe0d0d9d8e00e86d4f826087646cd4238c4f34dd6e408a",
   "run": {
-    "id": 43439536526,
+    "id": 43451697596,
     "name": "Checks",
     "status": "completed",
     "conclusion": "success",
     "event": "pull_request",
-    "html_url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526",
-    "created_at": "2026-11-13T14:06:02Z",
-    "updated_at": "2026-11-13T14:06:47Z",
-    "head_sha": "096330d2b3a3123dc759a1ef0a6123aa67a0d249"
+    "html_url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596",
+    "created_at": "2026-11-13T15:20:52Z",
+    "updated_at": "2026-11-13T15:22:28Z",
+    "head_sha": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841"
   },
   "jobs": [
     {
-      "id": 131933230968,
+      "id": 131975208369,
       "name": "app",
       "status": "completed",
       "conclusion": "success",
@@ -103,6 +103,17 @@
       ]
     }
   ],
-  "scope": "Actual remote GitHub Actions pull-request run for the compiled-source commit. Separate from local browser matrices and later documentation-only closure.",
-  "privacy": "No logs, credentials, environment values or browser state are published."
+  "previousSuccessfulSourceRun": {
+    "id": 43439536526,
+    "name": "Checks",
+    "status": "completed",
+    "conclusion": "success",
+    "event": "pull_request",
+    "html_url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526",
+    "created_at": "2026-11-13T14:06:02Z",
+    "updated_at": "2026-11-13T14:06:47Z",
+    "head_sha": "096330d2b3a3123dc759a1ef0a6123aa67a0d249"
+  },
+  "scope": "Actual remote GitHub Actions run for final Switch-alignment compiled-source commit; later closure only changes documentation/evidence.",
+  "privacy": "No logs, secrets or environment values."
 }

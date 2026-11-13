@@ -386,5 +386,11 @@
     "Counts include repeated controls across scenes, not unique application controls",
     "Held-pointer, keyboard-focus and DOM calibration results belong to the complete pre-minWidth44 verification batch, not to a new execution of those suites on the final bundle.",
     "The full es/en/de/fr matrix was not repeated after the single final width property; English at both affected widths was repeated with 37 scenes each."
-  ]
+  ],
+  "snapshotScope": {
+    "compiledSourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+    "subsequentSwitchCorrection": "switch-alignment.json",
+    "finalReleaseRecord": "deployment.json",
+    "note": "Original verification facts and hashes preserved; the subsequent web-only Switch alignment has its own tested export."
+  }
 }

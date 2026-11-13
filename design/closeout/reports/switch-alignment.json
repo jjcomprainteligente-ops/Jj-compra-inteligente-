@@ -18,9 +18,10 @@
     "testChange": "Adds a real off/on DOM geometry assertion to the existing Tab-focus regression; maximum center offset1px."
   },
   "publication": {
-    "githubCommit": null,
-    "vercelDeployment": null,
-    "status": "pending subsequent source commit and new protected deployment; this report does not label the first preview as corrected"
+    "githubCommit": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
+    "remoteCiRun": 43451697596,
+    "vercelDeployment": "dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz",
+    "status": "Published in staging and verified; see deployment.json and hosted-verification.json"
   },
   "finding": {
     "method": "Human visual review followed by an actual browser negative regression against the preceding compiled application",

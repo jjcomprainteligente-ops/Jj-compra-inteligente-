@@ -1,48 +1,48 @@
 {
-  "id": "dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3",
-  "url": "jj-compra-inteligente-r3u34h6eo-cmj2hwhc6b-1051.vercel.app",
-  "target": "staging",
+  "id": "dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz",
+  "url": "jj-compra-inteligente-mbbymbff3-cmj2hwhc6b-1051.vercel.app",
   "readyState": "READY",
+  "target": "staging",
   "meta": {
     "githubCommitRef": "codex/cierre-seguridad-y-calidad",
-    "githubCommitSha": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
-    "githubCommitMessage": "fix: cerrar seguridad de dependencias y verificación de accesibilidad B08",
+    "githubCommitSha": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
+    "githubCommitMessage": "fix: centrar el interruptor web y comprobar su geometría",
     "githubRepo": "Jj-compra-inteligente-",
     "githubOrg": "jjcomprainteligente-ops"
   },
+  "sourceCommit": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
   "share": {
-    "createdAtUtc": "2026-11-13T14:08:31.997000+00:00",
-    "expiresAtUtc": "2026-11-14T13:08:31+00:00",
+    "createdAtUtc": "2026-11-13T15:23:22.746000+00:00",
+    "expiresAtUtc": "2026-11-14T14:23:22+00:00",
     "tokenPublishedInGit": false
   },
-  "sourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+  "sourceTree": "3d176f31b004a4125946ffd29cc771b6aad7d0ab",
   "protection": {
     "enabled": true,
     "deploymentType": "all_except_custom_domains",
     "verifiedAfterDeploy": true
   },
-  "sourceTree": "29c3a5f5b8ede861f99af80d4a8206f1eb5d4d6a",
   "upload": {
     "files": 23,
-    "bytes": 2538360,
+    "bytes": 2538858,
     "newFilesUploaded": 3,
     "existingContentAddressedFilesReused": 20,
     "scope": "Reviewed compiled web client, approved logo, fonts with their existing license notices, preview configuration and optional isolated technical brand board; no native bundles, application source, fixtures, local data or credentials."
   },
   "bundle": {
-    "file": "_expo/static/js/web/index-bcf066a36299566d2b1f8d9429ed155e.js",
-    "size": 632351,
-    "sha1": "d2f674627e40c95cde45fffe4ad42110c1c2b055",
-    "sha256": "320d5c0c131d5a3c0a46a4e51205b316df68893cfe80e39feb209d6bbbdd178f",
+    "file": "_expo/static/js/web/index-97299c8b14be0dfebc85949cf3886bd4.js",
+    "size": 632849,
+    "sha1": "e28d9189cabc58a1c70652adb7cf6b2f0f6b18ba",
+    "sha256": "86ce6bbf45979f306fd83f5524486d2b5482776cbcc2865f44fa47b68e5580b1",
     "contentEncoding": "br",
-    "decodedSize": 5157292,
-    "decodedSha1": "263fae2a8c97c473d614d94caf247bfc9f43405f",
-    "decodedSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b"
+    "decodedSize": 5159291,
+    "decodedSha1": "cb1d3393ecf60a11b5b62a8d262eb6d486e7b777",
+    "decodedSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7"
   },
   "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
   "hostedVerification": {
     "report": "hosted-verification.json",
-    "sha256": "ecfe2b1f29332f9f22e1a17841fb18dc357fa518f316d17532c083508fe7acd6",
+    "sha256": "e4c10a06739abb0dc019173c1deb607705f5fd35e36fbd1b38875a6321626007",
     "status": "passed",
     "languages": [
       "es",
@@ -55,8 +55,18 @@
   },
   "githubActions": {
     "report": "github-actions.json",
-    "sourceRun": 43439536526,
+    "sourceRun": 43451697596,
     "conclusion": "success"
   },
-  "sourceVsClosure": "This is the compiled-source commit. A subsequent documentation/evidence-only commit closes the delivery without changing the application, lockfile or compiled assets."
+  "previousDeployment": {
+    "id": "dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3",
+    "url": "jj-compra-inteligente-r3u34h6eo-cmj2hwhc6b-1051.vercel.app",
+    "sourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+    "share": {
+      "createdAtUtc": "2026-11-13T14:08:31.997000+00:00",
+      "expiresAtUtc": "2026-11-14T13:08:31+00:00",
+      "tokenPublishedInGit": false
+    }
+  },
+  "sourceVsClosure": "Final compiled-source commit. Subsequent closure changes only documentation/evidence, not app, dependencies or compiled inputs."
 }

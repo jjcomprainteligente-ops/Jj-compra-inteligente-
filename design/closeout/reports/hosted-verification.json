@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "origin": "https://jj-compra-inteligente-r3u34h6eo-cmj2hwhc6b-1051.vercel.app",
+  "origin": "https://jj-compra-inteligente-mbbymbff3-cmj2hwhc6b-1051.vercel.app",
   "source": {
-    "commit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
-    "tree": "29c3a5f5b8ede861f99af80d4a8206f1eb5d4d6a",
+    "commit": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
+    "tree": "3d176f31b004a4125946ffd29cc771b6aad7d0ab",
     "branch": "codex/cierre-seguridad-y-calidad",
     "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-"
   },
   "bundle": {
-    "file": "_expo/static/js/web/index-bcf066a36299566d2b1f8d9429ed155e.js",
-    "size": 632351,
-    "sha1": "d2f674627e40c95cde45fffe4ad42110c1c2b055",
-    "sha256": "320d5c0c131d5a3c0a46a4e51205b316df68893cfe80e39feb209d6bbbdd178f",
+    "file": "_expo/static/js/web/index-97299c8b14be0dfebc85949cf3886bd4.js",
+    "size": 632849,
+    "sha1": "e28d9189cabc58a1c70652adb7cf6b2f0f6b18ba",
+    "sha256": "86ce6bbf45979f306fd83f5524486d2b5482776cbcc2865f44fa47b68e5580b1",
     "contentEncoding": "br",
-    "decodedSize": 5157292,
-    "decodedSha1": "263fae2a8c97c473d614d94caf247bfc9f43405f",
-    "decodedSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b"
+    "decodedSize": 5159291,
+    "decodedSha1": "cb1d3393ecf60a11b5b62a8d262eb6d486e7b777",
+    "decodedSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7"
   },
   "expectedLogoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
-  "startedAt": "2026-11-13T14:08:50.118Z",
+  "startedAt": "2026-11-13T15:24:02.695Z",
   "status": "passed",
   "viewport": {
     "width": 390,
@@ -153,15 +153,15 @@
   ],
   "files": [
     {
-      "path": "/_expo/static/js/web/index-bcf066a36299566d2b1f8d9429ed155e.js",
+      "path": "/_expo/static/js/web/index-97299c8b14be0dfebc85949cf3886bd4.js",
       "status": 200,
-      "size": 5157292,
-      "sha1": "263fae2a8c97c473d614d94caf247bfc9f43405f",
-      "sha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+      "size": 5159291,
+      "sha1": "cb1d3393ecf60a11b5b62a8d262eb6d486e7b777",
+      "sha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
       "contentEncoding": "br",
-      "packagedTransferSize": 632351,
-      "packagedTransferSha1": "d2f674627e40c95cde45fffe4ad42110c1c2b055",
-      "packagedTransferSha256": "320d5c0c131d5a3c0a46a4e51205b316df68893cfe80e39feb209d6bbbdd178f",
+      "packagedTransferSize": 632849,
+      "packagedTransferSha1": "e28d9189cabc58a1c70652adb7cf6b2f0f6b18ba",
+      "packagedTransferSha256": "86ce6bbf45979f306fd83f5524486d2b5482776cbcc2865f44fa47b68e5580b1",
       "contentType": "application/javascript; charset=utf-8"
     },
     {
@@ -312,8 +312,8 @@
       "path": "/index.html",
       "status": 200,
       "size": 1222,
-      "sha1": "82b3afce0d10aee329f4e46b2cb5b998bcdbb222",
-      "sha256": "bdc88125ce91d551e71abd39ede39b4fac1727bb652a03f042e73c4ec8cc95c9",
+      "sha1": "388d05b31259d056b7a50ae32d5f9ae97e34d235",
+      "sha256": "5f02d5dcf4b852a58191f74d9a3a718742bf5a8e233b8cc5b134fdbf8f85c19a",
       "contentType": "text/html; charset=utf-8"
     },
     {
@@ -390,5 +390,5 @@
     }
   ],
   "errors": [],
-  "finishedAt": "2026-11-13T14:09:20.832Z"
+  "finishedAt": "2026-11-13T15:24:34.828Z"
 }

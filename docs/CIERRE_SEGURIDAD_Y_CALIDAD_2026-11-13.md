@@ -84,7 +84,7 @@ No se reintenta por otro canal, no se crean usuarios ni se envían correos. La a
 
 Una colección personal editable de recetas y una restauración automática de backups son posibles ampliaciones separadas. La revisión del encargo original no las identifica como requisitos obligatorios omitidos: no se utilizan para afirmar que la integración V83 esté incompleta.
 
-## Publicación comprobada de esta entrega
+## Publicación inicial comprobada de esta entrega
 
 El código está publicado en [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), commit de origen `096330d2b3a3123dc759a1ef0a6123aa67a0d249`, árbol `29c3a5f5b8ede861f99af80d4a8206f1eb5d4d6a`. [GitHub Actions](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526) terminó correctamente. El despliegue `dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3` está `READY` en `staging`, conserva `all_except_custom_domains` y declara ese mismo commit.
 
@@ -99,4 +99,11 @@ La inspección de las capturas del primer despliegue detectó que React Native W
 
 La nueva exportación `dist-alignment` pasa web/iOS/Android y TypeScript; su JavaScript web tiene SHA-256 `c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7`. La repetición completa de calidad pasa ocho casos/296 escenas sin fallos medidos ni recomendaciones de 44 px pendientes. Las nueve pruebas de pulsación/foco pasan e incluyen ambos estados del interruptor: área 44×44 y diferencia entre centros de 0,008 px. Se ha inspeccionado la captura final.
 
-[Informe del ajuste](../design/closeout/reports/switch-alignment.json). Las matrices completas Chromium/WebKit y el benchmark anteriores conservan su alcance y hash. El nuevo commit de origen y la publicación de este ajuste se registrarán por separado tras comprobar el despliegue; el primer despliegue descrito arriba permanece conservado.
+[Informe del ajuste](../design/closeout/reports/switch-alignment.json). Las matrices completas Chromium/WebKit y el benchmark anteriores conservan su alcance y hash. La publicación final del ajuste consta a continuación; el primer despliegue permanece conservado.
+
+
+## Publicación final del ajuste visual
+
+Fuente `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`, árbol `3d176f31b004a4125946ffd29cc771b6aad7d0ab`, en [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19). [CI remota](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596) correcta para ese origen. El despliegue `dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz` está `READY` en staging y conserva la protección `all_except_custom_domains`. El JavaScript decodificado coincide exactamente con `c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7`.
+
+Verificación HTTPS correcta: cuatro idiomas, 29 recursos/URLs por hash, logo original y catálogo de 127 recetas. [Resultado remoto](../design/closeout/reports/hosted-verification.json) · [despliegue](../design/closeout/reports/deployment.json). El enlace temporal se entrega fuera de Git y vence el **14/11/2026 a las 14:23:22 UTC**. El cierre siguiente solo cambia documentación y evidencia; los datos, dependencias y código compilado permanecen identificados por el origen anterior.
