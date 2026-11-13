@@ -1,0 +1,310 @@
+[
+  {
+    "name": "cc-by-legalcode",
+    "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+    "checkedAt": "2026-11-13T15:14:29.122030+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/html",
+    "url_effective": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+    "size_download": 48742,
+    "num_redirects": 0,
+    "time_total": 0.179437,
+    "bytes": 48742,
+    "sha256": "58230517b7895aa219ff46a6ed63e67057a1582fb9ea054b16728a8c13525650",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:14:29 GMT",
+      "content-type": "text/html",
+      "last-modified": "Thu, 01 Oct 2026 17:09:56 GMT",
+      "access-control-allow-origin": "*"
+    }
+  },
+  {
+    "name": "cc-by-license",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "checkedAt": "2026-11-13T15:12:49.768047+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/html",
+    "url_effective": "https://creativecommons.org/licenses/by/4.0/",
+    "size_download": 31950,
+    "num_redirects": 0,
+    "time_total": 0.159642,
+    "bytes": 31950,
+    "sha256": "8dda1ccec4be91fc80821d4e4fd5c568072b9a3a74b2fdc07c249a27e920ef01",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:49 GMT",
+      "content-type": "text/html",
+      "last-modified": "Thu, 01 Oct 2026 17:09:56 GMT",
+      "access-control-allow-origin": "*"
+    }
+  },
+  {
+    "name": "odbl-license",
+    "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "checkedAt": "2026-11-13T15:14:29.128208+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "url_effective": "https://opendatacommons.org/licenses/odbl/1-0/",
+    "size_download": 51176,
+    "num_redirects": 0,
+    "time_total": 0.185979,
+    "bytes": 51176,
+    "sha256": "b8d8aebb21bf405f93f6e21bbf0d8f0a749844f9812ec58692f189add6402b47",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:14:29 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "last-modified": "Tue, 04 Aug 2026 19:17:58 GMT",
+      "access-control-allow-origin": "*",
+      "cache-control": "max-age=600"
+    }
+  },
+  {
+    "name": "openprices-api-docs",
+    "url": "https://prices.openfoodfacts.org/api/docs",
+    "checkedAt": "2026-11-13T15:12:26.585752+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "url_effective": "https://prices.openfoodfacts.org/api/docs",
+    "size_download": 4668,
+    "num_redirects": 0,
+    "time_total": 0.684049,
+    "bytes": 4668,
+    "sha256": "62bcdcabb917c9b67ee780433ef8af11dd0d7aa3286752f68541c6c74f3a55e7",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:26 GMT",
+      "content-type": "text/html; charset=utf-8"
+    }
+  },
+  {
+    "name": "openprices-api-guide",
+    "url": "https://openfoodfacts.github.io/open-prices/api/",
+    "checkedAt": "2026-11-13T15:12:49.847884+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 404,
+    "content_type": "text/html; charset=utf-8",
+    "url_effective": "https://openfoodfacts.github.io/open-prices/api/",
+    "size_download": 25494,
+    "num_redirects": 0,
+    "time_total": 0.240102,
+    "bytes": 25494,
+    "sha256": "e68f31b30972b71e3c69cdc79bf768511c33cdb2c51e32deb75ec2b9bc73e163",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:49 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "access-control-allow-origin": "*",
+      "etag": "\"6af33bef-6396\""
+    }
+  },
+  {
+    "name": "openprices-guide",
+    "url": "https://openfoodfacts.github.io/open-prices/guides/data/",
+    "checkedAt": "2026-11-13T15:12:26.082306+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "url_effective": "https://openfoodfacts.github.io/open-prices/guides/data/",
+    "size_download": 30579,
+    "num_redirects": 0,
+    "time_total": 0.180102,
+    "bytes": 30579,
+    "sha256": "7bc793a65dfdcdf3b13668c38b9c4f921d23bb68ed2f4038af20b90c0fa2c0f2",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:26 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "last-modified": "Tue, 10 Nov 2026 15:44:47 GMT",
+      "access-control-allow-origin": "*",
+      "etag": "\"6af33bef-7773\"",
+      "cache-control": "max-age=600"
+    }
+  },
+  {
+    "name": "openprices-location-export",
+    "url": "https://prices.openfoodfacts.org/data/locations.jsonl.gz",
+    "checkedAt": "2026-11-13T15:15:25.279877+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "application/octet-stream",
+    "url_effective": "https://prices.openfoodfacts.org/data/locations.jsonl.gz",
+    "size_download": 1251866,
+    "num_redirects": 0,
+    "time_total": 1.062473,
+    "bytes": 1251866,
+    "sha256": "622e975df65208caf87c7a129c03e93b69bc3a54f477e2d36d52abbe443315c7",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:15:24 GMT",
+      "content-type": "application/octet-stream",
+      "last-modified": "Thu, 12 Nov 2026 23:11:30 GMT",
+      "etag": "\"6af647a2-131a1a\"",
+      "access-control-allow-origin": "*"
+    }
+  },
+  {
+    "name": "openprices-schema",
+    "url": "https://prices.openfoodfacts.org/api/schema",
+    "checkedAt": "2026-11-13T15:12:51.065510+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "application/vnd.oai.openapi; charset=utf-8",
+    "url_effective": "https://prices.openfoodfacts.org/api/schema",
+    "size_download": 255595,
+    "num_redirects": 0,
+    "time_total": 1.458031,
+    "bytes": 255595,
+    "sha256": "ea4e5d0f9b2aa98439aff8874664a52c497d5f10c806f7afe49b60342ad38d2e",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:50 GMT",
+      "content-type": "application/vnd.oai.openapi; charset=utf-8"
+    }
+  },
+  {
+    "name": "openprices-seven-locations-recent",
+    "url": "https://prices.openfoodfacts.org/api/v1/prices?location_id__in=928%2C7482%2C5115%2C769%2C525%2C5641%2C5621&date__gte=2026-11-07&date__lte=2026-11-13&size=100",
+    "checkedAt": "2026-11-13T15:17:26.248904+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "application/json",
+    "url_effective": "https://prices.openfoodfacts.org/api/v1/prices?location_id__in=928%2C7482%2C5115%2C769%2C525%2C5641%2C5621&date__gte=2026-11-07&date__lte=2026-11-13&size=100",
+    "size_download": 52,
+    "num_redirects": 0,
+    "time_total": 1.080442,
+    "bytes": 52,
+    "sha256": "75b8f59fade12bce67759bb50eea5325585458036865229ddeaa07f6403ac220",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:17:26 GMT",
+      "content-type": "application/json"
+    }
+  },
+  {
+    "name": "openprices-tenerife-circle-all",
+    "url": "https://prices.openfoodfacts.org/api/v1/prices?lat=28.28&lon=-16.57&radius_km=65&size=100&order_by=-date&date__lte=2026-11-13",
+    "checkedAt": "2026-11-13T15:13:34.164944+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "application/json",
+    "url_effective": "https://prices.openfoodfacts.org/api/v1/prices?lat=28.28&lon=-16.57&radius_km=65&size=100&order_by=-date&date__lte=2026-11-13",
+    "size_download": 83965,
+    "num_redirects": 0,
+    "time_total": 1.324762,
+    "bytes": 83965,
+    "sha256": "1a87167e419dc3c82994be2a7b23c4360af4ce43757a61da1a6abb550cfd5ef5",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:13:33 GMT",
+      "content-type": "application/json"
+    }
+  },
+  {
+    "name": "openprices-tenerife-circle-recent",
+    "url": "https://prices.openfoodfacts.org/api/v1/prices?lat=28.28&lon=-16.57&radius_km=65&size=100&order_by=-date&date__lte=2026-11-13&date__gte=2026-11-07",
+    "checkedAt": "2026-11-13T15:13:33.628016+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "application/json",
+    "url_effective": "https://prices.openfoodfacts.org/api/v1/prices?lat=28.28&lon=-16.57&radius_km=65&size=100&order_by=-date&date__lte=2026-11-13&date__gte=2026-11-07",
+    "size_download": 52,
+    "num_redirects": 0,
+    "time_total": 0.788008,
+    "bytes": 52,
+    "sha256": "75b8f59fade12bce67759bb50eea5325585458036865229ddeaa07f6403ac220",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:13:33 GMT",
+      "content-type": "application/json"
+    }
+  },
+  {
+    "name": "tutandem-csv",
+    "url": "https://tutandem.es/datos/cesta-diaria.csv",
+    "checkedAt": "2026-11-13T15:12:25.923253+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/csv; charset=utf-8",
+    "url_effective": "https://tutandem.es/datos/cesta-diaria.csv",
+    "size_download": 91320,
+    "num_redirects": 0,
+    "time_total": 0.274024,
+    "bytes": 91320,
+    "sha256": "c55a53dda608b2b98a602e8ed33dc512434776eaced35307d3c8280cbd393d76",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:25 GMT",
+      "content-type": "text/csv; charset=utf-8",
+      "access-control-allow-origin": "https://tutandem.es",
+      "cache-control": "public, max-age=14400",
+      "etag": "\"0aee04050261db378945505f42f3649b\""
+    }
+  },
+  {
+    "name": "tutandem-datapackage",
+    "url": "https://tutandem.es/datos/datapackage.json",
+    "checkedAt": "2026-11-13T15:12:25.881949+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "application/json",
+    "url_effective": "https://tutandem.es/datos/datapackage.json",
+    "size_download": 3181,
+    "num_redirects": 0,
+    "time_total": 0.207704,
+    "bytes": 3181,
+    "sha256": "3d958b76f92582407927b650ecd6db577c3c270a7ef64885abed0e5a3913ba96",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:25 GMT",
+      "content-type": "application/json",
+      "access-control-allow-origin": "https://tutandem.es",
+      "cache-control": "public, max-age=3600",
+      "etag": "\"facbe84146e6276e7505e5d1447dfa78\""
+    }
+  },
+  {
+    "name": "tutandem-origin",
+    "url": "https://tutandem.es/datos/cesta-diaria.csv",
+    "checkedAt": "2026-11-13T15:16:15.375788+00:00",
+    "http_code": 200,
+    "requestOrigin": "https://jj-compra-inteligente.vercel.app",
+    "responseAccessControlAllowOrigin": "https://tutandem.es",
+    "bytes": 91320,
+    "sha256": "c55a53dda608b2b98a602e8ed33dc512434776eaced35307d3c8280cbd393d76",
+    "interpretation": "200 to HTTP client does not permit cross-origin browser JS reads: ACAO differs from requested JJ origin. No cookies or Authorization used.",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:16:15 GMT",
+      "content-type": "text/csv; charset=utf-8",
+      "access-control-allow-origin": "https://tutandem.es",
+      "cache-control": "public, max-age=14400",
+      "etag": "\"0aee04050261db378945505f42f3649b\""
+    }
+  },
+  {
+    "name": "tutandem-portal",
+    "url": "https://tutandem.es/datos",
+    "checkedAt": "2026-11-13T15:12:25.887807+00:00",
+    "curlExitCode": 0,
+    "error": "",
+    "http_code": 200,
+    "content_type": "text/html; charset=utf-8",
+    "url_effective": "https://tutandem.es/datos",
+    "size_download": 39247,
+    "num_redirects": 0,
+    "time_total": 0.239852,
+    "bytes": 39247,
+    "sha256": "a8a2d6a423271040d411fd554b69ac5038e0d7f2eb11b67cdfe926824cc773ae",
+    "selectedResponseHeaders": {
+      "date": "Fri, 13 Nov 2026 15:12:25 GMT",
+      "content-type": "text/html; charset=utf-8",
+      "access-control-allow-origin": "https://tutandem.es",
+      "cache-control": "public, max-age=0, must-revalidate"
+    }
+  }
+]
