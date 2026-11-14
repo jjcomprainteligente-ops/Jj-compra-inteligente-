@@ -32,6 +32,8 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Reproduce the public recipe selection
         run: python3 scripts/import-recipes-v83.py --check
+      - name: Check private catalogue audit and public metadata boundary
+        run: python3 -m unittest discover -s tests/python -p 'test_*.py'
       - name: Check types
         run: npm run typecheck
       - name: Run unit tests with bounded workers

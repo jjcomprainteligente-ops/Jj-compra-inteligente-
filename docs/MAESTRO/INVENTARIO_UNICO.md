@@ -164,3 +164,10 @@ Candidata staging `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY y protegida. HTTPS r
 ## Bloque 02 · recorrido de una receta · 14/11/2026
 
 QA autorizada sobre la app existente intacta, separando 01.1 sin verificación externa. [Informe y auditoría](BLOQUE02_ENTREGA_Y_AUDITORIA.md): local 36/36 y staging 36/36, 180 capturas lógicas privadas por entorno y siete documentos conservados en los escenarios comprobados; [guía Safari](BLOQUE02_PRUEBA_SAFARI_IPHONE.md) para aceptación física pendiente. [PR #22](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/22), fuente `61793e4833c702a6294eedde1f778cd80dfc074f`; CI 43591993356 correcta. Staging `dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ`, READY/protegida, cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Acceso temporal por conversación hasta 15/11/2026 10:52:36 UTC. No se abre el Bloque 03 ni se promueve producción.
+
+
+## Bloque 03 · registro privado y exportación autorizada ·14/11/2026
+
+Abierto por nueva orden del propietario tras revisión general favorable. [Informe](BLOQUE03_CATALOGO_Y_CONCILIACION.md):150recetas/750fichas y controles por lotes conservados en privado; la app mantiene 127. El [índice público](../../referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json) deriva exclusivamente del ZIP público autorizado, sin nuevos datos editoriales de las 30 reservadas. Sus cuatro campos ya existentes se conservan exactamente. La propuesta y nuevos estados de retenidas se excluyeron del árbol tras rechazo automático; se conservan para revisión privada.
+
+Herramienta sin sobrescritura, destino privado 0700/0600 y check sin escritura. TypeScript y 987/987 unitarias correctos; frontera pública restringida y 19/19 pruebas Python correctas. Publicación restringida, CI, regresión y staging pendientes. No hay cambios de aplicación, IDs, datos locales ni servicios. B03EN_CURSO; siguiente acción privada sobre las excepciones, sin abrir04 o promover producción.
