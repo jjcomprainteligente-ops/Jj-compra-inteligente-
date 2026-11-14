@@ -17,6 +17,10 @@ La existencia de tokens, capturas, 16 vistas o pruebas de contraste no equivale 
 
 Las fotografías definitivas por receta no están integradas y sus originales históricos no se han localizado entre los materiales accesibles. Primero se recuperan y comprueban por ID, calidad, procedencia y derechos; no se genera una sustitución por conveniencia.
 
+## Observación de las versiones publicadas · 14/11/2026
+
+Las capturas de lectura 375/430 muestran producción entrando a Inicio con monograma JJ antiguo y tipografía visible distinta; staging entra a Bienvenida con el PNG oficial. Son estados iniciales diferentes. No constituyen comparación píxel a píxel, aprobación estética ni evidencia de pérdida de listas. El código de la candidata conserva exactamente el bundle anterior C3f; esta consolidación documental no rediseña la app. [Registro de comparación](../design/master-integration/reports/production-comparison.json).
+
 ## Historial documental conservado
 
 La sección siguiente conserva las decisiones y propuestas originales. Sus rótulos «vigente» tienen alcance histórico a su fecha: no reabren selección de rutas visuales, M3 ni exploración de marca durante este bloque.

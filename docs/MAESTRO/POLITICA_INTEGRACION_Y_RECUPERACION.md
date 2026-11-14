@@ -29,7 +29,7 @@ El repositorio es público: no admite el ZIP privado, recetas retenidas, datos l
 
 La cadena #1/#2/#3/#7/#8/#10/#12/#15/#19/#20 ya forma parte del origen ABB; #4 y #9 también son ancestros por fusiones históricas. No volver a aplicar sus árboles. Conservar ramas y PR aun cuando su trabajo ya sea ancestro. [Inventario de dependencias](INVENTARIO_UNICO.md#pr-y-dependencias-conservadas).
 
-Revisar diferencias y bases de #5/#11/#16 sin mezclarlas automáticamente. La documentación de producto de #16 se ha incorporado byte a byte desde `95686b3`, conservando procedencia; revisar decisiones de #5 sin afirmar integración todavía. La UI propuesta de #11 corresponde al Bloque 05 maestro; su fallback CSV, esquema de validación, snapshots y cobertura requieren revisión. Ninguna fuente bloqueada se activa al portar documentos.
+Revisar diferencias y bases de #5/#11/#16 sin mezclarlas automáticamente. La documentación de producto de #16 se ha incorporado byte a byte desde `95686b3`, conservando procedencia; las dos fuentes ausentes de #5 se conservaron bajo `docs/historico/PR05_2026-11-10/` como documentos históricos, sin reponer su árbol antiguo. La UI propuesta de #11 corresponde al Bloque 05 maestro; su fallback CSV, esquema de validación, snapshots y cobertura requieren revisión. Ninguna fuente bloqueada se activa al portar documentos.
 
 ## 01.3 — PR y revisión
 
@@ -68,3 +68,10 @@ Para recuperar: conservar referencia ABB y despliegue anterior; seleccionar el c
 Bloque 01 permanece **EN_CURSO** hasta registrar respaldo externo, árbol final, PR/CI, pruebas/exportaciones y staging comprobada, o separar claramente un subbloque bloqueado con su causa. Después se propone una sola siguiente acción; no abrir automáticamente Bloque 02 ni otros frentes.
 
 Los índices del kit antiguo no cambian esta secuencia: B06.1 fuentes → Bloque 07 maestro; B07 hogares → Bloque 11 maestro. El bloque actual no construye menús nuevos, cinco idiomas de UI, geografía de tiendas, feeds ni cuentas.
+
+
+## Aplicación comprobada de la política · 14/11/2026
+
+PR #21 y origen `78480fd40b4a116d53ebb016f31085785f42a6e6` verificados: CI correcta, 298 Chromium/24 omisiones deliberadas y 16 WebKit; baseline limpio ABB con 981 unitarias, audit 0 y exports 3. Candidata staging READY/protegida y HTTPS revalidado en cuatro idiomas/29 recursos. Ver [estado técnico](../../design/master-integration/reports/integration-verification.json). No hay merge a main ni promoción; siguen conservados D22 y la referencia ABB.
+
+La preparación privada local y su restauración están verificadas; la independencia externa permanece pendiente. Esa puerta no se elimina por terminar las pruebas de la app. Bloque 01 continúa EN_CURSO y no autoriza comenzar otro bloque.

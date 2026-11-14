@@ -540,3 +540,22 @@ El propietario autorizó comenzar el primer bloque posterior a la auditoría, co
 Sobre ABB se instaló desde el lockfile sin scripts, en copia aislada sin original privado 150 ni datos locales. Importador público, tipos, 981/981 unitarias (0 fallidas/omitidas), auditoría npm 0, compatibilidad Expo y exports web/iOS/Android correctos. El bundle web coincide exactamente con C3f publicado; los HBC nativos conservan sus hashes propios de entorno/ruta. [Reporte saneado](../design/master-integration/reports/baseline-existing-app.json).
 
 El primer commit de integración solo consolida documentación y los documentos exactos de PR16. La matriz de navegador se ejecutará sobre ese árbol identificado, verificando que todos los inputs de aplicación coinciden con el export. El respaldo externo sigue pendiente; no se declara Bloque01 cerrado ni se modifica código de aplicación.
+
+
+### Integración documental publicada y CI · Bloque01
+
+Publicado origen `78480fd40b4a116d53ebb016f31085785f42a6e6` en PR #21 (borrador hacia main), con 15 archivos documentales nuevos/modificados respecto a ABB, sin cambios de aplicación/dependencias/assets/tests/scripts. La CI 43514500031 terminó correctamente. El diff hacia main contiene el trabajo previo no fusionado; no se atribuye todo a esta entrega.
+
+Revisión selectiva de PR #5: se conservaron solo dos documentos ausentes con blobs exactos `33c12c20dd98cb69998cf56ac99012df01d6c1ad` y `1adbe9f1d78c19d3934766fc975a49ec4318bfbe`. [Procedencia y límites](historico/PR05_2026-11-10/README.md). No se aplican PRODUCTO/PLAN/DECISIONES antiguos. Candidatos locales y mayoristas pendientes de auditoría, no feeds habilitados.
+
+La regresión completa local empezó sobre 78480fd tras superponer solo sus documentos y comprobar 159/159 huellas de inputs idénticas al baseline; bundle web C3f. No se declara terminada antes de su resultado. Respaldo independiente sigue pendiente; bloque EN_CURSO, código conservado.
+
+
+## Cierre de subtareas verificables de Bloque 01 · 14/11/2026
+
+- Fuente app comprobada/desplegada `78480fd40b4a116d53ebb016f31085785f42a6e6`, PR #21. CI 43514500031 correcta. Baseline limpio ABB 981/981, tipos/importador público/npm 0/Expo/export 3 correctos. Chromium 298 correctos + 24 omisiones deliberadas y WebKit 16/16, cero fallos/intermitencias, sobre 78480fd y bundle C3f. 159/159 huellas coincidentes; no se cambió código de aplicación, dependencias, recursos, scripts o pruebas. [Ficha de versión](../design/master-integration/reports/integration-verification.json).
+- Candidata `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY/staging, protección conservada. HTTPS revalidado 14/11: es/en/de/fr, 127 recetas y 29 recursos/URLs por hash; siete documentos conservados en los recorridos. Acceso temporal solo en conversación hasta 14/11/2026 21:10:36 UTC. No se publica el token en Git.
+- Comparación de lectura 375/430: producción abre Inicio antiguo; staging abre Bienvenida con logo oficial. Son estados distintos, no un antes/después de la misma pantalla. No se promovió producción ni se fusionó main; ambos mantienen sus referencias anteriores. Capturas privadas, resumen/hashes públicos.
+- Documentación exacta de PR #5 y PR #16 conservada selectivamente, sin aplicar árboles antiguos ni activar fuentes. Textos anteriores de README/ESTADO/DIRECCION conservados bajo ARCHIVO_HISTORICO; PLAN y DECISIONES se amplían sin borrar antecedentes.
+- **Bloque 01 EN_CURSO: preparación/restauración local de ZIP 150 comprobadas; respaldo privado externo independiente SIN CONFIRMAR.** No atribuir descarga al propietario por un «Sigue». Esa es la única acción pendiente para cerrar la puerta de conservación antes de modificar código. No se abre el Bloque 02. La aprobación visual, el iPhone físico, las 30 recetas y B07 conservan sus criterios separados.
+- El siguiente commit es cierre documental: los resultados de navegador pertenecen a 78480fd y no se registran como otra ejecución en el commit de informes. Los datos locales, ZIP privado y capturas/trazas permanecen fuera del repositorio público y de la preview.

@@ -1,38 +1,31 @@
-# Estado vigente de construcción
+# Estado actual de construcción | JJ Compra Inteligente
 
-**Actualización documental · 13/11/2026 · Bloque 01 maestro EN_CURSO.** El propietario autorizó consolidar la aplicación existente, conservando historial y trabajo previo. Este documento resume el estado; el detalle por requisito y evidencia está en el [inventario único](MAESTRO/INVENTARIO_UNICO.md).
+**Actualizado 14/11/2026. Bloque 01 maestro: EN_CURSO por respaldo externo pendiente.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
 
-## Estado de referencia auditado
+## Estado comprobado
 
-| Área | Hecho comprobado y límite |
+| Área | Resultado y límite |
 |---|---|
-| GitHub | Base auditada `abb3bca53953e4523af61118e375df90d1a8d416`; 28 commits delante de `main` (`d22d66e`). Hay 15 PR abiertos en el registro del Bloque 00. Ninguna integración a `main` está acreditada por esta actualización. |
-| App y staging | Última app compilada comprobada desde `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`; cierres posteriores documentales. Staging `dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz`, `READY`, protección conservada. [Registro](../design/closeout/reports/deployment.json). La producción principal apunta a otro despliegue. |
-| Recetas | 150 IDs/750 fichas en fuente privada; 120 V83 + siete anteriores = 127 accesibles. Los tres lotes retenidos siguen fuera del runtime. |
-| Fotografías | Cero correspondencias definitivas foto→ID integradas. Originales V38–V83 no localizados entre los materiales accesibles; no se declaran borrados ni respaldados. |
-| Diseño | Verde Mercado Premium / GPT-6 V2 y logo oficial exacto; 16 vistas y nueve ejemplos de estado. Aceptación estética y prueba física pendientes. |
-| Idiomas | es/en/de/fr en UI; BG en fuentes de recetas. Completar BG corresponde al futuro Bloque 09 maestro. |
-| Compras y gasto | Listas y presupuesto locales; gasto mediante registros confirmados, separado de productos marcados y estimaciones. Siete documentos con sus protecciones de escritura. |
-| Tiendas y precios | Seis modalidades seleccionables y enlaces oficiales; comparación manual conservada. Sin PVP local automático habilitado, CP/radios ni cesta local completa acreditados. [Auditoría B06.1](auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md). |
-| Cuentas/IA | IA no conectada. B07 tiene contratos/migraciones, matriz dinámica sin resultado y cuentas/hogares/sincronización sin activar. El snapshot de 14 tablas RLS/FORCE y cero filas es del 12/11, no una inspección nueva. |
-| Conservación | ZIP completo localizado; respaldo privado externo PENDIENTE. Los originales grandes/históricos citados por el ZIP ligero y las fotos no están accesibles. |
+| Integración | [PR #21](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/21), origen probado/desplegado `78480fd40b4a116d53ebb016f31085785f42a6e6`. Recuperación desde `abb3bca53953e4523af61118e375df90d1a8d416`. Cierre documental separado, sin cambiar inputs de aplicación. |
+| Contenido | Fuente privada 150 IDs/750 fichas en 5 idiomas. Runtime 120 V83 + 7 anteriores = 127. Treinta retenidas por estados pendientes/contradictorios, sin cambios de IDs. |
+| Fotos | Originales V38–V83 no localizados; cero enlaces definitivos por receta comprobados. No se generan sustitutos. |
+| UI y diseño | es/en/de/fr, EUR, Verde Mercado Premium/GPT-6 V2 y PNG oficial exacto. BG en fuente, pendiente en interfaz. Aceptación estética/física separada. |
+| Datos locales | Siete documentos y protecciones conservados; 159/159 inputs de app/deps/tests/scripts/assets idénticos. |
+| Tiendas/precios | Seis formatos seleccionables y enlaces oficiales; comparador manual. Fuentes de PVP local actual no habilitadas. PR #11 sigue separado para revisión en su bloque. |
+| IA y hogares | IA no conectada; B07 sin resultado de matriz nativa y sin cuentas/BFF/sincronización activados. Snapshot 12/11 no sustituye una consulta nueva. |
+| Respaldo | Copia privada local y restauración 13/13 correctas. **Copia externa independiente pendiente de destino/confirmación y verificación.** |
 
-## Calidad: separar resultados por origen
+## Calidad y publicación
 
-La [CI existente de `abb3bca`](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43453268489) terminó con 981 unitarias correctas en 27 archivos, tipos, audit sin avisos conocidos y export web. No se vuelve a etiquetar esa ejecución como prueba del Bloque 01.
+Baseline limpio ABB: instalación desde lockfile sin scripts, tipos, importador público, 981/981 unitarias, npm 0 y Expo/export 3 correctos. Sobre `78480fd40b4a116d53ebb016f31085785f42a6e6`: [CI correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43514500031), **298 Chromium correctos/24 omisiones deliberadas y 16/16 WebKit**, cero fallos/intermitencias. Los informes de navegador pertenecen a ese origen y al bundle `c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7`.
 
-- Regresión completa histórica: 298 Chromium, 24 omisiones deliberadas y 16 WebKit sobre bundle `349e6e98…`.
-- Export final de `17d5fbc`: bundle `c3f6a11f…`, calidad 8/8 y pulsación/foco 9/9; verificación HTTPS anterior en cuatro idiomas y 29 recursos/URLs por hash.
-- Baseline nuevo del Bloque 01 sobre ABB: **correcto** en copia aislada; instalación limpia, selección pública V83, tipos, 981/981 unitarias sin fallos/omisiones, audit con cero avisos conocidos, Expo y exports web/iOS/Android. Bundle web `c3f6a11f…`, idéntico al publicado anterior. Regresión de navegador del árbol final, CI y nueva staging: **PENDIENTES**.
-- iPhone físico, VoiceOver, teclado, safe areas y aceptación humana: **PENDIENTES**.
+Staging `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY, conserva protección. HTTPS revalidado 14/11: cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. [Evidencia de integración](../design/master-integration/reports/integration-verification.json) · [despliegue](../design/master-integration/reports/deployment.json). Acceso temporal por conversación hasta **14/11/2026 21:10:36 UTC**, sin token en Git.
 
-[Entrega de seguridad y límites](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md#publicación-final-del-ajuste-visual) · [Política de integración](MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md).
+Las capturas iniciales a 375/430 muestran una producción antigua y una staging en bienvenida; no son dos capturas del mismo estado. No se modificó producción. No hay prueba física de iPhone ni publicación de binario firmado acreditadas por este bloque.
 
-## Puerta actual y una acción siguiente
+## Puerta actual y única siguiente acción
 
-Antes de modificar código se necesita materializar el respaldo privado independiente del ZIP de 150 y comprobar su restauración. Las copias locales preparatorias no acreditan esa independencia. La documentación puede consolidarse sin alterar la app mientras se resuelve el destino.
-
-La siguiente acción es cerrar esa verificación de respaldo. La rama `codex/integracion-maestra-2026-11-13` y la referencia `codex/respaldo-base-2026-11-13` ya parten de ABB; no se reconstruye el producto ni se aplica el árbol antiguo de un PR sobre el actual.
+Verificar un respaldo privado independiente del ZIP completo de 150 recetas antes de modificar código. La copia/restauración en esta misma máquina no cumple esa independencia. [Estado de respaldo](MAESTRO/RESPALDO_ESTADO_PUBLICO.json) · [política](MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md). La autorización de continuar no equivale a confirmar una descarga. Bloque 01 sigue abierto; no se abre otro bloque automáticamente.
 
 ## Historial documental conservado
 

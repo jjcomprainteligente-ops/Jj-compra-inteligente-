@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado documental · 13/11/2026 · Bloque 01 maestro EN_CURSO.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+**Estado actualizado · 14/11/2026 · Bloque 01 maestro EN_CURSO por respaldo externo pendiente.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
 
@@ -8,7 +8,7 @@ El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, orig
 
 - Repositorio canónico: [jjcomprainteligente-ops/Jj-compra-inteligente-](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-).
 - Base auditada: `abb3bca53953e4523af61118e375df90d1a8d416`, PR #20; 28 commits por delante de `main` en la auditoría del 13/11. `main` seguía en `d22d66eff03c5d107f5170ee38cd2bc3167865e2`.
-- Último origen compilado de staging comprobado: `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`, PR #19. Los cierres posteriores a ese origen añadieron documentos e informes; no cambiaron inputs de app o dependencias.
+- Origen de la candidata de integración comprobada: `78480fd40b4a116d53ebb016f31085785f42a6e6`, [PR #21](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/21). Sus 159 entradas de aplicación, dependencias, recursos, scripts y pruebas coinciden con ABB. El JavaScript conserva exactamente el hash de la versión previa; no se rehízo el producto.
 - La rama `codex/integracion-maestra-2026-11-13` y la referencia `codex/respaldo-base-2026-11-13` se crearon desde esa base, sin rehacer el producto ni fusionar a producción. Su cierre requiere resultados nuevos sobre el árbol final; esta actualización documental no los sustituye.
 
 ## Qué contiene la app existente
@@ -29,11 +29,16 @@ Los siete documentos locales y sus protecciones de escritura se conservan. Borra
 
 El ZIP privado completo de 150 recetas está localizado e ignorado por Git. **El respaldo privado independiente sigue PENDIENTE de destino y verificación**; una segunda copia en esta misma máquina no se contará como tal. El ZIP público de 120 recetas no respalda las 30 retenidas. Antes de modificar código se debe cumplir la puerta de respaldo del plan maestro. El repositorio público y las previews no reciben el ZIP privado ni contenidos retenidos.
 
-## Evidencia anterior y comprobaciones del bloque
+## Comprobaciones reales del Bloque 01
 
-La [entrega de seguridad y calidad](docs/CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md), el [registro del despliegue](design/closeout/reports/deployment.json) y los [resultados de CI](design/closeout/reports/github-actions.json) documentan sus propios orígenes. La [CI existente de `abb3bca`](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43453268489) terminó correctamente: 981 unitarias en 27 archivos, tipos, auditoría de dependencias y export web. La regresión completa de 298 Chromium/24 omisiones deliberadas y 16 WebKit pertenece a un bundle anterior, identificado en el inventario. El bundle final de `17d5fbc` tiene 8/8 casos de calidad y 9/9 de pulsación/foco.
+- **Baseline limpio ABB:** instalación sin scripts desde el lockfile, reproducción de las 120 recetas públicas, tipos, **981/981 unitarias**, audit sin vulnerabilidades conocidas, compatibilidad Expo y exportaciones web/iOS/Android. [Informe y procedencia](design/master-integration/reports/baseline-existing-app.json).
+- **Origen `78480fd40b4a116d53ebb016f31085785f42a6e6`:** [CI real correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43514500031), **298 Chromium correctos y 24 omisiones deliberadas**, **16/16 WebKit**, sin fallos ni intermitencias. Se verificaron nuevamente 159/159 huellas de inputs antes y después. [Chromium](design/master-integration/reports/chromium-regression.json) · [WebKit](design/master-integration/reports/webkit-regression.json).
+- **Staging candidata:** `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY/protegida. HTTPS revalidado el 14/11 en cuatro idiomas, catálogo de 127 y 29 recursos/URLs por hash. [Registro de versión](design/master-integration/reports/integration-verification.json) · [despliegue](design/master-integration/reports/deployment.json). Enlace temporal fuera de Git, hasta **14/11/2026 21:10:36 UTC**.
+- **Diferencia con producción:** capturas iniciales de lectura a 375/430 muestran la versión antigua en el dominio principal y la bienvenida actual en staging; son estados de entrada distintos, no comparación píxel a píxel ni evidencia de pérdida de listas. Producción no se ha promovido. [Comparación](design/master-integration/reports/production-comparison.json).
 
-**Baseline nuevo del Bloque 01 comprobado en una copia aislada de ABB:** instalación limpia, reproducción V83, tipos, 981/981 unitarias sin fallos ni omisiones, audit con cero avisos conocidos, compatibilidad Expo y exportaciones web/iOS/Android. El bundle web conserva el hash `c3f6a11f…`. La regresión de navegador sobre el árbol final, su CI y nueva staging siguen pendientes. La aceptación estética y la prueba física en iPhone siguen pendientes. Un export iOS no es una app firmada, TestFlight ni una ejecución física.
+Las pruebas de navegador corresponden a ese origen; el cierre posterior solo añade documentación/evidencia y no representa otra ejecución. Las suites anteriores conservan sus propios SHA. WebKit Linux no sustituye la prueba física de iPhone, ni un export iOS es un binario firmado. La aprobación estética sigue pendiente.
+
+La base y sus comprobaciones están preparadas para revisión. **El bloque completo sigue EN_CURSO porque el respaldo privado independiente no está verificado.** La copia y restauración locales sí están comprobadas; el código de la app permanece intacto y no se abre el Bloque 02.
 
 Para reproducir las comprobaciones del proyecto, usa Node.js 24 y el lockfile del árbol revisado:
 
