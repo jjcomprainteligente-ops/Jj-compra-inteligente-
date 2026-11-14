@@ -76,11 +76,12 @@
   "fullBlock04Closed": false,
   "blockState": "BLOCKED_FOR_ORIGINAL_ASSETS_TOOLING_READY",
   "nextOwnerInput": "Location of original V38–V83 recipe photographs; text path or source link question sent, no reply assumed",
-  "preview": "PENDING_PUBLICATION",
+  "preview": "VERIFIED_READY_PROTECTED_STAGING",
   "sha256": {
     "scripts/validate-recipe-photos.py": "bea5737a9d9e5c152fb0b67547871ff0d8a594cd459ea77f577f83f44ba89e54",
     "tests/python/test_recipe_photos.py": "ee000ce42d33e33797d674ed90bdce3356b2f2110eba86bfefc3e43200c34c12",
     "scripts/requirements-photo-audit.txt": "f744c5bfedd8376a1cc04b964a0a543e8a96faa2f3045df5d3be611c1f6814f8",
     "referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json": "7b85cd9134a90b57db57c8b1f6dc06407589680e94f9bf8a5eadd9d68e1efc3b"
-  }
+  },
+  "publicSourceCommit": "65d152f2183eb14f7e184f53207feae7b4f54f88"
 }

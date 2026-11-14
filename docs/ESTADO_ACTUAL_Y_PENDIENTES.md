@@ -43,7 +43,7 @@ TypeScript y 987/987 unitarias correctos; exportación restringida y 19/19 prueb
 
 Cero originales de receta recuperados de las fuentes accesibles. Se revisaron maquetas/marca/QA, paquetes, XLSX e historia local/remota; el [informe de fuentes](../design/recipe-photos/reports/source-inventory.json) detalla el alcance. El [manifiesto de 127 activas](../referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json) conserva NO_LOCALIZADA, sin imágenes ni aprobaciones inventadas. El inventario de 150 permanece privado.
 
-Validador seguro sin escritura/publicación, 32 pruebas específicas/51 Python combinadas, 987 unitarias y tipos correctos. Pillow 12.3 descartado por avisos; versión 13.0.0 aislada y fijada, antes de cualquier decodificación. [Entrega](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md). CI, publicación y nueva staging pendientes; faltan originales para revisar un lote y vincular fotos. No se modifica la app ni se dan por cerrados B02 físico, B03 privado o 01.1.
+Validador seguro sin escritura/publicación, 32 pruebas específicas/51 Python combinadas, 987 unitarias y tipos correctos. Pillow 12.3 descartado por avisos; versión 13.0.0 aislada y fijada, antes de cualquier decodificación. [Entrega](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md). [PR #24](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/24), fuente `65d152f2183eb14f7e184f53207feae7b4f54f88`: CI y staging protegida comprobadas, cuatro idiomas, 127 recetas y 29 recursos por hash; acceso temporal por conversación hasta 15/11/2026 19:58:45 UTC; faltan originales para revisar un lote y vincular fotos. No se modifica la app ni se dan por cerrados B02 físico, B03 privado o 01.1.
 
 ## Historial documental conservado
 

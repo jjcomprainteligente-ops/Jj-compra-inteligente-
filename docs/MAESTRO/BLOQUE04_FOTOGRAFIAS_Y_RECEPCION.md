@@ -55,8 +55,36 @@ RUTA_VENV_AUDITOR/bin/python -m unittest discover -s tests/python -p 'test_*.py'
 RUTA_VENV_AUDITOR/bin/python scripts/validate-recipe-photos.py --manifest referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json
 ```
 
-## Estado y siguiente acción
+## Publicación y verificación real
 
-Inventario y puerta de recepción preparados. Publicación de esta entrega, CI remota y preview todavía pendientes. B04 completo: **BLOQUEADO PARA VINCULAR FOTOS POR FALTA DE ORIGINALES ACCESIBLES**; B04.1 técnicamente preparado. No se ha afirmado que haya fotografías aprobadas, correspondencia visual comprobada o fotos vinculadas en iPhone. No hay renderizador nuevo ni cambios de diseño, listas, recetas, IDs o almacenamiento; tampoco se dan por cerradas la prueba física de B02, las excepciones privadas de B03 o la independencia de respaldo 01.1.
+[PR #24](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/24), fuente `65d152f2183eb14f7e184f53207feae7b4f54f88`, árbol `ea61daf1c43ba1388ef00db7594dde69aa593640`. CI remota [43640045443](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43640045443) correcta: instalación del lockfile, importador público, venv con Pillow fijado, 51 pruebas Python, tipos, unitarias, audit, Expo y export web. [Registro CI](../../design/recipe-photos/reports/github-actions.json).
 
-Se solicitó al propietario únicamente la carpeta o enlace de los originales V38–V83; no se interpreta «sigue» como entrega de archivos, permiso para generarlos o prueba de derechos. Siguiente acción exacta: recibir/localizar ese origen, conservarlo por hash y revisar un lote de 5–10 antes de preparar su vinculación. Sin merge a main, promoción de producción, servicios nuevos ni costes Apple.
+Preview **READY/staging protegida**, `dpl_5dNbUnf7t1y8bGiYJoLnGe63irwu`, fuente `65d152f2183eb14f7e184f53207feae7b4f54f88`. Origen: https://jj-compra-inteligente-hixqld86q-cmj2hwhc6b-1051.vercel.app. Verificación real en es/en/de/fr, catálogo de 127 recetas y 29 recursos/URLs por hash. Los 23 archivos compilados coinciden con la candidata previa: bundle C3f y logo oficial exactos. No incorpora fotos, originales privados, fixtures, inventario maestro o nueva UI. Acceso temporal por conversación hasta **15/11/2026 19:58:45 UTC**, sin token en Git. [Despliegue](../../design/recipe-photos/reports/deployment.json) · [HTTPS](../../design/recipe-photos/reports/hosted-verification.json) · [verificación global](../../design/recipe-photos/reports/verification.json).
+
+Producción conserva `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`; no se asignan alias ni se fusiona main. El cierre posterior solo añade documentos/evidencias y no cambia el código probado. La matriz exhaustiva de e544 conserva su fuente propia y sus 159 entradas de app siguen idénticas; no se cuenta como ejecución nueva. No se afirma prueba física de Safari/iPhone ni nueva representación de fotografías.
+
+## JJ | Bloque 04 / Cierre de subtarea 04.1
+
+Fecha/hora UTC: 14/11/2026; ejecución y publicación identificadas en los informes.
+
+Rama y SHA: `codex/bloque04-control-fotos-2026-11-14`, fuente `65d152f2183eb14f7e184f53207feae7b4f54f88`, base `b590ed0d09d646a6f541637c59ac98ecfe68128c`.
+
+Objetivo: localizar fuentes y preparar una recepción verificable antes de vincular fotografías.
+
+Encontrado: maquetas, marca y QA; cero originales de receta identificados en las fuentes accesibles. No implica que no existan en otro lugar. El manifiesto de las 127 activas conserva el faltante; el inventario maestro de 150 es privado.
+
+Modificado: validador, 32 pruebas específicas, plantilla de 127 IDs, dependencia de auditoría aislada por hashes, paso CI, documentación y evidencia. La aplicación, sus datos y el diseño permanecen intactos.
+
+Pruebas: 32/32 de fotos y 51/51 Python, 987/987 unitarias y tipos correctos; revisión independiente sin hallazgos restantes. Guarda de versión, CRC, límites y rutas comprobados. CI remota correcta.
+
+Preview: READY y protegida; origen y expiración indicados arriba. Cuatro idiomas, 127 recetas y 29 recursos/URLs comprobados por hash. Cero fotos vinculadas, aprobadas automáticamente o publicadas.
+
+Conservación: fuentes, diseño/logo, recetas e IDs, siete documentos y protecciones intactos; 96 entradas de aplicación y 159 de baseline sin cambios. Los originales y el inventario maestro privados permanecen fuera de Git/Vercel. La independencia externa de 01.1 sigue sin inspección.
+
+Pendiente: originales V38–V83, procedencia/licencia y revisión visual por receta antes de preparar la vinculación. No se han implementado o certificado el renderizador, alt visible, caché, derivados ni rutas de fotos reales. B02 físico, B03 privado y 01.1 mantienen sus límites separados.
+
+Riesgos/costes: auditor con decodificador 13.0.0 aislado; versión con avisos descartada antes de entregar. Sin cambios de dependencias de la app, servicios de pago, IA, migraciones o costes Apple.
+
+Estado: **B04.1 INVENTARIO/CONTROL VERIFICADOS; B04 BLOQUEADO PARA VINCULACIÓN POR FALTA DE ORIGINALES ACCESIBLES**. No se declara terminado el bloque completo.
+
+Siguiente acción exacta: recibir o localizar carpeta/enlace de originales, conservar hashes y revisar un lote de 5–10. La pregunta está enviada; no se asume una respuesta por «sigue». No se generan sustitutos ni se abre B05 automáticamente.

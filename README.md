@@ -69,7 +69,7 @@ Revisión de 72 imágenes de referencia/marca/QA, 16 paquetes, 44 commits y 19 �
 
 Validador de solo lectura con hashes, dimensiones, formato, integridad, rutas y referencias; **32 pruebas de fotos y 51 Python combinadas**, 987 unitarias y tipos correctos. Auditor con Pillow 13.0.0 aislado, fijado por hashes y versión, sin cambios de dependencias de la app. Nunca aprueba ni publica imágenes automáticamente. [Informe y límites](docs/MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md).
 
-CI, publicación y preview de esta entrega pendientes. La app y Verde Mercado Premium permanecen intactos; la vinculación de fotos sigue bloqueada hasta recibir la carpeta o enlace de los originales V38–V83. No se declara terminado B04 ni se abre B05.
+[PR #24](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/24), fuente `65d152f2183eb14f7e184f53207feae7b4f54f88`: CI 43640045443 correcta y staging protegida verificada en cuatro idiomas / 127 recetas / 29 recursos. Acceso temporal por conversación hasta 15/11/2026 19:58:45 UTC. La app y Verde Mercado Premium permanecen intactos; la vinculación de fotos sigue bloqueada hasta recibir la carpeta o enlace de los originales V38–V83. No se declara terminado B04 ni se abre B05.
 
 ## Historial documental conservado
 
