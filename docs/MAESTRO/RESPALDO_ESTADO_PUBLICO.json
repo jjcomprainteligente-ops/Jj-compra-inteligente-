@@ -1,6 +1,12 @@
 {
   "checkedAtUtc": "2026-11-13T21:45:29.052253+00:00",
-  "status": "LOCAL_VERIFIED_EXTERNAL_PENDING",
+  "status": "OWNER_CONFIRMED_PROJECT_FOLDER",
+  "ownerConfirmedCopy": true,
+  "ownerStatement": "Lo tengo guardado en la carpeta del proyecto sigue",
+  "confirmationDateUtc": "2026-11-14",
+  "locationDescription": "carpeta del proyecto, declarada por el propietario",
+  "agentVerifiedRemoteCopy": false,
+  "externalChecksumReadByAgent": false,
   "sourceBytes": 937580,
   "sourceSha256": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034",
   "localCopyVerified": true,
@@ -10,13 +16,14 @@
   "uniqueRecipeIds": 150,
   "sourceTranslations": 750,
   "independentBackupVerified": false,
-  "externalDestination": "pending owner response; no private storage writer connected",
+  "externalDestination": "carpeta del proyecto, según confirmación del propietario; destino no inspeccionado por el agente",
   "privateArchiveUploadedToGitHub": false,
   "privateArchiveUploadedToVercel": false,
   "applicationCodeModified": false,
   "limits": [
     "La restauración se verificó dentro de la misma máquina.",
-    "No se afirma copia independiente hasta recibir evidencia del destino externo.",
+    "El propietario confirmó que guardó una copia en la carpeta del proyecto; no se ha inspeccionado ese destino ni comprobado su independencia del entorno.",
+    "La huella y restauración locales verificadas se conservan como evidencia local; no se atribuye una lectura de hash ni restauración al destino declarado por el propietario.",
     "Las fotografías V38–V83 y archivos grandes referenciados no están incluidos."
   ]
 }

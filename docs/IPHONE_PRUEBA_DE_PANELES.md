@@ -1,3 +1,5 @@
+> **Guía vigente del Bloque 02 · 14/11/2026:** usar la [prueba Safari de receta a compra](MAESTRO/BLOQUE02_PRUEBA_SAFARI_IPHONE.md), con receta antes de crear la lista. El cuerpo siguiente se conserva íntegro como antecedente; sus enlaces, cifras y resultados corresponden a las versiones de sus fechas. La aceptación en iPhone real continúa pendiente.
+
 # Prueba física de paneles y datos locales
 
 Esta guía complementa [la prueba de los cuatro idiomas](I18N_PRUEBA_GUIADA.md). Es una lista de aceptación pendiente: las pruebas automatizadas de Chromium o WebKit y una exportación de Expo no acreditan su ejecución en un iPhone real.

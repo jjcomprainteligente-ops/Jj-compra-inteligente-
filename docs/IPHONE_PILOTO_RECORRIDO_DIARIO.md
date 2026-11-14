@@ -1,3 +1,5 @@
+> **Guía vigente del Bloque 02 · 14/11/2026:** usar la [prueba Safari de receta a compra](MAESTRO/BLOQUE02_PRUEBA_SAFARI_IPHONE.md), con receta antes de crear la lista. El cuerpo siguiente se conserva íntegro como antecedente; sus enlaces, cifras y resultados corresponden a las versiones de sus fechas. La aceptación en iPhone real continúa pendiente.
+
 > **Catálogo V83 · 12/11/2026:** ya se recibieron las 150 recetas. La [entrega V83](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md) incorpora 120 y conserva las siete anteriores; las otras 30 permanecen retenidas por sus estados editoriales. Esta guía conserva los pasos e informes de la entrega anterior; las referencias siguientes a recetas pendientes corresponden a aquel momento.
 
 # Prueba iPhone del recorrido diario

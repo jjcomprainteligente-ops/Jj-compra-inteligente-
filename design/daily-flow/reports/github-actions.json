@@ -1,0 +1,85 @@
+{
+  "runId": 43591993356,
+  "event": "pull_request",
+  "sourceCommit": "61793e4833c702a6294eedde1f778cd80dfc074f",
+  "conclusion": "success",
+  "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43591993356",
+  "jobs": [
+    {
+      "id": 132438488507,
+      "name": "app",
+      "status": "completed",
+      "conclusion": "success",
+      "startedAt": "2026-11-14T11:51:29Z",
+      "completedAt": "2026-11-14T11:52:16Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out source",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Use Node.js 24",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install reviewed lockfile without lifecycle scripts",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce the public recipe selection",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check types",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run unit tests with bounded workers",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Audit dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Expo compatibility",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build the web application",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Use Node.js 24",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out source",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "browserCasesRunInThisWorkflow": false
+}
