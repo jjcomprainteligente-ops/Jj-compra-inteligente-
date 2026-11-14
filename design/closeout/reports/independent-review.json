@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-11-13T14:03:14.049444+00:00",
+  "baseCommit": "5795f299e35186f372c325299d8a6828993df720",
+  "branch": "codex/cierre-seguridad-y-calidad",
+  "publication": {
+    "githubCommit": null,
+    "remoteCiRun": null,
+    "vercelDeployment": null,
+    "status": "pending; publication evidence belongs to the subsequent release record"
+  },
+  "privacy": "Sanitized public summaries only; raw screenshots, traces and browser state remain outside Git.",
+  "reviewedAt": "2026-11-13 UTC",
+  "reviewMethod": "Separate read-only agent inspected application/dependency/test/workflow diff and existing local evidence; did not change app files or execute database mutations.",
+  "verdict": "No new blocking defect identified within the inspected diff.",
+  "sourceEvidence": {
+    "artifact": "closeout-independent.md",
+    "sha256": "06afddd983da674457860f05243ea7dd7a20c51d97a6b33c513910e4dcfa7715",
+    "rawEvidencePublished": false
+  },
+  "findings": [
+    "Production changes are limited to dependency versions, touch minimum widths, web Switch thumb and opaque active pressed backgrounds.",
+    "No recipe, locale, authentication, schema, storage architecture, logo or approved at-rest palette changes.",
+    "GitHub Actions workflow uses read-only permissions, pinned actions, no credentials persisted, no secrets or deployment steps."
+  ],
+  "pendingAtReview": [
+    "Final English 375/430 rerun and final export hash were still pending at independent-review time.",
+    "No remote GitHub Actions run or Vercel publication had been observed.",
+    "B07 native result and physical iPhone validation remain open."
+  ],
+  "subsequentEvidenceByReportPreparer": {
+    "finalEnglishRerun": "b08-quality.json",
+    "finalExportAndLocalTests": "verification.json",
+    "independentReviewerDidNotReexecuteTheseTests": true
+  },
+  "limits": [
+    "Read-only source review is not exhaustive security certification or completion of all B00-B09 blocks."
+  ],
+  "finalReadOnlyAddendum": {
+    "reviewedAt": "2026-11-13 UTC",
+    "sourceEvidence": {
+      "artifact": "closeout-independent.md",
+      "sha256": "7b78ae278591af8de608d7710ebcc72d43ab18ee3f52c61326a893eb8bfca5d1",
+      "rawEvidencePublished": false
+    },
+    "confirmed": [
+      "English 375/430 final rerun: 2 cases and 74 scenes, no measured failures, clipping or sub-44 recommendations.",
+      "All 8 recorded source-input hashes and all 3 final bundle hashes match.",
+      "Six public reports and five documents have coherent scope and existing local links."
+    ],
+    "method": "Evidence and source review only; the independent reviewer did not reexecute the suites.",
+    "publicationAtAddendum": "GitHub/Vercel had not yet been published at the time of this addendum; later release evidence is separate."
+  }
+}

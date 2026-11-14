@@ -1,0 +1,20 @@
+{
+  "receivedAtUtc": "2026-11-13T21:45:29.051808+00:00",
+  "sourceZipSha256": "cbd0ffb68986d809f9b33377d3776c9ffd4fee8bf04613994335048293cd98ff",
+  "attachedPdfSha256": "4a0f38f820d04d09d9d3ff7c44f2bc1ae8296b4acb064eff625db734374b6501",
+  "pdfMatchesZipPdf": true,
+  "archivedTextSources": [
+    {
+      "file": "JJ_PLAN_MAESTRO_CODEX_2026-11-13.md",
+      "bytes": 42384,
+      "sha256": "3b721df66ff3075ca66a10ca8bf138a3fb9cdfa83f95bc7dc1a499c00d9dff4f"
+    },
+    {
+      "file": "JJ_MENSAJE_INICIAL_CODEX_2026-11-13.md",
+      "bytes": 2189,
+      "sha256": "6f7541a7adba173e36230c4f9ad2af6d108a4dba0a3882644491c56181835f02"
+    }
+  ],
+  "precedence": "El mensaje inicial se aplicó a la sesión de auditoría Bloque00; el propietario autorizó después abrir Bloque01. Conservar reglas permanentes y no reconstruir la aplicación.",
+  "scope": "Solo documentos del plan; no contiene recetas retenidas, datos de usuario ni respaldos privados."
+}

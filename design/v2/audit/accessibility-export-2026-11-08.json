@@ -1,0 +1,22 @@
+[
+  {
+    "path": "dist-v2-coverage-a11y/index.html",
+    "bytes": 1222,
+    "sha256": "c3bcd0e21f791b24b6603ebd9703def3e7aa20f40a8de1424b476a60df26d7b1"
+  },
+  {
+    "path": "dist-v2-coverage-a11y/_expo/static/js/ios/index-6d2d67e12de08fd991514e9bf1b7fad1.hbc",
+    "bytes": 4841633,
+    "sha256": "0a5943c32c3f24823612df5811398147b10b757e586e65efe5eca2e4fa30ca39"
+  },
+  {
+    "path": "dist-v2-coverage-a11y/_expo/static/js/web/index-73241c8d58b64486039d18f27d9fdde7.js",
+    "bytes": 3510442,
+    "sha256": "46d44fb8236d3cfb5fba1a5d5ebb95fe22a97e1ae40c1080d3fc37719efe9b16"
+  },
+  {
+    "path": "dist-v2-coverage-a11y/_expo/static/js/android/index-730b5cc7d28dc268ce11f149cce59e72.hbc",
+    "bytes": 4847309,
+    "sha256": "45c3329c17c634ac558e83774dbf8f157f67fa920af00edc2f6540baa0ac2871"
+  }
+]

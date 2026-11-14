@@ -1,0 +1,7 @@
+# Preserve supplied visual/document assets byte for byte across platforms.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.zip binary
+*.ttf binary

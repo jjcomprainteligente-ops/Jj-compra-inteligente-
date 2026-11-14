@@ -1,0 +1,5183 @@
+{
+  "startedAt": "2026-11-07T16:48:40.658Z",
+  "finishedAt": "2026-11-07T16:54:37.892Z",
+  "origin": "http://127.0.0.1:8081",
+  "export": "dist-v2-coverage-final",
+  "method": "Chromium browser contexts at CSS 375×667, 430×932 and 1280×1000; not physical iPhone, native iOS or Safari",
+  "scope": "Entire Playwright suite against the selected web export; original 120 captures plus 300 inventory captures (16 screens and 9 labelled examples across 4 languages and 3 CSS sizes); not pixel-level design approval",
+  "data": "Fictional names, shops and prices in isolated browser storage; no commercial verification",
+  "nativeChecksPending": [
+    "Physical iPhone and Android",
+    "VoiceOver/TalkBack",
+    "Dynamic Type",
+    "Native keyboard, gestures and safe areas"
+  ],
+  "coverage": {
+    "reports": [
+      {
+        "language": "de",
+        "viewport": {
+          "width": 1280,
+          "height": 1000
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "de-1280-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "de-1280-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "de-1280-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "de-1280-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "de-1280-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "de-1280-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "de-1280-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "de-1280-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "de-1280-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "de-1280-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "de-1280-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "de-1280-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "de-1280-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "de-1280-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "de-1280-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "de-1280-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "de-1280-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "de-1280-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "de-1280-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "de-1280-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "de-1280-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "de-1280-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "de-1280-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "de-1280-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "de-1280-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "de",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "de-375-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "de-375-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "de-375-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "de-375-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "de-375-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "de-375-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "de-375-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "de-375-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "de-375-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "de-375-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "de-375-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "de-375-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "de-375-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "de-375-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "de-375-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "de-375-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "de-375-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "de-375-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "de-375-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "de-375-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "de-375-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "de-375-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "de-375-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "de-375-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "de-375-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "de",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "de-430-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "de-430-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "de-430-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "de-430-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "de-430-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "de-430-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "de-430-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "de-430-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "de-430-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "de-430-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "de-430-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "de-430-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "de-430-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "de-430-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "de-430-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "de-430-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "de-430-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "de-430-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "de-430-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "de-430-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "de-430-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "de-430-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "de-430-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "de-430-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "de-430-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 1280,
+          "height": 1000
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "en-1280-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "en-1280-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "en-1280-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "en-1280-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "en-1280-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "en-1280-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "en-1280-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "en-1280-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "en-1280-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "en-1280-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "en-1280-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "en-1280-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "en-1280-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "en-1280-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "en-1280-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "en-1280-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "en-1280-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "en-1280-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "en-1280-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "en-1280-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "en-1280-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "en-1280-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "en-1280-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "en-1280-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "en-1280-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "en-375-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "en-375-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "en-375-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "en-375-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "en-375-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "en-375-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "en-375-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "en-375-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "en-375-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "en-375-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "en-375-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "en-375-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "en-375-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "en-375-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "en-375-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "en-375-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "en-375-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "en-375-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "en-375-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "en-375-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "en-375-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "en-375-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "en-375-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "en-375-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "en-375-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "en-430-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "en-430-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "en-430-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "en-430-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "en-430-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "en-430-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "en-430-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "en-430-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "en-430-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "en-430-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "en-430-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "en-430-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "en-430-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "en-430-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "en-430-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "en-430-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "en-430-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "en-430-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "en-430-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "en-430-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "en-430-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "en-430-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "en-430-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "en-430-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "en-430-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 1280,
+          "height": 1000
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "es-1280-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "es-1280-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "es-1280-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "es-1280-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "es-1280-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "es-1280-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "es-1280-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "es-1280-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "es-1280-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "es-1280-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "es-1280-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "es-1280-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "es-1280-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "es-1280-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "es-1280-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "es-1280-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "es-1280-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "es-1280-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "es-1280-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "es-1280-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "es-1280-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "es-1280-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "es-1280-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "es-1280-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "es-1280-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "es-375-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "es-375-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "es-375-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "es-375-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "es-375-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "es-375-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "es-375-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "es-375-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "es-375-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "es-375-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "es-375-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "es-375-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "es-375-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "es-375-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "es-375-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "es-375-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "es-375-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "es-375-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "es-375-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "es-375-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "es-375-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "es-375-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "es-375-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "es-375-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "es-375-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "es-430-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "es-430-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "es-430-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "es-430-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "es-430-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "es-430-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "es-430-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "es-430-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "es-430-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "es-430-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "es-430-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "es-430-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "es-430-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "es-430-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "es-430-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "es-430-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "es-430-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "es-430-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "es-430-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "es-430-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "es-430-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "es-430-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "es-430-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "es-430-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "es-430-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 1280,
+          "height": 1000
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "fr-1280-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "fr-1280-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "fr-1280-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "fr-1280-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "fr-1280-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "fr-1280-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "fr-1280-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "fr-1280-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "fr-1280-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "fr-1280-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "fr-1280-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "fr-1280-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "fr-1280-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "fr-1280-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "fr-1280-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "fr-1280-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "fr-1280-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "fr-1280-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "fr-1280-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "fr-1280-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "fr-1280-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "fr-1280-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "fr-1280-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "fr-1280-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "fr-1280-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "fr-375-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "fr-375-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "fr-375-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "fr-375-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "fr-375-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "fr-375-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "fr-375-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "fr-375-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "fr-375-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "fr-375-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "fr-375-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "fr-375-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "fr-375-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "fr-375-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "fr-375-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "fr-375-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "fr-375-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "fr-375-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "fr-375-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "fr-375-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "fr-375-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "fr-375-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "fr-375-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "fr-375-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "fr-375-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "engine": "Chromium web",
+        "disclaimer": "CSS viewport simulation; not native iOS or physical iPhone validation. State gallery cases are labelled examples.",
+        "canonicalRoot": "referencias/gpt6-v2/extraidos/v2",
+        "checks": [
+          {
+            "scene": "01_bienvenida",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/01_bienvenida.png",
+            "filename": "fr-430-01_bienvenida.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "02_inicio",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/02_inicio.png",
+            "filename": "fr-430-02_inicio.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "03_mi_compra",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/03_mi_compra.png",
+            "filename": "fr-430-03_mi_compra.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "04_ahorro",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/04_ahorro.png",
+            "filename": "fr-430-04_ahorro.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "05_menus",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/05_menus.png",
+            "filename": "fr-430-05_menus.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "06_detalle_receta",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/06_detalle_receta.png",
+            "filename": "fr-430-06_detalle_receta.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "07_ingredientes",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/07_ingredientes.png",
+            "filename": "fr-430-07_ingredientes.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "08_buscar_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/08_buscar_producto.png",
+            "filename": "fr-430-08_buscar_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "09_detalle_producto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/09_detalle_producto.png",
+            "filename": "fr-430-09_detalle_producto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "10_voz",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/10_voz.png",
+            "filename": "fr-430-10_voz.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "11_escaner",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/11_escaner.png",
+            "filename": "fr-430-11_escaner.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "12_mis_tiendas",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/12_mis_tiendas.png",
+            "filename": "fr-430-12_mis_tiendas.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "13_presupuesto",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/13_presupuesto.png",
+            "filename": "fr-430-13_presupuesto.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "14_historial",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/14_historial.png",
+            "filename": "fr-430-14_historial.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "15_perfil_hogar",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/15_perfil_hogar.png",
+            "filename": "fr-430-15_perfil_hogar.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "16_notificaciones",
+            "kind": "screen",
+            "reference": "02_VISTAS_CANONICAS/16_notificaciones.png",
+            "filename": "fr-430-16_notificaciones.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_01_empty",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/01_lista_vacia.png",
+            "filename": "fr-430-estado_01_empty.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_02_no_price",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/02_sin_precios.png",
+            "filename": "fr-430-estado_02_no_price.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_03_offline",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/03_sin_conexion.png",
+            "filename": "fr-430-estado_03_offline.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_04_network",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/04_error_red.png",
+            "filename": "fr-430-estado_04_network.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_05_microphone_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/05_permiso_micro.png",
+            "filename": "fr-430-estado_05_microphone_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_06_camera_denied",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/06_permiso_camara.png",
+            "filename": "fr-430-estado_06_camera_denied.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_07_unknown_barcode",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/07_sin_barcode.png",
+            "filename": "fr-430-estado_07_unknown_barcode.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_08_duplicate",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/08_conflicto_producto.png",
+            "filename": "fr-430-estado_08_duplicate.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          },
+          {
+            "scene": "estado_09_success",
+            "kind": "example-state",
+            "reference": "03_B03_14_ESTADOS/09_confirmacion.png",
+            "filename": "fr-430-estado_09_success.png",
+            "health": {
+              "horizontalOverflow": 0,
+              "outside": [],
+              "clipped": [],
+              "rawKeys": []
+            }
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "screenshots": 300,
+    "completeMatrix": true,
+    "errors": [],
+    "failedChecks": []
+  },
+  "suite": {
+    "exitCode": 0,
+    "signal": null
+  },
+  "suiteStatistics": {
+    "startTime": "2026-11-07T16:48:41.223Z",
+    "duration": 356299.964,
+    "expected": 182,
+    "skipped": 24,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suitePassed": true,
+  "resultsReadError": null,
+  "interrupted": false,
+  "completeMatrix": true,
+  "screenshots": 120,
+  "runtimeErrors": [],
+  "failedVisualChecks": [],
+  "protectedArtifactsUnchanged": true,
+  "protectedArtifacts": {
+    "before": {
+      "dist-v2": "367fa12dd8868bf11320d49d3afbc350eddb896f7367eb8cdbb7114d88d715b2",
+      "dist": "bf8cfc61332ff5c259eae1efb279d1aa60b4e91bb3dbedf4b12749d20729ba2f",
+      "dist-i18n": "b95a6808b5283834e7329f5be16ca2b73bd9f45f15432653769c234b20ffdb04",
+      "design/b01": "d06968be1fd253726bbbd3a2a4d397b0598a4eac7b2e47d06388f73a5be33672",
+      "design/b02": "e252d0fa46cb04fe46e8976f2beb614214b54068f8c94561f79b066f0596a277",
+      "design/b03-b04": "451b32a4ad1c0c26fd4e5ce097a6801f2e0fbba5fe97ee4b36c4135c2579234f",
+      "design/b05": "0ffb267777603077d8271383d8ce399407fff8d3f08e83ea12e3a59af5968932",
+      "design/b06": "5fd99885853e896740c62e263fabfcc3cf49b9153c7b7fb4e891a7f9816b2fe0",
+      "design/i18n": "62b3bf182c4abec2bc0184277355a6ac62979425dbd558f2e8844a9e9625425b",
+      "referencias/gpt6-v2": "4a384bf41b4732a33c1dc71a418373f0ca2c97e665ffe2adfb655240a00b6495"
+    },
+    "after": {
+      "dist-v2": "367fa12dd8868bf11320d49d3afbc350eddb896f7367eb8cdbb7114d88d715b2",
+      "dist": "bf8cfc61332ff5c259eae1efb279d1aa60b4e91bb3dbedf4b12749d20729ba2f",
+      "dist-i18n": "b95a6808b5283834e7329f5be16ca2b73bd9f45f15432653769c234b20ffdb04",
+      "design/b01": "d06968be1fd253726bbbd3a2a4d397b0598a4eac7b2e47d06388f73a5be33672",
+      "design/b02": "e252d0fa46cb04fe46e8976f2beb614214b54068f8c94561f79b066f0596a277",
+      "design/b03-b04": "451b32a4ad1c0c26fd4e5ce097a6801f2e0fbba5fe97ee4b36c4135c2579234f",
+      "design/b05": "0ffb267777603077d8271383d8ce399407fff8d3f08e83ea12e3a59af5968932",
+      "design/b06": "5fd99885853e896740c62e263fabfcc3cf49b9153c7b7fb4e891a7f9816b2fe0",
+      "design/i18n": "62b3bf182c4abec2bc0184277355a6ac62979425dbd558f2e8844a9e9625425b",
+      "referencias/gpt6-v2": "4a384bf41b4732a33c1dc71a418373f0ca2c97e665ffe2adfb655240a00b6495"
+    }
+  },
+  "reports": [
+    {
+      "language": "de",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "de-1280-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "de-1280-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "de-1280-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "de-1280-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "de-1280-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "de-1280-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "de-1280-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "de-1280-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "de-1280-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "de-1280-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "de-375-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "de-375-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "de-375-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "de-375-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "de-375-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "de-375-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "de-375-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "de-375-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "de-375-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "de-375-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "de-430-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "de-430-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "de-430-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "de-430-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "de-430-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "de-430-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "de-430-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "de-430-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "de-430-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "de-430-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "en-1280-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "en-1280-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "en-1280-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "en-1280-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "en-1280-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "en-1280-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "en-1280-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "en-1280-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "en-1280-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "en-1280-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "en-375-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "en-375-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "en-375-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "en-375-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "en-375-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "en-375-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "en-375-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "en-375-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "en-375-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "en-375-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "en-430-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "en-430-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "en-430-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "en-430-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "en-430-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "en-430-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "en-430-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "en-430-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "en-430-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "en-430-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "es-1280-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "es-1280-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "es-1280-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "es-1280-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "es-1280-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "es-1280-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "es-1280-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "es-1280-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "es-1280-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "es-1280-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "es-375-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "es-375-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "es-375-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "es-375-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "es-375-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "es-375-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "es-375-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "es-375-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "es-375-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "es-375-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "es-430-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "es-430-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "es-430-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "es-430-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "es-430-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "es-430-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "es-430-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "es-430-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "es-430-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "es-430-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "fr-1280-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "fr-1280-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "fr-1280-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "fr-1280-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "fr-1280-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "fr-1280-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "fr-1280-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "fr-1280-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "fr-1280-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "fr-1280-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "fr-375-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "fr-375-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "fr-375-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "fr-375-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "fr-375-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "fr-375-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "fr-375-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "fr-375-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "fr-375-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "fr-375-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "engine": "Chromium",
+      "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+      "fixture": "Fictional isolated local data; no commercial verification",
+      "errors": [],
+      "checks": [
+        {
+          "scene": "welcome",
+          "filename": "fr-430-welcome.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "home",
+          "filename": "fr-430-home.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "list",
+          "filename": "fr-430-list.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "savings",
+          "filename": "fr-430-savings.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "menus",
+          "filename": "fr-430-menus.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "recipe",
+          "filename": "fr-430-recipe.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "review",
+          "filename": "fr-430-review.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "profile",
+          "filename": "fr-430-profile.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "language",
+          "filename": "fr-430-language.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        },
+        {
+          "scene": "validation",
+          "filename": "fr-430-validation.png",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          }
+        }
+      ]
+    }
+  ]
+}

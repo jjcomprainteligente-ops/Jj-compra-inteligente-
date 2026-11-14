@@ -12,6 +12,8 @@ const storageKeys = new Set([
   'jjcompraintelwgiemt.comparisons.v1',
   'jjcompraintelwgiemt.price-observations.v1',
   'jjcompraintelwgiemt.preferences.v1',
+  'jjcompraintelwgiemt.expenses.v1',
+  'jjcompraintelwgiemt.local-settings.v1',
 ]);
 const hashPattern = /^[a-f0-9]{64}$/;
 const claimPattern = /^[a-f0-9]{32}$/;

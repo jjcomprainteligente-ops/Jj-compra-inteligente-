@@ -1,0 +1,72 @@
+{
+  "startedAt": "2026-11-13T22:14:41.607Z",
+  "method": "Read-only landing capture in isolated empty contexts; no clicks or user data, non-GET/HEAD requests blocked; not a pixel acceptance test.",
+  "stageSource": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+  "productionSource": null,
+  "cases": [
+    {
+      "kind": "production",
+      "width": 375,
+      "origin": "https://jj-compra-inteligente.vercel.app",
+      "status": "captured",
+      "nonReadRequestsBlocked": [],
+      "httpStatus": 200,
+      "finalOrigin": "https://jj-compra-inteligente.vercel.app",
+      "pageTitle": "JJ Compra Inteligente",
+      "screenshot": {
+        "file": "production-375.png",
+        "sha256": "6de8d245f20bb63313a09e6238fadb1c7f0c1bba5f1479cc107d5a457f376fa3"
+      }
+    },
+    {
+      "kind": "staging",
+      "width": 375,
+      "origin": "https://jj-compra-inteligente-et04mckln-cmj2hwhc6b-1051.vercel.app",
+      "status": "captured",
+      "nonReadRequestsBlocked": [],
+      "httpStatus": 200,
+      "finalOrigin": "https://jj-compra-inteligente-et04mckln-cmj2hwhc6b-1051.vercel.app",
+      "pageTitle": "JJ Compra Inteligente",
+      "screenshot": {
+        "file": "staging-375.png",
+        "sha256": "305c026583674c6ceda68259170caac8d369db4a1bca2acb2bb003658ebbf856"
+      }
+    },
+    {
+      "kind": "production",
+      "width": 430,
+      "origin": "https://jj-compra-inteligente.vercel.app",
+      "status": "captured",
+      "nonReadRequestsBlocked": [],
+      "httpStatus": 200,
+      "finalOrigin": "https://jj-compra-inteligente.vercel.app",
+      "pageTitle": "JJ Compra Inteligente",
+      "screenshot": {
+        "file": "production-430.png",
+        "sha256": "2e7149b337f930230bd4af03f260cd670d0751a653685b9bd0a7ab55a1b46835"
+      }
+    },
+    {
+      "kind": "staging",
+      "width": 430,
+      "origin": "https://jj-compra-inteligente-et04mckln-cmj2hwhc6b-1051.vercel.app",
+      "status": "captured",
+      "nonReadRequestsBlocked": [],
+      "httpStatus": 200,
+      "finalOrigin": "https://jj-compra-inteligente-et04mckln-cmj2hwhc6b-1051.vercel.app",
+      "pageTitle": "JJ Compra Inteligente",
+      "screenshot": {
+        "file": "staging-430.png",
+        "sha256": "fdf43e9e42eef84e46555a71fb4a2d140b490b1c3db966ecb368779b5ab82673"
+      }
+    }
+  ],
+  "finishedAt": "2026-11-13T22:14:52.497Z",
+  "observations": [
+    "Production guest context lands on the older Home screen with a circular JJ monogram and visibly different typography.",
+    "Staging guest context lands on the onboarding screen with the original approved logo and language selection.",
+    "These are different initial states; captures are not pixel-equivalence tests of one screen and do not prove loss of saved lists.",
+    "Production remains assigned to its previous deployment; no promotion or production mutation was performed."
+  ],
+  "privacy": "Screenshots remain private local evidence; only hashes, origins, dimensions and observations are published."
+}

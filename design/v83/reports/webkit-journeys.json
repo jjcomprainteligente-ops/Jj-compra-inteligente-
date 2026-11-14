@@ -1,0 +1,2512 @@
+{
+  "statistics": {
+    "startTime": "2026-11-12T15:23:16.121Z",
+    "duration": 556933.9619999999,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "scope": "Linux WebKit with mobile CSS; physical iPhone and native Safari not certified",
+  "languages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "viewports": [
+    [
+      375,
+      667
+    ],
+    [
+      430,
+      932
+    ]
+  ],
+  "dailyPurchaseCases": 8,
+  "v83RecipeCases": 8,
+  "logicalScreenshots": 120,
+  "results": [
+    {
+      "language": "de",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Karotte",
+            300000,
+            "g"
+          ],
+          [
+            "Olivenöl",
+            40000,
+            "ml"
+          ],
+          [
+            "Reis",
+            320000,
+            "g"
+          ],
+          [
+            "Zucchini",
+            400000,
+            "g"
+          ],
+          [
+            "Zwiebel",
+            200000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "2ae6c3b1edbbf19d1d8c8adf6b5b6d75613e3e05935cc80460ada4985240d2e2"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "005de7387a313428db05ab1f8b5813779e76ba0fc23b7f302d251de048b00eb5"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "51543e0f41518f76c1d47de2d659affd1dc728937ce7a41334f423609b9d5860"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "70c59f3d195f60b01dd2815cb6831974d2a685b81b77f2103704bc64c2f2d02e"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "ee108ed6756507ebf762cbb0c5d53f5b76895aaeb4892e2d07c0946189693623"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d3952382e5d55c7083c9881a80afefa6a40de07c02a1e2dfdeaaea827b8156e2"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "38b1ace54d4f0f763d7017cadde073f940724473e9e3550984b845312da06a25"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "872cf3212eaa34457e3bf1ac2adc6d886d1d4db586bd1aecc7a6188ae20d91ca"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "dd6494d46963a5006fff96276726b2bc2834e72bc3af2b9e2ef21d5fe7ef084d"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "325ff88deeb35d4149f0529b1b5437aaab446e3457346dd855c74985756dc59d"
+        }
+      ],
+      "evidenceSha256": "6b0c068f97e81d3c28b75616877c5fd7b330e02e568fdfb948085453019932e1"
+    },
+    {
+      "language": "de",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Karotte",
+            300000,
+            "g"
+          ],
+          [
+            "Olivenöl",
+            40000,
+            "ml"
+          ],
+          [
+            "Reis",
+            320000,
+            "g"
+          ],
+          [
+            "Zucchini",
+            400000,
+            "g"
+          ],
+          [
+            "Zwiebel",
+            200000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "1033bef99fc45387f1fa5bf7261393ae171d443819114a2b6846126d20ef8956"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "a04b849c87efb6d4f78787d1264484199c6e97a8b8049f5c4b27c26ce194f8bc"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "31abc14b12036a5f0edbe04bf29870018d7d6b64f35d0a5b088124d0d550d918"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d2466f397a56229a5a9dd97e11b1d589aef799f3723f8c1d87db5226de7d7687"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "688f7fa923949535990cdbfb6b6fb179a0a2c3c1db563f74155cc38a763895f3"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "c509f4fa9b1f29bd5855eba0ec452539ef559d48a3c66c7ae1a4d5524bbb66cc"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "ff38c08b55f8fa8e914584cba620035f264c23026c4828f7ee946ac95a4c6b5c"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "248bedf4d24d73aa5459c2cd614d67d47c1cb4cce5e5255688c4e9053181d264"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "7ea55ca4f9f647c5f1473b5b8f0a08bfefeb9622e632feca731f34324a2afe79"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "6e6ac4101cf8463ca43fe12b755b3ea07ad9495d6353b815b3779e9301fa5ce4"
+        }
+      ],
+      "evidenceSha256": "c3f9dfa190bd65afeec9003a49f7cbf0af34f7164fa757dd17b7e76bc4b98633"
+    },
+    {
+      "language": "en",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Carrot",
+            300000,
+            "g"
+          ],
+          [
+            "Courgette",
+            400000,
+            "g"
+          ],
+          [
+            "Olive oil",
+            40000,
+            "ml"
+          ],
+          [
+            "Onion",
+            200000,
+            "g"
+          ],
+          [
+            "Rice",
+            320000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "63eefdbbec38856afa1270f6cdf915fdb3dd9822f464e32bfbbdcc97da672d06"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b68fc9c874031870ccf180976272f3542a1402b8352b8af62c1dfe3b8ac713d9"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "cff9ab6c0cf0f7d91b316ad1a2e21560ba84f57ffd95ec028599822058bad212"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "52ccfc01cc235c054c642af8581fb2add8418111c85f0d6e548b55dad358afd2"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "721cd04fb0213da1805466c5c169532d5db9181f676b27c8c4b9e63409e9d26f"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b83f29268d8fe2ba7598f97d0a87faffb7aa16ce2355a3917de9b4e570bdbe2c"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b0e90af7c321e57ba467951a5b0bf8c98110944d8344e517c92f97f3349223b0"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "fc312c8795c3926771da9505b38cdc76bf12ed4fac86a89b4f9e2396cce45ef4"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "f1d165fe044ac917d76143f5afb0a52de8ea76a2054aec59a7ac6d49647ba487"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "cd1cef9901039095239767f37d01201db36f5c1127a554d4582b26a7f22265bf"
+        }
+      ],
+      "evidenceSha256": "45cd5ec8690b9a8c620c1637f5ba24644360c5b19a4f8b0ff5293c026005e199"
+    },
+    {
+      "language": "en",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Carrot",
+            300000,
+            "g"
+          ],
+          [
+            "Courgette",
+            400000,
+            "g"
+          ],
+          [
+            "Olive oil",
+            40000,
+            "ml"
+          ],
+          [
+            "Onion",
+            200000,
+            "g"
+          ],
+          [
+            "Rice",
+            320000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "244e3aa771921604eb0dcfdf3b43b5299dc4ebc4164834e7dbfd786da8a74546"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "845ae8971e48a4169f61ef7ebc39046c59486d111df0d58225135293beb05c62"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "1b6b087129552d45a09b64dd6c9ba95a07eea57ac45f0d708607c21e96bc13a1"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "e7c79397f94f33c81376775f516b8bd65e24afd6d98f937de4a817d642278352"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "75ec7aa3a9549b825c9b27abdd465ef8862f72834c8cbabd4dc5dcc819cd93d8"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "c34e33a93c6b3d6efea158ecf12d319a9c6e620be036ff9188244bb83437ba0d"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "a494c6cf9211b99a8e67f123ac2cb02277c7b537aef4ac68d6af852d5cb3c896"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "4005f907b9ec21c2d06f61b6617f214eb892f6a05f5b52138734d98d1b8f4a88"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "bd8e41ecbf19fa0b4137bca45ff24057f69c38d6b753780e6b0821b3ba0cb852"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "5aecf26735d4a6f124e2057a3ac98fc8463891562dd43fc8b0bcdad63288384d"
+        }
+      ],
+      "evidenceSha256": "940640a612b8b3e37506de9d4e32436417004dfc44b498eb9b53973fa56e0b9f"
+    },
+    {
+      "language": "es",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Aceite de oliva",
+            40000,
+            "ml"
+          ],
+          [
+            "Arroz",
+            320000,
+            "g"
+          ],
+          [
+            "Calabacín",
+            400000,
+            "g"
+          ],
+          [
+            "Cebolla",
+            200000,
+            "g"
+          ],
+          [
+            "Zanahoria",
+            300000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "908fa6eecbfa6ce17a02655ae1da17a4f92f044e2737acf6880e4da1ec11f4c5"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d9fb5f5c3086aa82106610874240051cf00eb7dede610797bff6507f777105a1"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "a581cd0641f0735950f0890815bcb913f9c374245749be01af4ad7fc5848466a"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "aaf70fdfd15367eb58cb8dda6de6aa42cdc523d9912c1fc3bf952fb60efdb676"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "ec6f6f051245ba8a2d591da2c9eded50d4b813ad772e2f7255c078f069b70806"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d6649f2cd8bad7b341cd6ed02b9c419af1316a08d5b0ce08606891946d3cd0b7"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "a9b75e3763188d86f97cb5344055531118046bd406d1cd2f20812c5fee35b0c0"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "4eaa61e6994f4439e3a3e794e2dc2895371096d1e22a6279c46cd5cf3a22bf6e"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "321a7cde10d1f0d06d8f9a2159f4829dc57054cc24bf8ad426b5b35c446057cf"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "4c8d03a3c18addd68a98728630199022bd1ffb08250518981708eb56fcba028f"
+        }
+      ],
+      "evidenceSha256": "211a4281d4eb67c01e0994f6ea661f2da4a39c7396283f2e9de87b279d8859e2"
+    },
+    {
+      "language": "es",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Aceite de oliva",
+            40000,
+            "ml"
+          ],
+          [
+            "Arroz",
+            320000,
+            "g"
+          ],
+          [
+            "Calabacín",
+            400000,
+            "g"
+          ],
+          [
+            "Cebolla",
+            200000,
+            "g"
+          ],
+          [
+            "Zanahoria",
+            300000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "37ac6207de2ca0dc1b826a4106c2de6bee8dc7f2b6e187418902c8aabe0f948d"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "90dc2593904309a629b67c74f7ce66644401ed6bcdaec4ae2bd68cb9f25331d4"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "a9ef9c25547d757e1f345a226238d665fe97d4f376f1351aaaffd9074005173e"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "06cb8b32faf4cc0925678c07e2554ce214f530289ffbe51e0a28131a4bea4bed"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "3e7f55b57b3b8f9c82364c387ed58647cb4afd8a60dcf4c66af5e7a1f293943a"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "8d352e628ef86fe4dc60cbf0a3f798f192dd791ca19d6ee29bad3c5cd0a2f5a4"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d6e0e267c5bfe8e2a68a6703fdcd31ea2456f387434d3013108a1c8b22e7da92"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "41245862d95a7a17288bb71517c77eaeee48331ff9b125c6df76a97c310dec08"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "9cdd2076a5dec9432d064776605a331f757dc59b9ef18b5599bf9e43a1bc4116"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "1c44fa3dc14db262dec0c1845e336e7fe82a832595e4e73f2d5052f392dafa3d"
+        }
+      ],
+      "evidenceSha256": "4078f0f6e8b32fcaaa2a5bd49870aa71e327bd731f8f3be792282f5cc8fadc6c"
+    },
+    {
+      "language": "fr",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Carotte",
+            300000,
+            "g"
+          ],
+          [
+            "Courgette",
+            400000,
+            "g"
+          ],
+          [
+            "Huile d’olive",
+            40000,
+            "ml"
+          ],
+          [
+            "Oignon",
+            200000,
+            "g"
+          ],
+          [
+            "Riz",
+            320000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "c42d4223145fd743a92bb0b675eac0947183e8d0d0dd53d0610ab2ee81e8bbfa"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "752c50c46c4a5ea1dbbe9d6a631a148a3c9a6663083b664107d5588e2ccd2609"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "58f1f513dc88e65501f0b7c969056d795f68056417a5de9f331a9f184c198d76"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "73146f53480a52f8227aec091a5df317cc201e5840f3038e91f7b921fe40f6fa"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "35868af2c168bd2935951b660f552382a38479dac001a7fa5626f4fac626e363"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b8bbdb8671a3af74967faa662f80748f69d6941043271f2f5519fe10b4f35a40"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "ed91951d2ee8834d7812a0fe8b5c977f2d0db04473454df0402af4513c2a6bd0"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "598d92db3f2f5d2eb14426499777e612fe21cc9edfa1f9feddb6742a3ecaf810"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "cfffdd5e3f1ef7deedffddd589daf51cd13473873f5d520a8e50ac2e2e97ee2f"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "e3a6f2bb045e14559a6e7fd314d47ea3a963a9e826b8210498c7d2c40956a8ee"
+        }
+      ],
+      "evidenceSha256": "5c4b652cafd25d24c43d3cea8dcab7f4d0333d1440233753dc824f5ad85adf90"
+    },
+    {
+      "language": "fr",
+      "engine": "webkit",
+      "version": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "authOrHouseholdJourneyValidated": false,
+      "dataSetup": "business state created only by UI in a new browser context",
+      "offlineScope": "already-loaded app only; not a cold-launch or installation test",
+      "capabilities": {
+        "secureContext": true,
+        "webLocks": true,
+        "webCrypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "diagnosticDatabaseRemoved": true,
+        "error": ""
+      },
+      "expected": {
+        "budgetCents": 4000,
+        "unitPriceCents": 125,
+        "manualQuantityMilli": 2000,
+        "markedEnteredCents": 250,
+        "confirmedExpenseCents": 1235
+      },
+      "recipeScope": {
+        "servings": 4,
+        "weeklyPlanUnchanged": true,
+        "reviewedIngredients": [
+          [
+            "Carotte",
+            300000,
+            "g"
+          ],
+          [
+            "Courgette",
+            400000,
+            "g"
+          ],
+          [
+            "Huile d’olive",
+            40000,
+            "ml"
+          ],
+          [
+            "Oignon",
+            200000,
+            "g"
+          ],
+          [
+            "Riz",
+            320000,
+            "g"
+          ]
+        ],
+        "omittedIngredients": 1
+      },
+      "otherSixDocumentsPreservedOnExpense": true,
+      "allSevenDocumentsPreservedOnShare": true,
+      "geometryScope": "rendered text nodes only; native keyboard, input contents, SVG geometry and physical safe areas are not certified",
+      "noExternalRequests": true,
+      "runtimeErrors": [],
+      "captures": [
+        {
+          "scene": "01-welcome",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "e514642aad06eee67bae7874fb9fa6a9080d55756274dd63be045bf7026a308d"
+        },
+        {
+          "scene": "02-manual-list",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "030b578e2915f9d2207f15bd5a02bc878c338143e0274da4a8da83cb03bf7480"
+        },
+        {
+          "scene": "03-prepared-menu",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "2013b71174f052922111ca45ec94b73a481652f4ae0eea2792b0971d4d29426f"
+        },
+        {
+          "scene": "04-recipe",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b52312c3c99082afa8e6fee289abf3a5a732e0fb12a647a51d3fee598c0e5720"
+        },
+        {
+          "scene": "05-reviewed-ingredients",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b0e87ba02bf466c1812811b77c28367ed412996d068eca2c3418d47b2e0cbce7"
+        },
+        {
+          "scene": "06-marked-is-not-payment",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "7ba95429f76694a54caf789a24138322c09db29a0d7f89814fb2430cd29f3d0e"
+        },
+        {
+          "scene": "07-expense-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "cc9726f8ed1d0f2a068ab1737ecdd51697890ea3f509a02700ff58cb71c4da7d"
+        },
+        {
+          "scene": "08-confirmed-history",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "22e55d9dddf678350702b7faf3e680a8ad5b60ca70e721595cd38143edf95c64"
+        },
+        {
+          "scene": "09-reviewed-copy",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "5ab6ee8c7ca29c5f19792393d7791deca92422546ba273106775b84f7466e60e"
+        },
+        {
+          "scene": "10-reloaded-home",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "6224bf47a2d38d3b5f8d579ec4deb996ddd962f6ceefcb66e6bddefabcf524b2"
+        }
+      ],
+      "evidenceSha256": "d41228092f413e84a1c911e65a8697746ea735831d37f338e5385283b1585392"
+    },
+    {
+      "language": "de",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "Rundkornreis",
+          360000,
+          "g"
+        ],
+        [
+          "Hähnchenfleisch in Stücken",
+          450000,
+          "g"
+        ],
+        [
+          "Kaninchenfleisch in Stücken",
+          350000,
+          "g"
+        ],
+        [
+          "flache grüne Bohnen",
+          220000,
+          "g"
+        ],
+        [
+          "gekochte Garrofón-Bohnen (große weiße Limabohnen)",
+          160000,
+          "g"
+        ],
+        [
+          "zerkleinerte Tomaten",
+          120000,
+          "g"
+        ],
+        [
+          "Olivenöl",
+          45000,
+          "ml"
+        ],
+        [
+          "edelsüßes Paprikapulver",
+          4000,
+          "g"
+        ],
+        [
+          "Safran",
+          200,
+          "g"
+        ],
+        [
+          "Wasser",
+          1100000,
+          "ml"
+        ],
+        [
+          "Rosmarin (Zweig)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "0071fa81ed9d4371841c72e2788d1bf528906ba69e558941edb299cd1bdbd94f"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "af9d47b5be8948f20e1d5baa8bd095dc6e0e1fef5d45f72d0122f6be5d48a9b9"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "517088015223fe2c8fae233b65e4102977cbcc33263aae7981093ebf62aef89f"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "cf992d2c39034111fec79355886a4226cd2cd046e39d7c8ec2cd5f9a47b5140e"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "acedda617699918cd35807a044d82421e2d2dae8bed661cfda3c214b8cd8f1df"
+        }
+      ],
+      "evidenceSha256": "7954fa07d1834b28e717cbccc50bf9788b1643e0732d78b5ebc69781a360187f"
+    },
+    {
+      "language": "de",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "Rundkornreis",
+          360000,
+          "g"
+        ],
+        [
+          "Hähnchenfleisch in Stücken",
+          450000,
+          "g"
+        ],
+        [
+          "Kaninchenfleisch in Stücken",
+          350000,
+          "g"
+        ],
+        [
+          "flache grüne Bohnen",
+          220000,
+          "g"
+        ],
+        [
+          "gekochte Garrofón-Bohnen (große weiße Limabohnen)",
+          160000,
+          "g"
+        ],
+        [
+          "zerkleinerte Tomaten",
+          120000,
+          "g"
+        ],
+        [
+          "Olivenöl",
+          45000,
+          "ml"
+        ],
+        [
+          "edelsüßes Paprikapulver",
+          4000,
+          "g"
+        ],
+        [
+          "Safran",
+          200,
+          "g"
+        ],
+        [
+          "Wasser",
+          1100000,
+          "ml"
+        ],
+        [
+          "Rosmarin (Zweig)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "1b3a045251b1f641f909926311fda84b7c41c2eaf496c3ba3166f94a8a5d553e"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b059d6bfb6a8b312d2a8af33748e4198ffd84d05e554cfee713d9b432a86f220"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "c23a0c6608c35aff89f14ee780044f924dd594eb17037b8b5bc9b73398df2dfe"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d8990dad76d9b667f92d34374b8d317dc762a6f783ff2486c8032027976f8b87"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "857c1ea069f828e54f93949213c0ea71274e4ccc973c67a90228d40b5a28bc8c"
+        }
+      ],
+      "evidenceSha256": "8990a38555e7ad136490065ce1ab06770e3060c0e03489ee2419476b74944aba"
+    },
+    {
+      "language": "en",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "short-grain rice",
+          360000,
+          "g"
+        ],
+        [
+          "chicken, cut into pieces",
+          450000,
+          "g"
+        ],
+        [
+          "rabbit, cut into pieces",
+          350000,
+          "g"
+        ],
+        [
+          "flat green beans",
+          220000,
+          "g"
+        ],
+        [
+          "cooked garrofón beans (large white lima beans)",
+          160000,
+          "g"
+        ],
+        [
+          "crushed tomato",
+          120000,
+          "g"
+        ],
+        [
+          "olive oil",
+          45000,
+          "ml"
+        ],
+        [
+          "sweet paprika",
+          4000,
+          "g"
+        ],
+        [
+          "saffron",
+          200,
+          "g"
+        ],
+        [
+          "water",
+          1100000,
+          "ml"
+        ],
+        [
+          "rosemary (sprig)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "e87ced18c16cbd1f32fc6d6595d5eade40fee88a581ff5c7496358a1014f8b99"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "f6f3de66abfa0fd19c3503f49412581beb4d4422b0e7141acb31ae44a848d1c8"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "95d0a5c054e855af2bb34eb02579cf8ff1576161cba5be8e6a0f51a747bbf470"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "21cebed6706832fc207d7b451256edcb3f9a82aa17c9280ed2aa5b93018eae65"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "64c60c177711303cb49acd6cdb06c519a6a6fc8058a4ce4020e41dda9a90de07"
+        }
+      ],
+      "evidenceSha256": "93afd35c0da6103b365fa67d2db00dada124ab64f59068a010dfae0bfd2ed6e0"
+    },
+    {
+      "language": "en",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "short-grain rice",
+          360000,
+          "g"
+        ],
+        [
+          "chicken, cut into pieces",
+          450000,
+          "g"
+        ],
+        [
+          "rabbit, cut into pieces",
+          350000,
+          "g"
+        ],
+        [
+          "flat green beans",
+          220000,
+          "g"
+        ],
+        [
+          "cooked garrofón beans (large white lima beans)",
+          160000,
+          "g"
+        ],
+        [
+          "crushed tomato",
+          120000,
+          "g"
+        ],
+        [
+          "olive oil",
+          45000,
+          "ml"
+        ],
+        [
+          "sweet paprika",
+          4000,
+          "g"
+        ],
+        [
+          "saffron",
+          200,
+          "g"
+        ],
+        [
+          "water",
+          1100000,
+          "ml"
+        ],
+        [
+          "rosemary (sprig)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "ca9b3b269b68eef14ef1cf71381d857c4ec38d99816e05e149ca3f4ad2225733"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "12c6d040f1d613251e459228c75f553e6e537d43e87dcfba7748c6c4fee547af"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "03c9526eaa44f85a0bee5a2247f47567e845a21d7963b151759449d30083c5b5"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "12b6811cb9dc991e193fdf144a422537b85dfdc4b93b02f3710f891998739dbd"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "2ab9ff4d6547ccb095ae707d725f3a0bb46d2596dbf1731bdddf292705632901"
+        }
+      ],
+      "evidenceSha256": "eeb8870e0cfd423acec08c816902484bb421f216584a694ce0f7ee689f4105db"
+    },
+    {
+      "language": "es",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "arroz redondo",
+          360000,
+          "g"
+        ],
+        [
+          "pollo troceado",
+          450000,
+          "g"
+        ],
+        [
+          "conejo troceado",
+          350000,
+          "g"
+        ],
+        [
+          "judía verde plana",
+          220000,
+          "g"
+        ],
+        [
+          "garrofón cocido",
+          160000,
+          "g"
+        ],
+        [
+          "tomate triturado",
+          120000,
+          "g"
+        ],
+        [
+          "aceite de oliva",
+          45000,
+          "ml"
+        ],
+        [
+          "pimentón dulce",
+          4000,
+          "g"
+        ],
+        [
+          "azafrán",
+          200,
+          "g"
+        ],
+        [
+          "agua",
+          1100000,
+          "ml"
+        ],
+        [
+          "romero (rama)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "035da2076f23be9b4e05e6b560cbc26d97551b9734dc188985fbcd57a267ff19"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "833f655c86e94b0d05860c691c2aeb230d5c6547206db3ee6a6291ebdee9b4bd"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "cc157e0837d4b744875018eb6632c79e9356a017c11e402ee49a715c7cc1e563"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "62ea8dbc5c077fc9c31b9a651d404f6ee610680e2a515e0ea417c519faefb532"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "10a3af3d06cf731e01ff7fdb78c61ba0b1db1007cf4b562ff636c837bb146b19"
+        }
+      ],
+      "evidenceSha256": "4fd17c58ff8e4ed5e4a3087590c0e802d36dedf9bda32d47cc8745e9c46a32da"
+    },
+    {
+      "language": "es",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "arroz redondo",
+          360000,
+          "g"
+        ],
+        [
+          "pollo troceado",
+          450000,
+          "g"
+        ],
+        [
+          "conejo troceado",
+          350000,
+          "g"
+        ],
+        [
+          "judía verde plana",
+          220000,
+          "g"
+        ],
+        [
+          "garrofón cocido",
+          160000,
+          "g"
+        ],
+        [
+          "tomate triturado",
+          120000,
+          "g"
+        ],
+        [
+          "aceite de oliva",
+          45000,
+          "ml"
+        ],
+        [
+          "pimentón dulce",
+          4000,
+          "g"
+        ],
+        [
+          "azafrán",
+          200,
+          "g"
+        ],
+        [
+          "agua",
+          1100000,
+          "ml"
+        ],
+        [
+          "romero (rama)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "0f3ea534061647b45edb3e66cb596e600cb818c83cb60455d3b76ea8ac96efef"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "b5a2d2fd0c1ca0569ed7a9d278ec5e3bb96bd22301bb4f544960caebd9886b47"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "e72f9dc25e06981b3f1bdb477c1c575807b75d96e6f4f3ef121e4bfa1dd5e89d"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "186cc81b68a25f504bd7fed03173aa9524c4fe32a08c8aec92eda73f533c5396"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "bceafaeec30fc6877c7042097e546d4b3674a6e28e1f41f3d6888bc2727918d0"
+        }
+      ],
+      "evidenceSha256": "ec9f4f8c69e45e4506051f92b13922ccb6adf0c1b2505e0d2267b2ca5c13a86d"
+    },
+    {
+      "language": "fr",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "riz rond",
+          360000,
+          "g"
+        ],
+        [
+          "poulet découpé en morceaux",
+          450000,
+          "g"
+        ],
+        [
+          "lapin découpé en morceaux",
+          350000,
+          "g"
+        ],
+        [
+          "haricots verts plats",
+          220000,
+          "g"
+        ],
+        [
+          "haricots garrofón cuits (gros haricots blancs)",
+          160000,
+          "g"
+        ],
+        [
+          "tomate concassée",
+          120000,
+          "g"
+        ],
+        [
+          "huile d'olive",
+          45000,
+          "ml"
+        ],
+        [
+          "paprika doux",
+          4000,
+          "g"
+        ],
+        [
+          "safran",
+          200,
+          "g"
+        ],
+        [
+          "eau",
+          1100000,
+          "ml"
+        ],
+        [
+          "romarin (brin)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "be867ec5428ec1414323da217cfd0818bd7652edf7d3b4f9eb7c1b8852883bee"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "2a6d1af9d1f05ea59a640e22382f5a79f44bf6cb7d2ad33dd08dc68f210a3af1"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "c8600f34347a499ab77021fb36fcf4c1bc2ce43129b1b01532b30724f068903b"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "74e4b4a9aa9f7f6be8662cfe9e550c1c3cf4730a365e0b5a0e63653213d61cdf"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "d1d87b5bb9c952abc5e355a2b3ef6d98f5f15c0fb520fe56d71587cf4edcd28e"
+        }
+      ],
+      "evidenceSha256": "353b31ad96f879c2a12d15ceb06fa056b716c7ef1c66cdd277185dfa03e95d8e"
+    },
+    {
+      "language": "fr",
+      "engine": "webkit",
+      "engineVersion": "27.2",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "physicalIPhone": false,
+      "nativeInstallationValidated": false,
+      "dataSetup": "all business writes through UI in an empty browser context",
+      "catalogue": {
+        "available": 127,
+        "imported": 120,
+        "cataloguePages": 7,
+        "replacementPages": 7,
+        "lastRecipeId": "JJ-E13-287"
+      },
+      "unknownTimeRecipeId": "JJ-E05-177",
+      "originalUnmeasuredRecipeId": "JJ-E03-004",
+      "unmeasuredAutomaticallyInserted": false,
+      "sourceSubunitPreserved": true,
+      "reviewedIngredients": [
+        [
+          "riz rond",
+          360000,
+          "g"
+        ],
+        [
+          "poulet découpé en morceaux",
+          450000,
+          "g"
+        ],
+        [
+          "lapin découpé en morceaux",
+          350000,
+          "g"
+        ],
+        [
+          "haricots verts plats",
+          220000,
+          "g"
+        ],
+        [
+          "haricots garrofón cuits (gros haricots blancs)",
+          160000,
+          "g"
+        ],
+        [
+          "tomate concassée",
+          120000,
+          "g"
+        ],
+        [
+          "huile d'olive",
+          45000,
+          "ml"
+        ],
+        [
+          "paprika doux",
+          4000,
+          "g"
+        ],
+        [
+          "safran",
+          200,
+          "g"
+        ],
+        [
+          "eau",
+          1100000,
+          "ml"
+        ],
+        [
+          "romarin (brin)",
+          1000,
+          "ud"
+        ]
+      ],
+      "budgetCentsPreserved": 4000,
+      "manualItemAndPrivateNotePreserved": true,
+      "sixOtherDocumentsPreservedOnImport": true,
+      "sixOtherDocumentsPreservedOnRecipeReplacement": true,
+      "allSevenDocumentsPreservedAfterReload": true,
+      "geometryScope": "rendered text nodes only; native keyboard, editable input contents, SVG geometry and physical safe areas not certified",
+      "runtimeErrors": [],
+      "externalOrigins": [],
+      "captures": [
+        {
+          "scene": "01-catalogue-first-page",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "01485cef69e338de5c6987a2ad22e07d1aeae128b3b2be61e421bc362e5cb734"
+        },
+        {
+          "scene": "02-time-not-provided",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "32fddfe2a8533c5c8f48c900d6b62ec0057d00ce9a3837f126c5d31cec259513"
+        },
+        {
+          "scene": "03-original-unmeasured-ingredient",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "7dd561e328146d0e008eaeac403ee15545a1dae7817b3d6bdc715d67a95b7a0e"
+        },
+        {
+          "scene": "04-measured-ingredients-review",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "76e6cd118e884b73f4c503994b66a310977a69dbe35a1f55de43002f214ce877"
+        },
+        {
+          "scene": "05-persisted-owner-recipe-plan",
+          "health": {
+            "horizontalOverflow": 0,
+            "outside": [],
+            "clipped": [],
+            "rawKeys": []
+          },
+          "screenshotSha256": "48bf1c19978a48b1239a1fc01f082b09ac1ed69ba9ea8b3e3ea9f9eeb9c205f4"
+        }
+      ],
+      "evidenceSha256": "d56822f1a0c038ab916b9bf20eeb28dcbbae6559cbdd4a33c2bcacd36a3aeb1e"
+    }
+  ]
+}

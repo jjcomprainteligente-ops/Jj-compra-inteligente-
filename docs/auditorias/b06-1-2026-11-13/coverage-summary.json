@@ -1,0 +1,207 @@
+{
+  "auditDate": "2026-11-13",
+  "recentWindow": {
+    "from": "2026-11-07",
+    "to": "2026-11-13",
+    "rule": "Observation dates less than 7 calendar days old, inclusive; source dates have no time."
+  },
+  "tutandem": {
+    "schema": [
+      "fecha",
+      "producto",
+      "nombre",
+      "grupo",
+      "unidad",
+      "cadena",
+      "precio_por_unidad_eur"
+    ],
+    "schemaMatchesDatapackage": true,
+    "rows": 1471,
+    "products": 28,
+    "chains": 5,
+    "dates": 14,
+    "earliest": "2026-10-21",
+    "latest": "2026-11-03",
+    "latestAgeDays": 10,
+    "invalidRows": [],
+    "duplicateDateProductChainKeys": 0,
+    "recentRows": 0,
+    "geolocatedTenerifeCurrentSkuPrices": 0,
+    "perChain": [
+      {
+        "chain": "bonarea",
+        "rows": 312,
+        "productsInHistory": 24,
+        "latest": "2026-11-03",
+        "productsOnLatestDate": 24
+      },
+      {
+        "chain": "consum",
+        "rows": 324,
+        "productsInHistory": 25,
+        "latest": "2026-11-03",
+        "productsOnLatestDate": 23
+      },
+      {
+        "chain": "dia",
+        "rows": 233,
+        "productsInHistory": 26,
+        "latest": "2026-10-29",
+        "productsOnLatestDate": 26
+      },
+      {
+        "chain": "hiperdino",
+        "rows": 238,
+        "productsInHistory": 18,
+        "latest": "2026-11-03",
+        "productsOnLatestDate": 17
+      },
+      {
+        "chain": "mercadona",
+        "rows": 364,
+        "productsInHistory": 28,
+        "latest": "2026-11-03",
+        "productsOnLatestDate": 26
+      }
+    ]
+  },
+  "openPrices": {
+    "historicalCircleResult": {
+      "total": 27,
+      "pages": 1,
+      "returned": 27,
+      "locations": 7,
+      "latestObservation": "2026-10-03",
+      "oldestObservation": "2024-06-06",
+      "validHistoricalGtin": 26,
+      "nonGtinProductCodes": 1,
+      "proofTypes": {
+        "RECEIPT": 2,
+        "PRICE_TAG": 25
+      }
+    },
+    "recentCircleResult": {
+      "total": 0,
+      "pages": 1,
+      "returned": 0
+    },
+    "recentKnownLocationsResult": {
+      "total": 0,
+      "pages": 1,
+      "returned": 0
+    },
+    "locationExportCrossCheck": {
+      "totalLocations": 7881,
+      "decodedBytes": 7333611,
+      "tenerifeCandidates": 7,
+      "missingCoordinatesAmongTenerifePostalMatches": 0,
+      "foreignCountriesWithSamePostalDigitsExcluded": 259,
+      "unknownCountryWithSamePostalDigits": [],
+      "allCandidateIdsMatchLivePriceLocationIds": true,
+      "exportCountsSum": 27
+    },
+    "perChain": [
+      {
+        "chain": "lidl",
+        "historicObservations": 1,
+        "distinctHistoricalProductCodes": 1,
+        "historicalValidGtin": 1,
+        "stores": 1,
+        "latestObservation": "2024-08-08",
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {
+          "RECEIPT": 1
+        }
+      },
+      {
+        "chain": "aldi",
+        "historicObservations": 0,
+        "distinctHistoricalProductCodes": 0,
+        "historicalValidGtin": 0,
+        "stores": 0,
+        "latestObservation": null,
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {}
+      },
+      {
+        "chain": "hiperdino",
+        "historicObservations": 1,
+        "distinctHistoricalProductCodes": 1,
+        "historicalValidGtin": 1,
+        "stores": 1,
+        "latestObservation": "2026-01-30",
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {
+          "PRICE_TAG": 1
+        }
+      },
+      {
+        "chain": "superdino",
+        "historicObservations": 0,
+        "distinctHistoricalProductCodes": 0,
+        "historicalValidGtin": 0,
+        "stores": 0,
+        "latestObservation": null,
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {}
+      },
+      {
+        "chain": "hiperdino-express",
+        "historicObservations": 7,
+        "distinctHistoricalProductCodes": 7,
+        "historicalValidGtin": 7,
+        "stores": 1,
+        "latestObservation": "2026-04-06",
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {
+          "PRICE_TAG": 7
+        }
+      },
+      {
+        "chain": "mercadona",
+        "historicObservations": 16,
+        "distinctHistoricalProductCodes": 16,
+        "historicalValidGtin": 16,
+        "stores": 2,
+        "latestObservation": "2026-04-04",
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {
+          "PRICE_TAG": 16
+        }
+      },
+      {
+        "chain": "Alcampo",
+        "historicObservations": 1,
+        "distinctHistoricalProductCodes": 1,
+        "historicalValidGtin": 0,
+        "stores": 1,
+        "latestObservation": "2026-10-03",
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {
+          "RECEIPT": 1
+        }
+      },
+      {
+        "chain": "Anambra",
+        "historicObservations": 1,
+        "distinctHistoricalProductCodes": 1,
+        "historicalValidGtin": 1,
+        "stores": 1,
+        "latestObservation": "2024-06-06",
+        "recentObservations": 0,
+        "recentUsableProductPrices": 0,
+        "proofTypes": {
+          "PRICE_TAG": 1
+        }
+      }
+    ]
+  },
+  "publicationScope": "Aggregate counts only; row-level samples, contribution identities, price values and detailed locations omitted. Attribution and license discussion in the accompanying audit."
+}

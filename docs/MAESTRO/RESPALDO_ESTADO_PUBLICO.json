@@ -1,0 +1,22 @@
+{
+  "checkedAtUtc": "2026-11-13T21:45:29.052253+00:00",
+  "status": "LOCAL_VERIFIED_EXTERNAL_PENDING",
+  "sourceBytes": 937580,
+  "sourceSha256": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034",
+  "localCopyVerified": true,
+  "localRestorationVerified": true,
+  "manifestEntriesVerified": 13,
+  "restoredFiles": 14,
+  "uniqueRecipeIds": 150,
+  "sourceTranslations": 750,
+  "independentBackupVerified": false,
+  "externalDestination": "pending owner response; no private storage writer connected",
+  "privateArchiveUploadedToGitHub": false,
+  "privateArchiveUploadedToVercel": false,
+  "applicationCodeModified": false,
+  "limits": [
+    "La restauración se verificó dentro de la misma máquina.",
+    "No se afirma copia independiente hasta recibir evidencia del destino externo.",
+    "Las fotografías V38–V83 y archivos grandes referenciados no están incluidos."
+  ]
+}

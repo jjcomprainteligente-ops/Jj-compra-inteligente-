@@ -1,0 +1,1863 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/jjcompraintelwgiemt/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.webkit.config.ts"
+    ],
+    "configFile": "/workspace/jjcompraintelwgiemt/playwright.webkit.config.ts",
+    "rootDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/webkit-2026-11-10/run-final-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-desktop",
+        "name": "webkit-desktop",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+        "testIgnore": [],
+        "testMatch": [
+          "webkit-readiness.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/scratch/webkit-2026-11-10/run-final-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "webkit-mobile",
+        "name": "webkit-mobile",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+        "testIgnore": [],
+        "testMatch": [
+          "webkit-readiness.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/scratch/webkit-2026-11-10/run-final-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit-desktop",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+        "snapshotDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+        "testIgnore": [],
+        "testMatch": "webkit-readiness.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "browserName": "webkit",
+          "baseURL": "http://127.0.0.1:8081",
+          "locale": "es-ES",
+          "timezoneId": "UTC",
+          "storageState": {
+            "cookies": [],
+            "origins": []
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/workspace/scratch/webkit-2026-11-10/webkit-local-libs.sh"
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 1000
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit-desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/scratch/webkit-2026-11-10/run-final-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "webkit-mobile",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+        "snapshotDir": "/workspace/jjcompraintelwgiemt/tests/webkit",
+        "testIgnore": [],
+        "testMatch": "webkit-readiness.spec.ts",
+        "timeout": 60000,
+        "use": {
+          "browserName": "webkit",
+          "baseURL": "http://127.0.0.1:8081",
+          "locale": "es-ES",
+          "timezoneId": "UTC",
+          "storageState": {
+            "cookies": [],
+            "origins": []
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/workspace/scratch/webkit-2026-11-10/webkit-local-libs.sh"
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "webkit-mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/webkit-2026-11-10/run-final-01/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "webkit-readiness.spec.ts",
+      "file": "webkit-readiness.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "WebKit engine and real storage capabilities are recorded without claiming physical iPhone coverage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1365,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:36:46.802Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "webkit-engine-capabilities.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJlbmdpbmUiOiAid2Via2l0IiwKICAidmVyc2lvbiI6ICIyNy4yIiwKICAicGh5c2ljYWxJUGhvbmUiOiBmYWxzZSwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDEwMDAKICB9LAogICJjYXBhYmlsaXRpZXMiOiB7CiAgICAic2VjdXJlQ29udGV4dCI6IHRydWUsCiAgICAibG9ja3MiOiB0cnVlLAogICAgImNyeXB0byI6IHRydWUsCiAgICAiaW5kZXhlZERCIjogdHJ1ZSwKICAgICJzdHJpY3REdXJhYmlsaXR5IjogdHJ1ZSwKICAgICJkdXJhYmlsaXR5RXJyb3IiOiAiIgogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-73c76007572b9ee6267e",
+          "file": "webkit-readiness.spec.ts",
+          "line": 134,
+          "column": 5
+        },
+        {
+          "title": "es: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2395,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:36:48.319Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-101c21c40641d2d1d9fa",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "es: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3386,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:36:50.762Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-d00387100afddc1b1c5b",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "es: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2445,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:36:54.166Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-88d860dd39fc41ceab96",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "es: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1761,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:36:56.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-d852aab93278cdaa1a0d",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "es: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2221,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:36:58.438Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-ca24db2205aa7116161d",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "en: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:00.685Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-da0864837f46a732ab54",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "en: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3752,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:03.200Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-4f9be186e974b2d8ada1",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "en: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1874,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:06.970Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-71e0f1bc46b239bd2d15",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "en: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1019,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:08.853Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-802a3fbcea95064ddf38",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "en: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1156,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:09.883Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-f71c866004383ce0e3bc",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "de: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:11.051Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-d75986af562061aa0ba7",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "de: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2057,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:12.299Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-ed81904eb97886d87760",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "de: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1399,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:14.365Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-c66c66c506990b132fc2",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "de: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:15.772Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-b8a67640bd1a12e8a1ab",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "de: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1089,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:16.815Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-290733c0f0d75174a146",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "fr: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1360,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:17.918Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-b1378f5180bef3c9edde",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "fr: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2039,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:19.291Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-969ac14417482e1cb635",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "fr: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1436,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:21.340Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-58fe3c9522a6df8234ba",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "fr: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1034,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:22.784Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-de66b02ea2b13f3c8ed0",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "fr: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-desktop",
+              "projectName": "webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1246,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:23.829Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-f92a7b9118af35bd0ed7",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "WebKit engine and real storage capabilities are recorded without claiming physical iPhone coverage",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 740,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:25.576Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "webkit-engine-capabilities.json",
+                      "contentType": "application/json",
+                      "body": "ewogICJlbmdpbmUiOiAid2Via2l0IiwKICAidmVyc2lvbiI6ICIyNy4yIiwKICAicGh5c2ljYWxJUGhvbmUiOiBmYWxzZSwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAzOTAsCiAgICAiaGVpZ2h0IjogODQ0CiAgfSwKICAiY2FwYWJpbGl0aWVzIjogewogICAgInNlY3VyZUNvbnRleHQiOiB0cnVlLAogICAgImxvY2tzIjogdHJ1ZSwKICAgICJjcnlwdG8iOiB0cnVlLAogICAgImluZGV4ZWREQiI6IHRydWUsCiAgICAic3RyaWN0RHVyYWJpbGl0eSI6IHRydWUsCiAgICAiZHVyYWJpbGl0eUVycm9yIjogIiIKICB9Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-0c2f6ef21c78015599bb",
+          "file": "webkit-readiness.spec.ts",
+          "line": 134,
+          "column": 5
+        },
+        {
+          "title": "es: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1300,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:26.415Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-fec21bdcca70098acb3d",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "es: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1901,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:27.734Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-7f0becd1e4540782b6ba",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "es: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1501,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:29.649Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-1f49eb8eda4ea34807b0",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "es: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1088,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:31.159Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-f574845f8a5a2fad64de",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "es: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1251,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:32.256Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-6354ae73c0da8bc8fa3d",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "en: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1500,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:33.521Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-2ea583d9b8a98d11e5f5",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "en: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1919,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:35.031Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-f267ff90c81752af3494",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "en: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:36.958Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-9397468af6685f19f81d",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "en: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1100,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:38.470Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-e1ec6c5a7f31f62dc8de",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "en: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1262,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:39.581Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-a03727ce72e04c81097b",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "de: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1541,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:40.858Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-3b8b7fac98c286a47f51",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "de: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2167,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:42.425Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-2bbbe1087530919289ac",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "de: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1517,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:44.617Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-cb5d7355c5bb04f89ca7",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "de: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1207,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:46.143Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-300390619e8fd828152c",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "de: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1338,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:47.360Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-a436326998f3f697a291",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        },
+        {
+          "title": "fr: device language, welcome and manual preference persist across reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1769,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:48.711Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-51af6bb74c525d908a6c",
+          "file": "webkit-readiness.spec.ts",
+          "line": 143,
+          "column": 7
+        },
+        {
+          "title": "fr: list, local item and EUR budget persist without losing entered accents",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2357,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:50.493Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-0a61c08b59411dad9cba",
+          "file": "webkit-readiness.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "fr: menu ingredient review cancels unchanged and writes only after confirmation",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [
+                {
+                  "type": "storage-capabilities",
+                  "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                }
+              ],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:52.865Z",
+                  "annotations": [
+                    {
+                      "type": "storage-capabilities",
+                      "description": "{\"secureContext\":true,\"locks\":true,\"crypto\":true,\"indexedDB\":true,\"strictDurability\":true,\"durabilityError\":\"\"}"
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-ef9556f2b20d1dc4559f",
+          "file": "webkit-readiness.spec.ts",
+          "line": 202,
+          "column": 7
+        },
+        {
+          "title": "fr: privacy download exports exactly seven documents without any local write",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1242,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:54.569Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-f37399b6f73964675eea",
+          "file": "webkit-readiness.spec.ts",
+          "line": 225,
+          "column": 7
+        },
+        {
+          "title": "fr: unavailable Web Locks block writes and preserve the exact item draft",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit-mobile",
+              "projectName": "webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1340,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T10:37:55.827Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "196d8081e1074e66888c-b6c7a16ae799dfc73a5e",
+          "file": "webkit-readiness.spec.ts",
+          "line": 246,
+          "column": 7
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T10:36:46.114Z",
+    "duration": 71230.896,
+    "expected": 42,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

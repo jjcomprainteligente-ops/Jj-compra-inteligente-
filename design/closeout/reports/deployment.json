@@ -1,0 +1,72 @@
+{
+  "id": "dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz",
+  "url": "jj-compra-inteligente-mbbymbff3-cmj2hwhc6b-1051.vercel.app",
+  "readyState": "READY",
+  "target": "staging",
+  "meta": {
+    "githubCommitRef": "codex/cierre-seguridad-y-calidad",
+    "githubCommitSha": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
+    "githubCommitMessage": "fix: centrar el interruptor web y comprobar su geometría",
+    "githubRepo": "Jj-compra-inteligente-",
+    "githubOrg": "jjcomprainteligente-ops"
+  },
+  "sourceCommit": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
+  "share": {
+    "createdAtUtc": "2026-11-13T15:23:22.746000+00:00",
+    "expiresAtUtc": "2026-11-14T14:23:22+00:00",
+    "tokenPublishedInGit": false
+  },
+  "sourceTree": "3d176f31b004a4125946ffd29cc771b6aad7d0ab",
+  "protection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains",
+    "verifiedAfterDeploy": true
+  },
+  "upload": {
+    "files": 23,
+    "bytes": 2538858,
+    "newFilesUploaded": 3,
+    "existingContentAddressedFilesReused": 20,
+    "scope": "Reviewed compiled web client, approved logo, fonts with their existing license notices, preview configuration and optional isolated technical brand board; no native bundles, application source, fixtures, local data or credentials."
+  },
+  "bundle": {
+    "file": "_expo/static/js/web/index-97299c8b14be0dfebc85949cf3886bd4.js",
+    "size": 632849,
+    "sha1": "e28d9189cabc58a1c70652adb7cf6b2f0f6b18ba",
+    "sha256": "86ce6bbf45979f306fd83f5524486d2b5482776cbcc2865f44fa47b68e5580b1",
+    "contentEncoding": "br",
+    "decodedSize": 5159291,
+    "decodedSha1": "cb1d3393ecf60a11b5b62a8d262eb6d486e7b777",
+    "decodedSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7"
+  },
+  "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+  "hostedVerification": {
+    "report": "hosted-verification.json",
+    "sha256": "e4c10a06739abb0dc019173c1deb607705f5fd35e36fbd1b38875a6321626007",
+    "status": "passed",
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "verifiedResourcesOrUrls": 29,
+    "catalogueTotal": 127
+  },
+  "githubActions": {
+    "report": "github-actions.json",
+    "sourceRun": 43451697596,
+    "conclusion": "success"
+  },
+  "previousDeployment": {
+    "id": "dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3",
+    "url": "jj-compra-inteligente-r3u34h6eo-cmj2hwhc6b-1051.vercel.app",
+    "sourceCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+    "share": {
+      "createdAtUtc": "2026-11-13T14:08:31.997000+00:00",
+      "expiresAtUtc": "2026-11-14T13:08:31+00:00",
+      "tokenPublishedInGit": false
+    }
+  },
+  "sourceVsClosure": "Final compiled-source commit. Subsequent closure changes only documentation/evidence, not app, dependencies or compiled inputs."
+}

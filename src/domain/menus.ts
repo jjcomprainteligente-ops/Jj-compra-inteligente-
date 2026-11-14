@@ -13,11 +13,15 @@ export interface RecipeIngredient {
 export interface Recipe {
   id: string;
   title: string;
-  minutes: number;
+  /** Preparation/cooking minutes only. Null means the source supplies no time. */
+  minutes: number | null;
   baseServings: number;
   ingredients: readonly RecipeIngredient[];
   steps: readonly string[];
   allergenNote: string;
+  /** Editorial ingredients without a measured quantity never enter the shopping proposal. */
+  unmeasuredIngredients?: readonly { name: string; note?: string }[];
+  editorialNotes?: readonly string[];
 }
 
 export interface ScaledIngredient extends RecipeIngredient {

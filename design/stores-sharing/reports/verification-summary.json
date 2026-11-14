@@ -1,0 +1,62 @@
+{
+  "completedAt": "2026-11-11T12:12:20.139055+00:00",
+  "export": "dist-stores-sharing-reviewed",
+  "webBundleSHA256": "2fca9579e738626e352fb6988c678dc088d5fac576c986911ab187fcb3999a4d",
+  "typecheck": "passed",
+  "unitTests": {
+    "files": 25,
+    "passed": 816
+  },
+  "chromium": {
+    "stats": {
+      "startTime": "2026-11-11T01:26:10.324Z",
+      "duration": 597608.9160000001,
+      "expected": 298,
+      "skipped": 24,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "baseScreenshots": 420,
+    "additionalScreenshots": 96
+  },
+  "focusedChromium": {
+    "passed": 50,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "webkit": {
+    "passed": 92,
+    "unexpected": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "engine": "27.2",
+    "contractsSimulated": [
+      "Web Share",
+      "external window.open"
+    ],
+    "physicalDevicesTested": false
+  },
+  "referenceFilesVerified": 75,
+  "dependencyWarnings": {
+    "moderate": 5,
+    "high": 0,
+    "critical": 0
+  },
+  "parents": [
+    "338ba24a99b61ddf79ef1f9af27dbd00465869ca",
+    "2ae8d27adb07cafbc69e9627237b50a7f8f7127b"
+  ],
+  "publication": {
+    "status": "READY",
+    "target": "staging",
+    "applicationCommit": "c0c7a312e5ad91313a059c25c8594a12ea48a6dc",
+    "pullRequest": 8,
+    "deploymentId": "dpl_5HaNVgJxEtpz9zX2gpWScLFnXRWU",
+    "url": "https://jj-compra-inteligente-3y5pjf63u-cmj2hwhc6b-1051.vercel.app",
+    "verifiedLanguages": 4,
+    "verifiedResources": 29,
+    "protectionPreserved": true,
+    "shareExpiresUTC": "2026-11-12T11:21:05Z",
+    "b07ProposalPullRequest": 9
+  }
+}

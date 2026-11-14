@@ -1,0 +1,90 @@
+{
+  "generatedAt": "2026-11-13T14:03:14.049444+00:00",
+  "baseCommit": "5795f299e35186f372c325299d8a6828993df720",
+  "branch": "codex/cierre-seguridad-y-calidad",
+  "publication": {
+    "githubCommit": null,
+    "remoteCiRun": null,
+    "vercelDeployment": null,
+    "status": "pending; publication evidence belongs to the subsequent release record"
+  },
+  "privacy": "Sanitized public summaries only; raw screenshots, traces and browser state remain outside Git.",
+  "scope": "B07.2 isolated development PostgreSQL authorization test",
+  "requestedAt": "2026-11-12T20:33:31.649Z",
+  "observedAt": "2026-11-12T21:05:35.711Z",
+  "matrixSqlSha256": "e8cc847184e641ea53663a8be34f921c0a66967cf6ec7dbef9dfbc422a1606d1",
+  "status": "no_result_native_control_unresolved",
+  "providerSqlResultReturned": false,
+  "matrixExecutionStatus": "unknown_without_provider_result",
+  "assertionsCountedAsPassed": 0,
+  "rollbackProvedFromSqlResult": false,
+  "matrixCurrentlyExecuting": false,
+  "retryIssued": false,
+  "alternateChannelUsed": false,
+  "noEmails": true,
+  "authLoginOrJwtSignatureVerified": false,
+  "postAttemptReadOnlyCheck": {
+    "counts": {
+      "auth.users": 0,
+      "auth.sessions": 0,
+      "public.jj_households": 0,
+      "jj_private.invitations": 0,
+      "jj_private.memberships": 0,
+      "jj_private.resource_ids": 0,
+      "public.jj_shopping_items": 0,
+      "public.jj_shopping_lists": 0,
+      "jj_private.account_controls": 0,
+      "jj_private.migration_batches": 0,
+      "jj_private.operation_receipts": 0,
+      "jj_private.membership_requests": 0,
+      "jj_private.ownership_transfers": 0,
+      "jj_private.session_revocations": 0,
+      "jj_private.household_namespaces": 0,
+      "jj_private.account_deletion_jobs": 0
+    },
+    "reader_role": {
+      "canlogin": false,
+      "bypassrls": false,
+      "superuser": false,
+      "auth_schema_usage": false
+    },
+    "test_functions": 0,
+    "test_relations": 0,
+    "protected_tables": {
+      "count": 14,
+      "all_rls": true,
+      "all_force_rls": true
+    },
+    "matrix_currently_executing": false
+  },
+  "securityAdvisorSummary": {
+    "infoFindings": 10,
+    "warningFindings": 0,
+    "errorFindings": 0,
+    "purpose": "Private tables deliberately deny clients without permissive policies",
+    "reference": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+  },
+  "evidence": [
+    {
+      "artifact": "b07-result.json",
+      "sha256": "622879f1828f4b4936b8c3c87237424a84d14d89c51f6520fc4c940455849bdf",
+      "rawEvidencePublished": false
+    },
+    {
+      "artifact": "b07-cleanup-readonly.json",
+      "sha256": "612e22f3751026d3e2f10eef78e45f8c598865f7e9ea2a002115a352f90a1da8",
+      "rawEvidencePublished": false
+    },
+    {
+      "artifact": "b07-security-advisors.json",
+      "sha256": "52086cb648f6ae5b0c9131bfaa2789b24b012e9fa317c6ef75e4022d881049dd",
+      "rawEvidencePublished": false
+    }
+  ],
+  "limits": [
+    "The original request produced no SQL result before parent interruption. No passed assertions or expiry status can be attributed to that attempt. Native provider control remains unresolved; application Auth/JWT/sign-in was not validated.",
+    "Read-only empty-table observations do not prove the matrix ran or that its rollback was executed.",
+    "Provider control was unresolved at the observation time; no expiry claim, application sign-in or household sync validation is inferred.",
+    "This report only summarizes prior evidence; no new database query, migration or test was issued for report generation."
+  ]
+}

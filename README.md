@@ -1,6 +1,94 @@
 # JJ Compra Inteligente
 
+**Estado actualizado · 14/11/2026 · Bloque 01 maestro EN_CURSO por respaldo externo pendiente.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+
+El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
+
+## Punto de partida comprobado
+
+- Repositorio canónico: [jjcomprainteligente-ops/Jj-compra-inteligente-](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-).
+- Base auditada: `abb3bca53953e4523af61118e375df90d1a8d416`, PR #20; 28 commits por delante de `main` en la auditoría del 13/11. `main` seguía en `d22d66eff03c5d107f5170ee38cd2bc3167865e2`.
+- Origen de la candidata de integración comprobada: `78480fd40b4a116d53ebb016f31085785f42a6e6`, [PR #21](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/21). Sus 159 entradas de aplicación, dependencias, recursos, scripts y pruebas coinciden con ABB. El JavaScript conserva exactamente el hash de la versión previa; no se rehízo el producto.
+- La rama `codex/integracion-maestra-2026-11-13` y la referencia `codex/respaldo-base-2026-11-13` se crearon desde esa base, sin rehacer el producto ni fusionar a producción. Su cierre requiere resultados nuevos sobre el árbol final; esta actualización documental no los sustituye.
+
+## Qué contiene la app existente
+
+Expo SDK 58, React Native y TypeScript. Cuatro pestañas: Inicio, Mi compra, Ahorro y Menús; Perfil, notificaciones y tiendas son subpantallas. Las listas, revisión de ingredientes, cantidades, presupuesto, gastos confirmados, comparación manual y preferencias funcionan en modo local. El gasto procede de registros explícitos de gastos; marcar un producto comprado no crea un gasto por sí solo.
+
+El catálogo contiene **120 recetas V83 y siete anteriores: 127 accesibles**. La fuente privada reúne 150 IDs y 750 fichas en es/en/de/fr/bg. Las posiciones 11–20, 31–40 y 111–120 siguen retenidas por controles pendientes o contradictorios. No se cambia ningún ID ni se infieren aprobaciones.
+
+La interfaz está en **es/en/de/fr**, con detección del dispositivo, elección manual persistente, respaldo al español y compras en euros. BG está en las fuentes V83, todavía no en la interfaz completa. Las fotografías definitivas de recetas no están vinculadas; sus originales V38–V83 no se han localizado en los materiales accesibles.
+
+Mis tiendas conserva Lidl, ALDI, HiperDino, SuperDino, HiperDino Express y Mercadona. La selección y los enlaces oficiales no implican importación de precios ni transferencia de carrito. La [auditoría B06.1](docs/auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md) no habilitó PVP local actual. Las dos entradas propuestas por recetas/presupuesto están en el PR #11 y no se consideran integradas.
+
+IA, cuentas, hogares y sincronización no están activados. B07 conserva contratos y migraciones, pero la matriz dinámica de permisos sigue sin resultado nativo. El modo sin cuenta permanece como base de trabajo.
+
+## Conservación y respaldo
+
+Los siete documentos locales y sus protecciones de escritura se conservan. Borrar los datos del navegador/dispositivo puede eliminarlos; la exportación local no equivale a sincronización ni a restauración automática.
+
+El ZIP privado completo de 150 recetas está localizado e ignorado por Git. **El respaldo privado independiente sigue PENDIENTE de destino y verificación**; una segunda copia en esta misma máquina no se contará como tal. El ZIP público de 120 recetas no respalda las 30 retenidas. Antes de modificar código se debe cumplir la puerta de respaldo del plan maestro. El repositorio público y las previews no reciben el ZIP privado ni contenidos retenidos.
+
+## Comprobaciones reales del Bloque 01
+
+- **Baseline limpio ABB:** instalación sin scripts desde el lockfile, reproducción de las 120 recetas públicas, tipos, **981/981 unitarias**, audit sin vulnerabilidades conocidas, compatibilidad Expo y exportaciones web/iOS/Android. [Informe y procedencia](design/master-integration/reports/baseline-existing-app.json).
+- **Origen `78480fd40b4a116d53ebb016f31085785f42a6e6`:** [CI real correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43514500031), **298 Chromium correctos y 24 omisiones deliberadas**, **16/16 WebKit**, sin fallos ni intermitencias. Se verificaron nuevamente 159/159 huellas de inputs antes y después. [Chromium](design/master-integration/reports/chromium-regression.json) · [WebKit](design/master-integration/reports/webkit-regression.json).
+- **Staging candidata:** `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY/protegida. HTTPS revalidado el 14/11 en cuatro idiomas, catálogo de 127 y 29 recursos/URLs por hash. [Registro de versión](design/master-integration/reports/integration-verification.json) · [despliegue](design/master-integration/reports/deployment.json). Enlace temporal fuera de Git, hasta **14/11/2026 21:10:36 UTC**.
+- **Diferencia con producción:** capturas iniciales de lectura a 375/430 muestran la versión antigua en el dominio principal y la bienvenida actual en staging; son estados de entrada distintos, no comparación píxel a píxel ni evidencia de pérdida de listas. Producción no se ha promovido. [Comparación](design/master-integration/reports/production-comparison.json).
+
+Las pruebas de navegador corresponden a ese origen; el cierre posterior solo añade documentación/evidencia y no representa otra ejecución. Las suites anteriores conservan sus propios SHA. WebKit Linux no sustituye la prueba física de iPhone, ni un export iOS es un binario firmado. La aprobación estética sigue pendiente.
+
+La base y sus comprobaciones están preparadas para revisión. **El bloque completo sigue EN_CURSO porque el respaldo privado independiente no está verificado.** La copia y restauración locales sí están comprobadas; el código de la app permanece intacto y no se abre el Bloque 02.
+
+Para reproducir las comprobaciones del proyecto, usa Node.js 24 y el lockfile del árbol revisado:
+
+```sh
+npm ci --ignore-scripts
+npm run typecheck
+npm test -- --maxWorkers=2
+npm run build:web
+```
+
+La prueba web completa y la multilingüe tienen sus instrucciones en [la guía iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md) y [la entrega i18n](docs/I18N_ENTREGA_Y_AUDITORIA.md). Ejecutar esos comandos no acredita por sí solo el cierre de todo el plan.
+
+## Historial documental conservado
+
+El texto previo se conserva íntegro a continuación. Sus cifras, enlaces temporales y expresiones como «estado vigente», «M3 provisional», «originales ausentes» o «publicación pendiente» describen sus fechas originales; no sustituyen este punto de partida ni el inventario maestro. Los nombres B00–B09 del kit antiguo no son la numeración 00–14 del plan maestro del 13/11.
+
+<details>
+<summary>ARCHIVO_HISTORICO — README anterior a la consolidación documental del Bloque 01</summary>
+
+> **Entrega vigente · 13/11/2026:** seguridad y accesibilidad publicadas en [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), origen final `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`. [CI remota correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596); 981 unitarias, exports web/iOS/Android, matriz final de calidad 8/8 y pulsación/foco 9/9; audit npm sin vulnerabilidades conocidas. Preview protegida verificada en cuatro idiomas y 29 recursos/URLs. [Informe](docs/CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md) · [despliegue](design/closeout/reports/deployment.json). Acceso temporal por conversación, hasta 14/11/2026 a las 14:23:22 UTC. Auditoría de tiendas en entrega documental separada.
+
+> **Seguridad y calidad · 13/11/2026:** corrección de los tres avisos moderados anteriores, audit actualizado con **cero vulnerabilidades**, Expo 58.0.25 dentro de SDK 58 y correcciones medidas de contraste/áreas de interacción. Conserva Verde Mercado Premium, logo, siete documentos y 127 recetas. Regresión completa: 298 Chromium y 16 WebKit; auditoría de 296 escenas en es/en/de/fr, 40 estados pulsados y 24 ejecuciones de rendimiento anónimo. La última ampliación del filtro inglés pasó por separado 2/2 casos y 74 escenas sobre el compilado final; exportaciones web/iOS/Android y reproducción limpia con 981 unitarias correctas. [Informe, fuentes y límites](docs/CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md). Publicación de esta entrega y CI remota todavía pendientes; los enlaces V83 siguientes acreditan la versión anterior. B07, prueba física y criterios externos siguen abiertos; no se declaran terminados todos los bloques.
+
+> **V83 publicada y comprobada · 12/11/2026:** 120 recetas nuevas y las siete anteriores disponibles. Código y fuente seleccionada en [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), fuente compilada `0ea49b597f45b401747e20d7d880c07f670b3073`. Preview staging protegida comprobada en es/en/de/fr, con 127 recetas y 29 recursos/URLs por hash. El enlace temporal se entrega fuera de Git y vence el **13/11/2026 a las 15:56:07 UTC**. Las 30 retenidas y la prueba física siguen pendientes. [Entrega y límites](docs/RECETAS_V83_INTEGRACION_Y_AUDITORIA.md).
+
+> **Integración actual · 12/11/2026:** la [entrega V83](docs/RECETAS_V83_INTEGRACION_Y_AUDITORIA.md) incorpora en código 120 recetas nuevas y conserva las siete anteriores: 127 disponibles. Los adjuntos completos contienen 150 recetas/750 fichas en cinco idiomas; 30 siguen retenidas hasta aclarar sus estados. GitHub es público: recibe únicamente la [fuente reproducible de 120 recetas](referencias/recetas-v83/README.md), mientras el original completo queda conservado localmente y excluido de Git. La interfaz sigue en es/en/de/fr y BG permanece en la fuente. Correctos: TypeScript, 981 unitarias, exportaciones web/iOS/Android, 298 casos Chromium y 16 WebKit; GitHub y la nueva preview protegida V83 publicados y comprobados en [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15). La prueba física sigue pendiente.
+
+> **Piloto iPhone anterior · 11/11/2026:** validar **menú → lista → compra → presupuesto/gasto confirmado** sobre la app existente y preparar su prueba en iPhone. [Guía del recorrido diario y distribución](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md). Los perfiles EAS están preparados, pero no hay binario instalable ni prueba física realizada. Preview staging publicada y verificada desde `54fc7efe3980f4295f3e873aa7710276903c3f7a` en [PR #12](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/12); GitHub sigue siendo la base del código. El enlace temporal de acceso se entrega por la conversación y vence el **12/11/2026 a las 22:56:56 UTC**.
+
+> **Verificación del piloto anterior · commit 54fc7efe:** 963 unitarias, 298 Chromium y ocho recorridos WebKit correctos; Chromium omite 24 capturas duplicadas deliberadas. WebKit cubre cuatro idiomas y dos tamaños CSS, con 80 capturas. [Informe técnico](design/iphone-pilot/reports/technical-verification.json) · [Chromium](design/iphone-pilot/reports/chromium-regression.json) · [WebKit diario](design/iphone-pilot/reports/webkit-daily-journey.json). Verificación remota correcta en los cuatro idiomas y 29 recursos/URLs por hash: [informe remoto](design/iphone-pilot/reports/hosted-verification.json) · [despliegue](design/iphone-pilot/reports/deployment.json). No sustituye la prueba en un iPhone físico.
+
+> **Corrección B07.2 — 11/11/2026:** [permiso de lectura Auth corregido](docs/B07_CORRECCION_PERMISO_AUTH.md), regresión de lectura comprobada y base sin datos de prueba. La batería completa de hogares continúa pendiente del aviso nativo de Supabase.
+
+> **Avance B07 — 11/11/2026:** [contratos y base Supabase aislada](docs/B07_BASE_SEGURA_Y_AUDITORIA.md). B07.1 probado; B07.2 aplicado con matriz dinámica pendiente de confirmación. La app conserva el modo local; cuentas y sincronización no están activadas.
+
+> **Estado vigente — 11/11/2026:** consulta [el inventario actual de construcción y pendientes](docs/ESTADO_ACTUAL_Y_PENDIENTES.md) y [la entrega de tiendas y listas compartibles](docs/TIENDAS_COMPARTIR_Y_AUDITORIA.md). Los apartados fechados anteriores se conservan como historial.
+
+# JJ Compra Inteligente
+
+> **Verificación integral posterior:** la preparación completa de los seis adjuntos sigue pendiente. La app no cubre todas las 16 pantallas ni los nueve estados. Véase [auditoría de completitud](docs/AUDITORIA_COMPLETITUD_V2.md), con requisito, código, brecha y criterio de cierre. Los resultados de pruebas previos se conservan y no acreditan por sí solos la totalidad del encargo.
+
+
+> **Estado actualizado 06/11/2026:** base visual GPT-6 V2 implementada sobre las pantallas existentes, con logo original y cuatro idiomas. La [entrega y auditoría V01/V02](docs/V2_ENTREGA_V01_V02_Y_AUDITORIA.md) contiene las pruebas y límites. Los originales ya están [recuperados](docs/V2_REFERENCIAS_RECUPERADAS.md). Los estados históricos siguientes se conservan como antecedentes.
+
+
 Aplicación de compra alimentaria con inteligencia artificial para Tenerife.
+
+## Piloto de tiendas · 10/11/2026
+
+Mis tiendas admite Lidl, ALDI, HiperDino, SuperDino, HiperDino Express y Mercadona, de una en una, varias o todas. Guarda la selección y abre la web oficial de compra, ofertas o establecimientos. No importa precios ni transfiere el carrito. La compra y el pago se completan siempre en la tienda externa. Se preservan las favoritas anteriores y las funciones de recetas, listas y gastos. [Investigación y alcance del piloto](docs/PILOTO_TIENDAS_Y_PRECIOS_2026-11-10.md).
 
 ## Código fuente recuperado — 31/10/2026
 
@@ -52,7 +140,7 @@ No hay fuentes verificadas conectadas ni precios en tiempo real. El piloto admit
 
 ## Ejecutar en Android e iPhone
 
-Necesitas Node.js 24 LTS, npm y una versión de Expo Go compatible con Expo SDK 58. Si tu versión de Expo Go no admite este SDK, utiliza una compilación de desarrollo compatible de Expo.
+Necesitas Node.js 24 LTS y npm. El proyecto mantiene Expo SDK 58. Para iPhone, la versión pública de Expo Go de la App Store descrita en la documentación consultada sigue en SDK 54: no se debe asumir compatibilidad al escanear el QR. La [guía de prueba iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md) distingue Safari, un cliente compatible y los perfiles de compilación nativa preparados, con sus requisitos pendientes.
 
 ```sh
 cd jjcompraintelwgiemt
@@ -60,9 +148,9 @@ npm ci
 npm start
 ```
 
-Mantén el ordenador y el teléfono en la misma red y sigue las instrucciones de Expo para abrir el proyecto. En Android, escanea el QR desde Expo Go. En iPhone, escanéalo con la cámara y ábrelo en Expo Go.
+Mantén el ordenador y el teléfono en la misma red si usas el servidor de desarrollo y sigue las instrucciones de Expo con un cliente que admita este SDK. Para probar ahora en iPhone, usar el enlace temporal verificado de la preview HTTPS de Safari entregado por la conversación; sus datos locales son independientes de otras versiones.
 
-Con un emulador Android configurado puedes usar `npm run android`. Para un simulador iOS utiliza `npm run ios`; el simulador requiere macOS y Xcode. La ejecución en dispositivos físicos y simuladores nativos está pendiente de validación.
+Con un emulador Android configurado puedes usar `npm run android`. Para un simulador iOS utiliza `npm run ios`; SDK 58 requiere macOS y Xcode 26.4 o posterior, e iOS 16.4 o posterior. El entorno actual es Linux. `eas.json` contiene los perfiles `iphone-preview` y `iphone-testflight`, sin build ni envío iniciados. La ejecución física y en simuladores nativos permanece pendiente.
 
 ## Vista previa en el navegador
 
@@ -100,7 +188,7 @@ Los cambios se muestran como guardados después de que finalice la escritura. Si
 npm run check
 ```
 
-Este comando ejecuta TypeScript y las pruebas de Vitest. También puedes ejecutar `npm run typecheck`, `npm test` o `npm run test:watch` por separado. Las 496 pruebas actuales cubren importes exactos, cantidades, presupuestos, duplicados, validación, traducciones, preferencias y almacenamiento local, incluidos datos corruptos, conflictos entre instancias y fallos de lectura, reserva o confirmación de escritura.
+Este comando ejecuta TypeScript y las pruebas de Vitest. También puedes ejecutar `npm run typecheck`, `npm test` o `npm run test:watch` por separado. La cifra histórica de 496 pruebas cubría importes exactos, cantidades, presupuestos, duplicados, validación, traducciones, preferencias y almacenamiento local, incluidos datos corruptos, conflictos entre instancias y fallos de lectura, reserva o confirmación de escritura.
 
 Para la validación manual, comprueba en Android e iOS: crear una comparación, añadir dos ofertas con diferentes gastos de envío, empatar sus totales, editar y eliminar con confirmación, abrir un enlace y cerrar/abrir la aplicación para verificar la persistencia. Revisa también el teclado decimal y los formularios con el teclado visible.
 
@@ -125,7 +213,7 @@ Necesitas Chromium instalado por Playwright (`npx playwright install chromium`) 
 
 La web protege las escrituras con Web Locks y huellas transaccionales en IndexedDB; requiere HTTPS o localhost y un navegador con durabilidad estricta disponible. No se reemplazan los cuatro almacenes existentes. Una reserva pendiente o un resultado incierto bloquea nuevas escrituras para proteger los datos. Una IP de la red local por HTTP puede carecer de estas capacidades. El acceso nativo de Expo utiliza su cola local, sin IndexedDB.
 
-La auditoría completa de dependencias sigue abierta: el informe actual registra 13 paquetes afectados en herramientas de Expo (2 altos, 9 moderados, 2 bajos, 0 críticos). No hay parches compatibles en los rangos consultados; no forzar cambios de versión mayores ni una rebaja a Expo 51. Los detalles, límites y requisitos antes de distribución están en [la auditoría multilingüe](docs/I18N_ENTREGA_Y_AUDITORIA.md).
+La auditoría histórica multilingüe registró 13 paquetes afectados en herramientas de Expo (2 altos, 9 moderados, 2 bajos, 0 críticos). No hay parches compatibles en los rangos consultados; no forzar cambios de versión mayores ni una rebaja a Expo 51. Los detalles de aquella revisión están en [la auditoría multilingüe](docs/I18N_ENTREGA_Y_AUDITORIA.md). La comprobación del 11/11/2026 para el piloto iPhone registra 963 pruebas unitarias correctas y tres avisos moderados, cero altos y cero críticos; véase [el estado de esta entrega](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md).
 
 
 ## GitHub y estado visual
@@ -133,3 +221,5 @@ La auditoría completa de dependencias sigue abierta: el informe actual registra
 El código importado y su reproducción desde un clon nuevo están documentados en [Entrega G00 y auditoría](docs/github/G00_ENTREGA_Y_AUDITORIA.md). GitHub es la base principal; las previews Vercel identifican su commit de origen.
 
 La [conciliación GPT-6 V2](docs/V2_CONCILIACION_VISUAL_2026-10-31.md) registra las diferencias actuales y la recuperación pendiente de los originales. La vista actual continúa con M3 provisional y el diseño anterior.
+
+</details>

@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { RECIPES } from '../src/data/recipes';
+import { RECIPES, LEGACY_RECIPES } from '../src/data/recipes';
 import {
   canonicalMeasure, combineIngredients, createMealPlan, normalizeIngredientName,
   planIngredients, replaceMeal, scaleRecipe, validateMealPlan,
@@ -17,9 +17,9 @@ const recipe = (ingredients: ScaledIngredient[], baseServings = 2): Recipe => ({
 
 describe('catálogo local y menú de cinco cenas', () => {
   it('contiene siete recetas originales con cantidades editables y sin campos de precio', () => {
-    expect(RECIPES).toHaveLength(7);
-    expect(new Set(RECIPES.map(entry => entry.id)).size).toBe(7);
-    for (const entry of RECIPES) {
+    expect(LEGACY_RECIPES).toHaveLength(7);
+    expect(new Set(LEGACY_RECIPES.map(entry => entry.id)).size).toBe(7);
+    for (const entry of LEGACY_RECIPES) {
       expect(entry.baseServings).toBe(2);
       expect(entry.ingredients.length).toBeGreaterThanOrEqual(4);
       expect(entry.ingredients.length).toBeLessThanOrEqual(7);

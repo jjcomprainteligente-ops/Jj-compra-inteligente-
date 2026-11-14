@@ -1,0 +1,116 @@
+{
+  "export": "dist-mobile-readiness-final",
+  "platforms": [
+    "web",
+    "ios",
+    "android"
+  ],
+  "physicalDevicesTested": false,
+  "files": [
+    {
+      "path": "_expo/static/js/android/index-54ae433d8dc44ffae8c2ac191da0a70e.hbc",
+      "bytes": 4941058,
+      "sha256": "a4149dc60a569c63525ed66096bb02caef9f422791949f44642949777b0b2248"
+    },
+    {
+      "path": "_expo/static/js/ios/index-701d6f4e1bdb31735abb97bf71fb80ea.hbc",
+      "bytes": 4934870,
+      "sha256": "eae3a6e9d2608c2ede2f689736d7bd1e2de84c82a82d461225ac5259f50aadf9"
+    },
+    {
+      "path": "_expo/static/js/web/index-fe02e3bce353424b4b19f01c54ffcddc.js",
+      "bytes": 3582282,
+      "sha256": "0a529f2fdb11c628e012fdf1a71786a59deeddfdc4500d3238279d537897c409"
+    },
+    {
+      "path": "assets/077221c4ff13aa63777d1fc4bad2855d",
+      "bytes": 255528,
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+    },
+    {
+      "path": "assets/33e6a451fdf22e8244d143288b957ba0",
+      "bytes": 97996,
+      "sha256": "42f1d9457585365aff770da0605923d5adceb8a390761c031a60ae076e93b0db"
+    },
+    {
+      "path": "assets/3b88abd10509dbd972f179a2fc60d3bf",
+      "bytes": 97872,
+      "sha256": "df775e16d1a1eb117045137b60593f00f57af63e96d65a3eaccc3373be046411"
+    },
+    {
+      "path": "assets/8b432e90d552ee87adaea8fa1244fc68",
+      "bytes": 97904,
+      "sha256": "0caaec24441fc52f3f855ec3f8616b14835f192277ab23b2f87d7b26f74c8951"
+    },
+    {
+      "path": "assets/assets/brand/jj-logo-horizontal.077221c4ff13aa63777d1fc4bad2855d.png",
+      "bytes": 255528,
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+    },
+    {
+      "path": "assets/bd3f6311d61e60094df4c83d68779675",
+      "bytes": 98004,
+      "sha256": "b5e3105945aac85a820133ec66b516a4514e6fb242b31f2696b15adf43683d46"
+    },
+    {
+      "path": "assets/bf7f0a128c232a15714167173b998717",
+      "bytes": 98584,
+      "sha256": "3182b364667e58b58a7ff05a91abfebdd927f1fedbb702df3fb91d20cee23e4f"
+    },
+    {
+      "path": "assets/d7c844e508c4dbacda2468f820e0b4b4",
+      "bytes": 98120,
+      "sha256": "7efdba6b327f92764469e8c2d21f9db8638f9e7b4423cb7d65006f8e8d08024c"
+    },
+    {
+      "path": "assets/ec05fba6bf4223e33f1a5402cbbf7491",
+      "bytes": 98080,
+      "sha256": "107539ab6cbcd87601737a1a37ca3693fc7b32cb3939550a88ac583e1cedbd6d"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/200ExtraLight/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "bytes": 97872,
+      "sha256": "df775e16d1a1eb117045137b60593f00f57af63e96d65a3eaccc3373be046411"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/300Light/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "bytes": 97904,
+      "sha256": "0caaec24441fc52f3f855ec3f8616b14835f192277ab23b2f87d7b26f74c8951"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/400Regular/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "bytes": 98004,
+      "sha256": "b5e3105945aac85a820133ec66b516a4514e6fb242b31f2696b15adf43683d46"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/500Medium/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "bytes": 98080,
+      "sha256": "107539ab6cbcd87601737a1a37ca3693fc7b32cb3939550a88ac583e1cedbd6d"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/600SemiBold/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "bytes": 98120,
+      "sha256": "7efdba6b327f92764469e8c2d21f9db8638f9e7b4423cb7d65006f8e8d08024c"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/700Bold/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "bytes": 97996,
+      "sha256": "42f1d9457585365aff770da0605923d5adceb8a390761c031a60ae076e93b0db"
+    },
+    {
+      "path": "assets/node_modules/@expo-google-fonts/manrope/800ExtraBold/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "bytes": 98584,
+      "sha256": "3182b364667e58b58a7ff05a91abfebdd927f1fedbb702df3fb91d20cee23e4f"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1222,
+      "sha256": "36f948de25980ba6ff653ade6816fe1fb970d6cb881c9d1411eaa599feed3b37"
+    },
+    {
+      "path": "metadata.json",
+      "bytes": 1250,
+      "sha256": "8a1866dc744138d1fa4f500f8d659a47e40f9ee37a2ae1b76654f84c882d8ea1"
+    }
+  ]
+}

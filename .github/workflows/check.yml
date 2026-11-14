@@ -1,0 +1,44 @@
+name: Checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  app:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      EXPO_NO_TELEMETRY: '1'
+      CI: '1'
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Use Node.js 24
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install reviewed lockfile without lifecycle scripts
+        run: npm ci --ignore-scripts
+      - name: Reproduce the public recipe selection
+        run: python3 scripts/import-recipes-v83.py --check
+      - name: Check types
+        run: npm run typecheck
+      - name: Run unit tests with bounded workers
+        run: npm test -- --maxWorkers=2
+      - name: Audit dependencies
+        run: npm audit --audit-level=moderate
+      - name: Verify Expo compatibility
+        run: npx --no-install expo install --check
+      - name: Build the web application
+        run: npm run build:web

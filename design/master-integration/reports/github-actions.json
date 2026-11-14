@@ -1,0 +1,102 @@
+{
+  "observedAt": "2026-11-13T22:00:45.271Z",
+  "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+  "run": {
+    "id": 43514500031,
+    "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43514500031",
+    "event": "pull_request",
+    "status": "completed",
+    "conclusion": "success",
+    "createdAt": "2026-11-13T21:52:24Z",
+    "updatedAt": "2026-11-13T21:53:19Z"
+  },
+  "jobs": [
+    {
+      "id": 132192844391,
+      "name": "app",
+      "status": "completed",
+      "conclusion": "success",
+      "steps": [
+        {
+          "name": "Set up job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 1
+        },
+        {
+          "name": "Check out source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 2
+        },
+        {
+          "name": "Use Node.js 24",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 3
+        },
+        {
+          "name": "Install reviewed lockfile without lifecycle scripts",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 4
+        },
+        {
+          "name": "Reproduce the public recipe selection",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 5
+        },
+        {
+          "name": "Check types",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 6
+        },
+        {
+          "name": "Run unit tests with bounded workers",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 7
+        },
+        {
+          "name": "Audit dependencies",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 8
+        },
+        {
+          "name": "Verify Expo compatibility",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 9
+        },
+        {
+          "name": "Build the web application",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 10
+        },
+        {
+          "name": "Post Use Node.js 24",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 19
+        },
+        {
+          "name": "Post Check out source",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 20
+        },
+        {
+          "name": "Complete job",
+          "status": "completed",
+          "conclusion": "success",
+          "number": 21
+        }
+      ]
+    }
+  ],
+  "scope": "Actual GitHub Actions execution of the integration source; no deployment steps/secrets. Separate from private local browser runs."
+}
