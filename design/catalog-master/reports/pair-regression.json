@@ -1,0 +1,92 @@
+{
+  "generatedAtUtc": "2026-11-14T16:02:52.446761+00:00",
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "sourceTree": "67fde43ccd1c65a9f81d3c80e16a6ede0158b2dc",
+  "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+  "all159InputsUnchangedBeforeAndAfter": true,
+  "allTrackedFilesStillMatchCanonicalGitBlobs": 1422,
+  "privateOriginalExcluded": true,
+  "chromium": {
+    "statistics": {
+      "startTime": "2026-11-14T15:43:58.024Z",
+      "duration": 912930.4639999999,
+      "expected": 298,
+      "skipped": 24,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "passed": 298,
+    "failed": 0,
+    "skipped": 24,
+    "flaky": 0,
+    "skipReason": "Existing deliberate duplicate matrix omissions",
+    "originalScreenshots": 120,
+    "inventoryScreenshots": 300,
+    "runtimeErrors": 0,
+    "visualFailures": 0,
+    "protectedArtifactsUnchanged": true,
+    "preservationScope": "Only the isolated archived source copy; primary checkout ignored outputs are not included in this claim.",
+    "rawResultsSha256": "c377f95b092eebed03b059cd369a152b6be0deeb2209768515cc95703df74a7d",
+    "rawVerificationReportSha256": "700fdf2541cc8aaed13b70114408705697ab3f76fd53e2b8c3eca1ce7b1c173e"
+  },
+  "webkit": {
+    "statistics": {
+      "startTime": "2026-11-14T15:44:15.070Z",
+      "duration": 556201.6540000001,
+      "expected": 16,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "logicalJourneyReports": 16,
+    "logicalScreenshots": 120,
+    "attachmentsNotDoubleCounted": true,
+    "rawResultsSha256": "5d1f6c6c3c808df6975e0ed72367c878d2eb58522a6f0d96efd30b3339bdd75a"
+  },
+  "recipeFirst": {
+    "statistics": {
+      "startTime": "2026-11-14T15:55:05.784Z",
+      "duration": 399151.83,
+      "expected": 36,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "logicalScreenshots": 180,
+    "rawResultsSha256": "dc3913d00a631ef60b99fb950b676a1b54da5c3a982c8e0ba02e8ce30849e3b4",
+    "workers": 1,
+    "businessStateSeeded": false,
+    "privateShareUsed": false
+  },
+  "browserVersions": {
+    "node": "v24.19.0",
+    "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+    "playwright": "1.64.1",
+    "webkitBuild": 2370,
+    "webkitWrapperSha256": "64afd96ea92cada47070a0c07bc8b4da0f1a5c93b0cde005754048be59bec224"
+  },
+  "physicalIPhone": false,
+  "nativeSafariOrAppCertified": false,
+  "applicationOrTestsChangedForRun": false,
+  "rawArtifactsRemainPrivate": true,
+  "deploymentOrExternalDataMutationPerformed": false,
+  "limits": [
+    "WebKit Linux and CSS viewports do not prove Safari or a physical iPhone.",
+    "No credentials, real owner browser state or private original recipe archive were copied.",
+    "The reviewed public web export was reused only after 159 source/dependency/test/script/asset fingerprints matched the tested baseline."
+  ],
+  "chromiumVerifierProcessExitedSuccessfully": true,
+  "webkitProcessExitedSuccessfully": true,
+  "recipeFirstProcessExitedSuccessfully": true,
+  "temporaryServersLeftRunning": false,
+  "scope": "Fresh isolated regression of B02/B03; deployment is performed separately by the parent delivery.",
+  "privateRawSummarySha256": "95c594255096b2ec8b3d136c42f39aebd0a544a1856b5961f2e152fddc95903c"
+}

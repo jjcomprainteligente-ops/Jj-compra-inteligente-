@@ -1,0 +1,81 @@
+{
+  "checkedAtUtc": "2026-11-14T15:36:52.162971+00:00",
+  "sourceBaseCommit": "e97a41b8e67c907207e5fb4e8642ea3f79e04230",
+  "applicationChanged": false,
+  "privateSourceIdentitiesValidated": 150,
+  "privateSourceLocalizedRecordsValidated": 750,
+  "publicIndexIdentities": 150,
+  "publicSelectedRecords": 120,
+  "existingPublicReservedIdentities": 30,
+  "reservedFieldsExactlyMatchExistingAuthorizedProvenance": true,
+  "newHeldEditorialStatesOrProposalPublished": false,
+  "publicDataSourceSha256": "5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62",
+  "activeAppTotal": 127,
+  "publicationDecisionsChanged": false,
+  "pythonTests": {
+    "passed": 19,
+    "failed": 0,
+    "skipped": 0,
+    "privateSourceUsedInCi": false,
+    "rawLogSha256": "753e74d8d6459abfb6af375a2b35b17360237c8f6f43033d36b4e924a96e7b01"
+  },
+  "unitTests": {
+    "passed": 987,
+    "failed": 0,
+    "skipped": 0,
+    "files": 28,
+    "newMenuPreservationCases": 6,
+    "rawReportSha256": "75a3bee54de7479ee3c16a29365fda545cf935be0b02334478ea5cf499766f87"
+  },
+  "typecheckPassed": true,
+  "privateAndPublicImporterCheckPassed": true,
+  "privateRegistryMaterialized": true,
+  "privateRegistryPublished": false,
+  "privateOriginalUnchanged": true,
+  "existingApplicationInputsUnchanged": 96,
+  "existingBaselineInputsUnchanged": 159,
+  "nativeOrMicrobiologicalCertificationClaimed": false,
+  "externalWorkbookNewlyRead": false,
+  "historicalOriginalDigestsRecomputed": false,
+  "securityFinding": {
+    "initial": "FIFO could block audit check",
+    "resolved": "Nonblocking open and descriptor regular-file check plus timed isolated test"
+  },
+  "approvalReview": {
+    "firstPublicTreeRejected": true,
+    "reason": "New held editorial states and proposal exceeded existing120-recipe publication authorization",
+    "saferAlternative": "Exclude all such material; derive public data only from pinned already authorized public archive; retain original private work",
+    "rejectedContentResubmitted": false
+  },
+  "sha256": {
+    "scripts/audit-recipes-v83.py": "b84adfb30dda05d94b4c6a7a94e15fa65e684da04f9a4e1ca6f000636cb20ba2",
+    "tests/python/test_audit_recipes_v83.py": "e84df06cb2d715983e6493792a78467155899b313ed55b65b36acd557e943b82",
+    "tests/b03-menu-id-preservation.test.ts": "f168b9fc5f6447556441b611625e2a9e2d7333e004cb96964fa983e0f9e62af1",
+    "referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json": "214e3d1018316708823092bcf8c0ea9c43725407193d7736d79b0624073671ee",
+    "referencias/recetas-v83/catalogo-maestro/CONTROL_LOTES_15.json": "0068141faebb7a30bce121c2e6abfb66c9b7cfbf07c8cfc6f041bef626333bf6"
+  },
+  "fullBlock03Closed": false,
+  "previewOfThisDelivery": "VERIFIED_READY_PROTECTED_STAGING",
+  "browserPairAudit": "PASSED_ON_EXACT_SOURCE",
+  "independentSafeReview": {
+    "reviewedFiles": 14,
+    "linksChecked": 62,
+    "pythonCasesAtReview": 18,
+    "reservedRowsExactlyEqualExistingPublicProvenance": 30,
+    "indexAndBatchArtifactsReproducedByteIdenticalFromAuthorizedPublicSource": true,
+    "newHeldEditorialDataAbsent": true,
+    "blockingFindings": [],
+    "finalAdditionalCase": "Public files reproduce without private archive; final suite19passed"
+  },
+  "publicSourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "browserPairResult": {
+    "chromiumPassed": 298,
+    "intentionalDuplicateSkips": 24,
+    "webkitPassed": 16,
+    "recipeFirstPassed": 36,
+    "failed": 0,
+    "flaky": 0,
+    "existingInputsUnchanged": 159,
+    "canonicalTrackedFilesUnchanged": 1422
+  }
+}

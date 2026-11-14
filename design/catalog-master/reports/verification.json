@@ -1,0 +1,98 @@
+{
+  "checkedAtUtc": "2026-11-14T16:06:53.425667+00:00",
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "sourceTree": "67fde43ccd1c65a9f81d3c80e16a6ede0158b2dc",
+  "sourceBranch": "codex/bloque03-catalogo-maestro-2026-11-14",
+  "githubPullRequest": 23,
+  "baseCommit": "e97a41b8e67c907207e5fb4e8642ea3f79e04230",
+  "applicationChanged": false,
+  "privateRegistryIdentities": 150,
+  "privateLocalizedRecords": 750,
+  "privateRegistryOrProposalPublished": false,
+  "publicSourceArchiveSha256": "5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62",
+  "publicReservedRowsMatchExistingProvenance": 30,
+  "newHeldEditorialStatesPublished": false,
+  "activeAppRecipes": 127,
+  "pythonTestsPassed": 19,
+  "unitTestsPassed": 987,
+  "typecheckPassed": true,
+  "ciRunId": 43611606343,
+  "ciConclusion": "success",
+  "chromium": {
+    "passed": 298,
+    "failed": 0,
+    "intentionalSkips": 24,
+    "flaky": 0
+  },
+  "webkit": {
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "recipeFirst": {
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0
+  },
+  "browserCaptures": {
+    "chromiumMatrix": 120,
+    "chromiumInventory": 300,
+    "webkitPilot": 120,
+    "recipeFirst": 180,
+    "rawArtifactsPrivate": true
+  },
+  "hosted": {
+    "status": "passed",
+    "uiLanguages": 4,
+    "catalogue": 127,
+    "resourcesOrUrls": 29,
+    "deploymentId": "dpl_JC4TDzdKay7LUzkP18oRp5DpgayR",
+    "readyState": "READY",
+    "target": "staging",
+    "protectionEnabled": true,
+    "shareExpiresUtc": "2026-11-15T15:04:16Z",
+    "shareTokenPublished": false,
+    "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7"
+  },
+  "preservation": {
+    "existingBaselineInputsUnchanged": 159,
+    "primaryApplicationInputsUnchanged": 96,
+    "isolatedCanonicalTrackedFilesUnchanged": 1422,
+    "privateOriginalUnchangedAndIgnored": true,
+    "sevenDocumentsAndWriteFencesUnchanged": true,
+    "mainMerged": false,
+    "productionPromoted": false,
+    "productionDeploymentUnchanged": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3"
+  },
+  "backup": {
+    "ownerConfirmedCopy": true,
+    "agentVerifiedExternalIntegrity": false,
+    "independentBackupVerified": false
+  },
+  "approvalReview": {
+    "initialPublicProposalRejected": true,
+    "safeAlternativePublished": true,
+    "privateRejectedMaterialNotReuploaded": true,
+    "reason": "New retained editorial data was outside existing120-recipe publication authorization"
+  },
+  "decision": "REGISTRY_TOOLING_TECHNICALLY_VERIFIED_FULL_B03_REMAINS_IN_PROGRESS",
+  "physicalIPhone": false,
+  "fullBlock03Closed": false,
+  "limits": [
+    "WebKit Linux and viewports do not certify Safari or a physical iPhone.",
+    "Private source controls do not establish native-language or microbiological certification.",
+    "Private registry and proposal require separate authorized handling before public release."
+  ],
+  "reportSha256": {
+    "local-verification.json": "be9e67ebfdf69336ba52a75ea29f5e32a4e6f59a6b286d1fde67afc6a90c9ed7",
+    "github-actions.json": "1309be035bc6d15ad3a56206648a409b7d3df1b88528b503c4a42b6decaebbf9",
+    "chromium-regression.json": "7c0244325191cafdb312b8985853de211a89b1e5574dea0e606790a8620d4009",
+    "webkit-regression.json": "70c5e7e3472520ab8d8a20474a1397b1424cf2feec85f7326b32966efa18c582",
+    "recipe-first-regression.json": "11f6ad967bd64d23beeb39deca79e7feb8ac3b4c0d5244caf48708b28789749a",
+    "pair-regression.json": "c704e8a5581865c6531ea75287263eee4246dc378435f5b3e703759180d73d82",
+    "deployment.json": "46ca5ca743416a90faaec73629c44d76441ecb9c67c09e4045f821ac2320341b",
+    "hosted-verification.json": "9bb317ac858e56a31763b56f4ad97f2f4e25ceed68c6e60a139c55679a0de9be"
+  }
+}

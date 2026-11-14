@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 14/11/2026 · Bloque 02 maestro: recorrido comprobado; pendiente la prueba física.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+**Estado actualizado · 14/11/2026 · Bloque 03 maestro: registro de 150 recetas preparado; conciliación editorial en curso.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
 
@@ -56,6 +56,12 @@ La prueba web completa y la multilingüe tienen sus instrucciones en [la guía i
 [PR #22](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/22), fuente `61793e4833c702a6294eedde1f778cd80dfc074f`: el recorrido empieza eligiendo una receta, sin lista ni plan semanal previos. **36/36 casos locales y 36/36 en staging real**, cuatro idiomas, escritorio Chromium y WebKit 375/430; cero fallos/omisiones/intermitencias. TypeScript, 981 unitarias, importación pública y npm0 correctos; CI remota de la fuente correcta. Aplicación y 159 inputs anteriores intactos.
 
 La nueva candidata `dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ` está READY y protegida; 127 recetas y 29 recursos/URLs verificados. Acceso temporal por conversación hasta **15/11/2026 10:52:36 UTC**. Conserva el bundle C3f y el logo oficial; producción sigue igual. [Informe y límites](docs/MAESTRO/BLOQUE02_ENTREGA_Y_AUDITORIA.md) · [guía Safari](docs/MAESTRO/BLOQUE02_PRUEBA_SAFARI_IPHONE.md). **Requiere prueba física y aceptación del propietario.** No se declara cerrado todo el plan ni el subbloque de independencia de respaldo 01.1.
+
+## Registro maestro de recetas · Bloque 03
+
+Registro completo de **150 IDs/750 fichas** y revisión por lotes en privado, conservando originales y la app de 127 recetas. Herramienta de auditoría con destino exclusivo 0700/0600, comprobación sin escritura y pruebas de conservación de planes. TypeScript y 987/987 unitarias correctos.
+
+El [índice público](referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json) usa solo el ZIP público autorizado: 120 seleccionadas y las 30 identidades reservadas con los cuatro campos ya existentes en su procedencia. La nueva propuesta y los estados detallados de retenidas permanecen privados después del rechazo automático a su publicación. [Informe técnico y alcance](docs/MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md). [PR #23](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/23), fuente `e544ec2f9fd332e6ad9ac74b60b2b2885f616419`: CI y regresión nuevas correctas (298 Chromium/24 omisiones deliberadas, 16 WebKit y 36 receta primero). Staging protegida comprobada en cuatro idiomas y 29 recursos; acceso temporal por conversación hasta 15/11/2026 15:04:16 UTC. Las previews anteriores conservan su origen propio.
 
 ## Historial documental conservado
 

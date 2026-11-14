@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "sourceTree": "67fde43ccd1c65a9f81d3c80e16a6ede0158b2dc",
+  "physicalIPhone": false,
+  "statistics": {
+    "startTime": "2026-11-14T15:55:05.784Z",
+    "duration": 399151.83,
+    "expected": 36,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "passed": 36,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "logicalScreenshots": 180,
+  "rawResultsSha256": "dc3913d00a631ef60b99fb950b676a1b54da5c3a982c8e0ba02e8ce30849e3b4",
+  "workers": 1,
+  "businessStateSeeded": false,
+  "privateShareUsed": false
+}

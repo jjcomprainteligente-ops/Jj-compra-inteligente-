@@ -1,6 +1,6 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 14/11/2026. Bloque 02 maestro: QA local y remota correcta; requiere prueba física. App intacta.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
+**Actualizado 14/11/2026. Bloque 03 maestro: registro técnico preparado; publicación y conciliación pendientes. App intacta.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
 
 ## Estado comprobado
 
@@ -32,6 +32,12 @@ Las capturas iniciales a 375/430 muestran una producción antigua y una staging 
 El propietario confirmó: «Lo tengo guardado en la carpeta del proyecto sigue». Se registra la copia declarada, sin atribuir una inspección ni una restauración remotas. La verificación independiente de 01.1 permanece abierta antes de modificar la aplicación. [Estado de respaldo](MAESTRO/RESPALDO_ESTADO_PUBLICO.json) · [política](MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md).
 
 La orden posterior de continuar permite comprobar el Bloque 02 sobre la app intacta. [PR #22](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/22), fuente `61793e4833c702a6294eedde1f778cd80dfc074f`: **36/36 locales y 36/36 en staging**, receta primero, raciones, revisión/cancelación, guardado, duplicados, marcado, gasto confirmado, lista vacía y cierre/reapertura. CI remota correcta; no hay cambios de app, dependencias o almacenamiento. [Informe](MAESTRO/BLOQUE02_ENTREGA_Y_AUDITORIA.md) · [guía Safari](MAESTRO/BLOQUE02_PRUEBA_SAFARI_IPHONE.md). **La siguiente acción es la prueba física en iPhone**, con aceptación registrada por el propietario.
+
+## Registro y frontera pública de Bloque 03
+
+Registro privado150/750 y controles por lote preparados sobre la app intacta. Código de auditoría, conservación de planes e índice público de identidades desde la fuente pública autorizada. Las 30 reservadas repiten solo sus cuatro campos ya publicados; no se añaden nuevos estados editoriales privados. El detalle rechazado por revisión automática se conserva en un paquete privado, sin reenviarlo por otra vía.
+
+TypeScript y 987/987 unitarias correctos; exportación restringida y 19/19 pruebas Python correctas. [Informe](MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md) · [índice autorizado](../referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json). [PR #23](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/23), fuente `e544ec2f9fd332e6ad9ac74b60b2b2885f616419`: CI, Chromium 298/24 omisiones deliberadas, WebKit 16 y receta primero 36 correctos. Staging `dpl_JC4TDzdKay7LUzkP18oRp5DpgayR` READY/protegida; cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Acceso temporal por conversación hasta 15/11/2026 15:04:16 UTC. B02 físico y 01.1 mantienen sus límites separados.
 
 ## Historial documental conservado
 
