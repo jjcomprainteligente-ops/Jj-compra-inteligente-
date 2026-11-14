@@ -75,3 +75,16 @@ Los índices del kit antiguo no cambian esta secuencia: B06.1 fuentes → Bloque
 PR #21 y origen `78480fd40b4a116d53ebb016f31085785f42a6e6` verificados: CI correcta, 298 Chromium/24 omisiones deliberadas y 16 WebKit; baseline limpio ABB con 981 unitarias, audit 0 y exports 3. Candidata staging READY/protegida y HTTPS revalidado en cuatro idiomas/29 recursos. Ver [estado técnico](../../design/master-integration/reports/integration-verification.json). No hay merge a main ni promoción; siguen conservados D22 y la referencia ABB.
 
 La preparación privada local y su restauración están verificadas; la independencia externa permanece pendiente. Esa puerta no se elimina por terminar las pruebas de la app. Bloque 01 continúa EN_CURSO y no autoriza comenzar otro bloque.
+
+## Confirmación de guardado del propietario · 14/11/2026
+
+El propietario comunicó: «Lo tengo guardado en la carpeta del proyecto sigue». Se registra como confirmación de que guardó una copia en la **carpeta del proyecto declarada por él**. La solicitud de información ya tiene respuesta; no debe seguir describiéndose como «sin respuesta» ni exigirse de nuevo el mismo consentimiento.
+
+El grado de evidencia queda separado en el [estado público de respaldo](RESPALDO_ESTADO_PUBLICO.json): `OWNER_CONFIRMED_PROJECT_FOLDER`, `ownerConfirmedCopy=true`. El agente no ha inspeccionado el destino declarado ni conoce su ubicación o dispositivo; por ello `agentVerifiedRemoteCopy=false`, `externalChecksumReadByAgent=false` e `independentBackupVerified=false`. La declaración no se convierte en una comprobación remota de integridad, restauración o independencia.
+
+Continúan acreditadas las comprobaciones locales anteriores: ZIP de 937.580 bytes, SHA-256 `151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034`, copia y restauración locales correctas, 13/13 entradas del manifiesto y 150 IDs/750 fichas. No se ha sustituido esa evidencia por otra ni se publica el archivo privado. El cierre del bloque debe citar este alcance y la decisión adoptada sobre la confirmación, conservando los estados históricos anteriores con su fecha.
+
+
+## Separación de 01.1 y comprobación de Bloque 02 · 14/11/2026
+
+La orden posterior «sigue», junto con la confirmación de copia, abre la comprobación del recorrido diario sobre la aplicación existente. La base compila y el origen desplegado es conocido; no se oculta ni se declara resuelta la independencia pendiente de 01.1. Esta subtarea añade pruebas de aceptación, una guía de Safari y evidencia de ejecución; mantiene intactos aplicación, dependencias, recursos, originales y mecanismos de almacenamiento. Un eventual fallo P0 se documentará antes de modificar la aplicación. No habilita el Bloque 03, merges a main, producción, servicios ni publicación de las recetas retenidas.

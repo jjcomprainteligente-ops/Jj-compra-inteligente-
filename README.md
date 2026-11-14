@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 14/11/2026 · Bloque 01 maestro EN_CURSO por respaldo externo pendiente.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+**Estado actualizado · 14/11/2026 · Bloque 02 maestro: verificación del recorrido diario en curso.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
 
@@ -27,7 +27,7 @@ IA, cuentas, hogares y sincronización no están activados. B07 conserva contrat
 
 Los siete documentos locales y sus protecciones de escritura se conservan. Borrar los datos del navegador/dispositivo puede eliminarlos; la exportación local no equivale a sincronización ni a restauración automática.
 
-El ZIP privado completo de 150 recetas está localizado e ignorado por Git. **El respaldo privado independiente sigue PENDIENTE de destino y verificación**; una segunda copia en esta misma máquina no se contará como tal. El ZIP público de 120 recetas no respalda las 30 retenidas. Antes de modificar código se debe cumplir la puerta de respaldo del plan maestro. El repositorio público y las previews no reciben el ZIP privado ni contenidos retenidos.
+El ZIP privado completo de 150 recetas está localizado e ignorado por Git. **El propietario confirmó el 14/11 que guardó una copia en la carpeta del proyecto.** Su destino, independencia e integridad remota no han sido inspeccionados por el agente; la copia y restauración locales sí están verificadas. El [registro del respaldo](docs/MAESTRO/RESPALDO_ESTADO_PUBLICO.json) conserva esta distinción. El ZIP público de 120 recetas no respalda las 30 retenidas. La comprobación independiente de 01.1 permanece abierta antes de modificar la app. El repositorio público y las previews no reciben el ZIP privado ni contenidos retenidos.
 
 ## Comprobaciones reales del Bloque 01
 
@@ -38,7 +38,7 @@ El ZIP privado completo de 150 recetas está localizado e ignorado por Git. **El
 
 Las pruebas de navegador corresponden a ese origen; el cierre posterior solo añade documentación/evidencia y no representa otra ejecución. Las suites anteriores conservan sus propios SHA. WebKit Linux no sustituye la prueba física de iPhone, ni un export iOS es un binario firmado. La aprobación estética sigue pendiente.
 
-La base y sus comprobaciones están preparadas para revisión. **El bloque completo sigue EN_CURSO porque el respaldo privado independiente no está verificado.** La copia y restauración locales sí están comprobadas; el código de la app permanece intacto y no se abre el Bloque 02.
+La base y sus comprobaciones están preparadas para revisión. **Bloque 01 conserva abierta la verificación independiente de 01.1; Bloque 02 avanza como QA de la app intacta por la orden posterior del propietario.** No se añaden funciones ni se modifica la aplicación para superar esa dependencia. La [guía Safari de Bloque 02](docs/MAESTRO/BLOQUE02_PRUEBA_SAFARI_IPHONE.md) sigue el recorrido de una receta antes de crear la lista. La aceptación en iPhone físico continúa pendiente.
 
 Para reproducir las comprobaciones del proyecto, usa Node.js 24 y el lockfile del árbol revisado:
 

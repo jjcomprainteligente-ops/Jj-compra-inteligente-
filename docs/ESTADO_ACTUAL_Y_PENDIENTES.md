@@ -1,6 +1,6 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 14/11/2026. Bloque 01 maestro: EN_CURSO por respaldo externo pendiente.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
+**Actualizado 14/11/2026. Bloque 02 maestro: QA del recorrido diario en curso; app intacta.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
 
 ## Estado comprobado
 
@@ -13,7 +13,7 @@
 | Datos locales | Siete documentos y protecciones conservados; 159/159 inputs de app/deps/tests/scripts/assets idénticos. |
 | Tiendas/precios | Seis formatos seleccionables y enlaces oficiales; comparador manual. Fuentes de PVP local actual no habilitadas. PR #11 sigue separado para revisión en su bloque. |
 | IA y hogares | IA no conectada; B07 sin resultado de matriz nativa y sin cuentas/BFF/sincronización activados. Snapshot 12/11 no sustituye una consulta nueva. |
-| Respaldo | Copia privada local y restauración 13/13 correctas. **Copia externa independiente pendiente de destino/confirmación y verificación.** |
+| Respaldo | Copia privada local y restauración 13/13 correctas. **Copia en carpeta del proyecto confirmada por el propietario; destino e integridad externos no inspeccionados.** |
 
 ## Calidad y publicación
 
@@ -23,9 +23,11 @@ Staging `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY, conserva protección. HTTPS r
 
 Las capturas iniciales a 375/430 muestran una producción antigua y una staging en bienvenida; no son dos capturas del mismo estado. No se modificó producción. No hay prueba física de iPhone ni publicación de binario firmado acreditadas por este bloque.
 
-## Puerta actual y única siguiente acción
+## Alcance actual y dependencia conservada
 
-Verificar un respaldo privado independiente del ZIP completo de 150 recetas antes de modificar código. La copia/restauración en esta misma máquina no cumple esa independencia. [Estado de respaldo](MAESTRO/RESPALDO_ESTADO_PUBLICO.json) · [política](MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md). La autorización de continuar no equivale a confirmar una descarga. Bloque 01 sigue abierto; no se abre otro bloque automáticamente.
+El propietario confirmó: «Lo tengo guardado en la carpeta del proyecto sigue». Se registra la copia declarada, sin atribuir una inspección ni una restauración remotas. La verificación independiente de 01.1 permanece abierta antes de modificar la aplicación. [Estado de respaldo](MAESTRO/RESPALDO_ESTADO_PUBLICO.json) · [política](MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md).
+
+La orden posterior de continuar permite comprobar el Bloque 02 sobre la app intacta: receta primero, raciones, revisión/cancelación, guardado, marcado, gasto confirmado y reapertura. Se añaden pruebas de aceptación y una [guía Safari](MAESTRO/BLOQUE02_PRUEBA_SAFARI_IPHONE.md), sin nuevas funciones, migraciones ni integraciones. Los resultados nuevos se registrarán con su fuente; no se extrapolan de los pilotos históricos.
 
 ## Historial documental conservado
 

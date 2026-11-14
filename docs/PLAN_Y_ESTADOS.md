@@ -559,3 +559,12 @@ La regresión completa local empezó sobre 78480fd tras superponer solo sus docu
 - Documentación exacta de PR #5 y PR #16 conservada selectivamente, sin aplicar árboles antiguos ni activar fuentes. Textos anteriores de README/ESTADO/DIRECCION conservados bajo ARCHIVO_HISTORICO; PLAN y DECISIONES se amplían sin borrar antecedentes.
 - **Bloque 01 EN_CURSO: preparación/restauración local de ZIP 150 comprobadas; respaldo privado externo independiente SIN CONFIRMAR.** No atribuir descarga al propietario por un «Sigue». Esa es la única acción pendiente para cerrar la puerta de conservación antes de modificar código. No se abre el Bloque 02. La aprobación visual, el iPhone físico, las 30 recetas y B07 conservan sus criterios separados.
 - El siguiente commit es cierre documental: los resultados de navegador pertenecen a 78480fd y no se registran como otra ejecución en el commit de informes. Los datos locales, ZIP privado y capturas/trazas permanecen fuera del repositorio público y de la preview.
+
+
+## Bloque 02 maestro · QA del recorrido exacto · 14/11/2026
+
+El propietario confirmó una copia «en la carpeta del proyecto» y ordenó continuar. Se registra su declaración sin atribuir inspección externa ni cerrar 01.1. Se adelanta QA del recorrido con la aplicación intacta: no se implementan funciones ni se altera el almacenamiento. Base `1942a714c322a032185645df142ad1d3eac32646`; rama separada `codex/bloque02-receta-primero-2026-11-14`.
+
+La app ya soportaba receta primero; los pilotos previos creaban lista/plan antes. Se añaden tres casos de aceptación en cuatro idiomas y tres proyectos (escritorio Chromium, WebKit375/430), más guía Safari; se conservan las guías antiguas con aviso. Local: **36 correctos/0 fallidos/0 omitidos/0 intermitentes**, 180 capturas lógicas privadas; cancelaciones, error de cuota/reintento, duplicados explícitos, gasto único e historial, lista guardada vacía y siete documentos tras cerrar/reabrir página. TypeScript, 981 unitarias, importador público y npm0 correctos. Los 159 inputs anteriores siguen idénticos; ningún P0 de app demostrado que requiera parche.
+
+[Informe con fuente, comandos y límites](MAESTRO/BLOQUE02_ENTREGA_Y_AUDITORIA.md) · [evidencia local saneada](../design/daily-flow/reports/local-acceptance.json). Publicación/CI/HTTPS de esta entrega pendientes; los resultados de Bloque01 no se atribuyen al SHA nuevo. Prueba física y aceptación visual pendientes; no se abre Bloque03 ni se fusiona main/promueve producción.
