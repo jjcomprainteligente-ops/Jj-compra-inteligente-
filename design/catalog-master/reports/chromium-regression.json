@@ -1,0 +1,24 @@
+{
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "statistics": {
+    "startTime": "2026-11-14T15:43:58.024Z",
+    "duration": 912930.4639999999,
+    "expected": 298,
+    "skipped": 24,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "passed": 298,
+  "failed": 0,
+  "skipped": 24,
+  "flaky": 0,
+  "originalScreenshots": 120,
+  "inventoryScreenshots": 300,
+  "protectedArtifactsUnchanged": true,
+  "runtimeErrors": 0,
+  "visualFailures": 0,
+  "rawReportSha256": "700fdf2541cc8aaed13b70114408705697ab3f76fd53e2b8c3eca1ce7b1c173e",
+  "rawResultsSha256": "c377f95b092eebed03b059cd369a152b6be0deeb2209768515cc95703df74a7d",
+  "skipReason": "Existing deliberate duplicate-capture omissions; not app failures.",
+  "preservationScope": "Protected paths inside the isolated public source copy; primary private archive is checked separately."
+}

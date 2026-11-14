@@ -37,7 +37,7 @@ La orden posterior de continuar permite comprobar el Bloque 02 sobre la app inta
 
 Registro privado150/750 y controles por lote preparados sobre la app intacta. Código de auditoría, conservación de planes e índice público de identidades desde la fuente pública autorizada. Las 30 reservadas repiten solo sus cuatro campos ya publicados; no se añaden nuevos estados editoriales privados. El detalle rechazado por revisión automática se conserva en un paquete privado, sin reenviarlo por otra vía.
 
-TypeScript y 987/987 unitarias correctos; exportación restringida y 19/19 pruebas Python correctas. [Informe](MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md) · [índice autorizado](../referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json). Publicación/CI/regresión/staging de esta entrega pendientes. B02 físico y 01.1 mantienen sus límites separados.
+TypeScript y 987/987 unitarias correctos; exportación restringida y 19/19 pruebas Python correctas. [Informe](MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md) · [índice autorizado](../referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json). [PR #23](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/23), fuente `e544ec2f9fd332e6ad9ac74b60b2b2885f616419`: CI, Chromium 298/24 omisiones deliberadas, WebKit 16 y receta primero 36 correctos. Staging `dpl_JC4TDzdKay7LUzkP18oRp5DpgayR` READY/protegida; cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Acceso temporal por conversación hasta 15/11/2026 15:04:16 UTC. B02 físico y 01.1 mantienen sus límites separados.
 
 ## Historial documental conservado
 

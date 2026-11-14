@@ -55,8 +55,8 @@
     "referencias/recetas-v83/catalogo-maestro/CONTROL_LOTES_15.json": "0068141faebb7a30bce121c2e6abfb66c9b7cfbf07c8cfc6f041bef626333bf6"
   },
   "fullBlock03Closed": false,
-  "previewOfThisDelivery": "PENDING_PUBLICATION",
-  "browserPairAudit": "PENDING_FULL_REGRESSION_ON_IDENTIFIED_SOURCE",
+  "previewOfThisDelivery": "VERIFIED_READY_PROTECTED_STAGING",
+  "browserPairAudit": "PASSED_ON_EXACT_SOURCE",
   "independentSafeReview": {
     "reviewedFiles": 14,
     "linksChecked": 62,
@@ -66,5 +66,16 @@
     "newHeldEditorialDataAbsent": true,
     "blockingFindings": [],
     "finalAdditionalCase": "Public files reproduce without private archive; final suite19passed"
+  },
+  "publicSourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "browserPairResult": {
+    "chromiumPassed": 298,
+    "intentionalDuplicateSkips": 24,
+    "webkitPassed": 16,
+    "recipeFirstPassed": 36,
+    "failed": 0,
+    "flaky": 0,
+    "existingInputsUnchanged": 159,
+    "canonicalTrackedFilesUnchanged": 1422
   }
 }

@@ -1,0 +1,73 @@
+{
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "runId": 43611606343,
+  "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43611606343",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "app",
+      "conclusion": "success",
+      "startedAt": "2026-11-14T15:42:25Z",
+      "completedAt": "2026-11-14T15:43:26Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Use Node.js 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install reviewed lockfile without lifecycle scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce the public recipe selection",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check private catalogue audit and public metadata boundary",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check types",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run unit tests with bounded workers",
+          "conclusion": "success"
+        },
+        {
+          "name": "Audit dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Expo compatibility",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build the web application",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Use Node.js 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "browserCasesRunInThisWorkflow": false
+}
