@@ -4,7 +4,7 @@
 
 ## Preparación
 
-Abrir en Safari el **enlace temporal de la conversación**, comprobar su caducidad y anotar la versión indicada en la entrega. La candidata de referencia es `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, origen GitHub `78480fd40b4a116d53ebb016f31085785f42a6e6`. Si la conversación entrega otra candidata, registrar su ID y commit en vez de atribuirle los resultados de esta referencia. El enlace de acceso protegido no se copia a GitHub ni al registro de fallos.
+Abrir en Safari el **enlace temporal de la conversación**, comprobar su caducidad y anotar la versión indicada en la entrega. La candidata comprobada es `dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ`, origen GitHub `61793e4833c702a6294eedde1f778cd80dfc074f` ([PR #22](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/22)). Su acceso temporal vence el **15/11/2026 10:52:36 UTC**; los 36 casos automatizados en esa URL no sustituyen esta prueba física. Si la conversación entrega otra candidata, registrar su ID y commit en vez de atribuirle los resultados de esta referencia. El enlace de acceso protegido no se copia a GitHub ni al registro de fallos.
 
 Usar conexión y datos ficticios en un origen de prueba sin listas previas. Cada dominio de preview guarda sus propios datos; no traslada las listas de otro dominio. Si el origen ya tiene información, conservarla y anotar que la primera entrada no se ha probado; no borrarla para forzar la bienvenida. No hacen falta cuenta, plan semanal ni lista creada de antemano.
 

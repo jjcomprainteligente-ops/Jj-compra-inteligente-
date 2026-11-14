@@ -1,0 +1,29 @@
+{
+  "id": "dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ",
+  "url": "jj-compra-inteligente-nskjxeest-cmj2hwhc6b-1051.vercel.app",
+  "target": "staging",
+  "readyState": "READY",
+  "meta": {
+    "githubCommitRef": "codex/bloque02-receta-primero-2026-11-14",
+    "githubCommitSha": "61793e4833c702a6294eedde1f778cd80dfc074f",
+    "githubCommitMessage": "test: validar B02 desde receta hasta gasto y reapertura",
+    "githubRepo": "Jj-compra-inteligente-",
+    "githubOrg": "jjcomprainteligente-ops"
+  },
+  "sourceCommit": "61793e4833c702a6294eedde1f778cd80dfc074f",
+  "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+  "files": 23,
+  "changedBytesUploaded": 0,
+  "share": {
+    "createdAt": 1794657156797,
+    "expires": 1794739956
+  },
+  "ssoProtection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains"
+  },
+  "githubPullRequest": 22,
+  "productionAliasUnchanged": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+  "all23PackageFilesByteIdenticalToPreviousPreview": true,
+  "privateSourceArchiveIncluded": false
+}
