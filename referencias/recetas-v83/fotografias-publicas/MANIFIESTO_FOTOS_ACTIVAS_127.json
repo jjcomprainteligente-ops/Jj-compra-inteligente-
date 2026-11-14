@@ -1,0 +1,1149 @@
+{
+  "schemaVersion": 1,
+  "scope": "ACTIVE_127",
+  "recipes": [
+    {
+      "recipeId": "arroz-verduras",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "lentejas-casa",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "tortilla-ensalada",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "garbanzos-calabaza",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "pasta-tomate",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "pollo-papas",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "cuscus-verduras",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-001",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-002",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-003",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-004",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-005",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-006",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-007",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-008",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-009",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-010",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-021",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-022",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-023",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-024",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-025",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-026",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-027",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-028",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-029",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E03-030",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-181",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-183",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-205",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-214",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-237",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-243",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-266",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-270",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-277",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E04-288",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-003",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-008",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-056",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-059",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-101",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-114",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-126",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-139",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-153",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-156",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-177",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-189",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-203",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-207",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-227",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-231",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-254",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-258",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-279",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E05-289",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-004",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-068",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-102",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-135",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-169",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-179",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-208",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-229",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-260",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E06-283",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E07-057",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E07-143",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E07-162",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E07-185",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E07-212",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E08-011",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E08-117",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E08-244",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E08-271",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E08-281",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E09-DES-001",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E09-DES-002",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E09-DES-003",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E10-DES-004",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E10-DES-005",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E10-DES-006",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E11-BRK-001",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E12-BRK-002",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E12-BRK-003",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E12-BRK-004",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E12-BRK-005",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R001",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R002",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R003",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R004",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R005",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R006",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R007",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R008",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R009",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R020",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R021",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R022",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R023",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R024",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R025",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R026",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R027",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R028",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R029",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R030",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R031",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R032",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R033",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-R034",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-B03-CAN-013",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-B03-ESP-073",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-B03-FRA-115",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-B03-ITA-132",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-B03-GRE-211",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-045",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-058",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-105",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-137",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-157",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-194",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-202",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-233",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-261",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    },
+    {
+      "recipeId": "JJ-E13-287",
+      "state": "NO_LOCALIZADA",
+      "asset": null,
+      "alt": null,
+      "provenance": null,
+      "license": null,
+      "visualReview": null
+    }
+  ]
+}

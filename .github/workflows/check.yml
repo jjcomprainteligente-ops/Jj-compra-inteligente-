@@ -32,8 +32,12 @@ jobs:
         run: npm ci --ignore-scripts
       - name: Reproduce the public recipe selection
         run: python3 scripts/import-recipes-v83.py --check
-      - name: Check private catalogue audit and public metadata boundary
-        run: python3 -m unittest discover -s tests/python -p 'test_*.py'
+      - name: Install pinned photo-audit tooling in an isolated environment
+        run: |
+          python3 -m venv "${RUNNER_TEMP}/jj-photo-audit"
+          "${RUNNER_TEMP}/jj-photo-audit/bin/python" -m pip --isolated install --disable-pip-version-check --only-binary=:all: --no-deps --require-hashes --index-url https://pypi.org/simple -r scripts/requirements-photo-audit.txt
+      - name: Check catalogue privacy and photo reception
+        run: '"${RUNNER_TEMP}/jj-photo-audit/bin/python" -m unittest discover -s tests/python -p "test_*.py"'
       - name: Check types
         run: npm run typecheck
       - name: Run unit tests with bounded workers

@@ -1,0 +1,86 @@
+{
+  "checkedAtUtc": "2026-11-14T20:47:34.599366+00:00",
+  "sourceBaseCommit": "b590ed0d09d646a6f541637c59ac98ecfe68128c",
+  "applicationChanged": false,
+  "applicationDependencyChanged": false,
+  "publicPhotoManifestIds": 127,
+  "originalsLocatedForActiveIds": 0,
+  "automaticallyApproved": 0,
+  "imagesPublished": 0,
+  "newHeldPhotoStatesPublished": false,
+  "photosToolTests": {
+    "passed": 32,
+    "failed": 0,
+    "skipped": 0
+  },
+  "combinedPythonTests": {
+    "passed": 51,
+    "failed": 0,
+    "skipped": 0,
+    "rawLogSha256": "2f519e5de48c7d650c88a58f9c7177569f9f16b89b30bc052cb592c6fa32cf18"
+  },
+  "unitTests": {
+    "passed": 987,
+    "failed": 0,
+    "skipped": 0,
+    "files": 28,
+    "rawReportSha256": "abe704b0f050fb22442e6d10d1ca1beda5d8b1c43db1835219ac33ab119594a9"
+  },
+  "typecheckPassed": true,
+  "auditOnlyDependency": {
+    "package": "Pillow",
+    "version": "13.0.0",
+    "officialPyPiWheelHashes": 82,
+    "reportedAdvisoriesAtCheck": 0,
+    "previousAuditorCandidateVersion": "12.3.0",
+    "previousCandidateAdvisories": 58,
+    "previousCandidateReleased": false,
+    "globalPythonPackageModified": false,
+    "exactVersionGuardBeforeDecode": true,
+    "isolatedVenvReproductionPassed": true,
+    "requirementsSha256": "f744c5bfedd8376a1cc04b964a0a543e8a96faa2f3045df5d3be611c1f6814f8"
+  },
+  "validationControls": [
+    "exact127authorizedIds",
+    "boundedStrictJson",
+    "relativePathsAndNoSymlinks",
+    "regularFilesAndNonblockingReads",
+    "sha256AndExactSize",
+    "minimum1536pxWidthAnd24MPMax",
+    "pngCrcAndContainerBoundaries",
+    "jpegAndWebpContainerBoundaries",
+    "fullDecoderVerifyAndLoad",
+    "noAnimation",
+    "noReusedImageHashes",
+    "fourLanguageAlt",
+    "provenanceAndReferences",
+    "pendingOnlyNeverAutomaticApproval"
+  ],
+  "requireReadyRejectsMissingManifest": true,
+  "imageBytesOrMtimesModified": false,
+  "existingApplicationInputsUnchanged": 96,
+  "existingBaselineInputsUnchanged": 159,
+  "sourcePhotoInventoryPrivateMasterIds": 150,
+  "privateMasterPhotoInventoryPublished": false,
+  "independentPhotoReviewPassed": true,
+  "previousFullBrowserRegression": {
+    "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+    "chromiumPassed": 298,
+    "intentionalSkips": 24,
+    "webkitPassed": 16,
+    "recipeFirstPassed": 36,
+    "rerunClaimedForThisBlock": false,
+    "applicationInputsStillIdentical": 159
+  },
+  "scope": "B04.1 reception tooling and honest missing-source inventory only; no photo rendering/linking demonstrated",
+  "fullBlock04Closed": false,
+  "blockState": "BLOCKED_FOR_ORIGINAL_ASSETS_TOOLING_READY",
+  "nextOwnerInput": "Location of original V38–V83 recipe photographs; text path or source link question sent, no reply assumed",
+  "preview": "PENDING_PUBLICATION",
+  "sha256": {
+    "scripts/validate-recipe-photos.py": "bea5737a9d9e5c152fb0b67547871ff0d8a594cd459ea77f577f83f44ba89e54",
+    "tests/python/test_recipe_photos.py": "ee000ce42d33e33797d674ed90bdce3356b2f2110eba86bfefc3e43200c34c12",
+    "scripts/requirements-photo-audit.txt": "f744c5bfedd8376a1cc04b964a0a543e8a96faa2f3045df5d3be611c1f6814f8",
+    "referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json": "7b85cd9134a90b57db57c8b1f6dc06407589680e94f9bf8a5eadd9d68e1efc3b"
+  }
+}

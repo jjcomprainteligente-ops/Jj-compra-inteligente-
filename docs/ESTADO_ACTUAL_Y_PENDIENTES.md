@@ -1,6 +1,6 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 14/11/2026. Bloque 03 maestro: registro técnico preparado; publicación y conciliación pendientes. App intacta.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
+**Actualizado 14/11/2026. Bloque 04.1: inventario/recepción preparados, originales de fotos pendientes. App intacta.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
 
 ## Estado comprobado
 
@@ -38,6 +38,12 @@ La orden posterior de continuar permite comprobar el Bloque 02 sobre la app inta
 Registro privado150/750 y controles por lote preparados sobre la app intacta. Código de auditoría, conservación de planes e índice público de identidades desde la fuente pública autorizada. Las 30 reservadas repiten solo sus cuatro campos ya publicados; no se añaden nuevos estados editoriales privados. El detalle rechazado por revisión automática se conserva en un paquete privado, sin reenviarlo por otra vía.
 
 TypeScript y 987/987 unitarias correctos; exportación restringida y 19/19 pruebas Python correctas. [Informe](MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md) · [índice autorizado](../referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json). [PR #23](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/23), fuente `e544ec2f9fd332e6ad9ac74b60b2b2885f616419`: CI, Chromium 298/24 omisiones deliberadas, WebKit 16 y receta primero 36 correctos. Staging `dpl_JC4TDzdKay7LUzkP18oRp5DpgayR` READY/protegida; cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Acceso temporal por conversación hasta 15/11/2026 15:04:16 UTC. B02 físico y 01.1 mantienen sus límites separados.
+
+## Fotografías y recepción · Bloque 04.1
+
+Cero originales de receta recuperados de las fuentes accesibles. Se revisaron maquetas/marca/QA, paquetes, XLSX e historia local/remota; el [informe de fuentes](../design/recipe-photos/reports/source-inventory.json) detalla el alcance. El [manifiesto de 127 activas](../referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json) conserva NO_LOCALIZADA, sin imágenes ni aprobaciones inventadas. El inventario de 150 permanece privado.
+
+Validador seguro sin escritura/publicación, 32 pruebas específicas/51 Python combinadas, 987 unitarias y tipos correctos. Pillow 12.3 descartado por avisos; versión 13.0.0 aislada y fijada, antes de cualquier decodificación. [Entrega](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md). CI, publicación y nueva staging pendientes; faltan originales para revisar un lote y vincular fotos. No se modifica la app ni se dan por cerrados B02 físico, B03 privado o 01.1.
 
 ## Historial documental conservado
 

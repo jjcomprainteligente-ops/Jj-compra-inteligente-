@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 14/11/2026 · Bloque 03 maestro: registro de 150 recetas preparado; conciliación editorial en curso.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+**Estado actualizado · 14/11/2026 · Bloque 04.1: inventario y recepción de fotos preparados; originales pendientes de localizar.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
 
@@ -62,6 +62,14 @@ La nueva candidata `dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ` está READY y protegida; 1
 Registro completo de **150 IDs/750 fichas** y revisión por lotes en privado, conservando originales y la app de 127 recetas. Herramienta de auditoría con destino exclusivo 0700/0600, comprobación sin escritura y pruebas de conservación de planes. TypeScript y 987/987 unitarias correctos.
 
 El [índice público](referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json) usa solo el ZIP público autorizado: 120 seleccionadas y las 30 identidades reservadas con los cuatro campos ya existentes en su procedencia. La nueva propuesta y los estados detallados de retenidas permanecen privados después del rechazo automático a su publicación. [Informe técnico y alcance](docs/MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md). [PR #23](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/23), fuente `e544ec2f9fd332e6ad9ac74b60b2b2885f616419`: CI y regresión nuevas correctas (298 Chromium/24 omisiones deliberadas, 16 WebKit y 36 receta primero). Staging protegida comprobada en cuatro idiomas y 29 recursos; acceso temporal por conversación hasta 15/11/2026 15:04:16 UTC. Las previews anteriores conservan su origen propio.
+
+## Fotografías · Bloque 04.1
+
+Revisión de 72 imágenes de referencia/marca/QA, 16 paquetes, 44 commits y 19 árboles remotos: **cero fotografías originales de receta localizadas**. El [manifiesto de las 127 activas](referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json) conserva el faltante explícito; las maquetas no se convierten en fotos. Inventario maestro privado separado, sin nuevos estados públicos de retenidas.
+
+Validador de solo lectura con hashes, dimensiones, formato, integridad, rutas y referencias; **32 pruebas de fotos y 51 Python combinadas**, 987 unitarias y tipos correctos. Auditor con Pillow 13.0.0 aislado, fijado por hashes y versión, sin cambios de dependencias de la app. Nunca aprueba ni publica imágenes automáticamente. [Informe y límites](docs/MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md).
+
+CI, publicación y preview de esta entrega pendientes. La app y Verde Mercado Premium permanecen intactos; la vinculación de fotos sigue bloqueada hasta recibir la carpeta o enlace de los originales V38–V83. No se declara terminado B04 ni se abre B05.
 
 ## Historial documental conservado
 
