@@ -1,0 +1,29 @@
+{
+  "pullRequest": 11,
+  "inspectedHead": "2562d98a46b9e5179b77d6590ec3b582ffd0d63d",
+  "mergePerformed": false,
+  "sourceBranchPreserved": true,
+  "reusedIntent": [
+    "Two explicit home entries",
+    "Budget followed immediately by store choice",
+    "Budget applies only to a newly confirmed list",
+    "Five meals and1–12 servings"
+  ],
+  "excludedModules": [
+    "api/public-prices.js",
+    "src/domain/publicPriceFeed.ts",
+    "src/app/screens/PublicPriceCompareScreen.tsx",
+    "public-price-feed tests and messages"
+  ],
+  "fixedRisks": [
+    "Existing saved menu overriding requested servings",
+    "Store choices writing or clearing favourite stores",
+    "Zero-store selection blocked",
+    "Incorrect contextual back navigation",
+    "onNavigateList error escape conflated with successful confirmation",
+    "Unconfirmed draft interpreted as successful list write",
+    "Budget edit discarding the proposed menu",
+    "Profile return to context-dependent screen after discarding context"
+  ],
+  "pricePolicy": "No verified current local prices, automatic fetching, basket ranking or savings claims. Manual attributed product comparison remains separate."
+}

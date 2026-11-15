@@ -3,11 +3,13 @@ import { ActivityIndicator, Pressable, StyleSheet, Text, View } from 'react-nati
 import { BookOpen, Check, ChevronRight, FileText, Minus, Plus, RefreshCw, ShoppingBag, SlidersHorizontal, Utensils } from 'lucide-react-native';
 import { RECIPES } from '../../data/recipes';
 import {
-  canonicalMeasure, combineIngredients, normalizeIngredientName, planIngredients, replaceMeal, scaleRecipe,
+  canonicalMeasure, combineIngredients, normalizeIngredientName, planIngredients, replaceMeal, scaleRecipe, validateMealPlan,
   type MealPlan, type Recipe, type ScaledIngredient,
 } from '../../domain/menus';
 import { buildFilteredMealPlan, defaultMenuFilters, filterRecipes, MenuFilterError } from '../../domain/menuFilters';
 import { recipePhotoStatus } from '../../domain/recipePhotos';
+import type { PlanningContext } from '../../domain/purchaseJourney';
+import type { StoreId } from '../../domain/stores';
 import { matchingItems, parseIngredientText, type IngredientDraft } from '../../domain/ingredientImport';
 import {
   CATEGORIES, UNITS, validateItemInput, validateListName,
@@ -20,6 +22,7 @@ import { localizedRecipe, translateIngredientName, translateIngredientNote } fro
 import { Button, Card, Field, IconButton, Notice, Pill, Section, Sheet, c, f, ui } from '../components/ui';
 import { FlowPage, type FlowDestination, type FlowPageProps } from '../components/FlowPage';
 import { MenuFilterPanel } from '../components/MenuFilterPanel';
+import { JourneyStorePicker } from './PlanningScreens';
 
 interface Props {
   initialSection?: 'week' | 'discover';
@@ -33,8 +36,12 @@ interface Props {
   onEntryConsumed?: () => void;
   budgetCents?: number | null;
   onBudget?: () => void;
+  journey?: PlanningContext;
+  onJourneyStoresChange?: (stores: StoreId[]) => void;
+  onJourneyServingsChange?: (servings: number) => void;
+  onIngredientsConfirmed?: () => void;
 }
-type Panel = { kind: 'text' } | { kind: 'review' } | { kind: 'recipe'; recipe: Recipe } | { kind: 'replace'; index: number } | { kind: 'proposal'; plan: MealPlan };
+type Panel = { kind: 'text' } | { kind: 'review' } | { kind: 'stores' } | { kind: 'recipe'; recipe: Recipe } | { kind: 'replace'; index: number } | { kind: 'proposal'; plan: MealPlan };
 const dayIds = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday'];
 const RECIPE_PAGE_SIZE = 20;
 type ReviewSource = { kind: 'text' } | { kind: 'plan'; servings: number } | { kind: 'recipe'; recipe: Recipe; servings: number };
@@ -43,7 +50,7 @@ class MenuFeedback extends Error {
 }
 
 /** Offline planning and explicit ingredient review; no AI request or voice recording. */
-export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed, budgetCents, onBudget }: Props) {
+export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy, shoppingError, onApply, onNavigateList, onNavigateMain, initialEntry, onEntryConsumed, budgetCents, onBudget, journey, onJourneyStoresChange, onJourneyServingsChange, onIngredientsConfirmed }: Props) {
   const { language, t, formatMoney, formatQuantity, formatNumber, translateError, categoryLabel, unitLabel } = useI18n();
   const meal = useMealPlan();
   const feedback = (value: unknown) => value instanceof MenuFeedback || value instanceof MenuFilterError ? t(value.key, value.values) : translateError(value);
@@ -53,6 +60,8 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
     ? plural('catalogV83Ui.unknownTimePeople', count)
     : plural(recipe.id.startsWith('JJ-') ? 'catalogV83Ui.minutesPeople' : detail ? 'menus.recipePill' : 'menus.minutesPeople', count, { minutes: formatNumber(recipe.minutes) });
   const [people, setPeople] = useState(2);
+  // The new entry paths never replace or persist the user's existing weekly plan.
+  const [journeyPlan, setJourneyPlan] = useState<MealPlan | null>(null);
   const [section, setSection] = useState<'week' | 'discover'>(initialSection);
   const [filters, setFilters] = useState(defaultMenuFilters);
   const [filtersOpen, setFiltersOpen] = useState(false);
@@ -78,15 +87,19 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const planLock = useRef(false);
   const draftCounter = useRef(0);
   const consumedEntry = useRef<string | null>(null);
-  const servings = meal.plan?.servings ?? people;
-  const busy = meal.busy || shoppingBusy || applying;
-  const filterControlsDisabled = busy || meal.loading || !!meal.loadError;
+  const plan = journey ? journeyPlan && { ...journeyPlan, servings: journey.servings } : meal.plan;
+  const servings = journey?.servings ?? plan?.servings ?? people;
+  const menuLoading = !journey && meal.loading;
+  const menuLoadError = journey ? '' : meal.loadError;
+  const menuSaveError = journey ? '' : meal.saveError;
+  const busy = (!journey && meal.busy) || shoppingBusy || applying;
+  const filterControlsDisabled = busy || menuLoading || !!menuLoadError;
   const visibleRecipes = useMemo(() => filterRecipes(RECIPES, filters), [filters]);
   const detailedRecipe = useMemo(() => panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t) : null, [panel, t]);
   const scaledRecipeIngredients = useMemo(() => panel?.kind === 'recipe' ? scaleRecipe(panel.recipe, recipeServings) : [], [panel, recipeServings]);
   const activeFilterCount = Number(filters.maxMinutes !== null) + Number(filters.preference !== 'any') + filters.excludedIngredients.length;
-  const replacementRecipes = panel?.kind === 'replace' && meal.plan
-    ? visibleRecipes.filter(recipe => !meal.plan!.recipeIds.includes(recipe.id)) : [];
+  const replacementRecipes = panel?.kind === 'replace' && plan
+    ? visibleRecipes.filter(recipe => !plan.recipeIds.includes(recipe.id)) : [];
   const target = shopping.lists.find(list => list.id === targetId);
   const selectedCount = drafts.filter(row => row.included && row.decision !== 'skip').length;
   const newListName = newName ?? t('menus.defaultListName');
@@ -95,9 +108,13 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const sourceLabel = source.kind === 'text' ? t('menus.textSource') : source.kind === 'plan' ? plural('menus.reviewPlanSource', source.servings) : plural('menus.recipeSource', source.servings, { title: localizedRecipe(source.recipe, t).title });
 
   useEffect(() => { setCatalogLimit(RECIPE_PAGE_SIZE); setReplacementLimit(RECIPE_PAGE_SIZE); }, [filters, language]);
+  useEffect(() => { setSection(initialSection); }, [initialSection]);
 
   const close = () => {
     if (busy || applyLock.current || planLock.current) return;
+    if (panel?.kind === 'stores') {
+      setPanel({ kind: 'review' }); setError(''); setDiscard(false); setPendingDestination(null); setApplyAttempted(false); return;
+    }
     if (panel?.kind === 'review' || (panel?.kind === 'text' && text.trim())) { setPendingDestination(null); setDiscard(!discard); return; }
     setPanel(null); setError(''); setDiscard(false);
   };
@@ -108,7 +125,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   } };
   const navigateMain = (destination: FlowDestination) => {
     if (busy || applyLock.current || planLock.current) return;
-    if (panel?.kind === 'review' || (panel?.kind === 'text' && text.trim())) { setPendingDestination(destination); setDiscard(true); return; }
+    if (panel?.kind === 'review' || panel?.kind === 'stores' || (panel?.kind === 'text' && text.trim())) { setPendingDestination(destination); setDiscard(true); return; }
     setPanel(null); setError(''); onNavigateMain(destination);
   };
   const discardProposal = () => {
@@ -120,27 +137,40 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
   const savePlan = async (next: Parameters<typeof meal.save>[0], after?: () => void) => {
     if (planLock.current || busy) return;
     planLock.current = true; setError('');
-    try { if (await meal.save(next)) after?.(); }
+    try {
+      if (journey) {
+        setJourneyPlan(next === null ? null : validateMealPlan(next));
+        after?.();
+      } else if (await meal.save(next)) after?.();
+    }
     catch (failure) { setError(failure); }
     finally { planLock.current = false; }
   };
   const prepareFilteredPlan = () => {
-    if (busy || planLock.current || meal.loading || meal.loadError) return;
+    if (busy || planLock.current || menuLoading || menuLoadError) return;
     try {
       const next = buildFilteredMealPlan(servings, filters);
-      if (meal.plan) open({ kind: 'proposal', plan: next });
+      if (plan) open({ kind: 'proposal', plan: next });
       else void savePlan(next);
     } catch (failure) { setError(failure); }
   };
   const changePeople = (next: number) => {
-    if (next < 1 || next > 12 || busy) return;
-    if (meal.plan) void savePlan({ ...meal.plan, servings: next });
+    if (!Number.isInteger(next) || next < 1 || next > 12 || busy) return;
+    if (journey) {
+      onJourneyServingsChange?.(next);
+      setJourneyPlan(previous => previous === null ? null : { ...previous, servings: next });
+    } else if (plan) void savePlan({ ...plan, servings: next });
     else setPeople(next);
+  };
+  const changeRecipeServings = (next: number) => {
+    if (!Number.isInteger(next) || next < 1 || next > 12 || busy) return;
+    setRecipeServings(next);
+    if (journey) changePeople(next);
   };
   const review = (ingredients: readonly ScaledIngredient[], origin: ReviewSource) => {
     try {
       const combined = combineIngredients(ingredients);
-      const activeId = shopping.lists.find(list => list.id === shopping.activeListId)?.id ?? shopping.lists[0]?.id ?? null;
+      const activeId = journey?.mode === 'budget' ? null : shopping.lists.find(list => list.id === shopping.activeListId)?.id ?? shopping.lists[0]?.id ?? null;
       const nextDrafts: IngredientDraft[] = combined.map(ingredient => ({
         id: `ingredient-draft-${++draftCounter.current}`, name: ingredient.name,
         quantity: formatQuantity(ingredient.quantityMilli), unit: ingredient.unit, category: ingredient.category,
@@ -203,15 +233,22 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           throw new MenuFeedback('menus.error.decideExisting', { name: displayName(row) });
         }
       }
+      if (journey?.mode === 'recipes' && panel?.kind === 'review') {
+        setApplyAttempted(false); setPanel({ kind: 'stores' }); return;
+      }
       applyLock.current = true; setApplying(true); setApplyAttempted(true);
-      if (await onApply(targetId, newListName, drafts)) { setPanel(null); setDiscard(false); onNavigateList(); }
+      if (await onApply(targetId, newListName, drafts)) {
+        setPanel(null); setDiscard(false);
+        if (onIngredientsConfirmed) onIngredientsConfirmed();
+        else onNavigateList();
+      }
       else setError(new MenuFeedback('menus.error.keepProposal'));
     } catch (failure) { setError(failure); }
     finally { applyLock.current = false; setApplying(false); }
   };
   const panelTitle = discard ? t("menus.discardTitle") : panel?.kind === 'text' ? t("menus.importText") :
-    panel?.kind === 'review' ? t("menus.reviewTitle") : panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t).title : panel?.kind === 'replace' ? t('menus.dayDinnerPanel', { day: day(panel.index) }) : panel?.kind === 'proposal' ? t('menuFilters.proposalTitle') : '';
-  const panelError = (panel?.kind === 'review' && applyAttempted && !applying ? shoppingError : '') || error || (panel?.kind === 'replace' || panel?.kind === 'proposal' ? meal.saveError : '');
+    panel?.kind === 'review' ? t("menus.reviewTitle") : panel?.kind === 'stores' ? t('mealJourney.storesTitle') : panel?.kind === 'recipe' ? localizedRecipe(panel.recipe, t).title : panel?.kind === 'replace' ? t('menus.dayDinnerPanel', { day: day(panel.index) }) : panel?.kind === 'proposal' ? t('menuFilters.proposalTitle') : '';
+  const panelError = ((panel?.kind === 'review' || panel?.kind === 'stores') && applyAttempted && !applying ? shoppingError : '') || error || (panel?.kind === 'replace' || panel?.kind === 'proposal' ? menuSaveError : '');
   const reviewRows = drafts.map((row, index) => {
     let matches: ReturnType<typeof matchingItems> = [];
     try { if (target && row.name.trim()) matches = matchingItems(target, row.name, row.unit); } catch { /* Inline validation remains on confirmation. */ }
@@ -246,11 +283,11 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
         <SlidersHorizontal color={c.primary} size={21} />
       </Pressable>
     </View>
-    {meal.loading ? <Card style={styles.loading}><ActivityIndicator color={c.primary} /><Text style={ui.body}>{t("menus.loading")}</Text></Card> : meal.loadError ? <>
-      <Notice kind="error" title={t("menus.loadErrorTitle")} text={feedback(meal.loadError)} action={t("menus.reload")} onPress={() => void meal.reload()} />
+    {menuLoading ? <Card style={styles.loading}><ActivityIndicator color={c.primary} /><Text style={ui.body}>{t("menus.loading")}</Text></Card> : menuLoadError ? <>
+      <Notice kind="error" title={t("menus.loadErrorTitle")} text={feedback(menuLoadError)} action={t("menus.reload")} onPress={() => void meal.reload()} />
       <Button label={t("menus.continueShopping")} onPress={onNavigateList} icon={ShoppingBag} />
     </> : <>
-      {!!(meal.saveError || (!panel && error)) && <Notice kind="error" title={t(error instanceof MenuFilterError ? 'menuFilters.reviewFilters' : 'menus.notSaved')} text={feedback(error || meal.saveError)} />}
+      {!!(menuSaveError || (!panel && error)) && <Notice kind="error" title={t(error instanceof MenuFilterError ? 'menuFilters.reviewFilters' : 'menus.notSaved')} text={feedback(error || menuSaveError)} />}
       {section === 'week' ? <>
       <Pill label={t("menus.localPlanning")} />
       <Card style={styles.servingsCard}>
@@ -260,14 +297,14 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           <IconButton label={t("menus.increasePeople")} icon={Plus} disabled={busy || servings >= 12} onPress={() => changePeople(servings + 1)} />
         </View>
       </Card>
-      {!meal.plan ? <>
+      {!plan ? <>
         <View style={styles.empty}><View style={styles.recipeSymbol}><Utensils size={25} color={c.primary} strokeWidth={1.7} /></View><Text style={styles.emptyTitle}>{t("menus.emptyTitle")}</Text><Text style={[ui.note, { textAlign: 'center' }]}>{t("menus.emptyText")}</Text></View>
-        <Button label={t("menus.prepareMenu")} testID="prepare-menu" busy={meal.busy} disabled={busy} onPress={prepareFilteredPlan} icon={Utensils} />
+        <Button label={t("menus.prepareMenu")} testID="prepare-menu" busy={!journey && meal.busy} disabled={busy} onPress={prepareFilteredPlan} icon={Utensils} />
       </> : <>
         <Section title={t('visualMenus.yourWeek')} />
-        <Text style={[ui.note, { marginBottom: 15 }]}>{plural('menus.forPeopleSaved', servings)}</Text>
-        <View style={{ marginBottom: 14 }}><Button label={t("menus.reviewMenu")} testID="review-menu" accent disabled={busy} icon={ShoppingBag} onPress={() => { if (meal.plan) review(planIngredients(meal.plan), { kind: 'plan', servings }); }} /></View>
-        {meal.plan.recipeIds.map((id, index) => {
+        <Text style={[ui.note, { marginBottom: 15 }]}>{plural(journey ? 'mealJourney.draftPlan' : 'menus.forPeopleSaved', servings)}</Text>
+        <View style={{ marginBottom: 14 }}><Button label={t("menus.reviewMenu")} testID="review-menu" accent disabled={busy} icon={ShoppingBag} onPress={() => { if (plan) review(planIngredients(plan), { kind: 'plan', servings }); }} /></View>
+        {plan.recipeIds.map((id, index) => {
           const recipe = RECIPES.find(item => item.id === id)!;
           return <Card key={`${index}-${id}`} style={styles.mealCard}>
             <Pressable accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })} disabled={busy} onPress={() => open({ kind: 'recipe', recipe })} style={styles.recipeLink}>
@@ -310,10 +347,10 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
         <View style={styles.mealSymbol}><FileText size={20} color={c.primary} strokeWidth={1.7} /></View><View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{t("menus.importText")}</Text><Text style={ui.note}>{t('visualMenus.importHint')}</Text></View><ChevronRight color={c.primary} size={18} />
       </Pressable>
       {budgetCents !== undefined && <Card style={{ backgroundColor: c.paleYellow, gap: 8, marginTop: 10 }}>
-        <Text style={ui.strong}>{t('menuFilters.budgetTitle')}</Text>
+        <Text style={ui.strong}>{t(journey ? 'mealJourney.planningBudget' : 'menuFilters.budgetTitle')}</Text>
         <Text style={ui.strong}>{budgetCents === null ? t('menuFilters.noBudget') : formatMoney(budgetCents)}</Text>
-        <Text style={ui.note}>{t('menuFilters.budgetHelp')}</Text>
-        {onBudget && <Button label={t('menuFilters.editBudget')} secondary disabled={busy} onPress={onBudget} />}
+        <Text style={ui.note}>{t(journey ? 'mealJourney.contextNotice' : 'menuFilters.budgetHelp')}</Text>
+        {onBudget && <Button label={t(journey ? 'mealJourney.editPlanningBudget' : 'menuFilters.editBudget')} secondary disabled={busy} onPress={onBudget} />}
       </Card>}
       <Text style={styles.localNote}>{t("menus.localInfo")}</Text>
       <Notice title={t('menus.decisionTitle')} text={t('menus.decisionText')} />
@@ -322,20 +359,21 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
     {filtersOpen && <MenuFilterPanel filters={filters} busy={busy} budgetCents={budgetCents}
       onClose={() => { if (!busy) setFiltersOpen(false); }}
       onApply={next => { if (!busy) { setFilters(next); setFiltersOpen(false); setError(''); } }} />}
-    <MenuPanel fullPage={panel?.kind === 'review' || panel?.kind === 'recipe'} visible={!!panel}
+    <MenuPanel fullPage={panel?.kind === 'review' || panel?.kind === 'stores' || panel?.kind === 'recipe'} visible={!!panel}
       title={!discard && panel?.kind === 'recipe' ? t('flow.recipeHeader') : !discard && panel?.kind === 'review' ? t('flow.reviewHeader') : panelTitle}
       busy={busy} onClose={close} onNavigateMain={navigateMain} testID={panel?.kind === 'proposal' ? 'menu-plan-proposal-sheet' : 'menu-sheet'}
       subtitle={panel?.kind === 'review' && !discard ? plural('menus.groupedSource', drafts.length, { source: sourceLabel }) : undefined}
-      footer={!discard && panel?.kind === 'review' ? <><Text style={ui.note}>{plural('menus.selectedFooter', selectedCount)}</Text><Button label={t("menus.confirm")} testID="confirm-ingredients" accent busy={applying} disabled={busy || selectedCount === 0} onPress={() => void confirm()} icon={Check} /><Button label={t("menus.cancelProposal")} secondary disabled={busy} onPress={close} /></> :
+      footer={!discard && panel?.kind === 'review' ? <><Text style={ui.note}>{plural('menus.selectedFooter', selectedCount)}</Text><Button label={t(journey?.mode === 'recipes' ? 'mealJourney.chooseStores' : 'menus.confirm')} testID="confirm-ingredients" accent busy={applying} disabled={busy || selectedCount === 0} onPress={() => void confirm()} icon={Check} /><Button label={t("menus.cancelProposal")} secondary disabled={busy} onPress={close} /></> :
+        !discard && panel?.kind === 'stores' ? <><Text style={ui.note}>{plural('menus.selectedFooter', selectedCount)}</Text><Button label={t('menus.confirm')} testID="journey-stores-confirm-ingredients" accent busy={applying} disabled={busy || selectedCount === 0} onPress={() => void confirm()} icon={Check} /><Button label={t('mealJourney.backIngredients')} testID="journey-back-ingredients" secondary disabled={busy} onPress={close} /></> :
         !discard && panel?.kind === 'text' ? <Button label={t("menus.parseText")} testID="parse-ingredients" disabled={busy} onPress={parseText} /> :
         !discard && panel?.kind === 'recipe' ? <Button label={t("menus.reviewRecipe")} icon={ShoppingBag} disabled={busy} onPress={() => review(scaleRecipe(panel.recipe, recipeServings), { kind: 'recipe', recipe: panel.recipe, servings: recipeServings })} /> :
         !discard && panel?.kind === 'proposal' ? <View style={{ gap: 9 }}>
-          <Button label={t('menuFilters.confirmPlan')} testID="confirm-menu-plan" accent busy={meal.busy} disabled={busy}
+          <Button label={t('menuFilters.confirmPlan')} testID="confirm-menu-plan" accent busy={!journey && meal.busy} disabled={busy}
             onPress={() => { void savePlan(panel.plan, () => setPanel(null)); }} icon={Check} />
           <Button label={t('menuFilters.cancelPlan')} testID="cancel-menu-plan" secondary disabled={busy} onPress={close} />
         </View> : undefined}>
       {discard ? <View style={{ gap: 16 }}><Text style={ui.body}>{t("menus.discardText")}</Text><Button label={t("menus.continueReview")} disabled={busy} onPress={() => { setDiscard(false); setPendingDestination(null); }} /><Button label={t("menus.cancelWithoutAdd")} secondary disabled={busy} onPress={discardProposal} /></View> : <>
-        {!!panelError && <Notice kind="error" title={applyAttempted && shoppingError && panel?.kind === 'review' ? t("menus.saveIngredientErrorTitle") : t("menus.reviewProposalTitle")} text={feedback(panelError)} />}
+        {!!panelError && <Notice kind="error" title={applyAttempted && shoppingError && (panel?.kind === 'review' || panel?.kind === 'stores') ? t("menus.saveIngredientErrorTitle") : t("menus.reviewProposalTitle")} text={feedback(panelError)} />}
         {panel?.kind === 'text' ? <>
           <Text style={[ui.note, { marginBottom: 18 }]}>{t("menus.textGuidance")}</Text>
           <Field label={t("menus.textLabel")} testID="ingredient-text" value={text} onChangeText={value => { setText(value); setIssues([]); setError(''); }} multiline editable={!busy} maxLength={6000} style={{ minHeight: 190 }} hint={t('menus.textHint', { count: formatNumber(text.length) })} placeholder={t('menus.textPlaceholder')} />
@@ -344,6 +382,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
         </> : panel?.kind === 'review' ? <>
           <Text accessibilityRole="header" style={styles.flowTitle}>{t('menus.reviewTitle')}</Text>
           <Text style={[ui.strong, { marginBottom: 8 }]}>{t('flow.beforeAdding')}</Text>
+          {journey?.mode === 'budget' && <Text testID="journey-new-list-budget-help" style={[ui.note, { marginBottom: 12 }]}>{t('mealJourney.newListBudgetHelp')}</Text>}
           <Text testID="ingredient-group-counts" style={[ui.note, { marginBottom: 12 }]}>{t('flow.groupCounts', {
             have: formatNumber(reviewGroups[0].rows.length), existing: formatNumber(reviewGroups[1].rows.length),
             missing: formatNumber(reviewGroups[2].rows.length),
@@ -390,7 +429,8 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
             <Choice label={t("menus.newList")} a11y={t("menus.newListA11y")} selected={targetId === null} disabled={busy} onPress={() => chooseTarget(null)} /></View>
           {targetId === null ? <Field label={t("menus.newListName")} value={newListName} maxLength={80} editable={!busy} onChangeText={setNewName} hint={t("menus.newListHint")} /> : <Text style={[ui.note, { marginBottom: 16 }]}>{t('menus.destinationInfo', { name: target?.name ?? t('menus.destinationNotAvailable') })}</Text>}
           <Notice title={t("menus.reviewNoticeTitle")} text={t("menus.reviewNoticeText")} />
-        </> : panel?.kind === 'recipe' && detailedRecipe ? <>
+        </> : panel?.kind === 'stores' && journey ? <JourneyStorePicker selected={journey.stores} busy={busy}
+          onChange={stores => { if (!busy) { onJourneyStoresChange?.(stores); setError(''); setApplyAttempted(false); } }} hideActions /> : panel?.kind === 'recipe' && detailedRecipe ? <>
           <Text accessibilityRole="header" style={styles.flowTitle}>{detailedRecipe.title}</Text>
           <View style={styles.recipeMetadata}>
             <Pill label={recipeMeta(panel.recipe, recipeServings, true)} />
@@ -400,11 +440,11 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           </View>
           {panel.recipe.id.startsWith('JJ-') && <Text testID="recipe-time-scope" style={[ui.note, { marginTop: 10 }]}>{t('catalogV83Ui.timeScope')}</Text>}
           <Card style={styles.servingsCard}>
-            <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{t('flow.servings')}</Text><Text style={ui.note}>{t('flow.servingsHint')}</Text></View>
+            <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{t('flow.servings')}</Text><Text style={ui.note}>{t(journey ? 'menus.peopleHint' : 'flow.servingsHint')}</Text></View>
             <View style={styles.counter}>
-              <IconButton label={t('flow.reduceServings')} icon={Minus} disabled={busy || recipeServings <= 1} onPress={() => setRecipeServings(value => Math.max(1, value - 1))} />
+              <IconButton label={t('flow.reduceServings')} icon={Minus} disabled={busy || recipeServings <= 1} onPress={() => changeRecipeServings(recipeServings - 1)} />
               <Text testID="recipe-servings" style={styles.people}>{formatNumber(recipeServings)}</Text>
-              <IconButton label={t('flow.increaseServings')} icon={Plus} disabled={busy || recipeServings >= 12} onPress={() => setRecipeServings(value => Math.min(12, value + 1))} />
+              <IconButton label={t('flow.increaseServings')} icon={Plus} disabled={busy || recipeServings >= 12} onPress={() => changeRecipeServings(recipeServings + 1)} />
             </View>
           </Card>
           <Section title={t("menus.ingredientsTitle")} />
@@ -430,10 +470,10 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
               </Card>;
             })}
           </View>
-        </> : panel?.kind === 'replace' && meal.plan ? <>
+        </> : panel?.kind === 'replace' && plan ? <>
           <Text style={[ui.note, { marginBottom: 18 }]}>{t("menus.replaceIntro")}</Text>
           {replacementRecipes.length === 0 && <Notice title={t('menuFilters.reviewFilters')} text={t('menuFilters.noReplacement')} />}
-          <View style={{ gap: 12 }}>{replacementRecipes.slice(0, replacementLimit).map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={meal.busy} icon={BookOpen} onPress={() => { try { if (meal.plan) void savePlan(replaceMeal(meal.plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
+          <View style={{ gap: 12 }}>{replacementRecipes.slice(0, replacementLimit).map(recipe => <Button key={recipe.id} label={localizedRecipe(recipe, t).title} secondary disabled={busy} busy={!journey && meal.busy} icon={BookOpen} onPress={() => { try { if (plan) void savePlan(replaceMeal(plan, panel.index, recipe.id), () => setPanel(null)); } catch (failure) { setError(failure); } }} />)}</View>
           {replacementRecipes.length > RECIPE_PAGE_SIZE && <View style={{ gap: 10, marginTop: 16 }}>
             <Text accessibilityRole="status" style={ui.note}>{t('catalogV83Ui.shownRecipes', { shown: formatNumber(Math.min(replacementLimit, replacementRecipes.length)), total: formatNumber(replacementRecipes.length) })}</Text>
             {replacementLimit < replacementRecipes.length && <Button label={t('catalogV83Ui.showMoreRecipes')} testID="show-more-replacement-recipes" secondary disabled={busy}

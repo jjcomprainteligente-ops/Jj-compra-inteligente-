@@ -8,13 +8,14 @@ import { Button, Card, IconButton, Notice, Pill, Section, Title, c, f, ui } from
 
 interface Props {
   active?: ShoppingList; busy: boolean; actualSpentCents?: number | null; expensesLoading?: boolean; expensesError?: string; onCreate(): void; onOpenList(): void; onMenus(): void; onDiscover(): void;
+  onStartRecipes(): void; onStartBudget(): void;
   onSearch(category?: Category): void; onVoice(): void; onScanner(): void; onChoose(): void; onBudget(): void; onAdd(category?: Category): void; onRename(): void; onDeleteList(): void;
   onEdit(item: ShoppingItem): void; onDelete(item: ShoppingItem): void; onToggle(item: ShoppingItem): void; onShare(): void; shareDisabled: boolean;
 }
 
 export function HomeScreen(p: Props) {
   const { t } = useI18n();
-  const small = useWindowDimensions().height < 750;
+  const small = useWindowDimensions().height < 900;
   const primaryAction = <View style={{ marginTop: 18 }}><Button label={t(p.active ? 'app.continueShopping' : 'app.createFirstList')}
     onPress={p.active ? p.onOpenList : p.onCreate} disabled={p.busy} testID={p.active ? 'main-cta' : 'create-list'} /></View>;
   const categories = [
@@ -26,6 +27,15 @@ export function HomeScreen(p: Props) {
   return <View style={ui.page}>
     <View style={{ marginTop: 14 }}><Pill label={t('visual.localMode')} /></View>
     <Title kicker={t('app.homeKicker')} title={t('visual.homeTitle')} />
+    <Card style={styles.planningEntry}>
+      <Text accessibilityRole="header" style={ui.strong}>{t('mealJourney.startTitle')}</Text>
+      <View style={styles.planningActions}>
+        <View style={{ flex: 1 }}><Button label={t('mealJourney.recipes')} accessibilityLabel={t('mealJourney.recipesA11y')}
+          testID="start-with-recipes" icon={null} disabled={p.busy} onPress={p.onStartRecipes} /></View>
+        <View style={{ flex: 1 }}><Button label={t('mealJourney.budget')} accessibilityLabel={t('mealJourney.budgetA11y')}
+          testID="start-with-budget" icon={null} secondary disabled={p.busy} onPress={p.onStartBudget} /></View>
+      </View>
+    </Card>
     <View style={styles.quickEntry}>
       <Pressable accessibilityRole="button" accessibilityLabel={t('shell.search')} disabled={p.busy}
         testID="open-search" onPress={() => p.onSearch()} style={{ flex: 1, minHeight: 44, justifyContent: 'center' }}>
@@ -141,6 +151,8 @@ function ItemRow({ item, busy, onToggle, onEdit, onDelete }: Props & { item: Sho
 }
 
 const styles = StyleSheet.create({
+  planningEntry: { backgroundColor: c.soft, padding: 14, gap: 10, marginBottom: 16 },
+  planningActions: { flexDirection: 'row', gap: 9, alignItems: 'stretch' },
   categories: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   categoryTile: { flex: 1, minWidth: 68, minHeight: 72, paddingVertical: 16, paddingHorizontal: 6, backgroundColor: c.neutral, borderRadius: 15, justifyContent: 'center', alignItems: 'center' },
   categoryText: { fontFamily: f.medium, fontSize: 13, lineHeight: 20, color: c.deep, textAlign: 'center' },

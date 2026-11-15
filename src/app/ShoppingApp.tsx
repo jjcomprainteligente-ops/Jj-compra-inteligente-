@@ -32,6 +32,9 @@ import { NotificationsWorkspace } from './screens/NotificationsWorkspace';
 import { StateReviewScreen } from './screens/StateReviewScreen';
 import { DataPrivacyScreen } from './screens/DataPrivacyScreen';
 import { ListShareSheet } from './components/ListShareSheet';
+import { PlanBudgetScreen, JourneyStorePicker, JourneyResultScreen, type PlanningFormDraft } from './screens/PlanningScreens';
+import { validateJourneyStores, type PlanningContext, type PlanningRequest } from '../domain/purchaseJourney';
+import type { StoreId } from '../domain/stores';
 import type { PrivacyScope } from '../domain/dataPrivacy';
 import { usePriceObservations } from './usePriceObservations';
 import type { Screen, SecondaryProps } from './types';
@@ -46,6 +49,7 @@ const tabs = [
   { key: 'savings', label: 'app.tabSavings', icon: ChartNoAxesColumnIncreasing }, { key: 'menus', label: 'app.tabMenus', icon: Utensils },
 ] as const;
 type MainScreen = typeof tabs[number]['key'];
+type PurchaseJourney = PlanningContext & { listId: string | null };
 const loadErrorsWithDataNotice = new Set([
   appError('errors.shoppingUnreadable').message, appError('errors.shoppingVersion').message,
 ]);
@@ -88,6 +92,9 @@ function Workspace() {
   const [pendingEntry, setPendingEntry] = useState<{ id: string; text: string } | null>(null);
   const consumeEntry = useCallback(() => setPendingEntry(null), []);
   const [menuSection, setMenuSection] = useState<'week' | 'discover'>('week');
+  const [journey, setJourney] = useState<PurchaseJourney | null>(null);
+  const [planningFormDraft, setPlanningFormDraft] = useState<PlanningFormDraft | null>(null);
+  const budgetReturnsToMenus = useRef(false);
   const profileReturnScreen = useRef<Screen>(initialScreen());
   const [editor, setEditor] = useState<Editor | null>(null);
   const [name, setName] = useState('');
@@ -101,8 +108,13 @@ function Workspace() {
   const scroll = useRef<React.ElementRef<typeof ScrollView>>(null);
   const active = store.data.lists.find(list => list.id === store.data.activeListId) ?? store.data.lists[0];
   const disabled = store.busy || store.loading || !!store.loadError;
-  const navigate = (value: Screen) => {
+  const navigate = (value: Screen, keepJourney = false) => {
     if (navigationBusy) return;
+    const profileSurface = ['profile', 'language', 'privacy'].includes(screen);
+    const preserve = keepJourney || !!journey && (['profile', 'language', 'privacy'].includes(value) ||
+      profileSurface && value === profileReturnScreen.current);
+    if (!journey && !keepJourney && ['plan-budget', 'plan-stores', 'plan-result'].includes(value)) value = 'home';
+    if (!preserve) { setJourney(null); setPlanningFormDraft(null); budgetReturnsToMenus.current = false; }
     if (value === 'profile' && screen !== 'profile' && screen !== 'language' && screen !== 'privacy') profileReturnScreen.current = screen;
     if (tabs.some(tab => tab.key === value)) setMainScreen(value as MainScreen);
     else if (['prices', 'budget', 'history', 'stores'].includes(value) && screen !== 'profile') setMainScreen('savings');
@@ -191,14 +203,54 @@ function Workspace() {
       run: () => store.commit(state => { const lists = state.lists.filter(list => list.id !== id); return { lists, activeListId: state.activeListId === id ? lists[0]?.id ?? null : state.activeListId }; }, 'app.undoListDeleted') });
   };
   const info = (title: string, body: string) => begin({ kind: 'info', title, body });
-  const applyIngredients = (targetListId: string | null, newListName: string, drafts: IngredientDraft[]) => store.commit(state => {
-    if (targetListId !== null) {
-      return { ...changeList(state, targetListId, list => applyIngredientReview(list, drafts, createId)), activeListId: targetListId };
-    }
-    const list: ShoppingList = { id: createId(), name: validateListName(newListName), budgetCents: null, items: [] };
-    const reviewed = applyIngredientReview(list, drafts, createId);
-    return { lists: [...state.lists, reviewed], activeListId: list.id };
-  }, 'app.undoIngredientsAdded');
+  const applyIngredients = async (targetListId: string | null, newListName: string, drafts: IngredientDraft[]) => {
+    let savedListId: string | null = null;
+    const ok = await store.commit(state => {
+      if (targetListId !== null) {
+        const next = { ...changeList(state, targetListId, list => applyIngredientReview(list, drafts, createId)), activeListId: targetListId };
+        savedListId = targetListId;
+        return next;
+      }
+      const list: ShoppingList = { id: createId(), name: validateListName(newListName),
+        budgetCents: journey?.mode === 'budget' ? journey.budgetCents : null, items: [] };
+      const reviewed = applyIngredientReview(list, drafts, createId);
+      savedListId = list.id;
+      return { lists: [...state.lists, reviewed], activeListId: list.id };
+    }, 'app.undoIngredientsAdded');
+    if (ok && journey) setJourney(previous => previous && previous === journey ? { ...previous, listId: savedListId } : previous);
+    return ok;
+  };
+  const startJourney = (mode: 'recipes' | 'budget') => {
+    if (navigationBusy || disabled) return;
+    setJourney({ mode, budgetCents: null, servings: 2, stores: [], listId: null });
+    setPlanningFormDraft(null);
+    budgetReturnsToMenus.current = false;
+    setMenuSection(mode === 'budget' ? 'week' : 'discover');
+    navigate(mode === 'recipes' ? 'menus' : 'plan-budget', true);
+  };
+  const continueBudget = (request: PlanningRequest) => {
+    if (navigationBusy || disabled) return;
+    setJourney(previous => ({ mode: 'budget', budgetCents: request.budgetCents, servings: request.servings,
+      stores: previous?.stores ?? [], listId: null }));
+    navigate('plan-stores', true);
+  };
+  const changeJourneyStores = (stores: StoreId[]) => {
+    if (navigationBusy) return;
+    const selected = validateJourneyStores(stores);
+    setJourney(previous => previous ? { ...previous, stores: selected } : null);
+  };
+  const changeJourneyServings = (servings: number) => {
+    if (navigationBusy || !Number.isInteger(servings) || servings < 1 || servings > 12) return;
+    setJourney(previous => previous ? { ...previous, servings } : null);
+  };
+  const editPlanningBudget = () => {
+    if (navigationBusy) return;
+    budgetReturnsToMenus.current = true;
+    setPlanningFormDraft(previous => previous && journey ? { ...previous, servings: String(journey.servings) } : previous);
+    navigate('plan-budget', true);
+  };
+  const backFromPlanningBudget = () => navigate(budgetReturnsToMenus.current ? 'menus' : 'home', budgetReturnsToMenus.current);
+  const planningList = journey?.listId ? store.data.lists.find(list => list.id === journey.listId) : undefined;
   const openSearch = (category?: Category) => { setSearchCategory(category); navigate('search'); };
   const productList = selectedProduct ? store.data.lists.find(list => list.id === selectedProduct.listId) : undefined;
   const product = productList?.items.find(item => item.id === selectedProduct?.itemId);
@@ -209,6 +261,7 @@ function Workspace() {
   };
   const actualSpending = { actualSpentCents: active && expenses.data.expenses.some(record => record.listId === active.id) ? totalExpenses(expenses.data.expenses, active.id) : null, expensesLoading: expenses.loading, expensesError: expenses.loadError };
   const common = { ...actualSpending, active, busy: disabled || !!shareList, shareDisabled: disabled, onShare: openShare, onCreate: createList, onOpenList: () => navigate('list'), onMenus: () => { setMenuSection('week'); navigate('menus'); }, onDiscover: () => { setMenuSection('discover'); navigate('menus'); },
+    onStartRecipes: () => startJourney('recipes'), onStartBudget: () => startJourney('budget'),
     onSearch: openSearch, onVoice: () => navigate('voice'), onScanner: () => navigate('scanner'), onChoose: () => begin({ kind: 'choose' }), onBudget: editBudget, onAdd: (category?: Category) => openItem(undefined, category), onRename: editList, onDeleteList: confirmDeleteList,
     onEdit: (item: ShoppingItem) => openItem(item), onDelete: confirmDeleteItem, onToggle: (item: ShoppingItem) => { if (active) void store.commit(state => changeList(state, active.id,
       list => ({ ...list, items: list.items.map(value => value.id === item.id ? { ...value, checked: !value.checked } : value) })), item.checked ? 'app.undoItemUnchecked' : 'app.undoItemChecked'); } };
@@ -217,6 +270,7 @@ function Workspace() {
     ...actualSpending, onLanguage: () => navigate('language'),
     onRecipe: () => info('app.recipePreviewTitle', 'app.recipePreviewBody') };
   const reloadDeletedScope = async (scope: PrivacyScope) => {
+    setJourney(null); setPlanningFormDraft(null); budgetReturnsToMenus.current = false;
     if (scope === 'shopping') await store.reload();
     else if (scope === 'observations') await priceStore.reload();
     else if (scope === 'expenses') await expenses.reload();
@@ -232,11 +286,11 @@ function Workspace() {
       <LegacyComparisons />
     </View> : <View style={styles.shell}>
       <View style={styles.header}>
-        <Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'privacy' ? 'privacy.title' : screen === 'prices' ? 'app.tabSavings' : tabs.find(tab => tab.key === screen)?.label ?? `shell.${screen}`)}</Text>
+        <Text testID="screen-title" style={styles.headerTitle}>{t(screen === 'profile' ? 'visualSecondary.mySpace' : screen === 'language' ? 'language.title' : screen === 'privacy' ? 'privacy.title' : screen === 'prices' ? 'app.tabSavings' : screen === 'plan-budget' ? 'mealJourney.budgetTitle' : screen === 'plan-stores' ? 'mealJourney.storesTitle' : screen === 'plan-result' ? 'mealJourney.resultTitle' : tabs.find(tab => tab.key === screen)?.label ?? `shell.${screen}`)}</Text>
         <Pressable accessibilityRole="button" testID="open-notifications" accessibilityLabel={t('shell.notifications')} disabled={navigationBusy} onPress={() => navigate('notifications')} style={styles.headerAction}><Bell size={22} color={c.surface} /></Pressable>
         <Pressable accessibilityRole="button" testID="open-profile" accessibilityLabel={t('app.openProfile')} disabled={navigationBusy} onPress={() => navigate('profile')} style={styles.avatar}><UserRound size={22} color={c.deep} /></Pressable>
       </View>
-      {!['home', 'list', 'savings', 'menus', 'profile', 'language', 'prices'].includes(screen) && <Pressable accessibilityRole="button" testID="subpage-back" accessibilityLabel={t('shell.back')} disabled={navigationBusy} onPress={() => navigate(screen === 'product' ? 'search' : screen === 'history' ? 'budget' : screen === 'privacy' ? 'profile' : mainScreen)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={ui.link}>{t('shell.back')}</Text></Pressable>}
+      {!['home', 'list', 'savings', 'menus', 'profile', 'language', 'prices', 'plan-budget', 'plan-stores', 'plan-result'].includes(screen) && <Pressable accessibilityRole="button" testID="subpage-back" accessibilityLabel={t('shell.back')} disabled={navigationBusy} onPress={() => navigate(screen === 'product' ? 'search' : screen === 'history' ? 'budget' : screen === 'privacy' ? 'profile' : mainScreen)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={ui.link}>{t('shell.back')}</Text></Pressable>}
       {screen === 'profile' && <Pressable accessibilityRole="button" testID="profile-back" accessibilityLabel={t('app.backToSection', { section: t(tabs.find(tab => tab.key === mainScreen)!.label) })} disabled={navigationBusy} onPress={() => navigate(profileReturnScreen.current)} style={styles.return}><ArrowLeft color={c.primary} size={20} /><Text style={[ui.link, { flex: 1 }]}>{t('app.backToSection', { section: t(tabs.find(tab => tab.key === mainScreen)!.label) })}</Text></Pressable>}
       <ScrollView ref={scroll} keyboardShouldPersistTaps="handled" contentContainerStyle={{ paddingBottom: 24 }}>
         {connectivity.online === false && <View style={[ui.page, { paddingTop: 16, paddingBottom: 0 }]}><Notice title={t('states.offline.title')} text={t('states.offline.description')} /></View>}
@@ -252,9 +306,25 @@ function Workspace() {
           {!!store.saveError && !editor && <View style={[ui.page, { paddingTop: 18, paddingBottom: 0 }]}><Notice kind="error" title={t('app.saveFailed')} text={translateError(store.saveError)} /></View>}
           {store.undo && <View style={[ui.page, { paddingTop: 16, paddingBottom: 0 }]}><Notice kind="success" title={t(store.undo.label)} text={t('app.undoBody')}
             action={t('app.undo')} onPress={() => { if (!store.busy) void store.undoLast(); }} /></View>}
-          {screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
-            <PriceWorkspace store={priceStore} onBack={() => navigate('savings')} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
-            <MenuWorkspace budgetCents={active?.budgetCents ?? null} onBudget={active ? editBudget : createList} initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError} onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate} initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
+          {screen === 'plan-budget' ? <PlanBudgetScreen busy={navigationBusy || disabled}
+            initialServings={journey?.servings ?? 2}
+            draft={planningFormDraft} onDraftChange={setPlanningFormDraft}
+            initial={journey?.budgetCents != null ? { budgetCents: journey.budgetCents, meals: 5, servings: journey.servings } : null}
+            onContinue={continueBudget} onBack={backFromPlanningBudget} /> :
+          screen === 'plan-stores' ? <JourneyStorePicker selected={journey?.stores ?? []} busy={navigationBusy || disabled}
+            continueLabel={journey?.listId ? 'mealJourney.continueReview' : 'mealJourney.continueMenus'}
+            onChange={changeJourneyStores} onBack={() => navigate(journey?.listId ? 'plan-result' : 'plan-budget', true)}
+            onContinue={() => { if (journey?.listId) navigate('plan-result', true); else { setMenuSection('week'); navigate('menus', true); } }} /> :
+          screen === 'plan-result' && journey ? <JourneyResultScreen list={planningList} context={journey} busy={navigationBusy || disabled}
+            onBack={() => navigate('plan-stores', true)} onOpenList={() => navigate('list')}
+            onManualPrices={() => navigate('prices', true)} onStores={() => navigate('plan-stores', true)} /> :
+          screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
+            <PriceWorkspace store={priceStore} onBack={() => navigate(journey?.listId ? 'plan-result' : 'savings', !!journey?.listId)} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
+            journey ? null : <MenuWorkspace budgetCents={active?.budgetCents ?? null}
+              onBudget={active ? editBudget : createList}
+              initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError}
+              onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate}
+              initialEntry={pendingEntry} onEntryConsumed={consumeEntry} /> :
           screen === 'search' ? <SearchScreen lists={store.data.lists} busy={disabled} initialCategory={searchCategory} onSelect={(listId, itemId) => { setSelectedProduct({ listId, itemId }); navigate('product'); }} onAdd={category => openItem(undefined, category)} /> :
           screen === 'product' ? <ProductScreen list={productList} item={product} busy={disabled} onEdit={() => product && openItem(product, undefined, productList?.id)} onBack={() => navigate('search')} /> :
           screen === 'voice' ? <VoiceScreen busy={disabled} draft={voiceDraft} onDraftChange={setVoiceDraft} onReview={text => { setPendingEntry({ id: createId(), text }); setMenuSection('week'); navigate('menus'); }} onBack={backToMain} /> :
@@ -264,6 +334,15 @@ function Workspace() {
           screen === 'stores' ? <StoresScreen store={localPreferences} onBack={backToMain} /> :
           screen === 'notifications' ? <NotificationsWorkspace store={localPreferences} lists={store.data.lists} onOpenList={id => { void store.commit(state => { if (!state.lists.some(list => list.id === id)) throw appError('errors.listGone'); return { ...state, activeListId: id }; }).then(ok => { if (ok) navigate('list'); }); }} onMenus={() => navigate('menus')} /> :
           screen === 'states' ? <StateReviewScreen onBack={backToMain} onShopping={() => navigate('list')} onMenus={() => navigate('menus')} /> : <ProfileScreen {...secondary} />}
+
+          {journey && <View style={screen === 'menus' ? undefined : { display: 'none' }}
+            accessibilityElementsHidden={screen !== 'menus'} importantForAccessibility={screen === 'menus' ? 'auto' : 'no-hide-descendants'}>
+            <MenuWorkspace budgetCents={journey.budgetCents} onBudget={editPlanningBudget}
+              journey={journey} onJourneyStoresChange={changeJourneyStores} onJourneyServingsChange={changeJourneyServings}
+              onIngredientsConfirmed={() => navigate('plan-result', true)}
+              initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError}
+              onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate} />
+          </View>}
 
         </>}
       </ScrollView>

@@ -12,18 +12,18 @@ import { useSheetFocus } from '../../components/useSheetFocus';
 
 export { c, f };
 
-export function Button({ label, onPress, secondary, accent, danger, disabled, busy, icon: Icon = ArrowRight, testID }: {
+export function Button({ label, accessibilityLabel, onPress, secondary, accent, danger, disabled, busy, icon: Icon = ArrowRight, testID }: {
   label: string; onPress: () => void; secondary?: boolean; danger?: boolean;
-  accent?: boolean; disabled?: boolean; busy?: boolean; icon?: LucideIcon; testID?: string;
+  accent?: boolean; disabled?: boolean; busy?: boolean; icon?: LucideIcon | null; testID?: string; accessibilityLabel?: string;
 }) {
   const color = danger ? c.danger : secondary || accent ? c.deep : '#fff';
   const pressedBackground = danger ? c.neutral : accent ? c.paleYellow : secondary ? c.soft : c.deep;
-  return <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={label}
+  return <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={accessibilityLabel ?? label}
     accessibilityState={{ disabled: !!disabled || !!busy }} disabled={disabled || busy} onPress={onPress}
     style={({ pressed }) => [ui.button, secondary && ui.secondary, accent && ui.accent, danger && ui.dangerButton,
       disabled || busy ? { opacity: 0.65 } : pressed && { backgroundColor: pressedBackground }]}>
     <Text style={[ui.buttonText, { color }]}>{label}</Text>
-    {busy ? <ActivityIndicator color={color} /> : <Icon size={20} color={color} strokeWidth={1.9} />}
+    {busy ? <ActivityIndicator color={color} /> : Icon && <Icon size={20} color={color} strokeWidth={1.9} />}
   </Pressable>;
 }
 
