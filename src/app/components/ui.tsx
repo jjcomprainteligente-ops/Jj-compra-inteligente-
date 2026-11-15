@@ -20,7 +20,8 @@ export function Button({ label, accessibilityLabel, onPress, secondary, accent, 
   const pressedBackground = danger ? c.neutral : accent ? c.paleYellow : secondary ? c.soft : c.deep;
   return <Pressable testID={testID} accessibilityRole="button" accessibilityLabel={accessibilityLabel ?? label}
     accessibilityState={{ disabled: !!disabled || !!busy }} disabled={disabled || busy} onPress={onPress}
-    style={({ pressed }) => [ui.button, secondary && ui.secondary, accent && ui.accent, danger && ui.dangerButton,
+    style={({ pressed }) => [ui.button, Icon === null && { justifyContent: 'center', paddingHorizontal: 8, flexGrow: 1 },
+      secondary && ui.secondary, accent && ui.accent, danger && ui.dangerButton,
       disabled || busy ? { opacity: 0.65 } : pressed && { backgroundColor: pressedBackground }]}>
     <Text style={[ui.buttonText, { color }]}>{label}</Text>
     {busy ? <ActivityIndicator color={color} /> : Icon && <Icon size={20} color={color} strokeWidth={1.9} />}

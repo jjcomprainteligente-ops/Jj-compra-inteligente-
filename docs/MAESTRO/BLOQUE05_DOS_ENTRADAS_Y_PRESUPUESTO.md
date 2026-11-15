@@ -96,3 +96,13 @@ B05 completo conserva como pendientes el número variable de comidas, las catego
 B04 sigue pendiente de originales V38–V83: cero fotos aprobadas o publicadas. B03 mantiene las excepciones y su frontera privada; B02 físico y la independencia externa de 01.1 siguen abiertos. No se abre B06 automáticamente, no se fusiona main, no se promueve producción y no se comprometen servicios de pago.
 
 Siguiente acción exacta: resolver cualquier fallo de las matrices en curso, repetir solo lo que corresponda al cambio final, registrar la auditoría B04/B05, subir el código comprobado a GitHub y publicar/verificar la staging de ese mismo origen. Después, solicitar la revisión del propietario sin declarar cerrados sus criterios pendientes.
+
+## Corrección focal de alineación antes de staging
+
+La primera fuente se registró en [PR #26](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/26), `e1c3cfbb87d2f71cc16b91f83d8e3b3c11311e38`, árbol `f49464ccbfada5cee764647acdaaa321c23e89c2`. CI 43740593411 y 43740572473 correctas. Sobre esa fuente pasaron 48/48 casos nuevos, 20/20 de fotografías y 8/8 de calidad; la matriz general continúa en ejecución y conserva ese origen propio.
+
+La inspección visual detectó alturas distintas en los dos accesos de Inicio. Se ajustó únicamente el estilo condicional de `Button` sin icono: centrado, espacio horizontal de 8 px y crecimiento para igualar la altura. Solo esos dos accesos utilizan la variante. Los otros 99 inputs de aplicación coinciden con la fuente anterior; no cambia su comportamiento predeterminado, menús, raciones, guardado o precios.
+
+El ajuste pasa 12/12 casos focalizados y 20 escenas en cuatro idiomas, Chromium 375/430/1280 px y WebKit 375/430 px: altura uniforme, texto completo en una línea a escala normal, área mínima de 44 px, etiqueta accesible que contiene el texto visible, Crear lista visible y siete documentos conservados. La primera ejecución del test visual leyó preferencias antes de que terminara la transición de bienvenida; se corrigió la espera de Inicio, manteniendo las aserciones y el intento original. No fue un cambio a la persistencia de la app. [Informe del ajuste](../../design/purchase-journey/reports/layout-verification.json).
+
+TypeScript y export web del ajuste correctos. Las pruebas generales anteriores no se presentan como otra ejecución sobre el ajuste final; cada informe conserva fuente/hash. Publicación de este ajuste, su CI y staging pendientes de resultado.

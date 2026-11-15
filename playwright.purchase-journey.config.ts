@@ -10,7 +10,7 @@ const evidence = process.env.JJ_JOURNEY_EVIDENCE_DIR ?? path.join(
 
 export default defineConfig({
   testDir: './tests/purchase-journey',
-  testMatch: 'journey.spec.ts',
+  testMatch: ['journey.spec.ts', 'home-entry-layout.spec.ts'],
   fullyParallel: false,
   workers: 1,
   retries: 0,
