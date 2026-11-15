@@ -621,3 +621,14 @@ Manifiesto de las 127 activas con NO_LOCALIZADA; inventario maestro de 150 priva
 Acceso temporal por conversación hasta **15/11/2026 19:58:45 UTC**, sin token en Git. La app, las imágenes, los datos locales y los servicios no cambian; los originales y el inventario maestro privados no se suben. Manifiesto de 127 activas sin originales localizados: cero fotos aprobadas o publicadas. Producción conservada en `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`, sin merge/promoción. El cierre posterior solo añade documentación y evidencia.
 
 [Informe](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md) · [verificación](../design/recipe-photos/reports/verification.json). B04.1 comprobado técnicamente; B04 sigue bloqueado para vincular fotografías hasta localizar los originales. Pregunta de carpeta/enlace pendiente, sin interpretar «sigue» como entrega. Siguiente acción única: localizar el origen y revisar un lote de 5–10. No se abre B05; los pendientes de B03, B02 físico y 01.1 se conservan separados.
+
+
+## 15/11/2026 · B04.2, indicar ausencia sin publicar recepción
+
+Se continúa dentro de B04 con una etiqueta compacta «Foto pendiente» por receta, usando Pill neutral, Manrope y tokens existentes. Dos maquetas temporales se mostraron antes de la lógica; A se adopta como supuesto de trabajo, sin aprobación estética atribuida al propietario. No se rediseñan filas, navegación o marca.
+
+El registro público solo contiene 127 IDs activos/estado y permanece separado de Recipe, datos culinarios y siete documentos. Nunca importa recepción al cliente ni devuelve recursos. Los futuros originales/alt/procedencia/licencia/revisión no deben rellenarse en la plantilla pública: recepción privada, proyección mínima revisada. No se publican estados nuevos de retenidas.
+
+991 unitarias, tipos y export correctos; 20 casos focalizados y 36 del recorrido diario correctos en cuatro idiomas, sin reintentos. Hashes de 97 inputs conservan la fuente ejecutada al recuperar el entorno; ningún test nuevo se atribuye por inferencia a la antigua fuente e544. Bundle nuevo, igualdad con C3f no afirmada. CI y staging aún deben acreditar resultado. [Informe](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md).
+
+B04 completo continúa bloqueado para imágenes por originales no accesibles; no hay renderer, derivados o carga de fotos construidos. No se certifican derechos, ausencia absoluta de vulnerabilidades, aceptación visual o iPhone físico. Sin nuevas dependencias, arquitectura de almacenamiento, servicios, coste, merge o promoción.

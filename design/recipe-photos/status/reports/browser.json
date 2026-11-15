@@ -1,0 +1,176 @@
+{
+  "baseCommit": "cdd8a1e16426d62864f15fae998906b13f6dc7a8",
+  "sourceCommitIdentifiedAfterPublication": true,
+  "candidateInputs": "local-verification.json#candidateInputSha256",
+  "runStartedUtc": "2026-11-14T22:14:20.693Z",
+  "durationMs": 72579.649,
+  "passed": 20,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "reruns": 0,
+  "projects": [
+    "chromium-375",
+    "chromium-430",
+    "chromium-desktop",
+    "webkit-375",
+    "webkit-430"
+  ],
+  "uiLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "physicalIPhone": false,
+  "nativeAppValidated": false,
+  "rawEvidencePublished": false,
+  "privateRunnerReportSha256": "54185044a74538b4e8fa5a6ce58079497359e6594dc7565724009d9195f41e60",
+  "cases": [
+    {
+      "project": "chromium-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3137
+    },
+    {
+      "project": "chromium-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2507
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2636
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3146
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5342
+    },
+    {
+      "project": "chromium-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2244
+    },
+    {
+      "project": "chromium-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2228
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2545
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3564
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 4252
+    },
+    {
+      "project": "chromium-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2967
+    },
+    {
+      "project": "chromium-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3033
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3482
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3525
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 4092
+    },
+    {
+      "project": "chromium-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2503
+    },
+    {
+      "project": "chromium-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2541
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 2444
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3477
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5351
+    }
+  ],
+  "recipeDetailsChecked": 40,
+  "logicalScreenshots": 40,
+  "temporaryImageRequestsDuringDetails": 0,
+  "businessDocumentsPreserved": 7,
+  "recipeImagesRendered": 0
+}

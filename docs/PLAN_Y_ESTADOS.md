@@ -611,3 +611,14 @@ Manifiesto de las 127 activas con NO_LOCALIZADA; inventario maestro de 150 priva
 Acceso temporal por conversación hasta **15/11/2026 19:58:45 UTC**, sin token en Git. La app, las imágenes, los datos locales y los servicios no cambian; los originales y el inventario maestro privados no se suben. Manifiesto de 127 activas sin originales localizados: cero fotos aprobadas o publicadas. Producción conservada en `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`, sin merge/promoción. El cierre posterior solo añade documentación y evidencia.
 
 [Informe](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md) · [verificación](../design/recipe-photos/reports/verification.json). B04.1 comprobado técnicamente; B04 sigue bloqueado para vincular fotografías hasta localizar los originales. Pregunta de carpeta/enlace pendiente, sin interpretar «sigue» como entrega. Siguiente acción única: localizar el origen y revisar un lote de 5–10. No se abre B05; los pendientes de B03, B02 físico y 01.1 se conservan separados.
+
+
+## Bloque 04.2 maestro · disponibilidad visible de fotografía · 15/11/2026
+
+Continuación dentro de B04 sobre cdd8a1e, rama `codex/bloque04-2-foto-pendiente-2026-11-14`. Se mostraron dos alternativas temporales antes de implementar: etiqueta compacta y nota de texto. Se usa la compacta como supuesto comunicado, no como aceptación del propietario. El detalle indica «Foto pendiente» en es/en/de/fr mediante los componentes y tokens actuales. No muestra imágenes ni reserva un bloque de foto vacío.
+
+Registro público mínimo explícito de 127 IDs, separado de recetas, recepción y almacenamiento; solo devuelve estado o desconocido, sin URI, rutas, alt, licencia o aprobación. El manifiesto no entra en el cliente. Recepciones completas futuras permanecen privadas; solo un estado público revisado se proyecta por separado. Catálogo, cantidades, pasos, logo, dependencias y siete documentos conservados.
+
+991/991 unitarias, TypeScript y export web correctos. Matriz focalizada 20/20 y recorrido diario 36/36, cuatro idiomas, cero fallos/omisiones/intermitencias/reintentos; 40 capturas lógicas de fichas y ausencia de nuevas imágenes/solicitudes. Resultados del 14/11 preservados; 97 inputs exactos verificados el 15/11 tras recuperar entorno. El bundle nuevo no es C3f; no se atribuye la matriz exhaustiva e544 a esta entrega. CI/staging pendientes de resultado. [Entrega y límites](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md).
+
+B04 sigue pendiente de originales V38–V83 para vinculación real; cero fotos aprobadas/publicadas. No se abre B05 ni se promueve producción. B02 físico, B03 privado e independencia externa de 01.1 mantienen sus pendientes separados. Próxima auditoría completa de pareja: B04/B05.

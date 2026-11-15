@@ -7,6 +7,7 @@ import {
   type MealPlan, type Recipe, type ScaledIngredient,
 } from '../../domain/menus';
 import { buildFilteredMealPlan, defaultMenuFilters, filterRecipes, MenuFilterError } from '../../domain/menuFilters';
+import { recipePhotoStatus } from '../../domain/recipePhotos';
 import { matchingItems, parseIngredientText, type IngredientDraft } from '../../domain/ingredientImport';
 import {
   CATEGORIES, UNITS, validateItemInput, validateListName,
@@ -391,7 +392,12 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           <Notice title={t("menus.reviewNoticeTitle")} text={t("menus.reviewNoticeText")} />
         </> : panel?.kind === 'recipe' && detailedRecipe ? <>
           <Text accessibilityRole="header" style={styles.flowTitle}>{detailedRecipe.title}</Text>
-          <Pill label={recipeMeta(panel.recipe, recipeServings, true)} />
+          <View style={styles.recipeMetadata}>
+            <Pill label={recipeMeta(panel.recipe, recipeServings, true)} />
+            <View testID="recipe-photo-status">
+              <Pill tone="neutral" label={t(recipePhotoStatus(panel.recipe.id) !== undefined ? 'recipePhotos.pending' : 'recipePhotos.unavailable')} />
+            </View>
+          </View>
           {panel.recipe.id.startsWith('JJ-') && <Text testID="recipe-time-scope" style={[ui.note, { marginTop: 10 }]}>{t('catalogV83Ui.timeScope')}</Text>}
           <Card style={styles.servingsCard}>
             <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{t('flow.servings')}</Text><Text style={ui.note}>{t('flow.servingsHint')}</Text></View>
@@ -449,6 +455,7 @@ function Choice({ label, a11y, selected, disabled, onPress }: { label: string; a
 }
 
 const styles = StyleSheet.create({
+  recipeMetadata: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'flex-start', gap: 8 },
   flowTitle: { fontFamily: f.extra, color: c.ink, fontSize: 25, lineHeight: 33, letterSpacing: -.6, marginBottom: 14 },
   pageTitle: { fontFamily: f.extra, color: c.ink, fontSize: 26, lineHeight: 34, letterSpacing: -.6, marginTop: 24, marginBottom: 16 },
   sectionChoices: { flexDirection: 'row', gap: 8, marginBottom: 20 },

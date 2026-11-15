@@ -1,0 +1,281 @@
+{
+  "baseCommit": "cdd8a1e16426d62864f15fae998906b13f6dc7a8",
+  "sourceCommitIdentifiedAfterPublication": true,
+  "candidateInputs": "local-verification.json#candidateInputSha256",
+  "runStartedUtc": "2026-11-14T22:14:19.769Z",
+  "durationMs": 249339.74599999998,
+  "passed": 36,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "reruns": 0,
+  "projects": [
+    "chromium-desktop",
+    "webkit-375",
+    "webkit-430"
+  ],
+  "uiLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "physicalIPhone": false,
+  "nativeAppValidated": false,
+  "rawEvidencePublished": false,
+  "privateRunnerReportSha256": "892b06b8bfc03370c2d84c942010d615395cb3c3cf288ecd69e6c54a0d215065",
+  "cases": [
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 9110
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 9838
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 4766
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 6308
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 6602
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3371
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 8885
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 9243
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 4945
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 8508
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 9601
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5336
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5553
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 7048
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3472
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 8978
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 9349
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5056
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 7992
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 10283
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5900
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5551
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 7150
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3536
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 8523
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 9357
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5148
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5762
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5921
+    },
+    {
+      "project": "chromium-desktop",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3667
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5620
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 7095
+    },
+    {
+      "project": "webkit-375",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 3704
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: review, new list, confirmed expense, budget, history and reopened page",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 8073
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 recipe first: empty selection, invalid quantity, failed write and explicit duplicates preserve data",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 10188
+    },
+    {
+      "project": "webkit-430",
+      "title": "B02 empty list: zero products, unpaid budget and cancelled item survive page reopen",
+      "status": "expected",
+      "attempts": 1,
+      "durationMs": 5911
+    }
+  ]
+}

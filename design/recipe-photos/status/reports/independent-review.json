@@ -1,0 +1,32 @@
+{
+  "baseCommit": "cdd8a1e16426d62864f15fae998906b13f6dc7a8",
+  "reviewedAtUtc": "2026-11-15",
+  "mode": "READ_ONLY_NO_RERUNS_OR_APIS",
+  "conclusion": "PASS_NO_BLOCKERS",
+  "candidateInputsVerified": 97,
+  "protectedFilesVerified": 15,
+  "activeIdsExact": 127,
+  "unitTestsVerified": 991,
+  "unitFiles": 29,
+  "photoBrowserCasesVerified": 20,
+  "photoBrowserLogicalScreenshots": 40,
+  "dailyJourneyCasesVerified": 36,
+  "dailyJourneyLogicalScreenshots": 180,
+  "failures": 0,
+  "skips": 0,
+  "flaky": 0,
+  "reruns": 0,
+  "recipeDataStorageDependenciesAndOfficialLogoUnchanged": true,
+  "runtimeReceptionImports": 0,
+  "runtimeImageOrMetadataReturned": false,
+  "visualSamplesReviewed": [
+    "de/chromium-375",
+    "fr/webkit-430"
+  ],
+  "browserSourceCommitWasNull": true,
+  "bindPublishedSourceThroughCandidateInputHashes": true,
+  "limitations": [
+    "Static review and existing execution evidence; no physical iPhone validation.",
+    "Original recipe photos not accessible; no approval or image publication."
+  ]
+}

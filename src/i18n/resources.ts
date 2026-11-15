@@ -26,9 +26,10 @@ import { menuFiltersMessages } from './catalogs/menuFilters';
 import { privacyMessages } from './catalogs/privacy';
 import { storePilotMessages } from './catalogs/storePilot';
 import { listSharingMessages } from './catalogs/listSharing';
+import { recipePhotoMessages } from './catalogs/recipePhotos';
 
 export const resources = mergeMessageCatalogs(
-  v83RecipeMessages, catalogV83UiMessages,
+  v83RecipeMessages, catalogV83UiMessages, recipePhotoMessages,
   storePilotMessages, listSharingMessages,
   menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,
