@@ -622,3 +622,12 @@ Registro público mínimo explícito de 127 IDs, separado de recetas, recepción
 991/991 unitarias, TypeScript y export web correctos. Matriz focalizada 20/20 y recorrido diario 36/36, cuatro idiomas, cero fallos/omisiones/intermitencias/reintentos; 40 capturas lógicas de fichas y ausencia de nuevas imágenes/solicitudes. Resultados del 14/11 preservados; 97 inputs exactos verificados el 15/11 tras recuperar entorno. El bundle nuevo no es C3f; no se atribuye la matriz exhaustiva e544 a esta entrega. CI/staging pendientes de resultado. [Entrega y límites](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md).
 
 B04 sigue pendiente de originales V38–V83 para vinculación real; cero fotos aprobadas/publicadas. No se abre B05 ni se promueve producción. B02 físico, B03 privado e independencia externa de 01.1 mantienen sus pendientes separados. Próxima auditoría completa de pareja: B04/B05.
+
+
+### B04.2 publicada y verificada · 15/11/2026
+
+[PR #25](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/25), fuente `24f4b37d2215a24cd283d5c6ef94625a0c2ae18f`, árbol `ae1ac66b034964d10f6143e164cabae5679f49ce`. CI 43703498852 y 43703463609 correctas: 991 unitarias, 51 Python, tipos, audit, Expo y export. Los 97 hashes de la candidata coinciden con el commit publicado; la evidencia local mantiene su SHA nulo sin alterarlo.
+
+Preview `dpl_Bub9pL1exYBArvvP2zZppoKJZ2RS` READY/staging y protegida, fuente 24f4b37d: cuatro idiomas, 127 recetas y 19 recursos/URLs por hash. Matriz nueva en staging WebKit 375/430: 8/8 correctos, sin reintentos, 16 fichas y siete documentos conservados. Acceso temporal por conversación hasta **16/11/2026 10:22:16 UTC**, sin token en Git. No hay fotos, derivados o recepción privada en el paquete; bundle nuevo 7ed8b561, logo oficial idéntico.
+
+B04.2 PROBADO_AUTOMATICAMENTE y publicado; aceptación del propietario y dispositivo físico no supuestas. B04 completo sigue esperando originales V38–V83 para vinculación; cero fotos aprobadas/publicadas. [Entrega](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md) · [verificación](../design/recipe-photos/status/reports/verification.json). El cierre documental posterior no modifica el código probado; no merge/promoción ni apertura automática de B05.

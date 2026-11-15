@@ -1,0 +1,81 @@
+{
+  "sourceCommit": "24f4b37d2215a24cd283d5c6ef94625a0c2ae18f",
+  "sourceTree": "ae1ac66b034964d10f6143e164cabae5679f49ce",
+  "deploymentId": "dpl_Bub9pL1exYBArvvP2zZppoKJZ2RS",
+  "origin": "https://jj-compra-inteligente-qtduzh7m8-cmj2hwhc6b-1051.vercel.app",
+  "runStartedUtc": "2026-11-15T10:23:12.644Z",
+  "durationMs": 25030.864,
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "reruns": 0,
+  "uiLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "engine": "WebKit",
+  "viewportWidths": [
+    375,
+    430
+  ],
+  "recipeDetailsChecked": 16,
+  "logicalScreenshots": 16,
+  "businessDocumentsPreserved": 7,
+  "newImageRequestsDuringDetails": 0,
+  "rawEvidencePublished": false,
+  "physicalIPhone": false,
+  "runnerReportSha256": "3273fef4aede92164820c690547734600a336d14a0a31dbd3a6e80dcdd30ead8",
+  "cases": [
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-375",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    },
+    {
+      "project": "webkit-430",
+      "title": "pending photo is readable without image requests or writes, in legacy and V83 details",
+      "status": "expected",
+      "attempts": 1
+    }
+  ]
+}

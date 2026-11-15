@@ -632,3 +632,10 @@ El registro público solo contiene 127 IDs activos/estado y permanece separado d
 991 unitarias, tipos y export correctos; 20 casos focalizados y 36 del recorrido diario correctos en cuatro idiomas, sin reintentos. Hashes de 97 inputs conservan la fuente ejecutada al recuperar el entorno; ningún test nuevo se atribuye por inferencia a la antigua fuente e544. Bundle nuevo, igualdad con C3f no afirmada. CI y staging aún deben acreditar resultado. [Informe](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md).
 
 B04 completo continúa bloqueado para imágenes por originales no accesibles; no hay renderer, derivados o carga de fotos construidos. No se certifican derechos, ausencia absoluta de vulnerabilidades, aceptación visual o iPhone físico. Sin nuevas dependencias, arquitectura de almacenamiento, servicios, coste, merge o promoción.
+
+
+### B04.2 · Resultado real de publicación y preservación
+
+Fuente `24f4b37d2215a24cd283d5c6ef94625a0c2ae18f` en PR #25; CI 43703498852/43703463609 correctas. 97 inputs comprobados frente al commit, sin atribuir un SHA inventado al runner local. Staging `dpl_Bub9pL1exYBArvvP2zZppoKJZ2RS` READY/protegida; cuatro idiomas, 127 recetas, 19 recursos/URLs por hash y 8 casos WebKit publicados correctos. Acceso temporal hasta 16/11/2026 10:22:16 UTC, sin token en Git.
+
+La etiqueta está publicada para revisión, no aprobada visualmente por silencio. Cero fotos aprobadas/publicadas y ningún original privado incluido. B04 completo, dispositivo físico y pendientes externos siguen abiertos. El cierre solo incorpora evidencias/documentos; no cambia el código probado, merge a main, producción, servicios o costes. [Evidencia global](../design/recipe-photos/status/reports/verification.json).

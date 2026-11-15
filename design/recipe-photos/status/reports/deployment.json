@@ -1,0 +1,24 @@
+{
+  "sourceCommit": "24f4b37d2215a24cd283d5c6ef94625a0c2ae18f",
+  "sourceTree": "ae1ac66b034964d10f6143e164cabae5679f49ce",
+  "id": "dpl_Bub9pL1exYBArvvP2zZppoKJZ2RS",
+  "origin": "https://jj-compra-inteligente-qtduzh7m8-cmj2hwhc6b-1051.vercel.app",
+  "target": "staging",
+  "state": "READY",
+  "protection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains"
+  },
+  "uploadedFiles": 13,
+  "newUploadedFiles": 3,
+  "cachedFilesReused": 10,
+  "recipePhotosIncluded": 0,
+  "privateReceptionOrOriginalsIncluded": false,
+  "ownerDataIncluded": false,
+  "shareExpiresUtc": "2026-11-16T10:22:16+00:00",
+  "shareTokenPublished": false,
+  "productionPromoted": false,
+  "verifiedResourcesOrUrls": 19,
+  "compiledWebSha256": "7ed8b56163b209e1cc11872940faadad7cbbeb80197b486bb8ab5a83d0ef3530",
+  "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+}

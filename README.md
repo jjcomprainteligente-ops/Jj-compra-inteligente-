@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 15/11/2026 · Bloque 04.2: estado «Foto pendiente» comprobado localmente en cuatro idiomas; publicación en curso.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+**Estado actualizado · 15/11/2026 · Bloque 04.2: «Foto pendiente» comprobado y publicado en staging; originales aún pendientes.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
 

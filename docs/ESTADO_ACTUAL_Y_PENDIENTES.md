@@ -49,7 +49,7 @@ Validador seguro sin escritura/publicación, 32 pruebas específicas/51 Python c
 
 El detalle de las 127 recetas indica «Foto pendiente» en es/en/de/fr, con Pill neutral y estilos existentes. Registro explícito separado de recetas/recepción/almacenamiento: solo ID y estado, sin URI o metadatos privados. Catálogos, cantidades, pasos, dependencias, logo y siete documentos conservados.
 
-991 unitarias, tipos y export correctos; 20/20 casos focalizados y 36/36 del recorrido diario correctos, sin fallos/omisiones/reintentos. Evidencia del 14/11 enlazada a 97 inputs exactos, recuperados y comprobados el 15/11. Revisión independiente correcta. CI y staging nuevos pendientes de resultado. [Entrega](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md). B04 completo sigue esperando originales para vinculación; cero fotos publicadas. No se abre B05 ni se equipara WebKit a un iPhone físico.
+991 unitarias, tipos y export correctos; 20/20 casos focalizados y 36/36 del recorrido diario correctos, sin fallos/omisiones/reintentos. Evidencia del 14/11 enlazada a 97 inputs exactos, recuperados y comprobados el 15/11. Revisión independiente correcta. [PR #25](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/25), fuente `24f4b37d2215a24cd283d5c6ef94625a0c2ae18f`: CI correcta y staging READY/protegida. HTTPS en cuatro idiomas, 127 recetas y 19 recursos/URLs; 8/8 casos nuevos WebKit 375/430 correctos en la preview. Acceso temporal por conversación hasta 16/11/2026 10:22:16 UTC. [Entrega](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md). B04 completo sigue esperando originales para vinculación; cero fotos publicadas. No se abre B05 ni se equipara WebKit a un iPhone físico.
 
 ## Historial documental conservado
 
