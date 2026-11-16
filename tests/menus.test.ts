@@ -56,6 +56,36 @@ describe('catálogo local y menú de cinco cenas', () => {
     expect(() => validateMealPlan(value)).toThrow();
   });
 
+  it.each([0, 1, 2, 3, 4])('rechaza un hueco en la posición %s sin convertirlo en una referencia vacía', index => {
+    const recipeIds = [...createMealPlan(2).recipeIds];
+    delete recipeIds[index];
+    const before = [...recipeIds];
+    expect(recipeIds).toHaveLength(5);
+    expect(() => validateMealPlan({ servings: 2, recipeIds })).toThrow();
+    expect(recipeIds).toEqual(before);
+    expect(Object.prototype.hasOwnProperty.call(recipeIds, index)).toBe(false);
+  });
+
+  it.each(['servings', 'recipeIds', 'both'] as const)('rechaza campos heredados: %s', inherited => {
+    const plan = createMealPlan(2);
+    const prototype = inherited === 'both' ? plan : { [inherited]: plan[inherited] };
+    const value = Object.create(prototype) as Record<string, unknown>;
+    if (inherited === 'servings') value.recipeIds = [...plan.recipeIds];
+    if (inherited === 'recipeIds') value.servings = plan.servings;
+    expect(() => validateMealPlan(value)).toThrow();
+    expect(plan).toEqual(createMealPlan(2));
+  });
+
+  it('admite campos propios en un documento sin prototipo y devuelve una copia independiente', () => {
+    const plan = createMealPlan(3);
+    const input = Object.assign(Object.create(null) as Record<string, unknown>, plan);
+    const restored = validateMealPlan(input);
+    expect(restored).toEqual(plan);
+    restored.recipeIds.reverse();
+    expect(input.recipeIds).toEqual(plan.recipeIds);
+    expect(plan).toEqual(createMealPlan(3));
+  });
+
   it('permite sustituir una cena, pero nunca duplica ni muta el plan anterior', () => {
     const before = createMealPlan(2);
     const original = [...before.recipeIds];

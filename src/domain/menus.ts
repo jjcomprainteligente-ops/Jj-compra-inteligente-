@@ -84,9 +84,12 @@ export function createMealPlan(servings: number): MealPlan {
 export function validateMealPlan(input: unknown): MealPlan {
   if (!input || typeof input !== 'object' || Array.isArray(input)) throw appError("errors.menuInvalid");
   const value = input as Record<string, unknown>;
+  if (!Object.prototype.hasOwnProperty.call(value, 'servings') ||
+      !Object.prototype.hasOwnProperty.call(value, 'recipeIds')) throw appError("errors.menuInvalid");
   checkServings(value.servings);
   if (!Array.isArray(value.recipeIds) || value.recipeIds.length !== 5 ||
-      value.recipeIds.some(id => typeof id !== 'string') || new Set(value.recipeIds).size !== 5) {
+      Array.from(value.recipeIds).some((id, index) => typeof id !== 'string' ||
+        !Object.prototype.hasOwnProperty.call(value.recipeIds, index)) || new Set(value.recipeIds).size !== 5) {
     throw appError("errors.fiveRecipes");
   }
   const recipeIds = value.recipeIds as string[];

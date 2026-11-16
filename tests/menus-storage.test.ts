@@ -1,5 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { createMealPlan, type MealPlan } from '../src/domain/menus';
+import { RECIPES } from '../src/data/recipes';
+import { createMealPlanDraft } from '../src/domain/mealPlanDraft';
 
 const storage = vi.hoisted(() => ({ getItem: vi.fn(), setItem: vi.fn() }));
 vi.mock('@react-native-async-storage/async-storage', () => ({ default: storage }));
@@ -65,6 +67,44 @@ describe('menú local en una clave independiente', () => {
 });
 
 describe('datos inválidos o incompatibles no reemplazados', () => {
+  it.each([1, 4, 5, 6, 7, RECIPES.length])('mantiene el borrador de %s comidas fuera del documento v1 sin tocar las siete claves', async count => {
+    const original = envelope(createMealPlan(3));
+    const otherKeys = [
+      'jjcompraintelwgiemt.shopping.v1',
+      'jjcompraintelwgiemt.comparisons.v1',
+      'jjcompraintelwgiemt.price-observations.v1',
+      'jjcompraintelwgiemt.preferences.v1',
+      'jjcompraintelwgiemt.expenses.v1',
+      'jjcompraintelwgiemt.local-settings.v1',
+    ];
+    const values = new Map(otherKeys.map(key => [key, 'opaque saved bytes: ' + key]));
+    values.set(STORAGE_KEY, original);
+    storage.getItem.mockImplementation(async (key: string) => values.get(key) ?? null);
+    storage.setItem.mockImplementation(async (key: string, value: string) => { values.set(key, value); });
+    const savedBefore = [...values.entries()];
+
+    const draft = createMealPlanDraft(4, count);
+    const draftBefore = JSON.stringify(draft);
+    // Even a five-meal draft must cross a deliberate future conversion boundary;
+    // a cast cannot make its session-only shape a valid persisted v1 plan.
+    await expect(saveMealPlan(draft as unknown as MealPlan)).rejects.toThrow();
+    expect(storage.setItem).not.toHaveBeenCalled();
+    expect([...values.entries()]).toEqual(savedBefore);
+    expect(JSON.stringify(draft)).toBe(draftBefore);
+    await expect(loadMealPlan()).resolves.toEqual(createMealPlan(3));
+    expect(values.get(STORAGE_KEY)).toBe(original);
+
+    // A malformed envelope already on disk is retained for recovery, never
+    // silently converted, truncated to five dishes, or replaced by a default.
+    const malformed = envelope(draft);
+    values.set(STORAGE_KEY, malformed);
+    const malformedBefore = [...values.entries()];
+    await expect(loadMealPlan()).rejects.toThrow('No se han modificado');
+    expect(storage.setItem).not.toHaveBeenCalled();
+    expect([...values.entries()]).toEqual(malformedBefore);
+    expect(storage.getItem.mock.calls.every(([key]) => key === STORAGE_KEY)).toBe(true);
+  });
+
   it.each(['{bad', 'null', '[]', '{}', '{"version":"1","plan":null}', '{"version":1}', '{"version":1,"plan":[]}'])('rechaza el documento %s sin escribir', async value => {
     storage.getItem.mockResolvedValue(value);
     await expect(loadMealPlan()).rejects.toThrow('No se han modificado');
