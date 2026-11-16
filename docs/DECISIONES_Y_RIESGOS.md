@@ -652,3 +652,16 @@ Las tiendas y el menú del recorrido son borradores RAM, separados de favoritos 
 Tipos, 1.081 unitarias —90 nuevas—, 51 Python, npm cero avisos conocidos, comprobación Expo y export web correctos en la preparación. La revisión estática independiente corrigió pérdidas de borrador, raciones, retorno de Perfil, etiqueta accesible alemana y estado de lista ausente. No acredita por sí sola las 48 pruebas nuevas, la auditoría completa B04/B05 o las exportaciones aún en curso. 100 hashes vincularán después la ejecución al commit; CI, GitHub y staging nuevos siguen pendientes de resultado. [Informe y límites](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md).
 
 No hay nuevas dependencias, claves de almacenamiento, migraciones, autenticación, IA, feed, scraping o costes contratados. B05.1 sigue EN_CURSO hasta las verificaciones finales; B05 completo conserva aceptación humana, categorías por auditar y futuras comidas variables. B04 mantiene originales pendientes y cero fotos publicadas; B03 privado, B02 físico e independencia externa 01.1 separados. No merge a main, promoción de producción o apertura automática de B06.
+
+
+### 16/11/2026 · B05.1 publicado y auditado con fuentes separadas
+
+El propietario autorizó B05 sobre la app existente. PR #26 conserva el PR #11 y recupera su intención, excluyendo su feed. Las dos rutas funcionan con borradores temporales, confirmación real y presupuesto solo en listas nuevas. Objetivo, gasto, coste de ingredientes y envases se distinguen; no se activa PVP actual o ahorro.
+
+La auditoría base conserva e1c3 (298 Chromium/24 omisiones deliberadas, 48 nuevos recorridos, 20 fotos, ocho casos de calidad). El ajuste visual 5f208d8 solo afecta a dos botones sin icono; 99 inputs iguales, 12 controles/20 escenas correctos. Se conserva el primer test visual que leyó preferencias demasiado pronto y la espera corregida, sin retirar aserciones ni atribuir otra matriz general al ajuste.
+
+CI de ambas fuentes, 1.081 unitarias, 51 Python, tipos y exports correctos. Consulta npm con cero avisos conocidos; no se promete ausencia absoluta de vulnerabilidades. Web-only c63325e3 y web-all distintos se registran por separado: staging solo usa el primero. Los artefactos nativos no acreditan ejecución o distribución física.
+
+Preview dpl_7KXWuSpNMkaD3J2RhpP5XvcRtTjs READY y protegida: cuatro idiomas/127 recetas/19 recursos y 16 recorridos + ocho controles de Inicio publicados correctos. Nuevo enlace tras caducar el anterior hasta 17/11/2026 20:36:40 UTC, sin token en Git. 28 archivos protegidos intactos, originales privados sin publicar. [Informe](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md) · [evidencia](../design/purchase-journey/reports/verification.json).
+
+B05.1 probado automáticamente, revisión del propietario pendiente. B04 no se cierra sin originales; B03, B02 físico y 01.1 mantienen sus límites. Sin servicios de pago, dependencias, cuentas, migraciones, merge o promoción añadidos. El cierre solo registra documentos e informes, conservando el código probado.

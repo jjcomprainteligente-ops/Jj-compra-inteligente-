@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "FINAL_SOURCE_EXPORT_ONLY",
+  "sourceCommit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+  "sourceTree": "87864955ae1663901c3d9baf003a761ae96412c2",
+  "sourceBinding": {
+    "entries": 100,
+    "matchedAgainstGitShow": 100,
+    "mismatches": 0,
+    "inputManifestSha256": "7339fe8fabbf063aa00e4f7922ca01a14ddc14d80e55c21d0f74cd5254828d4e",
+    "verificationMethod": "SHA-256 of git show <sourceCommit>:<relative path>; not working-tree comparison"
+  },
+  "command": "EXPO_NO_TELEMETRY=1 npx expo export --platform all --output-dir dist-bloque05-aligned-platforms --max-workers 2",
+  "exitCode": 0,
+  "exportLog": {
+    "file": "export-aligned-platforms.log",
+    "bytes": 2272,
+    "sha256": "321cb3ad8a6c52eab315e73e8fceb39d586a59c3bc24cb3b47f9d22fe9161b54"
+  },
+  "bundles": [
+    {
+      "platform": "web",
+      "path": "dist-bloque05-aligned-platforms/_expo/static/js/web/index-70847b84abbeae16eb993ffbfae9bee2.js",
+      "bytes": 5195993,
+      "sha256": "fd3d481d9b442a05ee5ecb4bf2286971ca90b8b1b4d704141e923cd90182d83e",
+      "listedInExportLog": true
+    },
+    {
+      "platform": "ios",
+      "path": "dist-bloque05-aligned-platforms/_expo/static/js/ios/index-fff62a9db1ff1f17f16479176f2e82cc.hbc",
+      "bytes": 6349577,
+      "sha256": "bb98766af7bd66d72f39f89c872687eeecef74822f389b1525bab754d7ff7db2",
+      "listedInExportLog": true
+    },
+    {
+      "platform": "android",
+      "path": "dist-bloque05-aligned-platforms/_expo/static/js/android/index-c63ea6a4fbc5764da55b563a3655c1d3.hbc",
+      "bytes": 6358416,
+      "sha256": "3989b965e1195e80da92463d1b2c275fbac9e90278b7daac66de3e9a57ae7010",
+      "listedInExportLog": true
+    }
+  ],
+  "webOnlyComparison": {
+    "commandScope": "Separate --platform web export",
+    "path": "dist-bloque05-aligned/_expo/static/js/web/index-0df0d4a8bf399db4faf559177cbf0d57.js",
+    "bytes": 5194050,
+    "sha256": "c63325e3c0d348724ad2b3df7e5a44935091bcf6e84e116e6fd11554212d7719",
+    "bytesEqualToAllPlatformWeb": false,
+    "allPlatformWebDeployed": false,
+    "stagingInput": "Only the separate web-only export is designated for staging; the all-platform web output is not substituted."
+  },
+  "nativeExportSucceeded": true,
+  "physicalIPhoneValidated": false,
+  "nativeAppExecuted": false,
+  "installableBinaryBuilt": false,
+  "signedBinaryBuilt": false,
+  "testFlightSubmitted": false,
+  "scope": "Expo web/iOS/Android bundle export. The all-platform invocation and the separate web-only invocation produce distinct bundle bytes; no cause or interchangeability is inferred. HBC output does not certify device execution, an installable build or signing."
+}

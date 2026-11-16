@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 15/11/2026 · Bloque 04.2: «Foto pendiente» comprobado y publicado en staging; originales aún pendientes.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
+**Estado actualizado · 16/11/2026 · B05.1: entradas por recetas o presupuesto publicadas y comprobadas; revisión del propietario pendiente.** Se consolida la aplicación existente; se conserva su código, historial, datos locales y dirección Verde Mercado Premium / GPT-6 V2.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos, originales, código, pantallas, pruebas, bloqueos y próximas acciones. La [política de integración y recuperación](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md) define las condiciones de respaldo, revisión y publicación. Esos registros distinguen comprobación documental, automatización, prueba física y aprobación del propietario.
 
@@ -19,7 +19,7 @@ El catálogo contiene **120 recetas V83 y siete anteriores: 127 accesibles**. La
 
 La interfaz está en **es/en/de/fr**, con detección del dispositivo, elección manual persistente, respaldo al español y compras en euros. BG está en las fuentes V83, todavía no en la interfaz completa. Las fotografías definitivas de recetas no están vinculadas; sus originales V38–V83 no se han localizado en los materiales accesibles.
 
-Mis tiendas conserva Lidl, ALDI, HiperDino, SuperDino, HiperDino Express y Mercadona. La selección y los enlaces oficiales no implican importación de precios ni transferencia de carrito. La [auditoría B06.1](docs/auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md) no habilitó PVP local actual. Las dos entradas propuestas por recetas/presupuesto están en el PR #11 y no se consideran integradas.
+Mis tiendas conserva Lidl, ALDI, HiperDino, SuperDino, HiperDino Express y Mercadona. La selección y los enlaces oficiales no implican importación de precios ni transferencia de carrito. La [auditoría B06.1](docs/auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md) no habilitó PVP local actual. Los dos accesos de Inicio se integran selectivamente en [PR #26](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/26): presupuesto → tiendas inmediatamente → cinco comidas; recetas → revisión → tiendas antes de confirmar. Se conserva el presupuesto de listas existentes; no se activa el feed del PR #11. [Entrega y auditoría B04/B05](docs/MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md).
 
 IA, cuentas, hogares y sincronización no están activados. B07 conserva contratos y migraciones, pero la matriz dinámica de permisos sigue sin resultado nativo. El modo sin cuenta permanece como base de trabajo.
 

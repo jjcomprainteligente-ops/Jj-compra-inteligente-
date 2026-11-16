@@ -1,0 +1,27 @@
+{
+  "mode": "READ_ONLY_NO_RERUNS_OR_APIS",
+  "conclusion": "PASS_NO_BLOCKERS",
+  "coreSourceCommit": "e1c3cfbb87d2f71cc16b91f83d8e3b3c11311e38",
+  "releaseSourceCommit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+  "coreInputHashesVerified": 100,
+  "releaseInputHashesVerified": 100,
+  "unchangedInputsBetweenSources": 99,
+  "onlyRuntimeDifference": "src/app/components/ui.tsx conditional style for the two Home buttons with icon=null",
+  "protectedFilesVerified": 28,
+  "recipeSourcesIdsQuantitiesAndStepsPreserved": true,
+  "storageFencesDependenciesAndOfficialLogoPreserved": true,
+  "noCurrentPvpFeedsOrVerifiedBasketRankingEnabled": true,
+  "coreExecutionReportsVerified": [
+    "browser-source1.json",
+    "journey-source1.json",
+    "photo-source1.json",
+    "quality-source1.json"
+  ],
+  "layoutReportVerified": "layout-verification.json",
+  "firstLayoutAttemptPreserved": true,
+  "nativeBundleHashesVerified": true,
+  "allPlatformWebNotInterchangedWithWebOnly": true,
+  "newPublicRecipeStatesForHeldContent": false,
+  "publicReportsContainPrivatePathsOrCredentials": false,
+  "scope": "Independent code and source/evidence inspection, including the recovery on 16 November. Hosted verification has separate execution reports; this review is not a physical-device or backend RLS certification."
+}

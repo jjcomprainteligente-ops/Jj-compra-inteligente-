@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "EXECUTION_ON_SOURCE_1_ONLY",
+  "sourceCommit": "e1c3cfbb87d2f71cc16b91f83d8e3b3c11311e38",
+  "sourceTree": "f49464ccbfada5cee764647acdaaa321c23e89c2",
+  "sourceBinding": {
+    "entries": 100,
+    "matchedAgainstGitShow": 100,
+    "mismatches": 0,
+    "inputManifestSha256": "ae7b04998c647b2b3cdedd6ef599964808e1540d1a108cd68be7b2872a8ae541",
+    "verificationMethod": "SHA-256 of git show <sourceCommit>:<relative path>; not working-tree comparison"
+  },
+  "testedExport": {
+    "path": "dist-bloque05-ready/_expo/static/js/web/index-f2c41fc4bc5c238673c0225987bb29ff.js",
+    "bytes": 5193983,
+    "sha256": "874d16458ee6e3248fae67fa23f9dd8fbafbc5717c928ab0b19555c28df081d5"
+  },
+  "releaseSourceCommit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+  "claimedAsReleaseSourceExecution": false,
+  "releaseDifference": {
+    "changedApplicationInputs": [
+      "src/app/components/ui.tsx"
+    ],
+    "unchangedApplicationInputs": 99,
+    "note": "The release adds a conditional no-icon Button layout change. These runs remain attributed to their actual earlier source; the final layout verification is recorded separately."
+  },
+  "startedAtUtc": "2026-11-15T17:15:32.731Z",
+  "durationMs": 216812.37000000002,
+  "totalCases": 8,
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "retryAttempts": 0,
+  "runnerErrors": 0,
+  "rawReportSha256": "e147e52b36cc5a2af84e52bfba54484bb0c69069a34063a7eec565e6d67c6e65",
+  "projects": [
+    "desktop"
+  ],
+  "physicalIPhoneValidated": false,
+  "nativeAppValidated": false,
+  "rawEvidencePublished": false,
+  "cases": [
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 31527,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 28285,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 29011,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 27819,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 22655,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 23894,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 24997,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 20733,
+      "resultStatuses": [
+        "passed"
+      ]
+    }
+  ],
+  "quality": {
+    "uiLanguages": [
+      "de",
+      "en",
+      "es",
+      "fr"
+    ],
+    "viewportWidths": [
+      375,
+      430
+    ],
+    "totals": {
+      "qualityScenes": 296,
+      "visualSceneChecks": 200,
+      "textChecked": 7960,
+      "iconsChecked": 1704,
+      "fieldBoundariesChecked": 104,
+      "activeControls": 4600
+    },
+    "measuredFailureTotals": {
+      "textFailures": 0,
+      "iconFailures": 0,
+      "fieldBoundaryFailures": 0,
+      "switchPaintFailures": 0,
+      "targetsBelow24": 0
+    },
+    "reviewObservationTotals": {
+      "targetsBelow44": 0,
+      "nonTextReview": 1272,
+      "unsupported": 0,
+      "spacingExceptions": 0
+    },
+    "sceneNames": [
+      "01_bienvenida",
+      "02_inicio",
+      "03_mi_compra",
+      "04_ahorro",
+      "05_menus",
+      "06_detalle_receta",
+      "07_ingredientes",
+      "08_buscar_producto",
+      "09_detalle_producto",
+      "10_voz",
+      "11_escaner",
+      "12_mis_tiendas",
+      "13_presupuesto",
+      "14_historial",
+      "15_perfil_hogar",
+      "16_notificaciones",
+      "estado_01_empty",
+      "estado_02_no_price",
+      "estado_03_offline",
+      "estado_04_network",
+      "estado_05_microphone_denied",
+      "estado_06_camera_denied",
+      "estado_07_unknown_barcode",
+      "estado_08_duplicate",
+      "estado_09_success",
+      "panel_budget_editor",
+      "panel_catalogue_first_page",
+      "panel_deletion_confirmation",
+      "panel_deletion_review",
+      "panel_expense_editor",
+      "panel_language",
+      "panel_manual_item",
+      "panel_menu_filters",
+      "panel_privacy",
+      "panel_reviewed_list_copy",
+      "panel_switch_off",
+      "panel_v83_unknown_time"
+    ],
+    "coverageReports": [
+      {
+        "file": "de-375-coverage.json",
+        "sha256": "1609184046bd100a3623ce62cc8b819bd187752ecba60cf6c15dfae6e6da0c68",
+        "language": "de",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "de-430-coverage.json",
+        "sha256": "f5928f79885650cbaf2309c31acdccc1a1f8df7b6ea091248b41b8c308538504",
+        "language": "de",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "en-375-coverage.json",
+        "sha256": "70b6347170d1d9a8c3cbc41c5e0e04f3eb5f452bbeb6dbd5e8e146b76bd3d524",
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "en-430-coverage.json",
+        "sha256": "183708928d85980747d2e3101bb5e4207a074998bb00bf0a9267a696176414d3",
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "es-375-coverage.json",
+        "sha256": "a0a07d00cd065d2826e4f59993a8f27768fd3b91a59e7d9a3ed79f08381f9292",
+        "language": "es",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "es-430-coverage.json",
+        "sha256": "a91465e3105b4b5fafca0d0fa97aaae90f264ea9152784e5d81ebb4a9d53e579",
+        "language": "es",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "fr-375-coverage.json",
+        "sha256": "8c9b0253e181dc965636082352bd4c9e355c116273c8f3f75f877cb1b7baf7bb",
+        "language": "fr",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      },
+      {
+        "file": "fr-430-coverage.json",
+        "sha256": "5e6db35202a2a6eb191b365aaac89d55f666b2f63693f0e7d24a01417eb98be0",
+        "language": "fr",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "visualScenes": 25,
+        "qualityScenes": 37
+      }
+    ],
+    "scope": "Mounted DOM text, field boundaries, switches, icon-only active controls and measured target geometry on source 1. Solid ancestor backgrounds are composited. Images, opacity and other observations retain manual-review limits.",
+    "completeWcagCertification": false,
+    "finalLayoutVerificationSeparate": true
+  }
+}

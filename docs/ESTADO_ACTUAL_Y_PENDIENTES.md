@@ -1,21 +1,21 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 14/11/2026. Bloque 04.1: inventario/recepción preparados, originales de fotos pendientes. App intacta.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
+**Actualizado 16/11/2026. B05.1: dos entradas construidas, probadas y publicadas en staging; revisión del propietario pendiente.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
 
 ## Estado comprobado
 
 | Área | Resultado y límite |
 |---|---|
-| Integración | [PR #21](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/21), origen probado/desplegado `78480fd40b4a116d53ebb016f31085785f42a6e6`. Recuperación desde `abb3bca53953e4523af61118e375df90d1a8d416`. Cierre documental separado, sin cambiar inputs de aplicación. |
+| Integración | Base de recuperación de PR #21 preservada. B05.1 en [PR #26](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/26), fuente final `5f208d882b0ce6e418267464c0a76346bf15b01c`, probada y publicada en staging. Main permanece en D22; cierre documental separado del código probado. |
 | Contenido | Fuente privada 150 IDs/750 fichas en 5 idiomas. Runtime 120 V83 + 7 anteriores = 127. Treinta retenidas por estados pendientes/contradictorios, sin cambios de IDs. |
 | Fotos | Originales V38–V83 no localizados; cero enlaces definitivos por receta comprobados. No se generan sustitutos. |
 | UI y diseño | es/en/de/fr, EUR, Verde Mercado Premium/GPT-6 V2 y PNG oficial exacto. BG en fuente, pendiente en interfaz. Aceptación estética/física separada. |
-| Datos locales | Siete documentos y protecciones conservados; 159/159 inputs de app/deps/tests/scripts/assets idénticos. |
-| Tiendas/precios | Seis formatos seleccionables y enlaces oficiales; comparador manual. Fuentes de PVP local actual no habilitadas. PR #11 sigue separado para revisión en su bloque. |
+| Datos locales | Siete documentos y protecciones conservados; 28 archivos protegidos comprobados. La igualdad de 159 inputs pertenece al baseline de integración; B05 incorpora los cambios autorizados y sus fuentes propias. |
+| Tiendas/precios | Seis formatos seleccionables y enlaces oficiales; comparador manual. Fuentes de PVP local actual no habilitadas. B05.1 integra selectivamente las dos entradas, sin fusionar el PR #11 o habilitar su feed. |
 | IA y hogares | IA no conectada; B07 sin resultado de matriz nativa y sin cuentas/BFF/sincronización activados. Snapshot 12/11 no sustituye una consulta nueva. |
 | Respaldo | Copia privada local y restauración 13/13 correctas. **Copia en carpeta del proyecto confirmada por el propietario; destino e integridad externos no inspeccionados.** |
 
-## Calidad y publicación
+## Calidad y publicación del baseline · 13–14/11/2026
 
 Baseline limpio ABB: instalación desde lockfile sin scripts, tipos, importador público, 981/981 unitarias, npm 0 y Expo/export 3 correctos. Sobre `78480fd40b4a116d53ebb016f31085785f42a6e6`: [CI correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43514500031), **298 Chromium correctos/24 omisiones deliberadas y 16/16 WebKit**, cero fallos/intermitencias. Los informes de navegador pertenecen a ese origen y al bundle `c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7`.
 
@@ -50,6 +50,14 @@ Validador seguro sin escritura/publicación, 32 pruebas específicas/51 Python c
 El detalle de las 127 recetas indica «Foto pendiente» en es/en/de/fr, con Pill neutral y estilos existentes. Registro explícito separado de recetas/recepción/almacenamiento: solo ID y estado, sin URI o metadatos privados. Catálogos, cantidades, pasos, dependencias, logo y siete documentos conservados.
 
 991 unitarias, tipos y export correctos; 20/20 casos focalizados y 36/36 del recorrido diario correctos, sin fallos/omisiones/reintentos. Evidencia del 14/11 enlazada a 97 inputs exactos, recuperados y comprobados el 15/11. Revisión independiente correcta. [PR #25](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/25), fuente `24f4b37d2215a24cd283d5c6ef94625a0c2ae18f`: CI correcta y staging READY/protegida. HTTPS en cuatro idiomas, 127 recetas y 19 recursos/URLs; 8/8 casos nuevos WebKit 375/430 correctos en la preview. Acceso temporal por conversación hasta 16/11/2026 10:22:16 UTC. [Entrega](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md). B04 completo sigue esperando originales para vinculación; cero fotos publicadas. No se abre B05 ni se equipara WebKit a un iPhone físico.
+
+## Dos entradas de compra · B05.1
+
+[PR #26](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/26), fuente final `5f208d882b0ce6e418267464c0a76346bf15b01c`. Inicio permite empezar por recetas o por presupuesto; el presupuesto pregunta tiendas inmediatamente y admite cinco comidas para 1–12 personas. La revisión precede al guardado; las tiendas del recorrido son temporales y no cambian favoritas. Una lista nueva recibe el objetivo de presupuesto con los ingredientes; una lista existente conserva su límite. Coste pendiente, comparación manual por producto y pago externo.
+
+1.081 unitarias, 51 Python, tipos y exportaciones web/iOS/Android correctos; consulta de dependencias sin avisos conocidos y CI de ambas fuentes correcta. Auditoría base e1c3: 298 Chromium/24 omisiones deliberadas, 48 recorridos nuevos, 20 fotos y ocho casos de calidad/296 escenas. Ajuste final de Inicio: 12 casos/20 escenas; no se presenta la matriz general como otra ejecución del ajuste. Preview final READY/protegida: cuatro idiomas, 127 recetas, 19 recursos/URLs por hash, 16 recorridos y ocho controles de Inicio publicados correctos. Acceso temporal por conversación hasta **17/11/2026 20:36:40 UTC**, sin token en Git. [Entrega y límites](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md) · [verificación](../design/purchase-journey/reports/verification.json).
+
+Estado: PROBADO_AUTOMATICAMENTE y staging verificada; aceptación del propietario y prueba física pendientes. B04 sigue esperando originales para fotos, B03 conserva sus excepciones y 01.1 su independencia externa pendiente. No se abre B06, no se fusiona main ni se promueve producción.
 
 ## Historial documental conservado
 
