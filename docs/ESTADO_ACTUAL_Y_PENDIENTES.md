@@ -1,12 +1,12 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 16/11/2026. B05.1: dos entradas construidas, probadas y publicadas en staging; revisión del propietario pendiente.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
+**Actualizado 16/11/2026. B05.2: motor variable preparado, probado y con staging verificada; interfaz de cinco comidas conservada. Revisión del propietario pendiente.** El [inventario único](MAESTRO/INVENTARIO_UNICO.md) reúne fuentes, requisitos y bloqueos. Se conserva la app existente; la rama de integración procede de ABB y main permanece en D22, sin merges ni promoción.
 
 ## Estado comprobado
 
 | Área | Resultado y límite |
 |---|---|
-| Integración | Base de recuperación de PR #21 preservada. B05.1 en [PR #26](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/26), fuente final `5f208d882b0ce6e418267464c0a76346bf15b01c`, probada y publicada en staging. Main permanece en D22; cierre documental separado del código probado. |
+| Integración | Base de recuperación de PR #21 preservada. B05.1 en [PR #26](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/26), fuente final `5f208d882b0ce6e418267464c0a76346bf15b01c`, probada y publicada en staging. B05.2 en [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27), fuente `280a6e63ce3c56015a7f8b92cff8136bbece2a32`, prepara N sin activarlo en pantalla; CI y staging verificadas. Main permanece en D22; cierre documental separado del código probado. |
 | Contenido | Fuente privada 150 IDs/750 fichas en 5 idiomas. Runtime 120 V83 + 7 anteriores = 127. Treinta retenidas por estados pendientes/contradictorios, sin cambios de IDs. |
 | Fotos | Originales V38–V83 no localizados; cero enlaces definitivos por receta comprobados. No se generan sustitutos. |
 | UI y diseño | es/en/de/fr, EUR, Verde Mercado Premium/GPT-6 V2 y PNG oficial exacto. BG en fuente, pendiente en interfaz. Aceptación estética/física separada. |
@@ -14,6 +14,10 @@
 | Tiendas/precios | Seis formatos seleccionables y enlaces oficiales; comparador manual. Fuentes de PVP local actual no habilitadas. B05.1 integra selectivamente las dos entradas, sin fusionar el PR #11 o habilitar su feed. |
 | IA y hogares | IA no conectada; B07 sin resultado de matriz nativa y sin cuentas/BFF/sincronización activados. Snapshot 12/11 no sustituye una consulta nueva. |
 | Respaldo | Copia privada local y restauración 13/13 correctas. **Copia en carpeta del proyecto confirmada por el propietario; destino e integridad externos no inspeccionados.** |
+
+## Entrega B05.2 · 16/11/2026
+
+[Motor preparado y límites](MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md): 1.549 unitarias, 51 Python, 60 casos locales de recorridos/Inicio y 24 de menús anteriores correctos; tipos, dependencias, Expo y exports web/iOS/Android correctos. Staging protegida: cuatro idiomas/127 recetas/19 recursos y 16 recorridos + ocho controles de Inicio publicados correctos. [Evidencia de esta fuente](../design/meal-plan-draft/reports/verification.json). La activación visible de N y la aceptación física siguen pendientes; los HBC no son una distribución nativa. Los intentos iniciales fallidos y sus causas se conservan en el informe.
 
 ## Calidad y publicación del baseline · 13–14/11/2026
 

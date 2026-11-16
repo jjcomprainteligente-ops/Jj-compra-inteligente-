@@ -665,3 +665,14 @@ CI de ambas fuentes, 1.081 unitarias, 51 Python, tipos y exports correctos. Cons
 Preview dpl_7KXWuSpNMkaD3J2RhpP5XvcRtTjs READY y protegida: cuatro idiomas/127 recetas/19 recursos y 16 recorridos + ocho controles de Inicio publicados correctos. Nuevo enlace tras caducar el anterior hasta 17/11/2026 20:36:40 UTC, sin token en Git. 28 archivos protegidos intactos, originales privados sin publicar. [Informe](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md) · [evidencia](../design/purchase-journey/reports/verification.json).
 
 B05.1 probado automáticamente, revisión del propietario pendiente. B04 no se cierra sin originales; B03, B02 físico y 01.1 mantienen sus límites. Sin servicios de pago, dependencias, cuentas, migraciones, merge o promoción añadidos. El cierre solo registra documentos e informes, conservando el código probado.
+
+
+## 16/11/2026 · B05.2, N preparado sin ampliar el contrato guardado
+
+Se prepara el motor variable en un módulo puro separado. El catálogo público limita técnicamente N, sin inventar un rango de producto; no repite recetas ni relaja filtros para alcanzar el número pedido. La forma `{ kind: 'draft', servings, meals, filters }` carece de `recipeIds`, por lo que incluso N=5 se rechaza al intentar escribir `menus.v1`. No hay conversión implícita ni migración; siete claves, pantallas, recetas, cantidades y dependencias permanecen conservadas. Se mantiene el formulario de cinco comidas y 1–12 personas.
+
+Las APIs revalidan campos propios, arrays densos, IDs únicos activos, filtros y sustituciones. El límite agregado es de 2.000 ingredientes medidos; las cantidades siguen el escalado entero existente, sin precios ni fusiones automáticas. Cuatro errores están centralizados en es/en/de/fr. Se endurece el validador anterior frente a huecos y herencia; las entradas válidas conservan su esquema.
+
+Fuente `280a6e63ce3c56015a7f8b92cff8136bbece2a32`, PR #27: 1.549 unitarias, 51 Python, 60+24 casos locales, CI y exports correctos. Staging protegida comprueba 19 recursos/cuatro idiomas y 16+8 casos publicados; 101 hashes enlazan la fuente y 49 archivos protegidos coinciden. Los fallos iniciales de tiempos límite/decodificador se conservan, con correcciones de ejecución y sin retirar controles. [Detalle y límites](MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md).
+
+Riesgos abiertos: preparar N no activa la UX, no garantiza encaje en presupuesto y no acredita Safari físico o binario nativo. Antes de activar N hay que definir rango y presentación sin asumir días, junto con una frontera explícita de conversión/persistencia. Las categorías de fuente, aceptación del propietario y pendientes B04/B03/B02/01.1 siguen separados. No hay servicios de pago, autenticación, IA, Supabase, feeds, migraciones, merge o promoción nuevos.

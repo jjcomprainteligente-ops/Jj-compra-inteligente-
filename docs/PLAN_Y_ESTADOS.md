@@ -655,3 +655,16 @@ Estado B05.1 EN_CURSO; aceptación del propietario, dispositivo físico, categor
 Staging dpl_7KXWuSpNMkaD3J2RhpP5XvcRtTjs READY/protegida, fuente 5f208d8. HTTPS: cuatro idiomas, 127 recetas y 19 recursos/URLs. Nuevos controles en la preview: 16 recorridos y ocho casos de Inicio WebKit 375/430 correctos, sin fallos/reintentos. Enlace privado renovado solo tras caducar el anterior, hasta **17/11/2026 20:36:40 UTC**; token fuera del repo.
 
 [Entrega](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md) · [verificación](../design/purchase-journey/reports/verification.json). B05.1 PROBADO_AUTOMATICAMENTE y listo para revisión del propietario; aceptación física/visual no supuesta. Coste pendiente, cinco comidas y 1–12 personas; no feeds o ranking de PVP. B04 originales, B03 excepciones y 01.1 independencia mantienen sus pendientes. No se abre B06, fusiona main o promueve producción. Cierre documental sin cambios de aplicación; siguiente paso: revisión en iPhone de las dos entradas.
+
+
+## 16/11/2026 · B05.2, preparación del motor de comidas variables
+
+Continuación del Bloque 05 maestro, sin empezar el producto de cero ni abrir B06. [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27), fuente `280a6e63ce3c56015a7f8b92cff8136bbece2a32`, prepara candidatos N efímeros con filtros conservados y forma incompatible con `menus.v1`. La interfaz y el menú guardado continúan en cinco platos; N no tiene aún un rango de producto aprobado. Corrige arrays incompletos/heredados en el validador anterior sin cambiar menús válidos.
+
+Estado: **MOTOR PREPARADO, PROBADO_AUTOMATICAMENTE Y STAGING VERIFICADA**. 1.549 unitarias (468 nuevas, incluidas 381 combinaciones N/personas), 51 Python, tipos, catálogo público, npm sin avisos conocidos y Expo correctos. Local: 60 recorridos/Inicio y 24 regresiones de menús correctos. Export web/iOS/Android correctos, sin acreditar distribución o ejecución nativa. CI push 43962984173/PR 43963055777 correctas.
+
+Nueva staging protegida `dpl_F1YBWLx6NgkjCTkScKRkqmcTF1Ty`: cuatro idiomas/127 recetas/19 recursos por HTTPS, 16 recorridos + ocho controles de Inicio publicados correctos. Enlace privado hasta 17/11/2026 21:46:49 UTC; sin token en Git. 101 entradas vinculadas por hash y 49 archivos protegidos intactos. Main y alias de producción conservados. [Informe](MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md) · [evidencia](../design/meal-plan-draft/reports/verification.json).
+
+Se conservan los primeros intentos: dos tiempos límite al agrupar toda la matriz, resueltos al parametrizar sin quitar aserciones; cuatro errores Python con el decodificador general incorrecto, resueltos al usar el entorno aislado aprobado. No se atribuyen estos resultados a la fuente B05.1 ni se proclama seguridad absoluta.
+
+Siguiente acción: probar ambas entradas actuales en iPhone y concretar la activación de N antes de alterar presentación o persistencia. Aceptación humana, categorías no auditadas, fotos originales B04, excepciones B03, B02 físico e independencia externa 01.1 pendientes. Sin dependencias, migraciones, backend, IA, pagos, merge o promoción añadidos. El cierre documental conserva el código probado.

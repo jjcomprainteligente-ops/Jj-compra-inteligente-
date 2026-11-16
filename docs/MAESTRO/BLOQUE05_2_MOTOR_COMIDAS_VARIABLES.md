@@ -1,6 +1,6 @@
 # JJ | Bloque 05.2 · Preparación del motor de comidas variables
 
-**Estado: PREPARADO_LOCALMENTE · 16/11/2026.** Las verificaciones publicadas, exportaciones nativas y pruebas de navegador de esta entrega siguen pendientes de resultado. No es cierre de B05 completo ni aceptación del propietario.
+**Estado: MOTOR PREPARADO, PROBADO_AUTOMATICAMENTE Y STAGING VERIFICADA · 16/11/2026.** El número variable sigue sin activarse en pantalla. No es cierre de B05 completo ni aceptación del propietario.
 
 Base conservada: `ba69cf45704e6a0260ba0a6de0e973aa31245d35`. Rama: `codex/b05-2-motor-comidas-variables-2026-11-16`.
 
@@ -57,9 +57,21 @@ EXPO_NO_TELEMETRY=1 CI=1 npx expo install --check
 
 La suite Python requiere el entorno aislado que cumple `scripts/requirements-photo-audit.txt`. Los resultados anteriores de B05.1 no se atribuyen a esta nueva candidata.
 
-## Evidencia pendiente para la entrega
+## Entrega comprobada
 
-Registrar los resultados reales de los 60 casos de navegador previstos sobre el export de esta fuente, las exportaciones, la revisión de conservación y la publicación en GitHub. Después, registrar el commit, CI y preview protegida con la verificación HTTPS y de los recorridos publicados. Hasta entonces no se anuncia esta candidata como publicada o terminada.
+Fuente publicada: `280a6e63ce3c56015a7f8b92cff8136bbece2a32`, árbol `3af0f123fc2530ab44a428ac8d2c7c4dd9c16252`, [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27). CI de push 43962984173 y PR 43963055777 correctas. El cierre documental posterior conserva los 101 hashes de entradas de aplicación de esta fuente; no modifica el código probado.
+
+Navegador local: **60/60** casos de recorridos/Inicio y **24/24** regresiones de menús anteriores, sin omisiones, fallos ni intermitencias. La primera suite cubre es/en/de/fr en Chromium escritorio y WebKit 375/430; la segunda, Chromium escritorio/móvil. Incluye listas existentes, confirmación, presupuestos, errores de escritura, cancelación, navegación y conservación. Las capturas se guardan como evidencia privada; no hay rediseño ni aprobación visual inferida.
+
+Web, iOS y Android exportados correctamente. Esta vez el web del export conjunto coincide con el web independiente, SHA-256 `e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592`. Staging usa el web independiente empaquetado en Brotli; los hashes y tamaños quedan registrados por artefacto. Los HBC no equivalen a binario firmado o instalable, TestFlight ni ejecución nativa.
+
+Staging `dpl_F1YBWLx6NgkjCTkScKRkqmcTF1Ty`, READY y protegida, [origen sin credencial](https://jj-compra-inteligente-axpbj4ech-cmj2hwhc6b-1051.vercel.app). Comprobación HTTPS: cuatro idiomas, 127 recetas y 19 recursos/URLs por hash. El verificador usa Node con proxy/CA heredados y puente de cuerpos decodificados para Chromium; su método no acredita Safari físico. Pruebas publicadas independientes: **16/16** recorridos y **8/8** controles de Inicio, cuatro idiomas y WebKit 375/430, sin omisiones, fallos, intermitencias o reintentos.
+
+Acceso privado temporal por conversación hasta **17/11/2026 21:46:49 UTC**. El token y las respuestas privadas de acceso no se guardan en Git, bundle o informes públicos. Se conservan los despliegues anteriores; main sigue en `d22d66eff03c5d107f5170ee38cd2bc3167865e2` y el alias de producción en `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`.
+
+Conservación comprobada: 98 de los 100 inputs anteriores coinciden; cambian únicamente el validador de menús y los errores centralizados. Se añade un módulo, total 101 inputs vinculados por hash al commit. 49 archivos protegidos, incluidas pantallas, almacenamiento, recetas, logo y dependencias, coinciden con la base. La revisión independiente de código es estática y no sustituye las ejecuciones.
+
+[Preparación local histórica](../../design/meal-plan-draft/reports/local-preparation.json) · [resultados, hashes y límites finales](../../design/meal-plan-draft/reports/verification.json). El primer registro señala lo que estaba pendiente en su momento; el segundo acredita los resultados posteriores. No se trasladan a esta fuente resultados de B05.1.
 
 Las pantallas siguen ofreciendo cinco comidas. Activar N en la interfaz requiere concretar el rango, la presentación sin suposiciones de calendario y la conversión o persistencia apropiada; este módulo no habilita esa fase por sí solo. Las categorías culinarias pendientes tampoco se amplían o etiquetan sin auditoría de su fuente.
 
