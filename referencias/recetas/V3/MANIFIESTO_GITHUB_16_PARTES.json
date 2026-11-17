@@ -1,0 +1,107 @@
+{
+  "version": "V3-GITHUB-SUBPACKS-01",
+  "original_images": 150,
+  "recipe_data_zip": {
+    "name": "JJ_V3_CODEX_DATOS_Y_MANIFIESTOS.zip",
+    "size_bytes": 1995677,
+    "sha256": "36dba615a6d83bc0ff286ffe4e0d4377f69446ab47d8f9138b9d4957281dc4a6"
+  },
+  "parts": [
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_01_DE_16.zip",
+      "size_bytes": 21699751,
+      "sha256": "171637e7939b726ff88fd36801ae9dfb59c0572551b60b3fd2b25b74365d0966",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_02_DE_16.zip",
+      "size_bytes": 22081186,
+      "sha256": "9a18530a5a3d700e64cc13de9550d28205f42aad7443dc2c759d5380af8fb8d8",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_03_DE_16.zip",
+      "size_bytes": 22481128,
+      "sha256": "835c7cec45026dda3261d9f9a0d9f6363a8251209b65ba967170f1ad4eb80be9",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_04_DE_16.zip",
+      "size_bytes": 22427441,
+      "sha256": "1538c9bf9687d79fa2b07335e6976d59edf7d306cbde5a8923b0ef726fb20d7f",
+      "image_count": 10
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_05_DE_16.zip",
+      "size_bytes": 21812706,
+      "sha256": "4e23666e4c8d738d016b4670a9087ac185bec05fb73ba61f30d20c19b23d08cb",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_06_DE_16.zip",
+      "size_bytes": 20804646,
+      "sha256": "09354a105c7377c06127a580a21983267fd3b83d36394c557646bb94bc140b8c",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_07_DE_16.zip",
+      "size_bytes": 21766682,
+      "sha256": "6dc321c994c0f17bde3ccd2d90edc2cd198c269fb598ff9220027a045537c213",
+      "image_count": 9
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_08_DE_16.zip",
+      "size_bytes": 20611736,
+      "sha256": "4e846d62012e67cbfe058b2dc4950fc377ec9cc92725eb7b52cbea37c43e50fa",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_09_DE_16.zip",
+      "size_bytes": 21796615,
+      "sha256": "68110687aac94d53660a9b76e48133e9a24a39f5419aca614d8571fdec9ec6f8",
+      "image_count": 20
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_10_DE_16.zip",
+      "size_bytes": 22434693,
+      "sha256": "6b6636259aa8925201487d98d6af222362b6b9c5903cef6ec8ca54b5b1edab06",
+      "image_count": 20
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_11_DE_16.zip",
+      "size_bytes": 21240471,
+      "sha256": "465d581c374252a28b9ee9e18575ee0223463dee9c61cf52e696741d7180827a",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_12_DE_16.zip",
+      "size_bytes": 20309014,
+      "sha256": "dc7f43c01c48c1e9b0b66077aef870e6a73b4cdfe89f09142d6ec5422b8b6085",
+      "image_count": 7
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_13_DE_16.zip",
+      "size_bytes": 20826829,
+      "sha256": "aa825fb583001378ddb5ccffedcf356720d0a3ec5650ae74c96409a94c006545",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_14_DE_16.zip",
+      "size_bytes": 21597190,
+      "sha256": "06e944a87fa33903559601a464ff55c27bb3146442499106d77def7e0604d0d1",
+      "image_count": 8
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_15_DE_16.zip",
+      "size_bytes": 21198537,
+      "sha256": "e4b39b0e4417b4ed6f9cfa97744a514e6e95121a974f6036491a379c3ab7ad9a",
+      "image_count": 9
+    },
+    {
+      "filename": "JJ_V3_FOTOS_GITHUB_16_DE_16.zip",
+      "size_bytes": 8372699,
+      "sha256": "d33dd565cf866b82d900fe4197f8ec5f28c56b608cdae3b39df6f1ef5daf79bb",
+      "image_count": 3
+    }
+  ]
+}
