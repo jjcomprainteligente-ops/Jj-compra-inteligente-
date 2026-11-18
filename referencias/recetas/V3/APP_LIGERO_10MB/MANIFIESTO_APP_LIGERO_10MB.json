@@ -1,0 +1,89 @@
+{
+  "version": "V3-APP-LIGERO-93",
+  "status": "CONTROL_SUBIDO; ARCHIVOS_BINARIOS_AUN_PENDIENTES",
+  "photo_count": 150,
+  "langs": [
+    "es",
+    "en",
+    "de",
+    "fr",
+    "bg"
+  ],
+  "min_photo_size_px": [
+    1536,
+    1024
+  ],
+  "photo_format": "JPEG quality 93 subsampling 4:4:4, dimensions preserved; originals untouched",
+  "recipe_data_zip": {
+    "name": "JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip",
+    "size_bytes": 1994471,
+    "sha256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270"
+  },
+  "parts": [
+    {
+      "filename": "JJ_V3_APP_FOTOS_01_DE_10.zip",
+      "size_bytes": 9757118,
+      "sha256": "ad85f02a94c214e365ee60a1ec3a93c761e67862cb9a1e8c314796a2ffba88ab",
+      "image_count": 15
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_02_DE_10.zip",
+      "size_bytes": 9717269,
+      "sha256": "2e377624d041b1f14b944f425f247992abbe86af87c3c1ae601b1223f80cfc16",
+      "image_count": 14
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_03_DE_10.zip",
+      "size_bytes": 9404488,
+      "sha256": "37d446fa4a1261255b3ac75d83c9757fe4d08fb06f551200e9162dca952d4701",
+      "image_count": 15
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_04_DE_10.zip",
+      "size_bytes": 9335980,
+      "sha256": "3918e94705a832298ca773c5df49db55ae1443b376f1bec4b16a72f92d3e2d1f",
+      "image_count": 14
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_05_DE_10.zip",
+      "size_bytes": 9623914,
+      "sha256": "93700b84cd199198acf82cadefa6b7f9cce8629a64bf212393a65315592d61e8",
+      "image_count": 14
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_06_DE_10.zip",
+      "size_bytes": 9980519,
+      "sha256": "16e44c344f0e750714e57ff6d2e784b6588d16dee7b2a0880a6d787160ead3f0",
+      "image_count": 16
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_07_DE_10.zip",
+      "size_bytes": 9609820,
+      "sha256": "e32f95e4d03184749dec07524e4a705b23d6726888ddac1a45872dab7be633a9",
+      "image_count": 17
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_08_DE_10.zip",
+      "size_bytes": 9798188,
+      "sha256": "f4d7a2628340404bdf56c2f45ab2e1be134f0709daa15a896a05ede8d9f76f2c",
+      "image_count": 15
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_09_DE_10.zip",
+      "size_bytes": 9617610,
+      "sha256": "6519edbdd750755927739e34f583ba7775b1dfae51ff6cdf77e46d3fbb2de0a6",
+      "image_count": 15
+    },
+    {
+      "filename": "JJ_V3_APP_FOTOS_10_DE_10.zip",
+      "size_bytes": 9477150,
+      "sha256": "1c454d72f04a6217577117cca5d73e47f4cc74bc9849eae575616ad82661870a",
+      "image_count": 15
+    }
+  ],
+  "warnings": [
+    "No prices/SKU/real product labels verified",
+    "No allergen trace certification",
+    "Do not import any prior V3B data along with these JPG variants"
+  ]
+}
