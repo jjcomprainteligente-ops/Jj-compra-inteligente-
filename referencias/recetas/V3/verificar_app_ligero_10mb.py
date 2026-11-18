@@ -53,7 +53,7 @@ def size_of_image(data):
 
 
 def validate(args):
-    manifest = json.loads(Path(__file__).parent / "APP_LIGERO_10MB/MANIFIESTO_APP_LIGERO_10MB.json".read_text(encoding="utf-8"))
+    manifest = json.loads((Path(__file__).parent / "APP_LIGERO_10MB/MANIFIESTO_APP_LIGERO_10MB.json").read_text(encoding="utf-8"))
     manifest["files"] = [{"name": manifest["recipe_data_zip"]["name"], "bytes": manifest["recipe_data_zip"]["size_bytes"], "sha256": manifest["recipe_data_zip"]["sha256"]}] + [{"name": r["filename"], "bytes": r["size_bytes"], "sha256": r["sha256"], "image_count": r["image_count"]} for r in manifest["parts"]]
     incoming = Path(args.input_dir)
     destination = Path(args.output_dir)
