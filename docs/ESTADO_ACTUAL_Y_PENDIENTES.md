@@ -1,12 +1,12 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 19/11/2026. Consolidación V3 preparada localmente; publicación, CI y staging nuevas pendientes.** Rama `codex/recepcion-v3-segura-2026-11-18`. Se conservan la app existente, el diseño Verde Mercado Premium / GPT-6 V2 y los datos locales. [Informe de consolidación](MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) · [inventario único](MAESTRO/INVENTARIO_UNICO.md).
+**Actualizado 19/11/2026. Consolidación V3 publicada, CI correcta y staging protegida comprobada; integración en main pendiente de aceptación.** Rama `codex/recepcion-v3-segura-2026-11-18`. Se conservan la app existente, el diseño Verde Mercado Premium / GPT-6 V2 y los datos locales. [Informe de consolidación](MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) · [inventario único](MAESTRO/INVENTARIO_UNICO.md).
 
 ## Estado comprobado
 
 | Área | Resultado y límite |
 |---|---|
-| Integración | Se reúnen la app `04c3d0db5eab7e60667aa023806f8284ea4b0c06` del PR #27 y las fuentes V3 `6c6cde44ae06ef48adf8040ec8b5446003bd87ba` del PR #28. Main permanece en `e21d7213822bdb02080cff8943abbc28e666adf4`. La candidata aún no tiene commit publicado, CI ni staging nueva acreditados. La fusión en main requiere aceptación y autorización explícita. |
+| Integración | Se reúnen la app `04c3d0db5eab7e60667aa023806f8284ea4b0c06` del PR #27 y las fuentes V3 `6c6cde44ae06ef48adf8040ec8b5446003bd87ba` del PR #28. Main permanece en `e21d7213822bdb02080cff8943abbc28e666adf4`. Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), CI push/PR correctas y staging propia comprobada. La fusión en main requiere aceptación y autorización explícita. |
 | Catálogo del cliente | 120 V83 + 7 anteriores = **127 accesibles**. IDs, raciones, cantidades, menús guardados y siete claves locales conservados. El motor de recepción no activa automáticamente las 150 recetas. |
 | Fuente y autorización | **150 IDs/750 fichas** en cinco idiomas. El propietario autorizó las 150 el 17/11. Main contiene las fuentes V83 publicadas por el propietario; la rama de recepción contiene los datos V3 completos. La copia original local ignorada se conserva. Las antiguas reservas no requieren un nuevo permiso: queda la validación técnica de la entrega y su integración. |
 | Fotografías | **12 PNG originales recibidos y verificados**, de 150 esperados; faltan 138. Coinciden por ID, ruta, bytes y SHA, y pasan contenedor/decodificación completa. Los perfiles alternativos no son intercambiables y sus manifiestos no equivalen a fotos recibidas. Ninguna imagen de prueba se presenta como definitiva. |
@@ -22,9 +22,9 @@
 
 TypeScript y **1.549 unitarias** correctos. La suite Python pasa **110 casos**, incluidas **59 regresiones nuevas** de recepción segura. Consulta npm sin avisos conocidos y compatibilidad Expo correcta con `~58.0.26`; no se certifica seguridad absoluta.
 
-Navegador local: **24 casos de menús correctos**; la matriz de **60 casos de recorridos e Inicio sigue en curso**. Exportaciones web/iOS/Android generadas, con el registro final de hashes por artefacto pendiente. El JavaScript web conserva el SHA-256 `e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592`.
+Navegador local: **24 casos de menús y 60 casos de recorridos e Inicio correctos**, sin omisiones, fallos ni intermitencias. Exportaciones web/iOS/Android generadas y verificadas, con los hashes finales registrados por artefacto. El JavaScript web conserva el SHA-256 `e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592`.
 
-El commit de esta candidata, sus resultados de CI y la preview protegida todavía están pendientes de publicación y comprobación. Las matrices y staging anteriores conservan sus propios SHA y no acreditan otra ejecución sobre esta fuente.
+Fuente publicada y CI de push 44503332195/PR 44503457652 correctas. Staging `dpl_9GyW8ij3xX4dgZtw7Q3F1jwH2v1K`, READY/protegida: cuatro idiomas, 127 recetas y 19 recursos comprobados por HTTPS; 16 recorridos y ocho controles de Inicio WebKit 375/430 correctos, sin fallos, omisiones, intermitencias o reintentos. [Evidencia final](../design/v3-intake/reports/verification.json). Acceso privado temporal hasta 20/11/2026 10:13:38 UTC. Las matrices y staging anteriores conservan sus propios SHA.
 
 ## Validación del propietario y límites
 
@@ -34,7 +34,7 @@ La autorización de las 150 recetas sigue vigente. Los controles históricos se 
 
 ## Próximo cierre
 
-Completar los 60 casos locales y el registro de artefactos, publicar el PR de consolidación contra main, comprobar CI y verificar una staging protegida. Presentar ese resultado antes de la fusión explícitamente autorizada. Conservar el canal de recepción para las 138 fotos y los originales ya recibidos. [Instrucciones V3](../referencias/recetas/V3/README_CODEX.md).
+Revisar el PR #29, con CI y staging comprobadas, y obtener autorización explícita para integrarlo en main. Las 21 retiradas autorizadas están preparadas y respaldadas; quedan tras la aceptación y el cotejo de los SHA remotos. Cero ramas eliminadas. Conservar el canal de recepción para las 138 fotos y los originales ya recibidos. [Instrucciones V3](../referencias/recetas/V3/README_CODEX.md).
 
 Los registros históricos de [B05.1](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md), [B05.2](MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md) y los demás bloques mantienen sus fechas, fuentes y límites. La presente actualización expresa el estado operativo y no reescribe esas evidencias.
 

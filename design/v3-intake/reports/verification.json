@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-19T10:16:33.716227+00:00",
+  "phase": "SOURCE_CI_AND_PROTECTED_STAGING_VERIFIED_PENDING_MAIN_ACCEPTANCE",
+  "source": {
+    "commit": "d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd",
+    "tree": "72a62611f1099fe05e1183a5927368d1b0794b79",
+    "parents": [
+      "04c3d0db5eab7e60667aa023806f8284ea4b0c06",
+      "6c6cde44ae06ef48adf8040ec8b5446003bd87ba"
+    ],
+    "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29"
+  },
+  "localPreparation": {
+    "report": "local-preparation.json",
+    "sha256": "40c07859d1294c02774fe832ca17502cf50a6aab2090f305d436b75346a1a473",
+    "tests": {
+      "unitPassed": 1549,
+      "pythonPassed": 110,
+      "newPythonCases": 59,
+      "types": "PASS",
+      "catalogueReproduction": "PASS",
+      "expoCompatibility": "PASS",
+      "dependencyAdvisories": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "localJourneysAndHome": {
+        "startTime": "2026-11-19T09:54:13.111Z",
+        "duration": 248147.223,
+        "expected": 60,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "localLegacyMenus": {
+        "startTime": "2026-11-19T09:54:19.436Z",
+        "duration": 100873.833,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "actualReceipt": {
+      "coreSHA256": "2fb686a1e7a51731c81c7b2d25a7ef41dae6b8605280ea4cf1341c9a5bbe8b73",
+      "auditExitCode": 2,
+      "fullStagingExitCode": 1,
+      "incompleteStagingCreated": false,
+      "recipes": 150,
+      "localizations": 750,
+      "photosAvailable": 12,
+      "photosMissing": 138,
+      "fullDeliveryComplete": false
+    }
+  },
+  "sourceBinding": "All 101 final app inputs and independent review source hashes match the canonical source commit and current files.",
+  "exports": {
+    "dist-v3-recepcion-web-final": [
+      {
+        "file": "_expo/static/js/web/index-bc637fb768eb0066aa73796684b2f2fb.js",
+        "bytes": 5196171,
+        "sha256": "e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592"
+      }
+    ],
+    "dist-v3-recepcion-platforms-final": [
+      {
+        "file": "_expo/static/js/android/index-6d4850e32bceecdb70ebfb8eb56f3b8b.hbc",
+        "bytes": 6357832,
+        "sha256": "fdd969554b6efba32a8cb0528647d8adf484df3f29add6aa1e32c802ec655ca6"
+      },
+      {
+        "file": "_expo/static/js/ios/index-9a0495ccd401c4f2d7f87e7f7ac26e2e.hbc",
+        "bytes": 6353137,
+        "sha256": "0538093cf168ae5359f8d32ea06a129a7d454eb7ba72ab8a44aa9bc3c7724ef7"
+      },
+      {
+        "file": "_expo/static/js/web/index-6b84d97119253305d2d82ae5fbc40e32.js",
+        "bytes": 5198114,
+        "sha256": "9369c2210a90fd9d640616f1aafdcd9850631f63dedb7f8cf402fdefe2ce3408"
+      }
+    ]
+  },
+  "packagedWeb": {
+    "files": 13,
+    "bytes": 1590470,
+    "bundle": {
+      "file": "_expo/static/js/web/index-bc637fb768eb0066aa73796684b2f2fb.js",
+      "size": 639239,
+      "sha1": "cbb4a3156c3bf6d3d4133dfe29b77f840b9abe00",
+      "sha256": "953846d4244851b7855a9fbe1e79a1091def0fe1af9f557e0511d1d7cc3c77d4",
+      "contentEncoding": "br",
+      "decodedSize": 5196171,
+      "decodedSha1": "844df626978b26b446c4fd3b5951f365f22da348",
+      "decodedSha256": "e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592"
+    },
+    "logo": {
+      "file": "assets/assets/brand/jj-logo-horizontal.077221c4ff13aa63777d1fc4bad2855d.png",
+      "size": 255528,
+      "sha1": "655c0d9f079854218ab4d777a0a1e5695a07ac06",
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+    }
+  },
+  "hostedHTTPS": {
+    "status": "passed",
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "verifiedFiles": 19,
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+    "reportSHA256": "53ccaf39f259c07ab6a8dc4af11139c74caffd051da0daa7da1708fbf94f8bbd"
+  },
+  "hostedWebKit": {
+    "journey": {
+      "startTime": "2026-11-19T10:14:31.233Z",
+      "duration": 86524.837,
+      "expected": 16,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "home": {
+      "startTime": "2026-11-19T10:14:36.208Z",
+      "duration": 26161.371,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "githubActions": [
+    {
+      "id": 44503457652,
+      "event": "pull_request",
+      "head": "d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44503457652"
+    },
+    {
+      "id": 44503332195,
+      "event": "push",
+      "head": "d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44503332195"
+    }
+  ],
+  "provider": {
+    "recordedAt": "2026-11-19T10:15:37.189Z",
+    "projectId": "prj_6LgoBqJOykuqz8M1RHmbN7XfUiry",
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "productionAlias": "jj-compra-inteligente.vercel.app",
+    "productionDeployment": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "mainCommit": "e21d7213822bdb02080cff8943abbc28e666adf4",
+    "staging": {
+      "id": "dpl_9GyW8ij3xX4dgZtw7Q3F1jwH2v1K",
+      "url": "jj-compra-inteligente-16buip6v1-cmj2hwhc6b-1051.vercel.app",
+      "target": "staging",
+      "state": "READY",
+      "sourceCommit": "d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd",
+      "sourceBranch": "codex/recepcion-v3-segura-2026-11-18",
+      "readyAt": 1795083199828
+    }
+  },
+  "shareExpiresUTC": "2026-11-20T10:13:38+00:00",
+  "branchRecovery": {
+    "report": "branch-recovery.json",
+    "tag": "respaldo/ramas-2026-11-18",
+    "backupCommit": "76cc65eb80a92a73053cb4159d08062ca73e3900",
+    "retired": 0,
+    "candidatesAfterAcceptance": 21
+  },
+  "independentReview": {
+    "scope": "Read-only static review and targeted reproductions, not another full test run.",
+    "originalSHA256": "c3a47471e3ceb1e1bf783a1424d49d25b38564128d338e3bb3301c9bac20ba8a",
+    "expoAddendumSHA256": "c5847d5dba8b733d5df6eae7bac366c9be41fa303ed42e694a5015eb97b1e8ac"
+  },
+  "privateEvidenceSHA256": {
+    "source-commit-canonical.json": "393d0c2182544dcea7dc9d2f9e0422ed4d09fbabeef575accd40822752a93723",
+    "ci-source.json": "31d10f4150683f2bbb66f5a69c93af4163823ef74d70f9887e180b036d470e6f",
+    "provider-checks.json": "98259a6fb11173ada49fd0ba9d5786932e21867b7febd4ff5795216207134125",
+    "hosted-journey/results.json": "c9096c43cb153b9e2a60f0e0c609a2670bee76dd3d783fe1447c7d7793e3e5c7",
+    "hosted-home/results.json": "3ad85c1313cf55e14255e021f545d04775a91fe56dede070cd2a84d10b3e9d4f",
+    "application-input-sha256-final.json": "1c8fc06223eb1cc20a1c6af1894d24f45a1ac8f852f502ef78bd67f825150273",
+    "actual-reception-command-receipt.json": "4e9be555002281d969cae0a0c6599e282d65de456a1c355149ccd5b4737e5a75",
+    "exports-final.json": "d4db42d4334ac4bc8ae23a19e079003b0b9b8b9c93182e4579b1678d8d4f5976"
+  },
+  "pending": [
+    "138 original photos not received;150-recipe/photo activation not implemented in the app.",
+    "Explicit acceptance and authorization to merge this concrete PR into main; no production promotion.",
+    "Owner visual acceptance and detailed physical iPhone/native verification.",
+    "Official product labels, allergens/traces and store prices remain unverified."
+  ],
+  "limits": [
+    "App remains127 recipes, five meals, UI es/en/de/fr; BG only in source.",
+    "No auth, Supabase, paid services or AI integrations added.",
+    "No branch deleted, no owner local data uploaded; original source binaries retained by Git blob SHA.",
+    "Known-advisory audit is not an absolute security guarantee."
+  ]
+}

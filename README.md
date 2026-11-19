@@ -1,6 +1,6 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 19/11/2026 · Consolidación y recepción V3 preparadas localmente.** La app conserva 127 recetas accesibles y el diseño Verde Mercado Premium / GPT-6 V2. El propietario autorizó las 150 recetas; se han recibido sus datos en cinco idiomas y 12 fotos originales. Faltan 138 imágenes para completar la entrega fotográfica.
+**Estado actualizado · 19/11/2026 · Consolidación y recepción V3 publicadas y comprobadas en staging.** La app conserva 127 recetas accesibles y el diseño Verde Mercado Premium / GPT-6 V2. El propietario autorizó las 150 recetas; se han recibido sus datos en cinco idiomas y 12 fotos originales. Faltan 138 imágenes para completar la entrega fotográfica.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos y fuentes. La [consolidación V3](docs/MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) distingue autorización, recepción, integración en la app y publicación comprobada.
 
@@ -11,7 +11,7 @@ El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos y fue
 - Main permanece en `e21d7213822bdb02080cff8943abbc28e666adf4`, donde el propietario publicó las fuentes V83 y las partes del respaldo completo. La fusión de la candidata requiere aceptación y autorización explícita según la [política de integración](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md).
 - La consolidación local conserva 99 de los 101 hashes de entrada de la app. Cambian `package.json` y `package-lock.json` por el parche compatible Expo `~58.0.26`, dentro del SDK 58. Pantallas, IDs, cantidades, almacenamiento, logo y tipografía se conservan.
 
-El commit de esta candidata, su CI y una nueva staging verificada están pendientes de publicar y registrar. Los resultados de entregas anteriores mantienen su fuente propia.
+Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29). CI de push y PR correctas; staging protegida verificada en cuatro idiomas, 127 recetas y 19 recursos. Pasan 16 recorridos y ocho controles de Inicio publicados. [Evidencia final](design/v3-intake/reports/verification.json). Los resultados de entregas anteriores mantienen su fuente propia.
 
 ## Qué funciona en la app
 
@@ -42,7 +42,7 @@ El nuevo motor de [recepción segura](referencias/recetas/V3/README_CODEX.md) un
 - Consulta npm sin avisos conocidos y comprobación Expo correctas con `~58.0.26`; esto no garantiza ausencia absoluta de vulnerabilidades.
 - **24 regresiones locales de menús** correctas. La matriz local de **60 casos de recorridos e Inicio** terminó correctamente, sin fallos, omisiones o intermitencias.
 - Exportaciones web, iOS y Android correctas, con tamaños y hashes por artefacto registrados en la [evidencia local](design/v3-intake/reports/local-preparation.json). El JavaScript web conserva el SHA-256 `e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592`.
-- Publicación del commit, CI y staging de esta candidata pendientes. No se presentan las pruebas de otras fuentes como nuevas ejecuciones.
+- CI de push 44503332195 y PR 44503457652 correctas. Staging `dpl_9GyW8ij3xX4dgZtw7Q3F1jwH2v1K`, READY/protegida, con HTTPS y recorridos publicados comprobados. Acceso temporal por conversación hasta 20/11/2026 10:13:38 UTC; sin credencial en Git.
 
 El propietario informó de que la app funciona en su iPhone. Ese reporte no incluye modelo ni casos detallados y se conserva separado de una matriz física completa, una aprobación estética o una distribución nativa firmada.
 
@@ -56,7 +56,7 @@ El plan identifica **20 ramas superadas y una duplicada**, retirables después d
 
 ## Siguiente entrega
 
-Publicar un PR contra main con la matriz local y los artefactos comprobados, y verificar su CI y preview protegida. La activación de las 150 recetas con fotos requiere completar la entrega y validar su integración técnica; no requiere otra aprobación del texto. Las instrucciones de [recepción V3](referencias/recetas/V3/README_CODEX.md) evitan mezclar paquetes, rutas y hashes entre perfiles.
+Revisar el PR #29 y obtener la autorización explícita de integración antes de fusionarlo en main. La limpieza autorizada de 21 ramas queda preparada con respaldo y cotejo de SHA; todavía no se ha ejecutado. La activación de las 150 recetas con fotos requiere completar la entrega y validar su integración técnica; no requiere otra aprobación del texto. Las instrucciones de [recepción V3](referencias/recetas/V3/README_CODEX.md) evitan mezclar paquetes, rutas y hashes entre perfiles.
 
 Las entregas anteriores y sus límites conservan sus informes: [B05.1](docs/MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md), [B05.2](docs/MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md) y [guía iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md).
 

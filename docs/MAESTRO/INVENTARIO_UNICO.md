@@ -8,7 +8,7 @@ El propietario autorizó las **150 recetas** el 17/11. Las fuentes V83 están pu
 
 Recepción: **150 IDs/750 fichas, 12 fotos verificadas y 138 pendientes**. Runtime: **120 V83 + 7 anteriores = 127**, todavía sin activar el catálogo completo. La puerta actual de las 150 es técnica —entrega completa e integración probada— y no una nueva aprobación del propietario.
 
-La candidata `codex/recepcion-v3-segura-2026-11-18` reúne la app del PR #27 y las fuentes del PR #28. TypeScript, 1.549 unitarias, 110 Python —59 nuevas—, npm y compatibilidad Expo `~58.0.26` correctos; 24 casos locales de menús correctos, 60 casos de recorridos/Inicio en curso. Exportaciones de tres plataformas generadas, con registro final de hashes pendiente. Commit, CI y staging nuevos aún pendientes. [Alcance y respaldo verificable](CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md).
+La candidata `codex/recepcion-v3-segura-2026-11-18` reúne la app del PR #27 y las fuentes del PR #28. TypeScript, 1.549 unitarias, 110 Python —59 nuevas—, npm y compatibilidad Expo `~58.0.26` correctos; 24 casos locales de menús y 60 de recorridos/Inicio correctos. Exportaciones de tres plataformas verificadas y hashes registrados. Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), CI push/PR correctas. Staging protegida: cuatro idiomas/127 recetas/19 recursos HTTPS y 16+8 casos publicados correctos. [Cierre](../../design/v3-intake/reports/verification.json). Main y producción conservados; 21 retiradas preparadas y cero ramas eliminadas. [Alcance y respaldo verificable](CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md).
 
 ## Origen y nomenclaturas
 
