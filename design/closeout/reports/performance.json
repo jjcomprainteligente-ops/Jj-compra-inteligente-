@@ -1,0 +1,649 @@
+{
+  "generatedAt": "2026-11-13T14:03:14.049444+00:00",
+  "baseCommit": "5795f299e35186f372c325299d8a6828993df720",
+  "branch": "codex/cierre-seguridad-y-calidad",
+  "publication": {
+    "githubCommit": null,
+    "remoteCiRun": null,
+    "vercelDeployment": null,
+    "status": "pending; publication evidence belongs to the subsequent release record"
+  },
+  "privacy": "Only fixed route names, durations, resource byte counts, language and CSS size. No names, notes, prices, identifiers, account/session data or persistent browser state in this report; no telemetry service or network destination.",
+  "startedAt": "2026-11-12T20:56:07.201Z",
+  "status": "passed",
+  "compiled": {
+    "entry": "/_expo/static/js/web/index-00b521b280e7ed8c9f25567d3aa22889.js",
+    "decodedBytes": 5159213,
+    "sha256": "349e6e981b1d1894fd2deb18da3f0321b4e9e8c436879a9eb628c173c636b4eb"
+  },
+  "method": "Chromium loopback export, isolated empty browser context per run; automation action-to-ready timings include browser/automation overhead. Shared cloud CPU and OS caches are uncontrolled. Not physical iPhone, real-network or Web Vitals certification.",
+  "repetitions": 3,
+  "runs": [
+    {
+      "language": "es",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 2625.39,
+        "create_list": 1366.08,
+        "open_catalogue": 543.39,
+        "open_recipe": 495.97,
+        "review_ingredients": 278.59,
+        "save_reviewed_ingredients": 626.76,
+        "reload_saved_list": 1666.21
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 2706.81,
+        "create_list": 1082.16,
+        "open_catalogue": 492.77,
+        "open_recipe": 372.92,
+        "review_ingredients": 322.61,
+        "save_reviewed_ingredients": 915.88,
+        "reload_saved_list": 1885.43
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 4141.15,
+        "create_list": 1021.41,
+        "open_catalogue": 290.9,
+        "open_recipe": 852.73,
+        "review_ingredients": 376.86,
+        "save_reviewed_ingredients": 773.61,
+        "reload_saved_list": 2024.59
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 5686.42,
+        "create_list": 1416.05,
+        "open_catalogue": 407.51,
+        "open_recipe": 490.06,
+        "review_ingredients": 529.78,
+        "save_reviewed_ingredients": 783.87,
+        "reload_saved_list": 2232.8
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 300,
+        "decodedBodyBytes": 490784
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 6365.4,
+        "create_list": 1466.6,
+        "open_catalogue": 481.75,
+        "open_recipe": 628.81,
+        "review_ingredients": 585.06,
+        "save_reviewed_ingredients": 1082.99,
+        "reload_saved_list": 2387.43
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 3102.63,
+        "create_list": 1425.11,
+        "open_catalogue": 273.67,
+        "open_recipe": 502.37,
+        "review_ingredients": 539.75,
+        "save_reviewed_ingredients": 620.12,
+        "reload_saved_list": 2481.43
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 3164.86,
+        "create_list": 1097.24,
+        "open_catalogue": 398.19,
+        "open_recipe": 507.2,
+        "review_ingredients": 367.64,
+        "save_reviewed_ingredients": 616.08,
+        "reload_saved_list": 2116.86
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 4317.43,
+        "create_list": 1091.38,
+        "open_catalogue": 409.14,
+        "open_recipe": 418.28,
+        "review_ingredients": 373.65,
+        "save_reviewed_ingredients": 540.34,
+        "reload_saved_list": 1191.78
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 4805.81,
+        "create_list": 1141.19,
+        "open_catalogue": 346.69,
+        "open_recipe": 626.02,
+        "review_ingredients": 592.85,
+        "save_reviewed_ingredients": 398.78,
+        "reload_saved_list": 2181.51
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 3817.33,
+        "create_list": 959.03,
+        "open_catalogue": 416.26,
+        "open_recipe": 462.5,
+        "review_ingredients": 415.67,
+        "save_reviewed_ingredients": 347.42,
+        "reload_saved_list": 1768.03
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 5031.26,
+        "create_list": 980.47,
+        "open_catalogue": 227.4,
+        "open_recipe": 402.59,
+        "review_ingredients": 469.65,
+        "save_reviewed_ingredients": 694.17,
+        "reload_saved_list": 1731.25
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 4907.2,
+        "create_list": 1609.84,
+        "open_catalogue": 486.69,
+        "open_recipe": 444.62,
+        "review_ingredients": 975.66,
+        "save_reviewed_ingredients": 890.06,
+        "reload_saved_list": 3144.37
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 5025.69,
+        "create_list": 1405.63,
+        "open_catalogue": 281.61,
+        "open_recipe": 390.88,
+        "review_ingredients": 800.72,
+        "save_reviewed_ingredients": 641.38,
+        "reload_saved_list": 2012.54
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 4096.69,
+        "create_list": 676.58,
+        "open_catalogue": 303.44,
+        "open_recipe": 186.78,
+        "review_ingredients": 203.49,
+        "save_reviewed_ingredients": 462.1,
+        "reload_saved_list": 1525.24
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "es",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 3223.74,
+        "create_list": 732.91,
+        "open_catalogue": 256.5,
+        "open_recipe": 333.19,
+        "review_ingredients": 583.66,
+        "save_reviewed_ingredients": 435.92,
+        "reload_saved_list": 1683.45
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 3196.57,
+        "create_list": 588.67,
+        "open_catalogue": 214.26,
+        "open_recipe": 364.57,
+        "review_ingredients": 279.58,
+        "save_reviewed_ingredients": 534.43,
+        "reload_saved_list": 1595.59
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 3486.19,
+        "create_list": 814.37,
+        "open_catalogue": 192.75,
+        "open_recipe": 188.46,
+        "review_ingredients": 130.16,
+        "save_reviewed_ingredients": 686.16,
+        "reload_saved_list": 931.33
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "en",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 2405.82,
+        "create_list": 752.34,
+        "open_catalogue": 183.71,
+        "open_recipe": 306.36,
+        "review_ingredients": 259.57,
+        "save_reviewed_ingredients": 304.47,
+        "reload_saved_list": 1291.43
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 2189.28,
+        "create_list": 817.13,
+        "open_catalogue": 202.05,
+        "open_recipe": 305.12,
+        "review_ingredients": 217.98,
+        "save_reviewed_ingredients": 285.87,
+        "reload_saved_list": 1020.07
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 2095.15,
+        "create_list": 1467.14,
+        "open_catalogue": 381.09,
+        "open_recipe": 635.35,
+        "review_ingredients": 370.02,
+        "save_reviewed_ingredients": 807.85,
+        "reload_saved_list": 1599.05
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "de",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 3677.29,
+        "create_list": 766.46,
+        "open_catalogue": 428.13,
+        "open_recipe": 488.68,
+        "review_ingredients": 271.16,
+        "save_reviewed_ingredients": 514.12,
+        "reload_saved_list": 1219.68
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 1,
+      "timings": {
+        "export_to_welcome": 2453.59,
+        "create_list": 974.66,
+        "open_catalogue": 210.35,
+        "open_recipe": 313.44,
+        "review_ingredients": 197.63,
+        "save_reviewed_ingredients": 414.22,
+        "reload_saved_list": 1756.52
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 2,
+      "timings": {
+        "export_to_welcome": 2818.43,
+        "create_list": 979.07,
+        "open_catalogue": 254.44,
+        "open_recipe": 305.93,
+        "review_ingredients": 275.5,
+        "save_reviewed_ingredients": 512.87,
+        "reload_saved_list": 1364.16
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    },
+    {
+      "language": "fr",
+      "viewport": {
+        "width": 430,
+        "height": 932
+      },
+      "repetition": 3,
+      "timings": {
+        "export_to_welcome": 2038.67,
+        "create_list": 620.51,
+        "open_catalogue": 605.53,
+        "open_recipe": 195.58,
+        "review_ingredients": 197.87,
+        "save_reviewed_ingredients": 524.42,
+        "reload_saved_list": 1454.27
+      },
+      "resourcesAfterReload": {
+        "count": 6,
+        "transferBytes": 0,
+        "decodedBodyBytes": 5649997
+      },
+      "passed": true
+    }
+  ],
+  "summaries": [
+    {
+      "action": "export_to_welcome",
+      "samples": 24,
+      "minimumMs": 2038.67,
+      "medianMs": 3486.19,
+      "p95Ms": 5686.42,
+      "maximumMs": 6365.4
+    },
+    {
+      "action": "create_list",
+      "samples": 24,
+      "minimumMs": 588.67,
+      "medianMs": 1021.41,
+      "p95Ms": 1467.14,
+      "maximumMs": 1609.84
+    },
+    {
+      "action": "open_catalogue",
+      "samples": 24,
+      "minimumMs": 183.71,
+      "medianMs": 346.69,
+      "p95Ms": 543.39,
+      "maximumMs": 605.53
+    },
+    {
+      "action": "open_recipe",
+      "samples": 24,
+      "minimumMs": 186.78,
+      "medianMs": 418.28,
+      "p95Ms": 635.35,
+      "maximumMs": 852.73
+    },
+    {
+      "action": "review_ingredients",
+      "samples": 24,
+      "minimumMs": 130.16,
+      "medianMs": 370.02,
+      "p95Ms": 800.72,
+      "maximumMs": 975.66
+    },
+    {
+      "action": "save_reviewed_ingredients",
+      "samples": 24,
+      "minimumMs": 285.87,
+      "medianMs": 616.08,
+      "p95Ms": 915.88,
+      "maximumMs": 1082.99
+    },
+    {
+      "action": "reload_saved_list",
+      "samples": 24,
+      "minimumMs": 931.33,
+      "medianMs": 1731.25,
+      "p95Ms": 2481.43,
+      "maximumMs": 3144.37
+    }
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-12T21:00:12.826Z",
+  "provenance": {
+    "compiledWebSha256": "349e6e981b1d1894fd2deb18da3f0321b4e9e8c436879a9eb628c173c636b4eb",
+    "finalCompiledWebSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+    "appliesTo": "Pre-final-minWidth44 export only; not relabeled as a benchmark of the final bundle.",
+    "sourceEvidence": {
+      "artifact": "report.json",
+      "sha256": "d2ecd438bc20956c0059d2f5bb688f01393bfb8e7e2dbfb358b09d1f8c535377",
+      "rawEvidencePublished": false
+    }
+  },
+  "limits": [
+    "Local action-to-ready timings include automation overhead and shared cloud CPU.",
+    "No real network, production load, Core Web Vitals, actual native device or physical iPhone performance certification."
+  ]
+}

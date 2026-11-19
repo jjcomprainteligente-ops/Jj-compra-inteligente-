@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "statistics": {
+    "startTime": "2026-11-14T15:44:15.070Z",
+    "duration": 556201.6540000001,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "passed": 16,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "logicalScreenshots": 120,
+  "logicalJourneyReports": 16,
+  "rawResultsSha256": "5d1f6c6c3c808df6975e0ed72367c878d2eb58522a6f0d96efd30b3339bdd75a",
+  "physicalIPhone": false
+}

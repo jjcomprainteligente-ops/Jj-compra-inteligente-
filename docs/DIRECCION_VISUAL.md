@@ -1,4 +1,40 @@
+# Dirección visual vigente | JJ Compra Inteligente
+
+**Referencia actual · 13/11/2026:** Verde Mercado Premium / GPT-6 V2. Se conserva la dirección aprobada y el trabajo ya construido; el Bloque 01 maestro organiza la base y no rediseña pantallas, logotipo ni marca.
+
+## Fuente y activos que prevalecen
+
+- Kit V2 recuperado: 16 vistas canónicas y nueve estados de referencia. [Manifiesto de originales](../referencias/gpt6-v2/MANIFIESTO_RECEPCION_2026-10-31.json).
+- PNG oficial utilizado: [jj-logo-horizontal.png](../assets/brand/jj-logo-horizontal.png), 936×330, SHA-256 `ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596`.
+- Manrope, cabecera verde y navegación con acento amarillo aplicadas sobre cuatro pestañas: Inicio / Mi compra / Ahorro / Menús. Perfil por avatar; tiendas y notificaciones como subpantallas.
+- [Entrega V2](V2_ENTREGA_V01_V02_Y_AUDITORIA.md) y [revisión de calidad](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md) con sus fechas y alcance. El [inventario maestro](MAESTRO/INVENTARIO_UNICO.md) registra aceptación y pendientes.
+
+La denominación antigua «V2 Verde Noche» y la elección inicial «V3/M3 provisional» pertenecen a estudios anteriores. No sustituyen GPT-6 V2 ni justifican recrear el logo. SVG, isotipo, iconos derivados y 3D requieren una fase de revisión visual separada.
+
+## Aceptación que continúa pendiente
+
+La existencia de tokens, capturas, 16 vistas o pruebas de contraste no equivale a aprobación estética completa. Se deben contrastar las pantallas ejecutables con la referencia, documentar diferencias y probar legibilidad, teclado, lectores, safe areas y tamaños de texto en dispositivo. Las nueve tarjetas de estados están identificadas como ejemplos; no acreditan por sí solas servicios o permisos reales.
+
+Las fotografías definitivas por receta no están integradas y sus originales históricos no se han localizado entre los materiales accesibles. Primero se recuperan y comprueban por ID, calidad, procedencia y derechos; no se genera una sustitución por conveniencia.
+
+## Observación de las versiones publicadas · 14/11/2026
+
+Las capturas de lectura 375/430 muestran producción entrando a Inicio con monograma JJ antiguo y tipografía visible distinta; staging entra a Bienvenida con el PNG oficial. Son estados iniciales diferentes. No constituyen comparación píxel a píxel, aprobación estética ni evidencia de pérdida de listas. El código de la candidata conserva exactamente el bundle anterior C3f; esta consolidación documental no rediseña la app. [Registro de comparación](../design/master-integration/reports/production-comparison.json).
+
+## Historial documental conservado
+
+La sección siguiente conserva las decisiones y propuestas originales. Sus rótulos «vigente» tienen alcance histórico a su fecha: no reabren selección de rutas visuales, M3 ni exploración de marca durante este bloque.
+
+<details>
+<summary>ARCHIVO_HISTORICO — Dirección visual anterior a la consolidación documental del Bloque 01</summary>
+
 # Dirección de arte y sistema visual | JJ Compra Inteligente
+
+> **Correspondencia pendiente:** los tokens y el PNG oficial están aplicados, pero la composición y el mapa completo de pantallas/estados no están cerrados. La fuente activa es V2 y la [auditoría integral](AUDITORIA_COMPLETITUD_V2.md) define los pendientes; conservar los diseños históricos sin convertirlos en aprobaciones del trabajo nuevo.
+
+
+> **Prioridad vigente 06/11/2026:** referencias recuperadas y logo 2D exacto integrados en la base V2. Tokens canónicos del contrato V2, cabecera verde y navegación amarilla aplicados a las vistas existentes. Véase [entrega V01/V02](V2_ENTREGA_V01_V02_Y_AUDITORIA.md). La revisión visual del propietario y las funciones ausentes siguen pendientes. Las declaraciones de falta de originales y M3 provisional que siguen son históricas.
+
 
 > **Prioridad vigente — 31/10/2026:** el propietario solicita que la implementación corresponda a la maqueta GPT-6 V2 / Verde Mercado Premium entregada posteriormente. La app actual todavía conserva V3/M3 y no cumple esa correspondencia. Consultar [conciliación V2](V2_CONCILIACION_VISUAL_2026-10-31.md): los originales y el logo exacto deben recuperarse antes de corregir la UI. Las decisiones y alternativas antiguas que siguen se conservan como antecedentes, no como sustituto de GPT-6 V2. «V2 Verde Noche» del estudio B01 es una propuesta diferente.
 
@@ -72,3 +108,5 @@ Estos valores requieren comprobación de contraste por Codex; `#167347` sobre bl
 
 ## Lo que no queremos
 Una pantalla que parezca plantilla SaaS, un muro de tarjetas idénticas, 8 tonos verdes sin jerarquía, un enorme chat ocupando toda la portada, banners de ofertas inventadas, cifras sin fuente, modales repetitivos, fotografías decorativas sin utilidad, logotipo genérico de carrito + hoja.
+
+</details>

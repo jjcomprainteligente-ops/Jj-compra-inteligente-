@@ -1,0 +1,69 @@
+{
+  "auditCompleted": true,
+  "auditOnly": true,
+  "noApplicationChanges": true,
+  "noDatabaseChanges": true,
+  "noProductionChanges": true,
+  "noNewPreviewForB06": true,
+  "sourceBranch": "producto/b06-fuentes-precios-y-acuerdos-2026-11-12",
+  "sourceCommit": "95686b3ac4541f7179ee7cfd858be97628d4be99",
+  "issue": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/issues/17",
+  "window": {
+    "from": "2026-11-07",
+    "to": "2026-11-13",
+    "rule": "Observation dates less than 7 calendar days old, inclusive; source dates have no time."
+  },
+  "sources": [
+    {
+      "id": "tutandem",
+      "state": "needs_review",
+      "enabled": false,
+      "currentTenerifePvpStatus": "blocked",
+      "reason": "Declared CC BY 4.0 permits commercial reuse of published aggregate data, but feed last observation 2026-11-03 is stale by 10 days and has no exact-store/geographic/GTIN information. Source provenance rights not independently confirmed with retailers.",
+      "proposedHistoricalUse": {
+        "priceKind": "AGGREGATE_MEDIAN",
+        "scope": "SPAIN_AGGREGATE",
+        "freshness": "STALE",
+        "adapterCouldBeConsideredAfterReview": true,
+        "localBasketOrNearbyRankingAllowed": false
+      },
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "tuTándem, precios del súper — https://tutandem.es/datos; CC BY 4.0; indicate transformations.",
+      "commercialReuseDeclared": true,
+      "automaticPublicDatasetAccess": "Public download URLs published on official data portal; no retailer requests made.",
+      "retailerWrittenPermissionIndependentlyVerified": false,
+      "usableTenerifePricesLessThan7Days": 0
+    },
+    {
+      "id": "open-prices",
+      "state": "needs_review",
+      "enabled": false,
+      "currentTenerifePvpStatus": "blocked",
+      "reason": "Documented public API works and database is published under ODbL, but measured recent Tenerife coverage is 0; 27 observations are historical. Database separation/attribution/ODbL derived-data offer must be designed and reviewed before integration.",
+      "license": "ODbL (official Open Prices guide); ODbL 1.0 terms inspected",
+      "licenseUrl": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "commercialReuseAllowedSubjectToConditions": true,
+      "conditions": [
+        "Credit Open Prices/Open Food Facts and retain source/license notices.",
+        "Publicly used derivative databases must use ODbL/later similar or compatible license (4.4).",
+        "Offer the derivative database or alterations/method in machine-readable form for public use as applicable (4.6).",
+        "Do not combine incompatible non-free commercial data in an ODbL derived database; separate source snapshots and legal scopes.",
+        "Database ODbL does not itself grant image/individual contents rights; no proof photos were downloaded or republished."
+      ],
+      "codeLicenseNotDataLicense": "OpenAPI info AGPL-3.0 describes API implementation, not the data license.",
+      "usableTenerifePricesLessThan7Days": 0,
+      "historicalObservations": 27,
+      "locations": 7
+    }
+  ],
+  "limits": [
+    "Counts are for the public API and daily export snapshot at recorded times, not a guarantee about all unpublished, future, deleted or unlocatable contributions.",
+    "Recent window uses observation dates 2026-11-07 through 2026-11-13 inclusive; update date and proof creation date do not substitute for observation date.",
+    "Circle can include sea or part of another island; every one of the 27 returned rows was cross-checked against location coordinates, ES country, Tenerife postal scope and place metadata.",
+    "Daily locations export last-modified 2026-11-12 23:11:30 UTC; its seven Tenerife candidates and summed 27 price_count match live results. Newly added unlocated places outside this snapshot are not inferred.",
+    "Postal digits alone are insufficient: 259 foreign locations share 38000–38699; country and coordinates were checked.",
+    "Zero observed usable prices is not a claim that supermarkets have zero products or that every possible source has no prices.",
+    "This audit does not approve B06.2 implementation or a local cheapest-basket claim."
+  ]
+}

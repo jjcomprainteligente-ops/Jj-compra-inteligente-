@@ -1,0 +1,175 @@
+{
+  "coreSource": {
+    "commit": "e1c3cfbb87d2f71cc16b91f83d8e3b3c11311e38",
+    "prRunId": 43740593411,
+    "pushRunId": 43740572473,
+    "jobId": 132892668370,
+    "conclusion": "success",
+    "completedAt": "2026-11-15T17:21:52Z",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check out source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Use Node.js 24",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install reviewed lockfile without lifecycle scripts",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Reproduce the public recipe selection",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install pinned photo-audit tooling in an isolated environment",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check catalogue privacy and photo reception",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check types",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run unit tests with bounded workers",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Audit dependencies",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify Expo compatibility",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Build the web application",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Use Node.js 24",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Check out source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "releaseSource": {
+    "commit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+    "prRunId": 43742182685,
+    "pushRunId": 43742036925,
+    "jobId": 132897543513,
+    "conclusion": "success",
+    "completedAt": "2026-11-15T17:38:50Z",
+    "steps": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check out source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Use Node.js 24",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install reviewed lockfile without lifecycle scripts",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Reproduce the public recipe selection",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install pinned photo-audit tooling in an isolated environment",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check catalogue privacy and photo reception",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check types",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run unit tests with bounded workers",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Audit dependencies",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify Expo compatibility",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Build the web application",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Use Node.js 24",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Post Check out source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "localUnitTestsPassed": 1081,
+  "pythonTestsPassed": 51,
+  "note": "Counts are anchored to the local reviewed suites; both source CI jobs completed every recorded step successfully. The documentary close has its own later CI run."
+}

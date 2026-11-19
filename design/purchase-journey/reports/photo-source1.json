@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "EXECUTION_ON_SOURCE_1_ONLY",
+  "sourceCommit": "e1c3cfbb87d2f71cc16b91f83d8e3b3c11311e38",
+  "sourceTree": "f49464ccbfada5cee764647acdaaa321c23e89c2",
+  "sourceBinding": {
+    "entries": 100,
+    "matchedAgainstGitShow": 100,
+    "mismatches": 0,
+    "inputManifestSha256": "ae7b04998c647b2b3cdedd6ef599964808e1540d1a108cd68be7b2872a8ae541",
+    "verificationMethod": "SHA-256 of git show <sourceCommit>:<relative path>; not working-tree comparison"
+  },
+  "testedExport": {
+    "path": "dist-bloque05-ready/_expo/static/js/web/index-f2c41fc4bc5c238673c0225987bb29ff.js",
+    "bytes": 5193983,
+    "sha256": "874d16458ee6e3248fae67fa23f9dd8fbafbc5717c928ab0b19555c28df081d5"
+  },
+  "releaseSourceCommit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+  "claimedAsReleaseSourceExecution": false,
+  "releaseDifference": {
+    "changedApplicationInputs": [
+      "src/app/components/ui.tsx"
+    ],
+    "unchangedApplicationInputs": 99,
+    "note": "The release adds a conditional no-icon Button layout change. These runs remain attributed to their actual earlier source; the final layout verification is recorded separately."
+  },
+  "startedAtUtc": "2026-11-15T17:15:35.891Z",
+  "durationMs": 171652.186,
+  "totalCases": 20,
+  "passed": 20,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "retryAttempts": 0,
+  "runnerErrors": 0,
+  "rawReportSha256": "8bd4e5c30ffd5ebdf8422a2c78f9882720a0c0e47eb633d0c617d3b116d2dd5e",
+  "projects": [
+    "chromium-375",
+    "chromium-430",
+    "chromium-desktop",
+    "webkit-375",
+    "webkit-430"
+  ],
+  "physicalIPhoneValidated": false,
+  "nativeAppValidated": false,
+  "rawEvidencePublished": false,
+  "cases": [
+    {
+      "title": "photo-status.spec.ts / es / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8364,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / es / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7899,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / es / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7539,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / es / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7703,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / es / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9727,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / en / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5742,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / en / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7184,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / en / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6976,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / en / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 10306,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / en / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8368,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / de / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7220,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / de / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6887,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / de / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7898,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / de / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7338,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / de / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7894,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / fr / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6551,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / fr / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6756,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / fr / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "chromium-desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7128,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / fr / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-375",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6703,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "photo-status.spec.ts / fr / pending photo is readable without image requests or writes, in legacy and V83 details",
+      "project": "webkit-430",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9481,
+      "resultStatuses": [
+        "passed"
+      ]
+    }
+  ],
+  "scope": [
+    "Pending-photo labels in four languages",
+    "Legacy and V83 recipe details",
+    "Visible and accessible text at tested viewports",
+    "No recipe image requests during details",
+    "Seven business documents preserved"
+  ],
+  "uiLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ]
+}

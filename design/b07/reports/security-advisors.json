@@ -1,0 +1,14 @@
+{
+  "checkedAt": "2026-11-11T18:16:13.509489+00:00",
+  "errorCount": 0,
+  "warningCount": 0,
+  "information": [
+    {
+      "name": "rls_enabled_no_policy",
+      "count": 10,
+      "reason": "Private metadata intentionally default-denied; no client policies or grants are needed. Do not add permissive policies to silence this INFO.",
+      "remediation": "https://supabase.com/docs/guides/database/database-linter?lint=0008_rls_enabled_no_policy"
+    }
+  ],
+  "scope": "Provider advisories, not a certification of application security or an executed behavioral matrix."
+}

@@ -1,0 +1,113 @@
+{
+  "format": "jj-b07-proposal",
+  "version": 1,
+  "status": "draft-not-implemented",
+  "date": "2026-11-11",
+  "activeConnectionsCreated": 0,
+  "appArchitectureModified": false,
+  "providerCandidate": "Supabase Auth and PostgreSQL with RLS; JJ API",
+  "approvalRequiredBeforeActivation": [
+    "provider-project-and-owner",
+    "region-data-processing-and-retention",
+    "authentication-and-email-provider",
+    "verified-plan-quotas-and-spending-limit"
+  ],
+  "scope": {
+    "shared": ["shopping-list-name", "item-name", "quantity-milli", "unit", "category-code", "checked-state"],
+    "neverAutomaticallyUploaded": ["notes", "prices", "budget", "expenses", "recipes", "dietary-preferences", "store-favourites", "notifications", "language", "raw-local-backups"],
+    "existingLocalDocumentsPreserved": 7,
+    "paymentWithinJJ": false
+  },
+  "roles": {
+    "visitor": [],
+    "pending": ["read-own-membership-request"],
+    "member": ["read-active-household", "read-lists", "mutate-lists-and-items-with-revision", "export-readable-shared-data", "leave-household"],
+    "owner": ["read-active-household", "read-lists", "mutate-lists-and-items-with-revision", "export-readable-shared-data", "create-and-revoke-invitation", "approve-and-reject-member", "revoke-member", "request-and-confirm-ownership-transfer", "delete-household-with-reauthentication"]
+  },
+  "authorization": {
+    "identity": "verified-session and auth.uid()",
+    "dataChecks": ["active-account", "active-app-session", "active-household", "active-membership", "current-membership-epoch", "resource-belongs-to-household"],
+    "clientSuppliedUserOrRoleGrantsAccess": false,
+    "ordinaryOperationsUseServiceRole": false,
+    "directBusinessDMLForAuthenticated": false,
+    "anonymousHouseholdAccess": false,
+    "sessionRevocationCheckedBelowBFF": true
+  },
+  "constraints": {
+    "quantityMilli": {"integer": true, "minimum": 1, "maximum": 1000000000},
+    "units": ["ud", "g", "kg", "ml", "L"],
+    "wholeUnitsRequireMilliMultiple": 1000,
+    "compositeForeignKeyPreventsCrossHouseholdItems": true,
+    "roles": ["owner", "member"],
+    "membershipStates": ["pending", "active", "revoked"],
+    "ownerCountPerActiveHousehold": 1
+  },
+  "operationEnvelope": {
+    "idempotencyKey": "client-generated UUID stable for reviewed operation",
+    "householdId": "UUID checked against current membership",
+    "membershipEpoch": "server-issued version; stale or revoked epochs rejected",
+    "resourceId": "UUID checked against household and collection",
+    "expectedRevision": "positive server revision for mutation of existing resource",
+    "payload": "only operation allowlisted fields",
+    "actorId": "derived by server, never accepted as authority from payload"
+  },
+  "operations": [
+    {"name": "create_household", "actor": "authenticated-user", "transaction": true, "result": "household plus sole owner membership"},
+    {"name": "create_invitation", "actor": "active-owner", "transaction": true, "result": "single-display token; only hash stored"},
+    {"name": "revoke_invitation", "actor": "active-owner", "transaction": true, "result": "invitation unusable and pending request invalidated before membership activation"},
+    {"name": "redeem_invitation", "actor": "authenticated-user", "transaction": true, "result": "pending membership request; no shared-data access"},
+    {"name": "approve_membership", "actor": "active-owner", "transaction": true, "result": "active member epoch"},
+    {"name": "reject_membership", "actor": "active-owner", "transaction": true, "result": "pending request rejected without granting any shared-data access"},
+    {"name": "revoke_membership", "actor": "active-owner", "transaction": true, "result": "revoked membership and advanced epoch"},
+    {"name": "begin_ownership_transfer", "actor": "active-owner-with-recent-auth", "transaction": true, "result": "pending transfer to existing active member"},
+    {"name": "accept_ownership_transfer", "actor": "named-active-recipient-with-recent-auth", "transaction": true, "result": "exactly one new owner; previous owner becomes member"},
+    {"name": "create_list", "actor": "active-member", "transaction": true, "result": "idempotent list and receipt"},
+    {"name": "rename_list", "actor": "active-member", "transaction": true, "result": "list renamed at expected collection revision or explicit conflict"},
+    {"name": "mutate_item", "actor": "active-member", "transaction": true, "result": "new item/list revision or explicit conflict"},
+    {"name": "delete_list", "actor": "active-member", "transaction": true, "result": "list and item tombstones; no future item mutation"},
+    {"name": "import_reviewed_local_lists", "actor": "active-member", "transaction": true, "result": "single committed batch, remote ID map and receipt"},
+    {"name": "read_operation_receipt", "actor": "same-active-actor-in-household", "transaction": false, "result": "current-authorized minimal operation status"},
+    {"name": "export_readable_shared_data", "actor": "active-member", "transaction": false, "result": "bounded versioned export without secrets or private member data"},
+    {"name": "leave_household", "actor": "active-non-owner-member", "transaction": true, "result": "revoked own membership"},
+    {"name": "revoke_app_session", "actor": "authenticated-session-owner", "transaction": true, "result": "session denied at API and data policy"},
+    {"name": "delete_own_account", "actor": "same-user-with-recent-auth", "transaction": false, "workflow": "idempotent checked database steps and separate provider operation; never cross-service atomicity", "result": "account locked for deletion, sole-owner precondition and limited recovery receipt; completion only after all confirmed steps"},
+    {"name": "delete_household", "actor": "active-owner-with-recent-auth-and-confirmation", "transaction": true, "result": "household inaccessible immediately; explicit purge policy applies"}
+  ],
+  "invitation": {
+    "tokenBytes": 32,
+    "generator": "server cryptographically secure random",
+    "storedToken": "SHA-256 only",
+    "proposedTtlHours": 24,
+    "singleUse": true,
+    "urlTokenLocation": "fragment cleared before external resources",
+    "automaticEmailDelivery": false,
+    "ownerApprovalBeforeMembershipActivation": true,
+    "recheckIssuerAuthorityAtRedemption": true
+  },
+  "mutationOutcomes": [
+    "committed-with-new-revision-and-receipt",
+    "conflict-with-reviewed-current-version",
+    "same-key-same-payload-prior-receipt-after-current-authorization",
+    "same-key-different-payload-rejected",
+    "forbidden-no-resource-content",
+    "pending-confirmation-after-uncertain-network-result"
+  ],
+  "offline": {
+    "outboxPartition": ["user-id", "household-id", "membership-epoch"],
+    "pendingIsNotServerSaved": true,
+    "recheckAuthorizationBeforeReplay": true,
+    "rejoinAutomaticallyReplaysOldEpoch": false,
+    "tombstonedItemCanBeRecreatedWithSameId": false,
+    "minimalDeletedIdLedgerWhileHouseholdActive": true,
+    "closedHouseholdIdCanBeSuppliedToCreateHousehold": false,
+    "purgeAndOutboxAgePolicy": "must be approved and tested before activation; no deleted-ID purge until older operations are deterministically rejected"
+  },
+  "validation": {
+    "schemaAndContractsReviewedOnly": true,
+    "postgresCreated": false,
+    "rlsExecuted": false,
+    "providerPricingVerified": false,
+    "physicalDevicesTested": false,
+    "requiredMatrix": ["visitor", "member-A-on-A", "member-A-on-B", "pending-invite", "revoked-member-valid-JWT", "closed-session-valid-JWT", "parallel-redeem", "parallel-edit", "network-result-uncertain", "same-key-different-payload", "rejoin-old-epoch", "migration-local-map-failure", "delete-member-not-other-data", "delete-sole-owner", "export-without-secrets"]
+  }
+}

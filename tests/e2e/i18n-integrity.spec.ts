@@ -302,6 +302,7 @@ test('completar bienvenida y elegir idioma conserva ambos campos o rechaza un co
   const other = await context.newPage();
   await other.goto('/');
   await expect(page.getByTestId('start-app')).toBeVisible();
+  if (!await other.getByTestId('language-fr').isVisible()) await other.getByTestId('welcome-language-toggle').click();
   await expect(other.getByTestId('language-fr')).toBeVisible();
   await page.evaluate(async key => {
     let release!: () => void;

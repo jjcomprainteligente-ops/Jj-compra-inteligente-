@@ -1,0 +1,42 @@
+{
+  "checkedAtUtc": "2026-11-14T20:45:48.546646+00:00",
+  "mode": "READ_ONLY_INDEPENDENT_REVIEW",
+  "pythonPhotoCasesPassed": 32,
+  "failed": 0,
+  "skipped": 0,
+  "pillowVersion": "13.0.0",
+  "minimumDecoderGuardVerified": "13.0.0",
+  "actualPublicManifest": {
+    "schemaVersion": 1,
+    "scope": "ACTIVE_127",
+    "recipeIds": 127,
+    "missingOriginals": 127,
+    "candidateOriginals": 0,
+    "readyForManualApproval": 0,
+    "automaticallyApproved": 0,
+    "imagesPublished": 0,
+    "imageBytesModified": false,
+    "licenseOrVisualMatchCertifiedByTool": false
+  },
+  "heldIdsPresentInPublicPhotoManifest": false,
+  "requireReadyRejectsMissingManifest": true,
+  "additionalSyntheticAdversarialChecks": {
+    "validPNG_JPEG_WEBPAcceptedAsPending": true,
+    "trailingPayloadRejectedInAllThreeFormats": true,
+    "webpShortAndLongRiffLengthRejected": true
+  },
+  "remainingBlockingFindings": [],
+  "projectSourceFilesEdited": false,
+  "realPhotographsUsed": false,
+  "limitations": [
+    "No original recipe photographs were supplied or inspected by this review.",
+    "License and visual references are records for manual review, never tool certification.",
+    "This verifies only reception tooling; no app rendering, actual matching or publication is established."
+  ],
+  "sha256": {
+    "scripts/validate-recipe-photos.py": "bea5737a9d9e5c152fb0b67547871ff0d8a594cd459ea77f577f83f44ba89e54",
+    "tests/python/test_recipe_photos.py": "ee000ce42d33e33797d674ed90bdce3356b2f2110eba86bfefc3e43200c34c12",
+    "scripts/requirements-photo-audit.txt": "f744c5bfedd8376a1cc04b964a0a543e8a96faa2f3045df5d3be611c1f6814f8",
+    "referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json": "7b85cd9134a90b57db57c8b1f6dc06407589680e94f9bf8a5eadd9d68e1efc3b"
+  }
+}

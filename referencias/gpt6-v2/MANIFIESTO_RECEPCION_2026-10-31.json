@@ -1,0 +1,387 @@
+[
+  {
+    "original": "referencias/gpt6-v2/originales/1-JJ_Logo_2D_3D_Para_Codex.zip",
+    "bytes": 2005922,
+    "sha256": "47367717fb3b2d8884e5efb0c5711e7b3562d8763212ffe05057f2907a27cd7f",
+    "files": [
+      {
+        "path": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/03_BRIEF_CODEx_LOGO_INTERACTIVO.md",
+        "bytes": 7083,
+        "sha256": "2c5a6a581693cfb36db59d97b56f2367a564f51c51f991a47c9a7d6d857fc4ff"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/02_PROPUESTA_VISUAL_2D_3D.png",
+        "bytes": 1938737,
+        "sha256": "2cea0db6a97678850ee53d1a5cf9cb553815d03ddff882a6988fb9c6b6066ae5"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/01_LOGO_ELEGIDO_REFERENCIA.jpg",
+        "bytes": 179756,
+        "sha256": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0"
+      }
+    ]
+  },
+  {
+    "original": "referencias/gpt6-v2/originales/2-AUDITORIA_V2_VERIFICACION.pdf",
+    "bytes": 751567,
+    "sha256": "c1e7902c6f58a558d68037a70c0039ee02c9eb1c30a6aa14f0fe48d6913537fb",
+    "files": []
+  },
+  {
+    "original": "referencias/gpt6-v2/originales/3-JJ_Compra_Inteligente_Fase2_Corregida_Auditoria_V2_Codex.zip",
+    "bytes": 2265848,
+    "sha256": "3b3a8628300b078073a98756bcfc5ef0df0554099fb2e76821b8c5c21d8e9f0a",
+    "files": [
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/ICONO_REFERENCIA_NO_APROBADO_PARA_PRODUCCION.png",
+        "bytes": 62976,
+        "sha256": "385a1647e9971d78354472ce435cbef79a6e0797235ab8f0a8c31d64fac5ee45"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/LOGO_HORIZONTAL_RECORTADO_DE_ORIGINAL.png",
+        "bytes": 255528,
+        "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/LOGO_USUARIO_FUENTE_INALTERADA.jpg",
+        "bytes": 179756,
+        "sha256": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/MANIFIESTO_VISUAL.json",
+        "bytes": 609,
+        "sha256": "9bf9b370895ed16480c2bc56a02042410007c9223b2fcb423a1e1d30d3dea283"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/01_bienvenida.png",
+        "bytes": 53046,
+        "sha256": "e43447d43806ad6bf09590e7c5fd50c78d79558f870e28e390b5226218e374a0"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/02_inicio.png",
+        "bytes": 34402,
+        "sha256": "412c6288e9732b11b7b666f2b8cb8702ff4e85e31ce868c15d58a80f3ca2d4b3"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/03_mi_compra.png",
+        "bytes": 36911,
+        "sha256": "42124478648506bfad23ff6219de6d2a04e78943396febccbda48aa46e79e469"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/04_ahorro.png",
+        "bytes": 29632,
+        "sha256": "b494178ab5ed7f5b2e71ca65beefc24aa2d49f486ee738c9c7da2e6b2401c0dd"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/05_menus.png",
+        "bytes": 36461,
+        "sha256": "3384499358e798c2195bb056283e0398b10bc1ba5282023f0e2e775bb68b51f1"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/06_detalle_receta.png",
+        "bytes": 27482,
+        "sha256": "3180ae06e562f39de50cb11eac191c9bbb42432f7a327b223295f631211edb33"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/07_ingredientes.png",
+        "bytes": 31179,
+        "sha256": "18916f484c1e7aff76d1dfb18e216eb7617272f5228b1a4c56a1793569a8ffef"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/08_buscar_producto.png",
+        "bytes": 30951,
+        "sha256": "1fda7d9e584fe35162517c53a7beb8ca706e970af4b78c9baeabcb936425424e"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/09_detalle_producto.png",
+        "bytes": 27980,
+        "sha256": "c756605970932d8419dbf42228338ea2a9f8b798499afd1ec662c49c958aa043"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/10_voz.png",
+        "bytes": 27491,
+        "sha256": "43701681603cc81a6331b15cd9dca2116ea047456ef5410560ad78c39b7f21fa"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/11_escaner.png",
+        "bytes": 21043,
+        "sha256": "9f65c7b1f298fe3b674cfb37d449a7588ad6b1bcff92347019b0a0fac2ec6a64"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/12_mis_tiendas.png",
+        "bytes": 31641,
+        "sha256": "b0d3ddaaf40942210a6ce5bd17f1716d3062165c287965effa6144d5d57f9246"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/13_presupuesto.png",
+        "bytes": 29638,
+        "sha256": "74a225980939707029e8f447a9ff61337c8db8e6a045641dee12be876e3070d4"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/14_historial.png",
+        "bytes": 24802,
+        "sha256": "70d5b60255917032415895d474ebf622aaa7f6488e15da32796e779c903838b4"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/15_perfil_hogar.png",
+        "bytes": 33080,
+        "sha256": "654b2fce42064b3be1454292940843d68638b84a175b4f8987158dbaa5fc6ee5"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/16_notificaciones.png",
+        "bytes": 30471,
+        "sha256": "3844a668388facef830ea63b7534f841472ee737330176c61534ebc01e72c5cd"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/01_lista_vacia.png",
+        "bytes": 16670,
+        "sha256": "fdfb3d61f21eb79f4fa207a4be1e53c7a6b4b95083e3436094ebedfb5dad32e5"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/02_sin_precios.png",
+        "bytes": 18518,
+        "sha256": "dd09e68c9ff035dc06018f657f9920634e05dd70e60d1fd486f5983501fa1500"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/03_sin_conexion.png",
+        "bytes": 17558,
+        "sha256": "132dd741e9d28071c3c5f57ff76e868fdd9c0bd86d1e9563a69e2b97694ab01d"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/04_error_red.png",
+        "bytes": 16831,
+        "sha256": "6a4e0b33c2558c56669e8e2b2000da5c2f636003084c6e40aa47043f0efe85ee"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/05_permiso_micro.png",
+        "bytes": 18516,
+        "sha256": "010e45fd672d02447d07f684ea20c6836c58751d8c9f08000027261cdebb766e"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/06_permiso_camara.png",
+        "bytes": 18024,
+        "sha256": "da87d58c97462feb017b6a1756854b1ee849866e8cb297304bfbeb2fc4227899"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/07_sin_barcode.png",
+        "bytes": 18514,
+        "sha256": "5f124f4cc1bbc5ccaa17d329f1e3cdd700ae688f08c4e22903b838d3425d51e3"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/08_conflicto_producto.png",
+        "bytes": 18091,
+        "sha256": "1071b2176985aec021ce9ddf6b7574d51347c5b552abcaae3516dc4c4bf9053b"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/09_confirmacion.png",
+        "bytes": 16077,
+        "sha256": "891ee161a6aa5225ba1b9603866b33450c845e43d1a0a9dd65109f514325fd0f"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/00_LEER_PRIMERO.md",
+        "bytes": 1537,
+        "sha256": "43b814f285965c0898acd6f1050542e344ee549122405ce2552f798f5722faef"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/01_MATRIZ_18_CORRECCIONES.md",
+        "bytes": 4174,
+        "sha256": "d884eb45ed7359f557b86244b63c4057b20087432c863d13fab642ccb12805e0"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/02_CONTRATO_VISUAL_DATOS.md",
+        "bytes": 2934,
+        "sha256": "87ac9007f2039b5494b1d39531a703174adf4320be5140b44ecc3a58dd32d3d7"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/03_B03_14_ESTADOS_Y_ERRORES.md",
+        "bytes": 939,
+        "sha256": "6600c06edbd3f0355c65f394fb2963bdfcfa3734548f351709cb5507e1b58b3c"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/04_FLUJOS_16_PANTALLAS.md",
+        "bytes": 1211,
+        "sha256": "dd8e212250fa1346b5cac05a0b3b5a56c8fd36d93f1da2577f5e353fc3451e94"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/05_ENCARGO_CODEX_EN_LOTES.md",
+        "bytes": 1935,
+        "sha256": "8d3fda902e5628d3d649b7601927f2651345c0fac1be948dcbd7019240710178"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/06_AUDITORIA_V2_RESULTADOS.json",
+        "bytes": 702,
+        "sha256": "7c85a7cae2656d83b4e71d7ac85f57967b18eb1609b82f74154619c3a79f5f96"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/07_SEGUNDA_AUDITORIA_INDEPENDIENTE.md",
+        "bytes": 1780,
+        "sha256": "1c04c26d16ad22ce5f60a45bc7fc4d97a23aa3453e28edcc7dc0257943607fa4"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/AUDITORIA_V2_VERIFICACION.pdf",
+        "bytes": 751567,
+        "sha256": "c1e7902c6f58a558d68037a70c0039ee02c9eb1c30a6aa14f0fe48d6913537fb"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/JJ_16_PANTALLAS_CANONICAS_V2.png",
+        "bytes": 460932,
+        "sha256": "4e2fe83e2991f17296e57a19f70a73bdb6641178dae0537c01814e2158dd2ebc"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/v2/JJ_B03_14_9_ESTADOS_V2.png",
+        "bytes": 128332,
+        "sha256": "d914616849ed094b88da51480e5022af0a91884daca67c3a24c39f683f6ea8f9"
+      }
+    ]
+  },
+  {
+    "original": "referencias/gpt6-v2/originales/4-JJ_16_PANTALLAS_CANONICAS_V2.png",
+    "bytes": 460932,
+    "sha256": "4e2fe83e2991f17296e57a19f70a73bdb6641178dae0537c01814e2158dd2ebc",
+    "files": []
+  },
+  {
+    "original": "referencias/gpt6-v2/originales/5-JJ_Compra_Inteligente_B02_Estilo_Premium.zip",
+    "bytes": 1917529,
+    "sha256": "2f113093d48a26194a09fd07be1a65c02653dec88caad6c978fac85afde859dd",
+    "files": [
+      {
+        "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/02_DIRECCION_PREMIUM_Y_BLOQUE_CODEX.md",
+        "bytes": 7315,
+        "sha256": "316aa59905ee156d326d396ab01aebfc306d5969bd2314bde4c3f32f156d5cbc"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/01_MOODBOARD_PREMIUM_REFERENCIA.png",
+        "bytes": 1852556,
+        "sha256": "a95e5f8e47ca1e045b43457368c45913598f27747e9be1667d489e76396b8a20"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/00_LOGO_OFICIAL_APROBADO.jpg",
+        "bytes": 179756,
+        "sha256": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/README.txt",
+        "bytes": 433,
+        "sha256": "eda3a99ce30d62c0f189fc4e20917e7363da7a0ec068597fcfa5e89ab4dda94c"
+      }
+    ]
+  },
+  {
+    "original": "referencias/gpt6-v2/originales/6-JJ_Compra_Inteligente_Kit_Codex_Fase2.zip",
+    "bytes": 276043,
+    "sha256": "7ce7023fe109176135996171b386b7afc65a6780472b27231c605bf8eb909390",
+    "files": [
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B05_MENUS_E_IA.md",
+        "bytes": 1173,
+        "sha256": "f02d71ef724ad0f2457f7fd3a7a6e67264e405ad4feb35b8063bcdc8fe3697b3"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B04_LISTA_Y_PRESUPUESTO.md",
+        "bytes": 1072,
+        "sha256": "fcac031a65b9b42d9399e84e3a539c19bc4b298a94a3f6df4b754d04eb2a3577"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B00_AUDITORIA.md",
+        "bytes": 1578,
+        "sha256": "8d6d15e13b1174e8ae1b0a736aff6dfee969b4505de3e366d05761a61d5a7e5e"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B01_IDENTIDAD_VISUAL.md",
+        "bytes": 1791,
+        "sha256": "a43f94e589a5fbc43d95c4aa5abd417202eb4b9309c3d11274dedc23ec31c413"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B08_QA_PILOTO.md",
+        "bytes": 1160,
+        "sha256": "ea3bf102483c5f84e0817742bd5e69cea1cb768849098976f19de1c9882b54db"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B02_PANTALLAS_UX.md",
+        "bytes": 1663,
+        "sha256": "c5b85b3287579d7195504cabb5ad21dc30e11c2e5c6bf228e8dd8ec74228da33"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B09_COMERCIO.md",
+        "bytes": 1071,
+        "sha256": "1a968285151ba8d404795ea60d596c73f0435c65f0a7d1235c2038800c967ac1"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B07_HOGAR_Y_CUENTAS.md",
+        "bytes": 921,
+        "sha256": "a56c7ec135dd610ffbdda220dad214516efdcde2931de6dc328d7102d1293f0b"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B06_COMPARADOR_PRECIOS.md",
+        "bytes": 1045,
+        "sha256": "5c70053ad3de5ec444ab8cf67e7d47f67ebf33780ac6911742eed1d44ad71fb7"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B03_PROTOTIPO_IPHONE.md",
+        "bytes": 1552,
+        "sha256": "ee74b4a3f95c57500b18a91f82e041399979d57443235016d785b3122c932adc"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/PRODUCTO_Y_ALCANCE.md",
+        "bytes": 3394,
+        "sha256": "9c0717755bd97ee86ec4a4e5f49eaeab6f44cbc798ed25c07bf839b36ab22575"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/PLAN_Y_ESTADOS.md",
+        "bytes": 2667,
+        "sha256": "957bb6d82bd3e021e24c025e346488ec4f372020bcd93c70ba313d347d5c079c"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/DIRECCION_VISUAL.md",
+        "bytes": 5731,
+        "sha256": "f3f5f9dfa59cd5e41fc84ce6cec577eab5ecb1a4dc0f8f087233e81e8ba68590"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/PANTALLAS_Y_FLUJOS.md",
+        "bytes": 4604,
+        "sha256": "1b645bb082b447de525330b37e389fd2de5a7da0813ca20c60650e601d84b931"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/CHECKLIST_CALIDAD.md",
+        "bytes": 2373,
+        "sha256": "ae956165d7f8ccc5e8c2dee06b2a7610017b3bee767e3402e05e0d273bfcfa58"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/DECISIONES_Y_RIESGOS.md",
+        "bytes": 3027,
+        "sha256": "45e2c959211d56ea9cdc9f6a3dc1afd5691f243a51e38cbe8fb2b704aa89611f"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/PRIMER_MENSAJE_PARA_CODEX.md",
+        "bytes": 1972,
+        "sha256": "f3949f728bba9ddd83232a679199e06771a2b48ce5d1c1ad03486647604d5ce9"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/AGENTS.md",
+        "bytes": 2632,
+        "sha256": "db92fade98d1dfacd23a7e02012bdcdf35e9c06b44335d1f8d53b3b0fe1c2488"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Fase2_Brief_Codex.md",
+        "bytes": 5872,
+        "sha256": "0acfacb0c47fdf908031ee5b33238e03f9d5e9297e70907e3b0dea84451ddf60"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Tres_Conceptos.png",
+        "bytes": 194093,
+        "sha256": "936e95a1b62e41987f4a88f9a341f50f13c0063d23f35bfe6c679508f49b9dba"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Fase_2_Estudio_y_Diseno.pdf",
+        "bytes": 83384,
+        "sha256": "751d25c0fb5ba919a03b73876d99e5b531ce6ceee3c98757cc7c50f60acf32e3"
+      },
+      {
+        "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/README_EMPEZAR_AQUI.md",
+        "bytes": 3551,
+        "sha256": "d8b96ecf602097a7ee9528db180ea0790dd3b3e2290f357fd1ab68798426db6a"
+      }
+    ]
+  }
+]

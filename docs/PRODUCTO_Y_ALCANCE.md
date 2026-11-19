@@ -1,6 +1,8 @@
 # Producto, visión y límites | JJ Compra Inteligente
 **Versión:** 1.0 | 29-10-2026
 
+> **Decisión vigente del propietario · 10/11/2026:** JJ prepara recetas, listas, presupuestos/gastos y comparación con una, varias o todas las tiendas elegidas. Compra y pago siempre en el comercio externo, mediante su web/app o presencialmente; no se habilitará cobro dentro de JJ. Los futuros acuerdos se centrarán en acceso a datos y enlaces permitidos. Esta decisión prevalece sobre cualquier propuesta histórica de pagos integrados. Véase [piloto de tiendas y precios](PILOTO_TIENDAS_Y_PRECIOS_2026-11-10.md).
+
 ## Visión
 JJ ayuda a hogares de Tenerife a planificar comidas, transformar necesidades en listas, controlar gastos y, cuando sea posible, comparar productos de forma transparente. Debe ser útil incluso sin un supermercado integrado.
 

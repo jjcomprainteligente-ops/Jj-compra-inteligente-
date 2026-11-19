@@ -35,6 +35,17 @@ class MemoryBackend implements WriteFenceBackend {
 afterEach(() => { vi.unstubAllGlobals(); });
 
 describe('durable write fences', () => {
+  it.each(['jjcompraintelwgiemt.expenses.v1', 'jjcompraintelwgiemt.local-settings.v1'])('protects the new local store %s through its full durable cycle', async storageKey => {
+    const backend = new MemoryBackend();
+    const fence = createWriteFence(backend);
+    await fence.check(storageKey, previous);
+    const claim = await fence.claim(storageKey, previous, proposed);
+    await fence.commit(claim, proposed);
+    await expect(fence.check(storageKey, proposed)).resolves.toBeUndefined();
+    await expect(fence.claim(storageKey, previous, actual)).rejects.toMatchObject({ kind: 'conflict' });
+    expect(backend.records.get(storageKey)).toEqual({ version: 1, status: 'committed', signature: proposed });
+  });
+
   it('hashes canonical strings with SHA-256 rather than retaining business payloads', async () => {
     expect(await hashWriteSignature('abc')).toBe('ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad');
     expect(await hashWriteSignature('œufs €')).toMatch(/^[a-f0-9]{64}$/);

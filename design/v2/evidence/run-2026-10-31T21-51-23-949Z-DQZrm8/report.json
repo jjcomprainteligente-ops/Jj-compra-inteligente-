@@ -1,0 +1,62 @@
+{
+  "startedAt": "2026-10-31T21:51:23.950Z",
+  "finishedAt": "2026-10-31T21:51:59.549Z",
+  "origin": "http://127.0.0.1:8081",
+  "export": "dist-v2",
+  "method": "Chromium browser contexts at CSS 375×667, 430×932 and 1280×1000; not physical iPhone, native iOS or Safari",
+  "scope": "Entire Playwright suite against the V2 web export: existing functional regressions, isolated es/en/de/fr flows and 120 visual-health captures; not pixel-level design approval",
+  "data": "Fictional names, shops and prices in isolated browser storage; no commercial verification",
+  "nativeChecksPending": [
+    "Physical iPhone and Android",
+    "VoiceOver/TalkBack",
+    "Dynamic Type",
+    "Native keyboard, gestures and safe areas"
+  ],
+  "suite": {
+    "exitCode": 130,
+    "signal": null
+  },
+  "suiteStatistics": {
+    "startTime": "2026-10-31T21:51:24.476Z",
+    "duration": 34876.214,
+    "expected": 20,
+    "skipped": 116,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suitePassed": false,
+  "resultsReadError": null,
+  "interrupted": true,
+  "completeMatrix": false,
+  "screenshots": 0,
+  "runtimeErrors": [],
+  "failedVisualChecks": [],
+  "protectedArtifactsUnchanged": true,
+  "protectedArtifacts": {
+    "before": {
+      "dist-v2": "5afd547eae340e50f66dc5df7a8f2fc5f36218dcf4db2acb7af0ca1035bfdd62",
+      "dist": "bf8cfc61332ff5c259eae1efb279d1aa60b4e91bb3dbedf4b12749d20729ba2f",
+      "dist-i18n": "b95a6808b5283834e7329f5be16ca2b73bd9f45f15432653769c234b20ffdb04",
+      "design/b01": "d06968be1fd253726bbbd3a2a4d397b0598a4eac7b2e47d06388f73a5be33672",
+      "design/b02": "e252d0fa46cb04fe46e8976f2beb614214b54068f8c94561f79b066f0596a277",
+      "design/b03-b04": "451b32a4ad1c0c26fd4e5ce097a6801f2e0fbba5fe97ee4b36c4135c2579234f",
+      "design/b05": "0ffb267777603077d8271383d8ce399407fff8d3f08e83ea12e3a59af5968932",
+      "design/b06": "5fd99885853e896740c62e263fabfcc3cf49b9153c7b7fb4e891a7f9816b2fe0",
+      "design/i18n": "62b3bf182c4abec2bc0184277355a6ac62979425dbd558f2e8844a9e9625425b",
+      "referencias/gpt6-v2": "4a384bf41b4732a33c1dc71a418373f0ca2c97e665ffe2adfb655240a00b6495"
+    },
+    "after": {
+      "dist-v2": "5afd547eae340e50f66dc5df7a8f2fc5f36218dcf4db2acb7af0ca1035bfdd62",
+      "dist": "bf8cfc61332ff5c259eae1efb279d1aa60b4e91bb3dbedf4b12749d20729ba2f",
+      "dist-i18n": "b95a6808b5283834e7329f5be16ca2b73bd9f45f15432653769c234b20ffdb04",
+      "design/b01": "d06968be1fd253726bbbd3a2a4d397b0598a4eac7b2e47d06388f73a5be33672",
+      "design/b02": "e252d0fa46cb04fe46e8976f2beb614214b54068f8c94561f79b066f0596a277",
+      "design/b03-b04": "451b32a4ad1c0c26fd4e5ce097a6801f2e0fbba5fe97ee4b36c4135c2579234f",
+      "design/b05": "0ffb267777603077d8271383d8ce399407fff8d3f08e83ea12e3a59af5968932",
+      "design/b06": "5fd99885853e896740c62e263fabfcc3cf49b9153c7b7fb4e891a7f9816b2fe0",
+      "design/i18n": "62b3bf182c4abec2bc0184277355a6ac62979425dbd558f2e8844a9e9625425b",
+      "referencias/gpt6-v2": "4a384bf41b4732a33c1dc71a418373f0ca2c97e665ffe2adfb655240a00b6495"
+    }
+  },
+  "reports": []
+}

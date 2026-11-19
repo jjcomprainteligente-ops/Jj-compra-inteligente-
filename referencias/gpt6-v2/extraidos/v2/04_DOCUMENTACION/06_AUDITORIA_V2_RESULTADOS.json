@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-30",
+  "audit_type": "documental/visual estática",
+  "18_issues": {
+    "resolved_in_design_or_docs": 12,
+    "pending_runtime_or_approval": 6
+  },
+  "logo_original_byte_identical": true,
+  "screen_png_count": 16,
+  "b0314_state_png_count": 9,
+  "canonical_4_tabs": [
+    "Inicio",
+    "Mi compra",
+    "Ahorro",
+    "Menús"
+  ],
+  "screen_dimensions_all_374x754": true,
+  "contrast_reference_ratios": {
+    "titular_verde_sobre_crema": 11.3,
+    "texto_secundario_sobre_crema": 5.41,
+    "blanco_en_verde_accion": 5.87,
+    "texto_verde_en_amarillo": 8.3
+  },
+  "note": "La auditoría no verifica el código ni que un iPhone funcione; no hay datos de supermercado conectados."
+}

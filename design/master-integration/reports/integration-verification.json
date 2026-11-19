@@ -1,0 +1,81 @@
+{
+  "updatedAtUtc": "2026-11-14T10:00:33.781877+00:00",
+  "block": "01",
+  "status": "EN_CURSO_EXTERNAL_BACKUP_PENDING",
+  "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+  "sourceTree": "84b422cd55dcb6688bdf16f514a0105f370b4639",
+  "canonicalBranch": "codex/integracion-maestra-2026-11-13",
+  "recoveryCommit": "abb3bca53953e4523af61118e375df90d1a8d416",
+  "recoveryBranch": "codex/respaldo-base-2026-11-13",
+  "mainPreserved": "d22d66eff03c5d107f5170ee38cd2bc3167865e2",
+  "appInputsMatched": 159,
+  "applicationOrDependencyChanges": false,
+  "unitBaseline": {
+    "commit": "abb3bca53953e4523af61118e375df90d1a8d416",
+    "passed": 981,
+    "failed": 0,
+    "skipped": 0,
+    "files": 27,
+    "report": "baseline-existing-app.json"
+  },
+  "ci": {
+    "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+    "run": 43514500031,
+    "conclusion": "success",
+    "report": "github-actions.json"
+  },
+  "browser": {
+    "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+    "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+    "chromium": {
+      "passed": 298,
+      "failed": 0,
+      "skipped": 24,
+      "reason": "unchanged suite duplicate captures",
+      "report": "chromium-regression.json"
+    },
+    "webkit": {
+      "passed": 16,
+      "failed": 0,
+      "skipped": 0,
+      "report": "webkit-regression.json"
+    }
+  },
+  "hosted": {
+    "status": "passed",
+    "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+    "deployment": "dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg",
+    "languages": 4,
+    "resourcesOrUrls": 29,
+    "checkedAtUtc": "2026-11-14T09:58:27.247Z",
+    "report": "deployment.json"
+  },
+  "dataPreserved": {
+    "runtimeRecipes": 127,
+    "v83Runtime": 120,
+    "legacy": 7,
+    "sourcePrivateIds": 150,
+    "sourcePrivateTranslations": 750,
+    "heldRecipes": 30,
+    "localBusinessDocuments": 7,
+    "uiLanguages": 4,
+    "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+  },
+  "backup": {
+    "localCopyAndRestoreVerified": true,
+    "independentBackupVerified": false,
+    "report": "../../../docs/MAESTRO/RESPALDO_ESTADO_PUBLICO.json",
+    "requiredInput": "Private external destination or evidence of downloaded copy is still pending; continuing work is not confirmation of that copy."
+  },
+  "nextAction": "Verify a private independent backup before changing application code. Do not open the next block automatically.",
+  "limits": [
+    "Full browser regression belongs to source784; later documentary closure is not another browser execution.",
+    "No physical iPhone acceptance, no signed native build and no production promotion.",
+    "Historical source documentation does not activate price feeds or approve missing recipe photographs."
+  ],
+  "environmentNotes": [
+    "The initial isolated npm installation hit an execution-sandbox EPERM at the registry; the same npm ci --ignore-scripts command passed with permitted execution. This was not counted as an application test failure.",
+    "Official Playwright WebKit build2370 was installed in a private cache and used existing Debian libraries through an isolated QA wrapper; no application dependencies or system packages were changed.",
+    "No assertions, coverage, timeouts or retry rules were weakened to obtain the recorded results."
+  ]
+}

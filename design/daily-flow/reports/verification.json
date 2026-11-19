@@ -1,0 +1,127 @@
+{
+  "checkedAtUtc": "2026-11-14T12:00:20.070463+00:00",
+  "sourceCommit": "61793e4833c702a6294eedde1f778cd80dfc074f",
+  "sourceTree": "9d1065b6e6cdbb66581b4f53dd7f227a5294eace",
+  "sourceBranch": "codex/bloque02-receta-primero-2026-11-14",
+  "githubPullRequest": 22,
+  "baseBranch": "codex/integracion-maestra-2026-11-13",
+  "baseCommit": "1942a714c322a032185645df142ad1d3eac32646",
+  "applicationChanged": false,
+  "p0AppFixesRequired": [],
+  "newAcceptanceCases": 3,
+  "languages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "projects": [
+    "chromium-desktop",
+    "webkit-375",
+    "webkit-430"
+  ],
+  "local": {
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "logicalScreenshots": 180
+  },
+  "hosted": {
+    "passed": 36,
+    "failed": 0,
+    "skipped": 0,
+    "flaky": 0,
+    "logicalScreenshots": 180
+  },
+  "typecheckPassed": true,
+  "unit": {
+    "passed": 981,
+    "failed": 0,
+    "skipped": 0,
+    "files": 27,
+    "method": "Local command executed 2026-11-14 11:42 UTC; new browser cases do not change unit count."
+  },
+  "publicImporterPassed": true,
+  "npmKnownAdvisories": 0,
+  "ciRunId": 43591993356,
+  "ciConclusion": "success",
+  "hostedResources": {
+    "languages": 4,
+    "catalogue": 127,
+    "resourcesOrUrls": 29
+  },
+  "deployment": {
+    "id": "dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ",
+    "state": "READY",
+    "target": "staging",
+    "protectionEnabled": true,
+    "expiresUtc": "2026-11-15T10:52:36Z"
+  },
+  "preservation": {
+    "existingInputsCompared": 159,
+    "allExistingInputsUnchanged": true,
+    "historicalBodiesByteIdentical": true,
+    "planDecisionsPolicyAppendOnly": true,
+    "privateOriginalUnchanged": true,
+    "privateOriginalStillIgnoredAndUntracked": true,
+    "officialLogoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+    "activeRecipes": 127,
+    "privateSourceRecipeIds": 150,
+    "activeLanguages": 4,
+    "businessDocuments": 7,
+    "productionPromoted": false,
+    "mainMerged": false,
+    "productionDeploymentIdUnchanged": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3"
+  },
+  "independentReview": {
+    "mode": "Separate read-only reviewer; no additional suite execution claimed",
+    "rawReportsHashesAndCountsVerified": true,
+    "logicalScreenshotsVerified": true,
+    "testAndConfigSha256Verified": true,
+    "all159ExistingInputsVerified": true,
+    "utf8JsonLinksAndSecretPatternsPassed": true,
+    "newPublicApplicationFilesIntroduced": false,
+    "meaning": "Only acceptance tests/configuration, documentation and sanitized evidence were added; app unchanged."
+  },
+  "auditCadence": {
+    "blocksReviewed": [
+      "01 technical base",
+      "02 daily-use QA"
+    ],
+    "newRegressionExecutionClaimedForPriorB01Suites": false,
+    "previousFullRegression": {
+      "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+      "chromiumPassed": 298,
+      "chromiumIntentionalSkips": 24,
+      "webkitPassed": 16,
+      "appInputsStillIdentical": 159
+    },
+    "currentSupplement": "Fresh 981 unit tests and 36 local/36 hosted B02 cases, storage/error/duplicate/privacy review; existing full suites remain evidence of their original source only."
+  },
+  "backup": {
+    "ownerConfirmedCopy": true,
+    "status": "OWNER_CONFIRMED_PROJECT_FOLDER",
+    "agentVerifiedRemoteCopy": false,
+    "independentBackupVerified": false,
+    "privateContentUploaded": false
+  },
+  "decision": "REQUIERE_PRUEBA_PROPIETARIO",
+  "blockState": "EN_CURSO",
+  "physicalIPhone": false,
+  "nextAction": "Run the Safari iPhone guide and record results; do not open Bloque03 automatically.",
+  "reportSha256": {
+    "local-acceptance.json": "838de69ff744358b4c0d7c921660f9c650df9b3b73144539a516b00c339f5109",
+    "hosted-acceptance.json": "edb94c93d126f36bad9d16583e7978eeda3dcb38672ba7e4fe57d05b529dead2",
+    "hosted-resources.json": "ff42ffdfd65354f948c022371f593dc68b57468649c945507aca6697edd21b58",
+    "deployment.json": "d702d9ace1281fd1a684e76ba88b249fb83ac7ce71bf5eb932a719193cc2c6e2",
+    "github-actions.json": "dc1a58b5755155dbd252b48b20396844011f714d97f5e10fda3fee0bb39ce75f"
+  },
+  "limits": [
+    "WebKit Linux is not Safari or a physical iPhone.",
+    "Same-context page close/reopen with connection; no native restart or cold offline installation claimed.",
+    "Geometry excludes form text internals, on-screen keyboard and VoiceOver.",
+    "Translation resources locate UI controls; this is not independent language certification.",
+    "Private share URLs, screenshots, traces and raw browser reports remain excluded from public GitHub/Vercel."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "origin": "https://jj-compra-inteligente-8ag2xpk4x-cmj2hwhc6b-1051.vercel.app",
+  "source": {
+    "commit": "3dbcff9435a6d2aad97e7766e2e38d0fabe790c7",
+    "tree": "b18a961b22ef80b97ea4b17ad417ace1c3f80a82",
+    "branch": "codex/v2-visual",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-"
+  },
+  "bundle": {
+    "file": "_expo/static/js/web/index-cea2dd8f30f8260306c19642725b58f9.js",
+    "size": 385119,
+    "sha1": "d286f24ae82d6003852c61ff0407359a42d877e3",
+    "sha256": "31df0f9b233ceba44f5891a75f60858d3b4218690a06a1748bc861218e3ed899",
+    "contentEncoding": "br",
+    "decodedSize": 3350985,
+    "decodedSha1": "a9879703cbc394e78cbdc26e2e7bdfd175ded889",
+    "decodedSha256": "08d9e75e028ea07d448f00b8061224cfc990506cc15f39a8c25d09070f8e690d"
+  },
+  "expectedLogoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+  "startedAt": "2026-11-06T19:03:33.758Z",
+  "status": "failed",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+  "languageChecks": [],
+  "files": [],
+  "errors": [
+    "Expected font did not load: Manrope_600SemiBold"
+  ],
+  "finishedAt": "2026-11-06T19:03:37.421Z"
+}

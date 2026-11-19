@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { RECIPES } from '../src/data/recipes';
+import { RECIPES, LEGACY_RECIPES } from '../src/data/recipes';
 import {
   canonicalMeasure, combineIngredients, createMealPlan, normalizeIngredientName,
   planIngredients, replaceMeal, scaleRecipe, validateMealPlan,
@@ -17,9 +17,9 @@ const recipe = (ingredients: ScaledIngredient[], baseServings = 2): Recipe => ({
 
 describe('catálogo local y menú de cinco cenas', () => {
   it('contiene siete recetas originales con cantidades editables y sin campos de precio', () => {
-    expect(RECIPES).toHaveLength(7);
-    expect(new Set(RECIPES.map(entry => entry.id)).size).toBe(7);
-    for (const entry of RECIPES) {
+    expect(LEGACY_RECIPES).toHaveLength(7);
+    expect(new Set(LEGACY_RECIPES.map(entry => entry.id)).size).toBe(7);
+    for (const entry of LEGACY_RECIPES) {
       expect(entry.baseServings).toBe(2);
       expect(entry.ingredients.length).toBeGreaterThanOrEqual(4);
       expect(entry.ingredients.length).toBeLessThanOrEqual(7);
@@ -54,6 +54,36 @@ describe('catálogo local y menú de cinco cenas', () => {
     { servings: 2, recipeIds: [...RECIPES.slice(0, 4).map(value => value.id), 'no-disponible'] },
     { servings: 2, recipeIds: [1, 2, 3, 4, 5] }])('rechaza menú corrupto o no disponible %j', value => {
     expect(() => validateMealPlan(value)).toThrow();
+  });
+
+  it.each([0, 1, 2, 3, 4])('rechaza un hueco en la posición %s sin convertirlo en una referencia vacía', index => {
+    const recipeIds = [...createMealPlan(2).recipeIds];
+    delete recipeIds[index];
+    const before = [...recipeIds];
+    expect(recipeIds).toHaveLength(5);
+    expect(() => validateMealPlan({ servings: 2, recipeIds })).toThrow();
+    expect(recipeIds).toEqual(before);
+    expect(Object.prototype.hasOwnProperty.call(recipeIds, index)).toBe(false);
+  });
+
+  it.each(['servings', 'recipeIds', 'both'] as const)('rechaza campos heredados: %s', inherited => {
+    const plan = createMealPlan(2);
+    const prototype = inherited === 'both' ? plan : { [inherited]: plan[inherited] };
+    const value = Object.create(prototype) as Record<string, unknown>;
+    if (inherited === 'servings') value.recipeIds = [...plan.recipeIds];
+    if (inherited === 'recipeIds') value.servings = plan.servings;
+    expect(() => validateMealPlan(value)).toThrow();
+    expect(plan).toEqual(createMealPlan(2));
+  });
+
+  it('admite campos propios en un documento sin prototipo y devuelve una copia independiente', () => {
+    const plan = createMealPlan(3);
+    const input = Object.assign(Object.create(null) as Record<string, unknown>, plan);
+    const restored = validateMealPlan(input);
+    expect(restored).toEqual(plan);
+    restored.recipeIds.reverse();
+    expect(input.recipeIds).toEqual(plan.recipeIds);
+    expect(plan).toEqual(createMealPlan(3));
   });
 
   it('permite sustituir una cena, pero nunca duplica ni muta el plan anterior', () => {

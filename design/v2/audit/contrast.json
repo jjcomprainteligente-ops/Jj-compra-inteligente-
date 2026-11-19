@@ -1,0 +1,65 @@
+{
+  "scope": "Sampled canonical text/icon pairs, not full accessibility certification",
+  "pairs": [
+    {
+      "foreground": "white",
+      "background": "deep",
+      "ratio": 11.858,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "white",
+      "background": "primary",
+      "ratio": 5.87,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "ink",
+      "background": "white",
+      "ratio": 11.965,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "ink",
+      "background": "cream",
+      "ratio": 11.3,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "muted",
+      "background": "white",
+      "ratio": 5.731,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "muted",
+      "background": "cream",
+      "ratio": 5.413,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "deep",
+      "background": "yellow",
+      "ratio": 8.227,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "primary",
+      "background": "paleYellow",
+      "ratio": 5.123,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "primary",
+      "background": "soft",
+      "ratio": 5.057,
+      "normalTextAA": true
+    },
+    {
+      "foreground": "danger",
+      "background": "white",
+      "ratio": 7.279,
+      "normalTextAA": true
+    }
+  ]
+}

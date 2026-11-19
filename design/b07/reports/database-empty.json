@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-11T18:13:43.710Z",
+  "row_counts": {
+    "items": 0,
+    "lists": 0,
+    "accounts": 0,
+    "auth_users": 0,
+    "households": 0,
+    "invitations": 0,
+    "memberships": 0,
+    "resource_ids": 0,
+    "auth_sessions": 0,
+    "migration_batches": 0,
+    "operation_receipts": 0,
+    "membership_requests": 0,
+    "ownership_transfers": 0,
+    "session_revocations": 0,
+    "household_namespaces": 0,
+    "account_deletion_jobs": 0
+  },
+  "client_inherits_reader": false,
+  "anon_inherits_reader": false
+}

@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "sourceVersion": "V83_CIERRE_LIGERO",
+  "integrity": {
+    "archiveSha256": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034",
+    "archiveBytes": 937580,
+    "suppliedManifestSha256": "60f368e60e016f75f62c85c56f8a54d40269bfb3a3c3d4b3451d6556ce32bd23",
+    "manifestEntriesVerified": 13,
+    "archiveFileCount": 14,
+    "catalogSha256": "57d209dc52ea9488477fde89c04ee6e21f8d36d8f793702990a0087eb59bb94e",
+    "embeddedWorkbookSha256": "dfa8e15c6471c862933eb5f6cd81fd1f9e00489f889088cf41f6fa18280c09a1",
+    "externalWorkbookIdentity": "Byte-identical to the separately supplied workbook; SHA-256 pinned in importer."
+  },
+  "sourceArchive": "referencias/recetas-v83/fuente-publica/JJ_V83_120_RECETAS_FUENTE_PUBLICA.zip",
+  "sourceRecipes": 150,
+  "sourceLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr",
+    "bg"
+  ],
+  "sourceLocalizedRecords": 750,
+  "publicSourceRecipes": 120,
+  "publicSourceLocalizedRecords": 600,
+  "publicSourceIntegrity": {
+    "sha256": "5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62",
+    "bytes": 639105,
+    "archiveFileCount": 2
+  },
+  "privateOriginalArchive": "referencias/recetas-v83/originales/JJ_V83_CIERRE_150_RECETAS_VERSION_LIGERA.zip",
+  "privateOriginalIgnoredByGit": true,
+  "originalSourceAuditScope": "The supplied 150-record archive and 13 manifest entries were verified during private ingestion. Public reproduction verifies only the selected 120 original records and their provenance; it does not re-run the unavailable full-source audit.",
+  "runtimeLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "runtimeRecipes": 120,
+  "runtimeUnknownPreparationTimes": 80,
+  "runtimeMeasuredIngredientLines": 1191,
+  "runtimeUnmeasuredIngredientLines": 3,
+  "runtimeSteps": 718,
+  "messageKeysPerLanguage": 2352,
+  "excludedRecipes": [
+    {
+      "id": "JJ-E03-011",
+      "positionCatalog": 11,
+      "recordSha256": "f7db2fbaa3da55bdd0d1ac4a221efd3582715e9210fde8df619381351f7b0ec2",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-012",
+      "positionCatalog": 12,
+      "recordSha256": "7c45e642cda31424e240f1f552caf2d4229fff144cb1b3f163f51d4bd27a0050",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-013",
+      "positionCatalog": 13,
+      "recordSha256": "9d5b4c6dcda51d59bfb43905e7c977c110524b828771cd98b073a333745e4e3c",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-014",
+      "positionCatalog": 14,
+      "recordSha256": "adf2410b98fce2d304e99fc3d225a325fc5472907b4aec5a0465469da4296447",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-015",
+      "positionCatalog": 15,
+      "recordSha256": "0b79353acb2e757344f681cde02c13a13affbb4f6ba3168108a0ca359cdb66d4",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-016",
+      "positionCatalog": 16,
+      "recordSha256": "311c11750c5c2a63fe79b2548919a62e8bd308d0132637e77ad229b696cff026",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-017",
+      "positionCatalog": 17,
+      "recordSha256": "4fb61ec88df7e0a8f2bcec0c8037da31628190d23940ca6f2cbd36db21163111",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-018",
+      "positionCatalog": 18,
+      "recordSha256": "93cb8a8fd7727f763f0ed6fb2cad2e879dff458c8b8af65e222d95441b3e8cc9",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-019",
+      "positionCatalog": 19,
+      "recordSha256": "3fbad7691e35efdb25419ebf07df91682419d9adbe15c89354b3a50fc1606b78",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E03-020",
+      "positionCatalog": 20,
+      "recordSha256": "b1bcd8553840529ac17c78aaccb2254bb898f45c9d76b03ab0cacc3b2ebe6f70",
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida."
+    },
+    {
+      "id": "JJ-E04-002",
+      "positionCatalog": 31,
+      "recordSha256": "93fd83d0437c0b915d2188ea0cad00fa51b39849764dd7d9b7f165fbf4fd87ee",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-007",
+      "positionCatalog": 32,
+      "recordSha256": "c41373fd469411c1f6c3053e1b2cb94daf1b9ff72afb217881f3df4fa82c8259",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-054",
+      "positionCatalog": 33,
+      "recordSha256": "c66d40a9bc610b6495b165088876e032a2696335ebf5fa1df9737ce5d3cccc62",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-060",
+      "positionCatalog": 34,
+      "recordSha256": "9153fc2a25502b48fba8eac21f5aafc6a764fa49c3eae7337349721d486ead05",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-106",
+      "positionCatalog": 35,
+      "recordSha256": "e653435ada46971a09ff69a3b1a9304958742d5c035e1ec7a03c7cb128b4b175",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-107",
+      "positionCatalog": 36,
+      "recordSha256": "8d1f72e74b69c115013c2644b33a0d170228c235882dffcf1b84eed2a9dc45be",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-129",
+      "positionCatalog": 37,
+      "recordSha256": "a297f168bc279a474a0b9f3faf772113831361be1be93aceadb181ff9c86028f",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-145",
+      "positionCatalog": 38,
+      "recordSha256": "6e57f59f94eb8d503fcf24405654de38416badbb82b8391a3dc1c317c8f34abf",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-152",
+      "positionCatalog": 39,
+      "recordSha256": "0617a2e972781fb67d4d65acd40e69cb5fe9460777f285bda7bd4d31d7da5df4",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-E04-174",
+      "positionCatalog": 40,
+      "recordSha256": "1e2f77620b33097cbb4e0cda2d001bcb7117dbb2a997a7fabb528bfd24681433",
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones."
+    },
+    {
+      "id": "JJ-R010",
+      "positionCatalog": 111,
+      "recordSha256": "f14701ac1a87626ed9514cf114dbd3fcf91d6270ca50da3b2089fa922781546d",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R011",
+      "positionCatalog": 112,
+      "recordSha256": "82047cf847a8723910091b5cb80fafa508dea55c97a4b9c4ed8364365765874a",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R012",
+      "positionCatalog": 113,
+      "recordSha256": "05c550d9c67d443cb9bf66755b3988db95bf072c4dcc505b0061d2720be1c8e9",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R013",
+      "positionCatalog": 114,
+      "recordSha256": "ffb7900a1762a3635fb80f6b4ae70971022d3efdc8ca0d75eb6cc1e9822ddf86",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R014",
+      "positionCatalog": 115,
+      "recordSha256": "247fc12d3ec3b42ddeb9cad93974f62c32e5a43088995df66266931ab1b27ed2",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R015",
+      "positionCatalog": 116,
+      "recordSha256": "e9b81515cb9c0420ac8a27d7f28d863e030482e7759498212aab255c802fc9ff",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R016",
+      "positionCatalog": 117,
+      "recordSha256": "e63fa92c73108e18906b78a407cd00127de2eae58d271833f7bcacc3d8cc977f",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R017",
+      "positionCatalog": 118,
+      "recordSha256": "a3f77122dd8e045d3f116e02817820b5ce2ab721e699555773a7fe5a902302e0",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R018",
+      "positionCatalog": 119,
+      "recordSha256": "5e30287de9b766c26912e7a32db7b055d86e0e7720663232695146a27312251c",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    },
+    {
+      "id": "JJ-R019",
+      "positionCatalog": 120,
+      "recordSha256": "f770da9dd0675d6a2d155f2cd564bcc25db0167d60597f08284a656bcae36a65",
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION."
+    }
+  ],
+  "excludedContentInRuntime": false,
+  "excludedContentInPublicSource": false,
+  "legacyRecipesRemovedOrRewritten": false,
+  "dietaryCertificationInferred": false,
+  "commercialPricesOrLabelsVerified": false,
+  "editorialProjection": {
+    "precedence": "Latest supplied editorial_notes_v58 prose, else v57; latest explicit rationale addenda only.",
+    "spanishRationaleFallback": "v78 rationale remains Spanish in every source language; UI labels that fallback explicitly in each language.",
+    "sourceStepsAndWarnings": "Preserved exactly in every active language; all warnings joined with two line feeds.",
+    "timeStages": "Declared stage ranges shown independently; never added to a fabricated total; localized steps remain the culinary source.",
+    "historicalMetadata": "Preserved in exact source ZIP, not promoted to current app certification."
+  },
+  "unitProjection": {
+    "directAliases": {
+      "g": "g",
+      "kg": "kg",
+      "ml": "ml",
+      "l": "L",
+      "L": "L",
+      "ud": "ud",
+      "unidad": "ud",
+      "unidades": "ud"
+    },
+    "countQualifiersSpanish": {
+      "diente": "diente",
+      "dientes": "diente",
+      "hoja": "hoja",
+      "hojas": "hoja",
+      "rama": "rama",
+      "ramita": "ramita",
+      "ramitas": "ramita",
+      "tallos": "tallo",
+      "tira": "tira",
+      "vaina": "vaina",
+      "vainas": "vaina",
+      "rebanadas": "rebanada",
+      "unidades de 250 g": "unidad de 250 g"
+    },
+    "category": "Otros until an explicit ingredient-category review; no dietary inference.",
+    "unmeasured": "Displayed with the supplied quantity_text; absent from measured shopping transfer.",
+    "optional": "Both measured optional ingredients retain an explicit localized note and remain reviewable.",
+    "perRecipeLabels": "Spanish canonical names equal Spanish message values; other recipe labels use their own translated line and source measure."
+  },
+  "generatedFiles": {
+    "src/data/recipesV83.ts": {
+      "bytes": 425311,
+      "sha256": "4f674c840810d36ad523760f913590998a7359b33813b015765e846149d03802"
+    },
+    "src/i18n/catalogs/recipesV83.ts": {
+      "bytes": 1241315,
+      "sha256": "77d1750dc95dcd0e7a5e565fba7209aa797479440a4551af4e8478ec9f7daac7"
+    }
+  },
+  "regenerate": "python3 scripts/import-recipes-v83.py",
+  "check": "python3 scripts/import-recipes-v83.py --check"
+}

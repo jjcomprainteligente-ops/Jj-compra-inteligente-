@@ -151,4 +151,30 @@ describe('nombres y repetidos', () => {
     expect(items).toEqual([original]);
     expect(original.name).toBe('Plátano   de Canarias');
   });
+
+  it.each([['g', 'kg'], ['kg', 'g'], ['ml', 'L'], ['L', 'ml']] as const)(
+    'avisa de productos equivalentes entre %s y %s sin sumar cantidades', (storedUnit, addedUnit) => {
+      const original = Object.freeze(item({ name: '  Arroz   integral ', unit: storedUnit, quantityMilli: 500000 }));
+      const items = Object.freeze([original]);
+      expect(findDuplicate(items, 'arroz integral', addedUnit)).toBe(original);
+      expect(original.quantityMilli).toBe(500000);
+      expect(original.unit).toBe(storedUnit);
+      expect(items).toEqual([original]);
+    },
+  );
+
+  it.each([['ud', 'g'], ['ud', 'kg'], ['ud', 'ml'], ['ud', 'L'], ['g', 'L'], ['kg', 'ml']] as const)(
+    'mantiene separadas las dimensiones %s y %s', (storedUnit, addedUnit) => {
+      expect(findDuplicate([item({ name: 'Tomate', unit: storedUnit })], 'Tomate', addedUnit)).toBeUndefined();
+      expect(findDuplicate([item({ name: 'Tomate', unit: addedUnit })], 'Tomate', storedUnit)).toBeUndefined();
+    },
+  );
+
+  it('excluye el artículo editado y encuentra otro equivalente sin confundir nombres', () => {
+    const first = item({ id: 'first', name: 'Arroz', unit: 'g' });
+    const second = item({ id: 'second', name: 'Arroz', unit: 'kg' });
+    expect(findDuplicate([first, second], 'arroz', 'kg', first.id)).toBe(second);
+    expect(findDuplicate([first], 'arroz', 'kg', first.id)).toBeUndefined();
+    expect(findDuplicate([first, second], 'Arroz integral', 'g')).toBeUndefined();
+  });
 });

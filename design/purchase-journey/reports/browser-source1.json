@@ -1,0 +1,3915 @@
+{
+  "schemaVersion": 1,
+  "evidenceClass": "EXECUTION_ON_SOURCE_1_ONLY",
+  "sourceCommit": "e1c3cfbb87d2f71cc16b91f83d8e3b3c11311e38",
+  "sourceTree": "f49464ccbfada5cee764647acdaaa321c23e89c2",
+  "sourceBinding": {
+    "entries": 100,
+    "matchedAgainstGitShow": 100,
+    "mismatches": 0,
+    "inputManifestSha256": "ae7b04998c647b2b3cdedd6ef599964808e1540d1a108cd68be7b2872a8ae541",
+    "verificationMethod": "SHA-256 of git show <sourceCommit>:<relative path>; not working-tree comparison"
+  },
+  "testedExport": {
+    "path": "dist-bloque05-ready/_expo/static/js/web/index-f2c41fc4bc5c238673c0225987bb29ff.js",
+    "bytes": 5193983,
+    "sha256": "874d16458ee6e3248fae67fa23f9dd8fbafbc5717c928ab0b19555c28df081d5"
+  },
+  "releaseSourceCommit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+  "claimedAsReleaseSourceExecution": false,
+  "releaseDifference": {
+    "changedApplicationInputs": [
+      "src/app/components/ui.tsx"
+    ],
+    "unchangedApplicationInputs": 99,
+    "note": "The release adds a conditional no-icon Button layout change. These runs remain attributed to their actual earlier source; the final layout verification is recorded separately."
+  },
+  "startedAtUtc": "2026-11-15T17:13:37.583Z",
+  "durationMs": 1475581.144,
+  "totalCases": 322,
+  "passed": 298,
+  "failed": 0,
+  "skipped": 24,
+  "flaky": 0,
+  "retryAttempts": 0,
+  "runnerErrors": 0,
+  "rawReportSha256": "70cb19540b36e7af0495fa798f8f9e36cced14b0c784dc5d9b382363bb91db60",
+  "projects": [
+    "desktop",
+    "mobile"
+  ],
+  "physicalIPhoneValidated": false,
+  "nativeAppValidated": false,
+  "rawEvidencePublished": false,
+  "cases": [
+    {
+      "title": "capture-security.spec.ts / voice requires consent and gesture, preserves transcript, aborts on exit",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4543,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / camera needs consent, requests no audio and stops all tracks when page hides",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4291,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / a camera stream resolving after cancellation is released without reopening capture",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4191,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / unsupported retail decoding never requests a camera and retains manual entry",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3515,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / real camera rejection shows denial without pretending to scan or adding a product",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3460,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / voice waits for the browser start event and aborts a pending permission attempt",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3378,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / voice permission denial preserves manual transcription and performs no business write",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3468,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / voice requires consent and gesture, preserves transcript, aborts on exit",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1566,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / camera needs consent, requests no audio and stops all tracks when page hides",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1598,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / a camera stream resolving after cancellation is released without reopening capture",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1578,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / unsupported retail decoding never requests a camera and retains manual entry",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1234,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / real camera rejection shows denial without pretending to scan or adding a product",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1311,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / voice waits for the browser start event and aborts a pending permission attempt",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1439,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "capture-security.spec.ts / voice permission denial preserves manual transcription and performs no business write",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1344,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparisons.spec.ts / crea, ordena, empata, edita y elimina; conserva los datos al recargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 11715,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparisons.spec.ts / un error al guardar mantiene el formulario y permite reintentar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5692,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparisons.spec.ts / no reemplaza datos corruptos y permite volver a cargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5638,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparisons.spec.ts / crea, ordena, empata, edita y elimina; conserva los datos al recargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4111,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparisons.spec.ts / un error al guardar mantiene el formulario y permite reintentar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1838,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "comparisons.spec.ts / no reemplaza datos corruptos y permite volver a cargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1548,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 16559,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 14395,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 13706,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 12590,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 27112,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 23519,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 20590,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 22465,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 23786,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 375: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 19651,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 430: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 19291,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 20188,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 375: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 430: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual es 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 375: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 430: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual en 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 375: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 430: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual de 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 375: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 430: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "coverage-visual.spec.ts / cobertura visual fr 1280: 16 vistas y 9 ejemplos de estado",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / dos pestañas vacías: la segunda escritura rechaza el estado obsoleto y conserva el borrador",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8210,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / dos guardados simultáneos usan un bloqueo compartido: gana uno y el otro conserva su formulario",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5417,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / el navegador sin Web Locks rechaza el guardado antes de sobrescribir y mantiene el borrador",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3457,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un cambio de idioma desde otra pestaña mantiene campos, números y texto propio del editor abierto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7229,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un cambio remoto de bienvenida no desmonta el espacio ya abierto ni elimina un borrador",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5262,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / los cuatro idiomas y el modo dispositivo solo escriben preferencias y conservan las cuatro claves de negocio",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4967,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / las preferencias corruptas se conservan al continuar la sesión y recargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3875,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / las preferencias de versión futura se conservan al continuar la sesión y recargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5151,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un fallo al guardar preferencias mantiene idioma y datos actuales y permite reintentar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3077,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / las preferencias sin Web Locks no pierden el idioma anterior ni cambian datos de negocio",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2435,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un evento de preferencias durante una escritura conserva el último idioma persistido en ambas pestañas",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4427,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / completar bienvenida y elegir idioma conserva ambos campos o rechaza un conflicto explícito y permite reintentar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4035,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un enlace legado con credenciales sigue legible pero no se abre ni transmite credenciales",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2469,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / dos pestañas vacías: la segunda escritura rechaza el estado obsoleto y conserva el borrador",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2409,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / dos guardados simultáneos usan un bloqueo compartido: gana uno y el otro conserva su formulario",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2209,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / el navegador sin Web Locks rechaza el guardado antes de sobrescribir y mantiene el borrador",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1284,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un cambio de idioma desde otra pestaña mantiene campos, números y texto propio del editor abierto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2583,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un cambio remoto de bienvenida no desmonta el espacio ya abierto ni elimina un borrador",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2060,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / los cuatro idiomas y el modo dispositivo solo escriben preferencias y conservan las cuatro claves de negocio",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2027,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / las preferencias corruptas se conservan al continuar la sesión y recargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2418,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / las preferencias de versión futura se conservan al continuar la sesión y recargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4665,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un fallo al guardar preferencias mantiene idioma y datos actuales y permite reintentar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6298,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / las preferencias sin Web Locks no pierden el idioma anterior ni cambian datos de negocio",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3993,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un evento de preferencias durante una escritura conserva el último idioma persistido en ambas pestañas",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8149,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / completar bienvenida y elegir idioma conserva ambos campos o rechaza un conflicto explícito y permite reintentar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8005,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n-integrity.spec.ts / un enlace legado con credenciales sigue legible pero no se abre ni transmite credenciales",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4096,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo es-MX → es, bienvenida vacía y sin escrituras de compra",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1584,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo en-US → en, bienvenida vacía y sin escrituras de compra",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1805,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo de-AT → de, bienvenida vacía y sin escrituras de compra",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1891,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo fr-CA → fr, bienvenida vacía y sin escrituras de compra",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2290,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo pt-BR → es, bienvenida vacía y sin escrituras de compra",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1756,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / es: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7513,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / en: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7305,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / de: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7270,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / fr: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7588,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / usa el siguiente idioma compatible de la lista del dispositivo antes de recurrir al español",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1595,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / Perfil → Idioma: cada elección y volver al dispositivo preservan exactamente nombres, IDs, céntimos y cantidades",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6352,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / un fallo al guardar idioma conserva la elección anterior y permite reintentar sin tocar compras",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2414,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / es: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2243,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / en: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2445,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / de: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2397,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / fr: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2157,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / preferencia corrupta se conserva y continuar por sesión permite usar la compra sin borrar datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1770,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual es 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4757,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual es 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4403,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual es 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4839,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual en 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4140,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual en 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4214,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual en 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4214,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual de 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4000,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual de 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4433,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual de 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4634,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual fr 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4140,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual fr 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4457,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual fr 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4378,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo es-MX → es, bienvenida vacía y sin escrituras de compra",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2823,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo en-US → en, bienvenida vacía y sin escrituras de compra",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2255,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo de-AT → de, bienvenida vacía y sin escrituras de compra",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2678,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo fr-CA → fr, bienvenida vacía y sin escrituras de compra",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3042,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / idioma de dispositivo pt-BR → es, bienvenida vacía y sin escrituras de compra",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4429,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / es: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 14905,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / en: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 11457,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / de: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 11694,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / fr: bienvenida, compra, validación, EUR, seguridad, receta, revisión y comparador conservado",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9777,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / usa el siguiente idioma compatible de la lista del dispositivo antes de recurrir al español",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3178,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / Perfil → Idioma: cada elección y volver al dispositivo preservan exactamente nombres, IDs, céntimos y cantidades",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9247,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / un fallo al guardar idioma conserva la elección anterior y permite reintentar sin tocar compras",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3103,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / es: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2536,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / en: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2988,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / de: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4118,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / fr: importes y fechas visibles siguen el idioma, los valores guardados siguen siendo EUR/ISO",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3447,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / preferencia corrupta se conserva y continuar por sesión permite usar la compra sin borrar datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2813,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual es 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual es 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual es 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual en 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual en 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual en 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual de 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual de 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual de 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual fr 375: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual fr 430: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "i18n.spec.ts / auditoría visual fr 1280: bienvenida, idioma, cinco pantallas, receta, revisión y validación",
+      "project": "mobile",
+      "status": "skipped",
+      "expectedStatus": "skipped",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 0,
+      "resultStatuses": [
+        "skipped"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / es: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3420,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / es: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1544,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / es: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1668,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / en: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2004,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / en: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1332,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / en: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1465,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / de: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1970,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / de: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1358,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / de: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1533,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / fr: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2292,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / fr: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2024,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / fr: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2050,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / un panel de compartir ocupado impide dobles envíos, Escape, cierre exterior y navegación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2298,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / un fallo del sistema conserva el texto y solo descarga cuando la persona lo pide",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1960,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / una lista sin pendientes no envía ni descarga hasta incluir comprados explícitamente",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1590,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / una lista vacía no ofrece compartir una copia sin productos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1736,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / un cambio posterior en los datos no sustituye el texto ya revisado ni se sobrescribe al compartir",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1447,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / es: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4021,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / es: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4775,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / es: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3420,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / en: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4423,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / en: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4259,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / en: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3921,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / de: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4543,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / de: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3286,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / de: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3490,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / fr: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4892,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / fr: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3102,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / fr: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3232,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / un panel de compartir ocupado impide dobles envíos, Escape, cierre exterior y navegación",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4026,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / un fallo del sistema conserva el texto y solo descarga cuando la persona lo pide",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7248,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / una lista sin pendientes no envía ni descarga hasta incluir comprados explícitamente",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6630,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / una lista vacía no ofrece compartir una copia sin productos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5442,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "list-sharing.spec.ts / un cambio posterior en los datos no sustituye el texto ya revisado ni se sobrescribe al compartir",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4471,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / buscar en otras listas edita el producto de su lista sin cambiar la lista activa",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2054,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / favoritos y avisos locales persisten sin solicitar notificaciones del dispositivo",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2702,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / registrar gasto exige confirmar un pago y revisar; historial permite editar, borrar y deshacer",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3037,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / cancelar un gasto conserva el borrador hasta descartarlo y no escribe registros",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2014,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / alta manual y presupuesto permiten deshacer; duplicados g/kg exigen una decisión sin sumarse",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2758,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / entrada manual de voz pasa por revisión y cancelar no añade; solo la confirmación añade",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2088,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / escáner sin capacidad permite un código válido sin identificar ni añadir automáticamente",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1938,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / escanear sin una lista conserva el código al crearla y exige rellenar el producto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1600,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / preferencias futuras y gastos corruptos se conservan, bloquean su escritura y permiten seguir con la compra",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2249,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / los nueve estados están etiquetados como ejemplos y no alteran datos ni permisos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2176,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / buscar en otras listas edita el producto de su lista sin cambiar la lista activa",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6958,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / favoritos y avisos locales persisten sin solicitar notificaciones del dispositivo",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7349,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / registrar gasto exige confirmar un pago y revisar; historial permite editar, borrar y deshacer",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7133,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / cancelar un gasto conserva el borrador hasta descartarlo y no escribe registros",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4575,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / alta manual y presupuesto permiten deshacer; duplicados g/kg exigen una decisión sin sumarse",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5687,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / entrada manual de voz pasa por revisión y cancelar no añade; solo la confirmación añade",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5850,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / escáner sin capacidad permite un código válido sin identificar ni añadir automáticamente",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 10630,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / escanear sin una lista conserva el código al crearla y exige rellenar el producto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6235,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / preferencias futuras y gastos corruptos se conservan, bloquean su escritura y permiten seguir con la compra",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8893,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "local-coverage.spec.ts / los nueve estados están etiquetados como ejemplos y no alteran datos ni permisos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8289,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / los filtros se aplican solo a la sesión; menos de cinco recetas no reemplaza el menú ni guarda datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2743,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / preferencias y exclusiones filtran el catálogo sin cambiar las cinco cenas guardadas",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2106,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / una nueva semana filtrada exige propuesta y confirmación; cancelar conserva el plan exacto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2247,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / una sustitución solo ofrece recetas compatibles y no duplica las otras cenas",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2002,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / volver de privacidad al perfil conserva la sección de origen y evita un bucle de navegación",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1791,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / exportar descarga siete documentos exactos y excluye datos de otras aplicaciones sin escribir almacenamiento",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1692,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / un documento corrupto puede exportarse íntegro y bloquea su borrado sin ocultar los datos anteriores",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1778,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / el borrado requiere palabra y casilla; cancelar en ambos pasos no modifica ningún documento",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2361,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar compras actualiza la app y retira deshacer sin restaurar listas eliminadas ni tocar otras categorías",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2981,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar gastos confirmados retira el importe real y conserva los productos marcados y sus precios",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2541,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar menus mantiene los otros documentos y la preferencia de idioma",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2613,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar comparisons mantiene los otros documentos y la preferencia de idioma",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2503,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar observations mantiene los otros documentos y la preferencia de idioma",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2604,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar settings mantiene los otros documentos y la preferencia de idioma",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2628,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / una modificación en otra pestaña después de revisar el borrado bloquea la confirmación obsoleta",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3335,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / un fallo de escritura conserva los datos y exige revisar de nuevo antes de reintentar el borrado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2535,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / es: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2464,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / en: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2536,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / de: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2433,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / fr: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2324,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / los filtros se aplican solo a la sesión; menos de cinco recetas no reemplaza el menú ni guarda datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8509,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / preferencias y exclusiones filtran el catálogo sin cambiar las cinco cenas guardadas",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5960,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / una nueva semana filtrada exige propuesta y confirmación; cancelar conserva el plan exacto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6799,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / una sustitución solo ofrece recetas compatibles y no duplica las otras cenas",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6561,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / volver de privacidad al perfil conserva la sección de origen y evita un bucle de navegación",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7200,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / exportar descarga siete documentos exactos y excluye datos de otras aplicaciones sin escribir almacenamiento",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5456,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / un documento corrupto puede exportarse íntegro y bloquea su borrado sin ocultar los datos anteriores",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4885,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / el borrado requiere palabra y casilla; cancelar en ambos pasos no modifica ningún documento",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6669,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar compras actualiza la app y retira deshacer sin restaurar listas eliminadas ni tocar otras categorías",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8350,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar gastos confirmados retira el importe real y conserva los productos marcados y sus precios",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8382,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar menus mantiene los otros documentos y la preferencia de idioma",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8716,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar comparisons mantiene los otros documentos y la preferencia de idioma",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9106,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar observations mantiene los otros documentos y la preferencia de idioma",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9365,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / borrar settings mantiene los otros documentos y la preferencia de idioma",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8162,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / una modificación en otra pestaña después de revisar el borrado bloquea la confirmación obsoleta",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 12892,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / un fallo de escritura conserva los datos y exige revisar de nuevo antes de reintentar el borrado",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 11197,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / es: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 10108,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / en: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9492,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / de: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8383,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus-privacy.spec.ts / fr: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8486,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / prepara y edita cinco cenas sin red y conserva el plan al recargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2485,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / cancelar la revisión no modifica las compras; confirmar añade solo lo revisado y permite deshacer",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2476,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / resuelve duplicados g/kg explícitamente y protege el precio y el estado de productos anteriores",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2370,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / una línea ambigua impide la importación parcial y el texto no se almacena como historial",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2174,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / un fallo de escritura conserva la revisión y permite reintentar sin duplicar ingredientes",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2248,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / un menú corrupto no se reemplaza ni impide utilizar las compras locales",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1967,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / un fallo al guardar el menú no anuncia un plan guardado y permite reintentar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2158,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / crea una lista nueva solo al confirmar y permite deshacer todo el grupo",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2225,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / las raciones de una receta se revisan sin cambiar el plan semanal ni escribir compras",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2226,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / cambiar de pestaña conserva la revisión hasta cancelar explícitamente el borrador",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2246,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / una captura cuyo total excede el límite conserva el texto editable sin escribir compras",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1966,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / cerrar un texto pendiente pide confirmación y permite continuar editando sin pérdida",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2012,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / prepara y edita cinco cenas sin red y conserva el plan al recargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8633,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / cancelar la revisión no modifica las compras; confirmar añade solo lo revisado y permite deshacer",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7599,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / resuelve duplicados g/kg explícitamente y protege el precio y el estado de productos anteriores",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6804,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / una línea ambigua impide la importación parcial y el texto no se almacena como historial",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5299,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / un fallo de escritura conserva la revisión y permite reintentar sin duplicar ingredientes",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5798,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / un menú corrupto no se reemplaza ni impide utilizar las compras locales",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4976,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / un fallo al guardar el menú no anuncia un plan guardado y permite reintentar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5418,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / crea una lista nueva solo al confirmar y permite deshacer todo el grupo",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5390,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / las raciones de una receta se revisan sin cambiar el plan semanal ni escribir compras",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5609,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / cambiar de pestaña conserva la revisión hasta cancelar explícitamente el borrador",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4904,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / una captura cuyo total excede el límite conserva el texto editable sin escribir compras",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5199,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "menus.spec.ts / cerrar un texto pendiente pide confirmación y permite continuar editando sin pérdida",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6004,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (es)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2227,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (es)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2366,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (en)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2196,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (en)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1843,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (de)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2118,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (de)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4390,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (fr)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2840,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (fr)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2706,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape y toque exterior no cierran ni pierden un guardado pendiente bajo Web Lock",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1818,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (es)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3255,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (en)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3068,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (de)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3325,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (fr)",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3090,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (es)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5135,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (es)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5908,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (en)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5739,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (en)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5102,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (de)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4681,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (de)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5367,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / panel de filtros: foco interior, ciclo de teclado, Escape y fondo táctil (fr)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4938,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape de un borrador conserva datos y enfoca la revisión sin descartar (fr)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6732,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / Escape y toque exterior no cierran ni pierden un guardado pendiente bajo Web Lock",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5201,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (es)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 10623,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (en)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9572,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (de)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7936,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "panel-accessibility.spec.ts / 320×568 y texto CSS al 200%: campos, filtros y confirmación siguen accesibles (fr)",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9294,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / crea y edita dos formatos equivalentes; ordena por kg y conserva fecha y procedencia al recargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3532,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / convierte ml y L para comparar el contenido completo por litro",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2609,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / explica los datos excluidos y las diferencias de calidad o unidad sin presentarlos como verificados",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1878,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / rechaza una fecha futura y un enlace javascript, conserva el borrador y permite corregirlo",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2241,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / un fallo de escritura de observaciones mantiene los datos y el formulario hasta reintentar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2794,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / conserva JSON corrupto y versiones incompatibles, permite recuperar y no altera compras, menús ni comparaciones",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3152,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / confirma antes de eliminar y permite deshacer el borrado con todos sus datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2495,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / al cambiar el día retira una observación de ocho días y actualiza su estado sin editar ni recargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2012,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / crea y edita dos formatos equivalentes; ordena por kg y conserva fecha y procedencia al recargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 9694,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / convierte ml y L para comparar el contenido completo por litro",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6995,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / explica los datos excluidos y las diferencias de calidad o unidad sin presentarlos como verificados",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 5364,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / rechaza una fecha futura y un enlace javascript, conserva el borrador y permite corregirlo",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7446,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / un fallo de escritura de observaciones mantiene los datos y el formulario hasta reintentar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8763,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / conserva JSON corrupto y versiones incompatibles, permite recuperar y no altera compras, menús ni comparaciones",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7693,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / confirma antes de eliminar y permite deshacer el borrado con todos sus datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 6760,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "price-observations.spec.ts / al cambiar el día retira una observación de ocho días y actualiza su estado sin editar ni recargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4730,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / conserva doce productos, funciona sin conexión y distingue gasto, estimaciones y precios pendientes",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 8813,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / pide una decisión ante duplicados y mantiene las listas separadas al renombrar, eliminar y deshacer",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4587,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / un fallo de escritura conserva el formulario y los datos anteriores, y permite reintentar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2553,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / no reemplaza JSON corrupto ni altera el comparador y permite volver a cargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1277,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / no reemplaza versión no compatible ni altera el comparador y permite volver a cargar",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1573,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / los nombres y notas se muestran como texto y no ejecutan contenido HTML",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2662,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / protege un borrador al cerrar y permite entrar y volver del comparador conservado",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2285,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / conserva doce productos, funciona sin conexión y distingue gasto, estimaciones y precios pendientes",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 15712,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / pide una decisión ante duplicados y mantiene las listas separadas al renombrar, eliminar y deshacer",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 7891,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / un fallo de escritura conserva el formulario y los datos anteriores, y permite reintentar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4605,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / no reemplaza JSON corrupto ni altera el comparador y permite volver a cargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2423,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / no reemplaza versión no compatible ni altera el comparador y permite volver a cargar",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2009,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / los nombres y notas se muestran como texto y no ejecutan contenido HTML",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4156,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "shopping.spec.ts / protege un borrador al cerrar y permite entrar y volver del comparador conservado",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3755,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / una, varias y todas las tiendas persisten; cada Dino conserva su identidad y la lista queda intacta",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2644,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / consultar una tienda abre solo su destino público y no envía un carrito ni solicita precios automáticamente",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1754,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / es: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3149,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / en: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2748,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / de: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2662,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / fr: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2766,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / un fallo de cuota conserva favoritas y recordatorios y permite reintentar sin éxito falso",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2463,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / otra pestaña no puede reemplazar una selección más reciente; revisar permite añadir sin perderla",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4535,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / una, varias y todas las tiendas persisten; cada Dino conserva su identidad y la lista queda intacta",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4000,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / consultar una tienda abre solo su destino público y no envía un carrito ni solicita precios automáticamente",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2659,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / es: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4650,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / en: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4799,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / de: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4293,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / fr: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4418,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / un fallo de cuota conserva favoritas y recordatorios y permite reintentar sin éxito falso",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 3372,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts / otra pestaña no puede reemplazar una selección más reciente; revisar permite añadir sin perderla",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 4827,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "v2-visual-contract.spec.ts / V2 distingue importes sin precio y gasto real sin registrar, aunque haya productos marcados",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1200,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "v2-visual-contract.spec.ts / V2 abre la categoría y el catálogo desde Inicio sin guardar una compra ni generar un menú",
+      "project": "desktop",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 1716,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "v2-visual-contract.spec.ts / V2 distingue importes sin precio y gasto real sin registrar, aunque haya productos marcados",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2231,
+      "resultStatuses": [
+        "passed"
+      ]
+    },
+    {
+      "title": "v2-visual-contract.spec.ts / V2 abre la categoría y el catálogo desde Inicio sin guardar una compra ni generar un menú",
+      "project": "mobile",
+      "status": "expected",
+      "expectedStatus": "passed",
+      "attempts": 1,
+      "retryAttempts": 0,
+      "durationMs": 2933,
+      "resultStatuses": [
+        "passed"
+      ]
+    }
+  ],
+  "omissions": {
+    "deliberate": true,
+    "count": 24,
+    "reason": "Existing matrix skips duplicate coverage combinations deliberately; each skipped case remains visible in the case list."
+  }
+}

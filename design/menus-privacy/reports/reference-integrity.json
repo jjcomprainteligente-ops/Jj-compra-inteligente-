@@ -1,0 +1,305 @@
+{
+  "verified": 75,
+  "checks": [
+    {
+      "path": "referencias/gpt6-v2/originales/1-JJ_Logo_2D_3D_Para_Codex.zip",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/03_BRIEF_CODEx_LOGO_INTERACTIVO.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/02_PROPUESTA_VISUAL_2D_3D.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/01_LOGO_ELEGIDO_REFERENCIA.jpg",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/originales/2-AUDITORIA_V2_VERIFICACION.pdf",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/originales/3-JJ_Compra_Inteligente_Fase2_Corregida_Auditoria_V2_Codex.zip",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/ICONO_REFERENCIA_NO_APROBADO_PARA_PRODUCCION.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/LOGO_HORIZONTAL_RECORTADO_DE_ORIGINAL.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/LOGO_USUARIO_FUENTE_INALTERADA.jpg",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/MANIFIESTO_VISUAL.json",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/01_bienvenida.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/02_inicio.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/03_mi_compra.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/04_ahorro.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/05_menus.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/06_detalle_receta.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/07_ingredientes.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/08_buscar_producto.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/09_detalle_producto.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/10_voz.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/11_escaner.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/12_mis_tiendas.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/13_presupuesto.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/14_historial.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/15_perfil_hogar.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/16_notificaciones.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/01_lista_vacia.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/02_sin_precios.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/03_sin_conexion.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/04_error_red.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/05_permiso_micro.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/06_permiso_camara.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/07_sin_barcode.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/08_conflicto_producto.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/09_confirmacion.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/00_LEER_PRIMERO.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/01_MATRIZ_18_CORRECCIONES.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/02_CONTRATO_VISUAL_DATOS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/03_B03_14_ESTADOS_Y_ERRORES.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/04_FLUJOS_16_PANTALLAS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/05_ENCARGO_CODEX_EN_LOTES.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/06_AUDITORIA_V2_RESULTADOS.json",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/04_DOCUMENTACION/07_SEGUNDA_AUDITORIA_INDEPENDIENTE.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/AUDITORIA_V2_VERIFICACION.pdf",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/JJ_16_PANTALLAS_CANONICAS_V2.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/v2/JJ_B03_14_9_ESTADOS_V2.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/originales/4-JJ_16_PANTALLAS_CANONICAS_V2.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/originales/5-JJ_Compra_Inteligente_B02_Estilo_Premium.zip",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/02_DIRECCION_PREMIUM_Y_BLOQUE_CODEX.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/01_MOODBOARD_PREMIUM_REFERENCIA.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/00_LOGO_OFICIAL_APROBADO.jpg",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/README.txt",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/originales/6-JJ_Compra_Inteligente_Kit_Codex_Fase2.zip",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B05_MENUS_E_IA.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B04_LISTA_Y_PRESUPUESTO.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B00_AUDITORIA.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B01_IDENTIDAD_VISUAL.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B08_QA_PILOTO.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B02_PANTALLAS_UX.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B09_COMERCIO.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B07_HOGAR_Y_CUENTAS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B06_COMPARADOR_PRECIOS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/bloques/B03_PROTOTIPO_IPHONE.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/PRODUCTO_Y_ALCANCE.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/PLAN_Y_ESTADOS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/DIRECCION_VISUAL.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/PANTALLAS_Y_FLUJOS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/CHECKLIST_CALIDAD.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/docs/DECISIONES_Y_RIESGOS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/PRIMER_MENSAJE_PARA_CODEX.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/AGENTS.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Fase2_Brief_Codex.md",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Tres_Conceptos.png",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Fase_2_Estudio_y_Diseno.pdf",
+      "valid": true
+    },
+    {
+      "path": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/README_EMPEZAR_AQUI.md",
+      "valid": true
+    }
+  ]
+}

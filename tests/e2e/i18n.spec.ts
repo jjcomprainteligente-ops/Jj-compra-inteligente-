@@ -14,11 +14,12 @@ const menuKey = 'jjcompraintelwgiemt.menus.v1';
 const comparisonKey = 'jjcompraintelwgiemt.comparisons.v1';
 const priceKey = 'jjcompraintelwgiemt.price-observations.v1';
 const languages: Language[] = ['es', 'en', 'de', 'fr'];
+const brandName = 'JJ Compra Inteligente';
 const critical = {
-  es: { welcome: 'Tu compra,\na tu manera.', tabs: ['Inicio', 'Mi compra', 'Ahorro', 'Menús'], language: 'Idioma' },
-  en: { welcome: 'Your shopping,\nyour way.', tabs: ['Home', 'My shopping', 'Savings', 'Menus'], language: 'Language' },
-  de: { welcome: 'Dein Einkauf,\nauf deine Art.', tabs: ['Start', 'Einkauf', 'Sparen', 'Menüs'], language: 'Sprache' },
-  fr: { welcome: 'Vos courses,\nà votre façon.', tabs: ['Accueil', 'Mes courses', 'Économies', 'Menus'], language: 'Langue' },
+  es: { tabs: ['Inicio', 'Mi compra', 'Ahorro', 'Menús'], language: 'Idioma' },
+  en: { tabs: ['Home', 'My shopping', 'Savings', 'Menus'], language: 'Language' },
+  de: { tabs: ['Start', 'Einkauf', 'Sparen', 'Menüs'], language: 'Sprache' },
+  fr: { tabs: ['Accueil', 'Mes courses', 'Économies', 'Menus'], language: 'Langue' },
 };
 const userListName = 'Familia Äna — été';
 const userProductName = 'Café Órbita edición Å';
@@ -74,7 +75,7 @@ async function visualHealth(page: Page) {
   return page.evaluate(() => {
     const width = document.documentElement.clientWidth;
     const accessibleLabels = Array.from(document.querySelectorAll('[aria-label]')).map(element => element.getAttribute('aria-label')).join('\n');
-    const rawKeys = Array.from(new Set(((document.body.innerText + '\n' + accessibleLabels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language)\.[a-zA-Z][\w.-]*/g) ?? [])));
+    const rawKeys = Array.from(new Set(((document.body.innerText + '\n' + accessibleLabels).match(/\b(?:app|menus|recipes|prices|secondary|common|legacy|errors|language|visual|visualSecondary|visualMenus|v2)\.[a-zA-Z][\w.-]*/g) ?? [])));
     const outside: string[] = [];
     const clipped: string[] = [];
     for (const element of Array.from(document.querySelectorAll<HTMLElement>('body *'))) {
@@ -116,12 +117,21 @@ async function assertHealthy(page: Page) {
   return health;
 }
 async function welcome(page: Page, language: Language) {
-  await expect(page.getByRole('heading', { name: critical[language].welcome, exact: true })).toBeVisible();
+  await expect(page.getByTestId('welcome-title')).toBeVisible();
+  await expect(page.getByRole('heading', { name: brandName, exact: true })).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', language);
   await expect(page.getByTestId('start-app')).toBeVisible();
 }
+async function revealWelcomeLanguages(page: Page, language: Language) {
+  const choice = page.getByTestId(`language-${language}`);
+  // The canonical welcome keeps the language picker available without occupying
+  // the initial hero. Do not toggle a picker that is already expanded.
+  if (!await choice.isVisible()) await page.getByTestId('welcome-language-toggle').click();
+  await expect(choice).toBeVisible();
+}
 async function start(page: Page, language: Language) {
   await page.goto('/');
+  await revealWelcomeLanguages(page, language);
   await page.getByTestId(`language-${language}`).click();
   await welcome(page, language);
   await page.getByTestId('start-app').click();

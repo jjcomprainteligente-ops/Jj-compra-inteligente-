@@ -1,0 +1,29 @@
+{
+  "id": "dpl_JC4TDzdKay7LUzkP18oRp5DpgayR",
+  "url": "jj-compra-inteligente-c3bha1h5j-cmj2hwhc6b-1051.vercel.app",
+  "target": "staging",
+  "readyState": "READY",
+  "meta": {
+    "githubCommitRef": "codex/bloque03-catalogo-maestro-2026-11-14",
+    "githubCommitSha": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+    "githubCommitMessage": "feat: auditar catálogo privado V83 con exportación pública restringida",
+    "githubRepo": "Jj-compra-inteligente-",
+    "githubOrg": "jjcomprainteligente-ops"
+  },
+  "sourceCommit": "e544ec2f9fd332e6ad9ac74b60b2b2885f616419",
+  "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+  "files": 23,
+  "newUploads": 0,
+  "privateRegistryIncluded": false,
+  "share": {
+    "createdAt": 1794672256613,
+    "expires": 1794755056
+  },
+  "ssoProtection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains"
+  },
+  "githubPullRequest": 23,
+  "all23FilesIdenticalToPrecedingPreview": true,
+  "productionAliasUnchanged": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3"
+}

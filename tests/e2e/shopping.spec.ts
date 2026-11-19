@@ -153,6 +153,7 @@ test('conserva doce productos, funciona sin conexión y distingue gasto, estimac
   await expect(page.getByTestId('entered-total')).toContainText('2,40');
   await expect(page.getByTestId('estimated-total')).toContainText('1,25');
   await expect(page.getByTestId('spent-total')).toContainText('2,40');
+  await expect(page.getByTestId('actual-spend-total')).toHaveText('Sin registrar');
   await expect(page.getByTestId('known-total')).toContainText('3,65');
   await expect(page.getByTestId('missing-price-count')).toContainText('10');
 
@@ -169,6 +170,7 @@ test('conserva doce productos, funciona sin conexión y distingue gasto, estimac
   expect(savedMilk).toMatchObject({ quantityMilli: 6000, unit: 'L', unitPriceCents: 200, checked: true, note: 'Revisar la marca' });
   await page.getByRole('tab', { name: 'Ahorro', exact: true }).click();
   await expect(page.getByTestId('spent-total')).toContainText('12,00');
+  await expect(page.getByTestId('actual-spend-total')).toHaveText('Sin registrar');
   await expect(page.getByTestId('estimated-total')).toContainText('1,25');
   await expect(page.getByTestId('known-total')).toContainText('13,25');
   await expect(page.locator('body')).toContainText('3,25');

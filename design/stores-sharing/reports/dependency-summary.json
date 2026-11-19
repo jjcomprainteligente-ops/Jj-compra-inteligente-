@@ -1,0 +1,64 @@
+{
+  "auditedAtUTC": "2026-11-11T01:06:15.406035+00:00",
+  "counts": {
+    "info": 0,
+    "low": 0,
+    "moderate": 5,
+    "high": 0,
+    "critical": 0,
+    "total": 5
+  },
+  "packageFilesUnchanged": {
+    "package.json": true,
+    "package-lock.json": true
+  },
+  "installed": [
+    {
+      "name": "@expo/fingerprint",
+      "path": "node_modules/@expo/fingerprint",
+      "version": "0.21.9",
+      "glob": "^13.0.0",
+      "minimatch": "^10.2.2"
+    },
+    {
+      "name": "expo",
+      "path": "node_modules/expo",
+      "version": "58.0.23",
+      "glob": null,
+      "minimatch": null
+    },
+    {
+      "name": "@expo/cli",
+      "path": "node_modules/expo/node_modules/@expo/cli",
+      "version": "58.1.19",
+      "glob": "^13.0.0",
+      "minimatch": null
+    },
+    {
+      "name": "glob",
+      "path": "node_modules/glob",
+      "version": "13.0.7",
+      "glob": null,
+      "minimatch": "^10.2.2"
+    },
+    {
+      "name": "minimatch",
+      "path": "node_modules/minimatch",
+      "version": "10.2.6",
+      "glob": null,
+      "minimatch": null
+    }
+  ],
+  "compatibleLatest": {
+    "expo": "58.0.23",
+    "@expo/cli": "58.1.19",
+    "@expo/fingerprint": "0.21.9",
+    "glob": "13.0.7",
+    "minimatch": "10.2.6"
+  },
+  "patchedLatestOutsideRanges": {
+    "glob": "14.0.4",
+    "minimatch": "11.0.7"
+  },
+  "compatibleOfficialFixAvailable": false
+}

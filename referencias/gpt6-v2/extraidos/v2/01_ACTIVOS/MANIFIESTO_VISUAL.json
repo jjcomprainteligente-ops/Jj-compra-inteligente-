@@ -1,0 +1,21 @@
+{
+  "original_source": "/mnt/data/08F18432-E7B4-4E87-80AD-47EB09F4AE22.jpeg",
+  "sha256_source": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0",
+  "sha256_copy": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0",
+  "canonical_screens": 16,
+  "exception_states": 9,
+  "tabs": [
+    "Inicio",
+    "Mi compra",
+    "Ahorro",
+    "Menús"
+  ],
+  "font": "Inter (reference only, no redistributed font files)",
+  "design_tokens": {
+    "verde_profundo": "#103F2D",
+    "verde_accion": "#167347",
+    "amarillo_jj": "#FFD24A",
+    "crema": "#FFF8E7",
+    "texto": "#143E2C"
+  }
+}

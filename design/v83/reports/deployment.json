@@ -1,0 +1,55 @@
+{
+  "deploymentId": "dpl_Ba9JkTFd9o1pNG6TknGriMgMxVGs",
+  "origin": "https://jj-compra-inteligente-np116q25a-cmj2hwhc6b-1051.vercel.app",
+  "target": "staging",
+  "readyState": "READY",
+  "projectId": "prj_6LgoBqJOykuqz8M1RHmbN7XfUiry",
+  "teamId": "team_HKkBJjAXXAFi5xw0owc5CuUm",
+  "source": {
+    "commit": "0ea49b597f45b401747e20d7d880c07f670b3073",
+    "tree": "55597b378a32f977f59124ff3de9e6d67739b014",
+    "branch": "codex/v83-recetas-auditadas",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-"
+  },
+  "protection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains"
+  },
+  "githubPullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15",
+  "shareExpiresAt": "2026-11-13T15:56:07.000Z",
+  "shareCredentialInGit": false,
+  "publishedClient": {
+    "newRecipes": 120,
+    "legacyRecipesPreserved": 7,
+    "totalAvailableRecipes": 127,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "sourceLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr",
+      "bg"
+    ],
+    "reservedRecipeContentsInClient": false
+  },
+  "upload": {
+    "files": 23,
+    "sourceArchivesIncluded": false,
+    "nativeBundlesIncluded": false,
+    "appSourcesIncluded": false,
+    "localUserDataIncluded": false
+  },
+  "verification": {
+    "languages": 4,
+    "verifiedResourceUrls": 29,
+    "availableCatalogueCountConfirmed": 127,
+    "firstV83RecipeIdConfirmed": "JJ-E03-001",
+    "physicalIPhone": false
+  },
+  "publicPublicationAuthorization": "Owner explicitly approved publication of the 120 recipes in response to the request covering five translations and technical manifests on the public repository."
+}

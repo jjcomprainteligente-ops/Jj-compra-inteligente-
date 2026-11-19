@@ -1,3 +1,5 @@
+> **Guía vigente de iPhone · 11/11/2026:** seguir [el piloto del recorrido diario](IPHONE_PILOTO_RECORRIDO_DIARIO.md). El proyecto mantiene SDK 58; la versión pública de Expo Go de la App Store descrita por Expo sigue en SDK 54, por lo que no se debe asumir que abrirá su QR. La guía vigente distingue la preview Safari de los perfiles nativos preparados, todavía sin binario ni prueba física. El texto B05 siguiente se conserva como antecedente de aquella entrega.
+
 # B05 — prueba de menús a compra
 
 Recorrido preparado para la prueba con el propietario. No representa una prueba nativa ya realizada.

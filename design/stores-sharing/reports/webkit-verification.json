@@ -1,0 +1,855 @@
+{
+  "recordedAt": "2026-11-11T01:25:21.879Z",
+  "status": "passed",
+  "source": {
+    "recordedAt": "2026-11-11T01:21:36.571Z",
+    "export": "dist-stores-sharing-reviewed",
+    "origin": "http://127.0.0.1:8081",
+    "webBundle": "index-3f5e6b0a00a63e19b4776802a79161f9.js",
+    "size": 3613190,
+    "sha256": "2fca9579e738626e352fb6988c678dc088d5fac576c986911ab187fcb3999a4d",
+    "httpStatus": 200,
+    "physicalIPhone": false
+  },
+  "sourceUnchangedAfterVerification": true,
+  "engine": "WebKit",
+  "versions": [
+    "27.2"
+  ],
+  "physicalIPhone": false,
+  "suites": {
+    "flows": {
+      "startTime": "2026-11-11T01:21:39.051Z",
+      "duration": 148416.212,
+      "expected": 50,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "readiness": {
+      "startTime": "2026-11-11T01:24:08.103Z",
+      "duration": 62181.542,
+      "expected": 42,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "totalPassed": 92,
+  "languages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "viewports": [
+    {
+      "width": 1280,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "capabilities": [
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "physicalIPhone": false,
+      "viewport": {
+        "width": 1280,
+        "height": 1000
+      },
+      "capabilities": {
+        "secureContext": true,
+        "locks": true,
+        "crypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "durabilityError": ""
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "27.2",
+      "physicalIPhone": false,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "capabilities": {
+        "secureContext": true,
+        "locks": true,
+        "crypto": true,
+        "indexedDB": true,
+        "strictDurability": true,
+        "durabilityError": ""
+      }
+    }
+  ],
+  "tests": [
+    {
+      "title": "es: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un panel de compartir ocupado impide dobles env\u00edos, Escape, cierre exterior y navegaci\u00f3n",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un fallo del sistema conserva el texto y solo descarga cuando la persona lo pide",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "una lista sin pendientes no env\u00eda ni descarga hasta incluir comprados expl\u00edcitamente",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "una lista vac\u00eda no ofrece compartir una copia sin productos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un cambio posterior en los datos no sustituye el texto ya revisado ni se sobrescribe al compartir",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: revisa y descarga solo la lista elegida; incluir comprados es expl\u00edcito y cancelar conserva siete documentos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: el panel de compartir solo recibe el texto revisado tras un gesto expl\u00edcito",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: cancelar el panel del sistema conserva la revisi\u00f3n y no anuncia un env\u00edo",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un panel de compartir ocupado impide dobles env\u00edos, Escape, cierre exterior y navegaci\u00f3n",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un fallo del sistema conserva el texto y solo descarga cuando la persona lo pide",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "una lista sin pendientes no env\u00eda ni descarga hasta incluir comprados expl\u00edcitamente",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "una lista vac\u00eda no ofrece compartir una copia sin productos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un cambio posterior en los datos no sustituye el texto ya revisado ni se sobrescribe al compartir",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "una, varias y todas las tiendas persisten; cada Dino conserva su identidad y la lista queda intacta",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "consultar una tienda abre solo su destino p\u00fablico y no env\u00eda un carrito ni solicita precios autom\u00e1ticamente",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un fallo de cuota conserva favoritas y recordatorios y permite reintentar sin \u00e9xito falso",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "otra pesta\u00f1a no puede reemplazar una selecci\u00f3n m\u00e1s reciente; revisar permite a\u00f1adir sin perderla",
+      "project": "stores-webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "una, varias y todas las tiendas persisten; cada Dino conserva su identidad y la lista queda intacta",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "consultar una tienda abre solo su destino p\u00fablico y no env\u00eda un carrito ni solicita precios autom\u00e1ticamente",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "un fallo de cuota conserva favoritas y recordatorios y permite reintentar sin \u00e9xito falso",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "otra pesta\u00f1a no puede reemplazar una selecci\u00f3n m\u00e1s reciente; revisar permite a\u00f1adir sin perderla",
+      "project": "stores-webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "WebKit engine and real storage capabilities are recorded without claiming physical iPhone coverage",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: device language, welcome and manual preference persist across reload",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-desktop",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "WebKit engine and real storage capabilities are recorded without claiming physical iPhone coverage",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "es: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "en: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "de: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: device language, welcome and manual preference persist across reload",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: list, local item and EUR budget persist without losing entered accents",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: menu ingredient review cancels unchanged and writes only after confirmation",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: privacy download exports exactly seven documents without any local write",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    },
+    {
+      "title": "fr: unavailable Web Locks block writes and preserve the exact item draft",
+      "project": "webkit-mobile",
+      "status": "expected",
+      "results": [
+        "passed"
+      ]
+    }
+  ],
+  "screenshots": {
+    "count": 24,
+    "manifest": "screenshots-reviewed-manifest.json",
+    "publication": "Local only; no images or owner backups uploaded to GitHub.",
+    "visualSpotChecks": [
+      "stores-webkit-mobile/share-pending-de.png",
+      "stores-webkit-mobile/stores-fr.png"
+    ]
+  },
+  "contracts": [
+    "Store selection upgrade preserves legacy favourites, reminders and other documents",
+    "Store destinations use explicit gestures, fixed HTTPS URLs, noopener and noreferrer; no automatic merchant request or cart transfer",
+    "Reviewed list text excludes notes, prices, budget, identifiers and other lists",
+    "Cancellation, failure, pending sharing, empty lists and subsequent data changes preserve the reviewed copy and saved documents",
+    "TXT downloads match the preview exactly and follow an explicit button press",
+    "Device and manual language, EUR amounts, menu confirmation/cancellation, allowlisted privacy downloads and fail-closed missing Web Locks pass"
+  ],
+  "limitations": [
+    "Linux WebKit automation is not physical iPhone, Safari iOS, VoiceOver, Dynamic Type, native keyboard or safe-area acceptance.",
+    "Web Share and external window opening are mocked browser contracts; no real recipient, retailer session, price feed, order or payment is tested.",
+    "The earlier 92-case run used a superseded bundle before Chromium found and the app fixed opener focus restoration; it is retained as diagnosis, not final acceptance."
+  ],
+  "reportFiles": [
+    "run-reviewed-01/results.json",
+    "run-readiness-reviewed-01/results.json"
+  ]
+}

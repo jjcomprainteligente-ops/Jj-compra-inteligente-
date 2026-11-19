@@ -1,0 +1,65 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/200ExtraLight/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf",
+      "destination": "/assets/Manrope_200ExtraLight.3b88abd10509dbd972f179a2fc60d3bf.ttf"
+    },
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/300Light/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf",
+      "destination": "/assets/Manrope_300Light.8b432e90d552ee87adaea8fa1244fc68.ttf"
+    },
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/400Regular/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf",
+      "destination": "/assets/Manrope_400Regular.bd3f6311d61e60094df4c83d68779675.ttf"
+    },
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/500Medium/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf",
+      "destination": "/assets/Manrope_500Medium.ec05fba6bf4223e33f1a5402cbbf7491.ttf"
+    },
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/600SemiBold/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf",
+      "destination": "/assets/Manrope_600SemiBold.d7c844e508c4dbacda2468f820e0b4b4.ttf"
+    },
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/700Bold/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf",
+      "destination": "/assets/Manrope_700Bold.33e6a451fdf22e8244d143288b957ba0.ttf"
+    },
+    {
+      "source": "/assets/node_modules/@expo-google-fonts/manrope/800ExtraBold/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf",
+      "destination": "/assets/Manrope_800ExtraBold.bf7f0a128c232a15714167173b998717.ttf"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        }
+      ]
+    },
+    {
+      "source": "/_expo/static/js/web/index-cea2dd8f30f8260306c19642725b58f9.js",
+      "headers": [
+        {
+          "key": "Content-Encoding",
+          "value": "br"
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/javascript; charset=utf-8"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
+        }
+      ]
+    }
+  ]
+}

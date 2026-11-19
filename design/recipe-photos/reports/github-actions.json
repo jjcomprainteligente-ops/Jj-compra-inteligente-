@@ -1,0 +1,77 @@
+{
+  "sourceCommit": "65d152f2183eb14f7e184f53207feae7b4f54f88",
+  "runId": 43640045443,
+  "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43640045443",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "app",
+      "conclusion": "success",
+      "startedAt": "2026-11-14T20:55:33Z",
+      "completedAt": "2026-11-14T20:56:23Z",
+      "steps": [
+        {
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Use Node.js 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install reviewed lockfile without lifecycle scripts",
+          "conclusion": "success"
+        },
+        {
+          "name": "Reproduce the public recipe selection",
+          "conclusion": "success"
+        },
+        {
+          "name": "Install pinned photo-audit tooling in an isolated environment",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check catalogue privacy and photo reception",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check types",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run unit tests with bounded workers",
+          "conclusion": "success"
+        },
+        {
+          "name": "Audit dependencies",
+          "conclusion": "success"
+        },
+        {
+          "name": "Verify Expo compatibility",
+          "conclusion": "success"
+        },
+        {
+          "name": "Build the web application",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Use Node.js 24",
+          "conclusion": "success"
+        },
+        {
+          "name": "Post Check out source",
+          "conclusion": "success"
+        },
+        {
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "browserMatricesRunInThisWorkflow": false
+}

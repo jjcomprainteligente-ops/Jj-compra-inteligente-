@@ -1,0 +1,17 @@
+{
+  "status": "failed-diagnostic-only",
+  "date": "2026-11-07",
+  "contexts": 12,
+  "captures": 300,
+  "screens": 192,
+  "exampleStates": 108,
+  "healthFailures": 0,
+  "failure": "Los 12 casos fallaron únicamente en el control final de consola: 404 de /favicon.ico en el servidor local de pruebas. Confirmado por console.location en Chromium aislado; no se identificó otro recurso 404.",
+  "manualFindings": [
+    "A 375 px, la revisión de ingredientes mostraba secciones vacías antes del primer ingrediente; se compactó después y requiere nueva prueba.",
+    "El aviso de ejemplo quedaba por encima de las tarjetas tras desplazarse; el paquete final añade una etiqueta dentro de cada estado."
+  ],
+  "preservedEvidence": "/workspace/scratch/coverage-2026-11-07-7rTFR4",
+  "next": "La suite final debe verificar el código actualizado y producir 300 capturas nuevas; este diagnóstico no es evidencia de entrega aprobada.",
+  "disclaimer": "Chromium web con viewports CSS; no valida iPhone físico, Safari ni aplicación nativa."
+}

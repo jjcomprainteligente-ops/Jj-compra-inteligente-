@@ -1,0 +1,71 @@
+{
+  "id": "dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg",
+  "url": "jj-compra-inteligente-et04mckln-cmj2hwhc6b-1051.vercel.app",
+  "target": "staging",
+  "readyState": "READY",
+  "meta": {
+    "githubCommitRef": "codex/integracion-maestra-2026-11-13",
+    "githubCommitSha": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+    "githubCommitMessage": "docs: consolidar la app existente y su inventario maestro",
+    "githubRepo": "Jj-compra-inteligente-",
+    "githubOrg": "jjcomprainteligente-ops"
+  },
+  "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+  "canonicalBranch": "codex/integracion-maestra-2026-11-13",
+  "checkout": "detached exact tested commit",
+  "blockStatus": "EN_CURSO_EXTERNAL_BACKUP_PENDING",
+  "share": {
+    "createdAtUtc": "2026-11-13T22:10:36.639000+00:00",
+    "expiresAtUtc": "2026-11-14T21:10:36+00:00",
+    "tokenInGit": false
+  },
+  "sourceTree": "84b422cd55dcb6688bdf16f514a0105f370b4639",
+  "bundle": {
+    "file": "_expo/static/js/web/index-97299c8b14be0dfebc85949cf3886bd4.js",
+    "size": 632849,
+    "sha1": "e28d9189cabc58a1c70652adb7cf6b2f0f6b18ba",
+    "sha256": "86ce6bbf45979f306fd83f5524486d2b5482776cbcc2865f44fa47b68e5580b1",
+    "contentEncoding": "br",
+    "decodedSize": 5159291,
+    "decodedSha1": "cb1d3393ecf60a11b5b62a8d262eb6d486e7b777",
+    "decodedSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7"
+  },
+  "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+  "upload": {
+    "reusedContentAddressedFiles": 23,
+    "newlyUploadedFiles": 0,
+    "bytesInDeployment": 2538858,
+    "scope": "Reviewed compiled web client, approved logo, fonts with their existing license notices, preview configuration and optional isolated technical brand board; no native bundles, application source, fixtures, local data or credentials."
+  },
+  "protection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains",
+    "verifiedAfterDeploy": true
+  },
+  "production": {
+    "alias": "jj-compra-inteligente.vercel.app",
+    "deploymentUnchanged": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "promoted": false
+  },
+  "verification": {
+    "status": "passed",
+    "report": "hosted-verification.json",
+    "sha256": "453aaf88170c3e7f58b2da2268368239671b7a6324524a0812ba1a934fcb5fc0",
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "resourcesOrUrls": 29,
+    "catalogueTotal": 127,
+    "checkedAtUtc": "2026-11-14T09:58:27.247Z",
+    "revalidatedAfterResume": true
+  },
+  "limits": [
+    "Review candidate of the existing app; no new feature or design acceptance.",
+    "Block01 remains open until independent private backup is verified.",
+    "Checkout branch HEAD means the verified source was packaged detached; canonical GitHub branch is recorded separately.",
+    "Later documentary closure does not change the tested/deployed application inputs."
+  ]
+}

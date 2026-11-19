@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-19T10:00:31.991388+00:00",
+  "branchTips": 26,
+  "bundle": {
+    "bytes": 111641061,
+    "sha256": "7e551562beadb6fe75f44e33f20c5bb7fbf39cce3f9dcc155544bf4671d550a3",
+    "localRestore": "26/26 tips and refs; git fsck --full --strict PASS",
+    "scope": "Git objects only; ignored owner files excluded"
+  },
+  "remoteSnapshot": {
+    "tag": "refs/tags/respaldo/ramas-2026-11-18",
+    "commit": "76cc65eb80a92a73053cb4159d08062ca73e3900",
+    "tree": "114fd0a0b9118ec8afd470bcf1b7fc5d348974ba",
+    "coveredBranchNames": 26,
+    "coveredDistinctTips": 24,
+    "parentsVerified": true,
+    "appMainChanged": false
+  },
+  "refs": [
+    {
+      "branch": "codex/b05-2-motor-comidas-variables-2026-11-16",
+      "sha": "04c3d0db5eab7e60667aa023806f8284ea4b0c06",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/b06-1-auditoria-fuentes",
+      "sha": "abb3bca53953e4523af61118e375df90d1a8d416",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/b07-base-segura",
+      "sha": "1db842dc1d5d7c3efe15ea4e942ac43a95cfdaa0",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/b07-propuesta-hogares",
+      "sha": "4e0fb2a5b29c9076bd61e0b1e1ef575b3167ff06",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/bloque02-receta-primero-2026-11-14",
+      "sha": "e97a41b8e67c907207e5fb4e8642ea3f79e04230",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/bloque03-catalogo-maestro-2026-11-14",
+      "sha": "b590ed0d09d646a6f541637c59ac98ecfe68128c",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/bloque04-2-foto-pendiente-2026-11-14",
+      "sha": "6301575974c056bd2ca8d0c2055631cd71654e85",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/bloque04-control-fotos-2026-11-14",
+      "sha": "cdd8a1e16426d62864f15fae998906b13f6dc7a8",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/bloque05-recetas-presupuesto-2026-11-15",
+      "sha": "ba69cf45704e6a0260ba0a6de0e973aa31245d35",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/cierre-seguridad-y-calidad",
+      "sha": "ef37e7efaf59444b672ecdf3597e2fda60b91cea",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/importar-catalogo-fotos-v3-2026-11-17",
+      "sha": "6c6cde44ae06ef48adf8040ec8b5446003bd87ba",
+      "classification": "KEEP_ACTIVE_V3_SOURCE",
+      "ancestorOfLatestApp": false,
+      "ancestorOfV3Source": true,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/importar-catalogo-v3-150-recetas",
+      "sha": "e21d7213822bdb02080cff8943abbc28e666adf4",
+      "classification": "RETIRABLE_DUPLICATE_OF_MAIN",
+      "ancestorOfLatestApp": false,
+      "ancestorOfV3Source": true,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/integracion-maestra-2026-11-13",
+      "sha": "1942a714c322a032185645df142ad1d3eac32646",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/iphone-prueba-recorrido",
+      "sha": "dbb703f62486ac4f639947da429761ed42c062d8",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/menus-privacidad-local",
+      "sha": "936459d2eb67b0b7decb288d619902584d4f490d",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/mobile-readiness",
+      "sha": "338ba24a99b61ddf79ef1f9af27dbd00465869ca",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/respaldo-base-2026-11-13",
+      "sha": "abb3bca53953e4523af61118e375df90d1a8d416",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/tiendas-precios-piloto",
+      "sha": "2ae8d27adb07cafbc69e9627237b50a7f8f7127b",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/tiendas-y-lista-compartida",
+      "sha": "914fa2ec3d1143f20aa003d49ac4fddd67cc850c",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/v2-cobertura-local",
+      "sha": "52ea41d55c19432c0c280bc0bb06836cdb27dbcf",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/v2-visual",
+      "sha": "d7f8c37076055ad7b132d43b73de09bb1f8dd581",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "codex/v83-recetas-auditadas",
+      "sha": "5795f299e35186f372c325299d8a6828993df720",
+      "classification": "RETIRABLE_AFTER_ACCEPTED_CONSOLIDATION",
+      "ancestorOfLatestApp": true,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "feature/precios-abiertos-en-jj-2026-11-11",
+      "sha": "2562d98a46b9e5179b77d6590ec3b582ffd0d63d",
+      "classification": "KEEP_UNIQUE_COMMITS_FOR_REVIEW",
+      "ancestorOfLatestApp": false,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 25
+    },
+    {
+      "branch": "main",
+      "sha": "e21d7213822bdb02080cff8943abbc28e666adf4",
+      "classification": "KEEP_CANONICAL_MAIN",
+      "ancestorOfLatestApp": false,
+      "ancestorOfV3Source": true,
+      "uniqueCommitsOutsideConsolidationParents": 0
+    },
+    {
+      "branch": "producto/b06-fuentes-precios-y-acuerdos-2026-11-12",
+      "sha": "95686b3ac4541f7179ee7cfd858be97628d4be99",
+      "classification": "KEEP_UNIQUE_COMMITS_FOR_REVIEW",
+      "ancestorOfLatestApp": false,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 3
+    },
+    {
+      "branch": "producto/piloto-tiendas-y-precios-2026-11-10",
+      "sha": "21601a2705df5d8f3bbe7c8b5b5fd8199dbadd1d",
+      "classification": "KEEP_UNIQUE_COMMITS_FOR_REVIEW",
+      "ancestorOfLatestApp": false,
+      "ancestorOfV3Source": false,
+      "uniqueCommitsOutsideConsolidationParents": 5
+    }
+  ],
+  "retiredBranchCount": 0,
+  "candidateRetirements": 21,
+  "retirementConditions": [
+    "Accepted consolidation with all candidate tips reachable from it",
+    "Fresh remote SHA check and compare-and-swap deletion to preserve concurrent work",
+    "Verified archival reference and recovery ledger"
+  ],
+  "mainMergeRequiresExplicitAuthorization": true,
+  "independentPrivateReceiptSHA256": "dc3a43efd7d4e5a5ddad17b9882387d1b881e6a605086544766ca4d792e73bfc"
+}

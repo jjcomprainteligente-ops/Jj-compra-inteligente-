@@ -160,7 +160,9 @@ function duplicateName(name: string): string {
 /** The caller asks the user what to do; detecting a duplicate never merges it. */
 export function findDuplicate(items: readonly ShoppingItem[], name: string, unit: Unit, excludeId?: string): ShoppingItem | undefined {
   const normalized = duplicateName(name);
-  return items.find(item => item.id !== excludeId && item.unit === unit && duplicateName(item.name) === normalized);
+  const dimension = (value: Unit) => value === 'g' || value === 'kg' ? 'mass'
+    : value === 'ml' || value === 'L' ? 'volume' : 'count';
+  return items.find(item => item.id !== excludeId && dimension(item.unit) === dimension(unit) && duplicateName(item.name) === normalized);
 }
 
 /** Per-line total, half-up to the nearest cent after multiplying quantity by unit price. */

@@ -9,6 +9,7 @@ coverage/
 android/
 ios/
 test-results/
+test-results-*/
 playwright-report/
 
 # Fuentes en Git; datos locales y artefactos fuera del repositorio.
@@ -32,3 +33,43 @@ storageState*.json
 design/**/build/
 design/**/playwright-report/
 design/**/test-results/
+
+# Originales documentales del propietario: conservar estos ZIP, no artefactos.
+!referencias/gpt6-v2/originales/*.zip
+
+# Evidencia completa local; selección e informes públicos en entrega-local-2026-11-07.
+design/v2/evidence/run-2026-11-07T09-37-39-620Z-hGoYP7/
+design/v2/evidence/run-2026-11-07T16-48-40-655Z-p3mv4e/
+design/v2/evidence/menu-relocation-2026-11-07/
+
+# Capturas y galería local pendientes de autorización específica para GitHub público.
+design/v2/entrega-local-2026-11-07/screenshots/
+design/v2/entrega-local-2026-11-07/index.html
+
+# Pruebas completas de filtros/privacidad: artefactos locales, informes públicos separados.
+design/v2/evidence/run-2026-11-09T10-01-49-632Z-6DC7ol/
+design/menus-privacy/local-evidence/
+
+# Auditoría móvil: capturas/trazas locales; informes de texto publicados aparte.
+design/v2/evidence/run-2026-11-10*/
+design/mobile-readiness/local-evidence/
+
+# Pareja tiendas/compartir: evidencia completa local e informes públicos separados.
+design/v2/evidence/run-2026-11-11*/
+design/stores-sharing/local-evidence/
+
+# Estado local del CLI de Supabase; solo migraciones, pruebas y documentación en Git.
+supabase/.temp/
+supabase/.branches/
+
+# Prueba iPhone: capturas, trazas y estado del navegador solo en el entorno local.
+design/iphone-pilot/local-evidence/
+design/v2/evidence/run-2026-11-12*/
+
+# Recetas V83: original completo retenido localmente; el repositorio es público.
+referencias/recetas-v83/originales/
+!referencias/recetas-v83/fuente-publica/JJ_V83_120_RECETAS_FUENTE_PUBLICA.zip
+__pycache__/
+
+# Auditorías de calidad: capturas y mediciones locales, sin datos del propietario en Git.
+design/quality/local-evidence/

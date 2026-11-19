@@ -1,0 +1,851 @@
+{
+  "checkedAtUtc": "2026-11-14T20:43:51.213949+00:00",
+  "sourceBaseCommit": "b590ed0d09d646a6f541637c59ac98ecfe68128c",
+  "canonicalImagesInspected": 72,
+  "imageRoles": {
+    "MOODBOARD_OR_MULTISCREEN_REFERENCE": 6,
+    "CANONICAL_UI_SCREEN": 25,
+    "BRAND_REFERENCE": 6,
+    "APPROVED_APP_LOGO": 1,
+    "QA_HOSTED_SCREENSHOT": 24,
+    "LEGACY_BRAND_VECTOR": 10
+  },
+  "canonicalArchiveDeliveriesInspected": 16,
+  "originalRecipePhotoCandidatesLocated": 0,
+  "activeRecipePhotoSlots": 127,
+  "activeApprovedPhotos": 0,
+  "newHeldPhotoStatesPublished": false,
+  "images": [
+    {
+      "file": "referencias/gpt6-v2/originales/4-JJ_16_PANTALLAS_CANONICAS_V2.png",
+      "category": "MOODBOARD_OR_MULTISCREEN_REFERENCE",
+      "bytes": 460932,
+      "sha256": "4e2fe83e2991f17296e57a19f70a73bdb6641178dae0537c01814e2158dd2ebc",
+      "format": "PNG",
+      "width": 1652,
+      "height": 3484
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/05_permiso_micro.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 18516,
+      "sha256": "010e45fd672d02447d07f684ea20c6836c58751d8c9f08000027261cdebb766e",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/08_conflicto_producto.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 18091,
+      "sha256": "1071b2176985aec021ce9ddf6b7574d51347c5b552abcaae3516dc4c4bf9053b",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/02_sin_precios.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 18518,
+      "sha256": "dd09e68c9ff035dc06018f657f9920634e05dd70e60d1fd486f5983501fa1500",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/07_sin_barcode.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 18514,
+      "sha256": "5f124f4cc1bbc5ccaa17d329f1e3cdd700ae688f08c4e22903b838d3425d51e3",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/06_permiso_camara.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 18024,
+      "sha256": "da87d58c97462feb017b6a1756854b1ee849866e8cb297304bfbeb2fc4227899",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/09_confirmacion.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 16077,
+      "sha256": "891ee161a6aa5225ba1b9603866b33450c845e43d1a0a9dd65109f514325fd0f",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/01_lista_vacia.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 16670,
+      "sha256": "fdfb3d61f21eb79f4fa207a4be1e53c7a6b4b95083e3436094ebedfb5dad32e5",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/04_error_red.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 16831,
+      "sha256": "6a4e0b33c2558c56669e8e2b2000da5c2f636003084c6e40aa47043f0efe85ee",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/03_B03_14_ESTADOS/03_sin_conexion.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 17558,
+      "sha256": "132dd741e9d28071c3c5f57ff76e868fdd9c0bd86d1e9563a69e2b97694ab01d",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/02_inicio.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 34402,
+      "sha256": "412c6288e9732b11b7b666f2b8cb8702ff4e85e31ce868c15d58a80f3ca2d4b3",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/13_presupuesto.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 29638,
+      "sha256": "74a225980939707029e8f447a9ff61337c8db8e6a045641dee12be876e3070d4",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/09_detalle_producto.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 27980,
+      "sha256": "c756605970932d8419dbf42228338ea2a9f8b798499afd1ec662c49c958aa043",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/05_menus.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 36461,
+      "sha256": "3384499358e798c2195bb056283e0398b10bc1ba5282023f0e2e775bb68b51f1",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/08_buscar_producto.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 30951,
+      "sha256": "1fda7d9e584fe35162517c53a7beb8ca706e970af4b78c9baeabcb936425424e",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/15_perfil_hogar.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 33080,
+      "sha256": "654b2fce42064b3be1454292940843d68638b84a175b4f8987158dbaa5fc6ee5",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/11_escaner.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 21043,
+      "sha256": "9f65c7b1f298fe3b674cfb37d449a7588ad6b1bcff92347019b0a0fac2ec6a64",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/03_mi_compra.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 36911,
+      "sha256": "42124478648506bfad23ff6219de6d2a04e78943396febccbda48aa46e79e469",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/04_ahorro.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 29632,
+      "sha256": "b494178ab5ed7f5b2e71ca65beefc24aa2d49f486ee738c9c7da2e6b2401c0dd",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/16_notificaciones.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 30471,
+      "sha256": "3844a668388facef830ea63b7534f841472ee737330176c61534ebc01e72c5cd",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/06_detalle_receta.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 27482,
+      "sha256": "3180ae06e562f39de50cb11eac191c9bbb42432f7a327b223295f631211edb33",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/14_historial.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 24802,
+      "sha256": "70d5b60255917032415895d474ebf622aaa7f6488e15da32796e779c903838b4",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/07_ingredientes.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 31179,
+      "sha256": "18916f484c1e7aff76d1dfb18e216eb7617272f5228b1a4c56a1793569a8ffef",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/12_mis_tiendas.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 31641,
+      "sha256": "b0d3ddaaf40942210a6ce5bd17f1716d3062165c287965effa6144d5d57f9246",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/01_bienvenida.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 53046,
+      "sha256": "e43447d43806ad6bf09590e7c5fd50c78d79558f870e28e390b5226218e374a0",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/02_VISTAS_CANONICAS/10_voz.png",
+      "category": "CANONICAL_UI_SCREEN",
+      "bytes": 27491,
+      "sha256": "43701681603cc81a6331b15cd9dca2116ea047456ef5410560ad78c39b7f21fa",
+      "format": "PNG",
+      "width": 374,
+      "height": 754
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/LOGO_HORIZONTAL_RECORTADO_DE_ORIGINAL.png",
+      "category": "BRAND_REFERENCE",
+      "bytes": 255528,
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+      "format": "PNG",
+      "width": 936,
+      "height": 330
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/LOGO_USUARIO_FUENTE_INALTERADA.jpg",
+      "category": "BRAND_REFERENCE",
+      "bytes": 179756,
+      "sha256": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0",
+      "format": "JPEG",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/01_ACTIVOS/ICONO_REFERENCIA_NO_APROBADO_PARA_PRODUCCION.png",
+      "category": "BRAND_REFERENCE",
+      "bytes": 62976,
+      "sha256": "385a1647e9971d78354472ce435cbef79a6e0797235ab8f0a8c31d64fac5ee45",
+      "format": "PNG",
+      "width": 269,
+      "height": 278
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/JJ_B03_14_9_ESTADOS_V2.png",
+      "category": "MOODBOARD_OR_MULTISCREEN_REFERENCE",
+      "bytes": 128332,
+      "sha256": "d914616849ed094b88da51480e5022af0a91884daca67c3a24c39f683f6ea8f9",
+      "format": "PNG",
+      "width": 1256,
+      "height": 2640
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/v2/JJ_16_PANTALLAS_CANONICAS_V2.png",
+      "category": "MOODBOARD_OR_MULTISCREEN_REFERENCE",
+      "bytes": 460932,
+      "sha256": "4e2fe83e2991f17296e57a19f70a73bdb6641178dae0537c01814e2158dd2ebc",
+      "format": "PNG",
+      "width": 1652,
+      "height": 3484
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/00_LOGO_OFICIAL_APROBADO.jpg",
+      "category": "BRAND_REFERENCE",
+      "bytes": 179756,
+      "sha256": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0",
+      "format": "JPEG",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/premium/JJ_Compra_Inteligente_B02_Estilo_Premium/01_MOODBOARD_PREMIUM_REFERENCIA.png",
+      "category": "MOODBOARD_OR_MULTISCREEN_REFERENCE",
+      "bytes": 1852556,
+      "sha256": "a95e5f8e47ca1e045b43457368c45913598f27747e9be1667d489e76396b8a20",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/02_PROPUESTA_VISUAL_2D_3D.png",
+      "category": "BRAND_REFERENCE",
+      "bytes": 1938737,
+      "sha256": "2cea0db6a97678850ee53d1a5cf9cb553815d03ddff882a6988fb9c6b6066ae5",
+      "format": "PNG",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/logo/JJ_Logo_2D_3D_Codex/01_LOGO_ELEGIDO_REFERENCIA.jpg",
+      "category": "BRAND_REFERENCE",
+      "bytes": 179756,
+      "sha256": "7500541f32e14292c013d80f6c8bbc43af87a94a7b646103d6b20289bacb47d0",
+      "format": "JPEG",
+      "width": 1448,
+      "height": 1086
+    },
+    {
+      "file": "referencias/gpt6-v2/extraidos/kit/JJ_Fase2_Codex_Kit/referencias/JJ_Compra_Inteligente_Tres_Conceptos.png",
+      "category": "MOODBOARD_OR_MULTISCREEN_REFERENCE",
+      "bytes": 194093,
+      "sha256": "936e95a1b62e41987f4a88f9a341f50f13c0063d23f35bfe6c679508f49b9dba",
+      "format": "PNG",
+      "width": 1429,
+      "height": 2021
+    },
+    {
+      "file": "referencias/JJ_Compra_Inteligente_Tres_Conceptos.png",
+      "category": "MOODBOARD_OR_MULTISCREEN_REFERENCE",
+      "bytes": 194093,
+      "sha256": "936e95a1b62e41987f4a88f9a341f50f13c0063d23f35bfe6c679508f49b9dba",
+      "format": "PNG",
+      "width": 1429,
+      "height": 2021
+    },
+    {
+      "file": "assets/brand/jj-logo-horizontal.png",
+      "category": "APPROVED_APP_LOGO",
+      "bytes": 255528,
+      "sha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+      "format": "PNG",
+      "width": 936,
+      "height": 330
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/es-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 79706,
+      "sha256": "c6787e9e8f9599ed7964958027550f551056c8d50fe86eccb5c99440dafa8ff8",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/de-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 82359,
+      "sha256": "72cdb799a10370249937351211f2ddaabcd106925dabde8064339f47c6795e2b",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/en-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 82543,
+      "sha256": "161bdb5e99e70356926d9fd02d593d3cf151505bcb6316f1eb47e4e3516ceb42",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/fr-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 50458,
+      "sha256": "9605b3e67559fb2c8ebea8c078fa9762f09b82f61bcccc41d8cd711153be9e6d",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/en-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 49811,
+      "sha256": "e2c0632ad2a3b853fe4b6ab65e31abbc42b2712f63b469357ffd879e9fbfba9b",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/de-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 50677,
+      "sha256": "147ac7edcec45ff747659b18aa1b822f0a32e9715d91d5a7b9f00f4c3bed90c4",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/en-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 54467,
+      "sha256": "cbda0648453ce2e4aa9aa52884e9bae3d3996215654f13d79157023d38c71d00",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/fr-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 81388,
+      "sha256": "91b02ac42cfc73f63099b4311e0e3c11a9fd68e4bf59a81c856cd14fc9c6bbef",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/es-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 53643,
+      "sha256": "5ec02cf1d8c0f1a8741532462b552fab8b11b308549aa447be1bd37a26c83b5c",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/de-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 57886,
+      "sha256": "45ba36ba77b98837c30903343f1c990d503e0d38912e62fd40f97ac1cc8a3592",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/fr-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 54064,
+      "sha256": "006737a156a8048a0bba1d4d706409bc64c050fbb2bc10058dcee4e12b50ed43",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/v2/hosted/run-2026-11-06T19-05-33-744Z-9ylBZ8/es-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 49419,
+      "sha256": "efdb2ea0dc5c803810ae24693eff7d258424b88e82930c7a7486fcf149af1fe6",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/b01/assets/v3-monocromo-oscuro.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 317,
+      "sha256": "c0e9f73bccf67f5045b607e3b5d6d2a104bd434a376443f2bb8db76b21dcef77",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v3-icon.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 370,
+      "sha256": "4c530352868a3c60be1498514307c672f6b7430bc730ba274617e28834fc5103",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v2-monocromo-oscuro.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 279,
+      "sha256": "7703f249be496e14323657548fcdfa2b6e93ae58e2fabf90ff5af24bac767389",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v1-monocromo-oscuro.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 307,
+      "sha256": "1601fd5552682166a995ceae2cd1c87956f632a7ff2bac77768815c8aa93e480",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v1-icon.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 360,
+      "sha256": "46b8899f01017a31524ddf3b2326351ddb385da1cd81c41ba0ca2f93f11aa85e",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v2-monocromo-claro.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 279,
+      "sha256": "78277f2b1946efa29e5c2e1c0bd3f91def8a0c42d57257342df90807b933f082",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v3-monocromo-claro.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 317,
+      "sha256": "bbbc7f9958d5d129a27b9d24ef4292796afb3ad7ffd0d97f13c9c2f517146ee6",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v1-monocromo-claro.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 307,
+      "sha256": "c9828f5485fae32003f4bf8e1dc6e0854f4197bbe3ac9aff17a006c715a6cd93",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/b01/assets/v2-icon.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 332,
+      "sha256": "1d0881145be7931cd9eb743e26d4f0f0753863bfd111152b4623ddf430870a90",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    },
+    {
+      "file": "design/github-g00/es-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 44704,
+      "sha256": "21594b3fb10369ace50a62cda3ca1514757f955268a47df4541f48a76e3c6fff",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/de-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 49877,
+      "sha256": "ec81adbccbc8526486ba8bd164ed487adc2a3419ff1da1b12bcdfd798c05b8b8",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/en-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 53352,
+      "sha256": "e4233e1a15e09bb108230e1d53fdef89a1d3a7654bc215f5a0e48327cef41132",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/fr-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 54598,
+      "sha256": "4f4300e60ab46557d1746249d39ced0c843f322ed5ee27725451e91ca398791b",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/en-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 54013,
+      "sha256": "8f601d590b5f0a05f8321d68b6ace1f968c0918e549880292c6a942bedd015ed",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/de-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 52519,
+      "sha256": "f43f4ed4b050aa4fdd3f18b41462a2af0bc4bb0071644f54e77695a4c71998da",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/en-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 57031,
+      "sha256": "0f13f3825f85f450a1201b30b0af2dea52225eb7000e8e1f191b0a5ca8345be0",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/fr-welcome.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 53238,
+      "sha256": "666631a5eda8f510023eeeb73cefb3683142bf347b7ef9e315d739d16bc6cfcc",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/es-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 57435,
+      "sha256": "79ec30df13410048e93c67a8c3b9ad2ff1b627018d9f2e508beda3ae67fa606f",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/de-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 60555,
+      "sha256": "8b5d8fdb58a69de3d56ea15777394007d67f33040419def9328776ab08c63455",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/fr-review.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 56619,
+      "sha256": "e691fdc662c6f04bdc139e989ff79970b16bc65ca27e9fe4efc0a3d3f5d6e4f4",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/github-g00/es-home.png",
+      "category": "QA_HOSTED_SCREENSHOT",
+      "bytes": 52354,
+      "sha256": "fc81df50792f6b5f5728e49c178f6780e2442aa7c50b8937714dad1bb6bac512",
+      "format": "PNG",
+      "width": 390,
+      "height": 844
+    },
+    {
+      "file": "design/b02/brand.svg",
+      "category": "LEGACY_BRAND_VECTOR",
+      "bytes": 370,
+      "sha256": "4c530352868a3c60be1498514307c672f6b7430bc730ba274617e28834fc5103",
+      "format": "SVG",
+      "width": "64",
+      "height": "64"
+    }
+  ],
+  "localHistory": {
+    "localHeads": 15,
+    "remoteTrackingRefs": 18,
+    "refsTotal": 33,
+    "distinctRefCommitTips": 17,
+    "reachableCommits": 44,
+    "shallowRepository": false,
+    "historicalMediaOrZipPaths": 808,
+    "mediaOrZipPathsAbsentFromHead": 0,
+    "mediaObjectVersions": 580,
+    "reachableObjectsTotal": 1789,
+    "missingReachableObjects": 0,
+    "classification": {
+      "official_brand_logo": 1,
+      "design_brand_assets_or_qa_capture": 765,
+      "other_design_reference": 1,
+      "gpt6_reference_or_kit": 40,
+      "authorized_recipe_data_zip": 1
+    },
+    "recipePhotoCandidatePaths": []
+  },
+  "remoteRepository": {
+    "accessibleCanonicalRepositories": 1,
+    "branches": 20,
+    "distinctTrees": 19,
+    "allTreesComplete": true,
+    "unclassifiedPhotoCandidates": 0,
+    "releaseAssets": 0,
+    "treeRefs": [
+      {
+        "representativeBranch": "codex/respaldo-base-2026-11-13",
+        "tipSha": "abb3bca53953e4523af61118e375df90d1a8d416",
+        "treeSha": "abb3bca53953e4523af61118e375df90d1a8d416",
+        "entries": 1489,
+        "mediaObjects": 808
+      },
+      {
+        "representativeBranch": "codex/b07-base-segura",
+        "tipSha": "1db842dc1d5d7c3efe15ea4e942ac43a95cfdaa0",
+        "treeSha": "1db842dc1d5d7c3efe15ea4e942ac43a95cfdaa0",
+        "entries": 1422,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/b07-propuesta-hogares",
+        "tipSha": "4e0fb2a5b29c9076bd61e0b1e1ef575b3167ff06",
+        "treeSha": "4e0fb2a5b29c9076bd61e0b1e1ef575b3167ff06",
+        "entries": 1386,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/bloque02-receta-primero-2026-11-14",
+        "tipSha": "e97a41b8e67c907207e5fb4e8642ea3f79e04230",
+        "treeSha": "e97a41b8e67c907207e5fb4e8642ea3f79e04230",
+        "entries": 1528,
+        "mediaObjects": 808
+      },
+      {
+        "representativeBranch": "codex/bloque03-catalogo-maestro-2026-11-14",
+        "tipSha": "b590ed0d09d646a6f541637c59ac98ecfe68128c",
+        "treeSha": "b590ed0d09d646a6f541637c59ac98ecfe68128c",
+        "entries": 1548,
+        "mediaObjects": 808
+      },
+      {
+        "representativeBranch": "codex/cierre-seguridad-y-calidad",
+        "tipSha": "ef37e7efaf59444b672ecdf3597e2fda60b91cea",
+        "treeSha": "ef37e7efaf59444b672ecdf3597e2fda60b91cea",
+        "entries": 1482,
+        "mediaObjects": 808
+      },
+      {
+        "representativeBranch": "codex/integracion-maestra-2026-11-13",
+        "tipSha": "1942a714c322a032185645df142ad1d3eac32646",
+        "treeSha": "1942a714c322a032185645df142ad1d3eac32646",
+        "entries": 1516,
+        "mediaObjects": 808
+      },
+      {
+        "representativeBranch": "codex/iphone-prueba-recorrido",
+        "tipSha": "dbb703f62486ac4f639947da429761ed42c062d8",
+        "treeSha": "dbb703f62486ac4f639947da429761ed42c062d8",
+        "entries": 1435,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/menus-privacidad-local",
+        "tipSha": "936459d2eb67b0b7decb288d619902584d4f490d",
+        "treeSha": "936459d2eb67b0b7decb288d619902584d4f490d",
+        "entries": 1325,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/mobile-readiness",
+        "tipSha": "338ba24a99b61ddf79ef1f9af27dbd00465869ca",
+        "treeSha": "338ba24a99b61ddf79ef1f9af27dbd00465869ca",
+        "entries": 1345,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/tiendas-precios-piloto",
+        "tipSha": "2ae8d27adb07cafbc69e9627237b50a7f8f7127b",
+        "treeSha": "2ae8d27adb07cafbc69e9627237b50a7f8f7127b",
+        "entries": 1332,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/tiendas-y-lista-compartida",
+        "tipSha": "914fa2ec3d1143f20aa003d49ac4fddd67cc850c",
+        "treeSha": "914fa2ec3d1143f20aa003d49ac4fddd67cc850c",
+        "entries": 1383,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/v2-cobertura-local",
+        "tipSha": "52ea41d55c19432c0c280bc0bb06836cdb27dbcf",
+        "treeSha": "52ea41d55c19432c0c280bc0bb06836cdb27dbcf",
+        "entries": 1301,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/v2-visual",
+        "tipSha": "d7f8c37076055ad7b132d43b73de09bb1f8dd581",
+        "treeSha": "d7f8c37076055ad7b132d43b73de09bb1f8dd581",
+        "entries": 1234,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "codex/v83-recetas-auditadas",
+        "tipSha": "5795f299e35186f372c325299d8a6828993df720",
+        "treeSha": "5795f299e35186f372c325299d8a6828993df720",
+        "entries": 1458,
+        "mediaObjects": 808
+      },
+      {
+        "representativeBranch": "feature/precios-abiertos-en-jj-2026-11-11",
+        "tipSha": "2562d98a46b9e5179b77d6590ec3b582ffd0d63d",
+        "treeSha": "2562d98a46b9e5179b77d6590ec3b582ffd0d63d",
+        "entries": 1341,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "main",
+        "tipSha": "d22d66eff03c5d107f5170ee38cd2bc3167865e2",
+        "treeSha": "d22d66eff03c5d107f5170ee38cd2bc3167865e2",
+        "entries": 773,
+        "mediaObjects": 484
+      },
+      {
+        "representativeBranch": "producto/b06-fuentes-precios-y-acuerdos-2026-11-12",
+        "tipSha": "95686b3ac4541f7179ee7cfd858be97628d4be99",
+        "treeSha": "95686b3ac4541f7179ee7cfd858be97628d4be99",
+        "entries": 1335,
+        "mediaObjects": 807
+      },
+      {
+        "representativeBranch": "producto/piloto-tiendas-y-precios-2026-11-10",
+        "tipSha": "21601a2705df5d8f3bbe7c8b5b5fd8199dbadd1d",
+        "treeSha": "21601a2705df5d8f3bbe7c8b5b5fd8199dbadd1d",
+        "entries": 775,
+        "mediaObjects": 484
+      }
+    ]
+  },
+  "embeddedWorkbook": {
+    "bytes": 130761,
+    "sha256": "dfa8e15c6471c862933eb5f6cd81fd1f9e00489f889088cf41f6fa18280c09a1",
+    "zipEntries": 45,
+    "mediaEntries": 0,
+    "drawingEntries": 0,
+    "externalImageRelationships": 0,
+    "externalLinks": 0,
+    "imageFormulas": 0,
+    "formulaEvaluationPerformed": false
+  },
+  "historicalChatAttachmentsCurrentlyMounted": false,
+  "limits": [
+    "No actual recipe photograph was recovered from accessible sources.",
+    "This does not assert that historical original photographs do not exist elsewhere.",
+    "Screenshots, moodboards, logos and UI composites are not original recipe photographs.",
+    "No image was generated, cropped, substituted, approved or linked to a recipe by this audit.",
+    "Complete source catalogue and new states of held recipes remain private."
+  ]
+}

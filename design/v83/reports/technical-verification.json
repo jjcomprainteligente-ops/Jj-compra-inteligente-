@@ -1,0 +1,103 @@
+{
+  "createdAt": "2026-11-12T15:26:43.057509+00:00",
+  "baseCommit": "dbb703f62486ac4f639947da429761ed42c062d8",
+  "typescript": "PASS",
+  "unit": {
+    "passed": 981,
+    "failed": 0,
+    "skipped": 0,
+    "files": 27,
+    "originalRegressionTests": 963,
+    "newSourceAndDomainTests": 18,
+    "rawReportSha256": "3cd0707903c64b8b922db5ca5f072c96a3907c5163f38d6b29c4efb1b9193637"
+  },
+  "source": {
+    "receivedRecipes": 150,
+    "receivedLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr",
+      "bg"
+    ],
+    "receivedLocalizedRecords": 750,
+    "publicSourceRecipes": 120,
+    "publicSourceLocalizedRecords": 600,
+    "publicArchiveSha256": "5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62",
+    "originalArchiveSha256": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034",
+    "originalRetainedLocallyAndIgnoredByGit": true,
+    "runtimeImportedRecipes": 120,
+    "legacyRecipesPreserved": 7,
+    "runtimeTotalRecipes": 127,
+    "reservedRecipes": 30,
+    "reservedSourceContentIncludedInPublicArchive": false,
+    "reservedRecipeIdsAbsentFromCompiledWebBundle": true,
+    "runtimeLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "bgRuntimeUiEnabled": false,
+    "unknownPreparationTimesInReceivedSource": 90,
+    "unknownPreparationTimesInRuntimeImportedRecipes": 80,
+    "unitConversion": "Counted sub-units retain explicit name qualifiers; no density/whole-food conversion guessed",
+    "unmeasuredIngredientsAutomaticallyTransferred": false,
+    "originalCookingStepsAndWarningsPreserved": true
+  },
+  "npmAudit": {
+    "counts": {
+      "info": 0,
+      "low": 0,
+      "moderate": 3,
+      "high": 0,
+      "critical": 0,
+      "total": 3
+    },
+    "affectedPackages": [
+      "@expo/fingerprint",
+      "expo",
+      "minimatch"
+    ],
+    "newDependencies": 0,
+    "scope": "Expo/fingerprint/minimatch tooling; not a guarantee of runtime security",
+    "rawReportSha256": "6892f6de3aa3a877a53dadbb96e52c3930d2b5ab9933008fe79748f76406fb44"
+  },
+  "exports": [
+    {
+      "path": "_expo/static/js/ios/index-20e1a1ab447bf2f2357b4b261fbc3f51.hbc",
+      "bytes": 6311413,
+      "sha256": "3a5120014d029a3b4cbe43f5cbaeeb3779612f10ed10599b2bcb0cee838bb412"
+    },
+    {
+      "path": "_expo/static/js/web/index-49e09bda4e883f0b0cc85ffaa8fdf16b.js",
+      "bytes": 5159025,
+      "sha256": "36c4882a03e15ae0b43ec71bafafd189616c721e965df14cb586ee94d2f16458"
+    },
+    {
+      "path": "_expo/static/js/android/index-91c9e6cf962e4dc6f596cd0f7b81db0f.hbc",
+      "bytes": 6313949,
+      "sha256": "e1ae44efdee99edf57b671541a02a147982aa21f859a7444d1e75f59365bac2f"
+    }
+  ],
+  "importChecks": {
+    "publicReproductionWithoutPrivateOriginal": "PASS",
+    "completeOriginalLocalAuditAndExactPublicSelection": "PASS",
+    "suppliedManifestDigests": 13,
+    "sourceDataExecuted": false,
+    "spreadsheetFormulasExecuted": false
+  },
+  "preserved": [
+    "Original seven recipe IDs and full serialized digest",
+    "Official logo/assets/design tokens",
+    "Seven local document keys and write fences",
+    "Existing saved lists, plans and budgets"
+  ],
+  "notValidated": [
+    "Physical iPhone/Safari, native keyboard, VoiceOver, safe areas and OS sharing",
+    "Native signed app installation or TestFlight",
+    "Commercial product labels, prices, SKU, allergens/traces certification",
+    "Thirty held recipes awaiting editorial clarification",
+    "B07.2 full permission matrix and account/household flow"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "originalArchiveSha256": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034",
+  "publicArchiveSha256": "5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62",
+  "originalRecords": 150,
+  "originalLocalizedRecords": 750,
+  "originalManifestEntriesVerified": 13,
+  "publicRecords": 120,
+  "publicLocalizedRecords": 600,
+  "publicRecordsEqualExactSelectedOriginalValues": true,
+  "reservedRecordsIncludedInPublicSource": false,
+  "decimalComparison": "json parse_float=Decimal, exact complete record equality",
+  "privateSourceRequiredForCiTests": false
+}

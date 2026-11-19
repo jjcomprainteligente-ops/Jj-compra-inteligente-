@@ -1,0 +1,40 @@
+{
+  "generatedAtUtc": "2026-11-13T22:09:15.692396+00:00",
+  "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+  "sourceTree": "84b422cd55dcb6688bdf16f514a0105f370b4639",
+  "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+  "sourceInputsMatched": 159,
+  "scope": "Entire Playwright suite against the selected web export; original 120 captures plus 300 inventory captures (16 screens and 9 labelled examples across 4 languages and 3 CSS sizes); not pixel-level design approval",
+  "method": "Chromium browser contexts at CSS 375×667, 430×932 and 1280×1000; not physical iPhone, native iOS or Safari",
+  "stats": {
+    "startTime": "2026-11-13T21:53:10.482Z",
+    "duration": 793222.459,
+    "expected": 298,
+    "skipped": 24,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suitePassed": true,
+  "skipReason": "24 duplicate captures intentionally omitted by the unchanged existing suite",
+  "completeMatrix": true,
+  "screenshots": 120,
+  "runtimeErrorCount": 0,
+  "failedVisualChecks": 0,
+  "protectedArtifactsUnchanged": true,
+  "coverage": {
+    "reports": 12,
+    "screenshots": 300,
+    "completeMatrix": true,
+    "errorCount": 0,
+    "failedCheckCount": 0
+  },
+  "rawEvidenceSha256": "e844428dcfe446bc62a03e8e77e0407f8e46c932f73824ebbb5a80c6cce5b381",
+  "privacy": "Sanitized report only; raw screenshots, traces, fixture texts and storage snapshots remain private local evidence.",
+  "physicalDeviceTest": false,
+  "limits": [
+    "No physical iPhone/Safari/native acceptance.",
+    "Passing inventory and state-gallery examples does not activate external services or approve design.",
+    "Browser run tested source784; later closure documentation must not be represented as a new browser execution."
+  ],
+  "protectedArtifactsScope": "Hashes of protected paths in the isolated source copy. This does not rehash ignored dist/archives in the primary checkout."
+}

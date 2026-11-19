@@ -1,0 +1,30 @@
+{
+  "id": "dpl_5dNbUnf7t1y8bGiYJoLnGe63irwu",
+  "url": "jj-compra-inteligente-hixqld86q-cmj2hwhc6b-1051.vercel.app",
+  "target": "staging",
+  "readyState": "READY",
+  "meta": {
+    "githubCommitRef": "codex/bloque04-control-fotos-2026-11-14",
+    "githubCommitSha": "65d152f2183eb14f7e184f53207feae7b4f54f88",
+    "githubCommitMessage": "feat: preparar recepción segura de fotografías y registrar originales pendientes",
+    "githubRepo": "Jj-compra-inteligente-",
+    "githubOrg": "jjcomprainteligente-ops"
+  },
+  "sourceCommit": "65d152f2183eb14f7e184f53207feae7b4f54f88",
+  "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+  "files": 23,
+  "newUploads": 0,
+  "recipePhotosIncluded": 0,
+  "privatePhotoMasterIncluded": false,
+  "ssoProtection": {
+    "enabled": true,
+    "deploymentType": "all_except_custom_domains"
+  },
+  "share": {
+    "createdAt": 1794689925928,
+    "expires": 1794772725
+  },
+  "githubPullRequest": 24,
+  "all23FilesIdenticalToPriorPreview": true,
+  "productionAliasUnchanged": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3"
+}

@@ -1,0 +1,24 @@
+{
+  "generatedAtUtc": "2026-11-13T22:04:43.389132+00:00",
+  "sourceCommit": "78480fd40b4a116d53ebb016f31085785f42a6e6",
+  "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+  "scope": "Daily use and V83 source recipes on four UI languages and two mobile CSS widths; isolated empty contexts, unchanged application.",
+  "engine": "Official Playwright WebKit build2370 in isolated runtime with existing Debian libraries; no system or application dependency change",
+  "stats": {
+    "startTime": "2026-11-13T21:53:47.592Z",
+    "duration": 527833.954,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "rawEvidenceSha256": "9280853dcbb670b323e445321b203e82ca14df6c5ceede2a1a260c56135e9db4",
+  "logicalScreenshots": 120,
+  "reports": 16,
+  "evidencePrivacy": "Only this summary is public; screenshots, traces, fixture/browser state and raw reports remain local. Attachments are not counted as additional screenshots.",
+  "physicalIphone": false,
+  "limits": [
+    "WebKit Linux and CSS dimensions do not prove physical Safari/iPhone acceptance.",
+    "Native export is not an installed signed app."
+  ]
+}

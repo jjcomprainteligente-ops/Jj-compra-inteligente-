@@ -1,0 +1,24 @@
+{
+  "cli": {
+    "appVersionSource": "local",
+    "requireCommit": true
+  },
+  "build": {
+    "iphone-preview": {
+      "distribution": "internal",
+      "developmentClient": false,
+      "ios": {
+        "simulator": false,
+        "buildConfiguration": "Release"
+      }
+    },
+    "iphone-testflight": {
+      "distribution": "store",
+      "developmentClient": false,
+      "ios": {
+        "simulator": false,
+        "buildConfiguration": "Release"
+      }
+    }
+  }
+}

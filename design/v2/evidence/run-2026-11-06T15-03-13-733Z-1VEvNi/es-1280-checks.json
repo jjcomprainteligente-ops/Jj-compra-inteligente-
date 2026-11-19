@@ -1,0 +1,113 @@
+{
+  "language": "es",
+  "viewport": {
+    "width": 1280,
+    "height": 1000
+  },
+  "engine": "Chromium",
+  "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+  "fixture": "Fictional isolated local data; no commercial verification",
+  "errors": [],
+  "checks": [
+    {
+      "scene": "welcome",
+      "filename": "es-1280-welcome.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "home",
+      "filename": "es-1280-home.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "list",
+      "filename": "es-1280-list.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "savings",
+      "filename": "es-1280-savings.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "menus",
+      "filename": "es-1280-menus.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "recipe",
+      "filename": "es-1280-recipe.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "review",
+      "filename": "es-1280-review.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "profile",
+      "filename": "es-1280-profile.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "language",
+      "filename": "es-1280-language.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    },
+    {
+      "scene": "validation",
+      "filename": "es-1280-validation.png",
+      "health": {
+        "horizontalOverflow": 0,
+        "outside": [],
+        "clipped": [],
+        "rawKeys": []
+      }
+    }
+  ]
+}

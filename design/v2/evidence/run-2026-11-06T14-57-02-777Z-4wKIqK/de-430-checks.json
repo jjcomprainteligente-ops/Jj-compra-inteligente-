@@ -1,0 +1,12 @@
+{
+  "language": "de",
+  "viewport": {
+    "width": 430,
+    "height": 932
+  },
+  "engine": "Chromium",
+  "method": "CSS browser viewport; not a physical iPhone, native iOS or Safari test",
+  "fixture": "Fictional isolated local data; no commercial verification",
+  "errors": [],
+  "checks": []
+}

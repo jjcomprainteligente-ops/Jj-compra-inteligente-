@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-16T21:50:03.141537+00:00",
+  "status": "B05_2_ENGINE_PREPARATION_VERIFIED_AND_PROTECTED_STAGING",
+  "source": {
+    "commit": "280a6e63ce3c56015a7f8b92cff8136bbece2a32",
+    "tree": "3af0f123fc2530ab44a428ac8d2c7c4dd9c16252",
+    "base": "ba69cf45704e6a0260ba0a6de0e973aa31245d35",
+    "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27"
+  },
+  "scope": "Variable-count engine prepared in memory only. UI and menus.v1 still five meals. Not a full B05 acceptance or native device certificate.",
+  "localPreparation": {
+    "report": "local-preparation.json",
+    "sha256": "20c4b3db6f04bd7475d4b742ff8537bd4c8db42f31b3ddc6c446ab90e9063c63"
+  },
+  "unit": {
+    "passed": 1549,
+    "failed": 0,
+    "new": 468,
+    "draftCases": 453,
+    "legacyAndStorageCases": 15,
+    "countPersonCombinations": 381
+  },
+  "typecheck": "PASS",
+  "python": {
+    "passed": 51,
+    "decoder": "Pillow 13.0.0"
+  },
+  "catalogue": "Public selection reproduction PASS; 120 V83 + seven legacy active; held content and photos unchanged.",
+  "dependencyAdvisories": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "expoCompatibility": "PASS",
+  "browser": {
+    "journeyAndHomeLocal": {
+      "startTime": "2026-11-16T21:38:31.804Z",
+      "duration": 302141.54099999997,
+      "expected": 60,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "legacyMenusLocal": {
+      "startTime": "2026-11-16T21:39:52.193Z",
+      "duration": 128817.472,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "hostedJourneys": {
+      "startTime": "2026-11-16T21:47:57.752Z",
+      "duration": 92097.474,
+      "expected": 16,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "hostedHome": {
+      "startTime": "2026-11-16T21:48:30.208Z",
+      "duration": 27440.583000000002,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "physicalIPhone": "PENDING; WebKit is an automated browser test only."
+  },
+  "artifacts": {
+    "dist-b05-2-web": [
+      {
+        "path": "_expo/static/js/web/index-bc637fb768eb0066aa73796684b2f2fb.js",
+        "size": 5196171,
+        "sha256": "e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592"
+      }
+    ],
+    "dist-b05-2-platforms": [
+      {
+        "path": "_expo/static/js/android/index-37765be799cb4b31f3c042533d819b4b.hbc",
+        "size": 6356935,
+        "sha256": "01ee65d4ebf7b861d01de8da76ac6d9bdeaae6bf092a2b5f88a99f4a3ac9f117"
+      },
+      {
+        "path": "_expo/static/js/ios/index-f34774834e265c3757f4340715d7c408.hbc",
+        "size": 6353451,
+        "sha256": "47b173aa6e3d75cce13f34a4ba30757cd53b99ab742a757e5b8f0f7389dcbd17"
+      },
+      {
+        "path": "_expo/static/js/web/index-bc637fb768eb0066aa73796684b2f2fb.js",
+        "size": 5196171,
+        "sha256": "e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592"
+      }
+    ]
+  },
+  "package": {
+    "sourceCommit": "280a6e63ce3c56015a7f8b92cff8136bbece2a32",
+    "bundleSha256": "953846d4244851b7855a9fbe1e79a1091def0fe1af9f557e0511d1d7cc3c77d4",
+    "decodedBundleSha256": "e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592",
+    "bundleContentEncoding": "br",
+    "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+    "uploadFiles": 13,
+    "uploadBytes": 1590470
+  },
+  "deployment": {
+    "id": "dpl_F1YBWLx6NgkjCTkScKRkqmcTF1Ty",
+    "url": "jj-compra-inteligente-axpbj4ech-cmj2hwhc6b-1051.vercel.app",
+    "target": "staging",
+    "state": "READY",
+    "sourceCommit": "280a6e63ce3c56015a7f8b92cff8136bbece2a32",
+    "sourceTree": "3af0f123fc2530ab44a428ac8d2c7c4dd9c16252",
+    "shareExpiresUnix": 1794952009
+  },
+  "hostedHTTPS": {
+    "status": "passed",
+    "languages": 4,
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+    "reportSHA256": "8698ab6d3b1b5e673046da73a9c74d40837f5b9f778d0ef3711c4084f8ed67fe",
+    "verifiedFiles": 19
+  },
+  "githubActions": [
+    {
+      "id": 43963055777,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "280a6e63ce3c56015a7f8b92cff8136bbece2a32",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43963055777"
+    },
+    {
+      "id": 43962984173,
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "280a6e63ce3c56015a7f8b92cff8136bbece2a32",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43962984173"
+    }
+  ],
+  "conservation": {
+    "base": "ba69cf45704e6a0260ba0a6de0e973aa31245d35",
+    "existingApplicationInputs": 100,
+    "unchangedExistingInputs": 98,
+    "changedExistingInputs": [
+      "src/domain/menus.ts",
+      "src/i18n/catalogs/errors.ts"
+    ],
+    "newApplicationInputs": [
+      "src/domain/mealPlanDraft.ts"
+    ],
+    "protectedFiles": 49
+  },
+  "protectedFileSHA256": {
+    "app.json": "4dff1487a9a315392545713b95ed8f6a664f7eb0aa8fcbb0df620af0f4d35d45",
+    "assets/brand/jj-logo-horizontal.png": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+    "index.ts": "87eb2393e2cb67df3f983c92aa248b436e01cdce5c9b3245a4a410d47d18d89b",
+    "package-lock.json": "c4e900f8a079693bcd960ca93d4fd91f5c3a52715f1bab764557312314615a15",
+    "package.json": "0ef801dfba4b4a3127696b6e8126f1d9cc932a9c0fc7609efdf65e2210114da8",
+    "src/app/ShoppingApp.tsx": "1ba6662b539750d8353553eb9c7e99865b80f1e05730dbb5bc524ea5e53e572e",
+    "src/app/backupDelivery.ts": "ab9d6fcc0d777755f5993baefc3bcbb065d1763df8bf73f04a13d5071edf3300",
+    "src/app/captureCapabilities.ts": "fbe5767b66eff2d455b67c09c4b2173a4ed73603baff671a45d04345a2ea77ac",
+    "src/app/components/Brand.tsx": "130a9fa001a38cc640cd851160b906c33898b265b0366552763c05e22a95654d",
+    "src/app/components/FlowPage.tsx": "c582ea6c59f90e052e8ba1ba77a51c48c843001804e8126868313f44686f437e",
+    "src/app/components/Illustrations.tsx": "42be17f68eaf59b2dee7334cf229dcc213b0bb38b813b6ef15d2a8e03f61aedb",
+    "src/app/components/ListShareSheet.tsx": "8737c8f7e4d85d3fe58d877d43cfe7b868e8eb65fa311e7bd6915b75f3344945",
+    "src/app/components/MenuFilterPanel.tsx": "e06ca9aec4039222b7e29a582671bd86d39aaebb74f5eb92634e79a8e93cdfae",
+    "src/app/components/ui.tsx": "42e1755c544b8f7243be2f603e139d67a123eaa7f9739922be4dcd78c099c848",
+    "src/app/listShareDelivery.ts": "fafae6508e6ef3fd133b209adebd31bb8c07ee65539f1c4829651ed438a500a3",
+    "src/app/screens/CaptureScreens.tsx": "9a803e7159bcf7333d3901932ac07058e6e4da68d8468073e8ff537c6b079727",
+    "src/app/screens/DataPrivacyScreen.tsx": "c24ad098db8b2e0610cfec9a1b73dbb5ea300587bcd343b7baca924959fec82b",
+    "src/app/screens/HomeList.tsx": "0e5be7206e50c08a667162cd297fbe0372db0d1a4b8f37b1fffc2365781ad827",
+    "src/app/screens/LanguageScreen.tsx": "182d96325eb6ba51c5c77c449cdd3bcfc39e5de4ad3858945e738c937943fe02",
+    "src/app/screens/LocalSettingsScreens.tsx": "62d9ab33d0da589387a77f362743d5fdd3faaba9a7bebdf346ae8b32d1dfdc88",
+    "src/app/screens/MenuWorkspace.tsx": "5658d279bcf4f573abc0166a2789585a7293739b2269b9c9dd4df8bcbff20a65",
+    "src/app/screens/MoneyScreens.tsx": "dd06115fb4d786d6bd91a576fd36c0d0bc75a271dc489d8e50ce53389bf09021",
+    "src/app/screens/NotificationsWorkspace.tsx": "ad349e7c677fba72c34112056cc766b34c20ee340710d16bf99c5ca39aad36a0",
+    "src/app/screens/PlanningScreens.tsx": "cf045ce66854eacb2dab8a7a513767735231d8701b79dc226d89d11ff6aa2115",
+    "src/app/screens/PriceWorkspace.tsx": "a3164fa3c13915fa16f519377bdb73205b2e2f5172dd12f7f9aff7f0346d58ce",
+    "src/app/screens/ProductScreens.tsx": "217fea0e808cc0c669e448a6d5ad1f1dbaf271772e0c821852f7583c7d1022b9",
+    "src/app/screens/SecondaryScreens.tsx": "eb1ae7d0fe2dd498caa109474806f4d462aee0a5d277152f23bd69721c89a298",
+    "src/app/screens/StateReviewScreen.tsx": "793bd0d5f66cc05f1e0c042c4368db37b5f5686b80b58c8011641a0710a92c2f",
+    "src/app/theme.ts": "08ff35ad12431c7534c669372302e579bab2df5f07575ca04d47b02d0487cdf4",
+    "src/app/types.ts": "9a6e0e81675635f764e9bdab7aaa5736c37786210b75575bdc43770d86def55a",
+    "src/app/useConnectivity.ts": "227cb4aa2c23f6d8e32ce0d58e8bd038b6d43a452a9197cd9493e77e7db3ae0b",
+    "src/app/useExpenses.ts": "ec8bfc168e12a9a3d8e304403f930ca985a197b0970810cff4f2b90cc38d86b6",
+    "src/app/useLocalPreferences.ts": "a566f55182820c9c698e19c0e544df0c54d76a5ec78f6382ea1daf2f6b149f2e",
+    "src/app/useMealPlan.ts": "aaa896564a2834defe6f68a84eeca860de6378bd644b1cd9d16c77d4466ada5c",
+    "src/app/usePriceObservations.ts": "5987df508f9dd13b69541a3cbf6dc3ced33ecad9716ca1172cd5be2fa8610168",
+    "src/app/useShopping.ts": "a66909768af4d6a8222fc1e776a11e7c8857dff940f7809ddef4be35d4afda60",
+    "src/data/recipes.ts": "6ca61b25107896401862e8aab6685761617157f9b9225c7d4f2ea87eaf74b50e",
+    "src/data/recipesV83.ts": "4f674c840810d36ad523760f913590998a7359b33813b015765e846149d03802",
+    "src/domain/menuFilters.ts": "99719b0429fec3601999baebd3fb8ed4b1036d446fa846c2f91551541710e327",
+    "src/domain/purchaseJourney.ts": "72c852620aab5d2dba031a95ba6c7d8cc6129e57ea0199a337f03a0432c6c39f",
+    "src/storage/comparisons.ts": "88ab0bd0e675dcb734662d678f21e026f934662a930051bcda29c31d073b5b51",
+    "src/storage/dataPrivacy.ts": "9e9984165a7a1a6a9200c853cb85084b1a0ac8a2ef6de9251c68965c96bd32a4",
+    "src/storage/expenses.ts": "954ac5e531a5b84ef958c39d850e39b918b9f1940ad4da8528a2be2d1a407caa",
+    "src/storage/localPreferences.ts": "5c44b02e29133b507a4fe4e7843eafe7fc6b65a81bd57244cb45644a63ec4257",
+    "src/storage/menus.ts": "f18ebca1c32245e24e4af383050f32760eaae4434b496199c922992a1f88298e",
+    "src/storage/priceObservations.ts": "6b3fb7c75cf8bd16a1bd8c8cd3716a3dddcd044f5ccec073bce59c2d51e8f63f",
+    "src/storage/shopping.ts": "d13e194f3b059fb4bd23147970869ecaf6485384b109d6b11b675e622fcd641d",
+    "src/storage/writeCoordinator.ts": "980ef19c7376458749ccf59148994b96d39b6ac3df8f6c57a13e48d1ba72687b",
+    "src/storage/writeFence.ts": "b23f7d9cf73f6742c9a77acd026c1fcdf4321722d7fd9c4ea93b26606baca10f"
+  },
+  "provider": {
+    "productionAlias": "jj-compra-inteligente.vercel.app",
+    "productionDeployment": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "mainCommit": "d22d66eff03c5d107f5170ee38cd2bc3167865e2",
+    "ssoProtection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "verifiedAt": "2026-11-16T21:48:25.016Z"
+  },
+  "independentCodeReview": "Read-only: no blocking defect found. Did not rerun or certify tests.",
+  "firstAttempts": "Initial whole-matrix tests timed out twice at 5000ms. Cases split without removing assertions/time limits. Initial default Python decoder caused four errors; isolated pinned environment passed. Original attempts preserved privately.",
+  "evidenceSHA256": {
+    "unit-results.json": "f2ec537140036e9badfc326a94387555dc4da1d44f8155c541c2a88553327872",
+    "unit-final.json": "69ee4e784eeda5cf8c350ca197b2233af80e918f351b429d2a4ce981f661e13c",
+    "python.log": "7c12d18ae8feb6eb437f803eecdc38c5986607ec1eb723b9ebdfea8b63552b12",
+    "python-final.log": "47b7ae848f36593d62517eeb6872b42f3bce0395e3035a7005c2044088f2685b",
+    "typecheck.log": "d6a82592403a49db17cd11d76d24a4cba27ed0ce9074afbc93eff199eaa533cd",
+    "expo-check.log": "8152e1dfe2839254529bd71a5c9d6f299c93bc1132025c5930dcc5dc042489db",
+    "npm-audit-online.json": "bfd8a731b2ea97621a9a05c72e2d93e9d23534ad7732b065bde071c284d076b4",
+    "journey-local/results.json": "50e13aa623a6c86c0eac35b42f5124d9cf98675856315c5f37d0e9688bc55451",
+    "menus-local.json": "28f7e47f24e517eaf072ac465eb85b2e0cf62c834a2d2ecffb6ae25c415a837f",
+    "hosted-journey/results.json": "f070dec5b46f3bb81fdb1b6442e9b60e7657ee1a2c64f4d3091cb7b663cd914d",
+    "hosted-home/results.json": "6beb13d60fb1857262a0dc051a8b4fc344878a81a8fddf4d958c61c7f0b4e32a",
+    "artifact-binding.json": "bb88f61a1e00475712c54260f7345f58ae28de3ab778eacd6323458a0fe02a68",
+    "app-input-hashes.json": "37de5039d4d898cfbbd2efab07b6769309fc5fd3742f964da585c8176bb26c4f",
+    "conservation.json": "075d734f2298850380724c91894d31a5564d998a1dfb9f50a7dc79067554869b"
+  },
+  "pending": [
+    "Owner acceptance and physical iPhone review of both existing five-meal journeys.",
+    "Product range, calendar presentation, explicit UI/persistence boundary before activation of N.",
+    "Recipe categories still need source audit.",
+    "Original recipe photos, private recipe exceptions and independent external backup verification."
+  ],
+  "limits": [
+    "No guaranteed current price, savings or budget fit.",
+    "No Supabase, auth, backend, AI, dependencies, migrations or paid resources added.",
+    "No B06 opening, main merge or production promotion.",
+    "No signed mobile binary, TestFlight or native execution certified."
+  ]
+}

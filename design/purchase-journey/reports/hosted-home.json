@@ -1,0 +1,88 @@
+{
+  "sourceCommit": "5f208d882b0ce6e418267464c0a76346bf15b01c",
+  "sourceTree": "87864955ae1663901c3d9baf003a761ae96412c2",
+  "deploymentId": "dpl_7KXWuSpNMkaD3J2RhpP5XvcRtTjs",
+  "origin": "https://jj-compra-inteligente-ghuhsqz6a-cmj2hwhc6b-1051.vercel.app",
+  "startedAt": "2026-11-16T20:37:55.889Z",
+  "durationMs": 40720.382000000005,
+  "passed": 8,
+  "failed": 0,
+  "skipped": 0,
+  "flaky": 0,
+  "retries": 0,
+  "uiLanguages": [
+    "es",
+    "en",
+    "de",
+    "fr"
+  ],
+  "browser": "WebKit",
+  "viewportWidths": [
+    375,
+    430
+  ],
+  "businessDocumentsPreserved": 7,
+  "physicalIPhone": false,
+  "nativeAppExecuted": false,
+  "rawEvidencePublished": false,
+  "runnerReportSha256": "b93fea8134d5cce5cc0f664b9c7100678b34af6e8931ad4e567d1f71203b665c",
+  "cases": [
+    {
+      "project": "webkit-375",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 5163
+    },
+    {
+      "project": "webkit-430",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 4682
+    },
+    {
+      "project": "webkit-375",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 3787
+    },
+    {
+      "project": "webkit-430",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 4709
+    },
+    {
+      "project": "webkit-375",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 3684
+    },
+    {
+      "project": "webkit-430",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 5304
+    },
+    {
+      "project": "webkit-375",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 4357
+    },
+    {
+      "project": "webkit-430",
+      "title": "home purchase entries share height and keep readable labels and the small-screen list action visible",
+      "status": "passed",
+      "attempts": 1,
+      "durationMs": 4845
+    }
+  ],
+  "logicalScenes": 8
+}

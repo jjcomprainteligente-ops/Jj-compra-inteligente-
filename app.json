@@ -5,10 +5,10 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
-    "backgroundColor": "#FFF9EF",
+    "backgroundColor": "#FFF8E7",
     "plugins": [["expo-localization", { "supportedLocales": ["es", "en", "de", "fr"] }]],
     "ios": { "supportsTablet": true, "bundleIdentifier": "com.jjcompra.inteligente" },
     "android": { "package": "com.jjcompra.inteligente" },
-    "web": { "name": "JJ Compra Inteligente", "shortName": "JJ Compra", "backgroundColor": "#FFF9EF", "themeColor": "#167347" }
+    "web": { "name": "JJ Compra Inteligente", "shortName": "JJ Compra", "backgroundColor": "#FFF8E7", "themeColor": "#103F2D" }
   }
 }

@@ -1,0 +1,659 @@
+{
+  "generatedAt": "2026-11-13T15:18:55.287705+00:00",
+  "scope": "Follow-up correction of the React Native Web notification Switch thumb alignment after visual review of the first security/quality preview",
+  "source": {
+    "baseCommit": "096330d2b3a3123dc759a1ef0a6123aa67a0d249",
+    "currentSourceInputsSha256": {
+      "src/app/screens/LocalSettingsScreens.tsx": "62d9ab33d0da589387a77f362743d5fdd3faaba9a7bebdf346ae8b32d1dfdc88",
+      "tests/quality/pressed-controls.spec.ts": "2ff41321794a2edf4d90207bd65e5e2ff85b4d7898c35d222050b4870c294761",
+      "tests/quality/contrast.ts": "ac9757ac25096f3e6ef2cc2ecc89ae074e06e00caac1d253bebd2e493bc447d1",
+      "tests/e2e/coverage-visual.spec.ts": "1219a80235fda84b25a2f7781bb31a8438f4121331d157184fa7fa561ddfd7b0",
+      "package.json": "0ef801dfba4b4a3127696b6e8126f1d9cc932a9c0fc7609efdf65e2210114da8",
+      "package-lock.json": "c4e900f8a079693bcd960ca93d4fd91f5c3a52715f1bab764557312314615a15"
+    },
+    "previousCompiledWebSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+    "previousSnapshotsPreserved": true,
+    "compiledWebSha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+    "productionChange": "Only web Switch style adds justifyContent:center; preserves 44x44 minimum hit target, colors and native style.",
+    "testChange": "Adds a real off/on DOM geometry assertion to the existing Tab-focus regression; maximum center offset1px."
+  },
+  "publication": {
+    "githubCommit": "17d5fbc8adf9f8cbd07f7bd930a19a086931a841",
+    "remoteCiRun": 43451697596,
+    "vercelDeployment": "dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz",
+    "status": "Published in staging and verified; see deployment.json and hosted-verification.json"
+  },
+  "finding": {
+    "method": "Human visual review followed by an actual browser negative regression against the preceding compiled application",
+    "previousAbsoluteCenterOffsetY": 11.9921875,
+    "minimumTouchTarget": {
+      "width": 44,
+      "height": 44
+    },
+    "whyContrastWasInsufficient": "Solid-color contrast and target size can pass while the thumb is visibly displaced; alignment is now separately asserted."
+  },
+  "negativeControl": {
+    "compiledWebSha256": "f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b",
+    "statistics": {
+      "startTime": "2026-11-13T15:14:03.661Z",
+      "duration": 3191.524,
+      "expected": 0,
+      "skipped": 0,
+      "unexpected": 1,
+      "flaky": 0
+    },
+    "failedAsExpected": true,
+    "appFailureObserved": "Switch thumb stays vertically centered within its track at a44px touch target",
+    "receivedOffsetY": 11.9921875,
+    "maximumAllowedOffsetY": 1,
+    "evidence": [
+      {
+        "artifact": "switch-alignment-negative-live.log",
+        "sha256": "dcc00b4bfc864956ead10880d35cb0ab175e21f093b12c1988ad74213a2a2d90",
+        "rawEvidencePublished": false
+      },
+      {
+        "artifact": "results.json",
+        "sha256": "c7d6dae1c1cc2f16576d0b8c90ffa4388ee774749a88b769f6d9223ac7ee4384",
+        "rawEvidencePublished": false
+      }
+    ]
+  },
+  "diagnosticDomInjection": {
+    "method": "Old compiled app; diagnostic DOM-only style injection after negative test, not a compiled-fix pass",
+    "before": {
+      "width": 44,
+      "height": 44,
+      "offsetY": 11.9921875
+    },
+    "afterOff": {
+      "width": 44,
+      "height": 44,
+      "offsetY": 0.0078125
+    },
+    "afterOn": {
+      "width": 44,
+      "height": 44,
+      "offsetY": 0.0078125
+    },
+    "status": "Diagnostic only; not counted as a compiled-fix pass or a deployed correction",
+    "evidence": {
+      "artifact": "switch-alignment-dom-proof.json",
+      "sha256": "8a365ca6d657f935252c4a1d80f154ac3d460bece10529d5487f28a53e2f6934",
+      "rawEvidencePublished": false
+    }
+  },
+  "exports": {
+    "directory": "dist-alignment",
+    "bundles": [
+      {
+        "platform": "android",
+        "file": "_expo/static/js/android/index-1361f69109a37faf3ef422bfc0b07ed6.hbc",
+        "bytes": 6314250,
+        "sha256": "816f65b2c64c62f98a47dc25b9bf905d460f6365ce0c35d01dcdfb75ffd738b0",
+        "status": "export completed; not a native install, TestFlight or store build"
+      },
+      {
+        "platform": "ios",
+        "file": "_expo/static/js/ios/index-9060d2222ee1218f3c90d933a89b4988.hbc",
+        "bytes": 6311729,
+        "sha256": "24adf1b09a44d34dfa611fee20528ffaa8ed88fb472d577b248a372cb1cb8daa",
+        "status": "export completed; not a native install, TestFlight or store build"
+      },
+      {
+        "platform": "web",
+        "file": "_expo/static/js/web/index-97299c8b14be0dfebc85949cf3886bd4.js",
+        "bytes": 5159291,
+        "sha256": "c3f6a11fb1f74b5abff79deab50c98a5675a4a8fd993e4e7b84516ef6ffb3ab7",
+        "status": "export completed; not a native install, TestFlight or store build"
+      }
+    ],
+    "evidence": {
+      "artifact": "export-alignment-allowed.log",
+      "sha256": "110c091bb56a1cccca162aac9ad788143723da0642a23547fc0c52f3d0bd6f70",
+      "rawEvidencePublished": false
+    },
+    "initialEnvironmentFailure": {
+      "code": "EROFS",
+      "operation": "Expo CLI telemetry attempted to write its state file under the read-only home directory before export",
+      "applicationDefect": false,
+      "resolution": "Rerun with EXPO_NO_TELEMETRY=1 and CI=1; did not change HOME or credentials",
+      "evidence": {
+        "artifact": "export-alignment.log",
+        "sha256": "17ef8713912f21b8c269aecc0af099772151a4bed912b945f120e27087c68b15",
+        "rawEvidencePublished": false
+      }
+    }
+  },
+  "typecheck": {
+    "command": "npm run typecheck",
+    "passed": true,
+    "evidence": {
+      "artifact": "typecheck-alignment.log",
+      "sha256": "d6a82592403a49db17cd11d76d24a4cba27ed0ce9074afbc93eff199eaa533cd",
+      "rawEvidencePublished": false
+    }
+  },
+  "newCompiledQualityMatrix": {
+    "statistics": {
+      "startTime": "2026-11-13T15:16:36.541Z",
+      "duration": 76031.182,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "cases": [
+      {
+        "language": "de",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "de-375-coverage.json",
+          "sha256": "4b6e3d5f73b6a978c91ef2f93af5555cea68cf35cd8656f806c808416c6899ae",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "de",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "de-430-coverage.json",
+          "sha256": "6a854a3fdf87b3288a08149201c65136935d66d1074185046c201f2b80a41b01",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "en-375-coverage.json",
+          "sha256": "4ad4af27d800730a58ed515d0f8947aace14221a1277e7072150dbe1e893b019",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "en-430-coverage.json",
+          "sha256": "fdbf31dcf1273cbaa96d8a244cd256e5fbaf02123f4ccedc656bc87c59113be7",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "es-375-coverage.json",
+          "sha256": "6718f11c16ecb1bc5ae1212f12a3dde57152c9ebc0406c2743f57133127f630c",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "es-430-coverage.json",
+          "sha256": "12dbdba96f58e4c1278ab00060c3ae219d899267cff4c62fdf5655029ddec482",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "fr-375-coverage.json",
+          "sha256": "7a7eb0d8b0ef218e9956f7cda13236a6145f01edb3f38d885907c6ccb3972ccd",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "canonicalAndExampleScenes": 25,
+        "auditScenes": 37,
+        "measuredChecks": {
+          "textChecked": 990,
+          "iconsChecked": 213,
+          "fieldBoundariesChecked": 13,
+          "activeControls": 573
+        },
+        "failureCounts": {
+          "textFailures": 0,
+          "iconFailures": 0,
+          "fieldBoundaryFailures": 0,
+          "switchPaintFailures": 0,
+          "targetsBelow24": 0,
+          "unsupported": 0
+        },
+        "iphone44Recommendations": 0,
+        "layoutHealthFailures": 0,
+        "evidence": {
+          "artifact": "fr-430-coverage.json",
+          "sha256": "6169c4e026ee143e3ce5572c6f661ad3df06403bb2d54a0023b5b6d2e8a13798",
+          "rawEvidencePublished": false
+        }
+      }
+    ],
+    "auditScenes": 296,
+    "measuredChecks": {
+      "textChecked": 7920,
+      "iconsChecked": 1704,
+      "fieldBoundariesChecked": 104,
+      "activeControls": 4584
+    },
+    "failureCounts": {
+      "textFailures": 0,
+      "iconFailures": 0,
+      "fieldBoundaryFailures": 0,
+      "switchPaintFailures": 0,
+      "targetsBelow24": 0,
+      "unsupported": 0
+    },
+    "iphone44Recommendations": 0,
+    "complexStateIndicatorReviewRecords": 1272,
+    "countsAreRepeatedAcrossScenesNotUniqueControls": true,
+    "evidence": {
+      "artifact": "results.json",
+      "sha256": "50e5cd0ffe319f41e3c7b80732d62c0fab15c1337b0dfe485d411d17ecf0e786",
+      "rawEvidencePublished": false
+    }
+  },
+  "newCompiledPressedAndFocus": {
+    "statistics": {
+      "startTime": "2026-11-13T15:16:34.713Z",
+      "duration": 35654.684,
+      "expected": 9,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "heldCases": [
+      {
+        "language": "de",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "de-pressed-controls.json",
+          "sha256": "d57c0f84246763561065874212105daf530d0f3933b964a937d3c4b74091e505",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "de",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "de-pressed-controls.json",
+          "sha256": "853af6e2fb1acc671636fbe03929eb41b9cc709b6fe1abce94da486063195ff1",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "en-pressed-controls.json",
+          "sha256": "ce71d96502be56675365c4a44d766e8ae3e28e0366440d07d581109f9ea8411a",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "en",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "en-pressed-controls.json",
+          "sha256": "3441abd74666c494fe2c4ba66cba3bbc9452902a5881dbcc765610e4f8cf4b42",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "es-pressed-controls.json",
+          "sha256": "4125cac8428ea861af4a9cf55c53211b87a3e9a362e6b4031f69f0bdbfa3f9b4",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "es",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "es-pressed-controls.json",
+          "sha256": "7bfb8a402572a33af7041ceab665f0cd5a612bf1c8d6ba205ae0bccd29f28a18",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 375,
+          "height": 754
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "fr-pressed-controls.json",
+          "sha256": "cce0a009e426c2240406ac222758383200feb95bbff943a22c198037067d6ff3",
+          "rawEvidencePublished": false
+        }
+      },
+      {
+        "language": "fr",
+        "viewport": {
+          "width": 430,
+          "height": 932
+        },
+        "variants": [
+          "accent",
+          "primary",
+          "icon",
+          "secondary",
+          "danger"
+        ],
+        "evidence": {
+          "artifact": "fr-pressed-controls.json",
+          "sha256": "c4c453a5629e1f2ff6713e58e5aab042f48634009aa8f5f62ff65c128a7bf1c3",
+          "rawEvidencePublished": false
+        }
+      }
+    ],
+    "sustainedPresses": 40,
+    "businessWritesDuringHoldAndCancel": 0,
+    "activePressedGroupOpacity": 1,
+    "keyboardFocus": {
+      "method": "Real Tab traversal, no programmatic focus; switch alignment measured in both states in an isolated context; Chromium CSS, not native accessibility certification.",
+      "checks": [
+        {
+          "kind": "button",
+          "focus": {
+            "focusVisible": true,
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "outlineColor": "rgb(16, 16, 16)",
+            "opacity": "1"
+          }
+        },
+        {
+          "kind": "icon",
+          "focus": {
+            "focusVisible": true,
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "outlineColor": "rgb(16, 16, 16)",
+            "opacity": "1"
+          }
+        },
+        {
+          "kind": "switch",
+          "focus": {
+            "focusVisible": true,
+            "outlineStyle": "auto",
+            "outlineWidth": "1px",
+            "outlineColor": "rgb(16, 16, 16)",
+            "opacity": "1"
+          }
+        }
+      ]
+    },
+    "switchGeometry": [
+      {
+        "checked": false,
+        "width": 44,
+        "height": 44,
+        "trackCenterY": 556.9921875,
+        "thumbCenterY": 557,
+        "absoluteCenterOffsetY": 0.0078125
+      },
+      {
+        "checked": true,
+        "width": 44,
+        "height": 44,
+        "trackCenterY": 556.9921875,
+        "thumbCenterY": 557,
+        "absoluteCenterOffsetY": 0.0078125
+      }
+    ],
+    "evidence": [
+      {
+        "artifact": "results.json",
+        "sha256": "de5eacdec69687b984f70f5f93f7dbc8f14b87991cf851afc2ca667e2d8e0e6d",
+        "rawEvidencePublished": false
+      },
+      {
+        "artifact": "keyboard-focus.json",
+        "sha256": "c62e439baa1a1122910e8f6ae6bbee640f2b8bbe717079a95454b3619ff27452",
+        "rawEvidencePublished": false
+      }
+    ]
+  },
+  "privacy": "Only structural geometry, color/focus status, aggregate counts and hashes are public. Screenshots, traces and isolated QA browser storage stay outside Git. No owner data, credentials or share tokens are included.",
+  "limits": [
+    "Chromium at CSS mobile viewports is not physical iPhone, native Safari or native Switch verification.",
+    "Physical iPhone, VoiceOver, Dynamic Type and human screen-reader checks remain pending.",
+    "No full WCAG certificate or guarantee of absence of all security defects.",
+    "The prior complete Chromium298/WebKit16 suites, unit981 and benchmark24 remain evidence of their original source; they were not rerun or relabeled for this Switch-only change.",
+    "DOM injection was diagnostic; only the subsequent compiled matrix and pressed/focus suite count as correction verification.",
+    "Complex indicator semantics and broader human design review remain separate from these numerical checks."
+  ]
+}

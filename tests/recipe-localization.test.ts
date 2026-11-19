@@ -1,6 +1,6 @@
 import { createHash } from 'node:crypto';
 import { describe, expect, it } from 'vitest';
-import { RECIPES } from '../src/data/recipes';
+import { LEGACY_RECIPES as RECIPES } from '../src/data/recipes';
 import { createMealPlan, planIngredients, scaleRecipe } from '../src/domain/menus';
 import { parseIngredientText } from '../src/domain/ingredientImport';
 import { createTranslator, mergeMessageCatalogs } from '../src/i18n/core';

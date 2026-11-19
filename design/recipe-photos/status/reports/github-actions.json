@@ -1,0 +1,90 @@
+{
+  "sourceCommit": "24f4b37d2215a24cd283d5c6ef94625a0c2ae18f",
+  "pullRequest": 25,
+  "prRunId": 43703498852,
+  "prConclusion": "success",
+  "pushRunId": 43703463609,
+  "pushConclusion": "success",
+  "jobId": 132779509350,
+  "steps": [
+    {
+      "name": "Set up job",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Check out source",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Use Node.js 24",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Install reviewed lockfile without lifecycle scripts",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Reproduce the public recipe selection",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Install pinned photo-audit tooling in an isolated environment",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Check catalogue privacy and photo reception",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Check types",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Run unit tests with bounded workers",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Audit dependencies",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Verify Expo compatibility",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Build the web application",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Use Node.js 24",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Post Check out source",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Complete job",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "unitTestsPassed": 991,
+  "combinedPythonTestsPassed": 51,
+  "photoAuditPythonVersion": "13.0.0",
+  "dependenciesAuditPassed": true
+}

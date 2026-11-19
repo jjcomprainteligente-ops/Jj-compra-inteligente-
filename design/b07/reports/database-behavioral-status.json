@@ -1,0 +1,13 @@
+{
+  "checkedAt": "2026-11-11T18:16:13.509489+00:00",
+  "executed": false,
+  "passed": null,
+  "confirmationAttempts": 2,
+  "providerStatus": "expired",
+  "providerErrorCode": "INVALID_ARGUMENT",
+  "message": "This confirmation expired after 2 minutes. Call execute_sql again to get a new confirmation.",
+  "suite": "supabase/tests/household_security.sql",
+  "sha256": "e8cc847184e641ea53663a8be34f921c0a66967cf6ec7dbef9dfbc422a1606d1",
+  "authLoginOrJwtSignatureVerified": false,
+  "remaining": "Complete the native Supabase confirmation, run the transactional suite, and verify rollback/row counts. Do not count its written cases as passed."
+}

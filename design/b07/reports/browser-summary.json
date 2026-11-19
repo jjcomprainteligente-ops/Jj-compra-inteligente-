@@ -1,0 +1,44 @@
+{
+  "startedAt": "2026-11-11T18:12:09.290Z",
+  "finishedAt": "2026-11-11T18:22:33.987Z",
+  "method": "Chromium browser contexts at CSS 375×667, 430×932 and 1280×1000; not physical iPhone, native iOS or Safari",
+  "scope": "Entire Playwright suite against the selected web export; original 120 captures plus 300 inventory captures (16 screens and 9 labelled examples across 4 languages and 3 CSS sizes); not pixel-level design approval",
+  "nativeChecksPending": [
+    "Physical iPhone and Android",
+    "VoiceOver/TalkBack",
+    "Dynamic Type",
+    "Native keyboard, gestures and safe areas"
+  ],
+  "suite": {
+    "exitCode": 0,
+    "signal": null
+  },
+  "suiteStatistics": {
+    "startTime": "2026-11-11T18:12:10.078Z",
+    "duration": 623326.252,
+    "expected": 298,
+    "skipped": 24,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "suitePassed": true,
+  "resultsReadError": null,
+  "interrupted": false,
+  "completeMatrix": true,
+  "screenshots": 120,
+  "runtimeErrors": [],
+  "failedVisualChecks": [],
+  "protectedArtifactsUnchanged": true,
+  "evidenceDirectory": "design/v2/evidence/run-2026-11-11T18-12-09-287Z-673tzX",
+  "coverage": {
+    "reports": 12,
+    "languages": [
+      "de",
+      "en",
+      "es",
+      "fr"
+    ],
+    "screenshots": 300
+  },
+  "earlierInterruptedRun": "design/v2/evidence/run-2026-11-11T15-40-44-265Z-sKqYEX (retained; not counted as a completed pass)"
+}

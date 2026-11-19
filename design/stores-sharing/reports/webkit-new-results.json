@@ -1,0 +1,1919 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/jjcompraintelwgiemt/node_modules/.bin/playwright",
+      "test",
+      "--config",
+      "playwright.stores-webkit.config.ts"
+    ],
+    "configFile": "/workspace/jjcompraintelwgiemt/playwright.stores-webkit.config.ts",
+    "rootDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/scratch/stores-sharing-webkit/run-reviewed-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "stores-webkit-desktop",
+        "name": "stores-webkit-desktop",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "store-pilot.spec.ts",
+          "list-sharing.spec.ts"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "/workspace/scratch/stores-sharing-webkit/run-reviewed-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "stores-webkit-mobile",
+        "name": "stores-webkit-mobile",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "store-pilot.spec.ts",
+          "list-sharing.spec.ts"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/scratch/stores-sharing-webkit/run-reviewed-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "stores-webkit-desktop",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "snapshotDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "store-pilot.spec.ts",
+          "list-sharing.spec.ts"
+        ],
+        "timeout": 60000,
+        "use": {
+          "browserName": "webkit",
+          "baseURL": "http://127.0.0.1:8081",
+          "locale": "es-ES",
+          "timezoneId": "UTC",
+          "storageState": {
+            "cookies": [],
+            "origins": [
+              {
+                "origin": "http://127.0.0.1:8081",
+                "localStorage": [
+                  {
+                    "name": "jjcompraintelwgiemt.preferences.v1",
+                    "value": "{\"version\":1,\"language\":\"es\",\"welcomeCompleted\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/workspace/scratch/webkit-2026-11-10/webkit-local-libs.sh"
+          },
+          "viewport": {
+            "width": 1280,
+            "height": 1000
+          }
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "stores-webkit-desktop"
+      },
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "/workspace/scratch/stores-sharing-webkit/run-reviewed-01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "stores-webkit-mobile",
+        "testDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "snapshotDir": "/workspace/jjcompraintelwgiemt/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "store-pilot.spec.ts",
+          "list-sharing.spec.ts"
+        ],
+        "timeout": 60000,
+        "use": {
+          "browserName": "webkit",
+          "baseURL": "http://127.0.0.1:8081",
+          "locale": "es-ES",
+          "timezoneId": "UTC",
+          "storageState": {
+            "cookies": [],
+            "origins": [
+              {
+                "origin": "http://127.0.0.1:8081",
+                "localStorage": [
+                  {
+                    "name": "jjcompraintelwgiemt.preferences.v1",
+                    "value": "{\"version\":1,\"language\":\"es\",\"welcomeCompleted\":true}"
+                  }
+                ]
+              }
+            ]
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure",
+          "launchOptions": {
+            "executablePath": "/workspace/scratch/webkit-2026-11-10/webkit-local-libs.sh"
+          },
+          "viewport": {
+            "width": 390,
+            "height": 844
+          },
+          "isMobile": true,
+          "hasTouch": true
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": "stores-webkit-mobile"
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/workspace/scratch/stores-sharing-webkit/run-reviewed-01/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "list-sharing.spec.ts",
+      "file": "list-sharing.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "es: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5984,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:21:40.132Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-fa9b5ce01f34a0e361e7",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "es: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4254,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:21:46.574Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-9de387797244aae26898",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "es: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4005,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:21:50.867Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-b3e502ae52c08e822f80",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "en: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6890,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:21:54.893Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-936c29187c86a2d6e295",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "en: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4782,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:01.851Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-00717f0e3b475ea16725",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "en: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4875,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:06.657Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-1e40ff58e9d6685c7c0e",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "de: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6170,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:11.555Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-7616765bf97ef837feaf",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "de: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4540,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:17.751Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-256f0516a3733509d0c4",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "de: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4270,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:22.339Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-50efa362ed84622e3c69",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "fr: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6225,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:26.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-01f787a8b69271791a78",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "fr: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3833,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:32.896Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-fe8d0a41e738cd095a6a",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "fr: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4913,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:36.795Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-4931e7502a828077c9b0",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "un panel de compartir ocupado impide dobles envíos, Escape, cierre exterior y navegación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 6143,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:41.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-40718856ef147f36d94b",
+          "file": "list-sharing.spec.ts",
+          "line": 208,
+          "column": 5
+        },
+        {
+          "title": "un fallo del sistema conserva el texto y solo descarga cuando la persona lo pide",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:47.988Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-48022e83ce0d8d51164e",
+          "file": "list-sharing.spec.ts",
+          "line": 238,
+          "column": 5
+        },
+        {
+          "title": "una lista sin pendientes no envía ni descarga hasta incluir comprados explícitamente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4420,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:52.353Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-69dc2c91448115c77f30",
+          "file": "list-sharing.spec.ts",
+          "line": 260,
+          "column": 5
+        },
+        {
+          "title": "una lista vacía no ofrece compartir una copia sin productos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5447,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:22:56.789Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-deaecbeec62e8fd1ebd1",
+          "file": "list-sharing.spec.ts",
+          "line": 279,
+          "column": 5
+        },
+        {
+          "title": "un cambio posterior en los datos no sustituye el texto ya revisado ni se sobrescribe al compartir",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1716,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:02.245Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-11a626d31169c90b0b20",
+          "file": "list-sharing.spec.ts",
+          "line": 293,
+          "column": 5
+        },
+        {
+          "title": "es: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:25.817Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-bb41c6d539bf5d2cc45f",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "es: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1243,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:28.171Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-87d5978aab82b5c56d74",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "es: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1433,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:29.430Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-8e88ed13f56c29daf5bf",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "en: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1861,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:30.875Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-5e9fa5676d88b6c5081b",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "en: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1144,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:32.751Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-73b90c313f16af43c9db",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "en: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1428,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:33.905Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-59b36560a7d32f267dd3",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "de: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1818,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:35.340Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-351f21de31c1b2987522",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "de: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1186,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:37.168Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-a3f8a73894c4fca407be",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "de: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:38.367Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-18281b48635dd5e1b0a9",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "fr: revisa y descarga solo la lista elegida; incluir comprados es explícito y cancelar conserva siete documentos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1689,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:39.734Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-4575f268e42e56f85f1c",
+          "file": "list-sharing.spec.ts",
+          "line": 127,
+          "column": 7
+        },
+        {
+          "title": "fr: el panel de compartir solo recibe el texto revisado tras un gesto explícito",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1175,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:41.434Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-592a27eb3118ed8db72c",
+          "file": "list-sharing.spec.ts",
+          "line": 171,
+          "column": 7
+        },
+        {
+          "title": "fr: cancelar el panel del sistema conserva la revisión y no anuncia un envío",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:42.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-7de18ef60d896337c739",
+          "file": "list-sharing.spec.ts",
+          "line": 191,
+          "column": 7
+        },
+        {
+          "title": "un panel de compartir ocupado impide dobles envíos, Escape, cierre exterior y navegación",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1464,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:44.065Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-22967caa05d1f5d7243d",
+          "file": "list-sharing.spec.ts",
+          "line": 208,
+          "column": 5
+        },
+        {
+          "title": "un fallo del sistema conserva el texto y solo descarga cuando la persona lo pide",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1230,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:45.545Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-2f1034b3488b4ac42e8a",
+          "file": "list-sharing.spec.ts",
+          "line": 238,
+          "column": 5
+        },
+        {
+          "title": "una lista sin pendientes no envía ni descarga hasta incluir comprados explícitamente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1297,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:46.788Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-8ec5f3fe1b56ba65a1c4",
+          "file": "list-sharing.spec.ts",
+          "line": 260,
+          "column": 5
+        },
+        {
+          "title": "una lista vacía no ofrece compartir una copia sin productos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1287,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:48.097Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-7202b22fc7c045901fb7",
+          "file": "list-sharing.spec.ts",
+          "line": 279,
+          "column": 5
+        },
+        {
+          "title": "un cambio posterior en los datos no sustituye el texto ya revisado ni se sobrescribe al compartir",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1279,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:49.394Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "774cc48b498fb51be590-9fcbfc7301bf47a87003",
+          "file": "list-sharing.spec.ts",
+          "line": 293,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "store-pilot.spec.ts",
+      "file": "store-pilot.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "una, varias y todas las tiendas persisten; cada Dino conserva su identidad y la lista queda intacta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2504,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:03.987Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-56561eaf0ba95636a229",
+          "file": "store-pilot.spec.ts",
+          "line": 51,
+          "column": 5
+        },
+        {
+          "title": "consultar una tienda abre solo su destino público y no envía un carrito ni solicita precios automáticamente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1996,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:06.504Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-845b6668c0e22e972355",
+          "file": "store-pilot.spec.ts",
+          "line": 80,
+          "column": 5
+        },
+        {
+          "title": "es: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2684,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:08.511Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-98c57a99fb5017a4e33a",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "en: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2838,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:11.212Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-20be2515ccaef8d5f60f",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "de: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3030,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:14.103Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-f0d3ca461aed6f15c056",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "fr: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2676,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:17.197Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-b4fc8a7593945f89f730",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "un fallo de cuota conserva favoritas y recordatorios y permite reintentar sin éxito falso",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1938,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:19.883Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-16478756b6cad91d2d78",
+          "file": "store-pilot.spec.ts",
+          "line": 152,
+          "column": 5
+        },
+        {
+          "title": "otra pestaña no puede reemplazar una selección más reciente; revisar permite añadir sin perderla",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-desktop",
+              "projectName": "stores-webkit-desktop",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3043,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:21.846Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-31e93d6a4739813d0a23",
+          "file": "store-pilot.spec.ts",
+          "line": 180,
+          "column": 5
+        },
+        {
+          "title": "una, varias y todas las tiendas persisten; cada Dino conserva su identidad y la lista queda intacta",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1925,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:50.686Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-4049e10d58a93ae0d499",
+          "file": "store-pilot.spec.ts",
+          "line": 51,
+          "column": 5
+        },
+        {
+          "title": "consultar una tienda abre solo su destino público y no envía un carrito ni solicita precios automáticamente",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1460,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:52.620Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-5d18e9399d8c628a5405",
+          "file": "store-pilot.spec.ts",
+          "line": 80,
+          "column": 5
+        },
+        {
+          "title": "es: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2249,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:54.087Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-950c9f18d2cb1a8154b9",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "en: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2244,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:56.345Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-952b45f4aabfd979c318",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "de: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2307,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:23:58.598Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-91a958cfdc70026a5d6a",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "fr: ampliar favoritas antiguas conserva recordatorios, idioma y los otros datos",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2351,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:24:00.914Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-7a33fc0874a6bb7709d4",
+          "file": "store-pilot.spec.ts",
+          "line": 123,
+          "column": 7
+        },
+        {
+          "title": "un fallo de cuota conserva favoritas y recordatorios y permite reintentar sin éxito falso",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1597,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:24:03.275Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-ea37937a6a2316ace69c",
+          "file": "store-pilot.spec.ts",
+          "line": 152,
+          "column": 5
+        },
+        {
+          "title": "otra pestaña no puede reemplazar una selección más reciente; revisar permite añadir sin perderla",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "stores-webkit-mobile",
+              "projectName": "stores-webkit-mobile",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2516,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-11T01:24:04.881Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "223151ab495a7a5d002c-6865f0f44510e4afd06d",
+          "file": "store-pilot.spec.ts",
+          "line": 180,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-11T01:21:39.051Z",
+    "duration": 148416.212,
+    "expected": 50,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

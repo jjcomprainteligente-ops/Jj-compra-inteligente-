@@ -1,0 +1,52 @@
+{
+  "checkedAt": "2026-11-11T18:16:13.509489+00:00",
+  "reviewedFiles": [
+    {
+      "path": "supabase/migrations/20261111154212_jj_household_foundation.sql",
+      "sha256": "a999b115c2b21bc7212f4697aa69010fbcb4d47c7c018eb7d7f84bb03f110c4b"
+    },
+    {
+      "path": "supabase/migrations/20261111174718_jj_foundation_integrity_indexes.sql",
+      "sha256": "8d346e2736022900d622efa37c2aa1af8d7b950e92b67480c8f417430803483f"
+    },
+    {
+      "path": "src/domain/householdContracts.ts",
+      "sha256": "f4226e9b362e75a938afeb3df4caf9b667a1c4912619011bcef651acffb52f63"
+    },
+    {
+      "path": "tests/household-contracts.test.ts",
+      "sha256": "ad24788418dd11f21170864148ed4d44f92de79b79bb2192a953a5a8c9175ec6"
+    },
+    {
+      "path": "supabase/tests/household_security.sql",
+      "sha256": "e8cc847184e641ea53663a8be34f921c0a66967cf6ec7dbef9dfbc422a1606d1"
+    },
+    {
+      "path": "scripts/verify-b07-anonymous.cjs",
+      "sha256": "699581d845d70d3399e514b8851b29ba42f5295a09fff970d13fc967efcaf95d"
+    }
+  ],
+  "exports": [
+    {
+      "platform": "web",
+      "file": "_expo/static/js/web/index-60efe03bd479958fb6f251671c6741a1.js",
+      "bytes": 3613192,
+      "sha256": "6f57257d52de2a76106a4d41fee185dddeb0b0a935283748403eccd905e45d74"
+    },
+    {
+      "platform": "ios",
+      "file": "_expo/static/js/ios/index-e65a826020cda9094b7c4c36c0816cb9.hbc",
+      "bytes": 4972689,
+      "sha256": "8b5d8f582a907446db80da7bed1fd3df20a8963f643d4ce46d9ceb1697bff106"
+    },
+    {
+      "platform": "android",
+      "file": "_expo/static/js/android/index-d84c43a6d124a6cd11a5d12770ec5289.hbc",
+      "bytes": 4978108,
+      "sha256": "b4dae67191b181b1c33b250fb1ee4d6cf48caad4b437173e0d2925637d868944"
+    }
+  ],
+  "existingAppUiStorageI18nLogoDependenciesAndReferencesUnchanged": true,
+  "referenceFiles": 77,
+  "physicalDeviceVerified": false
+}

@@ -245,3 +245,449 @@ Entrega: docs/I18N_ENTREGA_Y_AUDITORIA.md. No se certifica ausencia absoluta de 
 GitHub confirma el commit de importación `732d1817f3b856384e98191dd82cb92241011271` en `main`. Clon independiente: instalación, TypeScript, 496 pruebas y exportación web correctos. La preview staging `dpl_Ewmo9hTVBK4WTkkjagSscWy5qj4g` incluye metadatos del mismo commit y pasó comprobaciones remotas en cuatro idiomas y 23 recursos/URLs. Fuentes de ejecución idénticas permiten reutilizar la exportación i18n auditada; no se presenta como una nueva corrección visual ni como un binario recompilado idéntico a la exportación web nueva. Informes en `github/G00_ENTREGA_Y_AUDITORIA.md` y `design/github-g00/`.
 
 La dependencia pendiente para V00/V01 es recuperar los originales V2; el diagnóstico no autoriza inventar la marca ni certificar dieciséis pantallas terminadas. Los riesgos técnicos/nativos anteriores permanecen registrados.
+
+
+## 06/11/2026 — Auditoría de V01/V02 y referencias
+
+- Fuente visual activa: contrato y PNG canónicos V2 recuperados; JPG logo 750054… y recorte actual ab7813…verificados, sin 3D/trazado.
+- Cambios de presentación conservan contratos de datos, coordinador de escritura, preferencias e integraciones. Gasto real permanece sin registrar; productos marcados no son pagos.
+- 128 pruebas web,496unitarias y 120 capturas finales correctas; TypeScript y tres exportaciones correctos. Se conservan resultados previos e interrupciones con explicación; no se esconden fallos anteriores ni se atribuyen al código final.
+- Npm audit06/11 registra10 paquetes afectados:2 altos, 7 moderados, 1 bajo, 0 críticos. No se aplica una degradación mayor de Expo ni se prometen 0 riesgos.
+- GitHub precede a la publicación de preview staging. La transferencia directa grande a Vercel no se confirmó; se comprobará otra vía desde la revisión Git, sin promover producción ni retirar protección.
+- iPhone/Safari físico, VoiceOver/DynamicType, teclado/safeareas y las funciones aún ausentes siguen pendientes.
+
+
+## 06/11/2026 — Publicación V2 comprobada
+
+Preview staging READY `dpl_FEo2wA8AwT4zmcZeGFxSBWpgaL7A`, código `3dbcff9435a6d2aad97e7766e2e38d0fabe790c7`, [PR #1](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/1). Cuatro idiomas, 27 recursos/URLs y 12 capturas remotas correctos; JavaScript decodificado y logo coinciden en hashes. Se conserva protección y producción. Enlace temporal fuera de Git. Detalles en `V2_PUBLICACION_VERIFICADA.md`. Estado de V01/V02: EN REVISIÓN VISUAL; avisos de dependencias, pruebas físicas y módulos futuros permanecen abiertos.
+
+
+## Verificación de totalidad solicitada por el propietario
+
+La aplicación publicada no completa todo el paquete recibido. Siete pantallas y cinco estados carecen de preparación; Presupuesto, receta e ingredientes no corresponden a subpantallas canónicas completas. Se registran además deshacer manual incompleto y detección manual de duplicados limitada a misma unidad. Las pruebas existentes son válidas en su alcance; 120 capturas corresponden a 10 escenas, no a 25 objetivos. Esta revisión solo incorpora documentación y corrige el estado de completitud, sin alterar la app.
+
+No se cuentan como trabajo realizado recursos de marca no preparados, ni se interpreta la petición de totalidad como autorización para fingir pagos, permisos, fuentes comerciales, hogares o 3D aprobado. Los requisitos, referencias y criterios pendientes están en `AUDITORIA_COMPLETITUD_V2.md`.
+
+
+## 07/11/2026 — V2: auditoría de dos bloques locales y seguridad revisada
+
+Esta actualización continúa la preparación autorizada tras la auditoría de totalidad. La conclusión histórica de incompletitud se conserva como baseline; las nuevas pantallas y flujos se documentan en [V2_COBERTURA_LOCAL_Y_AUDITORIA.md](V2_COBERTURA_LOCAL_Y_AUDITORIA.md). Código editable guardado en GitHub, `dfd2a4eb917ef6d49aab794a0d36d799eed6c77d`, [PR #2 en borrador](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/2); Vercel sigue siendo una vista de prueba separada.
+
+- **DATOS:** gastos confirmados y preferencias de favoritas/avisos usan dos claves versionadas nuevas y el coordinador de escrituras existente. Se preservan las cinco claves anteriores, sus esquemas y los bytes corruptos o de versiones futuras. Marcar productos, anotar precios y seleccionar recetas no registra pagos.
+- **CORRECCIÓN DE LA AUDITORÍA:** las dos claves nuevas faltaban en la lista permitida del registro duradero de escrituras web; se añadieron y se probaron su ciclo de confirmación y rechazo de conflictos. No se eliminan reservas ambiguas para hacer pasar un guardado.
+- **ENTRADAS OPCIONALES:** voz y escáner dependen de capacidades reales del navegador y requieren consentimiento más acción explícita. Cámara sin audio, limpieza al salir/ocultar y liberación de permisos que resuelven tarde. El servicio de voz del navegador puede procesar audio; se informa antes de activarlo. Nativo y navegadores sin capacidad ofrecen entrada manual y revisión antes de añadir.
+- **NOTIFICACIONES Y TIENDAS:** preferencias locales reales y avisos derivados de datos guardados; no push, scheduler, catálogo de supermercado, acuerdo ni precio verificado. La búsqueda y ficha operan sobre listas guardadas.
+- **PRESENTACIÓN:** logo horizontal y paleta Verde Mercado Premium conservados. Las 16 vistas son navegables y los nueve estados tienen ejemplos explícitos; el estado de aprobación visual permanece abierto. Receta e ingredientes son páginas completas y protegen el borrador al salir.
+- **DEPENDENCIAS:** Expo actualizado a 58.0.23 y versiones transitivas compatibles, sin saltos mayores ni `overrides`. `npm audit` baja de diez paquetes afectados —dos altos, siete moderados y uno bajo— a cinco moderados, cero altos y cero críticos. Se conservaron informes anteriores y posteriores en `design/v2/audit/`.
+- **VERIFICACIÓN AUTOMATIZADA COMPLETA:** TypeScript y 660 pruebas unitarias pasan y se exportó web/iOS/Android. La primera suite encontró un selector de pruebas ligado a la posición de una fila que cambia de grupo al excluirla; se corrigió para localizar por identidad accesible sin reducir las expectativas. La suite completa corregida terminó con 182 pruebas web correctas, cero fallos, cero intermitentes y 24 duplicados de matrices deliberadamente omitidos. El informe `design/v2/evidence/run-2026-11-07T16-48-40-655Z-p3mv4e/report.json` confirma 300 capturas de las 16 pantallas y nueve ejemplos, más 120 de diez escenas anteriores: cuatro idiomas, tres tamaños, sin errores de ejecución o fallos de salud visual detectados. Los artefactos anteriores permanecen idénticos. Esto no constituye aprobación estética ni validación en iPhone físico.
+
+| Riesgo / puerta vigente | Tratamiento y criterio de cierre |
+|---|---|
+| V2-L01: cinco avisos moderados en CLI/fingerprint y glob/minimatch | Mantener registro npm; actualizar cuando exista solución compatible y repetir auditoría/regresión. Las versiones corregidas exceden rangos actuales; no forzar cambios mayores para ocultar el aviso. |
+| V2-L02: compatibilidad de hardware y APIs web | Las pruebas de sensores simulan contratos. Probar cámara, micrófono, cancelación y permisos en dispositivos/navegadores reales antes de afirmar soporte físico. |
+| V2-L03: aceptación nativa y accesibilidad | Piloto iPhone/Safari y Android con teclado, gestos, safe areas, VoiceOver/TalkBack y tamaño de texto. Compilar Hermes no acredita esas condiciones. |
+| V2-L04: aprobación visual y marca | Contrastar capturas con canon y obtener revisión del propietario/ChatGPT. Variantes, iconos y 3D conservan una revisión separada antes de integrar cambios de marca. |
+| V2-L05: alcance futuro | Hogares/cuentas/sincronización, privacidad ampliada, IA conectada, fuentes comerciales y checkout siguen condicionados a sus bloques y autorizaciones. No presentarlos como listos por completar navegación local. |
+| V2-L06: publicación pendiente de esta entrega | La auditoría automatizada de la pareja está cerrada; publicar solo la compilación comprobada en staging, con GitHub como fuente, protección conservada y verificación remota previa al enlace. |
+
+### Cierre de publicación y ajuste accesible — 2026-11-08
+
+Código final de la preview: `746395e614e68624e012e76d13e0fa377e241c6a`. Tras los 182 casos de la suite completa se añadieron dos atributos `aria-checked` al formulario de gastos; los 20 casos locales se repitieron y pasan, sin fallos ni intermitentes. Exportación web/iOS/Android repetida. Preview staging READY, protección conservada y verificación remota en cuatro idiomas / 27 recursos correcta. El enlace temporal se entrega en la conversación y caduca el 9 de noviembre a las 09:00 UTC; su credencial no se guarda en GitHub.
+
+La publicación de código e informes está cerrada; la aprobación estética y el piloto físico siguen pendientes. La revisión automática bloqueó publicar las 100 capturas seleccionadas en GitHub público por posible información sensible y falta de autorización específica. Se mantienen locales, con petición de autorización separada; los informes de texto se conservan en `design/v2/entrega-local-2026-11-07/reports/`. Este bloqueo de imágenes no bloquea la app publicada ni modifica el resultado de pruebas.
+
+## Decisiones y auditoría de filtros/privacidad — 2026-11-09
+
+- **AUTORIZACIÓN Y ALCANCE:** el propietario pidió seguir con la construcción mientras prepara las recetas en cuatro idiomas. Se completan los filtros de Menús y controles locales de copia/borrado ya pedidos en los documentos, manteniendo Codex como único autor del código. No se activan backend, cuentas, sincronización, precios comerciales, pagos o IA conectada.
+- **PREFERENCIAS DE SESIÓN:** filtros de tiempo/ingredientes y preferencia no se guardan. Un menú existente no se altera al filtrar; la propuesta de sustitución exige confirmación y cinco recetas únicas. Las clasificaciones alimentarias están ligadas al contenido revisado, sin promesas sobre alérgenos o coste.
+- **DATOS CONSERVADOS:** no se crearon claves ni migraciones. Exportación local por allowlist de siete documentos, con dos lecturas y límites de tamaño. Borrado de seis categorías por separado, contra una revisión privada vigente, con palabra/casilla, CAS/fence y comprobación del estado vacío. Recarga tras éxito elimina la posibilidad de resucitar el estado borrado mediante deshacer.
+- **CORRUPCIÓN Y CAMBIOS CONCURRENTES:** un dato no validable no se borra; se conserva como texto inerte en la copia exportada. Un cambio tras la revisión o un resultado incierto bloquea el nuevo intento hasta revisar explícitamente los datos actuales. No se eluden las protecciones de guardado.
+- **COMPROBACIÓN:** TypeScript y 758 pruebas unitarias correctos; 40 recorridos nuevos correctos por separado; suite completa: 222 correctos,0 fallos / 0 intermitentes y 24 omisiones deliberadas. 420 capturas base y 24 adicionales. Exportación web/iOS/Android; cuatro idiomas y 27 recursos/bytes exactos verificados en Vercel, incluida exportación y borrado aislado. Fuentes en `fd78ecb`, informes en `design/menus-privacy/reports/`, PR #3.
+
+| Riesgo o puerta | Estado y tratamiento |
+|---|---|
+| Compatibilidad iPhone/Safari y panel Share | Pendiente prueba física. Los mocks comprueban contratos y ciclo de vida; no acreditan cámara/micrófono, teclado, safe areas, lectores de pantalla o Share reales. |
+| Copia nativa y tamaño | Comparte JSON como texto con máximo 1.000.000 de caracteres; web descarga JSON, máximo 20 MiB final / 10 MiB por documento. La copia de varios documentos no es una transacción atómica; se rechazan diferencias detectadas entre lecturas. No se ha implementado restauración automática desde esta copia. |
+| Borrado de documentos no validados | Bloqueado para preservar corrupción o versiones futuras; exportación sigue disponible dentro de límites. El borrado es lógico del contenido de la app, no una garantía forense sobre almacenamiento del sistema. |
+| Avisos npm | Cinco moderados en herramientas transitivas; 0 altos / 0 críticos. Mantener seguimiento y actualización compatible; sin overrides forzados. |
+| Recetas del propietario | Las 150 traducidas siguen pendientes de recibir. No se han inventado ni sustituido por fixtures. La futura colección debe añadirse a los controles de datos al implementarse. |
+| Aprobación visual y marca | Pendiente del propietario/ChatGPT; tokens y PNG original conservados. Variantes, iconos y 3D siguen revisión aparte. |
+
+La publicación verificada es `dpl_DN9HdAtWMEm7sVCLkoMnGwsgYdpo`, destino `staging`, protección conservada; el enlace temporal se entrega en la conversación y vence el 10 de noviembre a las 09:10 UTC. Su secreto queda fuera del repositorio. Los despliegues e informes previos permanecen conservados.
+
+## Decisiones y auditoría de paneles/WebKit — 2026-11-10
+
+- **ALCANCE AUTORIZADO:** continuar la construcción y auditar cada pareja de bloques. Se completan mejoras compartidas de accesibilidad y la verificación real de WebKit; no se crean funciones comerciales, cuentas, sincronización o IA conectada. La preferencia visual aprobada y los recursos originales se conservan.
+- **FOCO:** RNWeb conserva su trap, Escape y restauración normal. Un hook compartido repara el foco perdido al cambiar de paso y complementa el retorno cuando el autofocus había ocultado el disparador. Solo web, sin listeners globales; el fallback espera el cierre, exige foco en body y un disparador conectado/habilitado. No enfoca una acción destructiva. Las pruebas detectaron el fallo de retorno que no encontró la primera revisión estática y comprobaron la corrección.
+- **TEXTO GRANDE:** la revisión visual encontró un recorte real que una primera comprobación de foco no detectaba. Las pruebas exigen visibilidad y toque, conservando el 200 % en nodos remontados. Si cabecera y acciones medidas agotan el cuerpo, el panel pasa a un solo desplazamiento hasta cerrar. Los valores y decisiones importantes pertenecen al padre; no se escriben ni descartan al cambiar la disposición.
+- **VERIFICACIÓN FINAL:** TypeScript; 758 unitarias; 248 Chromium y 42 WebKit correctos, sin fallos ni intermitentes. Chromium registra 24 omisiones deliberadas de matrices duplicadas. Exportaciones web/iOS/Android, 420 capturas base y comprobación de integridad de 75 referencias. Informes en `design/mobile-readiness/reports/`.
+
+| Riesgo / puerta | Estado y tratamiento |
+|---|---|
+| Teclado y zona segura físicos | Pendiente iPhone/Safari, VoiceOver/TalkBack y Dynamic Type. El cálculo usa ventana/inset; no mide directamente el área reducida por el teclado. WebKit Linux y CSS al 200 % no cierran esta puerta. |
+| Cambio de disposición | Puede reiniciar cursor, selección y scroll al remontar controles. Los borradores actuales son controlados por componentes propietarios; futuros hijos con estado interno necesitan revisión específica. |
+| Futuros pasos de modal | El foco se repara con cambios de título/disposición, no mediante un observador general de contenido. Una nueva transición que elimine el control activo sin cambiar esas claves exige validación de teclado. |
+| Seguridad de dependencias | Consulta del 10/11: cinco moderados, cero altos/críticos. Dos advisories transitivos glob/minimatch en herramientas Expo; versiones corregidas exceden los rangos oficiales. Mantener seguimiento sin ocultar avisos ni forzar mayores/downgrades. No existe JSON guardado de la consulta nueva; el informe de texto identifica los comandos y versiones. |
+| Datos y privacidad | No se modificaron claves, migraciones, coordinación durable ni confirmaciones de borrado. Pruebas con datos ficticios; copias personales, trazas y capturas quedan fuera de GitHub. |
+| Recetas, marca y aceptación | Las 150 recetas siguen pendientes de recepción. Se mantiene el catálogo inicial de siete; variantes/3D y revisión estética siguen por etapas. Hogares y comercio real continúan condicionados. |
+
+La publicación de esta entrega se registrará tras verificar la preview protegida desde el commit guardado en GitHub. No implica promoción a producción ni aceptación visual o física.
+
+
+### Publicación verificada — 2026-11-10
+
+Fuente de aplicación: `23bde4371aa041a6ab96ab2f62afe815a6f5c472`, [PR #7](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/7), base en la entrega de filtros/privacidad. Preview `staging` READY: `dpl_BX1bmmAu4j653jPPJ3oS9AqjFp6K`, URL base https://jj-compra-inteligente-e3qq1imu1-cmj2hwhc6b-1051.vercel.app . Protección conservada. Verificación remota correcta en es/en/de/fr y 27 recursos por bytes/hash, incluidos filtros, guardado, menús, copia JSON exacta y borrado confirmado aislado. El enlace temporal se entrega únicamente en la conversación; vence el 11 de noviembre de 2026 a las 15:00:33 UTC. Su credencial queda fuera de GitHub. Informe: `design/mobile-readiness/reports/hosted-verification.json`.
+
+Los borradores separados [PR #4, piloto de tiendas](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/4) y [PR #5, especificación de precios y salida externa](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/5) se localizaron en GitHub y permanecen intactos. No forman parte de esta preview ni se fusionaron automáticamente; su validación e integración es una entrega posterior. Se conserva el historial y no se promueve a producción. La prueba física, la revisión visual, las 150 recetas y los cinco avisos moderados siguen pendientes.
+# Tiendas y pago externo · decisión del propietario 10/11/2026
+
+La selección admite una, varias o todas las tiendas del piloto. HiperDino, SuperDino y Express tienen identificadores independientes; no heredan catálogo/precio entre formatos o sucursales. La compra y el pago serán siempre del comercio elegido. La consulta pública demuestra acceso a páginas y ofertas, no una integración oficial: catálogo automatizado, cobertura por CP/sucursal, transferencia de carrito y stock quedan sin confirmar. Se conserva «Sin precio verificado» y el comparador manual independiente. No se envían solicitudes a cadenas en esta entrega. [Investigación, contrato y límites](PILOTO_TIENDAS_Y_PRECIOS_2026-11-10.md).
+
+
+## Tiendas y listas compartibles — 2026-11-11
+
+Se integra el borrador de tiendas `2ae8d27` sobre la entrega de accesibilidad `338ba24`, conservando ambos historiales y los anexos previos. La pareja construida incluye selección de una, varias o todas las seis tiendas del piloto con destinos oficiales, y compartir una copia revisada de la lista en texto, sin notas, precios, presupuesto o IDs. No cambia las siete claves locales ni activa cuentas, fuentes de precios o pagos.
+
+Auditoría completa: TypeScript y 816 unitarias correctos; 298 Chromium y 92 WebKit correctos, cero fallos/intermitentes en las pasadas finales. Chromium registra 24 omisiones deliberadas de matrices duplicadas. Los 50 recorridos nuevos pasaron también por separado. Exportaciones web/iOS/Android, 420 capturas base, capturas adicionales locales e integridad de 75 referencias comprobadas. La prueba detectó y corrigió retorno de foco del botón Compartir; se mantuvo su aserción.
+
+[Auditoría](TIENDAS_COMPARTIR_Y_AUDITORIA.md) · [Inventario vigente](ESTADO_ACTUAL_Y_PENDIENTES.md). Informes públicos en `design/stores-sharing/reports/`; imágenes y trazas locales. La consulta npm nueva del 11/11 mantiene cinco moderados, cero altos/críticos, sin parche oficial compatible ni cambios de dependencias.
+
+Marca: lámina técnica aislada con el PNG exacto, seis tamaños y cuatro fondos; no se presenta como SVG, isotipo, icono o 3D nuevo. Puede incluirse en la preview como revisión estática separada de la app. Los derivados siguen su revisión/aprobación.
+
+Cuentas/hogares no se fingen mediante compartir texto. Se prepara una propuesta independiente de B07 antes de activar proveedor, autenticación y datos remotos, con aprobación de arquitectura y costes conforme a AGENTS.md:18 y B07:17. Siguen pendientes las 150 recetas, la prueba física y la aceptación visual. GitHub precederá a la preview staging protegida de esta entrega.
+
+
+### Publicación verificada — 11/11/2026
+
+Fuente compilada: `c0c7a312e5ad91313a059c25c8594a12ea48a6dc`, [PR #8](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/8). Incluye ambos padres de integración `338ba24` y `2ae8d27`; no se sustituyó el trabajo previo. Staging READY: `dpl_5HaNVgJxEtpz9zX2gpWScLFnXRWU`, URL base https://jj-compra-inteligente-3y5pjf63u-cmj2hwhc6b-1051.vercel.app . Protección conservada, sin promoción a producción.
+
+Verificación remota correcta en es/en/de/fr y 29 recursos/URLs por hash. Comprueba selección de seis tiendas, contratos de navegación externa con mock sin ir a los comercios, copia TXT exacta sin notas privadas, retorno de foco, siete documentos intactos al compartir, backup exacto, borrado confirmado aislado, idiomas persistentes y lámina de marca con PNG original/CSP. El enlace temporal se entrega fuera de GitHub y vence el 12/11/2026 a las 11:21:05 UTC. Informe público: `design/stores-sharing/reports/hosted-verification.json`; capturas y credencial locales.
+
+B07 tiene una propuesta concreta separada en [PR #9](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/9): documento y contrato JSON de 20 operaciones; no activa servicios ni modifica la app. Antes de activar cuentas/hogares deben aprobarse proveedor/proyecto, tratamiento y región, autenticación/correo, costes y retención, conforme a AGENTS.md:18 y B07 original:17. Las 150 recetas, derivados de marca aprobados, aceptación visual y validación física siguen pendientes; cinco avisos npm moderados continúan abiertos.
+
+
+## B07.1–B07.2 · Contratos y base aislada — 11/11/2026
+
+El propietario autorizó Supabase en la UE, máximo 0 €, y continuar con la organización conectada para cambiar la cuenta después. Proyecto JJ independiente creado en Frankfurt, free, cotización mensual 0. B07.1 tiene 20 validadores de solicitud y proyección inmutable sin notas/precios/presupuesto; 147 nuevas pruebas, 963 unitarias totales y TypeScript correctos.
+
+B07.2 tiene 14 tablas con RLS/FORCE y dos migraciones aplicadas; clientes sin DML, SELECT autenticado condicionado, lector NOLOGIN/NOBYPASS y helper privado acotado para sesiones reales de Auth. Catálogo/grants y cuatro denegaciones HTTP reales comprobados; base vacía, sin usuarios ni datos de prueba. La revisión estática independiente corrigió getters, historia/épocas, padre eliminado, namespace y coherencia de nombres.
+
+**B07.2 permanece abierto:** la suite dinámica SQL/RLS no llegó a ejecutarse: dos confirmaciones de Supabase caducadas, no resultados de pruebas. No se elude el control ni se atribuye éxito a sus casos escritos. Hay que completar la confirmación nativa, ejecutar la transacción de fixtures y comprobar ROLLBACK. La aplicación local conserva sus siete claves, diseño, logo y dependencias; no hay login/BFF, invitaciones, importación o sincronización activados. El SMTP predeterminado no acredita registro público. Diez INFO de RLS privado sin políticas de cliente son acceso denegado deliberado; índices sin uso corresponden a base vacía, y los dos FK sin cobertura se corrigieron. Siguen cinco avisos npm moderados de herramientas.
+
+[Entrega, auditoría y criterios pendientes](B07_BASE_SEGURA_Y_AUDITORIA.md). Evidencias en `design/b07/reports/`; pruebas transaccionales en `supabase/tests/household_security.sql`. GitHub precede a la nueva vista staging protegida. Se mantienen la auditoría por parejas, las recetas del propietario pendientes y la validación física/visual separada.
+
+
+### Regresión web final de B07.1–2 — 11/11/2026
+
+298 pruebas Chromium correctas, cero inesperadas/intermitentes, 24 omisiones duplicadas deliberadas; 120 capturas de recorridos y 300 de cobertura V2 en cuatro idiomas, con artefactos anteriores intactos. La matriz SQL no se cuenta como ejecutada. [Informe](../design/b07/reports/browser-summary.json).
+
+
+### Publicación y verificación remota — 11/11/2026
+
+Fuente compilada `3fa95b99910617121e513533b265be5a8ecee047`, [PR #10](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/10), rama `codex/b07-base-segura`. Commit con dos padres: conserva `914fa2e` y la propuesta `4e0fb2a`; árbol publicado verificado contra el índice local. GitHub recibió el código antes de publicar la vista.
+
+Vercel staging READY `dpl_9cxY4peum9BMcEneBzwnSnPA18WJ`, origen https://jj-compra-inteligente-4ahqufx66-cmj2hwhc6b-1051.vercel.app . Protección del proyecto conservada. Compilado web SHA-256 `6f57257d52de2a76106a4d41fee185dddeb0b0a935283748403eccd905e45d74`; logo original intacto. Transporte Brotli y 23 archivos publicados; no fuentes de app, paquetes nativos, fixtures, listas del propietario ni credenciales.
+
+Verificación remota correcta en es/en/de/fr y 29 recursos/URLs por hash, incluidas selección de tiendas, copia TXT revisada y foco, datos locales y exportación/borrado aislado, preferencias de idioma y lámina de raster con CSP. Informe público `design/b07/reports/hosted-verification.json`; imágenes y URL de acceso temporales fuera de Git. El enlace compartido vence el **12/11/2026 a las 17:28:39 UTC**.
+
+La vista sigue siendo la aplicación local: B07.1 está construido/probado, B07.2 sigue abierto por la confirmación caducada de la matriz SQL. Esta publicación no activa cuentas, invitaciones, BFF, importación ni sincronización y no sustituye su prueba de permisos. El PR permanece borrador.
+
+
+## B07.2 · Corrección de permiso Auth — ejecución confirmada, 11/11/2026
+
+La primera ejecución confirmada de la matriz original e8cc... falló con 42501 porque el GRANT inicial no dio USAGE efectivo de Auth al lector. Se corrigió mediante migración incremental 20261111190357: puente privado de subject, propietario postgres y EXECUTE solo al lector; el gate de sesión/cuenta/membresía/hogar sigue obligatorio y el lector permanece sin Auth USAGE. No se ampliaron permisos de tablas ni se activaron cuentas.
+
+La regresión de lectura pasó diez condiciones y los roles/ACL efectivos; se comprobó su JSON expresamente, no solo ausencia de error. Cero filas en Auth y 14 tablas JJ, cero objetos temporales. La batería completa posterior tuvo dos confirmaciones nativas caducadas; B07.2 continúa abierto. La autorización del propietario ya está dada y no se vuelve a pedir por chat. Los informes iniciales son históricos. [Corrección, evidencia y límites](B07_CORRECCION_PERMISO_AUTH.md).
+
+
+### Publicación de la corrección — 11/11/2026
+
+Código y evidencia en [PR #10](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/10), fuente `0f6d65a9d700babb2dc1e20f09cf56d10843fc0d`. Árbol remoto verificado con el índice local; el commit exacto se recuperó por el conector autenticado de GitHub cuando el transporte Git de consola pidió autenticación. No se copiaron claves ni se cambió el remoto. Los inputs de la app son idénticos a la exportación revisada.
+
+Staging READY `dpl_2xBghJgvxxnS5qvNwBsjw9N3hHVT`, origen https://jj-compra-inteligente-aqqtwd6or-cmj2hwhc6b-1051.vercel.app . Publicación protegida y comprobada en es/en/de/fr con 29 recursos/URLs por hash, conservando flujo local, copia de lista, preferencias, backup/borrado aislado y raster oficial. Informe `design/b07/reports/policy-actor-lookup-hosted.json`; URL temporal y capturas fuera de Git. El enlace de acceso vence el 12/11/2026 a las 19:06:23 UTC.
+
+La corrección está aplicada en Supabase y su regresión acotada de lectura pasó. La matriz completa después de corregir sigue sin resultado por confirmación nativa caducada; B07.2 permanece abierto y el PR continúa borrador. No se activan cuentas ni sincronización. La autorización del propietario ya está registrada.
+
+
+## Piloto iPhone del recorrido diario · 11/11/2026
+
+El propietario priorizó menú → revisión de ingredientes → lista → compra → presupuesto y gasto confirmado sobre la aplicación existente. Se conserva Verde Mercado Premium, el logo oficial, cuatro idiomas y siete documentos locales. Cuentas/hogares y B07.2 permanecen separados y abiertos; no se activa sincronización ni se crean datos QA preinstalados.
+
+Pasaron 298 casos Chromium con 24 omisiones duplicadas deliberadas y ocho casos WebKit focalizados en cuatro idiomas y dos tamaños CSS, con 80 capturas y ocho informes de recorrido. La receta ajustada de dos a cuatro personas y un ingrediente excluido produjo exactamente los nombres/cantidades/unidades revisados, sin alterar el plan completo; cancelación, gasto separado, copia y recarga conservaron los datos esperados. Publicación y comprobación remota siguen pendientes; no se atribuye una prueba física a WebKit Linux. [Informe técnico](../design/iphone-pilot/reports/technical-verification.json), [Chromium](../design/iphone-pilot/reports/chromium-regression.json) y [WebKit](../design/iphone-pilot/reports/webkit-daily-journey.json). TypeScript, 963 pruebas unitarias, compatibilidad oficial de Expo y exportaciones web/iOS/Android correctos. Cuatro dependencias existentes alineadas dentro de SDK 58; audit actualizado: tres moderados de herramientas, cero altos y cero críticos. No se aplica una rebaja mayor de Expo para ocultarlos.
+
+`eas.json` prepara `iphone-preview` (internal/Release/dispositivo) e `iphone-testflight` (store/Release/dispositivo), con commit limpio requerido. No se ejecutan build, firma, distribución ni envío; no hay cuentas enlazadas, credenciales o icono cuadrado aprobado. Linux no permite ejecutar Xcode. La vía inmediata de prueba es Safari con una preview protegida comprobada, después de guardar el código en GitHub. No se asume que Expo Go SDK 54 de la App Store pueda abrir SDK 58, ni se acepta un coste de Apple/EAS.
+
+[Guía de aceptación diaria y límites nativos](IPHONE_PILOTO_RECORRIDO_DIARIO.md). El gasto confirmado debe distinguirse de lo marcado con precio introducido; cancelar la revisión no cambia documentos, confirmar ingredientes solo cambia la compra, confirmar un gasto solo cambia gastos y revisar/compartir una copia no cambia los siete documentos. Se requieren pruebas físicas de teclado, zonas seguras, texto grande, VoiceOver, persistencia y recepción de la copia. La prueba offline se limita a la app ya cargada, sin acreditar PWA o arranque en frío. Las 150 recetas y aceptación visual siguen pendientes.
+
+
+### Publicación y comprobación del piloto diario · 11/11/2026
+
+Fuente compilada `54fc7efe3980f4295f3e873aa7710276903c3f7a`, [PR #12](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/12), guardada en GitHub antes de publicar. Staging READY `dpl_G6ZFWo9HDUazteMj99MBTg16PaLj`, origen protegido https://jj-compra-inteligente-34ekbbs6j-cmj2hwhc6b-1051.vercel.app; no es una publicación abierta ni una promoción a producción. El cierre documental posterior conserva sin cambios la aplicación de ese commit.
+
+Verificación remota correcta en es/en/de/fr y 29 recursos/URLs por hash, con los flujos locales y protección `all_except_custom_domains` conservados. [Informe remoto](../design/iphone-pilot/reports/hosted-verification.json) y [registro del despliegue](../design/iphone-pilot/reports/deployment.json). El enlace compartido se entrega fuera de Git y vence el **12/11/2026 a las 22:56:56 UTC**; no se publican su credencial, capturas privadas ni datos del propietario.
+
+Esta comprobación cierra los pendientes de publicación indicados en la preparación anterior. No acredita prueba física, binario nativo ni envío a TestFlight. Permanecen pendientes la aceptación visual/física, las 150 recetas del propietario, los tres avisos moderados de herramientas y la matriz completa de B07.2; no se activan cuentas ni sincronización.
+
+
+## Preparación del catálogo V83 · 12/11/2026
+
+En `codex/v83-recetas-auditadas`, base `dbb703f62486ac4f639947da429761ed42c062d8`, se prepara la integración de los nuevos adjuntos: 150 recetas, 750 fichas es/en/de/fr/bg y XLSX del lote 141–150. Auditoría documental: 13 tamaños/hashes del manifiesto coinciden, XLSX embebido idéntico al adjunto y campos del lote concordantes con JSON; no se ejecutan macros, fórmulas ni scripts suministrados. Se conservan originales y BG, sin activar una interfaz búlgara parcial.
+
+La disponibilidad preparada es 120 recetas V83 más siete anteriores, 127 registros, conservando IDs y compatibilidad de planes. Las posiciones 11–20 y 111–120 discrepan entre capas; 31–40 mantienen cata pendiente. La aclaración del propietario sigue sin respuesta: esas 30 permanecen fuera del catálogo activo. Carbonara mantiene huevo/yemas pasteurizados como condición y advertencia; no hay certificación sanitaria ni aprobación comercial automática de 150.
+
+No estimar los 90 tiempos ausentes de la fuente: mostrarlos desconocidos y excluirlos con límite de tiempo. Conservar medidas fraccionarias en milésimas y calificadores de diente/hoja/rama/tamaño al adaptarlos a ud; no convertir un diente en un ajo entero ni inventar gramos. Las tres sales sin medida y acompañamientos sin cantidad se muestran sin transferencia automática; opcionales y avisos/adendas se conservan, con respaldo español rotulado cuando falte traducción. No inferir dieta o ausencia de alérgenos. No añadir precios, stock o certificaciones.
+
+Se prepara paginación de 20 recetas/20 exclusiones y memoización, sin cambiar Verde Mercado Premium, logo, siete documentos, protecciones de escritura o backends. [Alcance, auditoría y cierre pendiente](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md). Pruebas de aplicación, exportación, publicación y verificación remota V83 siguen pendientes; los informes previstos estarán en `design/v83/reports/`. La evidencia anterior del piloto iPhone acredita su fuente `54fc7efe`, no este cambio. GitHub precede a una nueva preview protegida tras comprobar el alcance habilitado. La prueba física, binario/TestFlight, biblioteca editable y B07.2 siguen separados y pendientes.
+
+
+## V83 · Fuente pública y verificación inicial · 12/11/2026
+
+La integración contiene 120 recetas nuevas y conserva las siete anteriores: 127 IDs disponibles en código. Los adjuntos completos se auditaron como 150 recetas y 750 fichas en es/en/de/fr/bg. La aclaración de las posiciones 11–20, 31–40 y 111–120 sigue pendiente; una indicación general de continuar no confirma sus catas o revisión operativa. Esas 30 no se activan ni se incluyen en las traducciones compiladas. Las condiciones de huevo/yemas pasteurizados, alérgenos, etiquetas y trazas se conservan; no hay aprobación comercial ni certificación implícita.
+
+El repositorio canónico es público. El original de 150 permanece intacto en `referencias/recetas-v83/originales/`, excluido de Git y del despliegue. GitHub recibe solo la selección pública de 120 registros originales íntegros con cinco idiomas, 600 fichas, en `fuente-publica/JJ_V83_120_RECETAS_FUENTE_PUBLICA.zip`, SHA-256 `5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62`. La comparación independiente con decimales exactos pasó para los 120 registros. La procedencia de las 30 retenidas conserva únicamente ID, posición, motivo y hash; no su contenido. `--check` reproduce desde esa fuente pública y las pruebas de CI no requieren el original local ni omiten casos por su ausencia. La auditoría completa del original de 150 y sus 13 hashes sigue disponible mediante `--source-zip RUTA --check` cuando se dispone del adjunto.
+
+TypeScript y 981 pruebas unitarias correctos, cero fallidas u omitidas, en 27 archivos: 963 anteriores y 18 V83. Se comprobaron la firma histórica de las siete recetas, datos/traducciones por receta y línea, respaldo español, tiempos nulos, precisión de medidas y escalado a 1/2/4/12 personas. La revisión independiente corrigió la validación de arrays con huecos en los ingredientes sin medida. Exportaciones web/iOS/Android correctas desde `dist-v83-final`; no constituyen un binario iOS firmado. No se añadieron dependencias ni se cambiaron versiones. El audit actualizado mantiene tres avisos moderados de herramientas Expo/fingerprint/minimatch, cero altos y cero críticos; no acredita ausencia absoluta de vulnerabilidades.
+
+La interfaz conserva es/en/de/fr, Verde Mercado Premium, el logotipo y los siete documentos con sus protecciones. Catálogo y sustituciones se amplían de 20 en 20; las exclusiones de ingredientes, de 40 en 40. De las 120 seleccionadas, 80 no tienen tiempo de preparación/cocción y se muestran desconocidas; las tres sales sin medida no pasan automáticamente a la compra. BG queda conservado en las fuentes, sin activar una interfaz incompleta.
+
+Las matrices completas de Chromium y WebKit V83 siguen en ejecución; publicación y verificación remota continúan pendientes. Los informes de esta versión se reunirán en `design/v83/reports/`. La evidencia anterior de `54fc7efe` no sustituye esos resultados. GitHub debe recibir el código comprobado antes de una nueva preview protegida. Prueba física, aceptación visual, firma/TestFlight, colección editable y B07.2 permanecen pendientes y separados. [Documento vigente de integración](RECETAS_V83_INTEGRACION_Y_AUDITORIA.md).
+
+
+## V83 · Regresión de navegador comprobada · 12/11/2026
+
+La versión final de V83 pasó 298 casos Chromium, con 24 omisiones deliberadas de capturas duplicadas y artefactos anteriores intactos. Se conservaron 120 capturas de recorridos y 300 del inventario V2, que comprende 16 vistas y nueve ejemplos de estado. La matriz WebKit pasó 16/16 casos, cero omitidos y cero intermitentes: ocho del recorrido diario y ocho de recetas nuevas, en es/en/de/fr y tamaños CSS 375 × 667 y 430 × 932; 120 capturas lógicas, 80 diarias y 40 de V83.
+
+Los recorridos comprobaron catálogo y sustitución paginados, última receta accesible, tiempo desconocido explícito, unidades con significado conservado, avisos completos e ingredientes al gusto fuera de la transferencia. La revisión/cancelación, coincidencia exacta entre cantidades revisadas y guardadas, presupuesto y producto manual conservados, documentos ajenos a cada escritura intactos y persistencia de un nuevo ID tras recargar dieron los resultados esperados. Se inspeccionaron dos capturas de detalle, alemán a 375 y francés a 430, sin problemas visibles nuevos en ellas; no equivale a aceptación visual completa ni a un dispositivo físico.
+
+Se mantienen correctos TypeScript, 981 unitarias en 27 archivos, reproducción de la selección pública y exportaciones web/iOS/Android. [Verificación técnica](../design/v83/reports/technical-verification.json), [revisión independiente](../design/v83/reports/independent-review.md), [comparación de fuente](../design/v83/reports/independent-public-selection.json) y [recorridos WebKit](../design/v83/reports/webkit-journeys.json); la evidencia Chromium se incorpora en la misma carpeta. GitHub y la nueva preview V83 quedan pendientes de publicación/verificación, en ese orden, conservando la protección del proyecto. No se reutiliza una preview anterior como prueba de este cambio.
+
+Las 30 recetas retenidas siguen fuera del repositorio público y del cliente hasta aclaración expresa. El original completo permanece local e ignorado por Git; la selección pública reproducible contiene solo las 120 elegidas y sus cinco idiomas. El audit conserva tres avisos moderados de herramientas, cero altos y cero críticos, sin nuevas dependencias. Prueba física, aceptación visual, firma/instalación/TestFlight, colección editable y B07.2 siguen pendientes y separados.
+
+[Informe Chromium V83 disponible](../design/v83/reports/chromium-regression.json).
+
+
+## V83 · Publicación pública detenida por revisión automática · 12/11/2026
+
+La revisión automática rechazó crear el árbol de la entrega en GitHub: el repositorio es público y falta autorización expresa para exponer las 120 recetas seleccionadas, sus cinco traducciones y los manifiestos derivados de IDs/estados/hashes. No se creó commit, rama remota, PR ni preview V83; no se reintentó por otra vía. Los tres blobs y el árbol intermedio preparados antes del rechazo no constituyen una entrega referenciada. El código local, las 981 unitarias, 298 Chromium y 16 WebKit correctas, las exportaciones y los informes se conservan. Los contenidos de las 30 retenidas y el original completo siguen fuera del índice de Git. La preview exige GitHub primero y queda detenida por ese requisito. [Detalle de acción y autorización pendiente](V83_PUBLICACION_PENDIENTE_DE_AUTORIZACION.md).
+
+
+## V83 · Autorización expresa de publicación recibida · 12/11/2026
+
+El propietario respondió «Si publica las 120 ( porque no 150 ?)» a la pregunta de publicar el catálogo seleccionado, sus cinco traducciones y manifiestos de IDs, estados y hashes en el repositorio público. Con esta autorización específica se reanuda la publicación previamente rechazada, por el mismo conector y conservando GitHub antes de Vercel. No se modifica la visibilidad ni se eliminan registros anteriores. Se aclaró que las 150 fichas están recibidas: 11–20 y 111–120 tienen estados contradictorios, y 31–40 mantiene cata pendiente. La autorización para publicar 120 no resuelve esos estados ni activa las 30.
+
+
+## V83 · Publicación autorizada y verificada · 12/11/2026
+
+El propietario autorizó expresamente publicar las 120 recetas seleccionadas, sus cinco traducciones y los manifiestos de IDs/estados/hashes en el repositorio público. Se completó la acción antes detenida mediante el mismo conector, sin cambiar la visibilidad ni eliminar el historial. Código y fuente seleccionada en [PR #15](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/15), rama `codex/v83-recetas-auditadas`, fuente compilada `0ea49b597f45b401747e20d7d880c07f670b3073`; GitHub recibió el código antes de Vercel. El original completo de 150 y los contenidos de las 30 retenidas permanecen locales, ignorados por Git y fuera del cliente.
+
+Staging READY `dpl_Ba9JkTFd9o1pNG6TknGriMgMxVGs`, origen protegido https://jj-compra-inteligente-np116q25a-cmj2hwhc6b-1051.vercel.app. Protección `all_except_custom_domains` conservada. La verificación remota pasó en es/en/de/fr, sin errores, con 29 recursos/URLs por hash; en cada idioma comprobó explícitamente 127 recetas y `JJ-E03-001`, además de los recorridos locales. [Informe remoto](../design/v83/reports/hosted-verification.json), [despliegue](../design/v83/reports/deployment.json) y [revisión independiente de publicación](../design/v83/reports/publication-check.md). El enlace temporal se entrega por la conversación y vence el **13/11/2026 a las 15:56:07 UTC**; no se guarda su credencial, capturas ni estado del navegador en Git.
+
+El cierre añade verificación e informes/documentación y conserva los inputs de la aplicación compilada del commit de origen. Se mantienen 981 unitarias, 298 Chromium con 24 omisiones deliberadas y 16 WebKit correctos; el audit conserva tres avisos moderados de herramientas, cero altos o críticos. No se activan las 30 recetas: 11–20 y 111–120 tienen estados contradictorios, y 31–40 sigue pendiente de cata; sus traducciones sí están recibidas. La autorización para publicar 120 no resuelve esos estados. Continúan pendientes Safari/iPhone físico, aceptación visual, firma/instalación/TestFlight, colección editable y B07.2.
+
+
+## Seguridad y calidad · decisiones y límites del 13/11/2026
+
+- **Dependencias acotadas:** corregir `GHSA-g3hv-75wg-m249` mediante override exclusivo del consumidor `@expo/fingerprint@0.21.10` a `minimatch@11.0.8`, y parche Expo 58.0.25 del mismo SDK 58. Se evita una modificación mayor de dependencias directas o una degradación de Expo. El salto transitivo se justifica con las APIs realmente usadas: 31.824 comparaciones sin diferencias; la representación `.set` no usada sí cambia. Fixture aislada con 17 fuentes idénticas antes/después bajo Expo 58.0.24. No afirmar equivalencia universal ni huella idéntica del proyecto tras el parche. Audit actualizado: cero vulnerabilidades conocidas, sin garantía absoluta de seguridad.
+- **Conservar diseño y datos:** blanco del interruptor activo web mediante `activeThumbColor`, mínimo de 44 px en controles afectados y estados pulsados opacos de la paleta para corregir contraste medido de 2,8983:1. Se mantienen logo, composición en reposo, cuatro idiomas, siete documentos y protecciones, IDs y 127 recetas. No se activan las 30 retenidas.
+- **Trazabilidad entre fuentes:** matriz completa y benchmark sobre JavaScript SHA-256 `349e6e981b1d1894fd2deb18da3f0321b4e9e8c436879a9eb628c173c636b4eb`; después solo se amplía el filtro inglés de 41,45 a mínimo 44 px. El resultado final focalizado debe identificar el nuevo compilado. No atribuir al último compilado todas las pruebas de un hash anterior sin distinguirlas.
+- **Evidencia con límites:** 298 Chromium con 24 omisiones duplicadas deliberadas, 16 WebKit, 296 escenas, 40 estados pulsados, cinco calibraciones y un caso de foco con Tab real. Sin fallos medidos de contraste o mínimo AA24 en la matriz completa; las dos recomendaciones Apple44 del filtro inglés motivan el ajuste final. Los 1.272 registros para revisión humana de pintura y las pruebas físicas pendientes impiden declarar certificación global WCAG. WebKit Linux no acredita Safari/iPhone físico.
+- **Rendimiento sin datos personales:** 24 ejecuciones aisladas y solo loopback; informes anónimos de idioma, tamaño, tiempos y recursos. Sin notas, precios, IDs de compra, cuentas ni estado del propietario; sin analítica nueva en el producto. Miden el recorrido y el sobrecoste del navegador automatizado en entorno compartido, no hardware real ni satisfacción o retención de personas.
+- **CI reproducible y limitada:** acciones fijadas por SHA, contenidos en lectura, checkout sin credenciales persistentes, sin secretos/despliegues ni `pull_request_target`; fuente pública de 120 recetas suficiente. Un timeout de 5.000 ms bajo carga concurrente queda conservado; se limita a dos workers sin cambiar aserciones ni timeout. Reproducción posterior: 981/981 correctas en 27 archivos. No atribuir ejecución verde al workflow remoto antes de observarla.
+- **Control B07 pendiente:** una solicitud MCP del 12/11 a las 20:33:31,649 UTC sin respuesta, espera interrumpida a las 21:02 UTC; estado `no_result_native_control_unresolved`. No se cuentan aserciones, ejecución SQL ni ROLLBACK. La lectura posterior confirma base vacía y permisos conservados, pero no prueba dinámica. No reintentar por otro canal ni volver a pedir autorización de trabajo ya dada. Resolver el control nativo concreto del proveedor.
+- **Alcance restante real:** BFF/cuentas, RPC, invitaciones, migración y sincronización siguen pendientes de construcción y pruebas tras el gate de permisos, con SMTP/secretos adecuados. Las aprobaciones de marca, datos comerciales, firma Apple y pruebas con personas requieren evidencia real. «Sigue» no aprueba estados de cata: 11–20 y 111–120 contradictorios; 31–40 pendientes. La biblioteca personal editable y restauración automática son ampliaciones opcionales separadas, no omisiones demostradas del encargo original.
+- **Publicación:** GitHub canónico antes de staging protegida, con commit y hashes efectivos, y enlace temporal fuera de Git. La entrega de seguridad/calidad no se declara publicada mientras falten los resultados finales focalizados/export y la verificación remota. La última publicación acreditada al redactar esta entrada es V83, PR #15; su enlace no acredita estos cambios.
+
+[Informe de cierre y próximos criterios](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md). Los apartados anteriores se conservan íntegros como historia de sus entregas; los recuentos antiguos de avisos de dependencias no son el resultado del audit actual.
+
+
+### Seguridad y calidad · verificación final local, 13/11/2026
+
+Exportación final `dist-closeout` correcta para web/iOS/Android; JavaScript web SHA-256 `f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b`. El filtro inglés corregido pasó **2/2 casos, 74 escenas a 375×754 y 430×932**, sin fallos medidos ni observaciones bajo 44 px. Se conserva un intento previo que no llegó a iniciar Chromium por el sandbox del entorno; no se cuenta como ejecución de la aplicación. La fuente de trabajo pasa 981 unitarias; la reproducción limpia con dos workers pasa 981/981 en 27 archivos y export web. La matriz completa/benchmark permanecen identificados con su fuente anterior `349e6e…`; la última diferencia de app es solo el ancho mínimo del filtro. Continúan pendientes GitHub, ejecución CI remota, nueva preview protegida y verificación del contenido publicado. [Informe actualizado](CIERRE_SEGURIDAD_Y_CALIDAD_2026-11-13.md).
+
+
+## Cierre publicado de seguridad y calidad · 13/11/2026
+
+- [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), fuente `096330d2b3a3123dc759a1ef0a6123aa67a0d249` y árbol `29c3a5f5b8ede861f99af80d4a8206f1eb5d4d6a`. [CI remota](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43439536526) correcta para ese commit.
+- Export final web `f094b7f4d002c4dacc83350d7b20f1c9858c2a60b35fe22a132cfe07d7995f3b`; ajuste final inglés comprobado en dos casos/74 escenas, sin fallos medidos ni recomendaciones de 44 px pendientes. La matriz completa previa conserva su hash y su alcance.
+- Preview `dpl_8sVfcijzQ2GK7TUW4hkp2ap2euG3`, `READY`, `staging`, protección conservada. Verificación HTTPS correcta en cuatro idiomas y 29 recursos/URLs por hash; catálogo de 127 recetas. [Informes](../design/closeout/reports/deployment.json).
+- Enlace temporal solo en conversación, caduca 14/11/2026 13:08:31 UTC. Cierre documental separado, sin cambios de app, lockfile, almacenamiento, logo ni datos del propietario.
+- B07 sigue sin resultado del control nativo; no se cuentan aserciones. Prueba física y 30 recetas retenidas siguen pendientes. No se afirma cierre de B00–B09 ni seguridad absoluta.
+- Nueva instrucción: verificar las aportaciones recientes de tiendas en GitHub y continuar en una entrega separada, preservando lo existente. No se activa una fuente comercial por su mera presencia en un repositorio.
+
+
+## Publicación final del ajuste visual · 13/11/2026
+
+- Origen final `17d5fbc8adf9f8cbd07f7bd930a19a086931a841`, [PR #19](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/19), [CI correcta](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/43451697596). Ajuste web del pulgar centrado, con prueba negativa previa y positiva sobre compilado; 8/8 calidad y 9/9 pulsación/foco. Los informes anteriores mantienen sus hashes y alcance.
+- Preview `dpl_ETU2D6tyLxV89TXVQHB2BNwXQUvz`, READY/staging/protección conservada; cuatro idiomas y 29 recursos/URLs comprobados por hash. Catálogo 127, logo exacto y siete documentos locales preservados.
+- Acceso temporal hasta 14/11/2026 a las 14:23:22 UTC, solo en conversación. [Despliegue final](../design/closeout/reports/deployment.json). Cierre documental sin cambios de app/dependencias. B07 y prueba física siguen abiertos.
+
+
+## B06.1 · Auditoría real de fuentes, entrega documental · 13/11/2026
+
+El plan aprobado del PR #16 pide expresamente «Guardar diagnóstico reproducible y conclusiones en PR documental». Este registro contiene solo documentación y conteos; no cambia aplicación, dependencias, BD ni producción y no crea preview B06. [Informe reproducible](auditorias/b06-1-2026-11-13/B06_1_AUDITORIA_FUENTES_2026-11-13.md) · [revisión del repositorio](auditorias/b06-1-2026-11-13/REVISION_REPOSITORIO_TIENDAS_2026-11-13.md).
+
+- Leídos PR #16 (`95686b3`) y PR #11 (`2562d98`), issues #13/#14/#17/#18 y contrato. Las seis tiendas ya están en la app; la nueva necesidad son fuentes de precios dentro de JJ. No se fusiona el código no probado del PR #11.
+- tuTándem: HTTP 200, esquema correcto, 1.471 filas/28 productos/cinco cadenas; observación más reciente 03/11/2026, diez días. Medianas nacionales sin GTIN/tienda/localización. CC BY 4.0 declarada, con atribución y revisión de procedencia. CORS observado no permite fallback directo desde Vercel.
+- Open Prices: API/documentación/export 200; 27 observaciones históricas en siete lugares Tenerife, 0 del 07–13/11. Export completo de 7.881 lugares coincide. ODbL exige atribución y condiciones de base derivada; no mezclar automáticamente con datos propietarios ni derechos de imágenes.
+- Ambas fuentes `needs_review`, `enabled=false` para PVP local actual. No hay cesta local completa ni ranking cercano acreditados. B06.2 queda pendiente de revisión de fuente/licencia/alcance; posibles indicadores históricos separados, sin llamarlos PVP Tenerife vigente. Borradores comerciales sin enviar.
+- Evidencia pública saneada: URL/HTTP/UTC/hash/contadores; sin cuerpos completos, filas de precios, imágenes, contribuidores ni localizaciones detalladas. Evidencia original privada conservada.
+
+
+## Bloque 01 maestro · consolidación iniciada · 13/11/2026
+
+El propietario autorizó comenzar el primer bloque posterior a la auditoría, conservando el producto existente. Base revisada: `abb3bca53953e4523af61118e375df90d1a8d416`; `main` permanece en `d22d66eff03c5d107f5170ee38cd2bc3167865e2`. Se crearon referencias local/remota `codex/respaldo-base-2026-11-13` y `codex/integracion-maestra-2026-11-13`, ambas sobre ABB, sin merges ni cambios de código de aplicación.
+
+- Copia privada local del ZIP150 y restauración comprobadas: 937.580 bytes, SHA-256 `151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034`, 13/13 entradas del manifiesto y 14 archivos restaurados, 150 IDs/750 fichas. El original se conserva. **Respaldo externo independiente pendiente**, no declarado completo; el usuario tiene una pregunta de destino y un enlace privado de descarga. Ver [estado público saneado](MAESTRO/RESPALDO_ESTADO_PUBLICO.json). No subir el ZIP privado ni su restauración al repositorio público o Vercel.
+- Documentos originales del nuevo plan conservados byte a byte en [fuentes del maestro](MAESTRO/fuentes/JJ_PLAN_MAESTRO_CODEX_2026-11-13.md), con manifiesto de recepción. El mensaje de auditoría se conserva como instrucción histórica de Bloque00; no anula la autorización posterior de Bloque01.
+- Incorporados selectivamente los tres documentos de producto del PR #16 desde `95686b3ac4541f7179ee7cfd858be97628d4be99`: plan, contrato y cuatro borradores. Blobs idénticos `5b1529d2a76ff4fe18b8fd9d23f378c967b883d5`, `b8c12c8115f079611ba3e30c186006d3d494c888`, `5dbacc3526acb3dee05f1d9ed2abc68140cb5f23`. No se fusiona su rama antigua ni el código del PR #11; borradores sin enviar y fuentes PVP desactivadas.
+- Inventario único, política de integración y distinción entre documentación vigente e historia en preparación. El historial se conserva.
+- Comprobaciones nuevas ejecutándose en copia limpia aislada de ABB sin ZIP privado, credenciales o estado del navegador. Resultados y fuente final todavía pendientes; los informes anteriores conservan su SHA y no se reutilizan como una ejecución nueva.
+- Bloque01 sigue **EN_CURSO**; no se abre otro bloque, no se modifica aplicación mientras el requisito de respaldo permanezca abierto y no se promueve producción.
+
+
+### Baseline limpio comprobado antes del primer commit documental · Bloque01
+
+Sobre ABB se instaló desde el lockfile sin scripts, en copia aislada sin original privado 150 ni datos locales. Importador público, tipos, 981/981 unitarias (0 fallidas/omitidas), auditoría npm 0, compatibilidad Expo y exports web/iOS/Android correctos. El bundle web coincide exactamente con C3f publicado; los HBC nativos conservan sus hashes propios de entorno/ruta. [Reporte saneado](../design/master-integration/reports/baseline-existing-app.json).
+
+El primer commit de integración solo consolida documentación y los documentos exactos de PR16. La matriz de navegador se ejecutará sobre ese árbol identificado, verificando que todos los inputs de aplicación coinciden con el export. El respaldo externo sigue pendiente; no se declara Bloque01 cerrado ni se modifica código de aplicación.
+
+
+### Integración documental publicada y CI · Bloque01
+
+Publicado origen `78480fd40b4a116d53ebb016f31085785f42a6e6` en PR #21 (borrador hacia main), con 15 archivos documentales nuevos/modificados respecto a ABB, sin cambios de aplicación/dependencias/assets/tests/scripts. La CI 43514500031 terminó correctamente. El diff hacia main contiene el trabajo previo no fusionado; no se atribuye todo a esta entrega.
+
+Revisión selectiva de PR #5: se conservaron solo dos documentos ausentes con blobs exactos `33c12c20dd98cb69998cf56ac99012df01d6c1ad` y `1adbe9f1d78c19d3934766fc975a49ec4318bfbe`. [Procedencia y límites](historico/PR05_2026-11-10/README.md). No se aplican PRODUCTO/PLAN/DECISIONES antiguos. Candidatos locales y mayoristas pendientes de auditoría, no feeds habilitados.
+
+La regresión completa local empezó sobre 78480fd tras superponer solo sus documentos y comprobar 159/159 huellas de inputs idénticas al baseline; bundle web C3f. No se declara terminada antes de su resultado. Respaldo independiente sigue pendiente; bloque EN_CURSO, código conservado.
+
+
+## Cierre de subtareas verificables de Bloque 01 · 14/11/2026
+
+- Fuente app comprobada/desplegada `78480fd40b4a116d53ebb016f31085785f42a6e6`, PR #21. CI 43514500031 correcta. Baseline limpio ABB 981/981, tipos/importador público/npm 0/Expo/export 3 correctos. Chromium 298 correctos + 24 omisiones deliberadas y WebKit 16/16, cero fallos/intermitencias, sobre 78480fd y bundle C3f. 159/159 huellas coincidentes; no se cambió código de aplicación, dependencias, recursos, scripts o pruebas. [Ficha de versión](../design/master-integration/reports/integration-verification.json).
+- Candidata `dpl_G3PZ39MHNk7a2ipCuLZBTRymtuWg`, READY/staging, protección conservada. HTTPS revalidado 14/11: es/en/de/fr, 127 recetas y 29 recursos/URLs por hash; siete documentos conservados en los recorridos. Acceso temporal solo en conversación hasta 14/11/2026 21:10:36 UTC. No se publica el token en Git.
+- Comparación de lectura 375/430: producción abre Inicio antiguo; staging abre Bienvenida con logo oficial. Son estados distintos, no un antes/después de la misma pantalla. No se promovió producción ni se fusionó main; ambos mantienen sus referencias anteriores. Capturas privadas, resumen/hashes públicos.
+- Documentación exacta de PR #5 y PR #16 conservada selectivamente, sin aplicar árboles antiguos ni activar fuentes. Textos anteriores de README/ESTADO/DIRECCION conservados bajo ARCHIVO_HISTORICO; PLAN y DECISIONES se amplían sin borrar antecedentes.
+- **Bloque 01 EN_CURSO: preparación/restauración local de ZIP 150 comprobadas; respaldo privado externo independiente SIN CONFIRMAR.** No atribuir descarga al propietario por un «Sigue». Esa es la única acción pendiente para cerrar la puerta de conservación antes de modificar código. No se abre el Bloque 02. La aprobación visual, el iPhone físico, las 30 recetas y B07 conservan sus criterios separados.
+- El siguiente commit es cierre documental: los resultados de navegador pertenecen a 78480fd y no se registran como otra ejecución en el commit de informes. Los datos locales, ZIP privado y capturas/trazas permanecen fuera del repositorio público y de la preview.
+
+
+## Bloque 02 maestro · QA del recorrido exacto · 14/11/2026
+
+El propietario confirmó una copia «en la carpeta del proyecto» y ordenó continuar. Se registra su declaración sin atribuir inspección externa ni cerrar 01.1. Se adelanta QA del recorrido con la aplicación intacta: no se implementan funciones ni se altera el almacenamiento. Base `1942a714c322a032185645df142ad1d3eac32646`; rama separada `codex/bloque02-receta-primero-2026-11-14`.
+
+La app ya soportaba receta primero; los pilotos previos creaban lista/plan antes. Se añaden tres casos de aceptación en cuatro idiomas y tres proyectos (escritorio Chromium, WebKit375/430), más guía Safari; se conservan las guías antiguas con aviso. Local: **36 correctos/0 fallidos/0 omitidos/0 intermitentes**, 180 capturas lógicas privadas; cancelaciones, error de cuota/reintento, duplicados explícitos, gasto único e historial, lista guardada vacía y siete documentos tras cerrar/reabrir página. TypeScript, 981 unitarias, importador público y npm0 correctos. Los 159 inputs anteriores siguen idénticos; ningún P0 de app demostrado que requiera parche.
+
+[Informe con fuente, comandos y límites](MAESTRO/BLOQUE02_ENTREGA_Y_AUDITORIA.md) · [evidencia local saneada](../design/daily-flow/reports/local-acceptance.json). Publicación/CI/HTTPS de esta entrega pendientes; los resultados de Bloque01 no se atribuyen al SHA nuevo. Prueba física y aceptación visual pendientes; no se abre Bloque03 ni se fusiona main/promueve producción.
+
+
+### Publicación y comprobación real de Bloque 02 · 14/11/2026
+
+[PR #22](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/22), fuente `61793e4833c702a6294eedde1f778cd80dfc074f`, árbol `9d1065b6e6cdbb66581b4f53dd7f227a5294eace`. CI 43591993356 correcta. Candidata `dpl_DizPGJTNWdRhNnRQxXtToDKwdxEZ` READY/staging protegida: **36/36 casos remotos** y 180 capturas lógicas, cero fallos/omisiones/intermitencias, además de 36/36 locales. HTTPS: cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Prueba, configuración y los 159 inputs anteriores coinciden; no se cambió aplicación ni se añadieron funciones. [Informe](MAESTRO/BLOQUE02_ENTREGA_Y_AUDITORIA.md) · [recorrido remoto](../design/daily-flow/reports/hosted-acceptance.json).
+
+Acceso temporal por conversación hasta **15/11/2026 10:52:36 UTC**, fuera de Git. Los 23 archivos públicos coinciden con la candidata anterior y se reutilizaron por hash. Producción sigue en `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`; main D22 e integración en 1942 se conservan, sin merges. El cierre siguiente añade solo documentos/informes y no representa otra ejecución de navegador. Estado: QA técnica comprobada, **REQUIERE_PRUEBA_PROPIETARIO** en Safari físico; 01.1 sigue sin inspección independiente externa. Siguiente acción única: realizar la guía de iPhone y registrar resultado; no se abre Bloque 03.
+
+
+## Bloque 03maestro · registro privado y entrega pública restringida ·14/11/2026
+
+Tras la revisión favorable general de la preview y la orden de continuar, se prepara registro privado 150/750 con controles y quince lotes. App120 V83 + 7 anteriores = 127sin cambios. Herramienta de auditoría sin sobrescribir originales, destino privado 0700/0600 fuera del repo y check solo lectura; nuevo test de planes mixtos/IDs. TypeScript y 987/987 unitarias correctos; la frontera pública restringida y 19/19 pruebas Python correctas.
+
+La revisión automática rechazó publicar la nueva propuesta/estados de retenidas fuera de autorización expresa para 120. Trabajo conservado íntegro en privado. La entrega pública se limita a código/pruebas/documentación y datos derivados del ZIP público autorizado:120 registros y30 identidades con sus cuatro campos ya públicos, sin nuevas columnas editoriales. No se reenviará por otra vía el material rechazado. Los 159 inputs anteriores permanecen intactos.
+
+[Informe y límites](MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md) · [índice autorizado](../referencias/recetas-v83/catalogo-maestro/INDICE_PUBLICO_150.json). Publicación restringida/CI/staging/regresión pendientes. B03EN_CURSO, sin nuevas recetas activas ni servicios; revisión privada de las excepciones como siguiente acción. No se abre 04; B02 físico y 01.1 se conservan pendientes por separado.
+
+
+### Publicación restringida y auditoría completa B02/B03 ·14/11/2026
+
+[PR #23](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/23), fuente `e544ec2f9fd332e6ad9ac74b60b2b2885f616419`, árbol `67fde43ccd1c65a9f81d3c80e16a6ede0158b2dc`. CI 43611606343 correcta. 19 Python y 987 unitarias correctas. Regresión NUEVA en copia exacta: Chromium 298 correctos/24 omisiones deliberadas, WebKit 16/16 y receta primero 36/36; cero fallos/intermitencias. Capturas privadas separadas: 120 + 300, 120 y 180. 159 huellas y 1.422 archivos canónicos de la copia intactos; originales privados del checkout comprobados aparte.
+
+Staging `dpl_JC4TDzdKay7LUzkP18oRp5DpgayR` READY/protegida, fuente e544, cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Los 23 archivos compilados coinciden con la candidata previa. Acceso temporal por conversación hasta **15/11/2026 15:04:16 UTC**, sin token en Git. Producción sigue en `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`; no merge/promoción.
+
+La propuesta/estados retenidos rechazados permanecen privados; datos públicos derivados solo del ZIP público autorizado, reservadas con sus cuatro campos anteriores exactamente iguales. No se reenvía el material rechazado por otra vía. [Informe y límites](MAESTRO/BLOQUE03_CATALOGO_Y_CONCILIACION.md) · [verificación global](../design/catalog-master/reports/verification.json). Registro/herramienta comprobados técnicamente; Bloque 03EN_CURSO por excepciones/permisos pendientes, prueba física B02 e independencia 01.1 separadas. El cierre documental posterior no cambia la fuente probada. Siguiente acción: revisión privada de excepciones; no se abre 04.
+
+
+## Bloque 04.1 maestro · inventario y control de recepción · 14/11/2026
+
+Nueva orden del propietario de continuar sobre la app existente. Base b590ed0d, rama `codex/bloque04-control-fotos-2026-11-14`. Inventario: 72 imágenes de marca/maquetas/QA, 16 paquetes, historial de 44 commits/33 refs, 20 ramas y 19 árboles remotos de partida; cero originales de fotografías de receta localizados. XLSX interno: cero imágenes o relaciones de imagen, sin ejecutar fórmulas. No se recortan composiciones ni se generan sustitutos.
+
+Manifiesto de las 127 activas con NO_LOCALIZADA; inventario maestro de 150 privado. Validador de solo lectura, IDs exactos, hash/tamaño/dimensiones/formatos, límites, CRC/decodificación, rutas y referencias de alt/procedencia/licencia/revisión. Nunca aprueba ni publica; require-ready rechaza la plantilla incompleta. 32 pruebas de fotos y 51 Python combinadas, 987 unitarias y tipos correctos. Pillow 12.3 descartado por 58 avisos; 13.0.0 aislado con 82 hashes y guarda previa al decoder, sin cambios de dependencias de la app. Revisión independiente correcta.
+
+[Informe](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md) · [manifiesto activo](../referencias/recetas-v83/fotografias-publicas/MANIFIESTO_FOTOS_ACTIVAS_127.json). CI/publicación/preview de esta entrega pendientes. Inventario/control preparados; B04 bloqueado para vinculación hasta localizar originales. Pregunta de ruta/enlace enviada, sin respuesta asumida. No se alteran recetas, UI, almacenamiento ni servicios; no se abre B05 ni se fusiona/promueve producción. La próxima auditoría completa de pareja será B04/B05; la matriz exhaustiva anterior conserva su SHA e544 y sus 159 entradas de app siguen idénticas.
+
+
+### Publicación de B04.1 y verificación HTTPS · 14/11/2026
+
+[PR #24](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/24), fuente `65d152f2183eb14f7e184f53207feae7b4f54f88`, árbol `ea61daf1c43ba1388ef00db7594dde69aa593640`. CI 43640045443 correcta, incluidos venv fijado, 51 pruebas Python, tipos, 987 unitarias y export web. Staging `dpl_5dNbUnf7t1y8bGiYJoLnGe63irwu` READY y protegida: cuatro idiomas, 127 recetas y 29 recursos/URLs por hash. Los 23 archivos compilados son idénticos a la candidata previa. La fuente e544 conserva sus matrices anteriores; 159 huellas de app siguen iguales y no se atribuye otra ejecución. Próxima auditoría de pareja: B04/B05.
+
+Acceso temporal por conversación hasta **15/11/2026 19:58:45 UTC**, sin token en Git. La app, las imágenes, los datos locales y los servicios no cambian; los originales y el inventario maestro privados no se suben. Manifiesto de 127 activas sin originales localizados: cero fotos aprobadas o publicadas. Producción conservada en `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`, sin merge/promoción. El cierre posterior solo añade documentación y evidencia.
+
+[Informe](MAESTRO/BLOQUE04_FOTOGRAFIAS_Y_RECEPCION.md) · [verificación](../design/recipe-photos/reports/verification.json). B04.1 comprobado técnicamente; B04 sigue bloqueado para vincular fotografías hasta localizar los originales. Pregunta de carpeta/enlace pendiente, sin interpretar «sigue» como entrega. Siguiente acción única: localizar el origen y revisar un lote de 5–10. No se abre B05; los pendientes de B03, B02 físico y 01.1 se conservan separados.
+
+
+## 15/11/2026 · B04.2, indicar ausencia sin publicar recepción
+
+Se continúa dentro de B04 con una etiqueta compacta «Foto pendiente» por receta, usando Pill neutral, Manrope y tokens existentes. Dos maquetas temporales se mostraron antes de la lógica; A se adopta como supuesto de trabajo, sin aprobación estética atribuida al propietario. No se rediseñan filas, navegación o marca.
+
+El registro público solo contiene 127 IDs activos/estado y permanece separado de Recipe, datos culinarios y siete documentos. Nunca importa recepción al cliente ni devuelve recursos. Los futuros originales/alt/procedencia/licencia/revisión no deben rellenarse en la plantilla pública: recepción privada, proyección mínima revisada. No se publican estados nuevos de retenidas.
+
+991 unitarias, tipos y export correctos; 20 casos focalizados y 36 del recorrido diario correctos en cuatro idiomas, sin reintentos. Hashes de 97 inputs conservan la fuente ejecutada al recuperar el entorno; ningún test nuevo se atribuye por inferencia a la antigua fuente e544. Bundle nuevo, igualdad con C3f no afirmada. CI y staging aún deben acreditar resultado. [Informe](MAESTRO/BLOQUE04_2_ESTADO_FOTOGRAFIA.md).
+
+B04 completo continúa bloqueado para imágenes por originales no accesibles; no hay renderer, derivados o carga de fotos construidos. No se certifican derechos, ausencia absoluta de vulnerabilidades, aceptación visual o iPhone físico. Sin nuevas dependencias, arquitectura de almacenamiento, servicios, coste, merge o promoción.
+
+
+### B04.2 · Resultado real de publicación y preservación
+
+Fuente `24f4b37d2215a24cd283d5c6ef94625a0c2ae18f` en PR #25; CI 43703498852/43703463609 correctas. 97 inputs comprobados frente al commit, sin atribuir un SHA inventado al runner local. Staging `dpl_Bub9pL1exYBArvvP2zZppoKJZ2RS` READY/protegida; cuatro idiomas, 127 recetas, 19 recursos/URLs por hash y 8 casos WebKit publicados correctos. Acceso temporal hasta 16/11/2026 10:22:16 UTC, sin token en Git.
+
+La etiqueta está publicada para revisión, no aprobada visualmente por silencio. Cero fotos aprobadas/publicadas y ningún original privado incluido. B04 completo, dispositivo físico y pendientes externos siguen abiertos. El cierre solo incorpora evidencias/documentos; no cambia el código probado, merge a main, producción, servicios o costes. [Evidencia global](../design/recipe-photos/status/reports/verification.json).
+
+
+## 15/11/2026 · B05.1, dos entradas con borrador independiente
+
+Autorizado el cambio a B05 por el propietario. Sobre base `6301575974c056bd2ca8d0c2055631cd71654e85`, rama `codex/bloque05-recetas-presupuesto-2026-11-15`, se revisa PR #11 (`2562d98a46b9e5179b77d6590ec3b582ffd0d63d`) sin fusionarlo. Se recupera el orden recetas/presupuesto → tiendas/revisión, excluyendo API, feed y comparación pública pendientes de autorización y cobertura local. CORS resuelto no probaría PVP vigente de Tenerife.
+
+Se adopta una propuesta compacta de accesos sobre Verde Mercado Premium tras mostrar dos alternativas temporales; no se atribuye aceptación visual por silencio. Se reutilizan componentes, logo y Manrope. El presupuesto es un objetivo, no gasto ni garantía de cinco comidas por una cifra. El coste queda pendiente y se distingue cantidad consumida de envases enteros; la comparación manual existente sigue siendo por producto, sin ranking de esta cesta.
+
+Las tiendas y el menú del recorrido son borradores RAM, separados de favoritos y menú persistidos. Se admiten cero/una/varias/todas las seis tiendas. La confirmación de ingredientes es la única escritura de la lista; el objetivo se guarda solo en una nueva y no sobrescribe el presupuesto de una existente. Se conservan siete documentos y protecciones. Retornos desde edición/Perfil/Idioma mantienen el borrador; un borrado de privacidad lo elimina y un destino sin contexto vuelve a Inicio. El menú ilegible anterior no se declara reparado ni se sobrescribe.
+
+Tipos, 1.081 unitarias —90 nuevas—, 51 Python, npm cero avisos conocidos, comprobación Expo y export web correctos en la preparación. La revisión estática independiente corrigió pérdidas de borrador, raciones, retorno de Perfil, etiqueta accesible alemana y estado de lista ausente. No acredita por sí sola las 48 pruebas nuevas, la auditoría completa B04/B05 o las exportaciones aún en curso. 100 hashes vincularán después la ejecución al commit; CI, GitHub y staging nuevos siguen pendientes de resultado. [Informe y límites](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md).
+
+No hay nuevas dependencias, claves de almacenamiento, migraciones, autenticación, IA, feed, scraping o costes contratados. B05.1 sigue EN_CURSO hasta las verificaciones finales; B05 completo conserva aceptación humana, categorías por auditar y futuras comidas variables. B04 mantiene originales pendientes y cero fotos publicadas; B03 privado, B02 físico e independencia externa 01.1 separados. No merge a main, promoción de producción o apertura automática de B06.
+
+
+### 16/11/2026 · B05.1 publicado y auditado con fuentes separadas
+
+El propietario autorizó B05 sobre la app existente. PR #26 conserva el PR #11 y recupera su intención, excluyendo su feed. Las dos rutas funcionan con borradores temporales, confirmación real y presupuesto solo en listas nuevas. Objetivo, gasto, coste de ingredientes y envases se distinguen; no se activa PVP actual o ahorro.
+
+La auditoría base conserva e1c3 (298 Chromium/24 omisiones deliberadas, 48 nuevos recorridos, 20 fotos, ocho casos de calidad). El ajuste visual 5f208d8 solo afecta a dos botones sin icono; 99 inputs iguales, 12 controles/20 escenas correctos. Se conserva el primer test visual que leyó preferencias demasiado pronto y la espera corregida, sin retirar aserciones ni atribuir otra matriz general al ajuste.
+
+CI de ambas fuentes, 1.081 unitarias, 51 Python, tipos y exports correctos. Consulta npm con cero avisos conocidos; no se promete ausencia absoluta de vulnerabilidades. Web-only c63325e3 y web-all distintos se registran por separado: staging solo usa el primero. Los artefactos nativos no acreditan ejecución o distribución física.
+
+Preview dpl_7KXWuSpNMkaD3J2RhpP5XvcRtTjs READY y protegida: cuatro idiomas/127 recetas/19 recursos y 16 recorridos + ocho controles de Inicio publicados correctos. Nuevo enlace tras caducar el anterior hasta 17/11/2026 20:36:40 UTC, sin token en Git. 28 archivos protegidos intactos, originales privados sin publicar. [Informe](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md) · [evidencia](../design/purchase-journey/reports/verification.json).
+
+B05.1 probado automáticamente, revisión del propietario pendiente. B04 no se cierra sin originales; B03, B02 físico y 01.1 mantienen sus límites. Sin servicios de pago, dependencias, cuentas, migraciones, merge o promoción añadidos. El cierre solo registra documentos e informes, conservando el código probado.
+
+
+## 16/11/2026 · B05.2, N preparado sin ampliar el contrato guardado
+
+Se prepara el motor variable en un módulo puro separado. El catálogo público limita técnicamente N, sin inventar un rango de producto; no repite recetas ni relaja filtros para alcanzar el número pedido. La forma `{ kind: 'draft', servings, meals, filters }` carece de `recipeIds`, por lo que incluso N=5 se rechaza al intentar escribir `menus.v1`. No hay conversión implícita ni migración; siete claves, pantallas, recetas, cantidades y dependencias permanecen conservadas. Se mantiene el formulario de cinco comidas y 1–12 personas.
+
+Las APIs revalidan campos propios, arrays densos, IDs únicos activos, filtros y sustituciones. El límite agregado es de 2.000 ingredientes medidos; las cantidades siguen el escalado entero existente, sin precios ni fusiones automáticas. Cuatro errores están centralizados en es/en/de/fr. Se endurece el validador anterior frente a huecos y herencia; las entradas válidas conservan su esquema.
+
+Fuente `280a6e63ce3c56015a7f8b92cff8136bbece2a32`, PR #27: 1.549 unitarias, 51 Python, 60+24 casos locales, CI y exports correctos. Staging protegida comprueba 19 recursos/cuatro idiomas y 16+8 casos publicados; 101 hashes enlazan la fuente y 49 archivos protegidos coinciden. Los fallos iniciales de tiempos límite/decodificador se conservan, con correcciones de ejecución y sin retirar controles. [Detalle y límites](MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md).
+
+Riesgos abiertos: preparar N no activa la UX, no garantiza encaje en presupuesto y no acredita Safari físico o binario nativo. Antes de activar N hay que definir rango y presentación sin asumir días, junto con una frontera explícita de conversión/persistencia. Las categorías de fuente, aceptación del propietario y pendientes B04/B03/B02/01.1 siguen separados. No hay servicios de pago, autenticación, IA, Supabase, feeds, migraciones, merge o promoción nuevos.
+
+
+## 19/11/2026 · Decisiones de recepción V3 y recuperación de ramas
+
+La aprobación explícita del propietario para las 150 recetas prevalece sobre las reservas editoriales anteriores de publicación. Los estados históricos se conservan sin reescritura; el runtime permanece en 127 recetas hasta una integración probada. Los datos V3 y doce fotos están verificados; faltan 138 imágenes. Los cuatro perfiles mantienen sus paquetes, rutas y hashes separados. Un hash en un manifiesto no acredita que el archivo se haya recibido. Las afirmaciones comerciales, SKU, precios y trazas continúan pendientes.
+
+Se centraliza la recepción con rutas estrictas, archivos regulares, límites de ZIP, JSON e imágenes, y decodificación completa con Pillow 13. Se corrigen las dimensiones JPEG invertidas y los nombres ZIP truncados por NUL. Los ingredientes conservan las cantidades Decimal y el par `None/None` cuando no tienen medida; se rechazan nulos en lugar de ingredientes o pasos. La confirmación final de staging se publica de forma exclusiva y atómica: un fallo no se presenta como éxito. Las herramientas no modifican `src/` ni los datos guardados.
+
+La compatibilidad actual exige Expo 58.0.26: parche del mismo SDK, sin dependencias directas nuevas ni scripts de instalación. Se repitieron tipos, pruebas unitarias, exports y consulta de avisos. El JavaScript del export web independiente es idéntico byte a byte al anterior; el web del export conjunto difiere y se registra aparte. Pasan 110 pruebas Python, 1.549 unitarias y 60 + 24 casos locales de navegador. La publicación del commit, CI y staging siguen pendientes en este registro. Estos resultados no garantizan seguridad absoluta ni acreditan pruebas físicas o recepción de las 150 fotos.
+
+La limpieza autorizada exige preservación y comprobación de los extremos remotos; la edad de una rama no determina su retirada. Se restauró el respaldo Git local y se verificó la etiqueta remota `respaldo/ramas-2026-11-18`, commit `76cc65eb80a92a73053cb4159d08062ca73e3900`, con 24 padres distintos que conservan los 26 extremos de rama. Los privados ignorados quedan fuera de ese respaldo Git. Se propone retirar 21 ramas superadas o duplicadas tras aceptar la consolidación; ninguna ha sido eliminada. Se conservan main, la recepción activa y tres ramas con diferencias útiles. El PR de base común se prepara para revisión y la fusión en main mantiene su requisito de autorización explícita. [Detalle](MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md).
+
+## 19/11/2026 · Fuente canónica, preview comprobada y límite de integración
+
+Se vinculan los resultados locales y la revisión independiente al commit `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`; CI de push/PR correctas. El empaquetado limpio despliega el web independiente e94, que conserva sus bytes, y no el web distinto del export conjunto. Staging protegida pasa HTTPS y 16+8 casos publicados. El token temporal permanece fuera de Git y vence el 20/11/2026 10:13:38 UTC. No hay certificación de iPhone físico, garantía absoluta de seguridad, fotos completas o datos comerciales. La autorización de las 150 y de limpieza sigue vigente; solo la aceptación e integración explícita del PR #29 queda sujeta a la puerta de main. Conservar respaldo, cotejar extremos remotos y preservar las tres ramas con trabajo único; cero ramas retiradas. No hay promoción de producción. [Informe](MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) · [evidencia final](../design/v3-intake/reports/verification.json).

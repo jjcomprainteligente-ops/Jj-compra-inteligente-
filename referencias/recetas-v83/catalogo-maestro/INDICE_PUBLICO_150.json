@@ -1,0 +1,1390 @@
+{
+  "privacy": "AUTHORIZED_PUBLIC_SOURCE_ONLY",
+  "recipes": [
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "bf0de2b122153fc521dde94862a588b6866a3f0564ae87f5f6bdf7904fd73463",
+      "id": "JJ-E03-001",
+      "positionCatalog": 1,
+      "preparationTimeKnown": true,
+      "recordSha256": "79d23ad68b5f487a6b4cce58c9b25894e2e19a0b43b1407138d7ff854501869c"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "c4bd758ffa1d30a2ab243b58518bfe22f1babf7b57f530120e5147bbd4e4b2c4",
+      "id": "JJ-E03-002",
+      "positionCatalog": 2,
+      "preparationTimeKnown": true,
+      "recordSha256": "f2f6b2c1bf509057a6a25df13e9c6bf8dd1fa06b2bc6bf287e24a898502ca683"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "404a5d1777fe6f8eb5d7068d2c1e8c6619e95607f9a30b6853a1ca3e0a686203",
+      "id": "JJ-E03-003",
+      "positionCatalog": 3,
+      "preparationTimeKnown": true,
+      "recordSha256": "f7e9488b36a23e3a09280cfadc85f7f63565a4508ad5cc0e43166d05d036f3d7"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "2f9e6dce79ccfa3932ff50209d381738a2c23dd0968630afed90880db95fc466",
+      "id": "JJ-E03-004",
+      "positionCatalog": 4,
+      "preparationTimeKnown": true,
+      "recordSha256": "467832f3a6966c7aee0918c18444ca89708df6a022197059b62eba089c7859a0"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "a33c9425504cb1ac067eef7672ad132316a92408b51c4e71ca43d7de72313545",
+      "id": "JJ-E03-005",
+      "positionCatalog": 5,
+      "preparationTimeKnown": true,
+      "recordSha256": "8c24dcddef31cf9d19fd1ba170eaa4949588463c0ce2622008864c3f645def05"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "858a3f86b3ebceaf88fde7817cdfa69450cd68756afad284c5200516ac21e3f8",
+      "id": "JJ-E03-006",
+      "positionCatalog": 6,
+      "preparationTimeKnown": true,
+      "recordSha256": "37cd74230751e1796fb8e73a26c26bcc73dc9e7b170902ce1bd054d7e20e3dad"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "991dd8448bca83e019a1e8ad64e412cd9ddc4f4f1f07784e85a9a882fb77e69b",
+      "id": "JJ-E03-007",
+      "positionCatalog": 7,
+      "preparationTimeKnown": true,
+      "recordSha256": "d247d8f1045e4b3a3d9e27655deb37b98d8f6736849267c6e62a76d8f7b49e33"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "185932fc0faa3624d4a24a82e604205eb3c418a08672920fa3dce9e8f7991a43",
+      "id": "JJ-E03-008",
+      "positionCatalog": 8,
+      "preparationTimeKnown": true,
+      "recordSha256": "a61ae77860ecef8ca8d5173af7d7393ead0b79b0787bf6ab23f9cad333b69984"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "5b5a91ab5afe06da0b62ffa7367c2e5d3e2f907f246fa242b3f3926751bab90e",
+      "id": "JJ-E03-009",
+      "positionCatalog": 9,
+      "preparationTimeKnown": true,
+      "recordSha256": "b932db7c6e7a700575a537d4447808ce3292497fb100b5048564f41ae0f71e87"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 1,
+      "categoryKnown": true,
+      "historicalSourceSha256": "0b30545ded21ebe195f76e49d26afb6c5e951075a09906e7a35722c0f784443f",
+      "id": "JJ-E03-010",
+      "positionCatalog": 10,
+      "preparationTimeKnown": true,
+      "recordSha256": "80a12e8984f51c3b71d76cd90ac1a66d9aee5234b94b9e4fd27d6c1c89978d1f"
+    },
+    {
+      "id": "JJ-E03-011",
+      "positionCatalog": 11,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "f7db2fbaa3da55bdd0d1ac4a221efd3582715e9210fde8df619381351f7b0ec2"
+    },
+    {
+      "id": "JJ-E03-012",
+      "positionCatalog": 12,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "7c45e642cda31424e240f1f552caf2d4229fff144cb1b3f163f51d4bd27a0050"
+    },
+    {
+      "id": "JJ-E03-013",
+      "positionCatalog": 13,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "9d5b4c6dcda51d59bfb43905e7c977c110524b828771cd98b073a333745e4e3c"
+    },
+    {
+      "id": "JJ-E03-014",
+      "positionCatalog": 14,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "adf2410b98fce2d304e99fc3d225a325fc5472907b4aec5a0465469da4296447"
+    },
+    {
+      "id": "JJ-E03-015",
+      "positionCatalog": 15,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "0b79353acb2e757344f681cde02c13a13affbb4f6ba3168108a0ca359cdb66d4"
+    },
+    {
+      "id": "JJ-E03-016",
+      "positionCatalog": 16,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "311c11750c5c2a63fe79b2548919a62e8bd308d0132637e77ad229b696cff026"
+    },
+    {
+      "id": "JJ-E03-017",
+      "positionCatalog": 17,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "4fb61ec88df7e0a8f2bcec0c8037da31628190d23940ca6f2cbd36db21163111"
+    },
+    {
+      "id": "JJ-E03-018",
+      "positionCatalog": 18,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "93cb8a8fd7727f763f0ed6fb2cad2e879dff458c8b8af65e222d95441b3e8cc9"
+    },
+    {
+      "id": "JJ-E03-019",
+      "positionCatalog": 19,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "3fbad7691e35efdb25419ebf07df91682419d9adbe15c89354b3a50fc1606b78"
+    },
+    {
+      "id": "JJ-E03-020",
+      "positionCatalog": 20,
+      "reason": "Contradicción entre NO_PUBLICAR/prueba no completada superiores y cata aprobada traducida.",
+      "recordSha256": "b1bcd8553840529ac17c78aaccb2254bb898f45c9d76b03ab0cacc3b2ebe6f70"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "1a1a95f9355573337a8306b84c0a449891fa96e339747935bd9aa27758d8e71c",
+      "id": "JJ-E03-021",
+      "positionCatalog": 21,
+      "preparationTimeKnown": true,
+      "recordSha256": "6ed7ad858935764a434d1d45a2d9fe0a827d882ffffd543af063363653f439f6"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "0bd9c0362e6a8e89f98f94ac88923ebf4f173f1fde0f21c171fe98b7af812f25",
+      "id": "JJ-E03-022",
+      "positionCatalog": 22,
+      "preparationTimeKnown": true,
+      "recordSha256": "8b9315cf6e9be8fd814d46a7ee18ec39a41e2828bc04b7773f7247b3bec65b1b"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "435f24886ae29e74d9b1373a65d6bb2aea3a1542fed65b1f5430a9cf268939a6",
+      "id": "JJ-E03-023",
+      "positionCatalog": 23,
+      "preparationTimeKnown": true,
+      "recordSha256": "8fbe9ba81e4ff80814d8c825903d5bb02a77a45410124b5f3c75618843c64310"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "648f92374f1c4c571ea0eab375d1d1cb1d8a5243179b43015ef7b736d0ff2e34",
+      "id": "JJ-E03-024",
+      "positionCatalog": 24,
+      "preparationTimeKnown": true,
+      "recordSha256": "4cb9fa3f1d3f4fac1964236a7bd1ee8c44c3e8852f8b2c5d9d2a0092164512af"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "79f82b084a13bcb1681f5f436b63cd988d8d1bbc682d24bc35e2bf6ef239424b",
+      "id": "JJ-E03-025",
+      "positionCatalog": 25,
+      "preparationTimeKnown": true,
+      "recordSha256": "f0e488c5e481244a6d048fe3ba05f5f66aead9f8f2407e262442c8e06d57dcf8"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "fcd84da2d9cfa84cb3f4e901adc718adaafa85f7fe3beed191f14b02d8f97cdd",
+      "id": "JJ-E03-026",
+      "positionCatalog": 26,
+      "preparationTimeKnown": true,
+      "recordSha256": "3d4bb8c13bd6042eadf3ab5f57130d9f635607a48408c5712b37c857786f6963"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "2e64c623ee8eb1aa488946e907dd4a3225c0ec629943ab6e5095ea6a361a5d44",
+      "id": "JJ-E03-027",
+      "positionCatalog": 27,
+      "preparationTimeKnown": true,
+      "recordSha256": "eba6b3c018b4eaa619845b4dc64455ddca478c17454f5347cc0d61e9dd8a6516"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "48bcd0139df7ffd0e19f1e681f6fe9c0c16e1575f9d70db5b70ecfc65d058a4d",
+      "id": "JJ-E03-028",
+      "positionCatalog": 28,
+      "preparationTimeKnown": true,
+      "recordSha256": "4eccc01aefc82aeb2e303186e7fc0840e3d52d39dd60318b3efe8379541c27e8"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "53fc9a8f906347bc6071a27bd916bebbb19c79ddf816156ee1c4fd88a661fcde",
+      "id": "JJ-E03-029",
+      "positionCatalog": 29,
+      "preparationTimeKnown": true,
+      "recordSha256": "8bd035ebcf7c86dd843aee8df0bb1c0a87e3ee7552f2cff42fb2e84c69387fae"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 3,
+      "categoryKnown": true,
+      "historicalSourceSha256": "d1ef8e99535a2da6671c2ca8c4c525d56659669339e4ee40e63bdfd971b08138",
+      "id": "JJ-E03-030",
+      "positionCatalog": 30,
+      "preparationTimeKnown": true,
+      "recordSha256": "aee830da8a84134729e7f4ce30183401ec9cd1b154aedf0004ba3720053dcfe5"
+    },
+    {
+      "id": "JJ-E04-002",
+      "positionCatalog": 31,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "93fd83d0437c0b915d2188ea0cad00fa51b39849764dd7d9b7f165fbf4fd87ee"
+    },
+    {
+      "id": "JJ-E04-007",
+      "positionCatalog": 32,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "c41373fd469411c1f6c3053e1b2cb94daf1b9ff72afb217881f3df4fa82c8259"
+    },
+    {
+      "id": "JJ-E04-054",
+      "positionCatalog": 33,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "c66d40a9bc610b6495b165088876e032a2696335ebf5fa1df9737ce5d3cccc62"
+    },
+    {
+      "id": "JJ-E04-060",
+      "positionCatalog": 34,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "9153fc2a25502b48fba8eac21f5aafc6a764fa49c3eae7337349721d486ead05"
+    },
+    {
+      "id": "JJ-E04-106",
+      "positionCatalog": 35,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "e653435ada46971a09ff69a3b1a9304958742d5c035e1ec7a03c7cb128b4b175"
+    },
+    {
+      "id": "JJ-E04-107",
+      "positionCatalog": 36,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "8d1f72e74b69c115013c2644b33a0d170228c235882dffcf1b84eed2a9dc45be"
+    },
+    {
+      "id": "JJ-E04-129",
+      "positionCatalog": 37,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "a297f168bc279a474a0b9f3faf772113831361be1be93aceadb181ff9c86028f"
+    },
+    {
+      "id": "JJ-E04-145",
+      "positionCatalog": 38,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "6e57f59f94eb8d503fcf24405654de38416badbb82b8391a3dc1c317c8f34abf"
+    },
+    {
+      "id": "JJ-E04-152",
+      "positionCatalog": 39,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "0617a2e972781fb67d4d65acd40e69cb5fe9460777f285bda7bd4d31d7da5df4"
+    },
+    {
+      "id": "JJ-E04-174",
+      "positionCatalog": 40,
+      "reason": "Cata del usuario pendiente de forma coherente en fuente y traducciones.",
+      "recordSha256": "1e2f77620b33097cbb4e0cda2d001bcb7117dbb2a997a7fabb528bfd24681433"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "30e09145e4513debd7396d4c8eca37932f8a0b0ad9975a7bf7928dde6c1024b6",
+      "id": "JJ-E04-181",
+      "positionCatalog": 41,
+      "preparationTimeKnown": true,
+      "recordSha256": "841719d6bf5ae864ba4a5b9862de093f1ce302782568bb36178502ed7a749edb"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "3075bb6d7a821be6b5c55a2d92082f44569be5b2860e41ee3387327ad1ea187f",
+      "id": "JJ-E04-183",
+      "positionCatalog": 42,
+      "preparationTimeKnown": true,
+      "recordSha256": "34cb5366fc213f118913a5766c8faad4fff1857c8d0bf75c66624c5fd8ea75e8"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "b6e411380b3b634b21524942cd4d428487806e8d765d14b62ddbeeb80e760db8",
+      "id": "JJ-E04-205",
+      "positionCatalog": 43,
+      "preparationTimeKnown": true,
+      "recordSha256": "ae009e37841a6772e5571c735296bd83ced33a9f98250423936b15cb39811a20"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "52de77b50cea1cf15999de1b966fdf1e3e2fee50cb67ba6b4c18fffbb75ff7d2",
+      "id": "JJ-E04-214",
+      "positionCatalog": 44,
+      "preparationTimeKnown": true,
+      "recordSha256": "24c41be9f428f622405eacb65f87a6808227b495b488dee603796929a2fff232"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "dca4f0c8c621c163a6af869280a370a6bb264a920850d37c5053af620529d936",
+      "id": "JJ-E04-237",
+      "positionCatalog": 45,
+      "preparationTimeKnown": true,
+      "recordSha256": "f9cb97e234aa317cb9f27b7a06a927aac188fc3edc6fa2a70b09717cfb2d8927"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "69af7db7a449a7ef560c709ae7ae6e515ed836156e747bfbf4b0665f01e9ca74",
+      "id": "JJ-E04-243",
+      "positionCatalog": 46,
+      "preparationTimeKnown": true,
+      "recordSha256": "700ada2140ed3a3165247a33acb7feea363f8c6ecc4cb1db7a7bc079219516de"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "b147dd0083596ae70d0efffbe7219b2dc8c64f133330b631471c5d97a03fe463",
+      "id": "JJ-E04-266",
+      "positionCatalog": 47,
+      "preparationTimeKnown": true,
+      "recordSha256": "b13abf992ccf8b65c65a6cf78f36ae6b963d6da71a4fd343f424317ded378493"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "fb0e78618d93ae666d840d8ac3aac0d0edb027eea72681011f495fb1b2ccd57e",
+      "id": "JJ-E04-270",
+      "positionCatalog": 48,
+      "preparationTimeKnown": true,
+      "recordSha256": "b8d6b3640601d72cdf0c0ef9e6abc66bc0db1b5e3bb015f703b00e7fc453cf85"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "f35663e2a9f2ec1f5511a701a9ba43744b6ec77fae0c3fbb6e25d08bd315ce9a",
+      "id": "JJ-E04-277",
+      "positionCatalog": 49,
+      "preparationTimeKnown": true,
+      "recordSha256": "50d4f5a6d627955c2eae3e6a5b9839b36a0d7a255debb77cba0a40237efcef09"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 5,
+      "categoryKnown": true,
+      "historicalSourceSha256": "bad36a6d36bbe95b05a6d195b4d0a2852e89eb9a92c3b5f05954166893f86573",
+      "id": "JJ-E04-288",
+      "positionCatalog": 50,
+      "preparationTimeKnown": true,
+      "recordSha256": "b403af1d5a79023395fc083faf50f2c3055b1d5f91107cdd285c1389b3ae185d"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "87e8953603a2b2840fd86db58bd0516e5bad2d4374b4a98a1e61585a1d276025",
+      "id": "JJ-E05-003",
+      "positionCatalog": 51,
+      "preparationTimeKnown": true,
+      "recordSha256": "c25125a8e8ea61711f86170cfefc16c41f385c9311171cc508b6396c73bd7077"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "32869d2cff0f653892b4cc188e4b5a3ac05b1b889eb4a59bb0dba3637fa94c67",
+      "id": "JJ-E05-008",
+      "positionCatalog": 52,
+      "preparationTimeKnown": true,
+      "recordSha256": "97c4dfe95ded777a4d8889ffb45662b98ff384b402ce9a26eb5de7366b80763f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "67bd805fa78f7b38538381527fe7cac22615b4bfa67ff81008b0e057374c2f74",
+      "id": "JJ-E05-056",
+      "positionCatalog": 53,
+      "preparationTimeKnown": true,
+      "recordSha256": "9a6e8b0852abb61f30ed78e35c18fc6601f6a88a42216a6e55fb7e66525de37d"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "438950378f929b2d62ec3e7e2731399d7edefb9c3f51424e0966472e5cbc43ba",
+      "id": "JJ-E05-059",
+      "positionCatalog": 54,
+      "preparationTimeKnown": true,
+      "recordSha256": "532053db2013e9710bfac4d64aa55733f128cebcbc1b15acc5705045ff4768b0"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "f5ad9f094138d759adc3109bd7633ce5ae6669eb8842c3dfd47660801aafeae2",
+      "id": "JJ-E05-101",
+      "positionCatalog": 55,
+      "preparationTimeKnown": true,
+      "recordSha256": "95de0a7339fe339e728f3c452275a2b20bbfbc582b0c6327202b5663d684f0d0"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "3f0e26d86675fcb543f4001ec1d5f14912f5e023e602e54485fc593e10a69f21",
+      "id": "JJ-E05-114",
+      "positionCatalog": 56,
+      "preparationTimeKnown": true,
+      "recordSha256": "d9db76ac31ddf25b4b1c0abf6f4ec1c76c1ababc181c970d90e3afb7807f0796"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "58761fd44c9e30f110fa86bf66e2d09271d285a048f728b6c9d6d1567384b16b",
+      "id": "JJ-E05-126",
+      "positionCatalog": 57,
+      "preparationTimeKnown": true,
+      "recordSha256": "da239d0774bb87164f822bfa5b9909795dd17ece14676c85946797c3e31ee970"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "693cc3a9bf475f870fa5413c500dac33df5dfbaf90b8991771115ec2ee7e65d5",
+      "id": "JJ-E05-139",
+      "positionCatalog": 58,
+      "preparationTimeKnown": true,
+      "recordSha256": "9ca305fd640e96bdae0508cc915b4031e6dac326f39aa4a3a9ac1330a07c963a"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "fb800f684ed65bfeeff04f35cb3c2182e40663e8b9ad5549a5d1bf4cea421e2a",
+      "id": "JJ-E05-153",
+      "positionCatalog": 59,
+      "preparationTimeKnown": true,
+      "recordSha256": "3aa84f4970101564ef3a1ae6a5078e3fe5eb5a788158a9f7490f7159fc2b2fcd"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 6,
+      "categoryKnown": false,
+      "historicalSourceSha256": "7aa6c8f73f100dd2f1c7de79914317100036eab01821ed66081113ac24b24009",
+      "id": "JJ-E05-156",
+      "positionCatalog": 60,
+      "preparationTimeKnown": true,
+      "recordSha256": "d01d6b2365507b5034c42e20f2805897d718b1395317fd01f8b448e28f52d36f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "efa7adadae76759e29b59b3aceef9cb289bb7e4d183d55deb38ab3b2ccdfb867",
+      "id": "JJ-E05-177",
+      "positionCatalog": 61,
+      "preparationTimeKnown": false,
+      "recordSha256": "70dab0fcf9a808b2e72ea98d97a38e748bf875e7c8e41b98a593bb6434068d14"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "bbaeff91f9d772fe72179172b9b741c79c34e58486d1a85c98dfc774fe23f472",
+      "id": "JJ-E05-189",
+      "positionCatalog": 62,
+      "preparationTimeKnown": false,
+      "recordSha256": "85b3c271c0e9b98709af8882cf40715cf8a5b72fcfbfd1c55d997caeea78ca23"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "76daf8675837d556d60b00e1bba1eb775305da0132f478eca396954f4b271e48",
+      "id": "JJ-E05-203",
+      "positionCatalog": 63,
+      "preparationTimeKnown": false,
+      "recordSha256": "7cea36f656ef77799b59fc5929b70d18ed62186e954d0d87d2a64b0089a77473"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "831ce951f2480035e96e14179544854287dbc9a4853fd1c6b2541a62635bcee5",
+      "id": "JJ-E05-207",
+      "positionCatalog": 64,
+      "preparationTimeKnown": false,
+      "recordSha256": "c2b0d844a2e768737de131e7721ad00b6905b189514c2cc88172889f0de09f11"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "b46ad9789e26247c47f325cc9e1b4e6f5b0302770d6f9956f481ed0fec95d1e8",
+      "id": "JJ-E05-227",
+      "positionCatalog": 65,
+      "preparationTimeKnown": false,
+      "recordSha256": "3a59108ac98fbbd9e2a971423e8dc8ab290140cdefe4c4c8f2b08662bed83805"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "a98dab6408a9d53ac216645999c2133e8c9061747e73f2dbabe04475138c6324",
+      "id": "JJ-E05-231",
+      "positionCatalog": 66,
+      "preparationTimeKnown": false,
+      "recordSha256": "7de7dc6b6bd0010bc5f5c2a2066f6a829e82dac76f1c0a7fc80d2f04b1ce4a75"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "5e4b4a538e9bde7bc0f7bdbb586c00040ba88b46db2cec1f6bfcba25208bd60b",
+      "id": "JJ-E05-254",
+      "positionCatalog": 67,
+      "preparationTimeKnown": false,
+      "recordSha256": "cc7d77440539f9999965ffde32e3e86e667c8c6a43998434818f108eca3dcf1b"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "5a239c0902dd444c27a639fe0c6b0958e1f651720fbab7c7d9a46a50758e1f6c",
+      "id": "JJ-E05-258",
+      "positionCatalog": 68,
+      "preparationTimeKnown": false,
+      "recordSha256": "54ced049f3e3688cd9fa4b148894ebb54c8763b303ff6928141a4c0f99c41ec9"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "d7a82258b89b2e8347df6b52488723674a403502cce308f959a454a87c1b4a54",
+      "id": "JJ-E05-279",
+      "positionCatalog": 69,
+      "preparationTimeKnown": false,
+      "recordSha256": "26df8c7727d6326d61315e7b78091e3b0fc1a56d6d1ea05a73ae6b3b77dcf9b8"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 7,
+      "categoryKnown": false,
+      "historicalSourceSha256": "c40b8f208d0dce23ede7aa7c9b54f21a6c1e82be75653d9120336f3e922bdbdc",
+      "id": "JJ-E05-289",
+      "positionCatalog": 70,
+      "preparationTimeKnown": false,
+      "recordSha256": "e7041991da6e4733aaca79927b483306fa16bcfdf8c5670a41333a5988c623c3"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "5af57d9adf80bd0895dd6d339b9948f9d2ed3e3d1688200b886793777e1d0760",
+      "id": "JJ-E06-004",
+      "positionCatalog": 71,
+      "preparationTimeKnown": false,
+      "recordSha256": "7e4e7325e3b0d0d153f5a53858b156b969774c5a9e900d62812de67a987b0ecb"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "d83723b798cc1dbad2dfdcc9cabcd4dd373d62a6e0a571a4d87a27cd63107b2c",
+      "id": "JJ-E06-068",
+      "positionCatalog": 72,
+      "preparationTimeKnown": false,
+      "recordSha256": "36fef8ae2a21dc577eaf4320d6b6ade15ff56294f8a9c1483b96e22859f13711"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "e9b81bfbf58911a02c7d722c8fb9e1aca3e67c943e8707a272f2c0335a6eea1f",
+      "id": "JJ-E06-102",
+      "positionCatalog": 73,
+      "preparationTimeKnown": false,
+      "recordSha256": "eb39cc9e458f28f5b3d1007e9224c070ac164d66d29417742dfa6f3131b87490"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "96ef320ac56263b830f9b0c96ba8f82021424995490610ab945d0790587851d1",
+      "id": "JJ-E06-135",
+      "positionCatalog": 74,
+      "preparationTimeKnown": false,
+      "recordSha256": "559406470df92f6e45cb5cf278ef2ea857e2e6fb10057ce93d42cb6e321ea855"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "73a92a6700e34441605f57fc6fa553bc35ddefdc9adf055f8a89e6e88473e7f7",
+      "id": "JJ-E06-169",
+      "positionCatalog": 75,
+      "preparationTimeKnown": false,
+      "recordSha256": "b0255447185c93fa5026f9d15df40f4a2b3c0e2ef83a2d788798f750ae0ec6bc"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "a45df1bac7789a1bca82aa3248215b5807d25b0ae498319a9902f32c94656347",
+      "id": "JJ-E06-179",
+      "positionCatalog": 76,
+      "preparationTimeKnown": false,
+      "recordSha256": "55f406e3d83641e4c614e9c982867f02feb41d198ffa2f4bdce92972d6d463ab"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "e9a6b68b3348e42f0d57886950111f27decd54bc32f36070c6f7f881c4ea4192",
+      "id": "JJ-E06-208",
+      "positionCatalog": 77,
+      "preparationTimeKnown": false,
+      "recordSha256": "f2c202b0d941b3eca79a317527ebbbe8439afef74303d6e122eafc5e265e4e84"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "b3cecf927e96125a91a2ef1fc92df95b799110848da4e262f6fe9d7071bf3966",
+      "id": "JJ-E06-229",
+      "positionCatalog": 78,
+      "preparationTimeKnown": false,
+      "recordSha256": "0148fa2deb07d088933a1b53ed7ec5e60efe5e68e469d5fdb4af9c70d4aff6fe"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "e7bc406e422fc1f4abdfbc564344fd7d6c64a7d0858898a061906bd871e53886",
+      "id": "JJ-E06-260",
+      "positionCatalog": 79,
+      "preparationTimeKnown": false,
+      "recordSha256": "e2d8c54f58b203861bd7dffc442f7f51d6e34e8ea44b263d50e59f092d4bfa41"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 8,
+      "categoryKnown": false,
+      "historicalSourceSha256": "0f18d3b26371654f1b787b269ae3c3c40bb1d4a361b876ceb5af4aa9bb369003",
+      "id": "JJ-E06-283",
+      "positionCatalog": 80,
+      "preparationTimeKnown": false,
+      "recordSha256": "a2ddfca607ffe5cf2a965522c4b347994f24c0a5d87e6033034b8822ef5d19b2"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "f4f43e0748b4c6afce704d4a8fc96d6e45584fbfbf4ad2c6f662660c00da7b82",
+      "id": "JJ-E07-057",
+      "positionCatalog": 81,
+      "preparationTimeKnown": false,
+      "recordSha256": "28ba733b94d7aa5756355fcf42d086ce6c4c62f74c71e7a460d740ea77b95ef2"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "553a3ccac8690482337b8c24efe12e1ca930cb96ac4ceaa7724b467a71712fc4",
+      "id": "JJ-E07-143",
+      "positionCatalog": 82,
+      "preparationTimeKnown": false,
+      "recordSha256": "34fa6abbb74f392b5357a150c2e717db3dfd766341b07085b9a3d79cc58d8d44"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "e6a9221499481892bac87c140638dab26945a65bf9721a5676edfeb859066dd0",
+      "id": "JJ-E07-162",
+      "positionCatalog": 83,
+      "preparationTimeKnown": false,
+      "recordSha256": "13ede03e04e59cf94919bafa987520e6d52c6aa3d3daedf3c1851dbc84ed2273"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "a40d83b140ee2d7c0b2d9a39dd4a8af9e45b671b52071914c98b3c8aad1d9e28",
+      "id": "JJ-E07-185",
+      "positionCatalog": 84,
+      "preparationTimeKnown": false,
+      "recordSha256": "5b28ad1a8b7f45e88698c002b176419d13ac474e548aab749d4fc5feca6d22cb"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "11dc03a60e74593e582500168e6eaa7e739c60c067fefaa7bb617104c856aac0",
+      "id": "JJ-E07-212",
+      "positionCatalog": 85,
+      "preparationTimeKnown": false,
+      "recordSha256": "615db8a91f0e1d02983334625f9a727b0e9f36338502b68e90b1cfeab9383655"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "af9eef3f668898c85cca3d37e2fa4d9c2b15e01d2d6f218a466ef507e4b28abb",
+      "id": "JJ-E08-011",
+      "positionCatalog": 86,
+      "preparationTimeKnown": false,
+      "recordSha256": "0634172f1ffa342b8e9dea6510993ef6cea3e96dc71b2bcd2a81b868095e5940"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "2a1b3f5c97bec4fd3ec3659b56bcdb71610eb495e6297571e1b40affe15d1670",
+      "id": "JJ-E08-117",
+      "positionCatalog": 87,
+      "preparationTimeKnown": false,
+      "recordSha256": "93fbbcc4eeb0b6646bb126a2a4662c35999987f3cdd48d328e6f77a7ce04a047"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "0909788f0d2b7c4624a2c9e68b6e3e05dbf1f49406ae51eb05700d09653f42cd",
+      "id": "JJ-E08-244",
+      "positionCatalog": 88,
+      "preparationTimeKnown": false,
+      "recordSha256": "982a2d6ac398c71e1699369e92571a31cdfd371683192b0adf89af88fc21c337"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "5142e54b8f296e3ffbc902771285cc76f9d6e8c144ffb6abcc522830bdb7e153",
+      "id": "JJ-E08-271",
+      "positionCatalog": 89,
+      "preparationTimeKnown": false,
+      "recordSha256": "b3e57c801f726b2a304d1612abedc6c03379281a1ff537943c04528e663c158f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 9,
+      "categoryKnown": false,
+      "historicalSourceSha256": "3df04cea3127d58c2da61f00b15c6c1962b3d56833983555faaf16f8f889751b",
+      "id": "JJ-E08-281",
+      "positionCatalog": 90,
+      "preparationTimeKnown": false,
+      "recordSha256": "e4b9df4b9db7022f4b654a75b6e6bd12a4e905aae9e0ed9e4a3fc7d28134d456"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "3a830803cbf18f709ff03e45391878611a4b41ba6f901673ada375060d3fdf5e",
+      "id": "JJ-E09-DES-001",
+      "positionCatalog": 91,
+      "preparationTimeKnown": false,
+      "recordSha256": "db01a2492c6e907758b8ee5c8877a0d6b9e36c518db18d55cf1c336bf59c8cd6"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "142fa47282eb30a49d31c9cce2cdb406ea5df69151c568bde2fa12bcd4371eb9",
+      "id": "JJ-E09-DES-002",
+      "positionCatalog": 92,
+      "preparationTimeKnown": false,
+      "recordSha256": "81dda45a20241f2d6b75ebbb40080646809aa91f4732d1a514e1d70d2eb40e36"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "cc7fb6e53d8d7b261e464d31b290fe1dce5ba9e2a1abd59a235115c624013fd8",
+      "id": "JJ-E09-DES-003",
+      "positionCatalog": 93,
+      "preparationTimeKnown": false,
+      "recordSha256": "2814167eed4063bca2e9bc7b54551ec29d33c9220b1c10a170364236e9ebe128"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "830f5dd9934075767fb12e80cf312096d43290481b36855b591ff49cc4f55da8",
+      "id": "JJ-E10-DES-004",
+      "positionCatalog": 94,
+      "preparationTimeKnown": false,
+      "recordSha256": "5a632f62ab86a0387b0c982dcd71bb29cb14bcd2169611c9ed361c2935a55701"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "64f7ed66815623cdcca9e504fab3c118c3a2d2fd42187a1573cc4b27dcd255b0",
+      "id": "JJ-E10-DES-005",
+      "positionCatalog": 95,
+      "preparationTimeKnown": false,
+      "recordSha256": "b477ff26a63c242aa47633398b9e233124b71ade9df9a74a1f940764ede36a3f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "0126f9654d71726a76fe550a94239dd90104091472cf770039a9d3cc656c48d0",
+      "id": "JJ-E10-DES-006",
+      "positionCatalog": 96,
+      "preparationTimeKnown": false,
+      "recordSha256": "5febca6d151980a6048f8751fe5cbc4d65c3904a8bbad0140b68560c73898785"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "cba1d3667630f4cc2e6997659a94bf552530486deba588b112d1f11d63c78d47",
+      "id": "JJ-E11-BRK-001",
+      "positionCatalog": 97,
+      "preparationTimeKnown": false,
+      "recordSha256": "7399240b8ef0b48fa34bff4e985499c71d6b1580d1598bb2cf5f5c186f067d67"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "7ddfc4eb33e84ddd3f4667bd417e6d8a5f48199fbdfe58f927586bce061789ed",
+      "id": "JJ-E12-BRK-002",
+      "positionCatalog": 98,
+      "preparationTimeKnown": false,
+      "recordSha256": "4db3cbb2fef6418fc4e4a01850bbf045ba229af4c84c68da5acacc089a75df0d"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "77142bbe26feed07ff8756487a2feb79bfff65f3303af82abc194a0995ab051c",
+      "id": "JJ-E12-BRK-003",
+      "positionCatalog": 99,
+      "preparationTimeKnown": false,
+      "recordSha256": "e5a71b1f4eb4a00660ad81e1221f27faea29e65ca21355a71037d4289f3e5d49"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 10,
+      "categoryKnown": false,
+      "historicalSourceSha256": "9599d2c02759c3f16199a5a497957e94049a7b702ab9f784db4e457169ef3f6e",
+      "id": "JJ-E12-BRK-004",
+      "positionCatalog": 100,
+      "preparationTimeKnown": false,
+      "recordSha256": "955530ebadaa37ddf5a5d5bd7ce168139cc64e5ecf812e97450470781363fb94"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "407a179fab35c657bcf4960fda54e19be39b0735086aad8d8cbd149aaac1f23d",
+      "id": "JJ-E12-BRK-005",
+      "positionCatalog": 101,
+      "preparationTimeKnown": false,
+      "recordSha256": "571430cc6070cd9537d36b27ec8883c142c1a9307cd0a4fbbac9e3a86f15e916"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "58bfda92f085dbf3e27a002fc184e0da0b1d9fd11d740476910796fbfd0b8af6",
+      "id": "JJ-R001",
+      "positionCatalog": 102,
+      "preparationTimeKnown": false,
+      "recordSha256": "735e394746d4ad4f7c7ebaa83a3018859b434cb2a25a6d9b0b3598647d1fb283"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "bf794587e629948fa63970d28d499469dc0510f64a95eca354d0d03d7875254d",
+      "id": "JJ-R002",
+      "positionCatalog": 103,
+      "preparationTimeKnown": false,
+      "recordSha256": "cea0d96ee41725c62105f5a46741d6cd536c4757544a22851bc2e438a11b97d7"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "9eb42b73dd0b6e97805cea03bceb8ba7bff2dcfe7040ac07d84b12798f52011a",
+      "id": "JJ-R003",
+      "positionCatalog": 104,
+      "preparationTimeKnown": false,
+      "recordSha256": "68abf2912c80e28df66ca4abdf0bd907302e50db4229a8b937cfc50e3644237a"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "78bf2861107fc91db3a729bccfbb2e85d98f06bd51c64c286dde9d32b6e0d21d",
+      "id": "JJ-R004",
+      "positionCatalog": 105,
+      "preparationTimeKnown": false,
+      "recordSha256": "7cca9eef1a98f26f84578a1408acdc17d5aeab732cdf1d6e182ce3e3960f5b77"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "f073fda1fe673d2ceb3d68d75faac98c1dc915915ce689eebb03edd9c6ab225f",
+      "id": "JJ-R005",
+      "positionCatalog": 106,
+      "preparationTimeKnown": false,
+      "recordSha256": "48c04d6e68c972c793f38a3d97b0257f6d4add3fb8b2ac46f059811e6d2750d7"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "7bc597de91f2a375b7aced80c6a21b79937e06082dda27e3c4f8ea04c945c70d",
+      "id": "JJ-R006",
+      "positionCatalog": 107,
+      "preparationTimeKnown": false,
+      "recordSha256": "35df7859ff4ab1e5ff214f5786300fca21930f698d0c404d70929c5f45efd054"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "bffc17ea4b02855a0152ad41f339ae249ea3f775d397788d7225077416f1b025",
+      "id": "JJ-R007",
+      "positionCatalog": 108,
+      "preparationTimeKnown": false,
+      "recordSha256": "59bb4254c0bf3f93d6239605ce8944876daf57309acfa8a6d185cf0277ae6fb2"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "421e41ea1baffe4d157216dae596ddcb5cb319bd1aabe4ff816c45cfae05e8a6",
+      "id": "JJ-R008",
+      "positionCatalog": 109,
+      "preparationTimeKnown": false,
+      "recordSha256": "98ce382ccf960d9a285455cf18b51a4028fdfaeb24dd95206924f79d31b0ed84"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 11,
+      "categoryKnown": false,
+      "historicalSourceSha256": "6d3f7b442f9f40c0dbdc8a8d9e2512688777ec116bde57bf2b7cfb1aab9a5394",
+      "id": "JJ-R009",
+      "positionCatalog": 110,
+      "preparationTimeKnown": false,
+      "recordSha256": "135b8bc0111497bdcdd57f48c7e090d81d28a8a3373fba215b0134556e15913f"
+    },
+    {
+      "id": "JJ-R010",
+      "positionCatalog": 111,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "f14701ac1a87626ed9514cf114dbd3fcf91d6270ca50da3b2089fa922781546d"
+    },
+    {
+      "id": "JJ-R011",
+      "positionCatalog": 112,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "82047cf847a8723910091b5cb80fafa508dea55c97a4b9c4ed8364365765874a"
+    },
+    {
+      "id": "JJ-R012",
+      "positionCatalog": 113,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "05c550d9c67d443cb9bf66755b3988db95bf072c4dcc505b0061d2720be1c8e9"
+    },
+    {
+      "id": "JJ-R013",
+      "positionCatalog": 114,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "ffb7900a1762a3635fb80f6b4ae70971022d3efdc8ca0d75eb6cc1e9822ddf86"
+    },
+    {
+      "id": "JJ-R014",
+      "positionCatalog": 115,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "247fc12d3ec3b42ddeb9cad93974f62c32e5a43088995df66266931ab1b27ed2"
+    },
+    {
+      "id": "JJ-R015",
+      "positionCatalog": 116,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "e9b81515cb9c0420ac8a27d7f28d863e030482e7759498212aab255c802fc9ff"
+    },
+    {
+      "id": "JJ-R016",
+      "positionCatalog": 117,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "e63fa92c73108e18906b78a407cd00127de2eae58d271833f7bcacc3d8cc977f"
+    },
+    {
+      "id": "JJ-R017",
+      "positionCatalog": 118,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "a3f77122dd8e045d3f116e02817820b5ce2ab721e699555773a7fe5a902302e0"
+    },
+    {
+      "id": "JJ-R018",
+      "positionCatalog": 119,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "5e30287de9b766c26912e7a32db7b055d86e0e7720663232695146a27312251c"
+    },
+    {
+      "id": "JJ-R019",
+      "positionCatalog": 120,
+      "reason": "Cierre/cata aprobados superiores, pero traducciones mantienen PENDING_USER_CONFIRMATION.",
+      "recordSha256": "f770da9dd0675d6a2d155f2cd564bcc25db0167d60597f08284a656bcae36a65"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "2fa8f2ed5ea756b3773827bf084047956dfef7743869fb21fa77a7f27466c428",
+      "id": "JJ-R020",
+      "positionCatalog": 121,
+      "preparationTimeKnown": false,
+      "recordSha256": "7faa320c0c9642bd0b482ce7013cc2499b0b0be5ee4bde00cc9f1c964dbfd070"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "fb822f513e33b36ab547cfbc4c1fa21cd203389e04ae981db859a5c32c7ff0d8",
+      "id": "JJ-R021",
+      "positionCatalog": 122,
+      "preparationTimeKnown": false,
+      "recordSha256": "1f5e5471f3797895d6182fbc9ec2dd4f062ba1d081c056411683b6aa9a5ccb3a"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "bf6fb08fb99451ff4def673f3ee985593e81a2389bbdb47092d4f6660c43ca32",
+      "id": "JJ-R022",
+      "positionCatalog": 123,
+      "preparationTimeKnown": false,
+      "recordSha256": "e3a07c20286c711b6ab608ca9b9b06788a511a9ccca24c07c733c13388714526"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "03dd2ff4b4feebc8bfaf9660c3a40bfba9a3db4a8d8af846ffa8d3745e112496",
+      "id": "JJ-R023",
+      "positionCatalog": 124,
+      "preparationTimeKnown": false,
+      "recordSha256": "7a5e236b8ee3596975323e616f217e01e8fab147a51e644c4463b7161ea7fc6a"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "cfa687ab250e550e9c892bf52f7384c832549826a2335afa8af164f85d61c016",
+      "id": "JJ-R024",
+      "positionCatalog": 125,
+      "preparationTimeKnown": false,
+      "recordSha256": "3b247e5554ea09cefd48bbc9882edee0a3533938c3beed34211748fe374f83ba"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "5f7f4481d317f00a5c1e2d46d146d4aa52e733c583aad2a8a0c5fc24482f8282",
+      "id": "JJ-R025",
+      "positionCatalog": 126,
+      "preparationTimeKnown": false,
+      "recordSha256": "35fc839113dc23b67391356f98bdc37109d27dffc86111b05b1505b2f13c8a3f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "45f89acae9c4ed049bff448d1085c59e43d278b0ff1fe6c97955d965e0a4757c",
+      "id": "JJ-R026",
+      "positionCatalog": 127,
+      "preparationTimeKnown": false,
+      "recordSha256": "2204ca9812c1e3a21fb5e12e6acbcd22576270305f20c7eecbb8bcb25a989816"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "4d8e8f50b8ae397399fd3f75c217c6738d2150ac1ec5d4ecae6e206c4067356d",
+      "id": "JJ-R027",
+      "positionCatalog": 128,
+      "preparationTimeKnown": false,
+      "recordSha256": "f33830e89511f2161960e29cf9a8f0b896a1b89bb9bbedd6c6301a0ba4d886c8"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "cc2a1f07c6ce860997bc51a7cb027a79bf6873c8135552c3cbf5770cbd58852d",
+      "id": "JJ-R028",
+      "positionCatalog": 129,
+      "preparationTimeKnown": false,
+      "recordSha256": "ecbe0bf0254d5f598be583243752986c07cedcb7e3fa9cf4ed20c4c4c15b1295"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 13,
+      "categoryKnown": false,
+      "historicalSourceSha256": "d5efc306fc76fbe330da1427040eccbfd8afbd98fff8469be14ac454ea3df0a3",
+      "id": "JJ-R029",
+      "positionCatalog": 130,
+      "preparationTimeKnown": false,
+      "recordSha256": "70a365ecec50c64b88f0ef456f13bffbc9b17bfc101f4ecc2aac1e5b7f591d0f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "76d3e09108bba81e948cb90ae11bfe1bde6352013f5b04d1c263b0948e60a6b9",
+      "id": "JJ-R030",
+      "positionCatalog": 131,
+      "preparationTimeKnown": false,
+      "recordSha256": "e3248d77aacd008784a7baafaa713e8f251333f2909eda2439e9de44932366a0"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "8108aeab42cea0bdb2e5fa1b68c5940dae1f7d50bfaf02c2fa72290c4bcbd93d",
+      "id": "JJ-R031",
+      "positionCatalog": 132,
+      "preparationTimeKnown": false,
+      "recordSha256": "fe58c6015e7e6d58c3fd6ee3782b4267414f4dd8057b050b612d0cebc74177d3"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "54d25dda8a92bfcbab2ac87f93b4c3c40b8749fe169a2abf5a46cb2fe35b102b",
+      "id": "JJ-R032",
+      "positionCatalog": 133,
+      "preparationTimeKnown": false,
+      "recordSha256": "16b2cdfd381370089501ee59ced255c5694787c07a7ae544eacdd602b5c55468"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "ba5ce6acc8eb4541a0f9b2885a3c9763cc447bc18c4720ab9524ec5c8c048042",
+      "id": "JJ-R033",
+      "positionCatalog": 134,
+      "preparationTimeKnown": false,
+      "recordSha256": "559f32dca92e304c1e8c652442269210cfaacfdc2035cc90864d47460ee12837"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "f98c9266be4792b6c6324718121076a4e0e7bf1f68d2141409f58f8bd7056194",
+      "id": "JJ-R034",
+      "positionCatalog": 135,
+      "preparationTimeKnown": false,
+      "recordSha256": "a2d8177da7ff8c670ab960cec0ca9a220f0b711abc3bec87abf4a7b38afd1556"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "621e631d2d67117c5471eee30f5c2d9c5d63c8d93375678f39ca8e8cb78d8f79",
+      "id": "JJ-B03-CAN-013",
+      "positionCatalog": 136,
+      "preparationTimeKnown": false,
+      "recordSha256": "2f182d9686be3bc1d4d622052a4b808cd270654df4a28c38a5f9d9c61cb85fa1"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "1cf0d522988d2705c690b1479a2337932bb0d6ae11469b34ab888837f3788f71",
+      "id": "JJ-B03-ESP-073",
+      "positionCatalog": 137,
+      "preparationTimeKnown": false,
+      "recordSha256": "719d9da6dc52d614d4d41c1991127ad920a1b1e950e0892514ce9a079ece7865"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "070f5f3868bd0880734690355d8c089aa3dbdc916b888c8e756d986f5ac9873b",
+      "id": "JJ-B03-FRA-115",
+      "positionCatalog": 138,
+      "preparationTimeKnown": false,
+      "recordSha256": "31eab32410e75145bfb6929563d6452551280328e30ae870e3dc8ad6dd33607c"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "98250eac471a70638b3ef2dfddc14543f1705db151f125fb06184effad448e05",
+      "id": "JJ-B03-ITA-132",
+      "positionCatalog": 139,
+      "preparationTimeKnown": false,
+      "recordSha256": "79ae7b99b9ed5a9f4532c126c40f5eea1069dea1e914925897d09b6db2a4afd0"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 14,
+      "categoryKnown": false,
+      "historicalSourceSha256": "f7c448420eaa6e6969a6553a42abcaa60352ebe6ac51a034baa6ef720bea81e3",
+      "id": "JJ-B03-GRE-211",
+      "positionCatalog": 140,
+      "preparationTimeKnown": false,
+      "recordSha256": "606220640e8c860902e89f9d053e4503a7f00e531d6f0aeea23cd4d5791d7ab1"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "aa77cf18d8cc6e22c7ec80bd76b3ca4ae692dd853a316e3a00631ed6263a9f91",
+      "id": "JJ-E13-045",
+      "positionCatalog": 141,
+      "preparationTimeKnown": false,
+      "recordSha256": "33c2f1aa122d40b11c8816df40ef63d52b7066dfa7c06e8fe87e3d94e4529d23"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "1a342d54f0916e686dec12de4c93d8dcd3ce1d384601dbe1d63f152725dfbdb7",
+      "id": "JJ-E13-058",
+      "positionCatalog": 142,
+      "preparationTimeKnown": false,
+      "recordSha256": "3b685b108a2697a4af00f90227bd1f34274e4d418a6b323ca87e82f1927fe1a4"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "03fbba1a49dc957d0099651292eaac1badd296bc49eb0a9b90dfedadbf986293",
+      "id": "JJ-E13-105",
+      "positionCatalog": 143,
+      "preparationTimeKnown": false,
+      "recordSha256": "382c7174e4b117bc335e763fc4e219053aedb16feef2902e4939f6a9a1c67b8a"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "c93a5c50a7164bfb6a5fd3d04394b5d8a62ff59eefcebe90a18facd22a5a99f2",
+      "id": "JJ-E13-137",
+      "positionCatalog": 144,
+      "preparationTimeKnown": false,
+      "recordSha256": "b06a554c639b6fe931282475dafb312c79ff1efc7dea27665fc4f04cf8178dd7"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "3a3ed8383a33494e08c285772a9add9d7c3d75acd2e74fed8773cff4fb6e2cc1",
+      "id": "JJ-E13-157",
+      "positionCatalog": 145,
+      "preparationTimeKnown": false,
+      "recordSha256": "ea82037f4048b8e2239893d9ab5d3eaee080c6591b3d5d94a1b4ce75971a2b37"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "6fd502eaf16c344773d29020995b11ecbcfd316ee979151d9c14d9c8aa639d9b",
+      "id": "JJ-E13-194",
+      "positionCatalog": 146,
+      "preparationTimeKnown": false,
+      "recordSha256": "872f27136c7ae3a9b271bcc5eb1d66c720bf44064e1bc29d71b36b98f1c26e57"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "3beec2cd093068de3401917302e19549e067e233375a2e93d386ca4d3437c817",
+      "id": "JJ-E13-202",
+      "positionCatalog": 147,
+      "preparationTimeKnown": false,
+      "recordSha256": "4e15c05146e151c0f1638ebd56b7725a30c88a2c38160c159248ae115f0f077a"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "e48246cdd893a17929f09805e8ac30b501f85356e8af21f54ba0ba0794f7a87a",
+      "id": "JJ-E13-233",
+      "positionCatalog": 148,
+      "preparationTimeKnown": false,
+      "recordSha256": "0799542766e7edc4a4d18e93d007663060167524e11c3720707abf40cf68a01f"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "83a60f8a39b458d8f27a17e3ce234ec13b30962e610564763b65d420b7aee415",
+      "id": "JJ-E13-261",
+      "positionCatalog": 149,
+      "preparationTimeKnown": false,
+      "recordSha256": "4c0ddb81bb6d3d5d2ec564bb63d2dc45222def4eaab011a4c10abfa1a384d659"
+    },
+    {
+      "activeInCurrentApp": true,
+      "batchNumber": 15,
+      "categoryKnown": false,
+      "historicalSourceSha256": "2c05c0756e8715056fe20d3791127a5427a38a78d988402ae4e6e75e36e9f14b",
+      "id": "JJ-E13-287",
+      "positionCatalog": 150,
+      "preparationTimeKnown": false,
+      "recordSha256": "fce8867c267ef67196581f847c620c172a25a4a47672bb6189dc76be4e149e27"
+    }
+  ],
+  "schemaVersion": 1,
+  "source": {
+    "authorizedPublicArchiveSha256": "5b310f4111b6b1a7bd21a32560b0283518e9d8bdb4e169da2715c51d69778b62",
+    "originalArchiveSha256PreviouslyRecorded": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034"
+  }
+}
