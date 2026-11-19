@@ -1,5 +1,7 @@
 # Consolidación de fuentes y recepción V3 segura
 
+**Cierre vigente · 19/11/2026.** El propietario autorizó la fusión del PR #29: ejecutada a las 12:24:36 UTC, merge `65d95466ed767346d2be99c3d8d6556be326684a`, con árbol idéntico a la candidata `761275f71ef70e121979d916327906511665bc14`. La CI de main 44523616187 es correcta. Se retiraron 21 ramas superadas o duplicadas de forma atómica y quedaron seis, con respaldo intacto. Los apartados de preparación y publicación conservan sus estados previos; el cierre de integración al final registra lo ejecutado. [Evidencia](../../design/v3-intake/reports/main-integration.json).
+
 Preparación: 18/11/2026. Verificación local y publicación comprobada: 19/11/2026. Consolidación sobre la app existente, sin rediseño. Base de aplicación `04c3d0db5eab7e60667aa023806f8284ea4b0c06` y fuentes V3 `6c6cde44ae06ef48adf8040ec8b5446003bd87ba`, que incluyen main `e21d7213822bdb02080cff8943abbc28e666adf4`. Rama `codex/recepcion-v3-segura-2026-11-18`.
 
 ## Autorización y alcance
@@ -47,7 +49,7 @@ El cierre debe distinguir la verificación de la herramienta de las pruebas de l
 
 ## Siguiente acción
 
-Revisar el PR #29 con CI y staging verificadas y obtener aceptación y autorización explícita para integrarlo en main. Ejecutar después la limpieza ya autorizada, cotejando los SHA remotos contra el respaldo; todavía no hay ramas eliminadas. La activación de las 150 fotos requiere completar la transferencia. La fusión en main exige la autorización de integración contemplada en la política vigente. Las fuentes comerciales permanecen pendientes de verificación.
+Completar la recepción de las 138 fotos pendientes y comprobar la integración técnica del catálogo de 150 recetas conservando IDs, originales y datos guardados. La aprobación del texto sigue vigente. El PR #29 y la limpieza autorizada ya están ejecutados; no queda pendiente volver a aprobar esa fusión ni se abre otro bloque automáticamente. Las fuentes comerciales permanecen pendientes de verificación.
 
 
 ## Publicación comprobada · 19/11/2026
@@ -57,3 +59,12 @@ Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, árbol `72a62611f1099fe05e118
 Staging `dpl_9GyW8ij3xX4dgZtw7Q3F1jwH2v1K`, READY, [origen protegido sin credencial](https://jj-compra-inteligente-16buip6v1-cmj2hwhc6b-1051.vercel.app). Se empaquetan 13 archivos/1.590.470 bytes del web independiente; el JavaScript decodificado conserva el hash e94 indicado. El export web conjunto tiene su hash distinto y no es el artefacto desplegado. HTTPS comprueba cuatro idiomas, 127 recetas y 19 recursos; WebKit 375/430 pasa 16 recorridos y ocho controles de Inicio, sin fallos, omisiones, intermitencias o reintentos. El método HTTPS usa Node con proxy/CA heredados y un puente de cuerpos decodificados para Chromium; no acredita Safari físico. [Resultados, fuente y hashes](../../design/v3-intake/reports/verification.json).
 
 Los 101 inputs finales y los hashes revisados coinciden con la fuente canónica. Los 27 binarios originales se conservan por SHA Git, sin volver a publicarlos como texto. Protección `all_except_custom_domains`, main `e21d721` y producción `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3` comprobados y conservados. Acceso temporal enviado por conversación hasta **20/11/2026 10:13:38 UTC**; sin token en repositorio o informes públicos. Las 138 fotos, la activación de las 150 recetas, la aceptación visual/física y las fuentes comerciales siguen pendientes.
+
+
+## Fusión y limpieza ejecutadas · 19/11/2026
+
+La respuesta explícita del propietario «Si fusionale» autoriza la integración concreta del PR #29. GitHub confirmó el merge `65d95466ed767346d2be99c3d8d6556be326684a` a las 12:24:36 UTC, con padres `e21d7213822bdb02080cff8943abbc28e666adf4` y `761275f71ef70e121979d916327906511665bc14`. Su árbol `54c403d41ec1cfb2cbbb9cd526ac173268fc1d89` coincide con el de la candidata revisada. [CI de main 44523616187](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44523616187) correcta. El cierre documental posterior registra esta operación sin cambiar el código integrado.
+
+La limpieza ya autorizada retiró 20 ramas superadas y una duplicada, **21 referencias en total**, después de comprobar que sus puntas estaban integradas y conservadas en el respaldo. La transacción atómica comprobó el SHA esperado de cada rama; una lectura remota posterior confirmó las ausencias y las seis ramas conservadas: main, recepción de fotos V3, candidata V3 y las tres ramas con trabajo único. La etiqueta `respaldo/ramas-2026-11-18` conserva el commit `76cc65eb80a92a73053cb4159d08062ca73e3900` y las 26 puntas originales. No se borraron archivos de aplicación ni fuentes.
+
+Producción y protección permanecen sin cambios. La preview existente sigue vinculada a la fuente probada `d0c71a7`; no se ha creado otro despliegue ni se atribuyen sus pruebas a una nueva ejecución. La app continúa con 127 recetas; la fuente conserva 150 IDs/750 fichas y 12 fotos verificadas, con 138 pendientes. Esta integración no acredita aceptación visual, prueba nativa ni precios o etiquetas comerciales. [Registro de integración y retirada](../../design/v3-intake/reports/main-integration.json).

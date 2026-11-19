@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-19T12:28:55.343635+00:00",
+  "status": "MERGED_IN_MAIN_AND_OBSOLETE_BRANCHES_RETIRED",
+  "authorization": {
+    "mainIntegration": "Owner explicitly authorized PR29 merge on2026-11-19.",
+    "branchRetirement": "Previously approved cleanup; performed after accepted consolidation and verified recoverable backup."
+  },
+  "repository": "jjcomprainteligente-ops/Jj-compra-inteligente-",
+  "merge": {
+    "pullRequest": 29,
+    "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29",
+    "commit": "65d95466ed767346d2be99c3d8d6556be326684a",
+    "mergedAt": "2026-11-19T12:24:36Z",
+    "parents": [
+      "e21d7213822bdb02080cff8943abbc28e666adf4",
+      "761275f71ef70e121979d916327906511665bc14"
+    ],
+    "tree": "54c403d41ec1cfb2cbbb9cd526ac173268fc1d89",
+    "candidateTreeIdentical": true,
+    "candidateCommit": "761275f71ef70e121979d916327906511665bc14",
+    "testedApplicationSource": "d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd"
+  },
+  "mainCI": [
+    {
+      "id": 44523616187,
+      "event": "push",
+      "head": "65d95466ed767346d2be99c3d8d6556be326684a",
+      "conclusion": "success",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44523616187"
+    }
+  ],
+  "preservation": {
+    "all101FinalAppInputHashesMatch": true,
+    "originalBinarySourcesUnchanged": 27,
+    "catalogueRuntime": 127,
+    "sourceRecipes": 150,
+    "sourceLocalizations": 750,
+    "photosVerified": 12,
+    "photosPending": 138,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "visibleMealCount": 5,
+    "localStorageContractsChanged": false
+  },
+  "branchRetirement": {
+    "recordedAt": "2026-11-19T12:27:04.170533+00:00",
+    "atomic": true,
+    "explicitExpectedSHAForEachRef": true,
+    "retiredCount": 21,
+    "retired": [
+      {
+        "branch": "codex/b05-2-motor-comidas-variables-2026-11-16",
+        "sha": "04c3d0db5eab7e60667aa023806f8284ea4b0c06"
+      },
+      {
+        "branch": "codex/b06-1-auditoria-fuentes",
+        "sha": "abb3bca53953e4523af61118e375df90d1a8d416"
+      },
+      {
+        "branch": "codex/b07-base-segura",
+        "sha": "1db842dc1d5d7c3efe15ea4e942ac43a95cfdaa0"
+      },
+      {
+        "branch": "codex/b07-propuesta-hogares",
+        "sha": "4e0fb2a5b29c9076bd61e0b1e1ef575b3167ff06"
+      },
+      {
+        "branch": "codex/bloque02-receta-primero-2026-11-14",
+        "sha": "e97a41b8e67c907207e5fb4e8642ea3f79e04230"
+      },
+      {
+        "branch": "codex/bloque03-catalogo-maestro-2026-11-14",
+        "sha": "b590ed0d09d646a6f541637c59ac98ecfe68128c"
+      },
+      {
+        "branch": "codex/bloque04-2-foto-pendiente-2026-11-14",
+        "sha": "6301575974c056bd2ca8d0c2055631cd71654e85"
+      },
+      {
+        "branch": "codex/bloque04-control-fotos-2026-11-14",
+        "sha": "cdd8a1e16426d62864f15fae998906b13f6dc7a8"
+      },
+      {
+        "branch": "codex/bloque05-recetas-presupuesto-2026-11-15",
+        "sha": "ba69cf45704e6a0260ba0a6de0e973aa31245d35"
+      },
+      {
+        "branch": "codex/cierre-seguridad-y-calidad",
+        "sha": "ef37e7efaf59444b672ecdf3597e2fda60b91cea"
+      },
+      {
+        "branch": "codex/importar-catalogo-v3-150-recetas",
+        "sha": "e21d7213822bdb02080cff8943abbc28e666adf4"
+      },
+      {
+        "branch": "codex/integracion-maestra-2026-11-13",
+        "sha": "1942a714c322a032185645df142ad1d3eac32646"
+      },
+      {
+        "branch": "codex/iphone-prueba-recorrido",
+        "sha": "dbb703f62486ac4f639947da429761ed42c062d8"
+      },
+      {
+        "branch": "codex/menus-privacidad-local",
+        "sha": "936459d2eb67b0b7decb288d619902584d4f490d"
+      },
+      {
+        "branch": "codex/mobile-readiness",
+        "sha": "338ba24a99b61ddf79ef1f9af27dbd00465869ca"
+      },
+      {
+        "branch": "codex/respaldo-base-2026-11-13",
+        "sha": "abb3bca53953e4523af61118e375df90d1a8d416"
+      },
+      {
+        "branch": "codex/tiendas-precios-piloto",
+        "sha": "2ae8d27adb07cafbc69e9627237b50a7f8f7127b"
+      },
+      {
+        "branch": "codex/tiendas-y-lista-compartida",
+        "sha": "914fa2ec3d1143f20aa003d49ac4fddd67cc850c"
+      },
+      {
+        "branch": "codex/v2-cobertura-local",
+        "sha": "52ea41d55c19432c0c280bc0bb06836cdb27dbcf"
+      },
+      {
+        "branch": "codex/v2-visual",
+        "sha": "d7f8c37076055ad7b132d43b73de09bb1f8dd581"
+      },
+      {
+        "branch": "codex/v83-recetas-auditadas",
+        "sha": "5795f299e35186f372c325299d8a6828993df720"
+      }
+    ],
+    "remainingCount": 6,
+    "remainingAtRetirement": {
+      "codex/importar-catalogo-fotos-v3-2026-11-17": "6c6cde44ae06ef48adf8040ec8b5446003bd87ba",
+      "codex/recepcion-v3-segura-2026-11-18": "761275f71ef70e121979d916327906511665bc14",
+      "feature/precios-abiertos-en-jj-2026-11-11": "2562d98a46b9e5179b77d6590ec3b582ffd0d63d",
+      "main": "65d95466ed767346d2be99c3d8d6556be326684a",
+      "producto/b06-fuentes-precios-y-acuerdos-2026-11-12": "95686b3ac4541f7179ee7cfd858be97628d4be99",
+      "producto/piloto-tiendas-y-precios-2026-11-10": "21601a2705df5d8f3bbe7c8b5b5fd8199dbadd1d"
+    },
+    "everyRetiredTipInMainAndBackup": true,
+    "noSourceFilesDeleted": true,
+    "concurrentPreservedUpdates": 0
+  },
+  "recovery": {
+    "tag": "respaldo/ramas-2026-11-18",
+    "commit": "76cc65eb80a92a73053cb4159d08062ca73e3900",
+    "originalBranchTips": 26,
+    "distinctBackupParents": 24,
+    "bundleSHA256": "7e551562beadb6fe75f44e33f20c5bb7fbf39cce3f9dcc155544bf4671d550a3",
+    "restorationAndFsck": "Previously verified and preserved in branch-recovery.json.",
+    "scope": "Git refs and tracked files; not a complete external backup of ignored owner data."
+  },
+  "deployment": {
+    "existingStaging": "dpl_9GyW8ij3xX4dgZtw7Q3F1jwH2v1K",
+    "testedSource": "d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd",
+    "origin": "https://jj-compra-inteligente-16buip6v1-cmj2hwhc6b-1051.vercel.app",
+    "newDeploymentCreated": false,
+    "previousVerificationReport": "verification.json",
+    "shareExpiresUTC": "2026-11-20T10:13:38+00:00",
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "productionPromoted": false
+  },
+  "independentReview": "Read-only check of merge tree/parents, backup map and branch selection found no blocking defect. No app tests rerun by reviewer.",
+  "evidenceSHA256": {
+    "post-merge.json": "c9670f1ef3b454e6bad525a8b0669a1ace253f51122d710e63545b3f56026460",
+    "retirement-receipt.json": "032dee8088003ff8bf2320a4f7a42e29c5534845aa57cdeabf3acff7a0c6996b",
+    "refs-before-retirement.json": "ea449fe10118f2e678e9b163a98d3fb6fb7856e46b248d710a3de812d0c02908",
+    "refs-after-retirement.json": "aff99789e8d301d614913e909ea69c394c43c28093dc06376460bdee182e576d",
+    "provider-ci-after-merge.json": "2ca1843600b53428d2f0b333908503daac5e20c549ad604d8ffc4fa9a849e251"
+  },
+  "historicalReports": [
+    "local-preparation.json and verification.json preserve their original checkpoints; this later record completes main integration and branch retirement."
+  ],
+  "pending": [
+    "138 original photos and technical activation of the full150-recipe catalogue.",
+    "Owner visual acceptance and detailed physical iPhone/native verification.",
+    "Official product labels, prices, allergens and traceability remain unverified.",
+    "No new product block opened automatically."
+  ]
+}

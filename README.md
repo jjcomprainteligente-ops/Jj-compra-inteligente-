@@ -1,14 +1,14 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 19/11/2026 · Consolidación y recepción V3 publicadas y comprobadas en staging.** La app conserva 127 recetas accesibles y el diseño Verde Mercado Premium / GPT-6 V2. El propietario autorizó las 150 recetas; se han recibido sus datos en cinco idiomas y 12 fotos originales. Faltan 138 imágenes para completar la entrega fotográfica.
+**Estado actualizado · 19/11/2026 · Consolidación y recepción V3 fusionadas en main, con CI y staging comprobadas.** La app conserva 127 recetas accesibles y el diseño Verde Mercado Premium / GPT-6 V2. El propietario autorizó las 150 recetas; se han recibido sus datos en cinco idiomas y 12 fotos originales. Faltan 138 imágenes para completar la entrega fotográfica.
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos y fuentes. La [consolidación V3](docs/MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) distingue autorización, recepción, integración en la app y publicación comprobada.
 
 ## Base de trabajo
 
 - Repositorio canónico: [jjcomprainteligente-ops/Jj-compra-inteligente-](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-).
-- Rama actual: `codex/recepcion-v3-segura-2026-11-18`. Reúne la app de [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27), origen `04c3d0db5eab7e60667aa023806f8284ea4b0c06`, y las fuentes V3 de [PR #28](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/28), origen `6c6cde44ae06ef48adf8040ec8b5446003bd87ba`.
-- Main permanece en `e21d7213822bdb02080cff8943abbc28e666adf4`, donde el propietario publicó las fuentes V83 y las partes del respaldo completo. La fusión de la candidata requiere aceptación y autorización explícita según la [política de integración](docs/MAESTRO/POLITICA_INTEGRACION_Y_RECUPERACION.md).
+- Rama de trabajo actual: `main`. El [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), ya fusionado, reúne la app de [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27), origen `04c3d0db5eab7e60667aa023806f8284ea4b0c06`, y las fuentes V3 de [PR #28](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/28), origen `6c6cde44ae06ef48adf8040ec8b5446003bd87ba`.
+- El propietario autorizó la fusión y se ejecutó el 19/11/2026 a las 12:24:36 UTC: commit `65d95466ed767346d2be99c3d8d6556be326684a`, árbol idéntico a la candidata `761275f71ef70e121979d916327906511665bc14`. La [CI de main](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44523616187) es correcta. Este registro documental conserva ese código integrado.
 - La consolidación local conserva 99 de los 101 hashes de entrada de la app. Cambian `package.json` y `package-lock.json` por el parche compatible Expo `~58.0.26`, dentro del SDK 58. Pantallas, IDs, cantidades, almacenamiento, logo y tipografía se conservan.
 
 Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29). CI de push y PR correctas; staging protegida verificada en cuatro idiomas, 127 recetas y 19 recursos. Pasan 16 recorridos y ocho controles de Inicio publicados. [Evidencia final](design/v3-intake/reports/verification.json). Los resultados de entregas anteriores mantienen su fuente propia.
@@ -29,7 +29,7 @@ IA, cuentas, hogares y sincronización siguen sin activarse. Las etiquetas comer
 
 La fuente V3 contiene **150 IDs y 750 fichas en es/en/de/fr/bg**. El propietario aprobó incorporar las 150 recetas el 17/11. Los estados de reserva anteriores permanecen como trazabilidad histórica; no constituyen un nuevo bloqueo de permiso ni requieren volver a pedir esa aprobación.
 
-La nueva publicación autorizada está en GitHub: V83 en main y los datos V3 completos en la rama de recepción. La copia original local ignorada por Git se conserva. El acceso público a esas fuentes no equivale a activarlas en el cliente ni certifica sus datos comerciales.
+Las fuentes V83 y los datos V3 completos están integrados en main. La rama de recepción se conserva para completar las fotos. La copia original local ignorada por Git se conserva. El acceso público a esas fuentes no equivale a activarlas en el cliente ni certifica sus datos comerciales.
 
 Se descargaron y comprobaron el ZIP V3 original de **1.995.677 bytes** y **12 PNG originales**. El paquete pasa integridad y estructura; las doce imágenes coinciden por ID, ruta, tamaño y hash, y pasan contenedor y decodificación completa. **Faltan 138 fotos físicas**. Su manifiesto no sustituye los archivos.
 
@@ -52,11 +52,11 @@ Se verificó un bundle de **111.641.061 bytes**, SHA-256 `7e551562beadb6fe75f44e
 
 La etiqueta GitHub `respaldo/ramas-2026-11-18`, commit `76cc65eb80a92a73053cb4159d08062ca73e3900`, conserva mediante 24 padres distintos los 26 extremos y su registro de nombres/SHA. Es respaldo de referencias Git; los archivos privados ignorados quedan fuera de su alcance.
 
-El plan identifica **20 ramas superadas y una duplicada**, retirables después de aceptar la consolidación y comprobar de nuevo sus SHA remotos. **Todavía no se ha eliminado ninguna rama.** Se conservan main, la recepción V3 y tres ramas con trabajo único. La aprobación de limpieza ya existe; la aceptación y fusión de la consolidación mantienen su requisito explícito.
+Tras la aceptación y fusión, se retiraron **20 ramas superadas y una duplicada: 21 en total**. La operación fue atómica y comprobó el SHA esperado de cada referencia; la lectura posterior confirmó sus ausencias y el respaldo intacto. Quedan **seis ramas**: main, recepción de fotos V3, candidata V3 y tres con trabajo único. No se eliminaron archivos de la app ni fuentes. [Integración y limpieza comprobadas](design/v3-intake/reports/main-integration.json).
 
 ## Siguiente entrega
 
-Revisar el PR #29 y obtener la autorización explícita de integración antes de fusionarlo en main. La limpieza autorizada de 21 ramas queda preparada con respaldo y cotejo de SHA; todavía no se ha ejecutado. La activación de las 150 recetas con fotos requiere completar la entrega y validar su integración técnica; no requiere otra aprobación del texto. Las instrucciones de [recepción V3](referencias/recetas/V3/README_CODEX.md) evitan mezclar paquetes, rutas y hashes entre perfiles.
+Completar la recepción de las 138 fotos pendientes y comprobar la integración técnica del catálogo de 150 recetas sin duplicar IDs ni modificar datos guardados. La aprobación del texto sigue vigente; el merge y la limpieza autorizados ya se ejecutaron. No se abre otro bloque automáticamente. Las instrucciones de [recepción V3](referencias/recetas/V3/README_CODEX.md) evitan mezclar paquetes, rutas y hashes entre perfiles.
 
 Las entregas anteriores y sus límites conservan sus informes: [B05.1](docs/MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md), [B05.2](docs/MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md) y [guía iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md).
 
