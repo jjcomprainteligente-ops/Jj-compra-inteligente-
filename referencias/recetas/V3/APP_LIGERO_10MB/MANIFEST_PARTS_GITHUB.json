@@ -1,0 +1,698 @@
+{
+  "version": "V3-APP-LIGERO-GITHUB-PARTS",
+  "part_size": 2000000,
+  "source": "V3-APP-LIGERO",
+  "zips": [
+    {
+      "file": "JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip",
+      "sha256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+      "bytes": 1994471,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip.part01",
+          "blob_sha": "25445825ec50af38136747d34937abec53b9da87",
+          "sha256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+          "bytes": 1994471
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_01_DE_10.zip",
+      "sha256": "ad85f02a94c214e365ee60a1ec3a93c761e67862cb9a1e8c314796a2ffba88ab",
+      "bytes": 9757118,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part01",
+          "blob_sha": "9b2b46a785721760099e2f22e2bbdb757cfe4211",
+          "sha256": "a1e4674f3eb4c7d4585a4649ce13c634038da89bddcba2c3db2566bb02b4b6c6",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part02",
+          "blob_sha": "ab29c784d593bd550a10c2550aefc816102cc35e",
+          "sha256": "fb0fab489f2c77cb31f9f0f7d5e78cf24561dc61869d6dfdde3cb5c8838fd83f",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part03",
+          "blob_sha": "bf78d28364cccef3577212163bdb0764444a58b4",
+          "sha256": "c91dc8ba1e2295d2671ed007b0e1b662ade96de067f517995cfddb8448c1122b",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part04",
+          "blob_sha": "1a3f94e1f4efa05ab71bcaba03590907f8848e86",
+          "sha256": "5b39780e5681a5d580139fc51053cf168346dc373aaaf2ab5e6244505aa13bb1",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part05",
+          "blob_sha": "db6069e853ec8188e9a1d0d27b21c87501e1356f",
+          "sha256": "51ec463fc8266ee30e9d5b6424fa34497119dd0ef0c9e5b508dba99f50880945",
+          "bytes": 1757118
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_02_DE_10.zip",
+      "sha256": "2e377624d041b1f14b944f425f247992abbe86af87c3c1ae601b1223f80cfc16",
+      "bytes": 9717269,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part01",
+          "blob_sha": "9ff16d70ad2d1d4b95cd96cf225c4bb21e3176e2",
+          "sha256": "1826c5afe3c9c4ac3daf2e8e72d4f739783bbd020eb52a1aa7a2e38e1c25eebe",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part02",
+          "blob_sha": "5be7c699abd7ae5b075f363a8658b6b5f64935c2",
+          "sha256": "260ba00272559ce233737097aa692adb625cf4e90baaf7690a49ebee6233ea22",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part03",
+          "blob_sha": "bcb17baf6280d5d1ed499a7b810398c266b259d2",
+          "sha256": "0d78d4a70bb876b91f8db4368e96d7da6bdaa7c871340fcf63ccb2fa06e412d6",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part04",
+          "blob_sha": "68793f569ff53857972d8f6d097b57fb11827302",
+          "sha256": "11c331b9802fc944efb8533fe33be0f8340924aa42665dd1bc8fe005f6307f15",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part05",
+          "blob_sha": "565aa642172c83cb1353b6561ae33527723cacc0",
+          "sha256": "6a37c3774f764cd6d5482852ee79853ed8cc664b5c4d7f1344fbb24e475a6505",
+          "bytes": 1717269
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_03_DE_10.zip",
+      "sha256": "37d446fa4a1261255b3ac75d83c9757fe4d08fb06f551200e9162dca952d4701",
+      "bytes": 9404488,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part01",
+          "blob_sha": "f0901a0e694bfb5b025012379ad5ed3b86abc75b",
+          "sha256": "664e8b65be6dff08075a43efdb8c3242509dd5e635bab6ae1c43055b5e90e530",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part02",
+          "blob_sha": "fe1352d487afd9229a78bee98704324d5111e128",
+          "sha256": "c6c65bf65947889977213fd2b2b7bf898627cf249e0df6296a45cbddaaf07993",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part03",
+          "blob_sha": "38d0e8a85b39d6c9d661a7541d4ca85d5835551c",
+          "sha256": "10451128db0eceede9c57b825a4ae9f14be51fb6ab942365fce9c6cd8a88a8fc",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part04",
+          "blob_sha": "05c1d018945c4924c9dbdd3f055fda2509997bd8",
+          "sha256": "c44d6f473a1786e8c46bf917114ebca8ad076cb6dfa0e8ea2710731e5b8e9658",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part05",
+          "blob_sha": "336251cbe7e85468a20d54d376b89b9343b50bbf",
+          "sha256": "40352a9aeba8c4a0b7a07521a44bbcd7884d62c8f6b74258b472383475552332",
+          "bytes": 1404488
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_04_DE_10.zip",
+      "sha256": "3918e94705a832298ca773c5df49db55ae1443b376f1bec4b16a72f92d3e2d1f",
+      "bytes": 9335980,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part01",
+          "blob_sha": "2c815a60dffe124e83b0d80a8917f550b686c937",
+          "sha256": "8dd5f2f67978822e90e0587d5d3da1625170bf1b511504b186efa09341af1c6f",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part02",
+          "blob_sha": "655744ee8b7d1f0fdb68c8833b267aedaecf638f",
+          "sha256": "fb5683c7bbab5b990e913d74248b5417d46384fe7c277423b659c2ad5c1170e5",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part03",
+          "blob_sha": "c40705da0389faa29139a5931646d3c3bf78363f",
+          "sha256": "d09d24726029f5fc66f3311b40ae81fdf4d0a5a27ab9efe6713e7368dd55e738",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part04",
+          "blob_sha": "1186adeed07c978f0e0d8188cbf1c34213e8b773",
+          "sha256": "17115ac61e988324126e268a630951fc5d42032d98713862cc76d5bcce827905",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part05",
+          "blob_sha": "e478841dd37183192f7cc90b5cca91815aebfd40",
+          "sha256": "a42b43a96b13ea0a1474e43af279432af7233495d886d5346cac6a0adf940145",
+          "bytes": 1335980
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_05_DE_10.zip",
+      "sha256": "93700b84cd199198acf82cadefa6b7f9cce8629a64bf212393a65315592d61e8",
+      "bytes": 9623914,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part01",
+          "blob_sha": "4126dbc419c9528f9b8b2e3aad8d8aadcc44e642",
+          "sha256": "4852659daa1c50682a97e0b9ecb25682b24af1ef0b952882379b294f3f3e16b8",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part02",
+          "blob_sha": "bcc1da40d8f51408f1af42cf80107df50f38d8ef",
+          "sha256": "26c302cf77c43b4568a843eb725c07453f95dd073979528c800f9b43338481c7",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part03",
+          "blob_sha": "d121bfa4f1945ea0c45300add7ebf2e117f6c1ea",
+          "sha256": "27838c7760c41f874733f5dae18f4d41e604c2ba9880c7f5a5b2cc968e627bc2",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part04",
+          "blob_sha": "f2440f402c7864ac2686ac158e140a428d071bd1",
+          "sha256": "d2b525be250be454a6e5b5e90045bae4e9f04917256095a91f144bc1a1e19a47",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part05",
+          "blob_sha": "5b3c8088e11c683583b7565f2364d2d8027b7d5e",
+          "sha256": "6be62234ad1f68ed00b166068791936e5771db650a907a24c30aef3c83cdc5d2",
+          "bytes": 1623914
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_06_DE_10.zip",
+      "sha256": "16e44c344f0e750714e57ff6d2e784b6588d16dee7b2a0880a6d787160ead3f0",
+      "bytes": 9980519,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part01",
+          "blob_sha": "874f0ff31f5c149a14baf335e4c76a649b1bd0f1",
+          "sha256": "d5f963255a7dff942494e60a7385e02cb74ee64f3a31b96d81404e36fb9732c6",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part02",
+          "blob_sha": "7aea8baa6eaa0f6ee5b46d8741ac9f0bc1692f67",
+          "sha256": "1de0d32321ce2a4512c6d39b0747b7cc0846be40e5c3697d92be3cc7098caade",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part03",
+          "blob_sha": "0eba0b45b50a17423dcb982ebaa4802076846143",
+          "sha256": "9341dabcf6faecdb7755ac77b7cf2ad15007476dabe3a0698313d1ca51804407",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part04",
+          "blob_sha": "3c61b5d8874cd77e208fefe5a89de86309b0eec1",
+          "sha256": "cefee93d5db44bce1ccbaf4c22c7b593459ee4ca00d45590b2e0ee13ebc01acb",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part05",
+          "blob_sha": "ec8cdd138dd15c85f038079e7280328e9410faea",
+          "sha256": "126c92186a142dd20b045e7efc2047a12891b4a080b41ba95b6c7b96494c6110",
+          "bytes": 1980519
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_07_DE_10.zip",
+      "sha256": "e32f95e4d03184749dec07524e4a705b23d6726888ddac1a45872dab7be633a9",
+      "bytes": 9609820,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part01",
+          "blob_sha": "12674e7489b145439d22e823db6310d5a2e125e8",
+          "sha256": "82239fa01c0b4caf1e10efd6c46a078737e765f583803bf91ab3e34c76e8055b",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part02",
+          "blob_sha": "6b92e6da779326abdeb7b535916326d8b399555d",
+          "sha256": "62e3b39cbee894ee4d5dc0c6f7442e4e01acb2d613651feb70bcce612044483a",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part03",
+          "blob_sha": "6cd7571521a37b735de247592d02689702683c99",
+          "sha256": "9bf7a6feb3df4c77bf417395badd609f1790af6cd00032c6eff49c07fffcf17b",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part04",
+          "blob_sha": "9d3a0c2d1bb8206c999f330eaebac4dfc2507406",
+          "sha256": "08fa9ddad992c04e8cdfab94c32518c8cc3da6c1c71dd651f1670e880ed0aa65",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part05",
+          "blob_sha": "384750b65af5d4770e0cf1ebf4cc3c8857727ccb",
+          "sha256": "a2a9127480227366334c2a17b316b343f69b80c13c6cf28683746b7b4ba2eabf",
+          "bytes": 1609820
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_08_DE_10.zip",
+      "sha256": "f4d7a2628340404bdf56c2f45ab2e1be134f0709daa15a896a05ede8d9f76f2c",
+      "bytes": 9798188,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part01",
+          "blob_sha": "a8cc2a72df758110a79c264e317a91ee56957d6d",
+          "sha256": "853e23ebe2e2cedff5b7bd026b4405caf271f2343e9f51a8de5e8261f293f9c3",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part02",
+          "blob_sha": "3ddecba1294accf7fbe82dc80f67db3a3b537d0f",
+          "sha256": "b6d58929763de4ad98bd2e58a3893c83130c210221d375d36abb5bfbd390f0f8",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part03",
+          "blob_sha": "043643057f70bf29c839cbbe47f16a226f133e4e",
+          "sha256": "4bb7b3eecad5f3bbafe8e874e9751ef6b4aee9e3565a55f3bc93de9a5d3a8ec4",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part04",
+          "blob_sha": "55fb4453e42a84e447e517c90f3ce14a8aa00912",
+          "sha256": "560f2f1ad6c7e189e8e5890a309d13ea527e7143ca9ba0240dfb6643aba4c78f",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part05",
+          "blob_sha": "64de1c8c7f364767d4bb8051488995c840b0b3a6",
+          "sha256": "418426d6011887a1ec623fd59aff0b8b8b4148f5c8b385237cfc5ebb4bb4450c",
+          "bytes": 1798188
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_09_DE_10.zip",
+      "sha256": "6519edbdd750755927739e34f583ba7775b1dfae51ff6cdf77e46d3fbb2de0a6",
+      "bytes": 9617610,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part01",
+          "blob_sha": "d70cd68d83ef22f60d038a9dca7362cfa75ff135",
+          "sha256": "44ead9001f4b38e2d6a1425507b7a1d8ea5e7b269ec29319ca457b90ec4d6783",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part02",
+          "blob_sha": "40e51b8a6453f6b7cb7a18338d671e9d921a3356",
+          "sha256": "ca7a0f86d6b98af36990d1912febdecfdf6b20543052a8a36691c1dadffc2878",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part03",
+          "blob_sha": "77198f8fa6498b951a7e8617d0c20cddc55d097f",
+          "sha256": "a95fc49cccaa7ec0c06f3b12157f25ffe14fd87d0e1a17af28180b95de3546c5",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part04",
+          "blob_sha": "11e60ce5e01242fb445ab1082d80259af79325bd",
+          "sha256": "9f45be5995613fce1fcdb0d46a25f401a31e4b232b7774984d14331ac037d0f5",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part05",
+          "blob_sha": "fa41aa29f75263da11aaa2b8f6e20fd94071f53b",
+          "sha256": "5385834d6c899f4d6675d7389d34eec45f2431d841987f5abc8c1a0f4a18b7c6",
+          "bytes": 1617610
+        }
+      ]
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_10_DE_10.zip",
+      "sha256": "1c454d72f04a6217577117cca5d73e47f4cc74bc9849eae575616ad82661870a",
+      "bytes": 9477150,
+      "parts": [
+        {
+          "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part01",
+          "blob_sha": "efb01c55dface56b9c3660881d641fa9a4d786ae",
+          "sha256": "6c5a5f22e5503f07e9d346fe97608f5450218098b7d71156b985084fc5deb6b1",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part02",
+          "blob_sha": "6e069ce6ebdb382199405676ba9a6b7185901924",
+          "sha256": "a8cfc41bbbf9cf4be384d04172ff3c86919f11f54e80d61abebe3cd464bdda9f",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part03",
+          "blob_sha": "0043caf69af49838916c8f25f6c29a4a1cb3e55e",
+          "sha256": "2fd2649027db3cb9307754d03e1256d0fd4409b8b621718bff8170d48681fab4",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part04",
+          "blob_sha": "9295aa7a7f66cefd2020dc96c02bb2859cb4c53e",
+          "sha256": "c14203c844b123f68d557ae3cb92bb4464dbdeea3dbe90d591794c44f3735a89",
+          "bytes": 2000000
+        },
+        {
+          "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part05",
+          "blob_sha": "6ebb792495f9b4ea1724bf39869a996ee473e463",
+          "sha256": "0b86d0cd8e12af41113c62e63cbd5f79b935e9f6e7053246e565f568d704eef5",
+          "bytes": 1477150
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "file": "JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip.part01",
+      "blob_sha": "25445825ec50af38136747d34937abec53b9da87",
+      "sha256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+      "bytes": 1994471
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part01",
+      "blob_sha": "9b2b46a785721760099e2f22e2bbdb757cfe4211",
+      "sha256": "a1e4674f3eb4c7d4585a4649ce13c634038da89bddcba2c3db2566bb02b4b6c6",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part02",
+      "blob_sha": "ab29c784d593bd550a10c2550aefc816102cc35e",
+      "sha256": "fb0fab489f2c77cb31f9f0f7d5e78cf24561dc61869d6dfdde3cb5c8838fd83f",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part03",
+      "blob_sha": "bf78d28364cccef3577212163bdb0764444a58b4",
+      "sha256": "c91dc8ba1e2295d2671ed007b0e1b662ade96de067f517995cfddb8448c1122b",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part04",
+      "blob_sha": "1a3f94e1f4efa05ab71bcaba03590907f8848e86",
+      "sha256": "5b39780e5681a5d580139fc51053cf168346dc373aaaf2ab5e6244505aa13bb1",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_01_DE_10.zip.part05",
+      "blob_sha": "db6069e853ec8188e9a1d0d27b21c87501e1356f",
+      "sha256": "51ec463fc8266ee30e9d5b6424fa34497119dd0ef0c9e5b508dba99f50880945",
+      "bytes": 1757118
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part01",
+      "blob_sha": "9ff16d70ad2d1d4b95cd96cf225c4bb21e3176e2",
+      "sha256": "1826c5afe3c9c4ac3daf2e8e72d4f739783bbd020eb52a1aa7a2e38e1c25eebe",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part02",
+      "blob_sha": "5be7c699abd7ae5b075f363a8658b6b5f64935c2",
+      "sha256": "260ba00272559ce233737097aa692adb625cf4e90baaf7690a49ebee6233ea22",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part03",
+      "blob_sha": "bcb17baf6280d5d1ed499a7b810398c266b259d2",
+      "sha256": "0d78d4a70bb876b91f8db4368e96d7da6bdaa7c871340fcf63ccb2fa06e412d6",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part04",
+      "blob_sha": "68793f569ff53857972d8f6d097b57fb11827302",
+      "sha256": "11c331b9802fc944efb8533fe33be0f8340924aa42665dd1bc8fe005f6307f15",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_02_DE_10.zip.part05",
+      "blob_sha": "565aa642172c83cb1353b6561ae33527723cacc0",
+      "sha256": "6a37c3774f764cd6d5482852ee79853ed8cc664b5c4d7f1344fbb24e475a6505",
+      "bytes": 1717269
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part01",
+      "blob_sha": "f0901a0e694bfb5b025012379ad5ed3b86abc75b",
+      "sha256": "664e8b65be6dff08075a43efdb8c3242509dd5e635bab6ae1c43055b5e90e530",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part02",
+      "blob_sha": "fe1352d487afd9229a78bee98704324d5111e128",
+      "sha256": "c6c65bf65947889977213fd2b2b7bf898627cf249e0df6296a45cbddaaf07993",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part03",
+      "blob_sha": "38d0e8a85b39d6c9d661a7541d4ca85d5835551c",
+      "sha256": "10451128db0eceede9c57b825a4ae9f14be51fb6ab942365fce9c6cd8a88a8fc",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part04",
+      "blob_sha": "05c1d018945c4924c9dbdd3f055fda2509997bd8",
+      "sha256": "c44d6f473a1786e8c46bf917114ebca8ad076cb6dfa0e8ea2710731e5b8e9658",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_03_DE_10.zip.part05",
+      "blob_sha": "336251cbe7e85468a20d54d376b89b9343b50bbf",
+      "sha256": "40352a9aeba8c4a0b7a07521a44bbcd7884d62c8f6b74258b472383475552332",
+      "bytes": 1404488
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part01",
+      "blob_sha": "2c815a60dffe124e83b0d80a8917f550b686c937",
+      "sha256": "8dd5f2f67978822e90e0587d5d3da1625170bf1b511504b186efa09341af1c6f",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part02",
+      "blob_sha": "655744ee8b7d1f0fdb68c8833b267aedaecf638f",
+      "sha256": "fb5683c7bbab5b990e913d74248b5417d46384fe7c277423b659c2ad5c1170e5",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part03",
+      "blob_sha": "c40705da0389faa29139a5931646d3c3bf78363f",
+      "sha256": "d09d24726029f5fc66f3311b40ae81fdf4d0a5a27ab9efe6713e7368dd55e738",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part04",
+      "blob_sha": "1186adeed07c978f0e0d8188cbf1c34213e8b773",
+      "sha256": "17115ac61e988324126e268a630951fc5d42032d98713862cc76d5bcce827905",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_04_DE_10.zip.part05",
+      "blob_sha": "e478841dd37183192f7cc90b5cca91815aebfd40",
+      "sha256": "a42b43a96b13ea0a1474e43af279432af7233495d886d5346cac6a0adf940145",
+      "bytes": 1335980
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part01",
+      "blob_sha": "4126dbc419c9528f9b8b2e3aad8d8aadcc44e642",
+      "sha256": "4852659daa1c50682a97e0b9ecb25682b24af1ef0b952882379b294f3f3e16b8",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part02",
+      "blob_sha": "bcc1da40d8f51408f1af42cf80107df50f38d8ef",
+      "sha256": "26c302cf77c43b4568a843eb725c07453f95dd073979528c800f9b43338481c7",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part03",
+      "blob_sha": "d121bfa4f1945ea0c45300add7ebf2e117f6c1ea",
+      "sha256": "27838c7760c41f874733f5dae18f4d41e604c2ba9880c7f5a5b2cc968e627bc2",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part04",
+      "blob_sha": "f2440f402c7864ac2686ac158e140a428d071bd1",
+      "sha256": "d2b525be250be454a6e5b5e90045bae4e9f04917256095a91f144bc1a1e19a47",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_05_DE_10.zip.part05",
+      "blob_sha": "5b3c8088e11c683583b7565f2364d2d8027b7d5e",
+      "sha256": "6be62234ad1f68ed00b166068791936e5771db650a907a24c30aef3c83cdc5d2",
+      "bytes": 1623914
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part01",
+      "blob_sha": "874f0ff31f5c149a14baf335e4c76a649b1bd0f1",
+      "sha256": "d5f963255a7dff942494e60a7385e02cb74ee64f3a31b96d81404e36fb9732c6",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part02",
+      "blob_sha": "7aea8baa6eaa0f6ee5b46d8741ac9f0bc1692f67",
+      "sha256": "1de0d32321ce2a4512c6d39b0747b7cc0846be40e5c3697d92be3cc7098caade",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part03",
+      "blob_sha": "0eba0b45b50a17423dcb982ebaa4802076846143",
+      "sha256": "9341dabcf6faecdb7755ac77b7cf2ad15007476dabe3a0698313d1ca51804407",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part04",
+      "blob_sha": "3c61b5d8874cd77e208fefe5a89de86309b0eec1",
+      "sha256": "cefee93d5db44bce1ccbaf4c22c7b593459ee4ca00d45590b2e0ee13ebc01acb",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_06_DE_10.zip.part05",
+      "blob_sha": "ec8cdd138dd15c85f038079e7280328e9410faea",
+      "sha256": "126c92186a142dd20b045e7efc2047a12891b4a080b41ba95b6c7b96494c6110",
+      "bytes": 1980519
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part01",
+      "blob_sha": "12674e7489b145439d22e823db6310d5a2e125e8",
+      "sha256": "82239fa01c0b4caf1e10efd6c46a078737e765f583803bf91ab3e34c76e8055b",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part02",
+      "blob_sha": "6b92e6da779326abdeb7b535916326d8b399555d",
+      "sha256": "62e3b39cbee894ee4d5dc0c6f7442e4e01acb2d613651feb70bcce612044483a",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part03",
+      "blob_sha": "6cd7571521a37b735de247592d02689702683c99",
+      "sha256": "9bf7a6feb3df4c77bf417395badd609f1790af6cd00032c6eff49c07fffcf17b",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part04",
+      "blob_sha": "9d3a0c2d1bb8206c999f330eaebac4dfc2507406",
+      "sha256": "08fa9ddad992c04e8cdfab94c32518c8cc3da6c1c71dd651f1670e880ed0aa65",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_07_DE_10.zip.part05",
+      "blob_sha": "384750b65af5d4770e0cf1ebf4cc3c8857727ccb",
+      "sha256": "a2a9127480227366334c2a17b316b343f69b80c13c6cf28683746b7b4ba2eabf",
+      "bytes": 1609820
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part01",
+      "blob_sha": "a8cc2a72df758110a79c264e317a91ee56957d6d",
+      "sha256": "853e23ebe2e2cedff5b7bd026b4405caf271f2343e9f51a8de5e8261f293f9c3",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part02",
+      "blob_sha": "3ddecba1294accf7fbe82dc80f67db3a3b537d0f",
+      "sha256": "b6d58929763de4ad98bd2e58a3893c83130c210221d375d36abb5bfbd390f0f8",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part03",
+      "blob_sha": "043643057f70bf29c839cbbe47f16a226f133e4e",
+      "sha256": "4bb7b3eecad5f3bbafe8e874e9751ef6b4aee9e3565a55f3bc93de9a5d3a8ec4",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part04",
+      "blob_sha": "55fb4453e42a84e447e517c90f3ce14a8aa00912",
+      "sha256": "560f2f1ad6c7e189e8e5890a309d13ea527e7143ca9ba0240dfb6643aba4c78f",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_08_DE_10.zip.part05",
+      "blob_sha": "64de1c8c7f364767d4bb8051488995c840b0b3a6",
+      "sha256": "418426d6011887a1ec623fd59aff0b8b8b4148f5c8b385237cfc5ebb4bb4450c",
+      "bytes": 1798188
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part01",
+      "blob_sha": "d70cd68d83ef22f60d038a9dca7362cfa75ff135",
+      "sha256": "44ead9001f4b38e2d6a1425507b7a1d8ea5e7b269ec29319ca457b90ec4d6783",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part02",
+      "blob_sha": "40e51b8a6453f6b7cb7a18338d671e9d921a3356",
+      "sha256": "ca7a0f86d6b98af36990d1912febdecfdf6b20543052a8a36691c1dadffc2878",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part03",
+      "blob_sha": "77198f8fa6498b951a7e8617d0c20cddc55d097f",
+      "sha256": "a95fc49cccaa7ec0c06f3b12157f25ffe14fd87d0e1a17af28180b95de3546c5",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part04",
+      "blob_sha": "11e60ce5e01242fb445ab1082d80259af79325bd",
+      "sha256": "9f45be5995613fce1fcdb0d46a25f401a31e4b232b7774984d14331ac037d0f5",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_09_DE_10.zip.part05",
+      "blob_sha": "fa41aa29f75263da11aaa2b8f6e20fd94071f53b",
+      "sha256": "5385834d6c899f4d6675d7389d34eec45f2431d841987f5abc8c1a0f4a18b7c6",
+      "bytes": 1617610
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part01",
+      "blob_sha": "efb01c55dface56b9c3660881d641fa9a4d786ae",
+      "sha256": "6c5a5f22e5503f07e9d346fe97608f5450218098b7d71156b985084fc5deb6b1",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part02",
+      "blob_sha": "6e069ce6ebdb382199405676ba9a6b7185901924",
+      "sha256": "a8cfc41bbbf9cf4be384d04172ff3c86919f11f54e80d61abebe3cd464bdda9f",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part03",
+      "blob_sha": "0043caf69af49838916c8f25f6c29a4a1cb3e55e",
+      "sha256": "2fd2649027db3cb9307754d03e1256d0fd4409b8b621718bff8170d48681fab4",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part04",
+      "blob_sha": "9295aa7a7f66cefd2020dc96c02bb2859cb4c53e",
+      "sha256": "c14203c844b123f68d557ae3cb92bb4464dbdeea3dbe90d591794c44f3735a89",
+      "bytes": 2000000
+    },
+    {
+      "file": "JJ_V3_APP_FOTOS_10_DE_10.zip.part05",
+      "blob_sha": "6ebb792495f9b4ea1724bf39869a996ee473e463",
+      "sha256": "0b86d0cd8e12af41113c62e63cbd5f79b935e9f6e7053246e565f568d704eef5",
+      "bytes": 1477150
+    }
+  ]
+}
