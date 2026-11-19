@@ -1,0 +1,93 @@
+{
+  "version": "V3B-CODEX-LIGERA",
+  "date": "2026-11-17",
+  "description": "Copia JPEG de alto detalle con 150 fotos individuales, 1536x1024 minimo y trazabilidad V3",
+  "originals_preserved": true,
+  "photo_count": 150,
+  "recipe_count": 150,
+  "languages": [
+    "es",
+    "en",
+    "de",
+    "fr",
+    "bg"
+  ],
+  "photos_per_zip": 15,
+  "quality": {
+    "jpg_quality": 93,
+    "subsampling": "4:4:4",
+    "minimum_dimensions": "1536x1024",
+    "preserve_original_dimensions": true,
+    "no_mosaics": true,
+    "existing_jpg_kept_byte_identical": true
+  },
+  "commercial_prices_sku_labels_verified": false,
+  "files": [
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_DATOS_150.zip",
+      "bytes": 3061280,
+      "sha256": "9e738134f6a6fb8a874ce3086dcb9720f53ab4d0c6a7643bddc347d753baab3f",
+      "type": "datos"
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_01_DE_10.zip",
+      "bytes": 9619826,
+      "sha256": "97e77d2fc373cc6b72e7f44889ea6c5b60f7ffdd26b2283e430f2330af59bd26",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_02_DE_10.zip",
+      "bytes": 10393413,
+      "sha256": "3032a163a044909b81b26e3f0ab7a7942b55a80d67f73e0b69206001b0c354c0",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_03_DE_10.zip",
+      "bytes": 9668869,
+      "sha256": "fdfe9c05df96929b7dc582c9ac987a7ab2dad29a8c878cb1e87c24a0c45ecc03",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_04_DE_10.zip",
+      "bytes": 9928091,
+      "sha256": "21e6bae06d9e6d294e25ea6fd695de6b893de699af61731412fc3618b29adb00",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_05_DE_10.zip",
+      "bytes": 10593171,
+      "sha256": "0c914bf06ba7bd15f9ac09d85c0ca6caa5744fb28d0c699fa7c44ee097ae1195",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_06_DE_10.zip",
+      "bytes": 7448225,
+      "sha256": "b69b44dc8098c1d4879ba2200241a732df0ef177fef479e8abc4fbe63e6e2134",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_07_DE_10.zip",
+      "bytes": 8827694,
+      "sha256": "e0c75f5fc5d80bfc5e280de0b0b36848dd17ea2642ea346856c4697d2b232825",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_08_DE_10.zip",
+      "bytes": 8856300,
+      "sha256": "c775284534c6b5f2e7dc07aa379caeb8e756d57b26f9c48384056bca7974cd46",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_09_DE_10.zip",
+      "bytes": 9809770,
+      "sha256": "913bad36959f1efa03534c3f9472d868a834a8434e1349e7025f376c036facaf",
+      "count": 15
+    },
+    {
+      "file": "JJ_CODEX_LIGERO_V3B_FOTOS_10_DE_10.zip",
+      "bytes": 9629193,
+      "sha256": "4b99826d35b1015f6352d52419132ccee30e6679a2a75b52c4c760229f6bb5e1",
+      "count": 15
+    }
+  ]
+}

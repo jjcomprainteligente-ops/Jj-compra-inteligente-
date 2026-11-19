@@ -1,0 +1,97 @@
+{
+  "catalog": "JJ Compra Inteligente",
+  "version": "V83",
+  "recipes": "001-150",
+  "languages": [
+    "ES",
+    "EN",
+    "DE",
+    "FR",
+    "BG"
+  ],
+  "light": {
+    "file": "JJ_V83_CIERRE_150_RECETAS_VERSION_LIGERA.zip",
+    "bytes": 937580,
+    "sha256": "151e4fed4021e8e15b2a7b51a74dd3dfa342be8f1294fa33d8745c597ec00034",
+    "git_blob_sha1": "452c0158fab8daea6c28b352c01afcc31a713510"
+  },
+  "full": {
+    "file": "JJ_BLOQUE2_V83_CIERRE_141_150_SABOR_APROBADO.zip",
+    "bytes": 18890124,
+    "sha256": "eb4e1a1fd1afdeae32f95690499e9d59052f167aa339f15a441d94d4802893f9",
+    "storage": "13 concatenated git binary blobs",
+    "parts": [
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part01",
+        "git_blob_sha1": "ac489c1469a6560a73feac9c89521cb31f59be56",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part02",
+        "git_blob_sha1": "a3e3e44b4778e60b24fb454b8570c914c11d2849",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part03",
+        "git_blob_sha1": "082ac2a3a2ecb3ba74b8dc8f82ac35636e56a0c8",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part04",
+        "git_blob_sha1": "236568f6c0e40b6887793fd079bad6bed2d9f382",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part05",
+        "git_blob_sha1": "cbc32d320301cce26b49be36a36bdf1400b90cde",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part06",
+        "git_blob_sha1": "767cf2ccbeb022e4b74c9f2e2a4fef5fbd47259d",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part07",
+        "git_blob_sha1": "996d55a7ab58493c4700b6902f143c3525ac891a",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part08",
+        "git_blob_sha1": "0bb1cd4674b6a05aee1e27df2cacfdfe245f575b",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part09",
+        "git_blob_sha1": "bb6e1ff916933749912133d801b7c970558ad193",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part10",
+        "git_blob_sha1": "8d19186f5e6058485d4eda509899a4693fbddeea",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part11",
+        "git_blob_sha1": "8e2486d1e389f79e4555840a8ef664fa44a055fb",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part12",
+        "git_blob_sha1": "fa1f706baac49a2a2b4c17e50d5a6a0dd747937b",
+        "bytes": 1572864
+      },
+      {
+        "path": "respaldo_partes/V83-CIERRE.zip.part13",
+        "git_blob_sha1": "1a5dea9d30b0b7655932dd9a620060e90e24ecaa",
+        "bytes": 15756
+      }
+    ]
+  },
+  "quality": {
+    "culinary_tests_v83": "10/10 confirmed by owner",
+    "internal_editorial_linguistic": "complete",
+    "commercial_labels": "PENDING verification with real products, SKUs and official store prices",
+    "third_party_linguistic_and_sanitary_certification": "not asserted"
+  }
+}

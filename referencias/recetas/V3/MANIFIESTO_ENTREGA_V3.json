@@ -1,0 +1,62 @@
+{
+  "project": "JJ Compra Inteligente",
+  "version": "V3",
+  "date": "2026-11-17",
+  "status": "STAGING_REQUIERE_TRANSFERENCIA_DE_ZIPS; NO_INTEGRADO_A_APP",
+  "repository_public": true,
+  "recipe_ids_expected": 150,
+  "photos_expected": 150,
+  "locales": [
+    "es",
+    "en",
+    "de",
+    "fr",
+    "bg"
+  ],
+  "master_data_json": "datos/recetas_150_5_idiomas_editorial_comercial_v3.json",
+  "photo_manifest_json": "datos/manifest_photos_150_SHA256_V3.json",
+  "files": [
+    {
+      "name": "JJ_V3_CODEX_DATOS_Y_MANIFIESTOS.zip",
+      "bytes": 1995677,
+      "sha256": "36dba615a6d83bc0ff286ffe4e0d4377f69446ab47d8f9138b9d4957281dc4a6"
+    },
+    {
+      "name": "JJ_V3_CODEX_FOTOS_PARTE_01_DE_05.zip",
+      "bytes": 78571220,
+      "sha256": "591427938101788423c018bef169ce72790f3498fbb10fd9f46b24a26dcb2361"
+    },
+    {
+      "name": "JJ_V3_CODEX_FOTOS_PARTE_02_DE_05.zip",
+      "bytes": 77231167,
+      "sha256": "cb09047d73338251732de17047c0ce4fecdb917fc6df906e621d3ea09ec1ce6e"
+    },
+    {
+      "name": "JJ_V3_CODEX_FOTOS_PARTE_03_DE_05.zip",
+      "bytes": 42136421,
+      "sha256": "a010477077cbe1de7b5ea2f6108db0d9fc69add577af9192be2246802f66968a"
+    },
+    {
+      "name": "JJ_V3_CODEX_FOTOS_PARTE_04_DE_05.zip",
+      "bytes": 56231084,
+      "sha256": "e5dfdc10feb9897f53d867773ff4815a384f195bbca01102bb9c8129ce196a4b"
+    },
+    {
+      "name": "JJ_V3_CODEX_FOTOS_PARTE_05_DE_05.zip",
+      "bytes": 77318296,
+      "sha256": "3cd4e8a67226d8daf658e86cb344e207079e2e69be24c17a54f10d23e3746b80"
+    }
+  ],
+  "fixed_photo_ids": [
+    "JJ-E04-054",
+    "JJ-E04-106",
+    "JJ-E13-137",
+    "JJ-E13-194"
+  ],
+  "explicit_limits": [
+    "No commercial prices/SKUs/shop labels verified",
+    "Photos do not certify allergens or traces",
+    "V83 already in repo, V3 photos not yet in repo",
+    "Do not change src/data/recipes.ts before successful verification"
+  ]
+}
