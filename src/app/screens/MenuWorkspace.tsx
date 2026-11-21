@@ -22,6 +22,7 @@ import { localizedRecipe, translateIngredientName, translateIngredientNote } fro
 import { Button, Card, Field, IconButton, Notice, Pill, Section, Sheet, c, f, ui } from '../components/ui';
 import { FlowPage, type FlowDestination, type FlowPageProps } from '../components/FlowPage';
 import { MenuFilterPanel } from '../components/MenuFilterPanel';
+import { RecipePhoto } from '../components/RecipePhoto';
 import { JourneyStorePicker } from './PlanningScreens';
 
 interface Props {
@@ -308,7 +309,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           const recipe = RECIPES.find(item => item.id === id)!;
           return <Card key={`${index}-${id}`} style={styles.mealCard}>
             <Pressable accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })} disabled={busy} onPress={() => open({ kind: 'recipe', recipe })} style={styles.recipeLink}>
-              <View style={styles.mealSymbol}><Utensils size={19} color={c.primary} strokeWidth={1.6} /></View>
+              {recipePhotoStatus(recipe.id) === 'DISPONIBLE' ? <RecipePhoto recipeId={recipe.id} title={localizedRecipe(recipe, t).title} variant="thumbnail" /> : <View style={styles.mealSymbol}><Utensils size={19} color={c.primary} strokeWidth={1.6} /></View>}
               <View style={{ flex: 1, gap: 3 }}><Text style={styles.day}>{day(index)}</Text><Text style={styles.mealName}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{recipeMeta(recipe, servings)}</Text></View><ChevronRight color={c.primary} size={18} />
             </Pressable>
             <IconButton label={t('menus.changeMealA11y', { day: day(index) })} icon={RefreshCw} disabled={busy} onPress={() => open({ kind: 'replace', index })} />
@@ -334,7 +335,7 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
         </View>}
         {visibleRecipes.slice(0, catalogLimit).map(recipe => <Pressable key={recipe.id} testID={'menu-catalog-recipe-' + recipe.id} accessibilityRole="button" accessibilityLabel={t('menus.recipeA11y', { title: localizedRecipe(recipe, t).title })}
           disabled={busy} onPress={() => open({ kind: 'recipe', recipe })} style={styles.discoveryRow}>
-          <View style={styles.mealSymbol}><Utensils size={20} color={c.primary} strokeWidth={1.7} /></View><View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{recipeMeta(recipe, servings)}</Text></View><ChevronRight color={c.primary} size={18} />
+          {recipePhotoStatus(recipe.id) === 'DISPONIBLE' ? <RecipePhoto recipeId={recipe.id} title={localizedRecipe(recipe, t).title} variant="thumbnail" /> : <View style={styles.mealSymbol}><Utensils size={20} color={c.primary} strokeWidth={1.7} /></View>}<View style={{ flex: 1, gap: 4 }}><Text style={ui.strong}>{localizedRecipe(recipe, t).title}</Text><Text style={ui.note}>{recipeMeta(recipe, servings)}</Text></View><ChevronRight color={c.primary} size={18} />
         </Pressable>)}
         {visibleRecipes.length > RECIPE_PAGE_SIZE && <View style={{ gap: 10, marginBottom: 16 }}>
           <Text accessibilityRole="status" testID="menu-catalog-shown" style={ui.note}>{t('catalogV83Ui.shownRecipes', { shown: formatNumber(Math.min(catalogLimit, visibleRecipes.length)), total: formatNumber(visibleRecipes.length) })}</Text>
@@ -434,10 +435,11 @@ export function MenuWorkspace({ initialSection = 'week', shopping, shoppingBusy,
           <Text accessibilityRole="header" style={styles.flowTitle}>{detailedRecipe.title}</Text>
           <View style={styles.recipeMetadata}>
             <Pill label={recipeMeta(panel.recipe, recipeServings, true)} />
-            <View testID="recipe-photo-status">
+            {recipePhotoStatus(panel.recipe.id) !== 'DISPONIBLE' && <View testID="recipe-photo-status">
               <Pill tone="neutral" label={t(recipePhotoStatus(panel.recipe.id) !== undefined ? 'recipePhotos.pending' : 'recipePhotos.unavailable')} />
-            </View>
+            </View>}
           </View>
+          {recipePhotoStatus(panel.recipe.id) === 'DISPONIBLE' && <RecipePhoto key={panel.recipe.id} recipeId={panel.recipe.id} title={detailedRecipe.title} variant="detail" />}
           {panel.recipe.id.startsWith('JJ-') && <Text testID="recipe-time-scope" style={[ui.note, { marginTop: 10 }]}>{t('catalogV83Ui.timeScope')}</Text>}
           <Card style={styles.servingsCard}>
             <View style={{ flex: 1, gap: 5 }}><Text style={ui.strong}>{t('flow.servings')}</Text><Text style={ui.note}>{t(journey ? 'menus.peopleHint' : 'flow.servingsHint')}</Text></View>
