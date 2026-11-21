@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-21T10:10:20.968509+00:00",
+  "phase": "IMPLEMENTED_BASE_CHECKS_VERIFIED_PHOTO_MATRIX_RUNNING_PUBLICATION_PENDING",
+  "baseCommit": "69582c2010222769db8cf646b745aea544684e42",
+  "branch": "codex/integrar-recetas-fotos150-2026-11-20",
+  "sourceReceipt": {
+    "recipes": 150,
+    "localizedRecords": 750,
+    "receivedPhotos": 150,
+    "missingPhotos": 0,
+    "dataZIP_SHA256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+    "sourcePhotosSHA256": "4897b7f910684ce37fe6f9ac965a6c78c1004144ed5406a4e98478d5da3a366f"
+  },
+  "application": {
+    "recipes": 157,
+    "approvedCatalogue": 150,
+    "legacyPreserved": 7,
+    "previousV83ExactlyPreserved": 120,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "bgRetainedInSource": true,
+    "storageKeys": 7,
+    "visibleMealCount": 5
+  },
+  "assetCompilation": {
+    "manifest": "../../../referencias/recetas-v3/manifest-assets.json",
+    "manifestSHA256": "8656d707a0ef19e0139f19eb20bba0d46e47a51280419b64f7c4a06978fb1772",
+    "totals": {
+      "recipes": 150,
+      "assets": 300,
+      "sourceBytes": 96304512,
+      "thumbnailBytes": 1295287,
+      "detailBytes": 19909541
+    },
+    "assetBytes": 21204828,
+    "sourceBytes": 96304512,
+    "decoder": "Pillow13.0.0",
+    "check": "PASS",
+    "publicationMode": "Exclusive per output file; manifest last. Not an atomic300-file transaction."
+  },
+  "tests": {
+    "types": "PASS",
+    "unitPassed": 1672,
+    "unitFailed": 0,
+    "unitSkipped": 0,
+    "unitFiles": 33,
+    "pythonPassed": 135,
+    "sourceReproduction": "Historical120 and approved150 PASS",
+    "journeysAndHome": {
+      "startTime": "2026-11-21T10:04:08.125Z",
+      "duration": 293533.968,
+      "expected": 60,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "legacyMenus": {
+      "startTime": "2026-11-21T10:05:46.587Z",
+      "duration": 81796.287,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "dependencyAdvisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "expoCompatibility": "PASS",
+    "photoBrowser": "RUNNING; no final result claimed"
+  },
+  "exports": {
+    "dist-integracion150-web": [
+      {
+        "file": "_expo/static/js/web/index-1fe5bcc2c0ce8f19b388c62c31262144.js",
+        "bytes": 5630778,
+        "sha256": "9a0ca8e36a8d55b2efa9189eedaae00bee369f793d84a8aea32e26e1013e4a0f"
+      }
+    ],
+    "dist-integracion150-platforms": [
+      {
+        "file": "_expo/static/js/android/index-940bc0afc50e7e7405f7567b99199e6f.hbc",
+        "bytes": 6779193,
+        "sha256": "b2f8611653a717b3751b3a79357463d8aade4639b3c83a89c09fcbab9550861c"
+      },
+      {
+        "file": "_expo/static/js/ios/index-db6a82c02e6997a21662db53666425f0.hbc",
+        "bytes": 6774002,
+        "sha256": "df4499359d1c2a1f3b703f9ab687769f86ff5e641b1afbd4bfcc2751a627c1ec"
+      },
+      {
+        "file": "_expo/static/js/web/index-c3a3212c1e4a782f54133fb087a6ce40.js",
+        "bytes": 5632729,
+        "sha256": "f2c4bfec1a26ce13a456a7cd0a3f9e5fe6fbacc7fce18952ad9502b399c625b0"
+      }
+    ]
+  },
+  "finalWeb": {
+    "candidateInputs": 407,
+    "allInputsPreservedAcrossFinalExport": true,
+    "testedWebAndFinalExportByteIdentical": true,
+    "file": "_expo/static/js/web/index-1fe5bcc2c0ce8f19b388c62c31262144.js",
+    "bytes": 5630778,
+    "sha256": "9a0ca8e36a8d55b2efa9189eedaae00bee369f793d84a8aea32e26e1013e4a0f"
+  },
+  "conservation": {
+    "baselineFiles": 1692,
+    "deletedBaselineFiles": 0,
+    "protectedFiles": 29,
+    "protectedSHA256": {
+      "assets/brand/jj-logo-horizontal.png": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+      "design/i18n/audit/licenses/Manrope-LICENSE.txt": "f81a99a72ec5e64e3f74fad0db3df27ab69ab0edd4878368f83379d3e4fc9313",
+      "design/i18n/audit/licenses/Manrope-LICENSE_FONT.txt": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "package-lock.json": "b0eee3ba1a9a32eb0fce316d39f035d6a7422cb09f02f786fe954bd21ca1ccc8",
+      "package.json": "b89a477bbf0e370adad12b4f3a952b7ea33e0e346a5ea7c044c843727b5af2f6",
+      "src/domain/dataPrivacy.ts": "d36b54df6d15eccc275376c5f6bb4bad03b1090b67816d0b47e6c89bc3a088cc",
+      "src/domain/expenses.ts": "cc1f6682e6580f291bcf44c528f6b61ef9c21c4d9236f80765569a1b6e43f490",
+      "src/domain/menus.ts": "cc4dcf074c40488bcfc1eefc254b7b0d59307deedaf8440eea86a3eebfe4540e",
+      "src/domain/shopping.ts": "4356634e10d538f83d5f43f94034b89e48bf876e3cfe6205667afec17e432584",
+      "src/domain/stores.ts": "525f3067ff91c0a60a1e026188181e700ed95e1435be032ad41e4ddead97f11e",
+      "src/i18n/catalogs/recipes.ts": "430ce4d68ff6532306c135de1685b9fd1751b0d4ada4a696b0282a5efcbea1a0",
+      "src/i18n/core.ts": "b4b25de14076aaaab495d1743ceac3d2676385def05248cd65b9b743a2d0816f",
+      "src/i18n/preferences.ts": "455b38ea4cee316087791ab44ccaca8888698ff3d005824525242c3e976c26b4",
+      "src/i18n/types.ts": "31c191eb26c6dbebccf65b1cb3d583d85bf1a4dd3bcf0e555d8e6ef776021ea9",
+      "src/storage/comparisons.ts": "88ab0bd0e675dcb734662d678f21e026f934662a930051bcda29c31d073b5b51",
+      "src/storage/dataPrivacy.ts": "9e9984165a7a1a6a9200c853cb85084b1a0ac8a2ef6de9251c68965c96bd32a4",
+      "src/storage/expenses.ts": "954ac5e531a5b84ef958c39d850e39b918b9f1940ad4da8528a2be2d1a407caa",
+      "src/storage/localPreferences.ts": "5c44b02e29133b507a4fe4e7843eafe7fc6b65a81bd57244cb45644a63ec4257",
+      "src/storage/menus.ts": "f18ebca1c32245e24e4af383050f32760eaae4434b496199c922992a1f88298e",
+      "src/storage/priceObservations.ts": "6b3fb7c75cf8bd16a1bd8c8cd3716a3dddcd044f5ccec073bce59c2d51e8f63f",
+      "src/storage/shopping.ts": "d13e194f3b059fb4bd23147970869ecaf6485384b109d6b11b675e622fcd641d",
+      "src/storage/writeCoordinator.ts": "980ef19c7376458749ccf59148994b96d39b6ac3df8f6c57a13e48d1ba72687b",
+      "src/storage/writeFence.ts": "b23f7d9cf73f6742c9a77acd026c1fcdf4321722d7fd9c4ea93b26606baca10f",
+      "supabase/README.md": "3f33eb08954fd60bcb680948298c4027768963168ee67222a649890a8f6f3c99",
+      "supabase/migrations/20261111154212_jj_household_foundation.sql": "a999b115c2b21bc7212f4697aa69010fbcb4d47c7c018eb7d7f84bb03f110c4b",
+      "supabase/migrations/20261111174718_jj_foundation_integrity_indexes.sql": "8d346e2736022900d622efa37c2aa1af8d7b950e92b67480c8f417430803483f",
+      "supabase/migrations/20261111190357_jj_policy_actor_lookup.sql": "8fb74ba1c327bcc0841769884fd480aa55c5bc6a7043f6c518162c2d6fbe2f94",
+      "supabase/tests/household_security.sql": "e8cc847184e641ea53663a8be34f921c0a66967cf6ec7dbef9dfbc422a1606d1",
+      "supabase/tests/policy_actor_lookup.sql": "a3f05f9ba5c44548e88706dce3171a9a66168dbfcaf11de8307fb5798ee6e1b3"
+    },
+    "sourceSHA256": {
+      ".github/workflows/check.yml": "55bed506b3952087cf431af54262441cdf8f0edd8e4093649a44dd3d281c1049",
+      "scripts/import-recipes-v3.py": "7d5fbdcda86dabae135fe85b725b74dd67f49cee1bdf863aff876d0622472076",
+      "scripts/prepare-recipe-photo-assets.py": "615808f64ec7a477ac38a2e97f8e5664d35e0bd96a747093f85e3e33ac3bded9",
+      "scripts/recipe-photo-package.cjs": "47c582238d529aca5079fb8ec7ad4cefb91a49ea37dd9ccc10e4d060546d7465",
+      "scripts/package-v2-preview.cjs": "9fae507f356c02c02c83a32b5f26663989656a817fbf9054eed51df70cb0da5a",
+      "scripts/verify-v2-hosted.cjs": "79ebfd4e2c9cbcaa6c814b8a9f338ae11a53320c02f194dbacc0791cc5f581bc",
+      "src/app/components/RecipePhoto.tsx": "a8cbafff263bd1b2bfade762b709a091db4a97511c32b0fed7a92563ace1b145",
+      "src/app/screens/MenuWorkspace.tsx": "9609d1d42ecaedad9e8b9d92414fd6b3ccf8890296f30d1c287f18ad274812b0",
+      "src/data/recipes.ts": "e42de6c44be20e5b5579490a081d62fb539b01f81d35d1d5d57b54e2a2c6ddfd",
+      "src/data/recipesV3.ts": "7a3b794ddbca2c9de4100ba102920d8fef4bc623c039855c1c7de76a368420fa",
+      "src/data/recipePhotoAssets.ts": "00a541eaf58dc5823454b108d429abc1d65f1200457c012a59dc6091240d7f91",
+      "src/domain/recipePhotos.ts": "054293c84fa70b0407814900546ebe8379c05369eacadd2630c948a9f01cae4b",
+      "src/i18n/recipes.ts": "f048043e867a40f8b05354a2da839f7ee873667d60d317b37fc29cfeec626e2d",
+      "src/i18n/resources.ts": "f7e5885319564997fc55ca8d9f1e810ca594292b70e8f7ce0199a1b3a3f5faab",
+      "src/i18n/catalogs/recipesV3.ts": "f67047ad7ee814046733768861c3018ea3d6be7350d851f88014ec250e6a5234",
+      "src/i18n/catalogs/recipePhotos.ts": "d10f99ac7bb273ff7a1bdb95ef0f88ba5dbf7acadec38637c4c6442a2004a878",
+      "referencias/recetas-v3/manifest-assets.json": "8656d707a0ef19e0139f19eb20bba0d46e47a51280419b64f7c4a06978fb1772"
+    }
+  },
+  "independentReview": {
+    "status": "READ_ONLY_REVIEW_PASS_WITH_LIMITS",
+    "sha256": "84255304bd6b67365a4e15e62cbbb81fdc72674d3554e0cbbaa43d9e8826d801",
+    "scope": "Static review and targeted reproductions, not another full suite."
+  },
+  "privateEvidenceSHA256": {
+    "unit-results.json": "179aa116514c3047f01fa63d24480c3176b7a0fa2258b0eecfb456ea410cb0a0",
+    "python.log": "c992e78b7705a81b56b5438c611b30bcdf344205c3be2b7e63993bc525bcf6a7",
+    "catalog-old.log": "0f9e7de59c1d4b15877dc4e381040e78f24649ac76e0934f931ab61f824209af",
+    "catalog-v3.log": "529a50ef554d2c658064d310fa70e90fcd8d26ad2bfea27c5e5b4380b600b954",
+    "asset-reproduction-21.log": "d22c4ceb41a8e2e15e8fc84dc6dcbd4d522683d17ae2d6d7f656e87f6f2ba221",
+    "journey-local-21/results.json": "324440b75335cb9b29421285e84098bd96dba0d8a0217b6d272f729f03302800",
+    "legacy-menus-21/results.json": "c5be7fab5eef1e4592bd10cc91d93cacb9aa6b98168735c7e949896fdbb6d404",
+    "web-artifact-binding.json": "fd4e2f205c2881867ebc080754cfa4de0da79cad9ad22fbc1622fcb2b1af06ad",
+    "conservation-final.json": "b1d02400cddd232836aa1de401d011ad3a2387d7313de84675c951e0f2645d9a"
+  },
+  "pending": [
+    "Finish150-photo desktop traversal and four-language responsive/error/new-recipe matrix.",
+    "Publish reviewed source and observe CI before protected staging.",
+    "Verify hosted assets and journeys, then request acceptance of the concrete new PR for main."
+  ],
+  "limits": [
+    "No new auth, database, AI, paid service or production promotion.",
+    "Photos and ingredients do not verify store prices, labels or allergen traces.",
+    "WebKit Linux and native exports do not certify a physical iPhone or signed app."
+  ]
+}

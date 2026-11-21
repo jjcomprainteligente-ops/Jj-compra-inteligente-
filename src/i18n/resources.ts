@@ -4,7 +4,7 @@ import { appMessages } from './catalogs/app';
 import { menusMessages } from './catalogs/menus';
 import { pricesMessages } from './catalogs/prices';
 import { recipeMessages } from './catalogs/recipes';
-import { v83RecipeMessages } from './catalogs/recipesV83';
+import { v3RecipeMessages } from './catalogs/recipesV3';
 import { catalogV83UiMessages } from './catalogs/catalogV83Ui';
 import { legacyMessages } from './catalogs/legacy';
 import { errorMessages } from './catalogs/errors';
@@ -30,7 +30,7 @@ import { recipePhotoMessages } from './catalogs/recipePhotos';
 import { purchaseJourneyMessages } from './catalogs/purchaseJourney';
 
 export const resources = mergeMessageCatalogs(
-  v83RecipeMessages, catalogV83UiMessages, recipePhotoMessages, purchaseJourneyMessages,
+  v3RecipeMessages, catalogV83UiMessages, recipePhotoMessages, purchaseJourneyMessages,
   storePilotMessages, listSharingMessages,
   menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,

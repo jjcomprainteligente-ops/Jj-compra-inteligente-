@@ -1,16 +1,16 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
-**Actualizado 19/11/2026. Consolidación V3 fusionada en main, CI correcta y staging protegida comprobada.** Rama de trabajo `main`. Se conservan la app existente, el diseño Verde Mercado Premium / GPT-6 V2 y los datos locales. [Informe de consolidación](MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) · [inventario único](MAESTRO/INVENTARIO_UNICO.md).
+**Actualizado 20/11/2026. Recepción completa e integración de 150 recetas y fotos EN_CURSO.** Rama `codex/integrar-recetas-fotos150-2026-11-20`, sobre main `69582c2010222769db8cf646b745aea544684e42`. La base publicada conserva 127 recetas; la candidata prepara 150 verificadas más siete anteriores, 157 IDs únicos previstos. Se conservan la app existente, el diseño Verde Mercado Premium / GPT-6 V2 y los datos locales. [Integración actual](MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md). [Informe de consolidación](MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) · [inventario único](MAESTRO/INVENTARIO_UNICO.md).
 
 ## Estado comprobado
 
 | Área | Resultado y límite |
 |---|---|
-| Integración | Se reúnen la app `04c3d0db5eab7e60667aa023806f8284ea4b0c06` del PR #27 y las fuentes V3 `6c6cde44ae06ef48adf8040ec8b5446003bd87ba` del PR #28. El propietario autorizó la fusión: PR #29 integrado el 19/11/2026 a las 12:24:36 UTC en `65d95466ed767346d2be99c3d8d6556be326684a`, con árbol idéntico al de la candidata `761275f`. CI de main 44523616187 correcta. Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), CI push/PR correctas y staging propia comprobada. La autorización explícita ya se recibió y ejecutó; este cierre documental conserva el código integrado. |
-| Catálogo del cliente | 120 V83 + 7 anteriores = **127 accesibles**. IDs, raciones, cantidades, menús guardados y siete claves locales conservados. El motor de recepción no activa automáticamente las 150 recetas. |
-| Fuente y autorización | **150 IDs/750 fichas** en cinco idiomas. El propietario autorizó las 150 el 17/11. Main contiene las fuentes V83 y los datos V3 completos; la rama de recepción se conserva para las fotos pendientes. La copia original local ignorada se conserva. Las antiguas reservas no requieren un nuevo permiso: queda la validación técnica de la entrega y su integración. |
-| Fotografías | **12 PNG originales recibidos y verificados**, de 150 esperados; faltan 138. Coinciden por ID, ruta, bytes y SHA, y pasan contenedor/decodificación completa. Los perfiles alternativos no son intercambiables y sus manifiestos no equivalen a fotos recibidas. Ninguna imagen de prueba se presenta como definitiva. |
-| Recepción segura | Cuatro perfiles en un motor común; JPEG corregido, límites y controles de archivos, y alternativa de fotos sueltas. `--audit-available` devuelve recepción incompleta y código 2, sin staging. La preparación requiere el conjunto completo y un destino nuevo; no cambia la app o sus listas. |
+| Integración anterior · 19/11 | Se reúnen la app `04c3d0db5eab7e60667aa023806f8284ea4b0c06` del PR #27 y las fuentes V3 `6c6cde44ae06ef48adf8040ec8b5446003bd87ba` del PR #28. El propietario autorizó la fusión: PR #29 integrado el 19/11/2026 a las 12:24:36 UTC en `65d95466ed767346d2be99c3d8d6556be326684a`, con árbol idéntico al de la candidata `761275f`. CI de main 44523616187 correcta. Fuente `d0c71a7c2dabac1e5bd2f25e8ad5a70fd829d9dd`, [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), CI push/PR correctas y staging propia comprobada. La autorización explícita ya se recibió y ejecutó; este cierre documental conserva el código integrado. |
+| Catálogo del cliente | Base publicada: 120 V83 + 7 anteriores = **127 accesibles**. Candidata EN_CURSO: 150 verificadas + 7 anteriores = **157 IDs únicos previstos**, sin duplicar las 120 existentes. Debe comprobarse conservación exacta de IDs, cantidades, menús y siete claves locales antes de anunciar la activación. |
+| Fuente y autorización | **150 IDs/750 fichas** en cinco idiomas. El propietario autorizó las 150 el 17/11. Main `69582c2` contiene las fuentes V83 y la nueva entrega V3 completa de datos y 150 JPEG; ya no faltan fotos de esta entrega. La copia original local ignorada se conserva. Las antiguas reservas no requieren un nuevo permiso: queda la validación técnica de la entrega y su integración. |
+| Fotografías | **150 JPEG individuales recibidos y verificados**, 96.304.512 bytes, cero faltantes; 148 de 1536 × 1024 y dos de 1600 × 1200. IDs, rutas, tamaños, SHA-256 y blob Git coinciden; contenedor y decodificación completa correctos con Pillow 13 fijado. Los doce PNG anteriores se conservan aparte. Se preparan 300 derivados para el cliente; su visualización y rendimiento siguen pendientes de prueba final. |
+| Recepción segura | Motor común existente, perfil `app10mb` y fotos sueltas: `COMPLETE_VERIFIED`, salida 0, 150 recetas/750 fichas/150 fotos. No se creó staging ni se modificó la app durante la comprobación. Los perfiles mantienen sus rutas y hashes separados; una auditoría parcial distinta conserva el código 2. |
 | UI e idiomas | Verde Mercado Premium/GPT-6 V2, PNG oficial y Manrope conservados. UI en es/en/de/fr, respaldo español y EUR. BG en fuente, pendiente de interfaz completa. Cinco comidas visibles para 1–12 personas; N preparado internamente. |
 | Compatibilidad | De los 101 inputs de aplicación de la base, 99 conservan sus hashes. `package.json` y su lockfile cambian por el parche Expo `~58.0.26`, dentro del SDK 58. Los resultados nuevos se registran sobre esas dependencias finales. |
 | Tiendas y comercio | Seis modalidades seleccionables y enlaces oficiales; comparación manual. PVP local actual, SKU, etiquetas y trazas comerciales pendientes. Compra y pago externos. |
@@ -18,7 +18,11 @@
 | Respaldo Git | Bundle de 111.641.061 bytes restaurado, 26 extremos de rama comprobados y `git fsck --full --strict` correcto. Etiqueta GitHub `respaldo/ramas-2026-11-18`, commit `76cc65eb80a92a73053cb4159d08062ca73e3900`: 24 padres distintos conservan 26 extremos y su registro. Los privados ignorados no están cubiertos por ese respaldo Git. |
 | Limpieza | **21 ramas retiradas** tras la fusión autorizada: 20 superadas y una duplicada, con transacción atómica y SHA esperado por referencia. Lectura posterior correcta y respaldo intacto. Quedan seis ramas: main, recepción de fotos V3, candidata V3 y tres con trabajo único. Sin eliminación de archivos o fuentes. |
 
-## Verificaciones nuevas disponibles
+## Verificaciones de esta integración · pendientes
+
+Recepción completa comprobada el 20/11. La candidata de catálogo y fotografías sigue EN_CURSO: reproducción de proyección y derivados, conservación de siete anteriores y 120 V83, tipos, unitarias, Python, auditoría de dependencias y revisión independiente, exportaciones, matriz web/WebKit y staging propia pendientes de resultado final. Los controles y criterios están en el [informe de integración](MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md). No se atribuyen las cifras siguientes a otra ejecución.
+
+## Verificaciones anteriores · consolidación del 19/11
 
 TypeScript y **1.549 unitarias** correctos. La suite Python pasa **110 casos**, incluidas **59 regresiones nuevas** de recepción segura. Consulta npm sin avisos conocidos y compatibilidad Expo correcta con `~58.0.26`; no se certifica seguridad absoluta.
 
@@ -30,11 +34,11 @@ Fuente publicada y CI de push 44503332195/PR 44503457652 correctas. Staging `dpl
 
 El propietario reportó funcionamiento en su iPhone, sin modelo ni casos concretos. Ese reporte se conserva como tal; no acredita todos los controles físicos, lectores, teclado nativo, safe areas, aceptación estética o ejecución de un binario firmado.
 
-La autorización de las 150 recetas sigue vigente. Los controles históricos se conservan como trazabilidad; no se vuelve a bloquear la incorporación por falta de ese permiso. La activación completa requiere los archivos pendientes y pruebas de integración. Los alérgenos por ingredientes y las fotos no certifican etiquetas, trazas, productos ni precios reales.
+La autorización de las 150 recetas sigue vigente. Los controles históricos se conservan como trazabilidad; no se vuelve a bloquear la incorporación por falta de ese permiso. La recepción de los 150 JPEG está completa; la activación en la aplicación requiere las pruebas y publicación propias de esta integración. Los alérgenos por ingredientes y las fotos no certifican etiquetas, trazas, productos ni precios reales.
 
 ## Próximo paso
 
-La fusión y la limpieza autorizadas están ejecutadas; [registro de integración](../design/v3-intake/reports/main-integration.json). Completar las 138 fotos pendientes y comprobar la integración técnica de las 150 recetas, conservando IDs, originales y datos guardados. Mantener el canal de recepción; no abrir otro bloque automáticamente. [Instrucciones V3](../referencias/recetas/V3/README_CODEX.md).
+La fusión del PR #29 y la limpieza anterior ya están ejecutadas; [registro de integración anterior](../design/v3-intake/reports/main-integration.json). Completar y auditar las entregas de catálogo y fotografías de la candidata actual, conservando IDs, fuentes y datos guardados; publicar el código revisable y verificar la prueba protegida autorizada. Presentar el nuevo PR concreto para aceptación antes de fusionarlo en main; no abrir otro bloque automáticamente. [Instrucciones V3](../referencias/recetas/V3/README_CODEX.md).
 
 Los registros históricos de [B05.1](MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md), [B05.2](MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md) y los demás bloques mantienen sus fechas, fuentes y límites. La presente actualización expresa el estado operativo y no reescribe esas evidencias.
 

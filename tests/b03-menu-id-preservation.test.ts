@@ -123,7 +123,7 @@ describe('B03: saved menu identities survive the master catalogue audit', () => 
     expect(JSON.stringify(RECIPES)).toBe(catalogueBefore);
   });
 
-  it.each(['JJ-E03-011', 'JJ-E03-031', 'JJ-E03-111', 'JJ-E03-999'])(
+  it.each(['JJ-E03-000', 'JJ-E03-031', 'JJ-E03-111', 'JJ-E03-999'])(
     'rejects unavailable ID %s while retaining the complete saved document', async unavailableId => {
       const serialized = fixtures[0].serialized.replace('"JJ-E03-004"', JSON.stringify(unavailableId));
       const values = savedStorage(serialized);

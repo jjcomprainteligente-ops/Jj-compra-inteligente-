@@ -150,18 +150,23 @@ describe('V83 source provenance and conservative availability', () => {
     expect(SUPPORTED_LANGUAGES).toEqual(['es', 'en', 'de', 'fr']);
   });
 
-  it('exposes precisely the 120 eligible positions while retaining the seven previous identities unchanged', () => {
+  it('retains the historical 120 projection and all seven previous identities in the expanded V3 runtime', () => {
     expect(V83_RECIPES.map(recipe => recipe.id)).toEqual(expectedAvailable.map(recipe => recipe.id));
     expect(V83_RECIPES).toHaveLength(120);
     expect(Object.keys(V83_RECIPE_METADATA).sort()).toEqual(expectedAvailable.map(recipe => recipe.id).sort());
     expect(LEGACY_RECIPES).toHaveLength(7);
     expect(digest(JSON.stringify(LEGACY_RECIPES))).toBe(legacyDigest);
     expect(RECIPES.slice(0, 7)).toEqual(LEGACY_RECIPES);
-    expect(RECIPES).toHaveLength(127);
-    expect(new Set(RECIPES.map(recipe => recipe.id)).size).toBe(127);
+    expect(RECIPES).toHaveLength(157);
+    expect(new Set(RECIPES.map(recipe => recipe.id)).size).toBe(157);
+    for (const historical of V83_RECIPES) {
+      expect(RECIPES.find(recipe => recipe.id === historical.id), historical.id).toEqual(historical);
+    }
     for (const source of provenance.reservedRecipes) {
-      expect(RECIPES.some(recipe => recipe.id === source.id), source.id).toBe(false);
-      expect(Object.keys(resources.es).some(key => key.startsWith('recipesV83.' + source.id + '.')), source.id).toBe(false);
+      // The original reserve provenance remains unchanged; the owner's later
+      // explicit approval now permits the same source IDs in the V3 runtime.
+      expect(RECIPES.some(recipe => recipe.id === source.id), source.id).toBe(true);
+      expect(Object.keys(resources.es).some(key => key.startsWith('recipesV83.' + source.id + '.')), source.id).toBe(true);
     }
     expect(createMealPlan(2).recipeIds).toEqual(['arroz-verduras', 'lentejas-casa', 'tortilla-ensalada', 'garbanzos-calabaza', 'pasta-tomate']);
     expect(validateMealPlan({ servings: 4, recipeIds: V83_RECIPES.slice(0, 5).map(recipe => recipe.id) }).recipeIds)

@@ -1,8 +1,20 @@
 # JJ Compra Inteligente | Recepción V3 segura
 
-Estado comprobado el 18/11/2026: recibidos el ZIP de datos original y 12 PNG. Se verificó la estructura de 150 recetas y sus 750 fichas en cinco idiomas. Faltan 138 fotografías originales.
+**Estado actualizado · 20/11/2026: recepción completa verificada; integración de aplicación EN_CURSO.** Main `69582c2010222769db8cf646b745aea544684e42` contiene 150 JPEG individuales en `APP_LIGERO_10MB/fotos/` y `JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip` en su directorio padre. Se verificaron 150 recetas, 750 fichas en es/en/de/fr/bg y las 150 fotos, con cero faltantes, hashes y decodificación completa correctos. Las 150 JPEG suman 96.304.512 bytes. Los doce PNG anteriores se conservan aparte; las menciones de 12 fotos y 138 pendientes en informes del 18 y 19/11 son históricas.
 
-El propietario autorizó incorporar las 150 recetas. Esa autorización sigue vigente. La app conserva las 127 recetas actuales hasta completar y comprobar la integración.
+El propietario autorizó las 150 recetas y el inicio de su integración. La base publicada conserva 127 accesibles; la candidata prepara 150 verificadas más siete anteriores, 157 IDs únicos previstos, con sus propias pruebas y preview pendientes. No se solicita otra aprobación del texto o de las fotografías. [Fuente completa](APP_LIGERO_10MB/README_CATALOG_V3.md) · [manifiesto de fotos](APP_LIGERO_10MB/MANIFIESTO_FOTOS_INDIVIDUALES_150.json) · [integración y criterios](../../../docs/MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md).
+
+## Verificar la entrega individual recibida
+
+Usar el Python del entorno con `scripts/requirements-photo-audit.txt` y Pillow 13.0.0 fijado:
+
+```sh
+python scripts/verificar_recetas_v3.py --profile app10mb \
+  --input-dir referencias/recetas/V3/APP_LIGERO_10MB \
+  --photos-dir referencias/recetas/V3/APP_LIGERO_10MB/fotos --verify-only
+```
+
+Este comando es de solo lectura y la recepción comprobada termina con `COMPLETE_VERIFIED`, salida 0. El ZIP de datos pesa 1.994.471 bytes y tiene SHA-256 `e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270`. Los 150 archivos individuales sustituyen la necesidad de recibir los antiguos diez ZIP fotográficos para este modo de verificación; no se mezclan con PNG o paquetes de otros perfiles.
 
 ## Fuente y perfiles
 
@@ -11,7 +23,7 @@ El propietario autorizó incorporar las 150 recetas. Esa autorización sigue vig
 | `original` | `MANIFIESTO_ENTREGA_V3.json` | ZIP de datos de 1.995.677 bytes y cinco ZIP fotográficos originales; o el mismo ZIP de datos y 150 fotos sueltas |
 | `github16` | `MANIFIESTO_GITHUB_16_PARTES.json` | Mismo ZIP de datos original y 16 ZIP fotográficos |
 | `v3b` | `MANIFIESTO_ENTREGA_V3B_LIGERA.json` | Su propio ZIP de datos y diez ZIP fotográficos |
-| `app10mb` | `APP_LIGERO_10MB/MANIFIESTO_APP_LIGERO_10MB.json` | ZIP de datos de 1.994.471 bytes y diez ZIP JPEG, cada uno inferior a 10 MB |
+| `app10mb` | `APP_LIGERO_10MB/MANIFIESTO_APP_LIGERO_10MB.json` | ZIP de datos de 1.994.471 bytes y diez ZIP JPEG inferiores a 10 MB, o las 150 JPEG sueltas ya recibidas en `APP_LIGERO_10MB/fotos/` |
 
 Cada perfil fija sus propios paquetes de datos, rutas y hashes; no son intercambiables. Un manifiesto identifica los archivos esperados, pero no acredita su recepción. Los doce originales ya subidos se conservan en `fotos/` y pueden utilizarse al completar el perfil `original`, sin volver a transferirlos.
 
@@ -21,7 +33,7 @@ La lógica se centraliza en `scripts/recetas_v3_intake.py`. Los cuatro verificad
 
 Ejecutar con el Python del entorno que instala `scripts/requirements-photo-audit.txt`, respetando los hashes y sin añadir dependencias. Pillow 13.0.0 es una herramienta de auditoría y permanece fuera de las dependencias de Expo.
 
-Auditar lo ya recibido, sin crear staging ni cambiar la app:
+Ejemplo conservado para la recepción parcial del perfil `original`, sin crear staging ni cambiar la app:
 
 ```sh
 python scripts/verificar_recetas_v3.py --profile original \
@@ -32,7 +44,7 @@ python scripts/verificar_recetas_v3.py --profile original \
 
 Una auditoría parcial válida termina con código 2, estado `INCOMPLETE_PHOTOS_PENDING` y una lista explícita de fotos faltantes. Un error técnico o de contenido termina con código 1. El código 2 no acredita una entrega completa. La opción `--audit-available` no crea staging.
 
-Cuando estén las 150 fotos sueltas correctas:
+Ejemplo de verificación completa si se recibe el perfil `original` con sus propias 150 fotos sueltas:
 
 ```sh
 python scripts/verificar_recetas_v3.py --profile original \
@@ -52,4 +64,4 @@ Se rechazan rutas que escapen del directorio permitido, enlaces simbólicos, FIF
 
 Las comprobaciones automáticas no certifican derechos, correspondencia visual, revisión lingüística externa, alérgenos o trazas, SKU, etiquetas ni precios comerciales. Esos límites se conservan.
 
-Esta herramienta no modifica la app, sus siete IDs anteriores ni sus siete documentos locales. La integración del catálogo, la optimización de imágenes y la preview requieren sus propias comprobaciones. El estado actual de recepción no acredita 150 fotos publicadas.
+Esta herramienta no modifica la app, sus siete IDs anteriores ni sus siete documentos locales. La integración del catálogo, la optimización de imágenes y la preview requieren sus propias comprobaciones. La recepción completa acredita los archivos publicados en la fuente de GitHub, pero no su integración o visualización en la app.

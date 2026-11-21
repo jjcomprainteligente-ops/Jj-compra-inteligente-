@@ -1,13 +1,13 @@
 # JJ Compra Inteligente
 
-**Estado actualizado · 19/11/2026 · Consolidación y recepción V3 fusionadas en main, con CI y staging comprobadas.** La app conserva 127 recetas accesibles y el diseño Verde Mercado Premium / GPT-6 V2. El propietario autorizó las 150 recetas; se han recibido sus datos en cinco idiomas y 12 fotos originales. Faltan 138 imágenes para completar la entrega fotográfica.
+**Estado actualizado · 20/11/2026 · Recepción de 150 fotos completa; integración EN_CURSO.** Se verificaron las 150 recetas, 750 fichas en cinco idiomas y 150 JPEG, sin fotos faltantes en esta entrega. La base publicada conserva 127 recetas y el diseño Verde Mercado Premium / GPT-6 V2. La candidata prepara las 150 verificadas más siete anteriores: 157 IDs únicos previstos, todavía sin publicación final de la integración. [Alcance y criterios](docs/MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md).
 
 El [inventario único](docs/MAESTRO/INVENTARIO_UNICO.md) reúne requisitos y fuentes. La [consolidación V3](docs/MAESTRO/CONSOLIDACION_V3_Y_RECEPCION_SEGURA_2026-11-18.md) distingue autorización, recepción, integración en la app y publicación comprobada.
 
 ## Base de trabajo
 
 - Repositorio canónico: [jjcomprainteligente-ops/Jj-compra-inteligente-](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-).
-- Rama de trabajo actual: `main`. El [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), ya fusionado, reúne la app de [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27), origen `04c3d0db5eab7e60667aa023806f8284ea4b0c06`, y las fuentes V3 de [PR #28](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/28), origen `6c6cde44ae06ef48adf8040ec8b5446003bd87ba`.
+- Rama de trabajo actual: `codex/integrar-recetas-fotos150-2026-11-20`, sobre main `69582c2010222769db8cf646b745aea544684e42`, que ya contiene las 150 fotos individuales. El [PR #29](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/29), ya fusionado, reúne la app de [PR #27](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/27), origen `04c3d0db5eab7e60667aa023806f8284ea4b0c06`, y las fuentes V3 de [PR #28](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/28), origen `6c6cde44ae06ef48adf8040ec8b5446003bd87ba`.
 - El propietario autorizó la fusión y se ejecutó el 19/11/2026 a las 12:24:36 UTC: commit `65d95466ed767346d2be99c3d8d6556be326684a`, árbol idéntico a la candidata `761275f71ef70e121979d916327906511665bc14`. La [CI de main](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44523616187) es correcta. Este registro documental conserva ese código integrado.
 - La consolidación local conserva 99 de los 101 hashes de entrada de la app. Cambian `package.json` y `package-lock.json` por el parche compatible Expo `~58.0.26`, dentro del SDK 58. Pantallas, IDs, cantidades, almacenamiento, logo y tipografía se conservan.
 
@@ -19,7 +19,7 @@ Expo SDK 58, React Native y TypeScript. Cuatro pestañas: Inicio, Mi compra, Aho
 
 Inicio permite empezar por recetas o por presupuesto. El recorrido conserva cinco comidas para 1–12 personas, revisión antes del guardado y selección temporal de tiendas. Una lista existente conserva su presupuesto. El motor de comidas variables está preparado internamente; su activación visible tiene una entrega separada.
 
-El catálogo del cliente sigue en **120 V83 y siete recetas anteriores: 127 accesibles**. Los siete IDs anteriores, las referencias de menús y las siete claves locales mantienen sus contratos. No se ha activado todavía el catálogo completo de 150.
+La base publicada del cliente mantiene **120 V83 y siete recetas anteriores: 127 accesibles**. La integración en curso incorpora las treinta que faltaban sin duplicar las 120 existentes y conserva las siete anteriores: 157 IDs únicos previstos. Los IDs, referencias de menús, cantidades y siete claves locales deben mantener sus contratos. La activación completa todavía requiere sus pruebas y publicación propias.
 
 La interfaz está en **es/en/de/fr**, con preferencia manual persistente, detección del dispositivo, respaldo al español y compras en euros. BG está conservado en las fuentes de recetas, pendiente de una interfaz completa y comprobada. Las seis modalidades de tienda y sus enlaces oficiales no implican precios actuales, disponibilidad ni transferencia de carrito. Compra y pago permanecen en el comercio externo.
 
@@ -29,13 +29,13 @@ IA, cuentas, hogares y sincronización siguen sin activarse. Las etiquetas comer
 
 La fuente V3 contiene **150 IDs y 750 fichas en es/en/de/fr/bg**. El propietario aprobó incorporar las 150 recetas el 17/11. Los estados de reserva anteriores permanecen como trazabilidad histórica; no constituyen un nuevo bloqueo de permiso ni requieren volver a pedir esa aprobación.
 
-Las fuentes V83 y los datos V3 completos están integrados en main. La rama de recepción se conserva para completar las fotos. La copia original local ignorada por Git se conserva. El acceso público a esas fuentes no equivale a activarlas en el cliente ni certifica sus datos comerciales.
+Main `69582c2010222769db8cf646b745aea544684e42` contiene las fuentes V83 y la entrega V3 completa con sus 150 JPEG individuales. La copia original local ignorada y los doce PNG anteriores se conservan. El acceso público a esas fuentes no equivale a activarlas en el cliente ni certifica sus datos comerciales.
 
-Se descargaron y comprobaron el ZIP V3 original de **1.995.677 bytes** y **12 PNG originales**. El paquete pasa integridad y estructura; las doce imágenes coinciden por ID, ruta, tamaño y hash, y pasan contenedor y decodificación completa. **Faltan 138 fotos físicas**. Su manifiesto no sustituye los archivos.
+La recepción del 20/11 comprobó el perfil `app10mb`: ZIP de **1.994.471 bytes**, SHA-256 `e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270`, y **150 JPEG / 96.304.512 bytes**, con IDs, rutas, tamaños, SHA-256 y blob Git coincidentes. Todas las imágenes pasan contenedor y decodificación completa con Pillow 13.0.0 fijado: **cero faltantes**. Los informes de 12 fotos y 138 pendientes describen la recepción parcial anterior. [Fuente recibida](referencias/recetas/V3/APP_LIGERO_10MB/README_CATALOG_V3.md).
 
 El nuevo motor de [recepción segura](referencias/recetas/V3/README_CODEX.md) unifica cuatro perfiles, corrige la lectura JPEG y admite fotos sueltas con `--photos-dir`. La auditoría parcial `--audit-available` informa `INCOMPLETE_PHOTOS_PENDING`, termina con código 2 y no crea staging. La preparación exige una entrega completa verificada y un destino nuevo. La herramienta no escribe en la app ni en sus datos guardados.
 
-## Verificaciones de esta candidata
+## Verificaciones anteriores · consolidación del 19/11
 
 - TypeScript y **1.549 pruebas unitarias** correctos.
 - **110 pruebas Python** correctas, incluidas **59 regresiones nuevas** de recepción segura.
@@ -43,6 +43,8 @@ El nuevo motor de [recepción segura](referencias/recetas/V3/README_CODEX.md) un
 - **24 regresiones locales de menús** correctas. La matriz local de **60 casos de recorridos e Inicio** terminó correctamente, sin fallos, omisiones o intermitencias.
 - Exportaciones web, iOS y Android correctas, con tamaños y hashes por artefacto registrados en la [evidencia local](design/v3-intake/reports/local-preparation.json). El JavaScript web conserva el SHA-256 `e94ac54f48b69527c065c362712b5cb03824356565a2046711260508c4a6f592`.
 - CI de push 44503332195 y PR 44503457652 correctas. Staging `dpl_9GyW8ij3xX4dgZtw7Q3F1jwH2v1K`, READY/protegida, con HTTPS y recorridos publicados comprobados. Acceso temporal por conversación hasta 20/11/2026 10:13:38 UTC; sin credencial en Git.
+
+**Integración del 20/11: EN_CURSO.** Se preparan el catálogo de 157 IDs y 300 derivados locales —miniaturas y detalles— conservando las fuentes. Tipos, pruebas, auditoría conjunta, exportaciones, CI y nueva staging todavía deben registrar resultados de esta candidata; las cifras anteriores pertenecen a su fuente del 19/11.
 
 El propietario informó de que la app funciona en su iPhone. Ese reporte no incluye modelo ni casos detallados y se conserva separado de una matriz física completa, una aprobación estética o una distribución nativa firmada.
 
@@ -56,7 +58,7 @@ Tras la aceptación y fusión, se retiraron **20 ramas superadas y una duplicada
 
 ## Siguiente entrega
 
-Completar la recepción de las 138 fotos pendientes y comprobar la integración técnica del catálogo de 150 recetas sin duplicar IDs ni modificar datos guardados. La aprobación del texto sigue vigente; el merge y la limpieza autorizados ya se ejecutaron. No se abre otro bloque automáticamente. Las instrucciones de [recepción V3](referencias/recetas/V3/README_CODEX.md) evitan mezclar paquetes, rutas y hashes entre perfiles.
+Completar la integración técnica de las 150 recetas y sus fotografías, conservar las siete anteriores y comprobar seguridad, idiomas, carga de imágenes y recorrido de compra antes de publicar la prueba. La aprobación del catálogo y las fotos sigue vigente; el merge del PR #29 y la limpieza anterior ya se ejecutaron. La aceptación del nuevo PR se presenta al terminar esta candidata; no se abre otro bloque automáticamente. Las instrucciones de [recepción V3](referencias/recetas/V3/README_CODEX.md) evitan mezclar paquetes, rutas y hashes entre perfiles.
 
 Las entregas anteriores y sus límites conservan sus informes: [B05.1](docs/MAESTRO/BLOQUE05_DOS_ENTRADAS_Y_PRESUPUESTO.md), [B05.2](docs/MAESTRO/BLOQUE05_2_MOTOR_COMIDAS_VARIABLES.md) y [guía iPhone](docs/IPHONE_PILOTO_RECORRIDO_DIARIO.md).
 
