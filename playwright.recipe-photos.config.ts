@@ -10,7 +10,7 @@ const evidence = process.env.JJ_PHOTO_EVIDENCE_DIR ?? path.join(
 
 export default defineConfig({
   testDir: './tests/recipe-photos',
-  testMatch: 'photo-status.spec.ts',
+  testMatch: ['photo-status.spec.ts', 'catalog-photos.spec.ts'],
   fullyParallel: false,
   workers: 1,
   retries: 0,
@@ -33,6 +33,10 @@ export default defineConfig({
       { name: 'chromium-desktop', viewport: { width: 1280, height: 1000 }, isMobile: false, hasTouch: false },
     ].map(project => ({
       name: project.name,
+      // All responsive projects exercise visible state, errors and saved-data
+      // preservation. The 150-photo traversal runs once per language on desktop.
+      testMatch: project.name === 'chromium-desktop'
+        ? ['photo-status.spec.ts', 'catalog-photos.spec.ts'] : 'photo-status.spec.ts',
       use: {
         browserName: 'chromium' as const,
         viewport: project.viewport,
@@ -48,6 +52,7 @@ export default defineConfig({
       { name: 'webkit-430', viewport: { width: 430, height: 932 }, deviceScaleFactor: 3 },
     ].map(project => ({
       name: project.name,
+      testMatch: 'photo-status.spec.ts',
       use: {
         browserName: 'webkit' as const,
         viewport: project.viewport,

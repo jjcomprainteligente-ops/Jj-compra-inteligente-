@@ -5,6 +5,7 @@ const fs = require('node:fs/promises');
 const path = require('node:path');
 const crypto = require('node:crypto');
 const zlib = require('node:zlib');
+const { verifyRecipePhotoPackage } = require('./recipe-photo-package.cjs');
 
 const brand = 'JJ Compra Inteligente';
 const approvedLogoSha256 = 'ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596';
@@ -113,6 +114,9 @@ async function readPackage() {
   if (manifest.assets.length !== assets.length || new Set(manifest.assets.map(file => file.file)).size !== assets.length ||
     manifest.assets.some(file => !files.has(file.file) || !file.file.startsWith('assets/') || ['size', 'sha1', 'sha256'].some(key => files.get(file.file)[key] !== file[key]))) {
     throw new Error('Asset manifest is inconsistent.');
+  }
+  if (manifest.recipePhotos || assets.some(file => /\.jpe?g$/i.test(file.file))) {
+    verifyRecipePhotoPackage(root, manifest.recipePhotos, [...files.values()]);
   }
   const logos = assets.filter(file => /(?:^|\/)jj-logo-horizontal[^/]*\.png$/.test(file.file));
   if (!logos.length || logos.some(file => file.sha256 !== manifest.expectedLogoSha256)) throw new Error('The supplied logo is missing or differs from the package expectation.');

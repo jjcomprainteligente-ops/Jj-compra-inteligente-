@@ -1,6 +1,6 @@
 import type { Recipe } from '../domain/menus';
 import { recipeMessages } from './catalogs/recipes';
-import { v83RecipeMessages } from './catalogs/recipesV83';
+import { v3RecipeMessages } from './catalogs/recipesV3';
 import { menusMessages } from './catalogs/menus';
 import type { Translator } from './types';
 
@@ -14,7 +14,7 @@ noteKeys.set(menusMessages.es['menus.roundNoteShort'], 'menus.roundNoteShort');
 
 // Legacy labels retain precedence. Individual recipes below use their line ID
 // so one Spanish ingredient cannot overwrite another recipe's supplied wording.
-for (const [key, value] of Object.entries(v83RecipeMessages.es)) {
+for (const [key, value] of Object.entries(v3RecipeMessages.es)) {
   if (/\.ingredient\.\d+$/.test(key) && !ingredientKeys.has(value)) ingredientKeys.set(value, key);
   if (/(?:\.ingredientNote|\.unmeasuredNote)\.\d+$/.test(key) && !noteKeys.has(value)) noteKeys.set(value, key);
 }
@@ -40,7 +40,7 @@ export function translateIngredientNote(note: string | undefined, t: Translator)
 /** A separate view model: all calculations and transfers keep using the canonical recipe. */
 export function localizedRecipe(recipe: Recipe, t: Translator): Recipe {
   const importedPrefix = 'recipesV83.' + recipe.id;
-  if (Object.prototype.hasOwnProperty.call(v83RecipeMessages.es, importedPrefix + '.title')) {
+  if (Object.prototype.hasOwnProperty.call(v3RecipeMessages.es, importedPrefix + '.title')) {
     return {
       ...recipe,
       title: t(importedPrefix + '.title'),

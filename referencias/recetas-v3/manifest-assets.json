@@ -1,0 +1,3033 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "zipSHA256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+    "sidecarSHA256": "4897b7f910684ce37fe6f9ac965a6c78c1004144ed5406a4e98478d5da3a366f",
+    "commit": "69582c2010222769db8cf646b745aea544684e42"
+  },
+  "transforms": {
+    "thumbnail": {
+      "maxWidth": 192,
+      "quality": 80,
+      "format": "JPEG",
+      "progressive": true,
+      "subsampling": 2
+    },
+    "detail": {
+      "maxWidth": 960,
+      "quality": 80,
+      "format": "JPEG",
+      "progressive": true,
+      "subsampling": 2
+    }
+  },
+  "photos": [
+    {
+      "recipeId": "JJ-B03-CAN-013",
+      "sourceSHA256": "ea0581c2d45941840892b382b1fe79de5cc72588fd5cac358ec2dbc63142b023",
+      "sourceGitBlobSHA": "08db2869eddb112c912dc019b12222088f02394d",
+      "sourceBytes": 715859,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-B03-CAN-013.jpg",
+        "sha256": "518b64fccf2dffc24c88eb84c78466300b50097a3d5eca7bfbdefc8445446d90",
+        "bytes": 8728,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-B03-CAN-013.jpg",
+        "sha256": "9fddf00970c1f98bf08014978cfeb5fe28d71f913f546e15efcfe2b81a345e83",
+        "bytes": 137774,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-B03-ESP-073",
+      "sourceSHA256": "a1bed0a69aabe2dcd905eb0eea6760adc8eda65f25a37cd6d46191c00b737632",
+      "sourceGitBlobSHA": "6b780c38bf3e517bc78372e425738a3c87edfee8",
+      "sourceBytes": 725704,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-B03-ESP-073.jpg",
+        "sha256": "a331386aaf8ef5cfabfdb286481766bafb3ecbc26feeaf0b8c7ece0eeff5fe5b",
+        "bytes": 9004,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-B03-ESP-073.jpg",
+        "sha256": "09be39efe2e65a23fb3fc571be16031a034f62b05947da824b3d9414fd1fa9d9",
+        "bytes": 143609,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-B03-FRA-115",
+      "sourceSHA256": "564c5be8c0a6dc14a77dac0adbac6d4cb2585b31fde562971966c6eb4f03c4eb",
+      "sourceGitBlobSHA": "ecf5426cda7f2b437865c91318d9f9727c3a838f",
+      "sourceBytes": 586483,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-B03-FRA-115.jpg",
+        "sha256": "bd99cbb5a79c9b6e258f7300ca11a0ef52efe4e9b74d4f3a4d40e9846ab13346",
+        "bytes": 7880,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-B03-FRA-115.jpg",
+        "sha256": "a4768a5443c8c75f67c0216555f6f7fc07e2523abdda1b0a008b0d8e15bed627",
+        "bytes": 115812,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-B03-GRE-211",
+      "sourceSHA256": "f0262d3c4e697b094eb74bf840f4338d25c18e44933a52e43246ed0eebe9b4b3",
+      "sourceGitBlobSHA": "2c3abde81d6d9b6b3cfc2d266bc081bc5af93114",
+      "sourceBytes": 562512,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-B03-GRE-211.jpg",
+        "sha256": "4c684a2db9aa4d8a46b7e9f9a9653a72460968a795e624667530685546ef2d46",
+        "bytes": 7382,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-B03-GRE-211.jpg",
+        "sha256": "c04c8cc3b8799faaec96b783d03292eff65eb29bfaa45a2d521d355f4694a30d",
+        "bytes": 111601,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-B03-ITA-132",
+      "sourceSHA256": "61857bd5dfa5860c0c4eac87b395df595207afb86ae48d8401ef62231b7a9ab5",
+      "sourceGitBlobSHA": "ccd7eaaf141955a13700d929241ddab6f151e752",
+      "sourceBytes": 628651,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-B03-ITA-132.jpg",
+        "sha256": "d39affc0812f600412beaf1c94dc30de6d11c2ed4bfce0de9fd0536b1a45fda3",
+        "bytes": 8833,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-B03-ITA-132.jpg",
+        "sha256": "55caf5aaa9027a65771250e1df89b6036c041cb98742605fe605be1e67cd575b",
+        "bytes": 131897,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-001",
+      "sourceSHA256": "eeed06b88f30966a593f8625dd741c107d037388b332a40ffa3360ae3941b423",
+      "sourceGitBlobSHA": "2142237012c453a01caaa3e5bbcd592cc18e7255",
+      "sourceBytes": 642542,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-001.jpg",
+        "sha256": "af48a633a2c648d8d250e61c6e14eacdee2cc224a7b8e3e5a10a79ff1308ea08",
+        "bytes": 7816,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-001.jpg",
+        "sha256": "1f634c9f804b14861761f17393c8557eca60df0728207878d362244f8c9ce18c",
+        "bytes": 123564,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-002",
+      "sourceSHA256": "95e8002fcdfec63c6a18191a2db2258bc2d240c3034febe632a4fc9ad0bfd4a1",
+      "sourceGitBlobSHA": "e53f9f0bf70552773abf641e92343810f2f552f9",
+      "sourceBytes": 636132,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-002.jpg",
+        "sha256": "7a380793f8d1214a46af2c0c73101bba3191596f218e49d2db41f0425c3e8c60",
+        "bytes": 8286,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-002.jpg",
+        "sha256": "93a416eaf4b9e19c4e5ca870002687a08a2289c788e36b31898c07d16f7bde8b",
+        "bytes": 129874,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-003",
+      "sourceSHA256": "7de1d5f09c89ef26d4e4a7fb5e84dc17745ba378b006fed526813abe1e36984b",
+      "sourceGitBlobSHA": "015f8ee44df9d17bfdf622a046af9dfd4e4510db",
+      "sourceBytes": 395614,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-003.jpg",
+        "sha256": "11a4e13dcb46f4d3043c2fd0edf9f0b980b00d094789918ed0bae098633b1e61",
+        "bytes": 6278,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-003.jpg",
+        "sha256": "5fd2aceb51ee0a1caf85d265b6e7596aa994059d341ad1c7e2aeb630752a7ce0",
+        "bytes": 75805,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-004",
+      "sourceSHA256": "49d6401d9100f88c9803c847df45506c65a1c286b955c682a4af6d2c7914137e",
+      "sourceGitBlobSHA": "2e499d88555eaaff95da0cd28093595c15ac8502",
+      "sourceBytes": 839684,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-004.jpg",
+        "sha256": "dfcba78f9c60bdabbfa1afb5a174bf024b5274cb17af2708f4a010803f720373",
+        "bytes": 9551,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-004.jpg",
+        "sha256": "504ae1b6f1679bb47c98a20ad3464248049580f65814ad74da8c6fe8ca1c7734",
+        "bytes": 167166,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-005",
+      "sourceSHA256": "f7b3be9d3407f42ac30a635097e207494c676299c11d8a1f66810bd60bd66ca8",
+      "sourceGitBlobSHA": "924b9c27d2e438c00fc2b202af4ce56dc9234a4c",
+      "sourceBytes": 509013,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-005.jpg",
+        "sha256": "6904678fc6596d7ce2236cd12b459007619da46b2d057e18da1c13e5d3795eb2",
+        "bytes": 7145,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-005.jpg",
+        "sha256": "365e14e6fcea7cc95675575430ff62d260ba19e8d47dfea2698397efd3d5c2b3",
+        "bytes": 102580,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-006",
+      "sourceSHA256": "82dea7b6266384c01e3fce7c43cf5001478175a3b13de5a1f9c91f65f912c47e",
+      "sourceGitBlobSHA": "34b01b294d13866561b21ec0170d54b413cdfb03",
+      "sourceBytes": 739971,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-006.jpg",
+        "sha256": "e084556170e4272a8b2f2c5e3cf4bab19c2b17a04383712a517eca7412ad1d7b",
+        "bytes": 9052,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-006.jpg",
+        "sha256": "0ccd68bc36b6c3fd0e238ddf741101741a91984942eab21d5052fa9502bec301",
+        "bytes": 153138,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-007",
+      "sourceSHA256": "42e8e9a33aafcf8202aede67a7d34064b141c612115ff7dce1b928f31f52dcb3",
+      "sourceGitBlobSHA": "323cf2ed8a441eb9cebafb2a823c19cce28d4851",
+      "sourceBytes": 704591,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-007.jpg",
+        "sha256": "6304dce88ebae552a33971649aafe339d4b663cee2dc523892600774e5ca1cf9",
+        "bytes": 8757,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-007.jpg",
+        "sha256": "f36d7debfd2175d640632b4ce8090a57fabae39addef74f6a780a78ad42d0aeb",
+        "bytes": 146861,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-008",
+      "sourceSHA256": "982c84b0efc79915c6453eeb3e36ba6d377c8c04658439f4b3e61cddcdc8590b",
+      "sourceGitBlobSHA": "2d4d4472312987fb750dc4c969dfc1b4f8559374",
+      "sourceBytes": 633164,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-008.jpg",
+        "sha256": "601e94e92756baf08b125783e175e3a51aa32d0d8e43c906dbc16d264d7d9334",
+        "bytes": 8527,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-008.jpg",
+        "sha256": "50ea5c4caec530efb14dbc4429b3cb84d735d667dd8c7fdd572cfb45d4144ab7",
+        "bytes": 130715,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-009",
+      "sourceSHA256": "c493e5b56b989f866e9118e79556939f03d49662b3d78af74c417de9ba9a233f",
+      "sourceGitBlobSHA": "867c6702c09b50e2f41e48bda1ec80126228dfbd",
+      "sourceBytes": 596432,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-009.jpg",
+        "sha256": "fd12405b5649f57af0c4aacc9e1d4e245906494c5a457db1cb3fc29c624fbcd2",
+        "bytes": 7951,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-009.jpg",
+        "sha256": "aa3c5ada4048f92eb634a701db93ffa34bfc1037d2a4bb3478b1c62980fe4d21",
+        "bytes": 122518,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-010",
+      "sourceSHA256": "5213916717b0a90dbd694bcdb9d2ae67f694a10db28a123a8be046d19f60b966",
+      "sourceGitBlobSHA": "be11fc23743380f5892631a6d6dc616611121e05",
+      "sourceBytes": 689895,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-010.jpg",
+        "sha256": "058ac978c30dd27d97a34523d74b1daf6b5328f5c6c9524aa57d78994362ba66",
+        "bytes": 8263,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-010.jpg",
+        "sha256": "e06cd255f0106dfeef17a09af2594b49355a86112dced591f30c69a0dd30b530",
+        "bytes": 137958,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-011",
+      "sourceSHA256": "02c967c82437294dad861c35d05bc64980da45a9093a5955eb3973f0ebc09fcd",
+      "sourceGitBlobSHA": "486cf312674a12a76e24959afff498426c4a62d9",
+      "sourceBytes": 709394,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-011.jpg",
+        "sha256": "19c0a4b287765221833af22c8bf983a6fc063312b884eda10b685e02d0eef951",
+        "bytes": 9192,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-011.jpg",
+        "sha256": "90b22059ea3ec390228b46127d3fd6eb89846a8df804da75d09b8d242cca54e0",
+        "bytes": 148636,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-012",
+      "sourceSHA256": "d99c446d3d0feaf83739f1beee0c92916abf38dc244bc52d28760443fa4413a7",
+      "sourceGitBlobSHA": "f1fb999ab689467f1e4e555d971e84928df3a0a7",
+      "sourceBytes": 626701,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-012.jpg",
+        "sha256": "06265b41b801458c15164fed348f545e3991b6373e9355901b36c2fd77035586",
+        "bytes": 8339,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-012.jpg",
+        "sha256": "29bd12a9bfe49638cb9de0d5ea7098862f3ee9c0386b01296df27c36181c7fab",
+        "bytes": 132313,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-013",
+      "sourceSHA256": "4128cbc9170a2c5b383915b1da45f778fffdb31ab6f1723cc281ab1b6d7ee5f5",
+      "sourceGitBlobSHA": "72100eb487f651b63d14a9348c6934c5b19cfb35",
+      "sourceBytes": 681719,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-013.jpg",
+        "sha256": "86ec77c8ff9a8bb88a7d5e871c9b51c735431633dd9c27a94bb1664e03eb0444",
+        "bytes": 8844,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-013.jpg",
+        "sha256": "bbe8838d03257ec52fd3a09dffdb74eadc7d990cfb64407e9e90fc9bd203427a",
+        "bytes": 132833,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-014",
+      "sourceSHA256": "14974eb42f763134116270fe219cf62bbff3a35f378d6cf66155fc563a6d84e4",
+      "sourceGitBlobSHA": "4d95fee9c1809006df5bdf9d0d362a61d5a2711c",
+      "sourceBytes": 687323,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-014.jpg",
+        "sha256": "8d2652867478bd15684847b52f41d7e0fca6a00aee3aefa8240b1e46be540f0c",
+        "bytes": 9495,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-014.jpg",
+        "sha256": "22302aab5fbca602fe29e2307566351f44d9194d16d03a7d72f87de16bf3a5af",
+        "bytes": 142882,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-015",
+      "sourceSHA256": "bfa913f0b40f22a8a507549dbe24a7b6c64357ad0e62eb633f0d50a9e4c20a24",
+      "sourceGitBlobSHA": "0d2c1f881578ef3953364ecd411fa65dd73d8e48",
+      "sourceBytes": 663181,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-015.jpg",
+        "sha256": "3c6103e556885ef0b424bbad9d2f321508838f78a5a2d222a57535e13cace89b",
+        "bytes": 8814,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-015.jpg",
+        "sha256": "3384bc3b6c5e552fa7d005fdee6913337e2603910300541dedd6fbbc743df42e",
+        "bytes": 136395,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-016",
+      "sourceSHA256": "a4e8d85a9f39dbeec350fc066d4c4817887721e255228ab54d81eecb644e378d",
+      "sourceGitBlobSHA": "72ac01f9ea45d6e0f8db9878c3e03e17cf0df7f8",
+      "sourceBytes": 685728,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-016.jpg",
+        "sha256": "694a7ea986d50abef06b1454c72c5476b07dd46743019d53e80c7b12cc8926bb",
+        "bytes": 8922,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-016.jpg",
+        "sha256": "b8a0d8079c70583bedbf34e95adf65c52d49a6f455b5652c8a621dfd61f7e759",
+        "bytes": 141532,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-017",
+      "sourceSHA256": "e7a6d8855ee00bc5e14541e6bc5ea763bd7edbdf5235570699854973a34be0c4",
+      "sourceGitBlobSHA": "e4fb3617a1460823bd3d95c7eb479fa0fcbfe681",
+      "sourceBytes": 756775,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-017.jpg",
+        "sha256": "dd2feec66005ed2026dafd66fcbd29c268190dc941499b46a43a6de72868ddb2",
+        "bytes": 9352,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-017.jpg",
+        "sha256": "a59a68fb2d134ce6dc1ffd9382b22632021fd9be5fbea579ac05d16b100b3dec",
+        "bytes": 152497,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-018",
+      "sourceSHA256": "58bc3f23ddf8fbac854a5bd85e76ddf0f68fbb790cc9a87cc9104b034c2c9cc0",
+      "sourceGitBlobSHA": "d4a0706d18d2bab7486f95250785231982759fab",
+      "sourceBytes": 549137,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-018.jpg",
+        "sha256": "acccde266f7e62c472caaa7c9149a56366529a860daaa20ae5223e9e0453db0e",
+        "bytes": 7212,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-018.jpg",
+        "sha256": "efb5c04c095116a4c742becd27130ee3eff101135d586845213460557e612b81",
+        "bytes": 106962,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-019",
+      "sourceSHA256": "6ccae374eb7146b58ab0e01150fad971efab0e2378c6f3920ee51357aa2a0979",
+      "sourceGitBlobSHA": "6cc56477d1c18bd65d8f25807d1fdac9dd1cffdf",
+      "sourceBytes": 661058,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-019.jpg",
+        "sha256": "ec92fa4762395b529a271ad4da9803178ae3cda98c105a46a4dce8708c37addc",
+        "bytes": 10070,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-019.jpg",
+        "sha256": "707c63100eaaa4f9216903581dff97673b38d240ac2e5ab0aee54af6dd6e0f09",
+        "bytes": 142100,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-020",
+      "sourceSHA256": "f458c3c6a56194288d9d3a699946c9b9b3adbd1d8553e96cec79481a84d3ccc3",
+      "sourceGitBlobSHA": "30b5bb5957a9f3acdeb35a51d62792f1b89d5750",
+      "sourceBytes": 797042,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-020.jpg",
+        "sha256": "c283ccd79c256db57b16413d715420dd207408e23ec6d699869994f15ad4f431",
+        "bytes": 10231,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-020.jpg",
+        "sha256": "a87fe7910d7fb68c6958c9c013a00249258c9a272e4095f526f98dfdc8637442",
+        "bytes": 165669,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-021",
+      "sourceSHA256": "82c61731901eba486c63ee3408bdbbc455f836fe9364dc5089f245eb2f797ffd",
+      "sourceGitBlobSHA": "d8eac378118c1473ffaa8aa086bb8d9186089d01",
+      "sourceBytes": 668913,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-021.jpg",
+        "sha256": "3b5d422987ad236f286b13014112cca746a13e677a11d87d0e0b4afbd9c498bf",
+        "bytes": 9948,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-021.jpg",
+        "sha256": "b55146456ce7f63ac913b825d4508b593d139403dd2bca0e14164f69a844c06f",
+        "bytes": 149893,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-022",
+      "sourceSHA256": "1e3cd685d1854908aebf213f59fd5f542e9e595e54953bc522bd0aa5d7f83381",
+      "sourceGitBlobSHA": "c0f6df61a574e108708da07f236663b75d6bbeb8",
+      "sourceBytes": 673799,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-022.jpg",
+        "sha256": "014c6a60a244f0fac0a342ec8fc7079b79f11e2cc65ef8fe3a94dc157ed8f25c",
+        "bytes": 9235,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-022.jpg",
+        "sha256": "e86d3a03b294957b5baf609e4bcb5bd5e9a4aaa44aae28d6d3118b2072cd7844",
+        "bytes": 139829,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-023",
+      "sourceSHA256": "9c0b07cd042de9dec8b8345106f425f00df934d64c5b2fdab88c8a3ee33a03a5",
+      "sourceGitBlobSHA": "292ef43f7ed4630db1fbce2c4b20bb20bf42eef4",
+      "sourceBytes": 770493,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-023.jpg",
+        "sha256": "5daec64389d5920d025b89abc959ad452efd0a65e454d21d905b36e0196a252f",
+        "bytes": 9936,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-023.jpg",
+        "sha256": "b2811751825db388cac36bf98451185ca8db646070e9e24785e13fe69f307d2f",
+        "bytes": 154283,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-024",
+      "sourceSHA256": "568ca2dd6a186b6d52e61adc942286dbf0bb8d67e5149f206c3b27bdf794674b",
+      "sourceGitBlobSHA": "d69d86bb05573d1913e76d3f99483842cefe7cc1",
+      "sourceBytes": 706762,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-024.jpg",
+        "sha256": "ec42bb908740fb99941415fbed100f369cfc4f6b7b1a4b7f323490a7f3c94b12",
+        "bytes": 9623,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-024.jpg",
+        "sha256": "ca81bc353491d50504651082368832b6db112b4382298e51d80f61001d72cdd7",
+        "bytes": 144085,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-025",
+      "sourceSHA256": "7ffdf05ca6abb08bde69088b6f9f3d318845014ea4defb67c347812fa8a7e156",
+      "sourceGitBlobSHA": "2f1f7feb0af3582d59fda72f6abe6b694b101b53",
+      "sourceBytes": 741909,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-025.jpg",
+        "sha256": "d7e6e40d36ee4e9542a79d5068c5af1a71da083b5615ff1246ad6c424b71ad4e",
+        "bytes": 8864,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-025.jpg",
+        "sha256": "e61050f4fd00b57a40c8e8f1bfd83b26a768b8784a31dcf013c10db49bc80eb4",
+        "bytes": 153408,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-026",
+      "sourceSHA256": "42276f418ce43c98f152ffe317f2754b4ef0555f6bed673b04279f73474a6fe0",
+      "sourceGitBlobSHA": "b20c63b6ebd7fd1988d6668939a91ef8fb79bf82",
+      "sourceBytes": 604930,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-026.jpg",
+        "sha256": "ba6673ac45b8167cd6a81ec24a883611724b2680956f104afd6a54a822f61461",
+        "bytes": 8260,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-026.jpg",
+        "sha256": "95b4ed96c22f94e1610c458423b7d213c1471a529b4eb7e617ed4936d361a653",
+        "bytes": 122169,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-027",
+      "sourceSHA256": "144f67f6b9599d31953efe35d17c4d0181da126b4a9a3ead8e30129888a6deb8",
+      "sourceGitBlobSHA": "7bb2aaa8a4b363895d284d161115ff80b4255101",
+      "sourceBytes": 606512,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-027.jpg",
+        "sha256": "9c407c1d19d80889cdd6f5fbea8534f318cf5c509aa3273b5451ea67237d8df0",
+        "bytes": 8477,
+        "width": 192,
+        "height": 144
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-027.jpg",
+        "sha256": "9dbf5956773d066e45aa44de4cefc73829368ad0ddf51092525d8488861a64cd",
+        "bytes": 114676,
+        "width": 960,
+        "height": 720
+      }
+    },
+    {
+      "recipeId": "JJ-E03-028",
+      "sourceSHA256": "127514566ad7790b77159d4fbf9c97f0e7ff0fd6389031517c111bb3c394a97e",
+      "sourceGitBlobSHA": "9166b8cc3e7aab9ce5f397455c20f29cb8255048",
+      "sourceBytes": 878684,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-028.jpg",
+        "sha256": "12a6733b6b0e685147d468b7977ecc8e709224808617192a051756c4544215db",
+        "bytes": 11199,
+        "width": 192,
+        "height": 144
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-028.jpg",
+        "sha256": "e89b39cbb11e803a32225e521ca4c223224aa99f07b9c1f0b0dc7e2c64779038",
+        "bytes": 171330,
+        "width": 960,
+        "height": 720
+      }
+    },
+    {
+      "recipeId": "JJ-E03-029",
+      "sourceSHA256": "3eef4a184a5134c71089e823b0c2abd6e0c252a0ed8c47b58da857483764a508",
+      "sourceGitBlobSHA": "d1f2ee3482399d0c022333289e627515e779a8f7",
+      "sourceBytes": 613881,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-029.jpg",
+        "sha256": "e27c66555cbe74f71a881a9171484dc8e7498d489643cfabd054e0d0c886b7f6",
+        "bytes": 7884,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-029.jpg",
+        "sha256": "959ce1a495d32ab3004cc0efc702c7a05b80b51522e2c6b8664de5bb7d585f66",
+        "bytes": 124101,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E03-030",
+      "sourceSHA256": "a5a919267e0cabd89273ead338add987fecae0b0afb5ed4c5035070dd9f46f46",
+      "sourceGitBlobSHA": "76badd8cf4d4d467a96edea94716fc4a8f3bf594",
+      "sourceBytes": 566209,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E03-030.jpg",
+        "sha256": "fef994a48cb422cd6991f8c5545fb339a8274aab8f2dbc56d3bdac86f15cecbc",
+        "bytes": 7854,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E03-030.jpg",
+        "sha256": "ae417cb9ded8913b7d2e46f00eac81e8b2f8fbbbb9aa30a4c10f5e679d1429fc",
+        "bytes": 112575,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-002",
+      "sourceSHA256": "227bf68db9b76105ca5bcf78c1379c8ec01660054abc4891ae358d1565eaea1b",
+      "sourceGitBlobSHA": "69f558dca978f0ff0f7f5dec4429a13059a2e640",
+      "sourceBytes": 542171,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-002.jpg",
+        "sha256": "9a3a05de68d05ab14f30fa18d1046de0838c2f4d461c894e02b976db157bf818",
+        "bytes": 7906,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-002.jpg",
+        "sha256": "ec642ba69f68495f894604dcbacbf15b0fce2ca484aa1a01f5068da4618a0c07",
+        "bytes": 114699,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-007",
+      "sourceSHA256": "e2c2a9bb3d0cb4227097c04f91430699a1abb2fcd4480c2c2ca1cee9510acae6",
+      "sourceGitBlobSHA": "631af921249565c3101261a97f0abb880fc3596f",
+      "sourceBytes": 573993,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-007.jpg",
+        "sha256": "0174639cef799ffa9b44d46098146ec5245b7cb7daeb06062ef9258a2cccc658",
+        "bytes": 8024,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-007.jpg",
+        "sha256": "408afd1ee3da8095f6d1f469c7899e831e5f51deb0265c6372b971861f94bb67",
+        "bytes": 113172,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-054",
+      "sourceSHA256": "81b41787130f24b3177669cf00da0e1c7a5edf44d7cffc42389713832e6ce467",
+      "sourceGitBlobSHA": "3369669b4539a9ca7642962e931052bbae20421b",
+      "sourceBytes": 656656,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-054.jpg",
+        "sha256": "980d324a3928d7c8634d26c49771700f94c82e8af057d0ecd86005ae46f85afe",
+        "bytes": 7313,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-054.jpg",
+        "sha256": "6cd7026bb15dbefca9ca867c42498e7de008192e82e770eab7a47a7ed5a4e931",
+        "bytes": 129410,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-060",
+      "sourceSHA256": "99ebd843ac70cedd9ee3aced6d0f159d8e83c3a271793f7736eda43240716c2c",
+      "sourceGitBlobSHA": "ce9a401e20f4a5f5197156ef79e42b936fcbe783",
+      "sourceBytes": 483825,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-060.jpg",
+        "sha256": "9e46bc6b6e809dd8f342ea375a1dd95e277b50b2684cbbba972e338724c39525",
+        "bytes": 7112,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-060.jpg",
+        "sha256": "300d081e973ca09800e01e4bcd16d6c480cad12022aa2589b980c132c9cf16ca",
+        "bytes": 99313,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-106",
+      "sourceSHA256": "9afd840088dbe7821dff91ca2f1436a409d7c4712294800742e1b038350aacfd",
+      "sourceGitBlobSHA": "105c1d2be2d241937096269cbd2b72ba7fa97505",
+      "sourceBytes": 672242,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-106.jpg",
+        "sha256": "4cd3291ce3212f4ff721303ab78dccc0bdc0661ae807b006b836752bed4902fe",
+        "bytes": 8222,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-106.jpg",
+        "sha256": "248beb47a50c16115b193715906abd10715ccf73122b02860e31e2b295d5006e",
+        "bytes": 133883,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-107",
+      "sourceSHA256": "5c3fe7887edd916b3098423f15a6bc084f2ff309e2e6ae1355f6807fbf9ad049",
+      "sourceGitBlobSHA": "bf0caca4c0581225a6f8754f7e588637351f8f8a",
+      "sourceBytes": 666420,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-107.jpg",
+        "sha256": "68048c088c984ddd3e97f56053eeb8e68421dd5ddf7923c0838de7dca4daf55e",
+        "bytes": 7630,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-107.jpg",
+        "sha256": "eed6a9bd202b08d9be5eb70df32656f317ede5308b70a5320d0f9142603c5c80",
+        "bytes": 127858,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-129",
+      "sourceSHA256": "f0938e5b930fababd0fdc48412a131e7fb3da4c8a5b9ac69764ab490097fbd68",
+      "sourceGitBlobSHA": "26d08857af42610292c2e7973bdfbc2643a06867",
+      "sourceBytes": 657303,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-129.jpg",
+        "sha256": "195df2a548c3ca48f892ca1945761c99dc7f4a5064c1d8d3eaca1f69ddad80df",
+        "bytes": 7944,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-129.jpg",
+        "sha256": "d21e533affcce3d3bbfbc315e7a693a2d354e81b6ac532236a4c187205116efd",
+        "bytes": 133270,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-145",
+      "sourceSHA256": "a7c2d5fc96d35bfcec73ca0fc6427a0ad1c8d0b6b2ae39238a7810ce22948f36",
+      "sourceGitBlobSHA": "2a17809a18924c8bf7d10d93cfe6f349c4b2156a",
+      "sourceBytes": 664868,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-145.jpg",
+        "sha256": "b235ec563baa50e1ead7398f29221d8af2cbf166306b474cbfd6c260f4a866e6",
+        "bytes": 8393,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-145.jpg",
+        "sha256": "ecfd5875cb40b33a7267926a60569f11e4696b291cbaae08ce3e770da813198d",
+        "bytes": 135504,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-152",
+      "sourceSHA256": "1875d52971a2c1190fe20071f2e0f2d13199501cd175cd59a1e577b0454186a3",
+      "sourceGitBlobSHA": "45d651dd78bb0a4e02ea7863902c6b6505fc702a",
+      "sourceBytes": 761309,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-152.jpg",
+        "sha256": "5532bd7b107a9ccf87f3f3f32574fe45e1d89a0efe995b6fdfd0867d129396f5",
+        "bytes": 9837,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-152.jpg",
+        "sha256": "70b44dedfd7003f83166267caf67e0dceacccb823ba86e5b1bbc801f4bf3778e",
+        "bytes": 151850,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-174",
+      "sourceSHA256": "c2103d3bc07257fa7ab1479770fa9b3e764e7a4b032e32f1137d7ba389171bbd",
+      "sourceGitBlobSHA": "a4d31aada87c80c3e2b7d807a76185564d0f10f7",
+      "sourceBytes": 568375,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-174.jpg",
+        "sha256": "ca61e300b4f2bebb29c477527d1a0c76063c5ced47a5ee8ebf36f48924353b98",
+        "bytes": 8207,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-174.jpg",
+        "sha256": "fedf2f2870ae3d37fd62d11c6013e63fb82596c6b7ad9501ac2a094cc71fda50",
+        "bytes": 116820,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-181",
+      "sourceSHA256": "1f58fd3d734a68c02d77b7c1e21b95a7f4c993c4053489b5ee292dd70d7c6786",
+      "sourceGitBlobSHA": "112e02fb08bee1eeae00d60b9c96825cf10707ba",
+      "sourceBytes": 688450,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-181.jpg",
+        "sha256": "12a7810e39658b118eccc910e5ce042cc53a2ae97748e3065c1d6f96b8eeeed9",
+        "bytes": 8679,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-181.jpg",
+        "sha256": "76121215873992ba4c18f050d110d3ba17ec9acf0bff77f1b35c1ca267fc2546",
+        "bytes": 143514,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-183",
+      "sourceSHA256": "4cf349694bf94a97c83914f1332631de6b611e216714ceb39fb4e2d8a23bbb6d",
+      "sourceGitBlobSHA": "0070f2f3000bfce5ebca8f31a02cd1b533dd81b2",
+      "sourceBytes": 686147,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-183.jpg",
+        "sha256": "80242fb5bf21a3ba86fb583a1a0eb5f29873922c275c8212f8ea7fff995ea9a7",
+        "bytes": 8416,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-183.jpg",
+        "sha256": "148b7358b0703270174b8173fd0f30de669db8fc6203ad5642ee0a3eb9c15754",
+        "bytes": 135004,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-205",
+      "sourceSHA256": "51119066ca20d7a78d4b3569ae1542168f103fc456506ec2b9f3a8a7d2a1fa8c",
+      "sourceGitBlobSHA": "7ded1f71328fb394d10f4e4a42ab306e19a3c103",
+      "sourceBytes": 620219,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-205.jpg",
+        "sha256": "90a49284ada0aa77c1b522ceaacddd52ff32f551f7fb74725e8d6ad5931cb6a8",
+        "bytes": 8310,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-205.jpg",
+        "sha256": "eceec1a90bf74c80f8af8692d1162ea4d8bc7463f70e3ac09063de3a1b179628",
+        "bytes": 123864,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-214",
+      "sourceSHA256": "bc160b2859b9da341363313342e70e9db10c8d9a047dea2eddb35f143b3cf2e3",
+      "sourceGitBlobSHA": "629a7693241cf6f34af0bddbd8b5dcc21b0ad215",
+      "sourceBytes": 594539,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-214.jpg",
+        "sha256": "3aad87452c5f2b82c83c8db6cb889cb2855386d708e8fb456542355dd797b531",
+        "bytes": 7698,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-214.jpg",
+        "sha256": "b73a9e13082e6123bcfc777c411b7bb8b3809a05efbd262a9cf7a37f9d9fe512",
+        "bytes": 120003,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-237",
+      "sourceSHA256": "4a24fb7664a2cffaa78256927da287cca35f7c1e8f7c1382f7cf82518da16384",
+      "sourceGitBlobSHA": "e9ab06d3da2c0c04ab3a2aa4e69070d15f01267d",
+      "sourceBytes": 697149,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-237.jpg",
+        "sha256": "98ee8deb76c46d4cf59230d1e44351b3f2510868c4c5a8691d5a5f708b0712a0",
+        "bytes": 9217,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-237.jpg",
+        "sha256": "900ee91b875a661f98daea7a6facc2a1b2a1ca3a4d015bf8b5f86fb18fded2ab",
+        "bytes": 144852,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-243",
+      "sourceSHA256": "6faab553cd0f7c9926508530cfcfc9f87e2bca57dd4e3f16e0562e5af9f7adcb",
+      "sourceGitBlobSHA": "4a02a6c9be5efa08b983f6733c76efd140c6b59c",
+      "sourceBytes": 600228,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-243.jpg",
+        "sha256": "db5a78893678eb20e84a3916d9f1cf26126b2154101acb302abaf9f0b4e9bb46",
+        "bytes": 8690,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-243.jpg",
+        "sha256": "7b396cac870ae79a4a995b6100b013cf425573b007135f5a0cf664303ffa4b98",
+        "bytes": 120991,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-266",
+      "sourceSHA256": "4f6e627f35cc9a827e37f6e9714d7f7abaafd0756182d595d430812cd11d4232",
+      "sourceGitBlobSHA": "1a1953dfa0efef3721c8cac00feb1651f5cd2054",
+      "sourceBytes": 431253,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-266.jpg",
+        "sha256": "6249419d8165323447fbac7f7c0f7e6f56b8e9168b1cda694d8238bb83593399",
+        "bytes": 6504,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-266.jpg",
+        "sha256": "111f5f440c27594a6790b607ba883ff8f2f8c48d85f96c28c3b84eb80047f9de",
+        "bytes": 96354,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-270",
+      "sourceSHA256": "cb2ea72825b3e0bd73cf6edcafd8ebdbaea19ba9a191f7d14181c244631d8083",
+      "sourceGitBlobSHA": "7320e07741cbffbc06077a75368947032c606bdd",
+      "sourceBytes": 545142,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-270.jpg",
+        "sha256": "65e417018a17fe4482c18ff6bdd9a2f60199f0aac4de316a620e151ff0216a24",
+        "bytes": 7731,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-270.jpg",
+        "sha256": "63deb16b81f2366798acbc14d7221fe03569e56d0c877640bde2205b2fbe5e79",
+        "bytes": 109423,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-277",
+      "sourceSHA256": "c5fdcec3a0bc179a8c4f084cb1d9e0dc554a5904a138f4c2be7688d48f82e536",
+      "sourceGitBlobSHA": "92a3184a0a09f9153780006fe86c12bc45c44907",
+      "sourceBytes": 605535,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-277.jpg",
+        "sha256": "38c0e60629d356c75988dd13bcd6f40064bcce89536912545b70931aaa151c27",
+        "bytes": 8519,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-277.jpg",
+        "sha256": "c298cbe8ffde3f096f15f6cfe806993186e54b3c5ef874e8433dd1f4aa630c6e",
+        "bytes": 121907,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E04-288",
+      "sourceSHA256": "9457aa9b2087c70827eff262376e87235f3ab3378a6d59442774b5d0ec54c26f",
+      "sourceGitBlobSHA": "d6867ea06e9f63ff73e23a95264555009348aa32",
+      "sourceBytes": 674752,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E04-288.jpg",
+        "sha256": "60a9a71d50553e5985aa8f3eabd94cf148a4dbbf92174dfa211435ec77389a61",
+        "bytes": 8633,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E04-288.jpg",
+        "sha256": "b54b8d691c26302acd975ff916cac5676e440872eb6ccd8b6bf5406e91170516",
+        "bytes": 132113,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-003",
+      "sourceSHA256": "988de81a464fe68b13dab064e2a00eefb14f8a043aea10ed571d72d1b46c36d6",
+      "sourceGitBlobSHA": "a05ae2e28f379190033ce2bba2c2efde43d728be",
+      "sourceBytes": 667606,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-003.jpg",
+        "sha256": "1f34195f4dab447b36191d427e721413f0809790f03720bd4f5b18955cb0896c",
+        "bytes": 8194,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-003.jpg",
+        "sha256": "c2dc4535dae905366dd7163ac1b5d04399f219f7e24662bf65e3d6bf4a452913",
+        "bytes": 132275,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-008",
+      "sourceSHA256": "032105efe4d9c86e67b3462b2373e97cd9d9c47d0bc6603100ff9d674672eb5d",
+      "sourceGitBlobSHA": "9458dfcc3232cc52426275c8f8bdc57a66afcc66",
+      "sourceBytes": 753930,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-008.jpg",
+        "sha256": "e78eb21f1b46cb51452e9f385ad6594179c6beb009ba7582de2f473d8994a491",
+        "bytes": 9159,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-008.jpg",
+        "sha256": "e2a25b9693e5e1130e148e554a882c2fd8f73c2e08781cd378c4e01c73dd1f6a",
+        "bytes": 149972,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-056",
+      "sourceSHA256": "75136c2cd7f5a87d0f7701a133de23a4787c4cf4cb31e736428c7cfdfd3e7925",
+      "sourceGitBlobSHA": "890133b53b9fcbf136df740368fae7f8434aa35f",
+      "sourceBytes": 699872,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-056.jpg",
+        "sha256": "97dae48dc767721785b146be7fc3af7b446b4dd16289fa642b434cdf34116b37",
+        "bytes": 9334,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-056.jpg",
+        "sha256": "dad32f29cb48781f1082ea92b99474bdc581bfe86b35a3855d48978bc6140ffa",
+        "bytes": 147713,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-059",
+      "sourceSHA256": "4cdee478909a54e773fdc86c15ef2389327a8916aee8b5cd2ad72653cd5b97b1",
+      "sourceGitBlobSHA": "32af1ea08d9f1fde8c5db3a11bccc97ef50e920d",
+      "sourceBytes": 796326,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-059.jpg",
+        "sha256": "6bafc75d20337f2514f089b8304bacf4c4e3b1eb83eca9c00aa8bece6074679a",
+        "bytes": 9617,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-059.jpg",
+        "sha256": "26a23d08cfdf942955ec16f65f28422afc75227770fbd5f1b78d2bbe8897a459",
+        "bytes": 157369,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-101",
+      "sourceSHA256": "6e3de8e2fe43b24a1fed1cc4a9b05b33bf26a4f552c68d7e61a2525fb193b31e",
+      "sourceGitBlobSHA": "91ecdf4157231174b9883a0e731087a1be54501c",
+      "sourceBytes": 768868,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-101.jpg",
+        "sha256": "2452012624348bc35c82c6c84e6fc9498a16618a3b63b2089675e2077fae7900",
+        "bytes": 10180,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-101.jpg",
+        "sha256": "c92733b80e82e64b9e29ffeb54adce3a565f07412a1995997c67eea4d236616b",
+        "bytes": 161673,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-114",
+      "sourceSHA256": "7a6eb88b630a781f461f966a52b09ac25c490bf3f47043506960620e27631a13",
+      "sourceGitBlobSHA": "ed85d609f9d22cfc62b1f0e9de3eb2a49fc1d54a",
+      "sourceBytes": 675710,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-114.jpg",
+        "sha256": "3d237b6b131b507214f418aee909228c39bb6c2665e45979d088d8319eae3531",
+        "bytes": 9417,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-114.jpg",
+        "sha256": "5c88e930834cc235ab00bb20c7df360154e758b3df8a31dc572455eb88c94937",
+        "bytes": 143398,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-126",
+      "sourceSHA256": "c058630ab1fa96d8b8468d9a87748fddeaac5d3c35bc087a7e228b0f87951f92",
+      "sourceGitBlobSHA": "38e27dc8564d78ef9e8635ca3869f701ef0c0a55",
+      "sourceBytes": 732606,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-126.jpg",
+        "sha256": "0639b8fc2018ab065e5de1ab7ef76681d28e1f916e8ad1a17a2848aefecc4c33",
+        "bytes": 9474,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-126.jpg",
+        "sha256": "9ed23ba0b1e1549470eea89d4d80a09550bff7fd717f3f07238841a7e3fbc9cd",
+        "bytes": 150453,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-139",
+      "sourceSHA256": "4a06465a57d587fb940fc3d4a878a4d280c009055fc13ab6fbd9d43a629ea5e7",
+      "sourceGitBlobSHA": "3d82037fdf7e4c3c6464d69d59981ee307597e5e",
+      "sourceBytes": 685357,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-139.jpg",
+        "sha256": "5dad0568f16512c5566c3758fc8c01e4ef3eb9e4c64097900537fe6b50cf561f",
+        "bytes": 8490,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-139.jpg",
+        "sha256": "3d739b237caf2524601b401909a7e1114ce383b93b1244c36a1762460c921484",
+        "bytes": 136208,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-153",
+      "sourceSHA256": "713018dadd08a0ec7884cb606ef5da10f2d52c2cdb17a6ad32ffd1e065541ec2",
+      "sourceGitBlobSHA": "ca2641e39f5b6686b7bdf422dbc33b22e9181b5d",
+      "sourceBytes": 671381,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-153.jpg",
+        "sha256": "3a79225799fceca4eb3e038f2265327fe12bd2a77cb94cb504a81a8f3e48e08a",
+        "bytes": 8605,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-153.jpg",
+        "sha256": "b5c4342d6edc0bb509c224f1f43997d3bb79eb375b0da0c2ed7ca13203378e3f",
+        "bytes": 142170,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-156",
+      "sourceSHA256": "f4149bd67d7687c58ce16230b498f239109ccfb3b5a8f7ae82bd9bcced8b5115",
+      "sourceGitBlobSHA": "fddfe33028800bed1ebe1009491c26bf53406ed4",
+      "sourceBytes": 648557,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-156.jpg",
+        "sha256": "4ea7a7ac31f4ddd2ded498879bd9c8224f80ec0fa399d585da1113f55c7487d1",
+        "bytes": 8179,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-156.jpg",
+        "sha256": "8e26833ea5ed137f0cd7448f53efeef3286bf0024ffc95da091835af64a04585",
+        "bytes": 126972,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-177",
+      "sourceSHA256": "2ded238ed5c97771d230b81e9c2315a00958cdf72bbaf7f2ad24213adef85b24",
+      "sourceGitBlobSHA": "dbc9bc30408c8670bdcb2222fa2ec9070402a3f4",
+      "sourceBytes": 817763,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-177.jpg",
+        "sha256": "03ac9da2124bc89330137215a4ca80c0fd84dc8b869f7c957435453205c14816",
+        "bytes": 9471,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-177.jpg",
+        "sha256": "af2be33640b5788f477f92b1673ffe68599ce29feb837053cc73234b5e101f28",
+        "bytes": 161734,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-189",
+      "sourceSHA256": "741464b2611ed3a415bdda54cac8a418d25bb50abbb18f7f083b2fedafdf07a1",
+      "sourceGitBlobSHA": "3c10b3e684038d4ef70d755a5a02dbc9f204a4ef",
+      "sourceBytes": 669978,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-189.jpg",
+        "sha256": "6617f45e9a3dac40d91e4f66d673d63c3aa349c912ab6081b2a3c70108d00e2f",
+        "bytes": 8250,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-189.jpg",
+        "sha256": "f9520dec067aa6b0d8516d5b73daee9fa466f04bc3186a368aeb07e49bba6d48",
+        "bytes": 132411,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-203",
+      "sourceSHA256": "0a2ed8b0ff6861714fea36bac3f12a0d7bb2eedc62dd7968f8c0c36aee676555",
+      "sourceGitBlobSHA": "9f2017eef45a2f60f1ed6e9402ff52b3b6430da3",
+      "sourceBytes": 763405,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-203.jpg",
+        "sha256": "6f3323bfb52970628860c8ad3aed839b83565f842e3d61fefd356644bedf91f8",
+        "bytes": 9521,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-203.jpg",
+        "sha256": "6ba9b8ce219f576eceb955e5bc8ebcca211635aa7058be00fdde6c27f731ea20",
+        "bytes": 158182,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-207",
+      "sourceSHA256": "db1be390c95c814482caf73559b7ecfd7410ce006ed15aeac12595006a807ab7",
+      "sourceGitBlobSHA": "09f91ae3dc599a149c530e051d723079707672c8",
+      "sourceBytes": 672798,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-207.jpg",
+        "sha256": "1a0206a06e979d19c9d3322b6930bb3c45deb6dc52865668116b2e2dbf3e402d",
+        "bytes": 9289,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-207.jpg",
+        "sha256": "69a971fca5334460a23acf181478883c96a431b8a1b82f68d10abed65fb0994c",
+        "bytes": 141396,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-227",
+      "sourceSHA256": "dfa2243a6db3c51b3a6dc8034201b2b8d3c0f83849957347d062fed28594af19",
+      "sourceGitBlobSHA": "878af8b569a22273d0a0d5c1d2312bb5b6c95185",
+      "sourceBytes": 727146,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-227.jpg",
+        "sha256": "a9675865d7ceb2a72a258632c45deb220a5a7a2d33548e5a55f15df4a1c7690d",
+        "bytes": 9639,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-227.jpg",
+        "sha256": "97b58d012127e4e22492305a3090bf89ff212b97db411702070eb2ae68f5f1d7",
+        "bytes": 147689,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-231",
+      "sourceSHA256": "85cb400aae5a46b0bcfc2d0be575b10b0d9c98498b10e78378fb997894b5c19f",
+      "sourceGitBlobSHA": "96b8eb9ba9ae9293e6aed6280259a062d3b1bea8",
+      "sourceBytes": 718789,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-231.jpg",
+        "sha256": "419350ccf4e21158962c9450b228456349ef1d361646fb2a59702c7778d91b13",
+        "bytes": 9063,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-231.jpg",
+        "sha256": "e4dd29733aaa6b5928e5b0142fb798616f35e5cb4e3f842b3359e6e264ada82a",
+        "bytes": 141404,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-254",
+      "sourceSHA256": "3c98570d606bcae3bba81d45579371182b97ed7a04736481116fa55515f2eacf",
+      "sourceGitBlobSHA": "4c1f6a09ce74a60a48eb074d70eabcf112e19e56",
+      "sourceBytes": 488877,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-254.jpg",
+        "sha256": "591fb5ba760399c312bcfe8d32fd06705cd2b4e6c153de6cfacbbd2be9237096",
+        "bytes": 7584,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-254.jpg",
+        "sha256": "943616aba71b50f5395804ef93b8e10c8fb8603e6f9b0c726b56411cbb0627d1",
+        "bytes": 100144,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-258",
+      "sourceSHA256": "56ae0ebc251a072422dc60d17c84082b1f0c8a1bab7a703c0d6214c470063f5e",
+      "sourceGitBlobSHA": "2b4c50777584e87bf2b96c8c82c36a3e80a3ef53",
+      "sourceBytes": 656480,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-258.jpg",
+        "sha256": "691d2750d15ae4780c114a04199a394969850923387843fa946f07fafbb17690",
+        "bytes": 8744,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-258.jpg",
+        "sha256": "02e2e3bdc35d8139fc4a5f5c069623932928f79f5ef126f8ef379412763d78c3",
+        "bytes": 139200,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-279",
+      "sourceSHA256": "1e9d5c8d72e3935f981556f4091c9940039569610ef9d5932cf22ecb5d442b31",
+      "sourceGitBlobSHA": "690dc19120329bb12e4e4ec934a77b957da667c7",
+      "sourceBytes": 693324,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-279.jpg",
+        "sha256": "b6c6ca12dc0d8753cfeef9344baa7d3a7683e5f4315badffb8b38c67cac44c08",
+        "bytes": 9010,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-279.jpg",
+        "sha256": "4755e506b6b86f5a7af52707e840151049767b703521eb3c6b4baeaa19586d74",
+        "bytes": 141761,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E05-289",
+      "sourceSHA256": "420613770e0376087decc6b3d7aeaf52a8d2dbf7004aa02d8350b190056e15f9",
+      "sourceGitBlobSHA": "56172327a58974be401a7c093775d368674495e8",
+      "sourceBytes": 768595,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E05-289.jpg",
+        "sha256": "23f37adbc33913767f9a571d8b09d51d85973232a522abae4407378cb3731d4d",
+        "bytes": 10062,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E05-289.jpg",
+        "sha256": "1b74f68cc9d5b26f85b2c35692e9762ad4604fa1394d7d05726a3aa6f6a0fe34",
+        "bytes": 157982,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-004",
+      "sourceSHA256": "8cb883488edd30b9b4eedfcb016a5fa82c6324ee745db86af7cd8369f9556f73",
+      "sourceGitBlobSHA": "a8e0631e6125221a8142646454b526b0402692f2",
+      "sourceBytes": 713332,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-004.jpg",
+        "sha256": "95cdb95be30a97a63c3e4819014477bd2cb0bc24cbd5cb1a8563431703a14404",
+        "bytes": 8333,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-004.jpg",
+        "sha256": "6e0908b7e39745797c6954faa2ccb0a4dcb4605b6179f4eb9575296306069ce4",
+        "bytes": 144216,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-068",
+      "sourceSHA256": "514717fb5b13091a6d30e77cb1c630b2b4ac0fce991dc822580edf4b02e5324c",
+      "sourceGitBlobSHA": "a25397a7d653db5aa8a477d19f824e9f697ea281",
+      "sourceBytes": 611843,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-068.jpg",
+        "sha256": "a9589f96d9b8449da2337daddd054f300668394f0ccd455136cbb80cf692c366",
+        "bytes": 9135,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-068.jpg",
+        "sha256": "c5c651abe96c543d3296d4841cb39b119532ec0fa5349f108e16538ca7d79ece",
+        "bytes": 138792,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-102",
+      "sourceSHA256": "0515f71c7ad1b203fa36bbedd8f7e7b562698014e1990f42e9f65520f7046262",
+      "sourceGitBlobSHA": "a6ab195b05c9949a47e389e64d5469153c276565",
+      "sourceBytes": 730223,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-102.jpg",
+        "sha256": "f4cbd816a12b7e997e7474a0b4603ebf8c12453f245537df8d112918375a90cb",
+        "bytes": 8653,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-102.jpg",
+        "sha256": "34fb45599dfb48ef758518d97f3749bb67ce0e06eb64f88fea6a3c09d68ed111",
+        "bytes": 154543,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-135",
+      "sourceSHA256": "793fe0c19d0a555e0872056e0e472b2a2b2378fe8f4c8da13bd606e00ab98c0a",
+      "sourceGitBlobSHA": "933eafdc667f11daa6cd891c0845fdfa33a980bb",
+      "sourceBytes": 454137,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-135.jpg",
+        "sha256": "f2f57f85a5b6c40475868eb54547020943adef950103c1f09a720fb01b6a088f",
+        "bytes": 7474,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-135.jpg",
+        "sha256": "97dc0929b884019b9928bffb02041f65a655d2067c18292bed6654c52fee93e6",
+        "bytes": 101892,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-169",
+      "sourceSHA256": "d72407352f11db291000e4936fd95ae3a03257c0d91e80ffb8a9ee1ac07ec6ad",
+      "sourceGitBlobSHA": "f400f02383fc531ed0438d9a225f4aba20e8ca4e",
+      "sourceBytes": 556310,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-169.jpg",
+        "sha256": "f5775e58b4267782085f3b2589c62bc10671abce881b957c80dcfe123a74d5c7",
+        "bytes": 8906,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-169.jpg",
+        "sha256": "dea2b00aaf0ab476f820ae484976eaf549152cd4b0b78f5c4e8296bde89e0b83",
+        "bytes": 129917,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-179",
+      "sourceSHA256": "e8e1b09d0dedf7789cd23a751c1e85901b24f7047fef1bf8da5bee3c0fd14e4d",
+      "sourceGitBlobSHA": "b18c7250516e7462a4a3d65cb918d6e991c5a738",
+      "sourceBytes": 653862,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-179.jpg",
+        "sha256": "0bf364beb731f98f8065c30fd17dd601384bc493342f0eae07b056c3e1ed83a5",
+        "bytes": 9216,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-179.jpg",
+        "sha256": "90566970b1bfacb4b5111f891e1da5cb5da25b63853fc079d083869ea6867818",
+        "bytes": 133633,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-208",
+      "sourceSHA256": "cdd92412ba535527fa5a46a3d15d4c4a57a996b41232b33c70137c78e6fee351",
+      "sourceGitBlobSHA": "971da0899b7c611c6f5e0bb26ca43ba2d05228fc",
+      "sourceBytes": 586292,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-208.jpg",
+        "sha256": "98b0ebbbbf4377b67bedb0e6346fb38279faab2a1c43ec5fd2f0c394a3f9f85a",
+        "bytes": 9382,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-208.jpg",
+        "sha256": "f3188dbf3ba65867411c8716c9dbe2ff5bcf5ad15d0eff7f402da2d644c3dac9",
+        "bytes": 137435,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-229",
+      "sourceSHA256": "71068c3190b7bdc0c7a648657eb11c9b87935430bde82d43f673669ff88c8a79",
+      "sourceGitBlobSHA": "dfa6baf8c8cb7d9431c6c4157a6fca5c1423e532",
+      "sourceBytes": 603125,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-229.jpg",
+        "sha256": "a9cc923cd2aaabbca472cd353c786a683db79088ea7646147739564491755aa0",
+        "bytes": 10035,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-229.jpg",
+        "sha256": "640c0d296af0759af3e4e445bbe707cb2740cc92c4efda39b718e3ced03b0139",
+        "bytes": 142327,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-260",
+      "sourceSHA256": "0cfb3d7d8d0d4a571d32c8d57a2fdf855684ae14e2a54a6b2ac849f3ac1e5d1a",
+      "sourceGitBlobSHA": "39918fe8112578d2ba03a3ca402b0b0af83319b7",
+      "sourceBytes": 598130,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-260.jpg",
+        "sha256": "23c29849128fa5f07b9d6106bf08cb0015eefc13e4cd2766df5ce6be113eefb6",
+        "bytes": 9892,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-260.jpg",
+        "sha256": "44ed51ca109c7dcc94b102a8a22394a2a44d63b0992a1273004eb2721f30d326",
+        "bytes": 146296,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E06-283",
+      "sourceSHA256": "efc6da9c8d8e218332304940d17ecb9de1a38b09adbcc9d77f1f3716e9ca31e2",
+      "sourceGitBlobSHA": "99af00d81052078c5584af232008512afd5d460a",
+      "sourceBytes": 642801,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E06-283.jpg",
+        "sha256": "15c29c53e64551d7374473df2e403b1ec90c1409b63c2974f753bf41a2d26573",
+        "bytes": 9444,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E06-283.jpg",
+        "sha256": "cc788eabffc9aa16bd33f99374bc6a7fc521fca450cf5cc3e75a889fcb3fee22",
+        "bytes": 149928,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E07-057",
+      "sourceSHA256": "e5bd49116c7094583d6725fc095b4c5ef346789530d7aaa5e13b9c3e67afff3c",
+      "sourceGitBlobSHA": "6eb1212b19bd575fa697d23ba9a927379121c12c",
+      "sourceBytes": 713684,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E07-057.jpg",
+        "sha256": "02b15c62662b10ef52eeb69aa12c0e669578c34f230be5795b3979415e932f6c",
+        "bytes": 8059,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E07-057.jpg",
+        "sha256": "dced0687294c1d864fa3ce35126dd410957c222ef1771b97ece888a8c149cbcb",
+        "bytes": 137239,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E07-143",
+      "sourceSHA256": "3a6b1bb973cb45318b9aac72385a11e4a4ffb4c69d5627b8ae83c6d74dd97646",
+      "sourceGitBlobSHA": "9dc0eaccf8b0b330a160f6f5050d11552ccb780c",
+      "sourceBytes": 588642,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E07-143.jpg",
+        "sha256": "2950b5cf7b13cda88f4194f9435d4a51b8b6b11086a99c888d733b9c241a9251",
+        "bytes": 9209,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E07-143.jpg",
+        "sha256": "bb4aed305ed28f07fc40246433a43d3e238ad00f13a1db53b664fed3190b7542",
+        "bytes": 148322,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E07-162",
+      "sourceSHA256": "879e84b4159b5c02130a26aba77b215c126ba236ea6d20760c3cd6f16c813424",
+      "sourceGitBlobSHA": "1be4aab2e3883d5de96e2d0519ca53b0500350f0",
+      "sourceBytes": 473458,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E07-162.jpg",
+        "sha256": "f35b2b43ed6d3c07f844ecb09e8d051971a90ac7a04075d6d0ce037320b75a38",
+        "bytes": 8907,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E07-162.jpg",
+        "sha256": "12be6132c58b526b3c9ce39697486e0d2e4e805ff93685a5aeedafef1ff2e99d",
+        "bytes": 116949,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E07-185",
+      "sourceSHA256": "4f618f4dd6c644b9a915676b22146cdcb62e760a5a64ac235afa5499b2c93d81",
+      "sourceGitBlobSHA": "322e0cfaa874e18aeddffb91d216e416b6f490eb",
+      "sourceBytes": 601771,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E07-185.jpg",
+        "sha256": "a04bfca4cfbbebe68cfaf3d9057edefc80bc2874f91df4253574e49236347ab5",
+        "bytes": 9304,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E07-185.jpg",
+        "sha256": "62d1b502b0078ec4a7b119c0339318c14c88649a7e956ee8c040e9c52d2df90f",
+        "bytes": 149056,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E07-212",
+      "sourceSHA256": "c9d8541a9b2473f6c5a8442ef090c0ba7aa61afe7bcc9ef48d63ea9198fdca07",
+      "sourceGitBlobSHA": "f4ddeaa976b32f228b2e9f21cb1ce330b826e5f2",
+      "sourceBytes": 728965,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E07-212.jpg",
+        "sha256": "8399269994049a06771f7f51fffe90871242a659c3c4fdb05dad84c44eb8b753",
+        "bytes": 9853,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E07-212.jpg",
+        "sha256": "5cbafcce2371a07bc02a1bd2132af12bd2f863124c920ae70aba29618cd1e09a",
+        "bytes": 170757,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E08-011",
+      "sourceSHA256": "5a16dca541f83cfd97f66b40e99eebd8fa28994ae4eb913e382c6229ef03b6d9",
+      "sourceGitBlobSHA": "d2ebaf12f1e2fad0bca1dc5be2e1004ada8e4752",
+      "sourceBytes": 606497,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E08-011.jpg",
+        "sha256": "2cc3451984e5c100149ed4b1c702a83f0baec5829b347104110e6124cdcbe845",
+        "bytes": 8898,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E08-011.jpg",
+        "sha256": "9527b890bea272052d8ec91123fdfe758faa0d04a7c1d67bbe7e6b732eb5e71d",
+        "bytes": 132594,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E08-117",
+      "sourceSHA256": "1775626ee222be07cbf0f54de1d497a3d3abcbc19a9eedfad9f0fcb10d829bdd",
+      "sourceGitBlobSHA": "b002393b09f43cfc37063480d80ad59f625904a5",
+      "sourceBytes": 732776,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E08-117.jpg",
+        "sha256": "76408b291ec7fd2c7ec7551f1f22a8e2a8aa6f62794e70f29491a64ad5ecd75e",
+        "bytes": 10153,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E08-117.jpg",
+        "sha256": "dda7aa7bfa75bfecd7acc80998caf97c6a6e3f13a5b5c88cef82982c330dea38",
+        "bytes": 157956,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E08-244",
+      "sourceSHA256": "e99377de474b39c557a962f9bdf1cb771f70125865a25f1dbaf48dc70cf10201",
+      "sourceGitBlobSHA": "149bd3b3027333d28419b3583ed479b245b1b239",
+      "sourceBytes": 707968,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E08-244.jpg",
+        "sha256": "40168eca7c14620a203d741a3f853c028275df95978e952ceb3045549fcac338",
+        "bytes": 10273,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E08-244.jpg",
+        "sha256": "97189eebd492dfbdbc7ea8294a385a83020c628b024b391e5de1670a5841b1b3",
+        "bytes": 148344,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E08-271",
+      "sourceSHA256": "666d70df669aad404effe07149f18a2747280b7e1a44d7c9d0d255c563e17c54",
+      "sourceGitBlobSHA": "2cdf7b02b985880ee4146cff37755254a347990e",
+      "sourceBytes": 770284,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E08-271.jpg",
+        "sha256": "7de30f1b8837dbfa7aa09f0a5a5d3ed8c2db00f3025c392a54e829c366cc6925",
+        "bytes": 10529,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E08-271.jpg",
+        "sha256": "2029c30927d5fe46b4c3f98a2f0dd3a95d655d3f4c6a9e40b6936442842f4523",
+        "bytes": 163479,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E08-281",
+      "sourceSHA256": "77c287e2ad6eda36a335dcc0440ab41fc5e09942c76366abd8cac48984b3e64b",
+      "sourceGitBlobSHA": "9c4f2c66360e8a108e5ea7c6cb8ea52240aca29e",
+      "sourceBytes": 742612,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E08-281.jpg",
+        "sha256": "3a8c1a58c7208e2102b9305da14a5d6b3639d083a4cc9affb0039f767bfc0cfa",
+        "bytes": 8929,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E08-281.jpg",
+        "sha256": "e0885b2bd8f4223d4c03b155e426087d236b0c74d4ad491f7f8f57794aa015f0",
+        "bytes": 143851,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E09-DES-001",
+      "sourceSHA256": "ca9d210083bd15046bc14973207569ad56726cd4163725b2c33381e484513419",
+      "sourceGitBlobSHA": "2e464dc1072385860a54c5468f3625bd1ba4be08",
+      "sourceBytes": 497795,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E09-DES-001.jpg",
+        "sha256": "26143c4661736be3b9c338188904cc20f9d6226076b813590b5b1d0c70bd5618",
+        "bytes": 8273,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E09-DES-001.jpg",
+        "sha256": "e6c39b044e2f89a3b589f5b5c8c0167081b51bf3725c7b9c1a5a9672a1875de6",
+        "bytes": 114466,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E09-DES-002",
+      "sourceSHA256": "e6610d94d391b7a53328bd8a853d16b8ecd7a744c82640419ce95c837a0bc85f",
+      "sourceGitBlobSHA": "1a3279a9da40fa559acc7ae43f81ceaa3dbc4f4b",
+      "sourceBytes": 622047,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E09-DES-002.jpg",
+        "sha256": "ae227f7f8c886755bde09fb1f4b0d943d01b349442f1eec45daacfd10e0f2ced",
+        "bytes": 8511,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E09-DES-002.jpg",
+        "sha256": "f560d127a03cf24cae25bd51660930acf9c1ca9f4b78ad50c7434295f2bd4521",
+        "bytes": 142321,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E09-DES-003",
+      "sourceSHA256": "99d3d24d985a334fca020d206e7ce3f62c6618560f4e0d55a9d10aba21c4833a",
+      "sourceGitBlobSHA": "d0a25d78f21c14548e75f4992279314db37c3fd8",
+      "sourceBytes": 556594,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E09-DES-003.jpg",
+        "sha256": "fb31c36cbc930d1776964fd607d1e878835a4d8ff5972a046e385f9e39e46224",
+        "bytes": 8813,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E09-DES-003.jpg",
+        "sha256": "0fe78f478073bb49d6cdca89c9c762b9f76f76d13767643ae28956880537da19",
+        "bytes": 129325,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E10-DES-004",
+      "sourceSHA256": "64bbf5f4df8b7a69047a5ab3c1d4ee5cc8ad70cc49263cf9025e501caa04b415",
+      "sourceGitBlobSHA": "731460de08ff0e866b74aa4077110df074d1c9e7",
+      "sourceBytes": 471202,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E10-DES-004.jpg",
+        "sha256": "a22b7ae70e371ce01b920eb60b647519f83e7f4992c23302d542cd8558994433",
+        "bytes": 8125,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E10-DES-004.jpg",
+        "sha256": "9c25f3dd49a3e539005c031a5530f7c869bf28dea203d3bc77be03f232d9c8c9",
+        "bytes": 104119,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E10-DES-005",
+      "sourceSHA256": "a698c71427a6b76bc044b1f6d4bc09d298738716c62182b9fc904f046aeddac9",
+      "sourceGitBlobSHA": "b6ab5106dc15a888aec26d832d3c33dc1cca6208",
+      "sourceBytes": 461625,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E10-DES-005.jpg",
+        "sha256": "e0fb4ab44e43bdb3658573479c47778079d5db2a4315c23bd1497abd938bd653",
+        "bytes": 7901,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E10-DES-005.jpg",
+        "sha256": "da2ddd0d8530f0ee3c96f318ec410fe1c55ce6ed9332a984003515a488a60632",
+        "bytes": 99831,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E10-DES-006",
+      "sourceSHA256": "90354a0ae27e745cfb91f730e21d37ab3e204d36f40c0c9601089e7fd7105401",
+      "sourceGitBlobSHA": "80798c58cc0337f11fc24cb80ecef7ca72e7ccb2",
+      "sourceBytes": 571925,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E10-DES-006.jpg",
+        "sha256": "8ef6fb262ba4aec332af4ad4025d1790e729ea056811f836769f175ebc610db9",
+        "bytes": 9150,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E10-DES-006.jpg",
+        "sha256": "94253f6d53a491a6c896083ffbdf22d6d90e231c4534099c0073367735d54c09",
+        "bytes": 134168,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E11-BRK-001",
+      "sourceSHA256": "1385e2490878affeaf81a29ab2a67adc32a0e60ff482aa58e7e56c3550e02a95",
+      "sourceGitBlobSHA": "007c71f714f73788c45df7cab60e106cfce89e73",
+      "sourceBytes": 584265,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E11-BRK-001.jpg",
+        "sha256": "c5d1b816f7436a8c1a1bdb227c17470393789fbe4f6fbd0cb83e7d98fda98486",
+        "bytes": 9142,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E11-BRK-001.jpg",
+        "sha256": "2413864371ea52895443da48ea1f0050f1f520ffe8dac7927b4253f52ecb8f04",
+        "bytes": 130974,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-002",
+      "sourceSHA256": "08c230cdda64202b0ee61a9688946f1b780887c52b65529c22a5777518a970e7",
+      "sourceGitBlobSHA": "1d04adffeacf3f1db9d46c2bdbb234468cda6a7e",
+      "sourceBytes": 678547,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E12-BRK-002.jpg",
+        "sha256": "7b52c5e1ab53f9d0ee8e9ce2dc2387a6ad43b5ad1432a12a4384fc440b174438",
+        "bytes": 10569,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E12-BRK-002.jpg",
+        "sha256": "0989c877ed3a47cea1a7ed9674ad459f6b4ed893d2f383fc0969641f6b790a61",
+        "bytes": 153747,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-003",
+      "sourceSHA256": "0f2cb67ec065a84926c33c0069f480ccc1b71aa17b2ba7a50c425e64aa6d264a",
+      "sourceGitBlobSHA": "a6a156737cdd647786214f442842ece20800f52f",
+      "sourceBytes": 550411,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E12-BRK-003.jpg",
+        "sha256": "b9dfc4330894e0ffa391748ecfb6e451972188878bc548a86825fcf990c378d7",
+        "bytes": 8937,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E12-BRK-003.jpg",
+        "sha256": "5dd432dfcbe192ade8bb37ab8b26a5488402b6196c00d28f866fef6f6f91b9e9",
+        "bytes": 126336,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-004",
+      "sourceSHA256": "873dbd5f48e5354cd4678bea2c91165ebf4bc018c2e282c8544f6cadafbc717a",
+      "sourceGitBlobSHA": "7a267f62f5f80f6a9faad53cb3d5708401838f0d",
+      "sourceBytes": 536276,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E12-BRK-004.jpg",
+        "sha256": "8b00581b7d31ff7fa4ce357abeaa208bdc66bed8a521af8c144d62eb8df6ac90",
+        "bytes": 9211,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E12-BRK-004.jpg",
+        "sha256": "4d2ee2fe3877e4cfeb3d136dc9a957db2ad699f2def4d10b11f6a05a4beaf48f",
+        "bytes": 121164,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-005",
+      "sourceSHA256": "c32faa73fc0d19562f388958f1b1ab0f7177c66c925eec775a00621d7eb816aa",
+      "sourceGitBlobSHA": "c97188b3ec1db4b8b3572ca8088ae4e013024fdb",
+      "sourceBytes": 582919,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E12-BRK-005.jpg",
+        "sha256": "033aaae7b3ed3c3a747f1da3649e7a45500f7550f0bb6f153c41cce4c8f93a2f",
+        "bytes": 8277,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E12-BRK-005.jpg",
+        "sha256": "5266b70993ff3cc3cd9365d5da0b075cd65c6d22f3bd7b57051310c3b03b23ed",
+        "bytes": 121622,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-045",
+      "sourceSHA256": "b07f1d21c8443783defcc6ebb8b79c5423e7146cf0ff73ff8d5de826fa92f425",
+      "sourceGitBlobSHA": "bbbfb7894cd27fa456df03f5f14adea1263fe706",
+      "sourceBytes": 693283,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-045.jpg",
+        "sha256": "a1c328bd08350097ee9a43268b37a6da9b7acfe9feda594a7c14459a6f366f64",
+        "bytes": 8897,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-045.jpg",
+        "sha256": "bb70d47a29719fd90826109d864dac9389d16590a7c0fbe69b30ffdc26795d07",
+        "bytes": 142197,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-058",
+      "sourceSHA256": "70b1484b390e7d3aadb5fa1378719e86ee23d5e4001e612e94a46fe27285d1d8",
+      "sourceGitBlobSHA": "ca49f52c2f6f26a72a65099bc1cd8e2bfdbb7d5a",
+      "sourceBytes": 441518,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-058.jpg",
+        "sha256": "acae2284d809b3dc93069845cd9fb0d181705c55cb042ef33dd8238def2d4de2",
+        "bytes": 6591,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-058.jpg",
+        "sha256": "1d5327acf53fe3c0fcdd56a6e56e1fb97cad847e63218e6d51db94e4f3e53a11",
+        "bytes": 85226,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-105",
+      "sourceSHA256": "0796b6e4b543ca95bafc4c634bee5921b4ebf42613a5bfe3d51db0cedfb293ec",
+      "sourceGitBlobSHA": "8e9af08dc4e436f12652086ab771a3c0d9c13781",
+      "sourceBytes": 886718,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-105.jpg",
+        "sha256": "ff37b685b301c66c2d31a79d8a4147b5b1af2a0951b6c9b1d8eed272eedba23d",
+        "bytes": 8708,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-105.jpg",
+        "sha256": "d0bcb617bb9dcb23c1455538da331eb29db6d039a22dd051c2bfa2d322fdfc2d",
+        "bytes": 174051,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-137",
+      "sourceSHA256": "1510a83ca78ed30ddde3e8c2cf4b0c5135409ff189cb601a3f540a7eab91ae66",
+      "sourceGitBlobSHA": "749d5dbc72162cd291d64403cab4af06c4238842",
+      "sourceBytes": 570964,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-137.jpg",
+        "sha256": "c889e02a63b95d0f893a5e4d68171b047d95c33957ea9b18b418690b7287f6d9",
+        "bytes": 7432,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-137.jpg",
+        "sha256": "ad95d9ed348295b229202d0dce63a91cc4712f4016b6a8580a01627fff3b45dc",
+        "bytes": 113501,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-157",
+      "sourceSHA256": "831430b2d7cdda5f4479c49894f29a5352b4b0ab95708b3241d19511de590d32",
+      "sourceGitBlobSHA": "d1659096a6b28a94de877fde16d5c92266793474",
+      "sourceBytes": 586447,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-157.jpg",
+        "sha256": "6f5b58a567cd85bdb9770c9b35329f0197663ce75c2c7ffbe0521acb1b8100b0",
+        "bytes": 7565,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-157.jpg",
+        "sha256": "0757703d16da3f8e25435f969eb1f10af352769f19056ab495abfd39a5c84c92",
+        "bytes": 117250,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-194",
+      "sourceSHA256": "e512aa5ce267c017215fe187dee8e8e609836611dac271e499c88487eb6ecaac",
+      "sourceGitBlobSHA": "f8d98afa3912d8f3ff45bdfe61bb49ba6becad6a",
+      "sourceBytes": 414382,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-194.jpg",
+        "sha256": "cf58c6205398c3911d882ff9f6ebf70083584220ef88e60b0d2285d6f69f1af4",
+        "bytes": 6155,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-194.jpg",
+        "sha256": "dfe8d238764b6451653862d0ab5795d467d0b051bc8718687ea63d3c13f1c6ba",
+        "bytes": 77806,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-202",
+      "sourceSHA256": "49fcf8fc60a975b73faa01adc0f68fff4e3c9f5ab56989c40a718c0825ad9c08",
+      "sourceGitBlobSHA": "78624042b6075b45a8f6a135e92425266063dc03",
+      "sourceBytes": 557488,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-202.jpg",
+        "sha256": "4df3890bccc2fc8f5877a58b95ed9a08fdd41794cddf80722d41e71e2869b3ab",
+        "bytes": 8296,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-202.jpg",
+        "sha256": "e54b2c40967675f4175a7be4f86af2e1dfed486debce5e86b05c43d9294abf6a",
+        "bytes": 113569,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-233",
+      "sourceSHA256": "8ec8e595774b2c8b010d2d509bc75c47aaaadaff033c847bdfee485e42fd7acf",
+      "sourceGitBlobSHA": "228b28d17ccb55f278c35b3bd7c0b659cd3b34ce",
+      "sourceBytes": 597248,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-233.jpg",
+        "sha256": "e2aa7b26b8f9d44115fd829e2ab1b6fb949c798d982a49c2093f85b3ee22fdb2",
+        "bytes": 9758,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-233.jpg",
+        "sha256": "79cdf9af539caee4ecdac5d302143fcb43eda6c0c3c90201d8f66c68049e1e24",
+        "bytes": 127711,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-261",
+      "sourceSHA256": "4fcf8dbfc7b620556d2e9fee9e05db116adc38df62c3a9c1ff31d58d087c5e3f",
+      "sourceGitBlobSHA": "04c52ba90811d43018d50172d72c8e36f6906781",
+      "sourceBytes": 756284,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-261.jpg",
+        "sha256": "699943b42e20531bbce79243d06ab336a49a2f5957bc87017e61ff4e31ee7d8b",
+        "bytes": 10603,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-261.jpg",
+        "sha256": "324f3c12c8ad20cb359d4c58df36667e1bac232379802ce15660593a4fe24f8a",
+        "bytes": 158255,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-E13-287",
+      "sourceSHA256": "6cd723a5b839fb592c84b80c57fc0cf3bc41d0913a03be42e3163508bf057c03",
+      "sourceGitBlobSHA": "e7e4e1b761410b7941ebf1cf596a4a076278d23f",
+      "sourceBytes": 751807,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-E13-287.jpg",
+        "sha256": "f0c5c25f7f50bd2d5cdf78a90156b42524e604098fc99612639198fcc8e6608a",
+        "bytes": 8987,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-E13-287.jpg",
+        "sha256": "cfb56f707fb96377230b879ac0b74db2eae56e33790871ba343ac26dbf030cc3",
+        "bytes": 150996,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R001",
+      "sourceSHA256": "affda2940fac03f9e952343d067f469eacaba5e5c8c46e38b1430ac5b1daab60",
+      "sourceGitBlobSHA": "753d1a2872b959787be4197b437dea35348138f9",
+      "sourceBytes": 527465,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R001.jpg",
+        "sha256": "ecdbe358c5a881b9cbc2e424279e40d08b127523f9609388403c6cecb8b81bcc",
+        "bytes": 7849,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R001.jpg",
+        "sha256": "0039110d157ad0d958ea18482f14c32e9a3e160e8ad63704607a992b4db448b9",
+        "bytes": 108285,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R002",
+      "sourceSHA256": "4b4fe1d8a519f372367105b3cfca954b1b046b8e8cd68beff61babfaa4d9dc4c",
+      "sourceGitBlobSHA": "d458dec2a15d8ed3a5328793cfccbd9f3f539830",
+      "sourceBytes": 432461,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R002.jpg",
+        "sha256": "d82625de07b663232be8b0515cb7317a09be0bf9ce10e637bd125c10694305cd",
+        "bytes": 4795,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R002.jpg",
+        "sha256": "8676ff178de999fb53e50d3d5c334958a5f1dd22b5bc2854f6478dbf184c67eb",
+        "bytes": 81648,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R003",
+      "sourceSHA256": "f31d3763ba542e1a0fbb05756d2bae883f2cdfa36a180b0c9b1891ba4e57b8e1",
+      "sourceGitBlobSHA": "f991f7a97ba4d0106bf4efbb38b116f5730e058f",
+      "sourceBytes": 509787,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R003.jpg",
+        "sha256": "c78a6c9cb03b76c682d62cabd18d31ff68f99658cc1fc1601e5bb72dabccb441",
+        "bytes": 6907,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R003.jpg",
+        "sha256": "7dac3fbac0220143dd6ad61a75d8c4550c57d93c1322ed8c7a22ae9063d8cb77",
+        "bytes": 104797,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R004",
+      "sourceSHA256": "f3af240b93bbaa6eb33dedf31d8bafa45fdec1efd6a0d13dd69701530a5885d4",
+      "sourceGitBlobSHA": "91dce53186100140de28d5454eb54bc850dac449",
+      "sourceBytes": 511547,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R004.jpg",
+        "sha256": "2abcf2b4b3111b42badc1bb6358a9a4ba610a72bf6451f6a3b8d5a67dd25abd2",
+        "bytes": 8084,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R004.jpg",
+        "sha256": "52860b87be6ec4908a35e55df687aa8828ac27698f90773c161fd4f53f11bc18",
+        "bytes": 107193,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R005",
+      "sourceSHA256": "0edaf61c7e1c72ee834bc3aac129475cc78a98b943ad15c05d3e05674376eeb4",
+      "sourceGitBlobSHA": "2e7b155337a877616a8f484a45f06d4b181cd53e",
+      "sourceBytes": 544590,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R005.jpg",
+        "sha256": "42a5cd7952e28b9de7689fd1ec2f4365213b041e1f6f03102cca16a6108a7183",
+        "bytes": 7312,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R005.jpg",
+        "sha256": "c6fb2f3897308ee3a82031e634909e08346f93100bfa1ad51ae78c38b03a08f2",
+        "bytes": 107606,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R006",
+      "sourceSHA256": "fde5f6d83afed4b4f17626ec2ad98d872ee7d5c9fad4951580f1695b7cf4f12b",
+      "sourceGitBlobSHA": "2abef54740d0e43a01bd3813583200430949894a",
+      "sourceBytes": 561796,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R006.jpg",
+        "sha256": "4dafd72c51d371bea7e3bfbb6b182f3175c5add0a67c97d82d336c993a565241",
+        "bytes": 7443,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R006.jpg",
+        "sha256": "0fd5ef3acc0be64b09c358e827bbfe74778264072d9351aae93d1e5874aa21c2",
+        "bytes": 109598,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R007",
+      "sourceSHA256": "63fc497e783d9b55b850b9429b684d468f4e843bcc1f97f94e7e14f31d0292dd",
+      "sourceGitBlobSHA": "ac3e8a386c088b3bd982121a2b6c3bad5db8bf77",
+      "sourceBytes": 667941,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R007.jpg",
+        "sha256": "fba8b3d1a991ffbede71a5f54f19da4866c71d9e092026d08c58f25c7921dc26",
+        "bytes": 8495,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R007.jpg",
+        "sha256": "cc6cdc43f2c38f02e025e04e2173a8492f286c475e56b833c8a34d7ac9b84052",
+        "bytes": 136465,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R008",
+      "sourceSHA256": "84126f4a7a2a4f8f4888419bcc44d311d7da059856ac907c20951ef178cadadd",
+      "sourceGitBlobSHA": "a25ed9691d31b1ad591967f1f84d30cf4fd04c36",
+      "sourceBytes": 567404,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R008.jpg",
+        "sha256": "a21cb79089ce96f9be49a706c570b16e36732e1932c3906dad0cff574de2e0f6",
+        "bytes": 8564,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R008.jpg",
+        "sha256": "c667dd182a83b7429cb4dbd68a49533197b49fce02c42938ee13d375d1e1ee12",
+        "bytes": 117908,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R009",
+      "sourceSHA256": "502b4b1800da84b2eff049468c10f1c744d49c358bb5a00fc474c67aaeb65814",
+      "sourceGitBlobSHA": "36bd57e7ceaa9cb63cbe6a496b731ec9e9526b5e",
+      "sourceBytes": 573427,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R009.jpg",
+        "sha256": "11dd3f4acaf6a7a87da043e9dc43da434b9d4050e2e3a70d55d2e9a029f5c975",
+        "bytes": 8053,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R009.jpg",
+        "sha256": "ee616594bcd5c8df7ff5c0f640d8f12d627a8caca2842af192575da4e247c32b",
+        "bytes": 115398,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R010",
+      "sourceSHA256": "c14cc4a6fce1bb1bed054c11ca06bbd7187586a35fb60b438ba21925c1555288",
+      "sourceGitBlobSHA": "3f64038eeeb5cfb40d5f13c1b20593a854446ed1",
+      "sourceBytes": 630139,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R010.jpg",
+        "sha256": "e95a3ed02123aae7a8a708ee4fd6f2d7b46036836ddfb3f7a2bb1de8844bcbd2",
+        "bytes": 9045,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R010.jpg",
+        "sha256": "1f6c040e19288d5ccd77af1b162f4d31dc78fd7c298afce388e8cd3d57b479b4",
+        "bytes": 134223,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R011",
+      "sourceSHA256": "1967d1c69e76c3d537a2751679f1357ffa4acb99c124fb2b981fd1f8ae9eb2e7",
+      "sourceGitBlobSHA": "0f015bee9c3334f2cc0db8170bf48e43fd24c709",
+      "sourceBytes": 335374,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R011.jpg",
+        "sha256": "5da8ef8a8ddabc918d4fb96de10e51f01251697d6211d95277fd521c54560490",
+        "bytes": 5387,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R011.jpg",
+        "sha256": "94a341daaab03572bf5100991363340ab940267f53da94f3dcdcdf33d0c107e9",
+        "bytes": 65340,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R012",
+      "sourceSHA256": "cf8a0d682a241087c14399c591da8b86ade9c41687821c2b54784725edcc519a",
+      "sourceGitBlobSHA": "10f0ba453c46ac1161d700049db68a248cdce597",
+      "sourceBytes": 710792,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R012.jpg",
+        "sha256": "fae820002527428fb097f35cadad64ca72bbef58aee12c6e782d967a92a0f174",
+        "bytes": 8824,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R012.jpg",
+        "sha256": "69fb203fd3dc8367f8462fefe4892ec8aed4fdb7851ddfce725ebae1f48322e3",
+        "bytes": 143912,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R013",
+      "sourceSHA256": "063d38e240ca3af821f9d9b817c9d7b9cdb81dd801192887601fb296964466af",
+      "sourceGitBlobSHA": "96914235e714e8a3b7d471c50fd52356926e532d",
+      "sourceBytes": 736772,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R013.jpg",
+        "sha256": "588095410581732ca3f752be354ac91ddd4bda80ad766ed6b3850a3090279b75",
+        "bytes": 8725,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R013.jpg",
+        "sha256": "6e1b84934a6c1af9c1e0dba22e2741a35be35523b5b7337c733bc09af2582c09",
+        "bytes": 149236,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R014",
+      "sourceSHA256": "b9ddfa557804833c27d5fd0dd2764c6167a8dc9742c7b59366ad6a795bd1c8fe",
+      "sourceGitBlobSHA": "177f0c3eb571ac8e6aab3f4823860ad7163bbe36",
+      "sourceBytes": 773677,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R014.jpg",
+        "sha256": "c7e05fe04e0cd4e69eabd4bb3372f4b3af9a204042298af6dc49432df349788e",
+        "bytes": 10137,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R014.jpg",
+        "sha256": "403f0ee1890dd2dceca594a720ccc07057093124e114f3fa49823785f036ec83",
+        "bytes": 162734,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R015",
+      "sourceSHA256": "479c10b93368f298a63c5ed9d5ed127c59d2f31639baaee2fcc035d79b2081e4",
+      "sourceGitBlobSHA": "e4371c5cf539b20f917dece22f4fc1d6304aff8f",
+      "sourceBytes": 691693,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R015.jpg",
+        "sha256": "380fa7ebd21736be3583d361aa4b00561db33cb8bf3696001e11776d9da1d356",
+        "bytes": 8680,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R015.jpg",
+        "sha256": "3e8f21115ffc6960436dd879d166b9de4f31bbd0648b9cb3c0026b6199201b61",
+        "bytes": 138891,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R016",
+      "sourceSHA256": "f4551a6b0c17863684d185ecd84b1e5ae49bfe26c8cd4c2f5dd04103979fed48",
+      "sourceGitBlobSHA": "1c4f452ec058f2377ac010dfeb3ee919f86aa714",
+      "sourceBytes": 797840,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R016.jpg",
+        "sha256": "51eba76c1afaca60070dec604d770b797c9fe5af191ffbb9eed04214a9448e40",
+        "bytes": 9024,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R016.jpg",
+        "sha256": "5488c37a3b6765672eb0649763f40bea2b92bf9d5449d33409e6fad7dbc350ca",
+        "bytes": 160650,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R017",
+      "sourceSHA256": "9fb46f51a1723371f7f0423bb543e3c4650bc0e21fde18875d7a6eff6cd2df68",
+      "sourceGitBlobSHA": "61e554f440373107a74ad2f89b9a3d22b54de460",
+      "sourceBytes": 663788,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R017.jpg",
+        "sha256": "7e4c452cb58107ca4c8c591348f568fd90ed657d1101ba2b4bfd39b93c522a74",
+        "bytes": 8459,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R017.jpg",
+        "sha256": "2fd7436548ec4667c8e425e280abbb0c33b685084a243575c39246bb136a90df",
+        "bytes": 133499,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R018",
+      "sourceSHA256": "52da587585ad86a5e98a189846d1c3f5a63ddb2685f96ef123d6b18e36f19844",
+      "sourceGitBlobSHA": "288a914dfa7bd9162734b2caf0c3dd141e6573e3",
+      "sourceBytes": 686477,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R018.jpg",
+        "sha256": "0f7d770e0748f677a7f1c8e584dbfc674d11b080ffae62ace1a79ff8eef01a35",
+        "bytes": 8391,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R018.jpg",
+        "sha256": "8c3af9709b4c0612a398171657e1a8dfeec431cbd61fa46b5695dd7f438da311",
+        "bytes": 136579,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R019",
+      "sourceSHA256": "b8d1d5f2e126bd581642a62c95c2158dfa9b52466e13f29b2118c16c9ea7bc6a",
+      "sourceGitBlobSHA": "4679244c784130f78890c5fc205c81fe79dadadc",
+      "sourceBytes": 854806,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R019.jpg",
+        "sha256": "4cda85d7d84b4eaa135d36c4d53eb2923f2744f10a4eba905becc3cdf549bdd2",
+        "bytes": 9800,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R019.jpg",
+        "sha256": "608a69fb9240045dc46b4fbc74e4a0b19e895fe8c8c6a9caf3b63dec89b4ddae",
+        "bytes": 172262,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R020",
+      "sourceSHA256": "25e28ef5715afc829e07e7bd080942ce62c5b34b5e0dc895bf9b04fbf109a19a",
+      "sourceGitBlobSHA": "9e34ba98e53636784a0d89dc527b43e4cf776011",
+      "sourceBytes": 658959,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R020.jpg",
+        "sha256": "75d38a8193cce2b677f12d58b8fad715c5b3c0327f0c583aae4fca7b860df047",
+        "bytes": 8700,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R020.jpg",
+        "sha256": "f75c8572f474abc03553e89e454a18015da279cbbff77985b95727a4c7cacc42",
+        "bytes": 136366,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R021",
+      "sourceSHA256": "f2d4953119c07793f36e8d73711e13399cf298bc6870d43b38c991c2e4a8e513",
+      "sourceGitBlobSHA": "9d2ea0d74369b8d335d757a6f30b29938cf3e6eb",
+      "sourceBytes": 642530,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R021.jpg",
+        "sha256": "ff33923c3cebcbee28371354f138ded6dedb31b2c95a5645b4fe53560b7b6edf",
+        "bytes": 8510,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R021.jpg",
+        "sha256": "a3f19630fd82980fc5c1c3282f58871c07c1facae5859116a2d4150dec778255",
+        "bytes": 128449,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R022",
+      "sourceSHA256": "3fc55891070d31575d08867220ebc2cbfbea306d2f6cec85544974da394e806f",
+      "sourceGitBlobSHA": "d0dce7c72fb114a20d501edf7fa27648d25654b3",
+      "sourceBytes": 584429,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R022.jpg",
+        "sha256": "0a2ee426cc06d02b30ec83ea43394e7dac2b8863fc8be52ea2ffa5f978c8cdcb",
+        "bytes": 8355,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R022.jpg",
+        "sha256": "3cd49c1141267e665ddfa13c4deb67aeb9872b8c7ae68ee47dbc811cce2564ac",
+        "bytes": 121719,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R023",
+      "sourceSHA256": "b48feaab3f797b5cb680f9608856baab3d58275ecb8322a559e273b30c10d70f",
+      "sourceGitBlobSHA": "4c08e6e695ffa4931589812f29974cbf0ad15245",
+      "sourceBytes": 759296,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R023.jpg",
+        "sha256": "bca4235b7791eb76979a8e589f2a3cf577ba926c044809eb835d0c5a60ea9958",
+        "bytes": 10048,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R023.jpg",
+        "sha256": "f212047db4c27a1f0d08f680682812de42e78e29a954d12b9a0a11f8638f9b3f",
+        "bytes": 158800,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R024",
+      "sourceSHA256": "ec0ef651dfdc160c12e78d7db658c72cc704b176b6832969cbe8369f704eea0f",
+      "sourceGitBlobSHA": "71a2f6c7f8bd014936358d7cf4e7400f6b24967e",
+      "sourceBytes": 517639,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R024.jpg",
+        "sha256": "be68763aaae4cedee2f3bad9698723b83a1fe39073cd6befb9fbbc9c25345c49",
+        "bytes": 7779,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R024.jpg",
+        "sha256": "609e11be462bd41666e7e6e4c972ab4a7856fca6ad4f887e09c818346cb8c613",
+        "bytes": 102710,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R025",
+      "sourceSHA256": "38509b7fef2a542bdb45683ba7f18aedbb1a64febbcf9036c567c0b1889af501",
+      "sourceGitBlobSHA": "a1127901a72333930aabc2a326476646eb4b5112",
+      "sourceBytes": 491329,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R025.jpg",
+        "sha256": "1669029bd72a8d26a9b1da551ee0ac6c266e8bc0f9b969f525b17baab61f8720",
+        "bytes": 6944,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R025.jpg",
+        "sha256": "f31ee7d5d52f12dd21a66f466275813fe3d6ee2060ddcfe116a18b53fde4155a",
+        "bytes": 98171,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R026",
+      "sourceSHA256": "5724ef54acae8fd3fca969ecc9fc8d463a6d4bcac0f15cd14bbbc344b551fac0",
+      "sourceGitBlobSHA": "2780aad1a91b1cc6d4ffcb87a27f439181d2a98e",
+      "sourceBytes": 635145,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R026.jpg",
+        "sha256": "43f33639b827b184605cb45c08e36dbfb125150a36e8bc6fdbddb180dd117cba",
+        "bytes": 8122,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R026.jpg",
+        "sha256": "42ba19cab0623fe5d0a122567524102f08ccb3d3ba1139a9f21fab6a79cab797",
+        "bytes": 126666,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R027",
+      "sourceSHA256": "c40657eab9f3cf1e23ed1f467d147f4fd135d6d07fd19b8598905c18bcf7673e",
+      "sourceGitBlobSHA": "baf1feb678a55116627f739e602da8d67096c16b",
+      "sourceBytes": 722433,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R027.jpg",
+        "sha256": "b965467a7fb44a1801d161b96bf97a53934b7193564be33d52fe336ba8497484",
+        "bytes": 9048,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R027.jpg",
+        "sha256": "082410cbac6ac309295b50fcc97426ca4bcc7c7be1208f55097fd7fb00cbbd7d",
+        "bytes": 146628,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R028",
+      "sourceSHA256": "3eebe10580138e4bcd1bcab9d170f6ee05d7b15a6f34d3937cf328ff513f7766",
+      "sourceGitBlobSHA": "8f7effd8cf9e29e763ee44cca4c96f4e7a0c9f52",
+      "sourceBytes": 653738,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R028.jpg",
+        "sha256": "9b2a9777b65e6a9c29201e8ec8f3ceff15c78801bc143d3c1d0e0532fe478e81",
+        "bytes": 7750,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R028.jpg",
+        "sha256": "ecb9f5ad088d52f7e147f3295749670a71103bbd93e402136f3c87ed954d16e0",
+        "bytes": 128140,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R029",
+      "sourceSHA256": "86922d5ee79a1ddfb717dc990b4f526cd047141a84cf53bdc91c479e1dec8bed",
+      "sourceGitBlobSHA": "db4e26289b1ca26816cf2d944505048fd895af25",
+      "sourceBytes": 669046,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R029.jpg",
+        "sha256": "d01eb3d9c382a2c1cd5239c488685ab4b4d198569f38fa970fe6c1a80057e1bf",
+        "bytes": 8230,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R029.jpg",
+        "sha256": "8570775b9ebf50f8912707f673c218f4cbe8528fc9a09b0ce229aae1e78b2f68",
+        "bytes": 130555,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R030",
+      "sourceSHA256": "a3958f344382b1d71d7395fc7e5d34f453d5017888537f2a7b239ff2259f5dd7",
+      "sourceGitBlobSHA": "ad2bd15589c7fc7f2fc22391ba30f8beaf309a20",
+      "sourceBytes": 655170,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R030.jpg",
+        "sha256": "7c52c1bb1edec00e7e7be7323377729afe1c3ea5bbd1951df5e67e28706b47dd",
+        "bytes": 8326,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R030.jpg",
+        "sha256": "60ab36ef7ccdf50766677dd4848635ac2107bc034f8c39a70cedbd2259a60c00",
+        "bytes": 131704,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R031",
+      "sourceSHA256": "3f547336712efcb92af0876d746dbbcf6a5f4c7337ccc146130d4fa3dcf60c36",
+      "sourceGitBlobSHA": "74b25b43c253b82ba30c0e813564808d7ca43529",
+      "sourceBytes": 636320,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R031.jpg",
+        "sha256": "0bd995f47c2c98499da36f103ba487fd7612e64dcbb5e07f5a27960e3a371134",
+        "bytes": 8954,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R031.jpg",
+        "sha256": "0d1edf72573497804f2d136ae32b43fabf4b5505a862588cb4bf11b715292c10",
+        "bytes": 134739,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R032",
+      "sourceSHA256": "9589a421ee5993a78fef0ef94434c35f86ba1a795f5c448ca4ace376933e1e32",
+      "sourceGitBlobSHA": "cd94b2483674b2d4c42a897893046a9bb26ffe5d",
+      "sourceBytes": 622968,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R032.jpg",
+        "sha256": "be8881ffa27221ad2dded54d562b39553a99fa3061fe2007c8451670f2b7c7d8",
+        "bytes": 8650,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R032.jpg",
+        "sha256": "25e6f4d21617d5f39ae2e630b44f1e2aa6383a55967b4d97b193541f29471622",
+        "bytes": 125224,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R033",
+      "sourceSHA256": "ede0f6eaf704d4d8e33cdd7ae6e975aa88877345bc379c0affc2e30bf6539186",
+      "sourceGitBlobSHA": "3d97c8e4267048911bea3def7630f843242b12e2",
+      "sourceBytes": 681158,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R033.jpg",
+        "sha256": "4d258d687e7fbf627b519b08c2364041793aad8a234dd1fa13d9ffa0cc2dc7eb",
+        "bytes": 9169,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R033.jpg",
+        "sha256": "e5efe15db835fe603ddc4564f8181a7b1c1b6e2b62b881e2b864e29a444a1fa6",
+        "bytes": 141348,
+        "width": 960,
+        "height": 640
+      }
+    },
+    {
+      "recipeId": "JJ-R034",
+      "sourceSHA256": "29f8cf008329547344d87a6981a3ed417889957e8ac068fc1baed1b13a063884",
+      "sourceGitBlobSHA": "0ade76ed5a40d055173552a65c68f8a566c99e29",
+      "sourceBytes": 685778,
+      "thumbnail": {
+        "path": "assets/recipes-v3/thumbnails/JJ-R034.jpg",
+        "sha256": "b30a37a661b53f32541191793b5faa3ff7df527f5967cab457c0aa8b6369c35d",
+        "bytes": 8772,
+        "width": 192,
+        "height": 128
+      },
+      "detail": {
+        "path": "assets/recipes-v3/details/JJ-R034.jpg",
+        "sha256": "fb2e54434be9a7be6706fa80845990ad4bf67ccaee3b3e878c10e5d5fb7fc7c3",
+        "bytes": 132987,
+        "width": 960,
+        "height": 640
+      }
+    }
+  ],
+  "totals": {
+    "recipes": 150,
+    "assets": 300,
+    "sourceBytes": 96304512,
+    "thumbnailBytes": 1295287,
+    "detailBytes": 19909541
+  }
+}

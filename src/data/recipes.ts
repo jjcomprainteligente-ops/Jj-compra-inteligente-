@@ -1,6 +1,6 @@
 import type { Recipe } from '../domain/menus';
 import { recipeMessages } from '../i18n/catalogs/recipes';
-import { V83_RECIPES } from './recipesV83';
+import { V3_RECIPES } from './recipesV3';
 
 /** Stable culinary data. The Spanish fallback catalog preserves existing identities and saved lists. */
 export const LEGACY_RECIPES: readonly Recipe[] = [
@@ -129,4 +129,4 @@ export const LEGACY_RECIPES: readonly Recipe[] = [
 ];
 
 /** Keep prior IDs and the existing default plan; append the approved editorial content. */
-export const RECIPES: readonly Recipe[] = [...LEGACY_RECIPES, ...V83_RECIPES];
+export const RECIPES: readonly Recipe[] = [...LEGACY_RECIPES, ...V3_RECIPES];

@@ -5,6 +5,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 const zlib = require('node:zlib');
 const { execFileSync } = require('node:child_process');
+const { recipePhotoPackage } = require('./recipe-photo-package.cjs');
 
 const project = path.resolve(__dirname, '..');
 const exportName = process.env.JJ_EXPORT_DIRECTORY || 'dist-v2';
@@ -141,6 +142,7 @@ function main() {
   }] });
   prepared.set('vercel.json', Buffer.from(JSON.stringify({ $schema: 'https://openapi.vercel.sh/vercel.json', rewrites, headers }, null, 2) + '\n'));
   const files = [...prepared].sort(([a], [b]) => a.localeCompare(b)).map(([file, bytes]) => ({ file, size: bytes.length, ...digests(bytes) }));
+  const recipePhotos = recipePhotoPackage(project, files);
   const bundle = { ...files.find(file => file.file === entry), contentEncoding: 'br', decodedSize: decoded.length,
     decodedSha1: decodedDigests.sha1, decodedSha256: decodedDigests.sha256 };
   const logoFiles = files.filter(file => /^assets\/assets\/brand\/jj-logo-horizontal\.[a-f0-9]{32}\.png$/.test(file.file));
@@ -159,7 +161,7 @@ function main() {
     fs.writeFileSync(destination, bytes, { flag: 'wx' });
   }
   fs.mkdirSync(path.join(output, '.vercel'));
-  const manifest = { schemaVersion: 1, createdAt, input: exportName, source, bundle, logo, expectedLogoSha256,
+  const manifest = { schemaVersion: 1, createdAt, input: exportName, source, bundle, logo, expectedLogoSha256, recipePhotos,
     assets: files.filter(file => file.file.startsWith('assets/')), files,
     upload: { files: files.length, bytes: files.reduce((total, file) => total + file.size, 0) },
     scope: 'Reviewed compiled web client, approved logo, fonts with their existing license notices, preview configuration and optional isolated technical brand board; no native bundles, application source, fixtures, local data or credentials.' };
