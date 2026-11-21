@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-21T20:52:16.752833+00:00",
+  "phase": "MAIN_MERGED_CI_VERIFIED_AND_REMAINING_WORK_AUDITED",
+  "scope": "Owner-authorized PR30 merge and documentary close; approved 150-recipe/photo integration is complete in main. The entire master plan is not complete.",
+  "source": {
+    "repository": "jjcomprainteligente-ops/Jj-compra-inteligente-",
+    "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/30",
+    "ownerAuthorizationExecuted": true,
+    "mergedAt": "2026-11-21T20:41:20Z",
+    "applicationCommit": "80ab9e14185e3f50758339bd787c3f9b50113bc9",
+    "candidateCommit": "26244016f75e505a7e3b4d47c2a656c87c7a3a29",
+    "mainMergeCommit": "1504afd8538a3e38a546d41048b45be6d6cac3bf",
+    "priorMain": "69582c2010222769db8cf646b745aea544684e42",
+    "parents": [
+      "69582c2010222769db8cf646b745aea544684e42",
+      "26244016f75e505a7e3b4d47c2a656c87c7a3a29"
+    ],
+    "mergeTree": "f67af55e36cdb482f5734db69d5346bbf37405f8",
+    "candidateTree": "f67af55e36cdb482f5734db69d5346bbf37405f8",
+    "treesIdenticalVerifiedInCanonicalGitHubAndLocalGit": true,
+    "localUpdate": "fetch and fast-forward; no reset or rewritten history"
+  },
+  "mainActions": [
+    {
+      "id": 44947600998,
+      "head": "1504afd8538a3e38a546d41048b45be6d6cac3bf",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44947600998"
+    }
+  ],
+  "preservation": {
+    "appInputs": 407,
+    "appInputManifestSHA256": "842997ee05d4351ed6114030773e5fb571a054c2a1de1dda78573cde15f440fa",
+    "appInputMismatches": [],
+    "protectedFiles": 29,
+    "protectedMismatches": [],
+    "originalReferences": 286,
+    "originalMismatches": [],
+    "originalReferenceScope": "Baseline referencias/ and assets/brand/, excluding operational README_CODEX.md updated in this documentary close.",
+    "applicationChangedInDocumentaryClose": false,
+    "filesDeletedInDocumentaryClose": 0,
+    "branchesDeletedInThisOperation": 0,
+    "recipes": {
+      "approvedSourceRecipes": 150,
+      "sourceLocalizedRecords": 750,
+      "sourceLanguages": [
+        "es",
+        "en",
+        "de",
+        "fr",
+        "bg"
+      ],
+      "sourcePhotosReceived": 150,
+      "sourcePhotosMissing": 0,
+      "runtimeRecipes": 157,
+      "legacyRecipesPreserved": 7,
+      "previousV83RecipesExactlyPreserved": 120,
+      "newlyActiveRecipeIDs": 30,
+      "uiLanguages": [
+        "es",
+        "en",
+        "de",
+        "fr"
+      ],
+      "bgUIActivated": false,
+      "visibleMealCount": 5,
+      "storedBusinessKeys": 7
+    }
+  },
+  "priorExecutedEvidence": {
+    "file": "verification.json",
+    "sha256": "478c57b1c9324715640ba8b23820987ff01f0cc69003b874d597ed0707988a3f",
+    "applicationCommit": "80ab9e14185e3f50758339bd787c3f9b50113bc9",
+    "browserSuitesRerunForIdenticalMerge": false,
+    "note": "Historical checkpoints remain unchanged and retain their own phases, source SHA and pending gates as of their original execution."
+  },
+  "vercelRecheck": {
+    "staging": {
+      "id": "dpl_4infJZdipQwLz3fGcdx7NFD2esfc",
+      "state": "READY",
+      "target": "staging",
+      "sourceCommit": "80ab9e14185e3f50758339bd787c3f9b50113bc9"
+    },
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "newDeploymentCreatedForDocumentaryClose": false,
+    "productionPromoted": false,
+    "shareExpiresUTC": "2026-11-22T10:29:01+00:00",
+    "protectedAccessCredentialPublished": false
+  },
+  "secretScan": {
+    "checkedAtUTC": "2026-11-21T20:48:30.486244+00:00",
+    "source": "1504afd8538a3e38a546d41048b45be6d6cac3bf",
+    "tree": "f67af55e36cdb482f5734db69d5346bbf37405f8",
+    "tool": "Gitleaks",
+    "toolVerification": {
+      "version": "8.30.1",
+      "officialRelease": "https://github.com/gitleaks/gitleaks/releases/tag/v8.30.1",
+      "releaseApiDigestsVerified": true,
+      "checksumFileAndArchiveVerified": true,
+      "pins": {
+        "gitleaks_8.30.1_checksums.txt": "061476c21adaf5441516f96f185c1a4706a83cd6329b9b38762271b3d4a52fae",
+        "gitleaks_8.30.1_linux_x64.tar.gz": "551f6fc83ea457d62a0d98237cbad105af8d557003051f41f3e7ca7b3f2470eb"
+      },
+      "binarySha256": "88f91962aa2f93ac6ab281d553b9e125f5197bbbce38f9f2437f7299c32e5509"
+    },
+    "snapshotFiles": 2009,
+    "snapshotBytes": 260906066,
+    "redactionPercent": 100,
+    "originalScannerExitCode": 1,
+    "rawFindingCount": 17,
+    "falsePositiveCount": 17,
+    "verifiedSecretFindings": 0,
+    "unresolvedFindings": 0,
+    "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE",
+    "allowlistOrSourceChangesAdded": false,
+    "findings": [
+      {
+        "rule": "generic-api-key",
+        "path": "src/storage/comparisons.ts",
+        "line": 5,
+        "endLine": 5,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "src/storage/expenses.ts",
+        "line": 4,
+        "endLine": 4,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "src/storage/priceObservations.ts",
+        "line": 5,
+        "endLine": 5,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/comparisons.spec.ts",
+        "line": 3,
+        "endLine": 3,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/local-coverage.spec.ts",
+        "line": 4,
+        "endLine": 4,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/menus.spec.ts",
+        "line": 5,
+        "endLine": 5,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/shopping.spec.ts",
+        "line": 4,
+        "endLine": 4,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/v2-visual-contract.spec.ts",
+        "line": 5,
+        "endLine": 5,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/price-observations.spec.ts",
+        "line": 4,
+        "endLine": 4,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/price-observations.spec.ts",
+        "line": 7,
+        "endLine": 7,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "scripts/capture-b06.cjs",
+        "line": 11,
+        "endLine": 11,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/menus-storage.test.ts",
+        "line": 45,
+        "endLine": 45,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/shopping-storage.test.ts",
+        "line": 47,
+        "endLine": 47,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/i18n.spec.ts",
+        "line": 14,
+        "endLine": 14,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/i18n.spec.ts",
+        "line": 15,
+        "endLine": 15,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/i18n-integrity.spec.ts",
+        "line": 5,
+        "endLine": 5,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      },
+      {
+        "rule": "generic-api-key",
+        "path": "tests/e2e/i18n-integrity.spec.ts",
+        "line": 6,
+        "endLine": 7,
+        "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE"
+      }
+    ],
+    "matchedValuesPublished": false,
+    "archiveTraversal": false,
+    "gitHistoryScanned": false,
+    "ignoredFilesOrRuntimeCredentialsInspected": false,
+    "limits": [
+      "Tracked snapshot only; no Git history, ignored files, runtime environment or private credentials inspected.",
+      "Official default Gitleaks rules; no custom baseline, repository ignore file, or inline allow comments applied.",
+      "No archive traversal; binary formats and semantics outside scanner rules are not certified.",
+      "No findings does not guarantee absence of secrets or vulnerabilities."
+    ],
+    "privateSummarySHA256": "dd62093edb759300d5e041695ec534cbc66b32d003304038545b42e9f5badc92",
+    "privateTriageSHA256": "0c6ded3cacc39133169857bd47f35be5ef2dd3c8b9bdd4da63d86b3e8abaa14e"
+  },
+  "remainingWorkAudit": {
+    "file": "../../../docs/MAESTRO/AUDITORIA_PENDIENTES_TRAS_PR30_2026-11-21.md",
+    "sha256": "c83ec48682eb061d2431afebb719c671cfb56c2fc7248a54401511a303efc65f",
+    "masterBlocksReviewed": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "applicationFeaturesImplementedDuringAudit": false,
+    "liveDatabaseInspected": false,
+    "nextProposedDeliveries": [
+      "05.3 reviewed dietary preferences and culinary categories by ID",
+      "05.4 visible variable meals and conservative persistence",
+      "Audit of the pair",
+      "06.1 verified store geography",
+      "06.2 postcode and radius UI",
+      "Audit of the pair"
+    ],
+    "pendingExternalInputs": [
+      "Visual acceptance and recipe/photo correspondence review",
+      "Detailed physical iPhone/native tests",
+      "Independent private-backup integrity and restore",
+      "Official product labels, prices, store coordinates and rights",
+      "Product decisions on N, BG review, AI cost/provider and native distribution requirements"
+    ]
+  },
+  "limits": [
+    "The merge and technical 150-recipe/photo integration are closed; the entire application/master plan is not complete.",
+    "Four launch UI languages remain active; BG records are preserved in the source, not a complete fifth UI.",
+    "Snapshot scanning and zero known dependency advisories do not guarantee absence of secrets or vulnerabilities.",
+    "No production promotion, signed native binary, physical-device certification, auth/sync or AI activation."
+  ]
+}

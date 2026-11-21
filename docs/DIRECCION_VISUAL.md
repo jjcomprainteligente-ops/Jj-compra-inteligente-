@@ -15,7 +15,7 @@ La denominación antigua «V2 Verde Noche» y la elección inicial «V3/M3 provi
 
 La existencia de tokens, capturas, 16 vistas o pruebas de contraste no equivale a aprobación estética completa. Se deben contrastar las pantallas ejecutables con la referencia, documentar diferencias y probar legibilidad, teclado, lectores, safe areas y tamaños de texto en dispositivo. Las nueve tarjetas de estados están identificadas como ejemplos; no acreditan por sí solas servicios o permisos reales.
 
-Las fotografías definitivas por receta no están integradas y sus originales históricos no se han localizado entre los materiales accesibles. Primero se recuperan y comprueban por ID, calidad, procedencia y derechos; no se genera una sustitución por conveniencia.
+**Actualización 21/11/2026:** las 150 fotografías recibidas están integradas en main mediante PR #30, con 300 derivados locales y originales conservados. Se comprobó mapping por ID, integridad, dimensiones, carga progresiva, detalle y estados localizados. La revisión humana de correspondencia plato/ingredientes, calidad estética y derechos conserva su criterio propio: los hashes no la sustituyen. No hay fotos faltantes entre las 150 V3 ni se generan sustituciones. [Integración y límites](MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md).
 
 ## Observación de las versiones publicadas · 14/11/2026
 
