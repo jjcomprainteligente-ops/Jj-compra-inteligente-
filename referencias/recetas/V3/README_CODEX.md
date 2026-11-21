@@ -1,8 +1,8 @@
 # JJ Compra Inteligente | Recepción V3 segura
 
-**Estado actualizado · 20/11/2026: recepción completa verificada; integración de aplicación EN_CURSO.** Main `69582c2010222769db8cf646b745aea544684e42` contiene 150 JPEG individuales en `APP_LIGERO_10MB/fotos/` y `JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip` en su directorio padre. Se verificaron 150 recetas, 750 fichas en es/en/de/fr/bg y las 150 fotos, con cero faltantes, hashes y decodificación completa correctos. Las 150 JPEG suman 96.304.512 bytes. Los doce PNG anteriores se conservan aparte; las menciones de 12 fotos y 138 pendientes en informes del 18 y 19/11 son históricas.
+**Estado actualizado · 21/11/2026: recepción completa e integración de aplicación probada en staging.** La fuente contiene las 150 recetas, 750 fichas y 150 JPEG, sin faltantes. Los originales y los doce PNG anteriores se conservan; los informes del 18 y 19/11 mantienen su alcance histórico. [PR #30](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/30), fuente `80ab9e14185e3f50758339bd787c3f9b50113bc9`, pendiente de aceptación para main.
 
-El propietario autorizó las 150 recetas y el inicio de su integración. La base publicada conserva 127 accesibles; la candidata prepara 150 verificadas más siete anteriores, 157 IDs únicos previstos, con sus propias pruebas y preview pendientes. No se solicita otra aprobación del texto o de las fotografías. [Fuente completa](APP_LIGERO_10MB/README_CATALOG_V3.md) · [manifiesto de fotos](APP_LIGERO_10MB/MANIFIESTO_FOTOS_INDIVIDUALES_150.json) · [integración y criterios](../../../docs/MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md).
+La candidata comprobada incorpora 150 verificadas más siete anteriores, **157 IDs únicos**, y 300 derivados locales. Las 120 recetas ya integradas mantienen exactamente sus datos y traducciones; no hay migración de los siete documentos. No se requiere otro permiso del texto o de las fotografías. [Fuente completa](APP_LIGERO_10MB/README_CATALOG_V3.md) · [integración y resultados](../../../docs/MAESTRO/INTEGRACION_150_RECETAS_Y_FOTOS_2026-11-20.md) · [verificación publicada](../../../design/recipe-integration150/reports/verification.json).
 
 ## Verificar la entrega individual recibida
 
@@ -64,4 +64,4 @@ Se rechazan rutas que escapen del directorio permitido, enlaces simbólicos, FIF
 
 Las comprobaciones automáticas no certifican derechos, correspondencia visual, revisión lingüística externa, alérgenos o trazas, SKU, etiquetas ni precios comerciales. Esos límites se conservan.
 
-Esta herramienta no modifica la app, sus siete IDs anteriores ni sus siete documentos locales. La integración del catálogo, la optimización de imágenes y la preview requieren sus propias comprobaciones. La recepción completa acredita los archivos publicados en la fuente de GitHub, pero no su integración o visualización en la app.
+El motor de recepción sigue siendo de solo lectura respecto de la app. La integración posterior cuenta con pruebas y publicación propias: tipos, 1.672 unitarias, 135 Python, 64 casos locales de fotos y matrices de recorrido correctos; staging en cuatro idiomas y 319 recursos comprobados, con 24 casos de fotografías, 16 recorridos y ocho controles de Inicio. La recepción técnica no se presenta como aprobación estética, prueba física o certificación comercial.

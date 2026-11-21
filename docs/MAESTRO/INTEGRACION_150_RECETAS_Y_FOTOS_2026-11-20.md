@@ -1,6 +1,6 @@
 # Integración de 150 recetas y fotografías | JJ Compra Inteligente
 
-**Estado · 20/11/2026: EN_CURSO.** El propietario pidió iniciar la integración y conservar todo el trabajo anterior. La recepción de esta entrega está completa; el catálogo y las fotografías todavía necesitan su verificación de aplicación y una publicación propia. No se atribuyen a esta candidata resultados de entregas anteriores.
+**Estado · 21/11/2026: IMPLEMENTADO, PROBADO AUTOMÁTICAMENTE Y STAGING VERIFICADA.** La candidata integra las 150 recetas y sus fotografías, conserva las siete anteriores y los datos guardados, y ofrece 157 IDs únicos. La aceptación visual, la prueba física/nativa detallada y la fusión explícita del PR #30 siguen pendientes.
 
 Base: `main`, commit `69582c2010222769db8cf646b745aea544684e42`. Rama de trabajo: `codex/integrar-recetas-fotos150-2026-11-20`. La autorización de las 150 recetas y de las fotografías sigue vigente. La autorización permanente de previews permite publicar la prueba cuando la entrega esté comprobada. La aceptación y fusión de un nuevo PR concreto en main conservan la puerta explícita de la [política de integración](POLITICA_INTEGRACION_Y_RECUPERACION.md); la autorización ejecutada del PR #29 no se presenta como fusión de esta nueva entrega.
 
@@ -23,9 +23,9 @@ La validación usó el motor central existente, perfil `app10mb` y fotos sueltas
 
 ## Entrega A: catálogo y conservación
 
-La base publicada tiene 120 recetas V83 y siete anteriores, 127 accesibles. La candidata debe incorporar las 150 de la fuente sin volver a añadir las 120 ya existentes: **150 del catálogo verificado más siete anteriores, 157 IDs únicos previstos**. La cifra no significa 157 recetas nuevas. Los siete IDs anteriores permanecen disponibles para los menús y listas que ya los referencian.
+La candidata incorpora las 150 de la fuente sin duplicar las 120 existentes y conserva las siete anteriores: **157 IDs únicos comprobados**. La base en main conserva su estado hasta aceptar y autorizar el PR #30. Los siete IDs anteriores siguen disponibles para los menús y listas que ya los referencian.
 
-La proyección V3 reutiliza las reglas auditadas de cantidades, unidades y notas. Debe demostrar igualdad exacta de las 120 proyecciones y mensajes anteriores, conservar los siete registros previos y añadir las treinta identidades que faltaban. Los módulos y fuentes V83 históricos se conservan; no se sustituyen sus resultados originales por cifras de esta nueva candidata.
+La proyección V3 reutiliza las reglas auditadas de cantidades, unidades y notas. Se comprobó igualdad exacta de las 120 proyecciones, metadatos y traducciones anteriores, junto con las siete recetas previas; se añaden treinta identidades. El orden de mensajes conserva la prioridad histórica de etiquetas en listas guardadas. Los módulos y fuentes V83 históricos permanecen intactos.
 
 Las cantidades siguen representadas como enteros en milésimas. Los ingredientes sin medida permanecen visibles y fuera de la transferencia automática. No se inventan tiempos desconocidos, cantidades, equivalencias o categorías para completar campos. La receta canónica gobierna el cálculo; la traducción es una vista y no cambia un producto o nota introducidos por el usuario.
 
@@ -33,7 +33,7 @@ Los textos de recetas se mantienen centralizados. Se preservan las claves existe
 
 ## Entrega B: fotografías en la interfaz existente
 
-Se preparan derivados locales para el cliente a partir de las 150 fotografías recibidas: miniaturas de hasta 192 px y detalles de hasta 960 px, JPEG con calidad 80. Se prevén **300 archivos derivados**, con manifiesto de procedencia, dimensiones, tamaños y hashes. Las fotografías recibidas y los doce PNG anteriores permanecen intactos; los derivados no se presentan como originales idénticos bit a bit.
+Se generaron **300 derivados JPEG locales / 21.204.828 bytes** a partir de las 150 fotos recibidas: miniaturas de 192 px y detalles de 960 px, calidad 80, proporción conservada y sin metadatos EXIF heredados. El manifiesto registra procedencia, dimensiones, tamaños y hashes; `--check` reproduce todos los bytes. Los 96.304.512 bytes recibidos y los doce PNG anteriores permanecen intactos. La publicación del compilador es exclusiva por archivo y escribe el manifiesto al final; no es una transacción atómica de 300 archivos.
 
 El mapa de recursos de Metro utiliza rutas estáticas y búsqueda exacta por ID. No importa al cliente el ZIP, el manifiesto completo de recepción ni rutas privadas; no consulta un servidor externo para decidir la imagen. Un ID desconocido no se transforma en una ruta o URL.
 
@@ -53,7 +53,7 @@ La revisión de hashes y decodificación no acredita por sí sola derechos, corr
 
 ## Matriz de comprobación y criterio de cierre
 
-Todos los controles siguientes están **pendientes de resultado final de esta candidata**, salvo la recepción completa ya registrada arriba. Las cifras y los SHA se rellenarán con ejecuciones reales; no se reutilizan como nuevos los resultados de B05.2 o de la consolidación del 19/11.
+Los controles automáticos de esta candidata terminaron correctamente sobre la fuente publicada indicada a continuación. Las comprobaciones físicas, estéticas y externas mantienen sus propios límites; las cifras de entregas anteriores no se trasladan a esta fuente.
 
 | Área | Comprobación requerida |
 |---|---|
@@ -71,6 +71,10 @@ Al terminar las dos entregas se realiza la auditoría conjunta antes de declarar
 
 ## Estado de publicación y siguiente acción
 
-**EN_CURSO: sin nuevo commit de fuente, PR, resultados finales ni preview de esta integración registrados todavía.** La preview anterior conserva su fuente y su caducidad; no acredita las 150 fotos en la aplicación. La producción no se promueve.
+Fuente `80ab9e14185e3f50758339bd787c3f9b50113bc9`, [PR #30](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/30), CI push [44893148932](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44893148932) / pull_request [44893221491](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44893221491) correcta. Staging `dpl_4infJZdipQwLz3fGcdx7NFD2esfc`, READY y protegida: cuatro idiomas, 157 recetas y 319 recursos por HTTPS; 24 casos de fotografías, 16 recorridos y ocho controles de Inicio publicados correctos, sin fallos, omisiones o intermitencias. 407 inputs vinculados a la fuente, 29 archivos protegidos y 286 referencias originales conservados; siete recetas anteriores y 120 proyecciones previas idénticas. Los originales permanecen intactos; 300 derivados JPEG suman 21.204.828 bytes. Acceso temporal por conversación hasta **22/11/2026 10:29:01 UTC**, sin token en Git ni informes públicos. [Resultados locales](../../design/recipe-integration150/reports/local-final.json) · [verificación publicada](../../design/recipe-integration150/reports/verification.json).
 
-Siguiente acción: completar y comprobar catálogo y fotografías, registrar la auditoría conjunta, publicar el código revisable en GitHub y verificar la prueba protegida autorizada. Presentar el nuevo PR concreto para aceptación de integración en main. No se abre automáticamente otro bloque ni se vuelve a solicitar el permiso ya concedido para las 150 recetas, sus fotos o una preview comprobada.
+Tipos, 1.672 unitarias y 135 Python correctos; reproducción de catálogo y 300 derivados correcta. Local: 64 casos de fotografías —1.200 comprobaciones de miniatura/detalle—, 60 de recorrido/Inicio y 24 de menús anteriores correctos. Los dos intentos iniciales corrigieron exclusivamente un oráculo de traducción y una espera de guardado; se conservan sus evidencias, sin cambios de aplicación ni retirada de controles. Los exports web/iOS/Android son correctos. La staging usa el web independiente con SHA-256 `9a0ca8e36a8d55b2efa9189eedaae00bee369f793d84a8aea32e26e1013e4a0f` (5.630.778 bytes), idéntico al compilado probado. El web del export conjunto tiene un hash diferente y queda registrado por separado; no es el artefacto desplegado. Los HBC no equivalen a un binario firmado o instalado.
+
+El origen [https://jj-compra-inteligente-35qaaysik-cmj2hwhc6b-1051.vercel.app](https://jj-compra-inteligente-35qaaysik-cmj2hwhc6b-1051.vercel.app) permanece protegido. Main `69582c2010222769db8cf646b745aea544684e42` y producción `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3` se comprobaron y conservan, con protección `all_except_custom_domains`. El cierre documental posterior conserva los 407 inputs de la aplicación.
+
+Pendientes: aceptación visual del propietario, prueba física/nativa detallada y autorización explícita para fusionar este PR concreto en main. No se vuelve a pedir permiso para las 150 recetas, sus fotos o esta preview comprobada, ni se abre automáticamente otro bloque.
