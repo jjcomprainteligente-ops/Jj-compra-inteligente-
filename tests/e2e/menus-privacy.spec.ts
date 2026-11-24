@@ -382,7 +382,7 @@ for (const language of ['es', 'en', 'de', 'fr'] as const) {
   test(`${language}: filtros y privacidad traducidos conservan EUR, fechas y datos y no recortan texto`, async ({ browser }, testInfo) => {
     const context: BrowserContext = await browser.newContext({ locale: LANGUAGES[language].locale,
       viewport: testInfo.project.use.viewport, isMobile: !!testInfo.project.use.isMobile, hasTouch: !!testInfo.project.use.hasTouch,
-      storageState: { cookies: [], origins: [] }, baseURL: 'http://127.0.0.1:8081' });
+      storageState: { cookies: [], origins: [] }, baseURL: testInfo.project.use.baseURL ?? 'http://127.0.0.1:8081' });
     const page = await context.newPage();
     const t = createTranslator(language, resources);
     const errors: string[] = [];

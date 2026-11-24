@@ -1,0 +1,4891 @@
+{
+  "schemaVersion": 1,
+  "kind": "JJ_CULINARY_REVIEW",
+  "source": {
+    "profile": "app10mb",
+    "dataZipRepositoryPath": "referencias/recetas/V3/APP_LIGERO_10MB/JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip",
+    "dataZipBytes": 1994471,
+    "dataZipSHA256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+    "recipeEntry": "datos/recetas_150_5_idiomas_editorial_comercial_v3.json",
+    "originalEntry": "datos/V83_150_RECETAS_ORIGINAL_COMPLETO_INALTERADO.json",
+    "originalEntrySHA256": "b07e87e9fa2c9267e82c214ae3f684e216dfd276965ae4b4e3fce41ab4afd83a",
+    "contextLanguage": "es",
+    "sourceLanguagesPreservedInZip": [
+      "es",
+      "en",
+      "de",
+      "fr",
+      "bg"
+    ],
+    "contextHashCanonicalization": "UTF-8 JSON; recursively sorted keys; compact separators; finite exact numeric round-trip; no newline."
+  },
+  "contract": {
+    "categoryValues": [
+      "breakfast",
+      "main",
+      "dessert",
+      "other"
+    ],
+    "dietaryValues": [
+      "any",
+      "vegetarian",
+      "vegan"
+    ],
+    "decisionStatuses": [
+      "pending",
+      "reviewed"
+    ],
+    "independentDecisions": true,
+    "reviewDoesNotCertifyAllergensTracesProductsPricesOrNativeLanguage": true,
+    "responseValidationActivatesApplication": false
+  },
+  "batch": {
+    "number": 12,
+    "firstPosition": 111,
+    "lastPosition": 120
+  },
+  "recipes": [
+    {
+      "recipeId": "JJ-R010",
+      "position": 111,
+      "sourceV83SHA256": "36eef9ab13de76240362b211b0ecf2e4bd70010b083b760cea13a7a5728e9b35",
+      "contextSHA256": "17adaf63ac11d881c7bbffafae9686d972aa6f310329c61ad6dbe85227a86047",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R010",
+          "language": "es",
+          "title": "Ensalada de tomate, pepino y yogur al limón",
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "tomate",
+              "quantity": 400,
+              "unit": "g",
+              "source_name_es": "tomate",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "pepino",
+              "quantity": 250,
+              "unit": "g",
+              "source_name_es": "pepino",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "yogur natural",
+              "quantity": 200,
+              "unit": "g",
+              "source_name_es": "yogur natural",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "queso feta",
+              "quantity": 55,
+              "unit": "g",
+              "source_name_es": "queso feta",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "limón",
+              "quantity": 65,
+              "unit": "g",
+              "source_name_es": "limón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "menta",
+              "quantity": 9,
+              "unit": "g",
+              "source_name_es": "menta",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "aceite de oliva",
+              "quantity": 15,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "pimienta",
+              "quantity": 1,
+              "unit": "g",
+              "source_name_es": "pimienta",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Corta tomate y pepino en distintos tamaños para combinar texturas.",
+            "Mezcla yogur con limón y un toque de la pimienta medida.",
+            "Coloca el yogur en la base del plato y reparte verduras, menta y queso; termina con el aceite de oliva y el resto de la pimienta medida."
+          ],
+          "warnings": [
+            "Contiene LECHE (yogur y feta). Lava las verduras, conserva el yogur y el queso refrigerados y sirve la ensalada recién preparada.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "yogurt_milk_confirmed",
+            "feta_milk_confirmed",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene LECHE (yogur y feta). Lava las verduras, conserva el yogur y el queso refrigerados y sirve la ensalada recién preparada.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 3,
+              "code": "incorporar aceite y resto pimienta medidos",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 2,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "leche"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 3,
+              "ingredient": "yogur natural",
+              "motivo": "Ingrediente comercial/complejo o posible traza: yogur",
+              "grupos_a_revisar": [
+                "leche"
+              ]
+            },
+            {
+              "line": 4,
+              "ingredient": "queso feta",
+              "motivo": "Ingrediente comercial/complejo o posible traza: queso",
+              "grupos_a_revisar": [
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-CEA7055211",
+              "recipe_id": "JJ-R010",
+              "line": 1,
+              "producto_generico_es": "tomate",
+              "nombres_por_idioma": {
+                "es": "tomate",
+                "en": "tomato",
+                "de": "Tomate",
+                "fr": "tomate",
+                "bg": "домат"
+              },
+              "cantidad": 400,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-22E92E460F",
+              "recipe_id": "JJ-R010",
+              "line": 2,
+              "producto_generico_es": "pepino",
+              "nombres_por_idioma": {
+                "es": "pepino",
+                "en": "cucumber",
+                "de": "Gurke",
+                "fr": "concombre",
+                "bg": "краставица"
+              },
+              "cantidad": 250,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-CC57371195",
+              "recipe_id": "JJ-R010",
+              "line": 3,
+              "producto_generico_es": "yogur natural",
+              "nombres_por_idioma": {
+                "es": "yogur natural",
+                "en": "plain yogurt",
+                "de": "Naturjoghurt",
+                "fr": "yaourt nature",
+                "bg": "натурално кисело мляко"
+              },
+              "cantidad": 200,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-BA51141462",
+              "recipe_id": "JJ-R010",
+              "line": 4,
+              "producto_generico_es": "queso feta",
+              "nombres_por_idioma": {
+                "es": "queso feta",
+                "en": "feta cheese",
+                "de": "Feta-Käse",
+                "fr": "feta",
+                "bg": "сирене фета"
+              },
+              "cantidad": 55,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3E32349CA2",
+              "recipe_id": "JJ-R010",
+              "line": 5,
+              "producto_generico_es": "limón",
+              "nombres_por_idioma": {
+                "es": "limón",
+                "en": "lemon",
+                "de": "Zitrone",
+                "fr": "citron",
+                "bg": "лимон"
+              },
+              "cantidad": 65,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D1F1687CC9",
+              "recipe_id": "JJ-R010",
+              "line": 6,
+              "producto_generico_es": "menta",
+              "nombres_por_idioma": {
+                "es": "menta",
+                "en": "mint",
+                "de": "Minze",
+                "fr": "menthe",
+                "bg": "мента"
+              },
+              "cantidad": 9,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R010",
+              "line": 7,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 15,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FC40FE4063",
+              "recipe_id": "JJ-R010",
+              "line": 8,
+              "producto_generico_es": "pimienta",
+              "nombres_por_idioma": {
+                "es": "pimienta",
+                "en": "black pepper",
+                "de": "Pfeffer",
+                "fr": "poivre",
+                "bg": "черен пипер"
+              },
+              "cantidad": 1,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R011",
+      "position": 112,
+      "sourceV83SHA256": "723936802f3d1a561e55f133d8c411448b573f5eaa859000c1bc6753674d08b4",
+      "contextSHA256": "3330438dd50a3be5bd69d50bb2c0870e8342510ee0f21a0c27281a120c7db691",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R011",
+          "language": "es",
+          "title": "Vichyssoise templada de puerro y papa",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "puerro",
+              "quantity": 360,
+              "unit": "g",
+              "source_name_es": "puerro",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "papas",
+              "quantity": 300,
+              "unit": "g",
+              "source_name_es": "papas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "cebolla",
+              "quantity": 80,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "mantequilla",
+              "quantity": 35,
+              "unit": "g",
+              "source_name_es": "mantequilla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "caldo verduras",
+              "quantity": 800,
+              "unit": "ml",
+              "source_name_es": "caldo verduras",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "leche",
+              "quantity": 150,
+              "unit": "ml",
+              "source_name_es": "leche",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "limón",
+              "quantity": 40,
+              "unit": "g",
+              "source_name_es": "limón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "sal",
+              "quantity": 4,
+              "unit": "g",
+              "source_name_es": "sal",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Limpia muy bien los puerros para eliminar la tierra y corta en rodajas.",
+            "Pocha puerro y cebolla con la mantequilla medida sin que tomen color; añade papa y caldo.",
+            "Cuece, tritura y aligera con leche; incorpora la sal medida, termina con unas gotas de limón y sirve templada."
+          ],
+          "warnings": [
+            "Contiene LECHE (mantequilla y leche). El caldo preparado puede contener APIO u otros alérgenos según la etiqueta. Limpia bien el puerro; enfría pronto las sobras y refrigéralas.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "vegetable_stock_possible_celery_gluten_milk",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene LECHE (mantequilla y leche). El caldo preparado puede contener APIO u otros alérgenos según la etiqueta. Limpia bien el puerro; enfría pronto las sobras y refrigéralas.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 2,
+              "code": "usar mantequilla medida al pochar",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "incorporar sal medida",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "apio",
+            "gluten",
+            "leche",
+            "soja"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 5,
+              "ingredient": "caldo verduras",
+              "motivo": "Ingrediente comercial/complejo o posible traza: caldo",
+              "grupos_a_revisar": [
+                "apio",
+                "gluten",
+                "soja",
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-AE7208CCBB",
+              "recipe_id": "JJ-R011",
+              "line": 1,
+              "producto_generico_es": "puerro",
+              "nombres_por_idioma": {
+                "es": "puerro",
+                "en": "leek",
+                "de": "Lauch",
+                "fr": "poireau",
+                "bg": "праз"
+              },
+              "cantidad": 360,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3ADB0574BB",
+              "recipe_id": "JJ-R011",
+              "line": 2,
+              "producto_generico_es": "papas",
+              "nombres_por_idioma": {
+                "es": "papas",
+                "en": "potatoes",
+                "de": "Kartoffeln",
+                "fr": "pommes de terre",
+                "bg": "картофи"
+              },
+              "cantidad": 300,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R011",
+              "line": 3,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 80,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C42891F70",
+              "recipe_id": "JJ-R011",
+              "line": 4,
+              "producto_generico_es": "mantequilla",
+              "nombres_por_idioma": {
+                "es": "mantequilla",
+                "en": "butter",
+                "de": "Butter",
+                "fr": "beurre",
+                "bg": "краве масло"
+              },
+              "cantidad": 35,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B6C4D3E002",
+              "recipe_id": "JJ-R011",
+              "line": 5,
+              "producto_generico_es": "caldo verduras",
+              "nombres_por_idioma": {
+                "es": "caldo verduras",
+                "en": "vegetable stock",
+                "de": "Gemüsebrühe",
+                "fr": "bouillon de légumes",
+                "bg": "зеленчуков бульон"
+              },
+              "cantidad": 800,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-25E4131C13",
+              "recipe_id": "JJ-R011",
+              "line": 6,
+              "producto_generico_es": "leche",
+              "nombres_por_idioma": {
+                "es": "leche",
+                "en": "milk",
+                "de": "Milch",
+                "fr": "lait",
+                "bg": "прясно мляко"
+              },
+              "cantidad": 150,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3E32349CA2",
+              "recipe_id": "JJ-R011",
+              "line": 7,
+              "producto_generico_es": "limón",
+              "nombres_por_idioma": {
+                "es": "limón",
+                "en": "lemon",
+                "de": "Zitrone",
+                "fr": "citron",
+                "bg": "лимон"
+              },
+              "cantidad": 40,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FFE2D77F8F",
+              "recipe_id": "JJ-R011",
+              "line": 8,
+              "producto_generico_es": "sal",
+              "nombres_por_idioma": {
+                "es": "sal",
+                "en": "salt",
+                "de": "Salz",
+                "fr": "sel",
+                "bg": "сол"
+              },
+              "cantidad": 4,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R012",
+      "position": 113,
+      "sourceV83SHA256": "1c963964e7aa0871fc7b9b2528c9a20fb423fcc2a6e65adffdd63ae22b42590f",
+      "contextSHA256": "f0d54ccd9a0f4a862390a9c81bfe7a9e1c71eeff4f0770647a00913b391b0327",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R012",
+          "language": "es",
+          "title": "Pollo al horno con batata y mojo suave",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "pollo muslo",
+              "quantity": 800,
+              "unit": "g",
+              "source_name_es": "pollo muslo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "batata",
+              "quantity": 600,
+              "unit": "g",
+              "source_name_es": "batata",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "pimiento rojo",
+              "quantity": 180,
+              "unit": "g",
+              "source_name_es": "pimiento rojo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "cebolla",
+              "quantity": 150,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "ajo",
+              "quantity": 14,
+              "unit": "g",
+              "source_name_es": "ajo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "cilantro",
+              "quantity": 10,
+              "unit": "g",
+              "source_name_es": "cilantro",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "aceite de oliva",
+              "quantity": 35,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "limón",
+              "quantity": 75,
+              "unit": "g",
+              "source_name_es": "limón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "sal",
+              "quantity": 5,
+              "unit": "g",
+              "source_name_es": "sal",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Distribuye batata, cebolla y pimiento sobre una bandeja.",
+            "Coloca el pollo sazonado con la sal medida encima y hornea hasta que esté bien cocido en el centro.",
+            "Acompaña con mojo suave triturado de cilantro, ajo, limón y el aceite de oliva medido, servido aparte del pollo."
+          ],
+          "warnings": [
+            "Evita la contaminación cruzada del pollo crudo. Comprueba con termómetro que el centro del pollo alcance 74 °C; prepara el mojo con utensilios limpios y mantenlo separado.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [],
+          "possible_allergen_codes_product_dependent": [
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Evita la contaminación cruzada del pollo crudo. Comprueba con termómetro que el centro del pollo alcance 74 °C; prepara el mojo con utensilios limpios y mantenlo separado.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 2,
+              "code": "sal medida en pollo",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "ajo medido en mojo; separar utensilios",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [],
+          "product_dependent_ingredients": [],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-FDD80D3BF8",
+              "recipe_id": "JJ-R012",
+              "line": 1,
+              "producto_generico_es": "pollo muslo",
+              "nombres_por_idioma": {
+                "es": "pollo muslo",
+                "en": "chicken thighs",
+                "de": "Hähnchenschenkel",
+                "fr": "cuisses de poulet",
+                "bg": "пилешки бутчета"
+              },
+              "cantidad": 800,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-F4610AA514",
+              "recipe_id": "JJ-R012",
+              "line": 2,
+              "producto_generico_es": "batata",
+              "nombres_por_idioma": {
+                "es": "batata",
+                "en": "sweet potato",
+                "de": "Süßkartoffel",
+                "fr": "patate douce",
+                "bg": "сладък картоф"
+              },
+              "cantidad": 600,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3D35663E4E",
+              "recipe_id": "JJ-R012",
+              "line": 3,
+              "producto_generico_es": "pimiento rojo",
+              "nombres_por_idioma": {
+                "es": "pimiento rojo",
+                "en": "red pepper",
+                "de": "rote Paprika",
+                "fr": "poivron rouge",
+                "bg": "червена чушка"
+              },
+              "cantidad": 180,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R012",
+              "line": 4,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 150,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-R012",
+              "line": 5,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 14,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-F9056DA917",
+              "recipe_id": "JJ-R012",
+              "line": 6,
+              "producto_generico_es": "cilantro",
+              "nombres_por_idioma": {
+                "es": "cilantro",
+                "en": "coriander leaves",
+                "de": "Koriandergrün",
+                "fr": "coriandre fraîche",
+                "bg": "пресен кориандър"
+              },
+              "cantidad": 10,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R012",
+              "line": 7,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 35,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3E32349CA2",
+              "recipe_id": "JJ-R012",
+              "line": 8,
+              "producto_generico_es": "limón",
+              "nombres_por_idioma": {
+                "es": "limón",
+                "en": "lemon",
+                "de": "Zitrone",
+                "fr": "citron",
+                "bg": "лимон"
+              },
+              "cantidad": 75,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FFE2D77F8F",
+              "recipe_id": "JJ-R012",
+              "line": 9,
+              "producto_generico_es": "sal",
+              "nombres_por_idioma": {
+                "es": "sal",
+                "en": "salt",
+                "de": "Salz",
+                "fr": "sel",
+                "bg": "сол"
+              },
+              "cantidad": 5,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R013",
+      "position": 114,
+      "sourceV83SHA256": "e24a9440f94fec765839a36852d6c51db1075596900740fa12b132ea3935723a",
+      "contextSHA256": "e1e0f4474633fc006a97c6ca1b88e9371c214aa574155c9aaad5574ec18f9a78",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R013",
+          "language": "es",
+          "title": "Guiso marinero de caballa con papa y pimiento",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "caballa",
+              "quantity": 700,
+              "unit": "g",
+              "source_name_es": "caballa",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "papas",
+              "quantity": 650,
+              "unit": "g",
+              "source_name_es": "papas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "pimiento rojo",
+              "quantity": 150,
+              "unit": "g",
+              "source_name_es": "pimiento rojo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "pimiento verde",
+              "quantity": 110,
+              "unit": "g",
+              "source_name_es": "pimiento verde",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "cebolla",
+              "quantity": 150,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "tomate",
+              "quantity": 220,
+              "unit": "g",
+              "source_name_es": "tomate",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "ajo",
+              "quantity": 12,
+              "unit": "g",
+              "source_name_es": "ajo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "aceite de oliva",
+              "quantity": 28,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "caldo verduras",
+              "quantity": 350,
+              "unit": "ml",
+              "source_name_es": "caldo verduras",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "laurel",
+              "quantity": 1,
+              "unit": "g",
+              "source_name_es": "laurel",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Prepara un sofrito lento con cebolla, pimientos, ajo y tomate en el aceite de oliva medido.",
+            "Añade las papas cortadas, el caldo y el laurel; hierve hasta casi ablandar.",
+            "Incorpora la caballa limpia en los últimos minutos y cocina por completo sin remover fuerte."
+          ],
+          "warnings": [
+            "Contiene PESCADO (caballa). Mantén el pescado fresco refrigerado; cocina la caballa a 63 °C en el centro o hasta que esté opaca y se separe fácilmente. Revisa la etiqueta del caldo.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "fish"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "vegetable_stock_possible_celery_gluten",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene PESCADO (caballa). Mantén el pescado fresco refrigerado; cocina la caballa a 63 °C en el centro o hasta que esté opaca y se separe fácilmente. Revisa la etiqueta del caldo.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "usar aceite medido",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 2,
+              "code": "añadir laurel medido",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "comprobar cocción completa del pescado",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "pescado"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "apio",
+            "gluten",
+            "leche",
+            "soja"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 9,
+              "ingredient": "caldo verduras",
+              "motivo": "Ingrediente comercial/complejo o posible traza: caldo",
+              "grupos_a_revisar": [
+                "apio",
+                "gluten",
+                "soja",
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-75CB718F7B",
+              "recipe_id": "JJ-R013",
+              "line": 1,
+              "producto_generico_es": "caballa",
+              "nombres_por_idioma": {
+                "es": "caballa",
+                "en": "mackerel",
+                "de": "Makrele",
+                "fr": "maquereau",
+                "bg": "скумрия"
+              },
+              "cantidad": 700,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3ADB0574BB",
+              "recipe_id": "JJ-R013",
+              "line": 2,
+              "producto_generico_es": "papas",
+              "nombres_por_idioma": {
+                "es": "papas",
+                "en": "potatoes",
+                "de": "Kartoffeln",
+                "fr": "pommes de terre",
+                "bg": "картофи"
+              },
+              "cantidad": 650,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3D35663E4E",
+              "recipe_id": "JJ-R013",
+              "line": 3,
+              "producto_generico_es": "pimiento rojo",
+              "nombres_por_idioma": {
+                "es": "pimiento rojo",
+                "en": "red pepper",
+                "de": "rote Paprika",
+                "fr": "poivron rouge",
+                "bg": "червена чушка"
+              },
+              "cantidad": 150,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-91775E21C4",
+              "recipe_id": "JJ-R013",
+              "line": 4,
+              "producto_generico_es": "pimiento verde",
+              "nombres_por_idioma": {
+                "es": "pimiento verde",
+                "en": "green pepper",
+                "de": "grüne Paprika",
+                "fr": "poivron vert",
+                "bg": "зелена чушка"
+              },
+              "cantidad": 110,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R013",
+              "line": 5,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 150,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-CEA7055211",
+              "recipe_id": "JJ-R013",
+              "line": 6,
+              "producto_generico_es": "tomate",
+              "nombres_por_idioma": {
+                "es": "tomate",
+                "en": "tomato",
+                "de": "Tomate",
+                "fr": "tomate",
+                "bg": "домат"
+              },
+              "cantidad": 220,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-R013",
+              "line": 7,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 12,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R013",
+              "line": 8,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 28,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B6C4D3E002",
+              "recipe_id": "JJ-R013",
+              "line": 9,
+              "producto_generico_es": "caldo verduras",
+              "nombres_por_idioma": {
+                "es": "caldo verduras",
+                "en": "vegetable stock",
+                "de": "Gemüsebrühe",
+                "fr": "bouillon de légumes",
+                "bg": "зеленчуков бульон"
+              },
+              "cantidad": 350,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-74A2A3D228",
+              "recipe_id": "JJ-R013",
+              "line": 10,
+              "producto_generico_es": "laurel",
+              "nombres_por_idioma": {
+                "es": "laurel",
+                "en": "bay leaf",
+                "de": "Lorbeerblatt",
+                "fr": "feuille de laurier",
+                "bg": "дафинов лист"
+              },
+              "cantidad": 1,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R014",
+      "position": 115,
+      "sourceV83SHA256": "0cb9d535213891c73be5330ccf71f8d6cd1acf30add4fd667e773d759b6ebb3c",
+      "contextSHA256": "9481fedeac0527ac24f6eb3e950618b9033053b6061829dc52162340a2967885",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R014",
+          "language": "es",
+          "title": "Berenjena al curry con arroz y tomate",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "berenjena",
+              "quantity": 650,
+              "unit": "g",
+              "source_name_es": "berenjena",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "arroz",
+              "quantity": 300,
+              "unit": "g",
+              "source_name_es": "arroz",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "tomate cherry",
+              "quantity": 270,
+              "unit": "g",
+              "source_name_es": "tomate cherry",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "cebolla roja",
+              "quantity": 180,
+              "unit": "g",
+              "source_name_es": "cebolla roja",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "ajo",
+              "quantity": 12,
+              "unit": "g",
+              "source_name_es": "ajo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "leche de coco",
+              "quantity": 300,
+              "unit": "ml",
+              "source_name_es": "leche de coco",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "curry en polvo",
+              "quantity": 12,
+              "unit": "g",
+              "source_name_es": "curry en polvo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "cúrcuma",
+              "quantity": 5,
+              "unit": "g",
+              "source_name_es": "cúrcuma",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "aceite de oliva",
+              "quantity": 25,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "limón",
+              "quantity": 70,
+              "unit": "g",
+              "source_name_es": "limón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Dora la berenjena cortada en dados con parte del aceite medido, sin amontonar la sartén.",
+            "Cocina cebolla, ajo, especias y tomates con el aceite restante; añade leche de coco y berenjena.",
+            "Hierve hasta integrar sabores; cuece el arroz medido por separado y sirve el curry con ese arroz y limón."
+          ],
+          "warnings": [
+            "El curry en polvo y la leche de coco requieren revisión de etiquetas, especialmente MOSTAZA, APIO, GLUTEN y trazas. Enfría el arroz cocido rápidamente, preferentemente en 1 hora, refrigera y recalienta una sola vez.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [],
+          "possible_allergen_codes_product_dependent": [
+            "curry_powder_possible_mustard_celery_gluten",
+            "coconut_milk_label",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "El curry en polvo y la leche de coco requieren revisión de etiquetas, especialmente MOSTAZA, APIO, GLUTEN y trazas. Enfría el arroz cocido rápidamente, preferentemente en 1 hora, refrigera y recalienta una sola vez.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "aceite medido para dorar",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 2,
+              "code": "aceite restante",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "cocer arroz medido por separado",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "apio",
+            "frutos_cascara",
+            "gluten",
+            "mostaza"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 6,
+              "ingredient": "leche de coco",
+              "motivo": "Ingrediente comercial/complejo o posible traza: coco",
+              "grupos_a_revisar": [
+                "frutos_cascara"
+              ]
+            },
+            {
+              "line": 7,
+              "ingredient": "curry en polvo",
+              "motivo": "Ingrediente comercial/complejo o posible traza: curry",
+              "grupos_a_revisar": [
+                "mostaza",
+                "apio",
+                "gluten"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-5945287A0F",
+              "recipe_id": "JJ-R014",
+              "line": 1,
+              "producto_generico_es": "berenjena",
+              "nombres_por_idioma": {
+                "es": "berenjena",
+                "en": "aubergine",
+                "de": "Aubergine",
+                "fr": "aubergine",
+                "bg": "патладжан"
+              },
+              "cantidad": 650,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B4441A9B8B",
+              "recipe_id": "JJ-R014",
+              "line": 2,
+              "producto_generico_es": "arroz",
+              "nombres_por_idioma": {
+                "es": "arroz",
+                "en": "rice",
+                "de": "Reis",
+                "fr": "riz",
+                "bg": "ориз"
+              },
+              "cantidad": 300,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-6B9D3EB8A0",
+              "recipe_id": "JJ-R014",
+              "line": 3,
+              "producto_generico_es": "tomate cherry",
+              "nombres_por_idioma": {
+                "es": "tomate cherry",
+                "en": "cherry tomatoes",
+                "de": "Cherrytomaten",
+                "fr": "tomates cerises",
+                "bg": "чери домати"
+              },
+              "cantidad": 270,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-C9EED7DE5E",
+              "recipe_id": "JJ-R014",
+              "line": 4,
+              "producto_generico_es": "cebolla roja",
+              "nombres_por_idioma": {
+                "es": "cebolla roja",
+                "en": "red onion",
+                "de": "rote Zwiebel",
+                "fr": "oignon rouge",
+                "bg": "червен лук"
+              },
+              "cantidad": 180,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-R014",
+              "line": 5,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 12,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-392D091372",
+              "recipe_id": "JJ-R014",
+              "line": 6,
+              "producto_generico_es": "leche de coco",
+              "nombres_por_idioma": {
+                "es": "leche de coco",
+                "en": "coconut milk",
+                "de": "Kokosmilch",
+                "fr": "lait de coco",
+                "bg": "кокосово мляко"
+              },
+              "cantidad": 300,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-179AFD65E3",
+              "recipe_id": "JJ-R014",
+              "line": 7,
+              "producto_generico_es": "curry en polvo",
+              "nombres_por_idioma": {
+                "es": "curry en polvo",
+                "en": "curry powder",
+                "de": "Currypulver",
+                "fr": "curry en poudre",
+                "bg": "къри на прах"
+              },
+              "cantidad": 12,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-BFBAA24D73",
+              "recipe_id": "JJ-R014",
+              "line": 8,
+              "producto_generico_es": "cúrcuma",
+              "nombres_por_idioma": {
+                "es": "cúrcuma",
+                "en": "turmeric",
+                "de": "Kurkuma",
+                "fr": "curcuma",
+                "bg": "куркума"
+              },
+              "cantidad": 5,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R014",
+              "line": 9,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 25,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3E32349CA2",
+              "recipe_id": "JJ-R014",
+              "line": 10,
+              "producto_generico_es": "limón",
+              "nombres_por_idioma": {
+                "es": "limón",
+                "en": "lemon",
+                "de": "Zitrone",
+                "fr": "citron",
+                "bg": "лимон"
+              },
+              "cantidad": 70,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R015",
+      "position": 116,
+      "sourceV83SHA256": "764e8b6cbdb5eab1383ced50393e4aaa0040ac7fdc069786cef96511b4e5c83f",
+      "contextSHA256": "c434403d9671e8e12e65ee8d526da7253b2587b9cba9ff2c635e7375ea724cec",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R015",
+          "language": "es",
+          "title": "Potaje de vigilia con bacalao y espinacas",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "garbanzos cocidos",
+              "quantity": 550,
+              "unit": "g",
+              "source_name_es": "garbanzos cocidos",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "bacalao desalado",
+              "quantity": 450,
+              "unit": "g",
+              "source_name_es": "bacalao desalado",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "espinacas",
+              "quantity": 220,
+              "unit": "g",
+              "source_name_es": "espinacas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "tomate",
+              "quantity": 240,
+              "unit": "g",
+              "source_name_es": "tomate",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "cebolla",
+              "quantity": 180,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "pimiento verde",
+              "quantity": 140,
+              "unit": "g",
+              "source_name_es": "pimiento verde",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "ajo",
+              "quantity": 15,
+              "unit": "g",
+              "source_name_es": "ajo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "pimentón",
+              "quantity": 6,
+              "unit": "g",
+              "source_name_es": "pimentón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "huevos",
+              "quantity": 2,
+              "unit": "ud",
+              "source_name_es": "huevos",
+              "source_unit_es": "ud",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "aceite de oliva",
+              "quantity": 32,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 11,
+              "name": "caldo verduras",
+              "quantity": 600,
+              "unit": "ml",
+              "source_name_es": "caldo verduras",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Haz un sofrito con tomate, cebolla, ajo y pimiento en el aceite medido; aromatiza con pimentón.",
+            "Añade caldo, garbanzos y espinacas y deja que el conjunto se integre.",
+            "Termina con el bacalao bien cocido; cuece los dos huevos duros por separado, pícalos y sírvelos con el potaje."
+          ],
+          "warnings": [
+            "Contiene PESCADO (bacalao) y HUEVO. Mantén el bacalao desalado refrigerado y cocínalo a 63 °C o hasta cocción completa; cuece los huevos hasta yema y clara firmes. Revisa el caldo.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "fish",
+            "eggs"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "vegetable_stock_possible_celery_gluten",
+            "cooked_chickpeas_label",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene PESCADO (bacalao) y HUEVO. Mantén el bacalao desalado refrigerado y cocínalo a 63 °C o hasta cocción completa; cuece los huevos hasta yema y clara firmes. Revisa el caldo.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "sofrito con aceite medido",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "cocer aparte los dos huevos duros",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "huevos",
+            "pescado"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "apio",
+            "gluten",
+            "leche",
+            "soja"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 8,
+              "ingredient": "pimentón",
+              "motivo": "Ingrediente comercial/complejo o posible traza: pimentón",
+              "grupos_a_revisar": [
+                "gluten"
+              ]
+            },
+            {
+              "line": 11,
+              "ingredient": "caldo verduras",
+              "motivo": "Ingrediente comercial/complejo o posible traza: caldo",
+              "grupos_a_revisar": [
+                "apio",
+                "gluten",
+                "soja",
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-45123A66B7",
+              "recipe_id": "JJ-R015",
+              "line": 1,
+              "producto_generico_es": "garbanzos cocidos",
+              "nombres_por_idioma": {
+                "es": "garbanzos cocidos",
+                "en": "cooked chickpeas",
+                "de": "gegarte Kichererbsen",
+                "fr": "pois chiches cuits",
+                "bg": "сварен нахут"
+              },
+              "cantidad": 550,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B24103900A",
+              "recipe_id": "JJ-R015",
+              "line": 2,
+              "producto_generico_es": "bacalao desalado",
+              "nombres_por_idioma": {
+                "es": "bacalao desalado",
+                "en": "desalted cod",
+                "de": "gewässerter Kabeljau",
+                "fr": "morue dessalée",
+                "bg": "обезсолена треска"
+              },
+              "cantidad": 450,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-ECE30F670E",
+              "recipe_id": "JJ-R015",
+              "line": 3,
+              "producto_generico_es": "espinacas",
+              "nombres_por_idioma": {
+                "es": "espinacas",
+                "en": "spinach",
+                "de": "Spinat",
+                "fr": "épinards",
+                "bg": "спанак"
+              },
+              "cantidad": 220,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-CEA7055211",
+              "recipe_id": "JJ-R015",
+              "line": 4,
+              "producto_generico_es": "tomate",
+              "nombres_por_idioma": {
+                "es": "tomate",
+                "en": "tomato",
+                "de": "Tomate",
+                "fr": "tomate",
+                "bg": "домат"
+              },
+              "cantidad": 240,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R015",
+              "line": 5,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 180,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-91775E21C4",
+              "recipe_id": "JJ-R015",
+              "line": 6,
+              "producto_generico_es": "pimiento verde",
+              "nombres_por_idioma": {
+                "es": "pimiento verde",
+                "en": "green pepper",
+                "de": "grüne Paprika",
+                "fr": "poivron vert",
+                "bg": "зелена чушка"
+              },
+              "cantidad": 140,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-R015",
+              "line": 7,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 15,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-591D535558",
+              "recipe_id": "JJ-R015",
+              "line": 8,
+              "producto_generico_es": "pimentón",
+              "nombres_por_idioma": {
+                "es": "pimentón",
+                "en": "paprika powder",
+                "de": "Paprikapulver",
+                "fr": "paprika en poudre",
+                "bg": "червен пипер на прах"
+              },
+              "cantidad": 6,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D956E9FF8F",
+              "recipe_id": "JJ-R015",
+              "line": 9,
+              "producto_generico_es": "huevos",
+              "nombres_por_idioma": {
+                "es": "huevos",
+                "en": "eggs",
+                "de": "Eier",
+                "fr": "œufs",
+                "bg": "яйца"
+              },
+              "cantidad": 2,
+              "unidad_es": "ud",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R015",
+              "line": 10,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 32,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B6C4D3E002",
+              "recipe_id": "JJ-R015",
+              "line": 11,
+              "producto_generico_es": "caldo verduras",
+              "nombres_por_idioma": {
+                "es": "caldo verduras",
+                "en": "vegetable stock",
+                "de": "Gemüsebrühe",
+                "fr": "bouillon de légumes",
+                "bg": "зеленчуков бульон"
+              },
+              "cantidad": 600,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R016",
+      "position": 117,
+      "sourceV83SHA256": "ff9064bbef91e6e2351d496a41dbdd3b5fffa51a1a0899d57429a8d9ef369697",
+      "contextSHA256": "bf32752c4fa043db6a5dc0c3b2e08b2a996390d64948b18e9730da794d01caac",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R016",
+          "language": "es",
+          "title": "Pescado blanco al horno con papas y mojo verde",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "pescado blanco",
+              "quantity": 700,
+              "unit": "g",
+              "source_name_es": "pescado blanco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "papas antiguas",
+              "quantity": 650,
+              "unit": "g",
+              "source_name_es": "papas antiguas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "tomate",
+              "quantity": 250,
+              "unit": "g",
+              "source_name_es": "tomate",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "cebolla",
+              "quantity": 150,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "ajo",
+              "quantity": 12,
+              "unit": "g",
+              "source_name_es": "ajo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "cilantro",
+              "quantity": 18,
+              "unit": "g",
+              "source_name_es": "cilantro",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "aceite de oliva",
+              "quantity": 38,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "limón",
+              "quantity": 70,
+              "unit": "g",
+              "source_name_es": "limón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "sal",
+              "quantity": 5,
+              "unit": "g",
+              "source_name_es": "sal",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Hornea las papas en rodajas y la cebolla con parte del aceite y la sal medidos hasta empezar a ablandarse.",
+            "Añade el pescado y el tomate; sazona con la sal restante y termina la cocción sin resecar el pescado.",
+            "Prepara un mojo verde suave en frío con ajo, cilantro, limón y el resto del aceite medido; añádelo al servir."
+          ],
+          "warnings": [
+            "Contiene PESCADO. Cocina el pescado a 63 °C en el centro o hasta que esté opaco y se desmenuce. Evita contaminar el mojo frío con utensilios usados para pescado crudo.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "fish"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "fish_species_check",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene PESCADO. Cocina el pescado a 63 °C en el centro o hasta que esté opaco y se desmenuce. Evita contaminar el mojo frío con utensilios usados para pescado crudo.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "repartir aceite y sal medidos",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 2,
+              "code": "sal restante",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "mojo con ajo, cilantro, limón y aceite restante",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "pescado"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [],
+          "product_dependent_ingredients": [],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-4E4D98E198",
+              "recipe_id": "JJ-R016",
+              "line": 1,
+              "producto_generico_es": "pescado blanco",
+              "nombres_por_idioma": {
+                "es": "pescado blanco",
+                "en": "white fish",
+                "de": "Weißfisch",
+                "fr": "poisson blanc",
+                "bg": "бяла риба"
+              },
+              "cantidad": 700,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-C7FF9B5415",
+              "recipe_id": "JJ-R016",
+              "line": 2,
+              "producto_generico_es": "papas antiguas",
+              "nombres_por_idioma": {
+                "es": "papas antiguas",
+                "en": "local heritage potatoes",
+                "de": "traditionelle kanarische Kartoffeln",
+                "fr": "pommes de terre anciennes des Canaries",
+                "bg": "традиционни канарски картофи"
+              },
+              "cantidad": 650,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-CEA7055211",
+              "recipe_id": "JJ-R016",
+              "line": 3,
+              "producto_generico_es": "tomate",
+              "nombres_por_idioma": {
+                "es": "tomate",
+                "en": "tomato",
+                "de": "Tomate",
+                "fr": "tomate",
+                "bg": "домат"
+              },
+              "cantidad": 250,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R016",
+              "line": 4,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 150,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-R016",
+              "line": 5,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 12,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-F9056DA917",
+              "recipe_id": "JJ-R016",
+              "line": 6,
+              "producto_generico_es": "cilantro",
+              "nombres_por_idioma": {
+                "es": "cilantro",
+                "en": "coriander leaves",
+                "de": "Koriandergrün",
+                "fr": "coriandre fraîche",
+                "bg": "пресен кориандър"
+              },
+              "cantidad": 18,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R016",
+              "line": 7,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 38,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3E32349CA2",
+              "recipe_id": "JJ-R016",
+              "line": 8,
+              "producto_generico_es": "limón",
+              "nombres_por_idioma": {
+                "es": "limón",
+                "en": "lemon",
+                "de": "Zitrone",
+                "fr": "citron",
+                "bg": "лимон"
+              },
+              "cantidad": 70,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FFE2D77F8F",
+              "recipe_id": "JJ-R016",
+              "line": 9,
+              "producto_generico_es": "sal",
+              "nombres_por_idioma": {
+                "es": "sal",
+                "en": "salt",
+                "de": "Salz",
+                "fr": "sel",
+                "bg": "сол"
+              },
+              "cantidad": 5,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R017",
+      "position": 118,
+      "sourceV83SHA256": "1e18ae4e7e82dcb1a4c7ea643d0284348a74940dec215871103b8624ddebe546",
+      "contextSHA256": "74454ef568a77178e10f6c8c146a7b0d990289390f95b11577d14b44007d3044",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R017",
+          "language": "es",
+          "title": "Lasaña de verduras y queso tierno canario",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "pasta láminas lasaña",
+              "quantity": 300,
+              "unit": "g",
+              "source_name_es": "pasta láminas lasaña",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "berenjena",
+              "quantity": 350,
+              "unit": "g",
+              "source_name_es": "berenjena",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "calabacín",
+              "quantity": 350,
+              "unit": "g",
+              "source_name_es": "calabacín",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "tomate",
+              "quantity": 450,
+              "unit": "g",
+              "source_name_es": "tomate",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "cebolla",
+              "quantity": 170,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "queso fresco canario",
+              "quantity": 260,
+              "unit": "g",
+              "source_name_es": "queso fresco canario",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "leche",
+              "quantity": 450,
+              "unit": "ml",
+              "source_name_es": "leche",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "harina",
+              "quantity": 35,
+              "unit": "g",
+              "source_name_es": "harina",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "mantequilla",
+              "quantity": 35,
+              "unit": "g",
+              "source_name_es": "mantequilla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "aceite de oliva",
+              "quantity": 22,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Asa berenjena y calabacín con parte del aceite medido hasta que pierdan parte del agua.",
+            "Cocina el tomate con cebolla y el aceite restante; prepara una salsa blanca con la leche, mantequilla y harina medidas.",
+            "Monta capas alternas con pasta, verduras, salsa blanca y queso, y hornea hasta que la pasta esté cocida y la superficie dorada."
+          ],
+          "warnings": [
+            "Contiene TRIGO/GLUTEN (pasta y harina) y LECHE (queso, leche y mantequilla). Algunas láminas de lasaña contienen también HUEVO según la marca. Comprueba leche/queso pasteurizados y cocina la lasaña completamente.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "gluten_wheat",
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "lasagne_possible_egg",
+            "fresh_cheese_pasteurization",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene TRIGO/GLUTEN (pasta y harina) y LECHE (queso, leche y mantequilla). Algunas láminas de lasaña contienen también HUEVO según la marca. Comprueba leche/queso pasteurizados y cocina la lasaña completamente.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "usar parte aceite medido",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 2,
+              "code": "aceite restante y salsa blanca de ingredientes medidos",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "capas con salsa blanca incluida",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "gluten",
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "huevos",
+            "leche"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 1,
+              "ingredient": "pasta láminas lasaña",
+              "motivo": "Ingrediente comercial/complejo o posible traza: pasta",
+              "grupos_a_revisar": [
+                "gluten",
+                "huevos"
+              ]
+            },
+            {
+              "line": 6,
+              "ingredient": "queso fresco canario",
+              "motivo": "Ingrediente comercial/complejo o posible traza: queso",
+              "grupos_a_revisar": [
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-DD23E91DF8",
+              "recipe_id": "JJ-R017",
+              "line": 1,
+              "producto_generico_es": "pasta láminas lasaña",
+              "nombres_por_idioma": {
+                "es": "pasta láminas lasaña",
+                "en": "lasagne sheets",
+                "de": "Lasagneplatten",
+                "fr": "feuilles de lasagne",
+                "bg": "кори за лазаня"
+              },
+              "cantidad": 300,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5945287A0F",
+              "recipe_id": "JJ-R017",
+              "line": 2,
+              "producto_generico_es": "berenjena",
+              "nombres_por_idioma": {
+                "es": "berenjena",
+                "en": "aubergine",
+                "de": "Aubergine",
+                "fr": "aubergine",
+                "bg": "патладжан"
+              },
+              "cantidad": 350,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-A69887F635",
+              "recipe_id": "JJ-R017",
+              "line": 3,
+              "producto_generico_es": "calabacín",
+              "nombres_por_idioma": {
+                "es": "calabacín",
+                "en": "courgette",
+                "de": "Zucchini",
+                "fr": "courgette",
+                "bg": "тиквичка"
+              },
+              "cantidad": 350,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-CEA7055211",
+              "recipe_id": "JJ-R017",
+              "line": 4,
+              "producto_generico_es": "tomate",
+              "nombres_por_idioma": {
+                "es": "tomate",
+                "en": "tomato",
+                "de": "Tomate",
+                "fr": "tomate",
+                "bg": "домат"
+              },
+              "cantidad": 450,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R017",
+              "line": 5,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 170,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3DE5FD339B",
+              "recipe_id": "JJ-R017",
+              "line": 6,
+              "producto_generico_es": "queso fresco canario",
+              "nombres_por_idioma": {
+                "es": "queso fresco canario",
+                "en": "fresh Canary Island cheese",
+                "de": "frischer kanarischer Käse",
+                "fr": "fromage frais des Canaries",
+                "bg": "прясно канарско сирене"
+              },
+              "cantidad": 260,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-25E4131C13",
+              "recipe_id": "JJ-R017",
+              "line": 7,
+              "producto_generico_es": "leche",
+              "nombres_por_idioma": {
+                "es": "leche",
+                "en": "milk",
+                "de": "Milch",
+                "fr": "lait",
+                "bg": "прясно мляко"
+              },
+              "cantidad": 450,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-A79CEDC24C",
+              "recipe_id": "JJ-R017",
+              "line": 8,
+              "producto_generico_es": "harina",
+              "nombres_por_idioma": {
+                "es": "harina",
+                "en": "wheat flour",
+                "de": "Weizenmehl",
+                "fr": "farine de blé",
+                "bg": "пшенично брашно"
+              },
+              "cantidad": 35,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C42891F70",
+              "recipe_id": "JJ-R017",
+              "line": 9,
+              "producto_generico_es": "mantequilla",
+              "nombres_por_idioma": {
+                "es": "mantequilla",
+                "en": "butter",
+                "de": "Butter",
+                "fr": "beurre",
+                "bg": "краве масло"
+              },
+              "cantidad": 35,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R017",
+              "line": 10,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 22,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R018",
+      "position": 119,
+      "sourceV83SHA256": "5bb44dfe2c69a932a928428ad976a529cfd1be55c060fd4f73c0482d126e30a7",
+      "contextSHA256": "5c3bbf84853c3b917dff4ce8e04066f214703da21d6f8a42479476b97ead7b5c",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R018",
+          "language": "es",
+          "title": "Sancocho canario con batata, papa y pescado",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "pescado salado",
+              "quantity": 700,
+              "unit": "g",
+              "source_name_es": "pescado salado",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "papas",
+              "quantity": 750,
+              "unit": "g",
+              "source_name_es": "papas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "batata",
+              "quantity": 650,
+              "unit": "g",
+              "source_name_es": "batata",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "gofio de millo",
+              "quantity": 150,
+              "unit": "g",
+              "source_name_es": "gofio de millo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "mojo verde preparado",
+              "quantity": 140,
+              "unit": "g",
+              "source_name_es": "mojo verde preparado",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "agua",
+              "quantity": 1400,
+              "unit": "ml",
+              "source_name_es": "agua",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Desala el pescado según el grosor y consérvalo refrigerado durante el proceso, cambiando el agua con higiene.",
+            "Cuece batata y papas; cocina el pescado desalado por separado hasta su punto seguro.",
+            "Sirve con el mojo preparado y haz una pella con el gofio medido y algo de líquido sin sal de cocer papas apto para consumo; no uses la salmuera de desalar pescado."
+          ],
+          "warnings": [
+            "Contiene PESCADO. Desala siempre refrigerado, descartando el agua de remojo; cocina el pescado a 63 °C o hasta cocción completa. El gofio de millo puede tener trazas de GLUTEN y el mojo preparado otros alérgenos según etiqueta.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "fish"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "green_mojo_prepared_possible_mustard_sulphites",
+            "corn_gofio_possible_gluten_cross_contact",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene PESCADO. Desala siempre refrigerado, descartando el agua de remojo; cocina el pescado a 63 °C o hasta cocción completa. El gofio de millo puede tener trazas de GLUTEN y el mojo preparado otros alérgenos según etiqueta.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "descartar agua de desalado y mantener frío",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "líquido para pella debe ser apto, no salmuera de desalado",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "pescado"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 4,
+              "ingredient": "gofio de millo",
+              "motivo": "Ingrediente comercial/complejo o posible traza: gofio",
+              "grupos_a_revisar": [
+                "gluten"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-9189D5C8D7",
+              "recipe_id": "JJ-R018",
+              "line": 1,
+              "producto_generico_es": "pescado salado",
+              "nombres_por_idioma": {
+                "es": "pescado salado",
+                "en": "salted fish",
+                "de": "Salzfisch",
+                "fr": "poisson salé",
+                "bg": "солена риба"
+              },
+              "cantidad": 700,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3ADB0574BB",
+              "recipe_id": "JJ-R018",
+              "line": 2,
+              "producto_generico_es": "papas",
+              "nombres_por_idioma": {
+                "es": "papas",
+                "en": "potatoes",
+                "de": "Kartoffeln",
+                "fr": "pommes de terre",
+                "bg": "картофи"
+              },
+              "cantidad": 750,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-F4610AA514",
+              "recipe_id": "JJ-R018",
+              "line": 3,
+              "producto_generico_es": "batata",
+              "nombres_por_idioma": {
+                "es": "batata",
+                "en": "sweet potato",
+                "de": "Süßkartoffel",
+                "fr": "patate douce",
+                "bg": "сладък картоф"
+              },
+              "cantidad": 650,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-2B1D2F8D72",
+              "recipe_id": "JJ-R018",
+              "line": 4,
+              "producto_generico_es": "gofio de millo",
+              "nombres_por_idioma": {
+                "es": "gofio de millo",
+                "en": "toasted corn gofio",
+                "de": "geröstetes Mais-Gofio",
+                "fr": "gofio de maïs torréfié",
+                "bg": "гофио от печена царевица"
+              },
+              "cantidad": 150,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-174EB6501D",
+              "recipe_id": "JJ-R018",
+              "line": 5,
+              "producto_generico_es": "mojo verde preparado",
+              "nombres_por_idioma": {
+                "es": "mojo verde preparado",
+                "en": "prepared green mojo sauce",
+                "de": "fertige grüne Mojo-Sauce",
+                "fr": "sauce mojo vert préparée",
+                "bg": "готов зелен сос мохо"
+              },
+              "cantidad": 140,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5F1DA0912E",
+              "recipe_id": "JJ-R018",
+              "line": 6,
+              "producto_generico_es": "agua",
+              "nombres_por_idioma": {
+                "es": "agua",
+                "en": "water",
+                "de": "Wasser",
+                "fr": "eau",
+                "bg": "вода"
+              },
+              "cantidad": 1400,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-R019",
+      "position": 120,
+      "sourceV83SHA256": "160de5db607fc126bb87efff64a994efd1b92fa62bb01d3692954b1bb6e4e772",
+      "contextSHA256": "7e4626e005efcbb465736c51aa38f7888527e0944c8d0aed743fd22c8fe4b8d6",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-R019",
+          "language": "es",
+          "title": "Langostinos al tomate estilo busara",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "langostinos",
+              "quantity": 900,
+              "unit": "g",
+              "source_name_es": "langostinos",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "tomate cherry",
+              "quantity": 600,
+              "unit": "g",
+              "source_name_es": "tomate cherry",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "cebolla",
+              "quantity": 180,
+              "unit": "g",
+              "source_name_es": "cebolla",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "ajo",
+              "quantity": 18,
+              "unit": "g",
+              "source_name_es": "ajo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "perejil",
+              "quantity": 20,
+              "unit": "g",
+              "source_name_es": "perejil",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "aceite de oliva",
+              "quantity": 40,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "vino blanco",
+              "quantity": 120,
+              "unit": "ml",
+              "source_name_es": "vino blanco",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "pan",
+              "quantity": 260,
+              "unit": "g",
+              "source_name_es": "pan",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Prepara una base concentrada de tomate, cebolla, ajo, aceite medido y la totalidad del vino blanco medido; deja cocinar.",
+            "Saltea brevemente los langostinos y termina su cocción dentro de la salsa hasta que estén opacos.",
+            "Sirve inmediatamente con perejil y el pan medido para acompañar."
+          ],
+          "warnings": [
+            "Contiene CRUSTÁCEOS (langostinos); el pan habitual contiene TRIGO/GLUTEN. El vino puede aportar SULFITOS según su contenido final. Mantén el marisco refrigerado y cocina hasta que la carne sea opaca; el calentamiento no garantiza eliminar el alcohol.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "crustaceans",
+            "gluten_wheat_typical_bread"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "white_wine_possible_sulphites_threshold",
+            "bread_additional_allergens",
+            "possible_product_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marca, SKU, producto, etiqueta real y precio oficial por tienda y formato, verificar ingredientes, alérgenos y trazas. El precio por sí solo no certifica alérgenos.",
+          "precaution_summary_localized": "Contiene CRUSTÁCEOS (langostinos); el pan habitual contiene TRIGO/GLUTEN. El vino puede aportar SULFITOS según su contenido final. Mantén el marisco refrigerado y cocina hasta que la carne sea opaca; el calentamiento no garantiza eliminar el alcohol.",
+          "user_taste_confirmed": false,
+          "tasting_status": "PENDING_USER_CONFIRMATION",
+          "external_native_language_certification": false,
+          "publication_status": "INTERNAL_REVIEW_COMPLETED_PENDING_USER_TASTE_AND_PRODUCT_LABELS",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_NUMERIC_CHECKED",
+          "editorial_addenda_v80": [
+            {
+              "step_number": 1,
+              "code": "emplear los 120 ml de vino medidos, no cantidad imprecisa",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 2,
+              "code": "cocción completa langostinos",
+              "source_spanish_historical_preserved": true
+            },
+            {
+              "step_number": 3,
+              "code": "usar pan medido",
+              "source_spanish_historical_preserved": true
+            }
+          ]
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "source_format": "standard",
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "crustaceos",
+            "gluten"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "sesamo",
+            "sulfitos"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 7,
+              "ingredient": "vino blanco",
+              "motivo": "Ingrediente comercial/complejo o posible traza: vino",
+              "grupos_a_revisar": [
+                "sulfitos"
+              ]
+            },
+            {
+              "line": 8,
+              "ingredient": "pan",
+              "motivo": "Ingrediente comercial/complejo o posible traza: pan",
+              "grupos_a_revisar": [
+                "gluten",
+                "sesamo"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-09915A174C",
+              "recipe_id": "JJ-R019",
+              "line": 1,
+              "producto_generico_es": "langostinos",
+              "nombres_por_idioma": {
+                "es": "langostinos",
+                "en": "prawns",
+                "de": "Garnelen",
+                "fr": "grosses crevettes",
+                "bg": "едри скариди"
+              },
+              "cantidad": 900,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-6B9D3EB8A0",
+              "recipe_id": "JJ-R019",
+              "line": 2,
+              "producto_generico_es": "tomate cherry",
+              "nombres_por_idioma": {
+                "es": "tomate cherry",
+                "en": "cherry tomatoes",
+                "de": "Cherrytomaten",
+                "fr": "tomates cerises",
+                "bg": "чери домати"
+              },
+              "cantidad": 600,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FBE0280057",
+              "recipe_id": "JJ-R019",
+              "line": 3,
+              "producto_generico_es": "cebolla",
+              "nombres_por_idioma": {
+                "es": "cebolla",
+                "en": "onion",
+                "de": "Zwiebel",
+                "fr": "oignon",
+                "bg": "лук"
+              },
+              "cantidad": 180,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-R019",
+              "line": 4,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 18,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-89A5B807C7",
+              "recipe_id": "JJ-R019",
+              "line": 5,
+              "producto_generico_es": "perejil",
+              "nombres_por_idioma": {
+                "es": "perejil",
+                "en": "parsley",
+                "de": "Petersilie",
+                "fr": "persil",
+                "bg": "магданоз"
+              },
+              "cantidad": 20,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4C2BD2043E",
+              "recipe_id": "JJ-R019",
+              "line": 6,
+              "producto_generico_es": "aceite de oliva",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva",
+                "en": "olive oil",
+                "de": "Olivenöl",
+                "fr": "huile d’olive",
+                "bg": "зехтин"
+              },
+              "cantidad": 40,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-2B7C405F37",
+              "recipe_id": "JJ-R019",
+              "line": 7,
+              "producto_generico_es": "vino blanco",
+              "nombres_por_idioma": {
+                "es": "vino blanco",
+                "en": "white wine",
+                "de": "Weißwein",
+                "fr": "vin blanc",
+                "bg": "бяло вино"
+              },
+              "cantidad": 120,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-00E37FFAE0",
+              "recipe_id": "JJ-R019",
+              "line": 8,
+              "producto_generico_es": "pan",
+              "nombres_por_idioma": {
+                "es": "pan",
+                "en": "bread",
+                "de": "Brot",
+                "fr": "pain",
+                "bg": "хляб"
+              },
+              "cantidad": 260,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Estado actual de construcción | JJ Compra Inteligente
 
+**Entrega candidata B05.3 · 24/11/2026:** [PR #31](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/31), fuente `e3a50e4`, CI y staging protegida correctas. La corrección impide heredar dietas cuando cambian ingredientes sin medida, condiciones, pasos o advertencias. Se conservan 157 recetas, fotos, cantidades, UI y siete documentos. [Revisión editorial preparada](../referencias/revision-culinaria/B05_3/README.md):15 lotes y300 decisiones pendientes; ninguna nueva clasificación activada. Recuperación por hashes correcta; HTTPS4 idiomas/319 recursos y16 + 8 casos publicados correctos. [Informe y alcance](MAESTRO/BLOQUE05_3_SEGURIDAD_Y_REVISION_CULINARIA.md) · [evidencia](../design/culinary-review/reports/verification.json). Main mantiene el cierre aprobado del PR #30 descrito debajo.
+
 **Actualizado 21/11/2026. PR #30 autorizado, fusionado en main y con CI correcta.** Merge `1504afd8538a3e38a546d41048b45be6d6cac3bf`, con el mismo árbol que la candidata `26244016f75e505a7e3b4d47c2a656c87c7a3a29`. La app integra 150 recetas V3, sus 150 fotos y siete anteriores: 157 IDs únicos. [CI de main](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/44947600998) · [registro](../design/recipe-integration150/reports/main-integration.json) · [auditoría y plan de pendientes 00–14](MAESTRO/AUDITORIA_PENDIENTES_TRAS_PR30_2026-11-21.md). La aceptación estética y física detallada sigue pendiente; toda la app no está terminada.
 
 ## Estado comprobado

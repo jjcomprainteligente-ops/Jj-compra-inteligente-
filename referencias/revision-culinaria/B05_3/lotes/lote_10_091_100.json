@@ -1,0 +1,4736 @@
+{
+  "schemaVersion": 1,
+  "kind": "JJ_CULINARY_REVIEW",
+  "source": {
+    "profile": "app10mb",
+    "dataZipRepositoryPath": "referencias/recetas/V3/APP_LIGERO_10MB/JJ_V3_APP_DATOS_150_RECETAS_5_IDIOMAS.zip",
+    "dataZipBytes": 1994471,
+    "dataZipSHA256": "e5654006ec2c6716b1cac8cdabbdca2f08422d31ba0982e9b3a888c02e874270",
+    "recipeEntry": "datos/recetas_150_5_idiomas_editorial_comercial_v3.json",
+    "originalEntry": "datos/V83_150_RECETAS_ORIGINAL_COMPLETO_INALTERADO.json",
+    "originalEntrySHA256": "b07e87e9fa2c9267e82c214ae3f684e216dfd276965ae4b4e3fce41ab4afd83a",
+    "contextLanguage": "es",
+    "sourceLanguagesPreservedInZip": [
+      "es",
+      "en",
+      "de",
+      "fr",
+      "bg"
+    ],
+    "contextHashCanonicalization": "UTF-8 JSON; recursively sorted keys; compact separators; finite exact numeric round-trip; no newline."
+  },
+  "contract": {
+    "categoryValues": [
+      "breakfast",
+      "main",
+      "dessert",
+      "other"
+    ],
+    "dietaryValues": [
+      "any",
+      "vegetarian",
+      "vegan"
+    ],
+    "decisionStatuses": [
+      "pending",
+      "reviewed"
+    ],
+    "independentDecisions": true,
+    "reviewDoesNotCertifyAllergensTracesProductsPricesOrNativeLanguage": true,
+    "responseValidationActivatesApplication": false
+  },
+  "batch": {
+    "number": 10,
+    "firstPosition": 91,
+    "lastPosition": 100
+  },
+  "recipes": [
+    {
+      "recipeId": "JJ-E09-DES-001",
+      "position": 91,
+      "sourceV83SHA256": "3a830803cbf18f709ff03e45391878611a4b41ba6f901673ada375060d3fdf5e",
+      "contextSHA256": "5189363c6c7cc5c3a542eb162eb50f70969b04400a5682254ef2c371b0288663",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E09-DES-001",
+          "language": "es",
+          "title": "Bienmesabe canario de almendra y limón",
+          "servings": 6,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "jarabe",
+              "min_value": 6,
+              "max_value": 8,
+              "unit": "min"
+            },
+            {
+              "phase_es": "almendra",
+              "min_value": 12,
+              "max_value": 15,
+              "unit": "min"
+            },
+            {
+              "phase_es": "atemperar_yemas",
+              "min_value": 5,
+              "max_value": 5,
+              "unit": "min"
+            },
+            {
+              "phase_es": "refrigeracion_minima",
+              "min_value": 120,
+              "max_value": 120,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "almendra molida",
+              "quantity": 200,
+              "unit": "g",
+              "source_name_es": "almendra molida",
+              "source_unit_es": "g",
+              "source_allergen_note": "frutos_de_cascara",
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "azúcar blanco",
+              "quantity": 180,
+              "unit": "g",
+              "source_name_es": "azúcar blanco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "agua",
+              "quantity": 150,
+              "unit": "ml",
+              "source_name_es": "agua",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "yemas de huevo",
+              "quantity": 6,
+              "unit": "unidad",
+              "source_name_es": "yemas de huevo",
+              "source_unit_es": "unidad",
+              "source_allergen_note": "huevos",
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "bizcochos de soletilla",
+              "quantity": 100,
+              "unit": "g",
+              "source_name_es": "bizcochos de soletilla",
+              "source_unit_es": "g",
+              "source_allergen_note": "cereales_con_gluten|huevos",
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "piel de limón",
+              "quantity": 1,
+              "unit": "tira",
+              "source_name_es": "piel de limón",
+              "source_unit_es": "tira",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "rama de canela",
+              "quantity": 1,
+              "unit": "unidad",
+              "source_name_es": "rama de canela",
+              "source_unit_es": "unidad",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "ralladura de limón",
+              "quantity": 2,
+              "unit": "g",
+              "source_name_es": "ralladura de limón",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Prepara seis recipientes pequeños. Lava y seca bien el limón antes de retirar una tira fina de piel, sin la parte blanca.",
+            "Calienta el agua con el azúcar, la canela y la piel de limón a fuego medio; remueve hasta disolver. Cocina de 6 a 8 minutos para obtener un almíbar ligero, sin dejar que se oscurezca.",
+            "Reserva aproximadamente 50 ml de almíbar en un recipiente aparte. Retira la rama de canela y la piel del almíbar restante.",
+            "Incorpora la almendra molida al almíbar caliente y cocina unos 12 a 15 minutos a fuego bajo, removiendo hasta lograr una pasta espesa que se separa parcialmente de la espátula.",
+            "Aparta del fuego y deja que la mezcla pierda calor durante 5 minutos. Bate las yemas en un bol y añade dos cucharadas de la mezcla templada a las yemas para atemperarlas.",
+            "Devuelve las yemas atemperadas a la mezcla de almendra. Cocínala al baño maría, removiendo sin parar, hasta que alcance 75 °C medidos en el centro; retira antes de que hierva o se corte.",
+            "Distribuye los bizcochos en seis vasos, humedécelos con el almíbar reservado y reparte la crema de almendras. Añade ralladura de limón.",
+            "Enfría rápidamente y refrigera tapado un mínimo de dos horas a 4 °C o menos. Sirve frío, sin usar huevo crudo sin pasteurizar."
+          ],
+          "warnings": [
+            "CONTIENE ALMENDRAS, HUEVO Y TRIGO/GLUTEN. Cocer la crema con yemas a 75 °C medidos en el centro; enfriar pronto y refrigerar tapada a ≤4 °C. Verificar alérgenos adicionales de los bizcochos.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "nuts_almond",
+            "eggs",
+            "gluten_wheat"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "ladyfinger_composition_possible_milk_or_soy",
+            "almonds_nuts_cross_contact"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE ALMENDRAS, HUEVO Y TRIGO/GLUTEN. Cocer la crema con yemas a 75 °C medidos en el centro; enfriar pronto y refrigerar tapada a ≤4 °C. Verificar alérgenos adicionales de los bizcochos.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 6,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "frutos_cascara",
+            "gluten",
+            "huevos"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [],
+          "product_dependent_ingredients": [],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-1F93BD3EB0",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 1,
+              "producto_generico_es": "almendra molida",
+              "nombres_por_idioma": {
+                "es": "almendra molida",
+                "en": "ground almonds",
+                "de": "gemahlene Mandeln",
+                "fr": "amandes en poudre",
+                "bg": "смлени бадеми"
+              },
+              "cantidad": 200,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-E5F59440C6",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 2,
+              "producto_generico_es": "azúcar blanco",
+              "nombres_por_idioma": {
+                "es": "azúcar blanco",
+                "en": "white sugar",
+                "de": "weißer Zucker",
+                "fr": "sucre blanc",
+                "bg": "бяла захар"
+              },
+              "cantidad": 180,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5F1DA0912E",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 3,
+              "producto_generico_es": "agua",
+              "nombres_por_idioma": {
+                "es": "agua",
+                "en": "water",
+                "de": "Wasser",
+                "fr": "eau",
+                "bg": "вода"
+              },
+              "cantidad": 150,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-71E5FCD396",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 4,
+              "producto_generico_es": "yemas de huevo",
+              "nombres_por_idioma": {
+                "es": "yemas de huevo",
+                "en": "egg yolks",
+                "de": "Eigelb",
+                "fr": "jaunes d’œufs",
+                "bg": "яйчни жълтъци"
+              },
+              "cantidad": 6,
+              "unidad_es": "unidad",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3D78201518",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 5,
+              "producto_generico_es": "bizcochos de soletilla",
+              "nombres_por_idioma": {
+                "es": "bizcochos de soletilla",
+                "en": "ladyfinger sponge biscuits",
+                "de": "Löffelbiskuits",
+                "fr": "biscuits à la cuillère",
+                "bg": "бишкоти"
+              },
+              "cantidad": 100,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-01064B9B0A",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 6,
+              "producto_generico_es": "piel de limón",
+              "nombres_por_idioma": {
+                "es": "piel de limón",
+                "en": "strip of lemon peel",
+                "de": "Streifen Zitronenschale",
+                "fr": "bande de zeste de citron",
+                "bg": "ивица лимонова кора"
+              },
+              "cantidad": 1,
+              "unidad_es": "tira",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-6A83C79550",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 7,
+              "producto_generico_es": "rama de canela",
+              "nombres_por_idioma": {
+                "es": "rama de canela",
+                "en": "cinnamon stick",
+                "de": "Zimtstange",
+                "fr": "bâton de cannelle",
+                "bg": "пръчка канела"
+              },
+              "cantidad": 1,
+              "unidad_es": "unidad",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-2A3BB81E03",
+              "recipe_id": "JJ-E09-DES-001",
+              "line": 8,
+              "producto_generico_es": "ralladura de limón",
+              "nombres_por_idioma": {
+                "es": "ralladura de limón",
+                "en": "finely grated lemon zest",
+                "de": "fein geriebene Zitronenschale",
+                "fr": "zeste de citron finement râpé",
+                "bg": "фино настъргана лимонова кора"
+              },
+              "cantidad": 2,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E09-DES-002",
+      "position": 92,
+      "sourceV83SHA256": "142fa47282eb30a49d31c9cce2cdb406ea5df69151c568bde2fa12bcd4371eb9",
+      "contextSHA256": "f4b71b94e00e840cbf1a54d463bb65bf1ec621ef66c2a505c694cf655302ec15",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E09-DES-002",
+          "language": "es",
+          "title": "Leche frita con canela y limón",
+          "servings": 8,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "infusion",
+              "min_value": 8,
+              "max_value": 8,
+              "unit": "min"
+            },
+            {
+              "phase_es": "crema",
+              "min_value": 5,
+              "max_value": 8,
+              "unit": "min"
+            },
+            {
+              "phase_es": "refrigeracion_minima",
+              "min_value": 240,
+              "max_value": 240,
+              "unit": "min"
+            },
+            {
+              "phase_es": "fritura_por_lado",
+              "min_value": 1,
+              "max_value": 2,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "leche entera",
+              "quantity": 750,
+              "unit": "ml",
+              "source_name_es": "leche entera",
+              "source_unit_es": "ml",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "maicena o almidón de maíz",
+              "quantity": 90,
+              "unit": "g",
+              "source_name_es": "maicena o almidón de maíz",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "azúcar blanco",
+              "quantity": 110,
+              "unit": "g",
+              "source_name_es": "azúcar blanco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "piel de limón",
+              "quantity": 1,
+              "unit": "tira",
+              "source_name_es": "piel de limón",
+              "source_unit_es": "tira",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "rama de canela",
+              "quantity": 1,
+              "unit": "unidad",
+              "source_name_es": "rama de canela",
+              "source_unit_es": "unidad",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "harina de trigo para rebozar",
+              "quantity": 80,
+              "unit": "g",
+              "source_name_es": "harina de trigo para rebozar",
+              "source_unit_es": "g",
+              "source_allergen_note": "cereales_con_gluten",
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "huevos",
+              "quantity": 2,
+              "unit": "unidad",
+              "source_name_es": "huevos",
+              "source_unit_es": "unidad",
+              "source_allergen_note": "huevos",
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "aceite de oliva suave para freír",
+              "quantity": 350,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva suave para freír",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "azúcar para espolvorear",
+              "quantity": 25,
+              "unit": "g",
+              "source_name_es": "azúcar para espolvorear",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "canela en polvo",
+              "quantity": 2,
+              "unit": "g",
+              "source_name_es": "canela en polvo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Reserva 150 ml de leche fría y disuelve en ella la maicena, evitando grumos. Prepara una fuente de unos 20 × 20 cm ligeramente aceitada.",
+            "Calienta los otros 600 ml de leche con 110 g de azúcar, la rama de canela y la piel del limón hasta que casi hierva; apaga y deja infusionar 8 minutos.",
+            "Retira canela y piel. Incorpora la mezcla de maicena a la leche aromatizada batiendo con varillas.",
+            "Cocina a fuego medio-bajo sin dejar de remover durante 5 a 8 minutos, hasta obtener una crema muy espesa que mantiene su forma sobre la espátula.",
+            "Vierte la crema en la fuente, alisa hasta un espesor de unos 2 cm, deja que pierda el calor inicial y refrigera tapada al menos cuatro horas.",
+            "Corta la masa firme en ocho porciones. Pasa cada una por harina de trigo y después por los huevos batidos.",
+            "Calienta el aceite en una sartén a aproximadamente 170–175 °C y fríe las porciones por tandas durante 1 a 2 minutos por lado, hasta dorar el exterior. Retira a papel absorbente.",
+            "Mezcla los 25 g de azúcar restantes con la canela molida y espolvorea las porciones escurridas. Sirve templadas o frías."
+          ],
+          "warnings": [
+            "CONTIENE LECHE, TRIGO/GLUTEN Y HUEVO. Mantener la crema refrigerada durante el cuajado; freír sin salpicaduras a 170–175 °C y comprobar que el rebozado con huevo queda cocinado. El volumen de aceite utilizado no equivale al absorbido.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "milk",
+            "gluten_wheat",
+            "eggs"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "cornstarch_and_frying_oil_cross_contact"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE LECHE, TRIGO/GLUTEN Y HUEVO. Mantener la crema refrigerada durante el cuajado; freír sin salpicaduras a 170–175 °C y comprobar que el rebozado con huevo queda cocinado. El volumen de aceite utilizado no equivale al absorbido.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 8,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "gluten",
+            "huevos",
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 2,
+              "ingredient": "maicena o almidón de maíz",
+              "motivo": "Ingrediente comercial/complejo o posible traza: maíz",
+              "grupos_a_revisar": [
+                "gluten"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-718078B85E",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 1,
+              "producto_generico_es": "leche entera",
+              "nombres_por_idioma": {
+                "es": "leche entera",
+                "en": "whole milk",
+                "de": "Vollmilch",
+                "fr": "lait entier",
+                "bg": "пълномаслено прясно мляко"
+              },
+              "cantidad": 750,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-6C14E71FCA",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 2,
+              "producto_generico_es": "maicena o almidón de maíz",
+              "nombres_por_idioma": {
+                "es": "maicena o almidón de maíz",
+                "en": "cornflour / cornstarch",
+                "de": "Maisstärke",
+                "fr": "fécule de maïs",
+                "bg": "царевично нишесте"
+              },
+              "cantidad": 90,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-E5F59440C6",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 3,
+              "producto_generico_es": "azúcar blanco",
+              "nombres_por_idioma": {
+                "es": "azúcar blanco",
+                "en": "white sugar",
+                "de": "weißer Zucker",
+                "fr": "sucre blanc",
+                "bg": "бяла захар"
+              },
+              "cantidad": 110,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-01064B9B0A",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 4,
+              "producto_generico_es": "piel de limón",
+              "nombres_por_idioma": {
+                "es": "piel de limón",
+                "en": "strip of lemon peel",
+                "de": "Streifen Zitronenschale",
+                "fr": "bande de zeste de citron",
+                "bg": "ивица лимонова кора"
+              },
+              "cantidad": 1,
+              "unidad_es": "tira",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-6A83C79550",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 5,
+              "producto_generico_es": "rama de canela",
+              "nombres_por_idioma": {
+                "es": "rama de canela",
+                "en": "cinnamon stick",
+                "de": "Zimtstange",
+                "fr": "bâton de cannelle",
+                "bg": "пръчка канела"
+              },
+              "cantidad": 1,
+              "unidad_es": "unidad",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-ED8C0C0E12",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 6,
+              "producto_generico_es": "harina de trigo para rebozar",
+              "nombres_por_idioma": {
+                "es": "harina de trigo para rebozar",
+                "en": "wheat flour for coating",
+                "de": "Weizenmehl zum Panieren",
+                "fr": "farine de blé pour la panure",
+                "bg": "пшенично брашно за панировка"
+              },
+              "cantidad": 80,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D956E9FF8F",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 7,
+              "producto_generico_es": "huevos",
+              "nombres_por_idioma": {
+                "es": "huevos",
+                "en": "eggs",
+                "de": "Eier",
+                "fr": "œufs",
+                "bg": "яйца"
+              },
+              "cantidad": 2,
+              "unidad_es": "unidad",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-AF54A56456",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 8,
+              "producto_generico_es": "aceite de oliva suave para freír",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva suave para freír",
+                "en": "mild olive oil for frying",
+                "de": "mildes Olivenöl zum Frittieren",
+                "fr": "huile d’olive douce pour la friture",
+                "bg": "мек зехтин за пържене"
+              },
+              "cantidad": 350,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D3067C7FB2",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 9,
+              "producto_generico_es": "azúcar para espolvorear",
+              "nombres_por_idioma": {
+                "es": "azúcar para espolvorear",
+                "en": "sugar for dusting",
+                "de": "Zucker zum Bestreuen",
+                "fr": "sucre pour saupoudrer",
+                "bg": "захар за поръсване"
+              },
+              "cantidad": 25,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D728AD79E2",
+              "recipe_id": "JJ-E09-DES-002",
+              "line": 10,
+              "producto_generico_es": "canela en polvo",
+              "nombres_por_idioma": {
+                "es": "canela en polvo",
+                "en": "ground cinnamon",
+                "de": "gemahlener Zimt",
+                "fr": "cannelle moulue",
+                "bg": "смляна канела"
+              },
+              "cantidad": 2,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E09-DES-003",
+      "position": 93,
+      "sourceV83SHA256": "cc7fb6e53d8d7b261e464d31b290fe1dce5ba9e2a1abd59a235115c624013fd8",
+      "contextSHA256": "9fc16bdf80fe8df9fe2de5fa8c186d7c98d276f77523d8a8386e540eaf538c65",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E09-DES-003",
+          "language": "es",
+          "title": "Tarte Tatin de manzana caramelizada",
+          "servings": 6,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "manzana",
+              "min_value": 10,
+              "max_value": 12,
+              "unit": "min"
+            },
+            {
+              "phase_es": "horno",
+              "min_value": 30,
+              "max_value": 35,
+              "unit": "min"
+            },
+            {
+              "phase_es": "reposo_antes_voltear",
+              "min_value": 7,
+              "max_value": 10,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "manzanas firmes",
+              "quantity": 850,
+              "unit": "g",
+              "source_name_es": "manzanas firmes",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "masa de hojaldre refrigerada con mantequilla",
+              "quantity": 230,
+              "unit": "g",
+              "source_name_es": "masa de hojaldre refrigerada con mantequilla",
+              "source_unit_es": "g",
+              "source_allergen_note": "cereales_con_gluten|leche",
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "azúcar blanco",
+              "quantity": 140,
+              "unit": "g",
+              "source_name_es": "azúcar blanco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "mantequilla sin sal",
+              "quantity": 85,
+              "unit": "g",
+              "source_name_es": "mantequilla sin sal",
+              "source_unit_es": "g",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "agua",
+              "quantity": 20,
+              "unit": "ml",
+              "source_name_es": "agua",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "zumo de limón",
+              "quantity": 15,
+              "unit": "ml",
+              "source_name_es": "zumo de limón",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "sal fina",
+              "quantity": 1,
+              "unit": "g",
+              "source_name_es": "sal fina",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Precalienta el horno a 190 °C, calor arriba y abajo. Comprueba que la sartén o molde de unos 23–24 cm puede entrar en el horno.",
+            "Pela las manzanas, retira el corazón y córtalas en cuartos. Rocíalas con el zumo de limón para limitar su oxidación.",
+            "Mezcla el azúcar con el agua en una sartén que admita horno; calienta sin remover hasta conseguir un caramelo de tono ámbar claro, evitando que humee o se queme.",
+            "Aparta brevemente el recipiente del fuego e incorpora con precaución la mantequilla troceada; remover puede producir burbujas y salpicaduras de caramelo muy caliente. Añade también el gramo de sal fina ya incluido en ingredientes.",
+            "Coloca los cuartos de manzana juntos sobre el caramelo, con la cara curva hacia abajo. Cocina a fuego suave de 10 a 12 minutos para que suelten parte del jugo y se impregnen.",
+            "Recorta un círculo de hojaldre de diámetro ligeramente superior al molde; colócalo encima de las manzanas y mete los bordes hacia el interior, sin apretar con los dedos contra el caramelo.",
+            "Hornea durante 30 a 35 minutos, hasta que la superficie esté dorada y bien cocida. Retira con manoplas y deja reposar de 7 a 10 minutos.",
+            "Coloca un plato de mayor diámetro encima y da la vuelta con mucho cuidado para desmoldar; el caramelo permanece muy caliente. Sirve templada."
+          ],
+          "warnings": [
+            "CONTIENE TRIGO/GLUTEN Y LECHE. El caramelo alcanza temperaturas que provocan quemaduras graves: evitar salpicaduras y voltear el molde con protección térmica. Comprobar el hojaldre comercial.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "gluten_wheat",
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "puff_pastry_specific_brand_other_allergens"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE TRIGO/GLUTEN Y LECHE. El caramelo alcanza temperaturas que provocan quemaduras graves: evitar salpicaduras y voltear el molde con protección térmica. Comprobar el hojaldre comercial.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 6,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "gluten",
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [],
+          "product_dependent_ingredients": [],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-0BDA7FDD47",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 1,
+              "producto_generico_es": "manzanas firmes",
+              "nombres_por_idioma": {
+                "es": "manzanas firmes",
+                "en": "firm apples",
+                "de": "feste Äpfel",
+                "fr": "pommes fermes",
+                "bg": "твърди ябълки"
+              },
+              "cantidad": 850,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-E1E047DECB",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 2,
+              "producto_generico_es": "masa de hojaldre refrigerada con mantequilla",
+              "nombres_por_idioma": {
+                "es": "masa de hojaldre refrigerada con mantequilla",
+                "en": "refrigerated butter puff pastry",
+                "de": "gekühlter Butterblätterteig",
+                "fr": "pâte feuilletée pur beurre réfrigérée",
+                "bg": "охладено бутер тесто с масло"
+              },
+              "cantidad": 230,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-E5F59440C6",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 3,
+              "producto_generico_es": "azúcar blanco",
+              "nombres_por_idioma": {
+                "es": "azúcar blanco",
+                "en": "white sugar",
+                "de": "weißer Zucker",
+                "fr": "sucre blanc",
+                "bg": "бяла захар"
+              },
+              "cantidad": 140,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B7F662EC19",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 4,
+              "producto_generico_es": "mantequilla sin sal",
+              "nombres_por_idioma": {
+                "es": "mantequilla sin sal",
+                "en": "unsalted butter",
+                "de": "ungesalzene Butter",
+                "fr": "beurre doux",
+                "bg": "безсолно масло"
+              },
+              "cantidad": 85,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5F1DA0912E",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 5,
+              "producto_generico_es": "agua",
+              "nombres_por_idioma": {
+                "es": "agua",
+                "en": "water",
+                "de": "Wasser",
+                "fr": "eau",
+                "bg": "вода"
+              },
+              "cantidad": 20,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-61EA33A5C7",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 6,
+              "producto_generico_es": "zumo de limón",
+              "nombres_por_idioma": {
+                "es": "zumo de limón",
+                "en": "lemon juice",
+                "de": "Zitronensaft",
+                "fr": "jus de citron",
+                "bg": "лимонов сок"
+              },
+              "cantidad": 15,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-7DD8435E84",
+              "recipe_id": "JJ-E09-DES-003",
+              "line": 7,
+              "producto_generico_es": "sal fina",
+              "nombres_por_idioma": {
+                "es": "sal fina",
+                "en": "fine salt",
+                "de": "feines Salz",
+                "fr": "sel fin",
+                "bg": "фина сол"
+              },
+              "cantidad": 1,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E10-DES-004",
+      "position": 94,
+      "sourceV83SHA256": "830f5dd9934075767fb12e80cf312096d43290481b36855b591ff49cc4f55da8",
+      "contextSHA256": "d33e2e4cca8a663af9b698e5bd60c4fd37f8fffb86834019b8c1e59593f2206b",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E10-DES-004",
+          "language": "es",
+          "title": "Panna cotta de vainilla con maracuyá",
+          "servings": 6,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "hidratar_gelatina",
+              "min_value": 8,
+              "max_value": 10,
+              "unit": "min"
+            },
+            {
+              "phase_es": "infusion_vainilla",
+              "min_value": 5,
+              "max_value": 5,
+              "unit": "min"
+            },
+            {
+              "phase_es": "refrigeracion_minima",
+              "min_value": 360,
+              "max_value": 360,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "nata para montar (35 % materia grasa)",
+              "quantity": 500,
+              "unit": "ml",
+              "source_name_es": "nata para montar (35 % materia grasa)",
+              "source_unit_es": "ml",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "leche entera",
+              "quantity": 100,
+              "unit": "ml",
+              "source_name_es": "leche entera",
+              "source_unit_es": "ml",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "azúcar blanco para la crema",
+              "quantity": 70,
+              "unit": "g",
+              "source_name_es": "azúcar blanco para la crema",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "gelatina alimentaria en hojas (animal, verificar especie)",
+              "quantity": 8,
+              "unit": "g",
+              "source_name_es": "gelatina alimentaria en hojas (animal, verificar especie)",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "vainilla en vaina",
+              "quantity": 1,
+              "unit": "unidad",
+              "source_name_es": "vainilla en vaina",
+              "source_unit_es": "unidad",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "maracuyá madura",
+              "quantity": 4,
+              "unit": "unidades",
+              "source_name_es": "maracuyá madura",
+              "source_unit_es": "unidades",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "azúcar para la salsa",
+              "quantity": 20,
+              "unit": "g",
+              "source_name_es": "azúcar para la salsa",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "agua para la salsa",
+              "quantity": 20,
+              "unit": "ml",
+              "source_name_es": "agua para la salsa",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Prepara seis moldes pequeños de 100 a 120 ml. Pon las hojas de gelatina en abundante agua muy fría durante 8 a 10 minutos hasta que se hidraten.",
+            "Abre la vaina de vainilla y raspa las semillas. Vierte la nata y leche en un cazo con 70 g de azúcar, las semillas y la vaina.",
+            "Calienta a fuego medio y remueve hasta disolver el azúcar y que la mezcla esté muy caliente, sin hervir. Apaga y deja infusionar cinco minutos; retira la vaina.",
+            "Escurre y exprime suavemente la gelatina hidratada. Incorpórala al líquido caliente fuera del fuego y remueve hasta disolverla por completo.",
+            "Reparte en los moldes pasando la crema por un colador fino si fuera necesario. Deja perder el vapor y refrigera tapado a 4 °C o menos al menos seis horas.",
+            "Abre los maracuyás. En una sartén pequeña reúne pulpa y semillas con 20 g de azúcar y 20 ml de agua; cuece suavemente dos o tres minutos y deja enfriar.",
+            "Desmolda pasando brevemente la base de cada molde por agua templada, sin que el agua toque el postre. Sirve con una cucharada de salsa fría de maracuyá."
+          ],
+          "warnings": [
+            "CONTIENE LECHE. Comprobar el origen animal de la gelatina (especie y posibles alérgenos según producto) y la idoneidad dietética. Refrigerar a ≤4 °C durante el cuajado; no dejar la mezcla templada durante horas.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "gelatine_animal_species_fish_origin_possible_label_dependent",
+            "cream_and_gelatine_traces"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE LECHE. Comprobar el origen animal de la gelatina (especie y posibles alérgenos según producto) y la idoneidad dietética. Refrigerar a ≤4 °C durante el cuajado; no dejar la mezcla templada durante horas.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 6,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "leche",
+            "pescado",
+            "soja"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 1,
+              "ingredient": "nata para montar (35 % materia grasa)",
+              "motivo": "Ingrediente comercial/complejo o posible traza: nata",
+              "grupos_a_revisar": [
+                "leche"
+              ]
+            },
+            {
+              "line": 7,
+              "ingredient": "azúcar para la salsa",
+              "motivo": "Ingrediente comercial/complejo o posible traza: salsa",
+              "grupos_a_revisar": [
+                "soja",
+                "gluten",
+                "pescado"
+              ]
+            },
+            {
+              "line": 8,
+              "ingredient": "agua para la salsa",
+              "motivo": "Ingrediente comercial/complejo o posible traza: salsa",
+              "grupos_a_revisar": [
+                "soja",
+                "gluten",
+                "pescado"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-1B4CB8F6BC",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 1,
+              "producto_generico_es": "nata para montar (35 % materia grasa)",
+              "nombres_por_idioma": {
+                "es": "nata para montar (35 % materia grasa)",
+                "en": "whipping cream (35% fat)",
+                "de": "Schlagsahne (35 % Fett)",
+                "fr": "crème liquide entière à fouetter (35 % MG)",
+                "bg": "сметана за разбиване (35% масленост)"
+              },
+              "cantidad": 500,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-718078B85E",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 2,
+              "producto_generico_es": "leche entera",
+              "nombres_por_idioma": {
+                "es": "leche entera",
+                "en": "whole milk",
+                "de": "Vollmilch",
+                "fr": "lait entier",
+                "bg": "пълномаслено прясно мляко"
+              },
+              "cantidad": 100,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5103C86154",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 3,
+              "producto_generico_es": "azúcar blanco para la crema",
+              "nombres_por_idioma": {
+                "es": "azúcar blanco para la crema",
+                "en": "white sugar for the cream",
+                "de": "weißer Zucker für die Creme",
+                "fr": "sucre blanc pour la crème",
+                "bg": "бяла захар за крема"
+              },
+              "cantidad": 70,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-1A445A1720",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 4,
+              "producto_generico_es": "gelatina alimentaria en hojas (animal, verificar especie)",
+              "nombres_por_idioma": {
+                "es": "gelatina alimentaria en hojas (animal, verificar especie)",
+                "en": "leaf gelatine (animal origin; verify species)",
+                "de": "Gelatineblätter (tierisch; Tierart prüfen)",
+                "fr": "gélatine alimentaire en feuilles (origine animale; vérifier l’espèce)",
+                "bg": "листов желатин (животински произход; проверете вида)"
+              },
+              "cantidad": 8,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-45162F27E4",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 5,
+              "producto_generico_es": "vainilla en vaina",
+              "nombres_por_idioma": {
+                "es": "vainilla en vaina",
+                "en": "vanilla pod",
+                "de": "Vanilleschote",
+                "fr": "gousse de vanille",
+                "bg": "шушулка ванилия"
+              },
+              "cantidad": 1,
+              "unidad_es": "unidad",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-402ADC6F54",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 6,
+              "producto_generico_es": "maracuyá madura",
+              "nombres_por_idioma": {
+                "es": "maracuyá madura",
+                "en": "ripe passion fruits",
+                "de": "reife Passionsfrüchte",
+                "fr": "fruits de la passion mûrs",
+                "bg": "узрели плодове маракуя"
+              },
+              "cantidad": 4,
+              "unidad_es": "unidades",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-AED38F346E",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 7,
+              "producto_generico_es": "azúcar para la salsa",
+              "nombres_por_idioma": {
+                "es": "azúcar para la salsa",
+                "en": "sugar for the sauce",
+                "de": "Zucker für die Sauce",
+                "fr": "sucre pour le coulis",
+                "bg": "захар за соса"
+              },
+              "cantidad": 20,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5751E300CD",
+              "recipe_id": "JJ-E10-DES-004",
+              "line": 8,
+              "producto_generico_es": "agua para la salsa",
+              "nombres_por_idioma": {
+                "es": "agua para la salsa",
+                "en": "water for the sauce",
+                "de": "Wasser für die Sauce",
+                "fr": "eau pour le coulis",
+                "bg": "вода за соса"
+              },
+              "cantidad": 20,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E10-DES-005",
+      "position": 95,
+      "sourceV83SHA256": "64f7ed66815623cdcca9e504fab3c118c3a2d2fd42187a1573cc4b27dcd255b0",
+      "contextSHA256": "4228a9c4f5712e39bbcaf5284349055befd1ade7cc1df8488ee037cf64d8b4f1",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E10-DES-005",
+          "language": "es",
+          "title": "Mango sticky rice con coco (khao niao mamuang)",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "remojo_minimo",
+              "min_value": 240,
+              "max_value": 240,
+              "unit": "min"
+            },
+            {
+              "phase_es": "vapor",
+              "min_value": 25,
+              "max_value": 30,
+              "unit": "min"
+            },
+            {
+              "phase_es": "reposo",
+              "min_value": 20,
+              "max_value": 20,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "arroz glutinoso tailandés (no sustituir por arroz largo)",
+              "quantity": 250,
+              "unit": "g",
+              "source_name_es": "arroz glutinoso tailandés (no sustituir por arroz largo)",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "leche de coco sin azúcar",
+              "quantity": 250,
+              "unit": "ml",
+              "source_name_es": "leche de coco sin azúcar",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "crema de coco sin azúcar para el acabado",
+              "quantity": 100,
+              "unit": "ml",
+              "source_name_es": "crema de coco sin azúcar para el acabado",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "azúcar blanco",
+              "quantity": 60,
+              "unit": "g",
+              "source_name_es": "azúcar blanco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "sal fina",
+              "quantity": 3,
+              "unit": "g",
+              "source_name_es": "sal fina",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "mango maduro pelado",
+              "quantity": 500,
+              "unit": "g",
+              "source_name_es": "mango maduro pelado",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "judías mungo partidas tostadas",
+              "quantity": 15,
+              "unit": "g",
+              "source_name_es": "judías mungo partidas tostadas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Lava el arroz en varios cambios de agua hasta que salga menos turbia y sumérgelo en un bol con agua fría abundante al menos cuatro horas, idealmente toda la noche.",
+            "Escurre muy bien el arroz. Colócalo sobre una tela de vapor limpia, en una vaporera, sin sumergirlo en agua. Cuece al vapor de 25 a 30 minutos, removiendo o girando la masa a mitad.",
+            "Mientras tanto, calienta a fuego bajo los 250 ml de leche de coco con 50 g de azúcar y 2 g de sal hasta disolverlos. No dejes que hierva fuerte ni que se separe.",
+            "Pasa el arroz aún caliente a una fuente y vierte la leche de coco dulce. Mézclalo con suavidad, tapa y deja reposar 20 minutos para que absorba el líquido.",
+            "Prepara la cobertura calentando 100 ml de crema de coco con 10 g de azúcar y 1 g de sal; apaga y deja templar.",
+            "Lava, pela y corta el mango en láminas. Reparte el arroz en cuatro platos con el mango al lado, vierte una cucharada de crema de coco y termina con las judías mungo tostadas.",
+            "Sirve preferentemente recién hecho o templado. Refrigera rápidamente las sobras; no dejes el arroz cocido a temperatura ambiente durante horas."
+          ],
+          "warnings": [
+            "EL ARROZ GLUTINOSO PURO NO CONTIENE GLUTEN DE TRIGO POR SU NATURALEZA; comprobar etiquetas y trazas. Remojar ≥4 h, cocer bien al vapor, servir pronto y enfriar rápidamente las sobras de arroz para reducir el riesgo de Bacillus cereus.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [],
+          "possible_allergen_codes_product_dependent": [
+            "coconut_milk_and_mung_product_cross_contact",
+            "glutinous_rice_is_not_wheat_gluten"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "EL ARROZ GLUTINOSO PURO NO CONTIENE GLUTEN DE TRIGO POR SU NATURALEZA; comprobar etiquetas y trazas. Remojar ≥4 h, cocer bien al vapor, servir pronto y enfriar rápidamente las sobras de arroz para reducir el riesgo de Bacillus cereus.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "gluten"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "frutos_cascara"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 2,
+              "ingredient": "leche de coco sin azúcar",
+              "motivo": "Ingrediente comercial/complejo o posible traza: coco",
+              "grupos_a_revisar": [
+                "frutos_cascara"
+              ]
+            },
+            {
+              "line": 3,
+              "ingredient": "crema de coco sin azúcar para el acabado",
+              "motivo": "Ingrediente comercial/complejo o posible traza: coco",
+              "grupos_a_revisar": [
+                "frutos_cascara"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-28F982FE0A",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 1,
+              "producto_generico_es": "arroz glutinoso tailandés (no sustituir por arroz largo)",
+              "nombres_por_idioma": {
+                "es": "arroz glutinoso tailandés (no sustituir por arroz largo)",
+                "en": "Thai glutinous rice (do not replace with long-grain rice)",
+                "de": "thailändischer Klebreis (nicht durch Langkornreis ersetzen)",
+                "fr": "riz gluant thaïlandais (ne pas remplacer par du riz long)",
+                "bg": "тайландски лепкав ориз (не заменяйте с дългозърнест)"
+              },
+              "cantidad": 250,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3DB38DED2E",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 2,
+              "producto_generico_es": "leche de coco sin azúcar",
+              "nombres_por_idioma": {
+                "es": "leche de coco sin azúcar",
+                "en": "unsweetened coconut milk",
+                "de": "ungesüßte Kokosmilch",
+                "fr": "lait de coco sans sucre",
+                "bg": "неподсладено кокосово мляко"
+              },
+              "cantidad": 250,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-8F99EAB57F",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 3,
+              "producto_generico_es": "crema de coco sin azúcar para el acabado",
+              "nombres_por_idioma": {
+                "es": "crema de coco sin azúcar para el acabado",
+                "en": "unsweetened coconut cream for finishing",
+                "de": "ungesüßte Kokoscreme zum Garnieren",
+                "fr": "crème de coco sans sucre pour la finition",
+                "bg": "неподсладена кокосова сметана за завършване"
+              },
+              "cantidad": 100,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-E5F59440C6",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 4,
+              "producto_generico_es": "azúcar blanco",
+              "nombres_por_idioma": {
+                "es": "azúcar blanco",
+                "en": "white sugar",
+                "de": "weißer Zucker",
+                "fr": "sucre blanc",
+                "bg": "бяла захар"
+              },
+              "cantidad": 60,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-7DD8435E84",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 5,
+              "producto_generico_es": "sal fina",
+              "nombres_por_idioma": {
+                "es": "sal fina",
+                "en": "fine salt",
+                "de": "feines Salz",
+                "fr": "sel fin",
+                "bg": "фина сол"
+              },
+              "cantidad": 3,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-9D88CCA2E1",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 6,
+              "producto_generico_es": "mango maduro pelado",
+              "nombres_por_idioma": {
+                "es": "mango maduro pelado",
+                "en": "peeled ripe mango",
+                "de": "geschälte reife Mango",
+                "fr": "mangue mûre pelée",
+                "bg": "обелено узряло манго"
+              },
+              "cantidad": 500,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-F56FC15FE7",
+              "recipe_id": "JJ-E10-DES-005",
+              "line": 7,
+              "producto_generico_es": "judías mungo partidas tostadas",
+              "nombres_por_idioma": {
+                "es": "judías mungo partidas tostadas",
+                "en": "toasted split mung beans",
+                "de": "geröstete, halbierte Mungbohnen",
+                "fr": "haricots mungo cassés grillés",
+                "bg": "печени разполовени бобчета мунг"
+              },
+              "cantidad": 15,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E10-DES-006",
+      "position": 96,
+      "sourceV83SHA256": "0126f9654d71726a76fe550a94239dd90104091472cf770039a9d3cc656c48d0",
+      "contextSHA256": "e08abbc5aab117da773c3e73ecdea9f43da1dc0245cba73837f5b666711698b8",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E10-DES-006",
+          "language": "es",
+          "title": "Klepon de pandan, coco y azúcar de palma",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "vapor_coco",
+              "min_value": 5,
+              "max_value": 5,
+              "unit": "min"
+            },
+            {
+              "phase_es": "coccion_tras_flotar",
+              "min_value": 2,
+              "max_value": 2,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "harina de arroz glutinoso",
+              "quantity": 240,
+              "unit": "g",
+              "source_name_es": "harina de arroz glutinoso",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "hojas de pandan frescas",
+              "quantity": 4,
+              "unit": "unidades",
+              "source_name_es": "hojas de pandan frescas",
+              "source_unit_es": "unidades",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "agua",
+              "quantity": 190,
+              "unit": "ml",
+              "source_name_es": "agua",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "azúcar de palma rallado (gula jawa)",
+              "quantity": 90,
+              "unit": "g",
+              "source_name_es": "azúcar de palma rallado (gula jawa)",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "coco fresco rallado",
+              "quantity": 125,
+              "unit": "g",
+              "source_name_es": "coco fresco rallado",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "sal fina",
+              "quantity": 3,
+              "unit": "g",
+              "source_name_es": "sal fina",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Tritura las hojas de pandan limpias con unos 190 ml de agua; exprime o filtra por un colador fino para obtener un líquido verde aromático.",
+            "Mezcla la harina de arroz glutinoso con 2 g de sal. Añade poco a poco el agua de pandan y amasa hasta lograr una masa suave, maleable y sin grietas; reserva un poco del líquido si queda demasiado blanda.",
+            "Ralla el azúcar de palma y divide en 16 montoncitos de unos 5 a 6 g. Separa la masa en 16 porciones aproximadamente iguales.",
+            "Aplana una porción en la palma de la mano, pon el azúcar en el centro y cierra todos los bordes cuidadosamente; rueda entre las manos para sellar. Repite sin dejar grietas que permitan salir al almíbar.",
+            "Cocina al vapor el coco rallado con 1 g de sal durante cinco minutos, o usa coco deshidratado apto para consumo siguiendo su envase. Extiéndelo en una bandeja limpia.",
+            "Pon abundante agua a hervir suavemente. Introduce las bolas por tandas: cuando suban a la superficie, mantenlas dos minutos más para cocer el interior.",
+            "Saca con una espumadera, escurre brevemente y reboza en el coco preparado. Sirve tibias o a temperatura ambiente poco después de elaborarlas; el centro puede estar muy caliente."
+          ],
+          "warnings": [
+            "EL ARROZ GLUTINOSO NO EQUIVALE A GLUTEN DE TRIGO; verificar etiquetas y trazas. Cocinar completamente las bolas y el coco fresco; el relleno de azúcar fundido puede causar quemaduras. Consumir pronto.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [],
+          "possible_allergen_codes_product_dependent": [
+            "glutinous_rice_is_not_wheat_gluten",
+            "pandan_or_coconut_packaging_cross_contact"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "EL ARROZ GLUTINOSO NO EQUIVALE A GLUTEN DE TRIGO; verificar etiquetas y trazas. Cocinar completamente las bolas y el coco fresco; el relleno de azúcar fundido puede causar quemaduras. Consumir pronto.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "frutos_cascara",
+            "gluten",
+            "sesamo"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 2,
+              "ingredient": "hojas de pandan frescas",
+              "motivo": "Ingrediente comercial/complejo o posible traza: pan",
+              "grupos_a_revisar": [
+                "gluten",
+                "sesamo"
+              ]
+            },
+            {
+              "line": 5,
+              "ingredient": "coco fresco rallado",
+              "motivo": "Ingrediente comercial/complejo o posible traza: coco",
+              "grupos_a_revisar": [
+                "frutos_cascara"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-17E39505DB",
+              "recipe_id": "JJ-E10-DES-006",
+              "line": 1,
+              "producto_generico_es": "harina de arroz glutinoso",
+              "nombres_por_idioma": {
+                "es": "harina de arroz glutinoso",
+                "en": "glutinous rice flour",
+                "de": "Klebreismehl",
+                "fr": "farine de riz gluant",
+                "bg": "брашно от лепкав ориз"
+              },
+              "cantidad": 240,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-3428ECD761",
+              "recipe_id": "JJ-E10-DES-006",
+              "line": 2,
+              "producto_generico_es": "hojas de pandan frescas",
+              "nombres_por_idioma": {
+                "es": "hojas de pandan frescas",
+                "en": "fresh pandan leaves",
+                "de": "frische Pandanblätter",
+                "fr": "feuilles fraîches de pandan",
+                "bg": "пресни листа от пандан"
+              },
+              "cantidad": 4,
+              "unidad_es": "unidades",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5F1DA0912E",
+              "recipe_id": "JJ-E10-DES-006",
+              "line": 3,
+              "producto_generico_es": "agua",
+              "nombres_por_idioma": {
+                "es": "agua",
+                "en": "water",
+                "de": "Wasser",
+                "fr": "eau",
+                "bg": "вода"
+              },
+              "cantidad": 190,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-93F4772BA9",
+              "recipe_id": "JJ-E10-DES-006",
+              "line": 4,
+              "producto_generico_es": "azúcar de palma rallado (gula jawa)",
+              "nombres_por_idioma": {
+                "es": "azúcar de palma rallado (gula jawa)",
+                "en": "grated palm sugar (gula jawa)",
+                "de": "geriebener Palmzucker (Gula Jawa)",
+                "fr": "sucre de palme râpé (gula jawa)",
+                "bg": "настъргана палмова захар (гула джава)"
+              },
+              "cantidad": 90,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-9B5C1B99BE",
+              "recipe_id": "JJ-E10-DES-006",
+              "line": 5,
+              "producto_generico_es": "coco fresco rallado",
+              "nombres_por_idioma": {
+                "es": "coco fresco rallado",
+                "en": "freshly grated coconut",
+                "de": "frisch geraspelte Kokosnuss",
+                "fr": "noix de coco fraîche râpée",
+                "bg": "пресен настърган кокос"
+              },
+              "cantidad": 125,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-7DD8435E84",
+              "recipe_id": "JJ-E10-DES-006",
+              "line": 6,
+              "producto_generico_es": "sal fina",
+              "nombres_por_idioma": {
+                "es": "sal fina",
+                "en": "fine salt",
+                "de": "feines Salz",
+                "fr": "sel fin",
+                "bg": "фина сол"
+              },
+              "cantidad": 3,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E11-BRK-001",
+      "position": 97,
+      "sourceV83SHA256": "cba1d3667630f4cc2e6997659a94bf552530486deba588b112d1f11d63c78d47",
+      "contextSHA256": "82b2772765f15011f661a42a325f322ac4f1d1f1cef7aa95fdf442d60eac329a",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E11-BRK-001",
+          "language": "es",
+          "title": "Bol de gofio de millo, yogur y plátano canario",
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "gofio de millo 100 % (comprobar harina y trazas)",
+              "quantity": 60,
+              "unit": "g",
+              "source_name_es": "gofio de millo 100 % (comprobar harina y trazas)",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "yogur natural sin azúcar",
+              "quantity": 250,
+              "unit": "g",
+              "source_name_es": "yogur natural sin azúcar",
+              "source_unit_es": "g",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "plátano canario maduro",
+              "quantity": 2,
+              "unit": "unidades",
+              "source_name_es": "plátano canario maduro",
+              "source_unit_es": "unidades",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "miel de producción legal etiquetada",
+              "quantity": 20,
+              "unit": "g",
+              "source_name_es": "miel de producción legal etiquetada",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "canela molida",
+              "quantity": 1,
+              "unit": "g",
+              "source_name_es": "canela molida",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "agua potable para aligerar, opcional",
+              "quantity": 20,
+              "unit": "ml",
+              "source_name_es": "agua potable para aligerar, opcional",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": true
+            }
+          ],
+          "steps": [
+            "Comprueba que el envase indique «gofio de millo» (maíz) y que la lista de ingredientes no incluya trigo ni cebada. Limpia la superficie y prepara dos cuencos y dos cucharas.",
+            "Pesa 30 g de gofio de millo para cada ración. Abre el yogur justo antes de usarlo y remuévelo brevemente para homogeneizar su textura.",
+            "Reparte 125 g de yogur en cada cuenco. Añade el gofio de millo poco a poco sobre el yogur mientras remueves; si queda excesivamente espeso, añade unos 10 ml de agua potable por cuenco.",
+            "Pela los dos plátanos y córtalos en rodajas. Coloca un plátano sobre cada ración, procurando que quede repartido por toda la superficie.",
+            "Añade 10 g de miel a cada bol y espolvorea una pizca de canela. Sirve inmediatamente, antes de que el plátano se oxide o el gofio absorba demasiado líquido.",
+            "Si necesitas reducir el azúcar añadido, omite la miel sin cambiar las demás cantidades; en ese caso, actualiza la preferencia alimentaria y el cálculo nutricional cuando exista."
+          ],
+          "warnings": [
+            "CONTIENE LECHE (YOGUR). Gofio 100 % de millo: comprobar que no incluya trigo/cebada ni trazas de gluten. Conservar el yogur en frío. No ofrecer miel a menores de 12 meses. La miel opcional debe actualizar la cesta y el cálculo nutricional.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "corn_gofio_may_have_gluten_traces",
+            "yogurt_label_traces",
+            "honey_not_for_infants_under_one"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE LECHE (YOGUR). Gofio 100 % de millo: comprobar que no incluya trigo/cebada ni trazas de gluten. Conservar el yogur en frío. No ofrecer miel a menores de 12 meses. La miel opcional debe actualizar la cesta y el cálculo nutricional.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "leche"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 1,
+              "ingredient": "gofio de millo 100 % (comprobar harina y trazas)",
+              "motivo": "Ingrediente comercial/complejo o posible traza: gofio",
+              "grupos_a_revisar": [
+                "gluten"
+              ]
+            },
+            {
+              "line": 2,
+              "ingredient": "yogur natural sin azúcar",
+              "motivo": "Ingrediente comercial/complejo o posible traza: yogur",
+              "grupos_a_revisar": [
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-7CF88FE780",
+              "recipe_id": "JJ-E11-BRK-001",
+              "line": 1,
+              "producto_generico_es": "gofio de millo 100 % (comprobar harina y trazas)",
+              "nombres_por_idioma": {
+                "es": "gofio de millo 100 % (comprobar harina y trazas)",
+                "en": "100% corn gofio (check flour and traces)",
+                "de": "100 % Mais-Gofio (Mehl und Spuren prüfen)",
+                "fr": "gofio 100 % maïs (vérifier la farine et les traces)",
+                "bg": "100% царевично гофио (проверете брашното и следите)"
+              },
+              "cantidad": 60,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-C5576404EF",
+              "recipe_id": "JJ-E11-BRK-001",
+              "line": 2,
+              "producto_generico_es": "yogur natural sin azúcar",
+              "nombres_por_idioma": {
+                "es": "yogur natural sin azúcar",
+                "en": "plain unsweetened yogurt",
+                "de": "Naturjoghurt ohne Zucker",
+                "fr": "yaourt nature sans sucre",
+                "bg": "натурално неподсладено кисело мляко"
+              },
+              "cantidad": 250,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-BF2D13514D",
+              "recipe_id": "JJ-E11-BRK-001",
+              "line": 3,
+              "producto_generico_es": "plátano canario maduro",
+              "nombres_por_idioma": {
+                "es": "plátano canario maduro",
+                "en": "ripe Canarian bananas",
+                "de": "reife kanarische Bananen",
+                "fr": "bananes canariennes mûres",
+                "bg": "узрели канарски банани"
+              },
+              "cantidad": 2,
+              "unidad_es": "unidades",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-876367D3E8",
+              "recipe_id": "JJ-E11-BRK-001",
+              "line": 4,
+              "producto_generico_es": "miel de producción legal etiquetada",
+              "nombres_por_idioma": {
+                "es": "miel de producción legal etiquetada",
+                "en": "legally produced, labelled honey",
+                "de": "legal erzeugter und etikettierter Honig",
+                "fr": "miel légalement produit et étiqueté",
+                "bg": "законно произведен мед с етикет"
+              },
+              "cantidad": 20,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-5D55CE5472",
+              "recipe_id": "JJ-E11-BRK-001",
+              "line": 5,
+              "producto_generico_es": "canela molida",
+              "nombres_por_idioma": {
+                "es": "canela molida",
+                "en": "ground cinnamon",
+                "de": "gemahlener Zimt",
+                "fr": "cannelle moulue",
+                "bg": "смляна канела"
+              },
+              "cantidad": 1,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-12E7021546",
+              "recipe_id": "JJ-E11-BRK-001",
+              "line": 6,
+              "producto_generico_es": "agua potable para aligerar, opcional",
+              "nombres_por_idioma": {
+                "es": "agua potable para aligerar, opcional",
+                "en": "drinking water to thin, optional",
+                "de": "Trinkwasser zum Verdünnen, optional",
+                "fr": "eau potable pour détendre, facultative",
+                "bg": "питейна вода за разреждане, по желание"
+              },
+              "cantidad": 20,
+              "unidad_es": "ml",
+              "opcional": true,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-002",
+      "position": 98,
+      "sourceV83SHA256": "7ddfc4eb33e84ddd3f4667bd417e6d8a5f48199fbdfe58f927586bce061789ed",
+      "contextSHA256": "3b047622750bb4b7c02bc111398ed334f059bdb62b4f6956de7540b14abc9655",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E12-BRK-002",
+          "language": "es",
+          "title": "Chilaquiles rojos con huevo y queso fresco",
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "hidratar_chile",
+              "min_value": 10,
+              "max_value": 10,
+              "unit": "min"
+            },
+            {
+              "phase_es": "tomate",
+              "min_value": 7,
+              "max_value": 7,
+              "unit": "min"
+            },
+            {
+              "phase_es": "salsa",
+              "min_value": 7,
+              "max_value": 8,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "tortillas de maíz, etiquetadas",
+              "quantity": 6,
+              "unit": "unidades",
+              "source_name_es": "tortillas de maíz, etiquetadas",
+              "source_unit_es": "unidades",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "tomates maduros",
+              "quantity": 350,
+              "unit": "g",
+              "source_name_es": "tomates maduros",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "chile guajillo seco sin semillas",
+              "quantity": 12,
+              "unit": "g",
+              "source_name_es": "chile guajillo seco sin semillas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "cebolla blanca",
+              "quantity": 80,
+              "unit": "g",
+              "source_name_es": "cebolla blanca",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "ajo",
+              "quantity": 1,
+              "unit": "diente",
+              "source_name_es": "ajo",
+              "source_unit_es": "diente",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "aceite de oliva suave o girasol",
+              "quantity": 30,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva suave o girasol",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "agua potable",
+              "quantity": 120,
+              "unit": "ml",
+              "source_name_es": "agua potable",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "huevos frescos",
+              "quantity": 2,
+              "unit": "unidades",
+              "source_name_es": "huevos frescos",
+              "source_unit_es": "unidades",
+              "source_allergen_note": "huevos",
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "queso fresco",
+              "quantity": 60,
+              "unit": "g",
+              "source_name_es": "queso fresco",
+              "source_unit_es": "g",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "crema agria",
+              "quantity": 40,
+              "unit": "g",
+              "source_name_es": "crema agria",
+              "source_unit_es": "g",
+              "source_allergen_note": "leche",
+              "optional": false
+            },
+            {
+              "line": 11,
+              "name": "cilantro fresco",
+              "quantity": 8,
+              "unit": "g",
+              "source_name_es": "cilantro fresco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 12,
+              "name": "sal",
+              "quantity": 3,
+              "unit": "g",
+              "source_name_es": "sal",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Lava los tomates, el cilantro y la superficie de trabajo. Corta las tortillas en triángulos; prepara un plato con papel de cocina para escurrirlos.",
+            "Retira el pedúnculo y las semillas del guajillo. Ponlo 10 minutos en agua caliente para ablandarlo; desecha esa agua si queda muy amarga.",
+            "Cuece los tomates troceados durante 7 minutos, hasta ablandarlos. Tritura con el guajillo hidratado, el ajo, 40 g de cebolla, 120 ml de agua y una pizca de sal hasta obtener una salsa fina.",
+            "Calienta 10 ml del aceite en una sartén y cocina la salsa 7–8 minutos a fuego medio, removiendo, hasta que pierda sabor a tomate crudo. Mantén caliente sin que se seque. Ajusta la sazón con la sal restante de los 3 g ya medidos, sin exceder esa cantidad total.",
+            "Con los otros 20 ml de aceite, tuesta o dora los triángulos de tortilla en tandas y escúrrelos; si eliges horno, unta ligeramente las tortillas y hornéalas hasta que estén crujientes, ajustando el tiempo al grosor.",
+            "Cocina los dos huevos en sartén limpia hasta que las claras estén completamente cuajadas; si se prefiere yema firme, prolonga la cocción.",
+            "Reparte los totopos calientes en dos platos. Añade la salsa justo al servir para conservar parte del crujiente y coloca un huevo sobre cada ración.",
+            "Termina con el queso desmenuzado, la crema, los 40 g de cebolla restante cortada fina y el cilantro. Sirve inmediatamente y no dejes la preparación a temperatura ambiente."
+          ],
+          "warnings": [
+            "CONTIENE HUEVO Y LECHE. Cocinar el huevo de forma segura; mantener queso y crema refrigerados y servir el plato recién preparado. Las tortillas de maíz pueden tener trazas de gluten según fabricante.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "eggs",
+            "milk"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "corn_tortilla_traces_gluten",
+            "cheese_cream_composition"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE HUEVO Y LECHE. Cocinar el huevo de forma segura; mantener queso y crema refrigerados y servir el plato recién preparado. Las tortillas de maíz pueden tener trazas de gluten según fabricante.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "huevos",
+            "leche"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "leche"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 1,
+              "ingredient": "tortillas de maíz, etiquetadas",
+              "motivo": "Ingrediente comercial/complejo o posible traza: tortilla",
+              "grupos_a_revisar": [
+                "gluten"
+              ]
+            },
+            {
+              "line": 1,
+              "ingredient": "tortillas de maíz, etiquetadas",
+              "motivo": "Ingrediente comercial/complejo o posible traza: maíz",
+              "grupos_a_revisar": [
+                "gluten"
+              ]
+            },
+            {
+              "line": 9,
+              "ingredient": "queso fresco",
+              "motivo": "Ingrediente comercial/complejo o posible traza: queso",
+              "grupos_a_revisar": [
+                "leche"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-FCE874EBBA",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 1,
+              "producto_generico_es": "tortillas de maíz, etiquetadas",
+              "nombres_por_idioma": {
+                "es": "tortillas de maíz, etiquetadas",
+                "en": "labelled corn tortillas",
+                "de": "etikettierte Maistortillas",
+                "fr": "tortillas de maïs étiquetées",
+                "bg": "царевични тортили с етикет"
+              },
+              "cantidad": 6,
+              "unidad_es": "unidades",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-0E1133C013",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 2,
+              "producto_generico_es": "tomates maduros",
+              "nombres_por_idioma": {
+                "es": "tomates maduros",
+                "en": "ripe tomatoes",
+                "de": "reife Tomaten",
+                "fr": "tomates mûres",
+                "bg": "узрели домати"
+              },
+              "cantidad": 350,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-CF1EDF5BB1",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 3,
+              "producto_generico_es": "chile guajillo seco sin semillas",
+              "nombres_por_idioma": {
+                "es": "chile guajillo seco sin semillas",
+                "en": "dried guajillo chilli, deseeded",
+                "de": "getrocknete Guajillo-Chili ohne Kerne",
+                "fr": "piment guajillo séché épépiné",
+                "bg": "сушена люта чушка гуахильо без семки"
+              },
+              "cantidad": 12,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D86C99B471",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 4,
+              "producto_generico_es": "cebolla blanca",
+              "nombres_por_idioma": {
+                "es": "cebolla blanca",
+                "en": "white onion",
+                "de": "weiße Zwiebel",
+                "fr": "oignon blanc",
+                "bg": "бял лук"
+              },
+              "cantidad": 80,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 5,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 1,
+              "unidad_es": "diente",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-187FE3A2B3",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 6,
+              "producto_generico_es": "aceite de oliva suave o girasol",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva suave o girasol",
+                "en": "mild olive or sunflower oil",
+                "de": "mildes Oliven- oder Sonnenblumenöl",
+                "fr": "huile d’olive douce ou de tournesol",
+                "bg": "мек зехтин или слънчогледово олио"
+              },
+              "cantidad": 30,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-DBECFEA83F",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 7,
+              "producto_generico_es": "agua potable",
+              "nombres_por_idioma": {
+                "es": "agua potable",
+                "en": "drinking water",
+                "de": "Trinkwasser",
+                "fr": "eau potable",
+                "bg": "питейна вода"
+              },
+              "cantidad": 120,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D318BB48E5",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 8,
+              "producto_generico_es": "huevos frescos",
+              "nombres_por_idioma": {
+                "es": "huevos frescos",
+                "en": "fresh eggs",
+                "de": "frische Eier",
+                "fr": "œufs frais",
+                "bg": "пресни яйца"
+              },
+              "cantidad": 2,
+              "unidad_es": "unidades",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-22165BDA84",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 9,
+              "producto_generico_es": "queso fresco",
+              "nombres_por_idioma": {
+                "es": "queso fresco",
+                "en": "fresh cheese",
+                "de": "Frischkäse",
+                "fr": "fromage frais",
+                "bg": "прясно сирене"
+              },
+              "cantidad": 60,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-B6ABE899C8",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 10,
+              "producto_generico_es": "crema agria",
+              "nombres_por_idioma": {
+                "es": "crema agria",
+                "en": "sour cream",
+                "de": "saure Sahne",
+                "fr": "crème aigre",
+                "bg": "заквасена сметана"
+              },
+              "cantidad": 40,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-ED0B3898C3",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 11,
+              "producto_generico_es": "cilantro fresco",
+              "nombres_por_idioma": {
+                "es": "cilantro fresco",
+                "en": "fresh coriander",
+                "de": "frischer Koriander",
+                "fr": "coriandre fraîche",
+                "bg": "пресен кориандър"
+              },
+              "cantidad": 8,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FFE2D77F8F",
+              "recipe_id": "JJ-E12-BRK-002",
+              "line": 12,
+              "producto_generico_es": "sal",
+              "nombres_por_idioma": {
+                "es": "sal",
+                "en": "salt",
+                "de": "Salz",
+                "fr": "sel",
+                "bg": "сол"
+              },
+              "cantidad": 3,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-003",
+      "position": 99,
+      "sourceV83SHA256": "77142bbe26feed07ff8756487a2feb79bfff65f3303af82abc194a0995ab051c",
+      "contextSHA256": "9b66afcbf58926288cb4cc00ff493e69b48eafc12a86c3e59d3c9b536637c277",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E12-BRK-003",
+          "language": "es",
+          "title": "Congee de setas shiitake, jengibre y cebolleta",
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "congee",
+              "min_value": 45,
+              "max_value": 55,
+              "unit": "min"
+            },
+            {
+              "phase_es": "salteado_setas",
+              "min_value": 5,
+              "max_value": 7,
+              "unit": "min"
+            },
+            {
+              "phase_es": "reposo",
+              "min_value": 5,
+              "max_value": 5,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "arroz blanco de grano redondo",
+              "quantity": 200,
+              "unit": "g",
+              "source_name_es": "arroz blanco de grano redondo",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "agua potable",
+              "quantity": 1600,
+              "unit": "ml",
+              "source_name_es": "agua potable",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "setas shiitake frescas",
+              "quantity": 200,
+              "unit": "g",
+              "source_name_es": "setas shiitake frescas",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "jengibre fresco",
+              "quantity": 25,
+              "unit": "g",
+              "source_name_es": "jengibre fresco",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 5,
+              "name": "cebolletas",
+              "quantity": 3,
+              "unit": "unidades",
+              "source_name_es": "cebolletas",
+              "source_unit_es": "unidades",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 6,
+              "name": "ajo",
+              "quantity": 2,
+              "unit": "dientes",
+              "source_name_es": "ajo",
+              "source_unit_es": "dientes",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 7,
+              "name": "salsa de soja convencional con trigo, etiquetada",
+              "quantity": 25,
+              "unit": "ml",
+              "source_name_es": "salsa de soja convencional con trigo, etiquetada",
+              "source_unit_es": "ml",
+              "source_allergen_note": "cereales_con_gluten;soja",
+              "optional": false
+            },
+            {
+              "line": 8,
+              "name": "aceite de sésamo tostado",
+              "quantity": 10,
+              "unit": "ml",
+              "source_name_es": "aceite de sésamo tostado",
+              "source_unit_es": "ml",
+              "source_allergen_note": "sesamo",
+              "optional": false
+            },
+            {
+              "line": 9,
+              "name": "aceite vegetal neutro",
+              "quantity": 15,
+              "unit": "ml",
+              "source_name_es": "aceite vegetal neutro",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 10,
+              "name": "semillas de sésamo tostadas",
+              "quantity": 8,
+              "unit": "g",
+              "source_name_es": "semillas de sésamo tostadas",
+              "source_unit_es": "g",
+              "source_allergen_note": "sesamo",
+              "optional": false
+            },
+            {
+              "line": 11,
+              "name": "sal",
+              "quantity": 2,
+              "unit": "g",
+              "source_name_es": "sal",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Lava las cebolletas y las setas. Limpia las shiitake con papel húmedo, retira pies muy duros y corta los sombreros en láminas. Pela y corta el jengibre en tiras finas.",
+            "Enjuaga el arroz dos veces en agua fría sin dejarlo en remojo; escúrrelo en un colador fino para retirar el exceso de almidón superficial.",
+            "Vierte 1,6 litros de agua en una olla alta, añade el arroz, la mitad del jengibre y lleva a ebullición suave. Reduce a fuego bajo.",
+            "Cocina con la tapa entreabierta 45–55 minutos, removiendo el fondo cada 8–10 minutos para evitar que se pegue; añade 100–200 ml de agua caliente adicional solo si espesa demasiado.",
+            "Cuando los granos se abran y la textura sea cremosa, ajusta de sal muy moderadamente porque la salsa de soja aporta sodio. Apaga el fuego y deja reposar cinco minutos.",
+            "Mientras cuece el arroz, calienta 15 ml de aceite vegetal y saltea las shiitake 5–7 minutos hasta que pierdan agua y doren ligeramente. Añade el ajo picado y el resto del jengibre durante un minuto.",
+            "Incorpora la salsa de soja etiquetada a las setas y remueve medio minuto. Corta en aros las cebolletas; reserva su parte verde para el acabado.",
+            "Sirve el congee caliente en cuatro cuencos, reparte las setas, añade un hilo de aceite de sésamo y termina con la cebolleta y las semillas. Enfría los restos rápidamente y refrigéralos: el arroz cocinado no debe mantenerse tibio durante horas."
+          ],
+          "warnings": [
+            "CONTIENE TRIGO/GLUTEN, SOJA Y SÉSAMO por la salsa de soja convencional y el aceite/semillas. Enfriar rápidamente el arroz sobrante y refrigerarlo; no mantener congee tibio durante horas. El agua adicional de 100–200 ml es condicional, no una cantidad fija de cesta.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "gluten_wheat",
+            "soy",
+            "sesame"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "soy_sauce_explicit_wheat",
+            "sesame_soy_cross_contact"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE TRIGO/GLUTEN, SOJA Y SÉSAMO por la salsa de soja convencional y el aceite/semillas. Enfriar rápidamente el arroz sobrante y refrigerarlo; no mantener congee tibio durante horas. El agua adicional de 100–200 ml es condicional, no una cantidad fija de cesta.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 4,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "gluten",
+            "sesamo",
+            "soja"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "pescado",
+            "soja"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 7,
+              "ingredient": "salsa de soja convencional con trigo, etiquetada",
+              "motivo": "Ingrediente comercial/complejo o posible traza: salsa",
+              "grupos_a_revisar": [
+                "soja",
+                "gluten",
+                "pescado"
+              ]
+            },
+            {
+              "line": 7,
+              "ingredient": "salsa de soja convencional con trigo, etiquetada",
+              "motivo": "Ingrediente comercial/complejo o posible traza: soja",
+              "grupos_a_revisar": [
+                "soja"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-E7932A0752",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 1,
+              "producto_generico_es": "arroz blanco de grano redondo",
+              "nombres_por_idioma": {
+                "es": "arroz blanco de grano redondo",
+                "en": "short-grain white rice",
+                "de": "weißer Rundkornreis",
+                "fr": "riz blanc rond",
+                "bg": "бял кръглозърнест ориз"
+              },
+              "cantidad": 200,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-DBECFEA83F",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 2,
+              "producto_generico_es": "agua potable",
+              "nombres_por_idioma": {
+                "es": "agua potable",
+                "en": "drinking water",
+                "de": "Trinkwasser",
+                "fr": "eau potable",
+                "bg": "питейна вода"
+              },
+              "cantidad": 1600,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-BFC2C0409B",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 3,
+              "producto_generico_es": "setas shiitake frescas",
+              "nombres_por_idioma": {
+                "es": "setas shiitake frescas",
+                "en": "fresh shiitake mushrooms",
+                "de": "frische Shiitakepilze",
+                "fr": "champignons shiitakés frais",
+                "bg": "пресни гъби шийтаке"
+              },
+              "cantidad": 200,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-2824ED6028",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 4,
+              "producto_generico_es": "jengibre fresco",
+              "nombres_por_idioma": {
+                "es": "jengibre fresco",
+                "en": "fresh ginger",
+                "de": "frischer Ingwer",
+                "fr": "gingembre frais",
+                "bg": "пресен джинджифил"
+              },
+              "cantidad": 25,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-AFBB766EFB",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 5,
+              "producto_generico_es": "cebolletas",
+              "nombres_por_idioma": {
+                "es": "cebolletas",
+                "en": "spring onions",
+                "de": "Frühlingszwiebeln",
+                "fr": "oignons nouveaux",
+                "bg": "стръкове пресен лук"
+              },
+              "cantidad": 3,
+              "unidad_es": "unidades",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-4A4C489E75",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 6,
+              "producto_generico_es": "ajo",
+              "nombres_por_idioma": {
+                "es": "ajo",
+                "en": "garlic",
+                "de": "Knoblauch",
+                "fr": "ail",
+                "bg": "чесън"
+              },
+              "cantidad": 2,
+              "unidad_es": "dientes",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-ED0625B5FB",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 7,
+              "producto_generico_es": "salsa de soja convencional con trigo, etiquetada",
+              "nombres_por_idioma": {
+                "es": "salsa de soja convencional con trigo, etiquetada",
+                "en": "regular wheat-containing soy sauce, labelled",
+                "de": "herkömmliche weizenhaltige Sojasauce, etikettiert",
+                "fr": "sauce soja classique contenant du blé, étiquetée",
+                "bg": "обикновен соев сос с пшеница, с етикет"
+              },
+              "cantidad": 25,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-9CE56D425F",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 8,
+              "producto_generico_es": "aceite de sésamo tostado",
+              "nombres_por_idioma": {
+                "es": "aceite de sésamo tostado",
+                "en": "toasted sesame oil",
+                "de": "geröstetes Sesamöl",
+                "fr": "huile de sésame grillé",
+                "bg": "печено сусамово олио"
+              },
+              "cantidad": 10,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-BE83000791",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 9,
+              "producto_generico_es": "aceite vegetal neutro",
+              "nombres_por_idioma": {
+                "es": "aceite vegetal neutro",
+                "en": "neutral vegetable oil",
+                "de": "neutrales Pflanzenöl",
+                "fr": "huile végétale neutre",
+                "bg": "неутрално растително олио"
+              },
+              "cantidad": 15,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-9B675C31B7",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 10,
+              "producto_generico_es": "semillas de sésamo tostadas",
+              "nombres_por_idioma": {
+                "es": "semillas de sésamo tostadas",
+                "en": "toasted sesame seeds",
+                "de": "geröstete Sesamsamen",
+                "fr": "graines de sésame grillées",
+                "bg": "печени сусамови семена"
+              },
+              "cantidad": 8,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FFE2D77F8F",
+              "recipe_id": "JJ-E12-BRK-003",
+              "line": 11,
+              "producto_generico_es": "sal",
+              "nombres_por_idioma": {
+                "es": "sal",
+                "en": "salt",
+                "de": "Salz",
+                "fr": "sel",
+                "bg": "сол"
+              },
+              "cantidad": 2,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    },
+    {
+      "recipeId": "JJ-E12-BRK-004",
+      "position": 100,
+      "sourceV83SHA256": "9599d2c02759c3f16199a5a497957e94049a7b702ab9f784db4e457169ef3f6e",
+      "contextSHA256": "6f4fba4c6636af2db4601d0816832716a8a95a6c654b62750c1eb412021ae3d2",
+      "category": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "dietary": {
+        "status": "pending",
+        "value": null,
+        "reviewer": null,
+        "basis": null
+      },
+      "context": {
+        "localizedEs": {
+          "recipe_id": "JJ-E12-BRK-004",
+          "language": "es",
+          "title": "Pan con tomate y aceite de oliva",
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "original_rest_time_min": null,
+          "time_total_status": "NO_DEFINIDO_EN_FUENTE_NO_ESTIMAR",
+          "explicit_time_stages_from_steps": [
+            {
+              "phase_es": "tostado_por_lado",
+              "min_value": 2,
+              "max_value": 2,
+              "unit": "min"
+            }
+          ],
+          "ingredients": [
+            {
+              "line": 1,
+              "name": "pan de trigo de masa madre en rebanadas",
+              "quantity": 160,
+              "unit": "g",
+              "source_name_es": "pan de trigo de masa madre en rebanadas",
+              "source_unit_es": "g",
+              "source_allergen_note": "cereales_con_gluten",
+              "optional": false
+            },
+            {
+              "line": 2,
+              "name": "tomates maduros",
+              "quantity": 220,
+              "unit": "g",
+              "source_name_es": "tomates maduros",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 3,
+              "name": "aceite de oliva virgen extra",
+              "quantity": 20,
+              "unit": "ml",
+              "source_name_es": "aceite de oliva virgen extra",
+              "source_unit_es": "ml",
+              "source_allergen_note": null,
+              "optional": false
+            },
+            {
+              "line": 4,
+              "name": "ajo fresco opcional",
+              "quantity": 1,
+              "unit": "diente",
+              "source_name_es": "ajo fresco opcional",
+              "source_unit_es": "diente",
+              "source_allergen_note": null,
+              "optional": true
+            },
+            {
+              "line": 5,
+              "name": "sal",
+              "quantity": 2,
+              "unit": "g",
+              "source_name_es": "sal",
+              "source_unit_es": "g",
+              "source_allergen_note": null,
+              "optional": false
+            }
+          ],
+          "steps": [
+            "Lava y seca los tomates. Córtalos por la mitad y rállalos por la cara del corte sobre un cuenco, desechando la piel que quede en la mano.",
+            "Deja el tomate rallado un minuto en un colador si está excesivamente acuoso; no hace falta escurrirlo por completo.",
+            "Corta 160 g de pan en dos o cuatro rebanadas gruesas, aproximadamente 80 g para cada comensal.",
+            "Tuesta el pan en tostadora o sartén limpia 2 minutos por lado, según grosor, hasta que esté dorado sin quemarse.",
+            "Si deseas un toque de ajo, frota muy ligeramente la superficie del pan aún caliente con el diente pelado; no lo incluyas si no gusta.",
+            "Distribuye el tomate fresco, añade 10 ml de aceite de oliva virgen extra por ración y reparte la sal medida.",
+            "Sirve de inmediato para conservar el contraste entre la corteza crujiente y el tomate jugoso. No guardes tostadas ya montadas para otro día."
+          ],
+          "warnings": [
+            "CONTIENE TRIGO/GLUTEN. Revisar el pan comercial para otros alérgenos o trazas. El ajo es opcional; al desactivarlo actualizar la cesta. Lavar el tomate y servir recién montado, sin almacenar tostadas húmedas.",
+            "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad."
+          ],
+          "allergen_codes_from_declared_ingredients": [
+            "gluten_wheat"
+          ],
+          "possible_allergen_codes_product_dependent": [
+            "bread_may_contain_sesame_soy_nuts_by_brand"
+          ],
+          "allergen_classification_status": "DERIVED_FROM_DECLARED_INGREDIENTS_NOT_LABEL_CERTIFIED",
+          "commercial_label_verified": false,
+          "commercial_label_note_localized": "ETIQUETAS COMERCIALES PENDIENTES: al disponer de marcas, SKU, productos y precios oficiales por tienda y formato, cotejar composición, alérgenos y posibles trazas con la etiqueta real. El precio no certifica alérgenos ni seguridad.",
+          "user_taste_confirmed": true,
+          "tasting_status": "USER_CONFIRMED_SATISFACTORY_TASTE_2026_11_10",
+          "external_native_language_certification": false,
+          "publication_status": "EDITORIAL_READY_WITH_WARNINGS_COMMERCIAL_LABEL_NOT_CERTIFIED",
+          "linguistic_review_status": "INTERNAL_MODEL_REVIEW_NOT_EXTERNAL_NATIVE_CERTIFICATION",
+          "precaution_summary_localized": "CONTIENE TRIGO/GLUTEN. Revisar el pan comercial para otros alérgenos o trazas. El ajo es opcional; al desactivarlo actualizar la cesta. Lavar el tomate y servir recién montado, sin almacenar tostadas húmedas.",
+          "qa_status": "STRUCTURE_INGREDIENT_QUANTITY_STEPS_CHECKED",
+          "culinary_test_note_localized": "Prueba culinaria y sabor confirmados por el usuario para esta receta. No se han aportado mediciones de temperatura central ni análisis microbiológicos.",
+          "editorial_closure_v77": {
+            "editorial_internal_review": "CERRADA",
+            "language_internal_review": "REVISADA_INTERNAMENTE",
+            "declared_ingredient_allergens": "REVISADOS",
+            "commercial_labels": "PENDIENTES",
+            "tasting": "CONFIRMADA_POR_USUARIO",
+            "external_native_certification": false
+          }
+        },
+        "historicalMetadata": {
+          "servings": 2,
+          "preparation_and_cooking_min": null,
+          "rest_time_min_original": null,
+          "source_format": "standard"
+        },
+        "editorialQuality": {
+          "structure_5_languages": true,
+          "translation_count": 5,
+          "tasting_confirmed_by_user": true,
+          "culinary_safety_not_certified": true,
+          "translation_native_review_not_certified": true,
+          "notes": "Traducciones y coherencia de cantidades, pasos e IDs cotejadas. No se ha hecho lectura editorial nativa humana exhaustiva en los cinco idiomas en esta iteración."
+        },
+        "allergenContext": {
+          "direct_from_ingredient_description": [
+            "gluten"
+          ],
+          "groups_eu14": [
+            "gluten",
+            "crustaceos",
+            "huevos",
+            "pescado",
+            "cacahuetes",
+            "soja",
+            "leche",
+            "frutos_cascara",
+            "apio",
+            "mostaza",
+            "sesamo",
+            "sulfitos",
+            "altramuces",
+            "moluscos"
+          ],
+          "conditional_product_dependent": [
+            "gluten",
+            "sesamo"
+          ],
+          "product_dependent_ingredients": [
+            {
+              "line": 1,
+              "ingredient": "pan de trigo de masa madre en rebanadas",
+              "motivo": "Ingrediente comercial/complejo o posible traza: pan",
+              "grupos_a_revisar": [
+                "gluten",
+                "sesamo"
+              ]
+            }
+          ],
+          "label_verified": false,
+          "safety_claim_without_allergens_permitted": false,
+          "basis": "Identificación orientativa de ingrediente, revisar 1169/2011 y etiquetas reales de producto y trazas"
+        },
+        "commercialContext": {
+          "ingredients_shopping_list": [
+            {
+              "ingredient_id": "ING-4A933DF1F4",
+              "recipe_id": "JJ-E12-BRK-004",
+              "line": 1,
+              "producto_generico_es": "pan de trigo de masa madre en rebanadas",
+              "nombres_por_idioma": {
+                "es": "pan de trigo de masa madre en rebanadas",
+                "en": "sliced sourdough wheat bread",
+                "de": "geschnittenes Weizen-Sauerteigbrot",
+                "fr": "pain de blé au levain en tranches",
+                "bg": "нарязан пшеничен хляб с квас"
+              },
+              "cantidad": 160,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-0E1133C013",
+              "recipe_id": "JJ-E12-BRK-004",
+              "line": 2,
+              "producto_generico_es": "tomates maduros",
+              "nombres_por_idioma": {
+                "es": "tomates maduros",
+                "en": "ripe tomatoes",
+                "de": "reife Tomaten",
+                "fr": "tomates mûres",
+                "bg": "узрели домати"
+              },
+              "cantidad": 220,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-D3B24FDD5B",
+              "recipe_id": "JJ-E12-BRK-004",
+              "line": 3,
+              "producto_generico_es": "aceite de oliva virgen extra",
+              "nombres_por_idioma": {
+                "es": "aceite de oliva virgen extra",
+                "en": "extra-virgin olive oil",
+                "de": "natives Olivenöl extra",
+                "fr": "huile d’olive vierge extra",
+                "bg": "зехтин екстра върджин"
+              },
+              "cantidad": 20,
+              "unidad_es": "ml",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-64EBA8A0FF",
+              "recipe_id": "JJ-E12-BRK-004",
+              "line": 4,
+              "producto_generico_es": "ajo fresco opcional",
+              "nombres_por_idioma": {
+                "es": "ajo fresco opcional",
+                "en": "fresh garlic, optional",
+                "de": "frischer Knoblauch, optional",
+                "fr": "ail frais facultatif",
+                "bg": "пресен чесън, по желание"
+              },
+              "cantidad": 1,
+              "unidad_es": "diente",
+              "opcional": true,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            },
+            {
+              "ingredient_id": "ING-FFE2D77F8F",
+              "recipe_id": "JJ-E12-BRK-004",
+              "line": 5,
+              "producto_generico_es": "sal",
+              "nombres_por_idioma": {
+                "es": "sal",
+                "en": "salt",
+                "de": "Salz",
+                "fr": "sel",
+                "bg": "сол"
+              },
+              "cantidad": 2,
+              "unidad_es": "g",
+              "opcional": false,
+              "sku": null,
+              "marca": null,
+              "tienda": null,
+              "codigo_postal": null,
+              "formato_envase": null,
+              "precio_producto_eur": null,
+              "precio_unitario_eur": null,
+              "fecha_y_hora_precio": null,
+              "fuente_precio": null,
+              "ingredientes_etiqueta_real": null,
+              "trazas_etiqueta_real": null,
+              "estado_comercial": "PENDIENTE_SKU_PRECIO_ETIQUETA_POR_TIENDA"
+            }
+          ],
+          "price_total_recipe_eur": null,
+          "price_per_serving_eur": null,
+          "product_catalog_verified": false,
+          "actual_price_verified": false,
+          "allergen_traces_verified": false,
+          "markets": [
+            "HiperDino",
+            "Lidl",
+            "Aldi",
+            "Mercadona (opcional)"
+          ],
+          "postal_code_required_to_compare": true,
+          "local_store_and_price_verification_required": true,
+          "checkout_through_retailer": true,
+          "no_app_payment_processing": true
+        }
+      }
+    }
+  ]
+}
