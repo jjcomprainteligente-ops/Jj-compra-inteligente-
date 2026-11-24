@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-24T14:41:31.160754+00:00",
+  "phase": "SOURCE_PUBLISHED_CI_AND_PROTECTED_STAGING_VERIFIED_EDITORIAL_REVIEW_PENDING",
+  "scope": "B05.3 dietary-review integrity fix and editorial handoff; no new V3 dietary or category decisions activated.",
+  "source": {
+    "commit": "e3a50e4103cd5003977426583856838391565dac",
+    "tree": "c8e917b71a7b90339c72dc6f8e0062ea902dba60",
+    "parent": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+    "branch": "codex/b05-3-revision-culinaria-2026-11-21",
+    "sourcePaths": 29,
+    "snapshotFiles": 2034,
+    "appInputs": 408,
+    "scanSnapshotMatchesCommittedFiles": true,
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-",
+    "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/31"
+  },
+  "localEvidence": {
+    "file": "local-preparation.json",
+    "sha256": "942db87027a0885181168cf2f51f97fed88ee2c05986dffa9fa85c7dcc4c2d3d",
+    "executedDate": "2026-11-21",
+    "checks": {
+      "types": "PASS",
+      "unit": {
+        "passed": 1708,
+        "failed": 0,
+        "pending": 0
+      },
+      "python": {
+        "passed": 155,
+        "newCulinaryReviewTests": 20
+      },
+      "browser": {
+        "startTime": "2026-11-21T21:57:06.224Z",
+        "duration": 58281.631,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "sourceReproduction": "PASS",
+      "editorialReproduction": "PASS",
+      "dependencyAdvisories": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "expoCompatibility": "PASS"
+    },
+    "browserEarlierAttempts": [
+      {
+        "result": "NO_TESTS_SELECTED",
+        "configurationFix": "Removed the full-title start anchor; assertions unchanged."
+      },
+      {
+        "result": "ONE_FAILED_SETUP_23_UNRUN",
+        "configurationFix": "Existing Spanish regressions require a completed onboarding fixture; language regressions still use independent empty contexts. Assertions and timeouts unchanged."
+      }
+    ],
+    "notRerunLocallyOnRecovery": true
+  },
+  "recovery": {
+    "checkedAt": "2026-11-24T14:27:52.315936+00:00",
+    "snapshotFiles": 2034,
+    "sourcePaths": 29,
+    "applicationInputs": 408,
+    "allSourceAndExportHashesPreserved": true,
+    "applicationInputManifestSHA256": "32044a3464020e573434a73ea108aa8957539587f1c5d2ec657da0917afb2924",
+    "sourceAndSavedDataInputsPreserved": 603,
+    "independentReadOnlyRecoveryReview": "PASS"
+  },
+  "freshDependencyCheck": {
+    "date": "2026-11-24",
+    "advisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "expoCompatibility": "PASS",
+    "dependencyFilesChanged": false,
+    "receiptSHA256": "bfd8a731b2ea97621a9a05c72e2d93e9d23534ad7732b065bde071c284d076b4"
+  },
+  "runtime": {
+    "recipes": 157,
+    "v3": 150,
+    "legacy": 7,
+    "vegetarianLegacy": 6,
+    "veganLegacy": 4,
+    "v3DietaryDecisionsActivated": 0,
+    "newCulinaryCategoriesActivated": 0,
+    "visibleMealCount": 5,
+    "businessDocuments": 7,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ]
+  },
+  "editorialHandoff": {
+    "directory": "../../../referencias/revision-culinaria/B05_3",
+    "files": 17,
+    "bytes": 3078278,
+    "records": 150,
+    "batches": 15,
+    "pendingCategoryDecisions": 150,
+    "pendingDietaryDecisions": 150,
+    "templateSHA256": "f0e41ef98faff3e94d10fe8bc6bac6ff5313ae8b2dbe88817cc80303e2d96afe",
+    "responseValidationActivatesApp": false
+  },
+  "secretScan": {
+    "executedAt": "2026-11-21T22:02:09.754532+00:00",
+    "tool": "Gitleaks",
+    "version": "8.30.1",
+    "toolSHA256": "88f91962aa2f93ac6ab281d553b9e125f5197bbbce38f9f2437f7299c32e5509",
+    "snapshotFiles": 2034,
+    "snapshotBytes": 264075007,
+    "snapshotManifestSHA256": "300fc07fcf2e94206384550c2c01daf91b1ec21516060bd90dca2291118e8b90",
+    "snapshotRecheckedAndBoundToPublishedCommitOn": "2026-11-24",
+    "boundSourceCommit": "e3a50e4103cd5003977426583856838391565dac",
+    "redactionPercent": 100,
+    "originalScannerExitCode": 1,
+    "rawFindingCount": 17,
+    "falsePositiveCount": 17,
+    "classification": "FALSE_POSITIVE_LOCAL_STORAGE_NAMESPACE",
+    "verifiedSecretFindings": 0,
+    "unresolvedFindings": 0,
+    "newAllowlistsOrSourceSuppressions": false,
+    "matchedValuesPublished": false,
+    "scope": "Tracked source plus the new public files. No ignored files, runtime credentials, Git history or archive contents.",
+    "privateSummarySHA256": "1aa1c662f7902dadfe31b3e48a7085d16fee6801d9be2c52aec2a1bd09792707",
+    "privateTriageSHA256": "7b82674305e91f9696749974b6d99c5061d464dd307c6c1b1ab651936fc4a984"
+  },
+  "githubActions": [
+    {
+      "id": 45414689681,
+      "head": "e3a50e4103cd5003977426583856838391565dac",
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/45414689681"
+    },
+    {
+      "id": 45414553229,
+      "head": "e3a50e4103cd5003977426583856838391565dac",
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/45414553229"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_FdKAbUQtqPP6mhaKRk4jADGbLyDe",
+    "url": "jj-compra-inteligente-rnum6hs4r-cmj2hwhc6b-1051.vercel.app",
+    "state": "READY",
+    "target": "staging",
+    "sourceCommit": "e3a50e4103cd5003977426583856838391565dac"
+  },
+  "package": {
+    "sourceCommit": "e3a50e4103cd5003977426583856838391565dac",
+    "bundleSha256": "5d7ad8c5d14b055bb7aabcf1a86dd4bad2ea71d6d5aa5a2200c56fd452bdbe9d",
+    "decodedBundleSha256": "dfeb9fdb25cdeb1f31f37056686d28ad05a8120211477903f222590a0cc2a613",
+    "bundleContentEncoding": "br",
+    "logoSha256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+    "uploadFiles": 313,
+    "uploadBytes": 22843771
+  },
+  "hostedHTTPS": {
+    "status": "passed",
+    "languages": 4,
+    "verifiedFiles": 319,
+    "reportSHA256": "31a17c8ef79e2e6b2f818a5c73e69b10282dfcd5052d7357e8b43f218211a414",
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari."
+  },
+  "hostedWebKit": {
+    "journeys": {
+      "startTime": "2026-11-24T14:35:33.507Z",
+      "duration": 151068.37,
+      "expected": 16,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "home": {
+      "startTime": "2026-11-24T14:35:34.560Z",
+      "duration": 50564.222,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "mobileCSSWidths": [
+      375,
+      430
+    ]
+  },
+  "shareExpiresUTC": "2026-11-25T13:33:47+00:00",
+  "provider": {
+    "project": "prj_6LgoBqJOykuqz8M1RHmbN7XfUiry",
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "mainCommit": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+    "productionPromoted": false,
+    "mainMergedForThisDelivery": false
+  },
+  "exports": {
+    "dist-b053-web": [
+      {
+        "file": "_expo/static/js/web/index-063e20eabec53c4aa0902fe0f9194538.js",
+        "bytes": 5637037,
+        "sha256": "dfeb9fdb25cdeb1f31f37056686d28ad05a8120211477903f222590a0cc2a613"
+      }
+    ],
+    "dist-b053-platforms": [
+      {
+        "file": "_expo/static/js/ios/index-bef822b3a7de5aab50da8d3c3031f2ee.hbc",
+        "bytes": 6782664,
+        "sha256": "4686d2da23a11886e9f10d8274cc45213ae825a4d0ffaa125ee5e2687a8938d8"
+      },
+      {
+        "file": "_expo/static/js/web/index-063e20eabec53c4aa0902fe0f9194538.js",
+        "bytes": 5637037,
+        "sha256": "dfeb9fdb25cdeb1f31f37056686d28ad05a8120211477903f222590a0cc2a613"
+      },
+      {
+        "file": "_expo/static/js/android/index-0a57d5145b4668d9031e101bf404140b.hbc",
+        "bytes": 6787055,
+        "sha256": "b450a554cd87c2b5e344a919497d71d648be9ba3bdeb31b28d1f02bf5b6ef477"
+      }
+    ]
+  },
+  "pending": [
+    "150 V3 dietary decisions and150 culinary-category decisions require editorial review.",
+    "B05.4 visible variable meals and conservative persistence, including product range/presentation.",
+    "Physical-device and visual acceptance remain separate from browser verification.",
+    "Official commercial labels, traces, products, prices and rights remain unverified."
+  ],
+  "limits": [
+    "This is not completion of all master-plan blocks or of the150 new dietary/category classifications.",
+    "Local test receipts are from 21 November; recovery hashes, dependency queries, GitHub CI and hosted checks are from 24 November.",
+    "WebKit Linux, mobile viewports and HBC exports do not certify iPhone/Safari, a signed native app or TestFlight.",
+    "Zero confirmed secrets or known dependency advisories is not an absolute security guarantee.",
+    "No UI redesign, recipe/quantity/translation/photo change, storage migration, database/auth/AI service or paid integration."
+  ]
+}

@@ -1,6 +1,6 @@
 # B05.3 | Seguridad de filtros y preparación de revisión culinaria
 
-**21/11/2026 · Código comprobado localmente; revisión editorial de las 150 pendiente.** Esta entrega continúa la aplicación existente después del PR #30. No declara terminadas las categorías ni las preferencias dietéticas V3. Fuente de partida: `daa3f09a02f16c72a700b1a3d3d54888a67e2179`; rama `codex/b05-3-revision-culinaria-2026-11-21`.
+**24/11/2026 · Corrección y paquete editorial publicados, CI correcta y staging protegida verificada; revisión culinaria de las 150 pendiente.** Esta entrega continúa la aplicación existente después del PR #30. No declara terminadas las categorías ni las preferencias dietéticas V3. Fuente de partida: `daa3f09a02f16c72a700b1a3d3d54888a67e2179`; rama `codex/b05-3-revision-culinaria-2026-11-21`.
 
 ## Resultado real y límites de fuente
 
@@ -47,7 +47,17 @@ Los dos arranques iniciales del navegador se conservan: el primero no seleccion�
 
 El caso de idiomas utiliza ahora la URL del proyecto de pruebas, conservando su valor anterior como respaldo. Las capturas y fixtures se guardan de forma privada; no contienen datos del propietario. Ningún componente visual, logo, Manrope o traducción cambia. El estado visual de la entrega es el mismo y continúa sujeto a aceptación del propietario.
 
-[Preparación y artefactos](../../design/culinary-review/reports/local-preparation.json). El origen exacto publicado, CI, escaneo de secretos y staging se registrarán después de verificar su publicación; los resultados de PR #30 no se atribuyen a esta nueva fuente.
+[Preparación y artefactos](../../design/culinary-review/reports/local-preparation.json). Las pruebas locales de este informe se ejecutaron el 21/11 y se conservaron por hash tras la interrupción. La recuperación, consulta de dependencias, publicación, CI y verificaciones HTTPS/WebKit se comprobaron el 24/11. La [evidencia final](../../design/culinary-review/reports/verification.json) identifica origen, alcance y límites; los resultados del PR #30 no se atribuyen a esta nueva fuente.
+
+## Publicación y recuperación verificadas · 24/11/2026
+
+Fuente `e3a50e4103cd5003977426583856838391565dac`, árbol `c8e917b71a7b90339c72dc6f8e0062ea902dba60`, [PR #31](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/31). CI de [push 45414553229](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/45414553229) y [PR 45414689681](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/actions/runs/45414689681) correctas. Los 29 archivos de entrega, 408 inputs de app, 2.034 archivos del snapshot de seguridad y cuatro artefactos compilados coinciden con sus huellas conservadas. La revisión independiente de recuperación no encontró pérdida ni cambios concurrentes. Los 603 inputs originales/catálogo/almacenamiento siguen intactos.
+
+Gitleaks oficial 8.30.1 escaneó el snapshot el 21/11, vinculado por sus hashes al commit publicado el 24/11. Conserva salida **1 por 17 alertas**, todas falsos positivos de identificadores locales de persistencia: cero secretos confirmados y cero alertas sin clasificar. No se añadieron excepciones; no cubre historial, privados ignorados ni interiores de comprimidos. La consulta de dependencias del 24/11 no registra avisos conocidos, sin garantía absoluta de seguridad.
+
+Staging `dpl_FdKAbUQtqPP6mhaKRk4jADGbLyDe`, READY, target `staging`, fuente `e3a50e4`. HTTPS: **cuatro idiomas y 319 recursos/URLs por hash**. WebKit 375/430 publicado: **16 recorridos y ocho controles de Inicio**, sin fallos, omisiones o intermitencias. El JavaScript web probado y publicado conserva SHA-256 `dfeb9fdb25cdeb1f31f37056686d28ad05a8120211477903f222590a0cc2a613`; el transporte Brotli no altera sus bytes. Los assets, logo y fuentes se conservan. La verificación HTTPS utiliza Node con proxy/CA heredados y un puente de cuerpos decodificados para Chromium; no relaja TLS ni certifica Safari físico.
+
+El [origen de prueba](https://jj-compra-inteligente-rnum6hs4r-cmj2hwhc6b-1051.vercel.app) sigue protegido. Acceso temporal entregado por conversación hasta **25/11/2026 13:33:47 UTC**, sin credencial en Git o informes públicos. La protección sigue `all_except_custom_domains`, main conserva `daa3f09` y producción `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3`; esta entrega no los modifica. El cierre documental posterior conserva el mismo código y artefacto comprobados; no necesita otra compilación o despliegue por documentación.
 
 ## Próxima acción
 
