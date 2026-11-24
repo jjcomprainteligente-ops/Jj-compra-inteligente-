@@ -51,6 +51,74 @@ describe('session menu filters', () => {
     expect(filterRecipes([changedNote], filters({ preference: 'vegetarian' }))).toEqual([]);
   });
 
+  it.each([
+    { name: 'caldo de pollo', note: 'Al gusto' },
+    { name: 'miel', note: 'Opcional' },
+    { name: 'arroz', note: 'Con mantequilla' },
+  ])('invalidates the previous dietary review when unmeasured ingredients are added: %j', ingredient => {
+    const changed = { ...copy(RECIPES[0]), unmeasuredIngredients: [ingredient] };
+    expect(filterRecipes([changed], filters())).toHaveLength(1);
+    expect(filterRecipes([changed], filters({ preference: 'vegan' }))).toEqual([]);
+    expect(filterRecipes([changed], filters({ preference: 'vegetarian' }))).toEqual([]);
+    expect(filterRecipes([changed], filters({ excludedIngredients: [ingredient.name] }))).toEqual([]);
+  });
+
+  it('does not inherit a dietary review after a new editorial condition or optional accompaniment', () => {
+    const changed = { ...copy(RECIPES[0]), editorialNotes: ['Servir opcionalmente con pollo.'] };
+    expect(filterRecipes([changed], filters())).toHaveLength(1);
+    expect(filterRecipes([changed], filters({ preference: 'vegan' }))).toEqual([]);
+    expect(filterRecipes([changed], filters({ preference: 'vegetarian' }))).toEqual([]);
+    expect(filterRecipes([{ ...copy(RECIPES[0]), unmeasuredIngredients: [], editorialNotes: [] }], filters({ preference: 'vegan' })))
+      .toEqual([{ ...copy(RECIPES[0]), unmeasuredIngredients: [], editorialNotes: [] }]);
+  });
+
+  it('invalidates an old dietary decision when steps or warnings change, including step-only accompaniments', () => {
+    const original = copy(RECIPES[0]);
+    for (const changed of [
+      { ...original, steps: [...original.steps, 'Servir con pollo o mantequilla.'] },
+      { ...original, steps: original.steps.slice(1) },
+      { ...original, steps: original.steps.map((step, index) => index === 0 ? 'Usar caldo de carne.' : step) },
+      { ...original, allergenNote: original.allergenNote + '\nComprobar la composición del caldo.' },
+    ]) {
+      expect(filterRecipes([changed], filters())).toHaveLength(1);
+      expect(filterRecipes([changed], filters({ preference: 'vegan' }))).toEqual([]);
+      expect(filterRecipes([changed], filters({ preference: 'vegetarian' }))).toEqual([]);
+    }
+    expect(filterRecipes([original], filters({ preference: 'vegan' }))).toEqual([original]);
+  });
+
+  it('preserves legitimate multiline warnings and editorial conditions without treating them as reviewed', () => {
+    const changed = { ...copy(RECIPES[0]), editorialNotes: ['Primera línea\nSegunda línea'],
+      allergenNote: 'Ingredientes declarados.\n\nComprobar etiquetas y trazas.' };
+    expect(filterRecipes([changed], filters())).toEqual([changed]);
+    expect(filterRecipes([changed], filters({ preference: 'vegan' }))).toEqual([]);
+  });
+
+  it.each([null, [], [null], [5], ['x'.repeat(2001)], ['no\u0000válido'], Array(1), Array(101).fill('Paso')])(
+    'rejects malformed or excessive steps before checking their review: %j', steps => {
+      const changed = { ...copy(RECIPES[0]), steps } as unknown as Recipe;
+      expect(() => filterRecipes([changed], filters())).toThrow('menuFilters.catalogInvalid');
+    });
+
+  it.each([null, 5, {}, 'x'.repeat(10_001), 'no\u0000válido'])('rejects malformed or excessive warnings: %j', allergenNote => {
+    const changed = { ...copy(RECIPES[0]), allergenNote } as unknown as Recipe;
+    expect(() => filterRecipes([changed], filters())).toThrow('menuFilters.catalogInvalid');
+  });
+
+  it.each([null, 7, {}, { name: 'sal', note: 2 }, { name: 'sal', note: null },
+    { name: 'sal', note: 'x'.repeat(501) }, { name: 'sal', note: 'no\u0000válido' },
+    { name: 'sal', note: 'texto\u202ecambiado' },
+  ])('rejects malformed or unsafe unmeasured annotations: %j', ingredient => {
+    const changed = { ...copy(RECIPES[0]), unmeasuredIngredients: [ingredient] } as unknown as Recipe;
+    expect(() => filterRecipes([changed], filters())).toThrow('menuFilters.catalogInvalid');
+  });
+
+  it.each([null, {}, 'nota', [null], [4], ['x'.repeat(2001)], ['no\u0000válido'], Array(1), Array(101).fill('nota')])(
+    'rejects malformed or excessive editorial notes: %j', editorialNotes => {
+      const changed = { ...copy(RECIPES[0]), editorialNotes } as unknown as Recipe;
+      expect(() => filterRecipes([changed], filters())).toThrow('menuFilters.catalogInvalid');
+    });
+
   it('accepts a future valid catalogue for time/exclusion filtering without guessing dietary labels', () => {
     const future = { ...copy(RECIPES[0]), id: 'receta-del-propietario', title: 'Receta propia', minutes: 20 };
     expect(filterRecipes([future], filters({ maxMinutes: 20 }))).toEqual([future]);

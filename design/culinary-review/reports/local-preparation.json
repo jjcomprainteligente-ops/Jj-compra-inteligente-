@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-21T22:00:07.234837+00:00",
+  "phase": "LOCAL_CHECKS_PASS_PUBLICATION_PENDING_EDITORIAL_REVIEW_PENDING",
+  "base": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+  "branch": "codex/b05-3-revision-culinaria-2026-11-21",
+  "runtime": {
+    "recipes": 157,
+    "v3": 150,
+    "legacy": 7,
+    "vegetarianLegacy": 6,
+    "veganLegacy": 4,
+    "v3DietaryDecisionsActivated": 0,
+    "newCulinaryCategoriesActivated": 0,
+    "visibleMealCount": 5,
+    "businessDocuments": 7,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ]
+  },
+  "preservation": {
+    "appInputs": 408,
+    "changedPriorAppInputs": [
+      "src/domain/menuFilters.ts"
+    ],
+    "newAppInput": "src/data/legacyDietaryReviews.ts",
+    "appInputManifestSHA256": "32044a3464020e573434a73ea108aa8957539587f1c5d2ec657da0917afb2924",
+    "sourceAndSavedDataModulesPreserved": 603,
+    "originalPhotosAndDerivedAssetsPreserved": true,
+    "visualComponentsAndTranslationsChanged": false,
+    "dependencyFilesChanged": false
+  },
+  "editorialHandoff": {
+    "directory": "../../../referencias/revision-culinaria/B05_3",
+    "files": 17,
+    "bytes": 3078278,
+    "records": 150,
+    "batches": 15,
+    "pendingCategoryDecisions": 150,
+    "pendingDietaryDecisions": 150,
+    "templateSHA256": "f0e41ef98faff3e94d10fe8bc6bac6ff5313ae8b2dbe88817cc80303e2d96afe",
+    "responseValidationActivatesApp": false
+  },
+  "checks": {
+    "types": "PASS",
+    "unit": {
+      "passed": 1708,
+      "failed": 0,
+      "pending": 0
+    },
+    "python": {
+      "passed": 155,
+      "newCulinaryReviewTests": 20
+    },
+    "browser": {
+      "startTime": "2026-11-21T21:57:06.224Z",
+      "duration": 58281.631,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "sourceReproduction": "PASS",
+    "editorialReproduction": "PASS",
+    "dependencyAdvisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "expoCompatibility": "PASS"
+  },
+  "browserEarlierAttempts": [
+    {
+      "result": "NO_TESTS_SELECTED",
+      "configurationFix": "Removed the full-title start anchor; assertions unchanged."
+    },
+    {
+      "result": "ONE_FAILED_SETUP_23_UNRUN",
+      "configurationFix": "Existing Spanish regressions require a completed onboarding fixture; language regressions still use independent empty contexts. Assertions and timeouts unchanged."
+    }
+  ],
+  "exports": {
+    "dist-b053-web": [
+      {
+        "file": "_expo/static/js/web/index-063e20eabec53c4aa0902fe0f9194538.js",
+        "bytes": 5637037,
+        "sha256": "dfeb9fdb25cdeb1f31f37056686d28ad05a8120211477903f222590a0cc2a613"
+      }
+    ],
+    "dist-b053-platforms": [
+      {
+        "file": "_expo/static/js/ios/index-bef822b3a7de5aab50da8d3c3031f2ee.hbc",
+        "bytes": 6782664,
+        "sha256": "4686d2da23a11886e9f10d8274cc45213ae825a4d0ffaa125ee5e2687a8938d8"
+      },
+      {
+        "file": "_expo/static/js/web/index-063e20eabec53c4aa0902fe0f9194538.js",
+        "bytes": 5637037,
+        "sha256": "dfeb9fdb25cdeb1f31f37056686d28ad05a8120211477903f222590a0cc2a613"
+      },
+      {
+        "file": "_expo/static/js/android/index-0a57d5145b4668d9031e101bf404140b.hbc",
+        "bytes": 6787055,
+        "sha256": "b450a554cd87c2b5e344a919497d71d648be9ba3bdeb31b28d1f02bf5b6ef477"
+      }
+    ]
+  },
+  "limits": [
+    "This prepares editorial review; the 150 V3 category/dietary decisions remain pending.",
+    "No N UI or persistence migration; no change to seven local documents.",
+    "WebKit and HBC exports do not certify a physical device, Safari, signed native binary or TestFlight.",
+    "No zero-vulnerability guarantee; GitHub CI, protected staging and current-source secret scan pending this checkpoint."
+  ]
+}

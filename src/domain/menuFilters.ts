@@ -1,7 +1,6 @@
 import { RECIPES } from '../data/recipes';
-import { recipeMessages } from '../i18n/catalogs/recipes';
+import { LEGACY_DIETARY_REVIEWS } from '../data/legacyDietaryReviews';
 import { normalizeIngredientName, scaleRecipe, validateMealPlan, type MealPlan, type Recipe } from './menus';
-import type { Category, Unit } from './shopping';
 
 export const MAX_MENU_MINUTES = [20, 30, 45, 60] as const;
 export const MAX_EXCLUDED_INGREDIENTS = 50;
@@ -30,62 +29,32 @@ export function defaultMenuFilters(): MenuFilters {
   return { maxMinutes: null, preference: 'any', excludedIngredients: [] };
 }
 
-type IngredientReview = readonly [name: string, quantityMilli: number, unit: Unit, category: Category, note?: string];
-type ReviewedPreference = 'vegan' | 'vegetarian' | 'any';
-const vegetable: Category = 'Fruta y verdura';
-const pantry: Category = 'Despensa';
-const dairy: Category = 'Lácteos y huevos';
-const other: Category = 'Otros';
-const waterNote = recipeMessages.es['recipes.note.water'];
-const drainedNote = recipeMessages.es['recipes.note.drained'];
+/** Static review decisions are never regenerated from the current catalogue. */
+const reviewedPreferences = new Map(LEGACY_DIETARY_REVIEWS.map(review => [review.id, review] as const));
 
-function ingredientSignature(ingredients: readonly IngredientReview[]): string {
-  // Exact data comparison, rather than guessing from categories, titles or an ID.
-  return ingredients.map(([name, quantity, unit, category, note]) =>
-    JSON.stringify([normalizeIngredientName(name), quantity, unit, category, note ?? ''])).sort().join('\n');
+function recipeReviewSignature(recipe: Recipe): string {
+  // Exact sections bind measured/unmeasured ingredients, optional conditions,
+  // preparation steps and warnings. Reusing an ID never re-approves a change.
+  return JSON.stringify([
+    ['measured', recipe.ingredients.map(ingredient => JSON.stringify([
+      normalizeIngredientName(ingredient.name), ingredient.quantityMilli,
+      ingredient.unit, ingredient.category, ingredient.note ?? '',
+    ])).sort()],
+    ['unmeasured', (recipe.unmeasuredIngredients ?? []).map(({ name, note }) =>
+      JSON.stringify([normalizeIngredientName(name), note ?? ''])).sort()],
+    ['editorial', recipe.editorialNotes ?? []],
+    ['steps', recipe.steps],
+    ['allergenNote', recipe.allergenNote],
+  ]);
 }
-
-/** Reviewed culinary contents of the current seven recipes, not an allergy certification. */
-const reviewedPreferences = new Map<string, { preference: ReviewedPreference; signature: string }>([
-  ['arroz-verduras', { preference: 'vegan', signature: ingredientSignature([
-    ['arroz', 160000, 'g', pantry], ['calabacin', 200000, 'g', vegetable],
-    ['zanahoria', 150000, 'g', vegetable], ['cebolla', 100000, 'g', vegetable],
-    ['aceite de oliva', 20000, 'ml', pantry], ['agua', 400000, 'ml', other, waterNote],
-  ]) }],
-  ['lentejas-casa', { preference: 'vegan', signature: ingredientSignature([
-    ['lentejas secas', 180000, 'g', pantry], ['papas', 250000, 'g', vegetable],
-    ['zanahoria', 150000, 'g', vegetable], ['cebolla', 100000, 'g', vegetable],
-    ['aceite de oliva', 20000, 'ml', pantry], ['agua', 700000, 'ml', other, waterNote],
-  ]) }],
-  ['tortilla-ensalada', { preference: 'vegetarian', signature: ingredientSignature([
-    ['huevos', 3000, 'ud', dairy], ['papas', 300000, 'g', vegetable],
-    ['lechuga', 100000, 'g', vegetable], ['tomate', 150000, 'g', vegetable],
-    ['aceite de oliva', 20000, 'ml', pantry],
-  ]) }],
-  ['garbanzos-calabaza', { preference: 'vegan', signature: ingredientSignature([
-    ['garbanzos cocidos', 400000, 'g', pantry, drainedNote], ['calabaza', 300000, 'g', vegetable],
-    ['cebolla', 100000, 'g', vegetable], ['tomate', 150000, 'g', vegetable],
-    ['aceite de oliva', 20000, 'ml', pantry],
-  ]) }],
-  ['pasta-tomate', { preference: 'vegetarian', signature: ingredientSignature([
-    ['pasta', 180000, 'g', pantry], ['tomate', 300000, 'g', vegetable],
-    ['cebolla', 100000, 'g', vegetable], ['aceite de oliva', 20000, 'ml', pantry],
-    ['queso rallado', 30000, 'g', dairy],
-  ]) }],
-  ['pollo-papas', { preference: 'any', signature: ingredientSignature([
-    ['pollo', 300000, 'g', 'Carne y pescado'], ['papas', 400000, 'g', vegetable],
-    ['zanahoria', 150000, 'g', vegetable], ['cebolla', 100000, 'g', vegetable],
-    ['aceite de oliva', 20000, 'ml', pantry],
-  ]) }],
-  ['cuscus-verduras', { preference: 'vegan', signature: ingredientSignature([
-    ['cuscus', 160000, 'g', pantry], ['calabacin', 200000, 'g', vegetable],
-    ['zanahoria', 150000, 'g', vegetable], ['garbanzos cocidos', 200000, 'g', pantry, drainedNote],
-    ['aceite de oliva', 20000, 'ml', pantry], ['agua', 200000, 'ml', other, waterNote],
-  ]) }],
-]);
 
 function cleanName(value: unknown): value is string {
   return typeof value === 'string' && value.trim().length > 0 && value.length <= 120 && !UNSAFE_TEXT.test(value);
+}
+
+function cleanNote(value: unknown, maxLength = 500, multiline = false): value is string {
+  return typeof value === 'string' && value.length <= maxLength
+    && !UNSAFE_TEXT.test(multiline ? value.replace(/[\t\r\n]/g, '') : value);
 }
 
 function validateCatalog(recipes: readonly Recipe[]): void {
@@ -102,7 +71,17 @@ function validateCatalog(recipes: readonly Recipe[]): void {
     }
     if (recipe.unmeasuredIngredients !== undefined && (!Array.isArray(recipe.unmeasuredIngredients)
       || recipe.unmeasuredIngredients.length > 2000 || Array.from(recipe.unmeasuredIngredients).some((ingredient: unknown) =>
-        !ingredient || typeof ingredient !== 'object' || !('name' in ingredient) || !cleanName(ingredient.name)))) {
+        !ingredient || typeof ingredient !== 'object' || !('name' in ingredient) || !cleanName(ingredient.name)
+        || ('note' in ingredient && ingredient.note !== undefined && !cleanNote(ingredient.note))))) {
+      throw new MenuFilterError('menuFilters.catalogInvalid');
+    }
+    if (recipe.editorialNotes !== undefined && (!Array.isArray(recipe.editorialNotes)
+      || recipe.editorialNotes.length > 100 || Array.from(recipe.editorialNotes).some(note => !cleanNote(note, 2000, true)))) {
+      throw new MenuFilterError('menuFilters.catalogInvalid');
+    }
+    if (!Array.isArray(recipe.steps) || recipe.steps.length === 0 || recipe.steps.length > 100
+      || Array.from(recipe.steps).some(step => !cleanNote(step, 2000, true) || !step.trim())
+      || !cleanNote(recipe.allergenNote, 10_000, true)) {
       throw new MenuFilterError('menuFilters.catalogInvalid');
     }
     ingredientCount += recipe.ingredients.length + (recipe.unmeasuredIngredients?.length ?? 0);
@@ -165,8 +144,7 @@ export function filterRecipes(recipes: readonly Recipe[], filters: MenuFilters):
     if ([...recipe.ingredients, ...recipe.unmeasuredIngredients ?? []].some(ingredient => excluded.has(normalizeIngredientName(ingredient.name)))) return false;
     if (selected.preference === 'any') return true;
     const reviewed = reviewedPreferences.get(recipe.id);
-    if (!reviewed || reviewed.signature !== ingredientSignature(recipe.ingredients.map(ingredient =>
-      [ingredient.name, ingredient.quantityMilli, ingredient.unit, ingredient.category, ingredient.note]))) return false;
+    if (!reviewed || reviewed.signature !== recipeReviewSignature(recipe)) return false;
     return reviewed.preference === 'vegan' || (selected.preference === 'vegetarian' && reviewed.preference === 'vegetarian');
   });
 }
