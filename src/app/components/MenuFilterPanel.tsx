@@ -5,12 +5,14 @@ import {
   validateMenuFilters, type MenuFilters,
 } from '../../domain/menuFilters';
 import { RECIPES } from '../../data/recipes';
+import { DEFAULT_SAVED_MEALS } from '../../domain/mealPlanLimits';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { translateIngredientName } from '../../i18n/recipes';
 import { Button, Card, Notice, Section, Sheet, c, f, ui } from './ui';
 
 interface Props {
   filters: MenuFilters;
+  requestedMeals?: number;
   busy: boolean;
   budgetCents?: number | null;
   onApply(filters: MenuFilters): void;
@@ -19,7 +21,7 @@ interface Props {
 const INGREDIENT_PAGE_SIZE = 40;
 
 /** Filter drafts are presentation state only; nothing is persisted by this panel. */
-export function MenuFilterPanel({ filters, busy, budgetCents, onApply, onClose }: Props) {
+export function MenuFilterPanel({ filters, requestedMeals = DEFAULT_SAVED_MEALS, busy, budgetCents, onApply, onClose }: Props) {
   const { language, t, formatMoney, formatNumber } = useI18n();
   const [draft, setDraft] = useState<MenuFilters>(() => ({
     ...filters, excludedIngredients: [...filters.excludedIngredients],
@@ -89,7 +91,7 @@ export function MenuFilterPanel({ filters, busy, budgetCents, onApply, onClose }
         <Text testID="menu-filter-count" accessibilityRole="status" style={ui.strong}>
           {t('menuFilters.count', { count: formatNumber(count), total: formatNumber(RECIPES.length) })}
         </Text>
-        <Text style={[ui.note, { marginTop: 7 }]}>{t(count < 5 ? 'menuFilters.needFive' : 'menuFilters.planUnchanged')}</Text>
+        <Text style={[ui.note, { marginTop: 7 }]}>{t(count < requestedMeals ? 'variableMenus.filterCountHint' : 'variableMenus.planUnchanged', { count: formatNumber(requestedMeals) })}</Text>
       </Card>
       <Card style={{ backgroundColor: c.paleYellow }}>
         <Text style={ui.strong}>{t('menuFilters.budgetTitle')}</Text>

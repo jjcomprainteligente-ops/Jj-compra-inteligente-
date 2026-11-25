@@ -211,7 +211,7 @@ test('una sustitución solo ofrece recetas compatibles y no duplica las otras ce
   const filters = await openFilters(page);
   await filters.getByTestId('menu-filter-preference-vegan').click();
   await applyFilters(page);
-  await page.getByRole('button', { name: 'Cambiar plato del lunes', exact: true }).click();
+  await page.getByRole('button', { name: 'Cambiar plato de Comida 1', exact: true }).click();
   const sheet = page.getByTestId('menu-sheet');
   await expect(sheet.getByRole('button', { name: 'Pollo con papas', exact: true })).toHaveCount(0);
   await expect(sheet.getByRole('button', { name: 'Lentejas de casa', exact: true })).toHaveCount(0);

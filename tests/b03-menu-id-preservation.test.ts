@@ -100,6 +100,7 @@ describe('B03: saved menu identities survive the master catalogue audit', () => 
     const restored = await loadMealPlan();
     expect(restored).toEqual(fixture.expected);
     expect(restored).not.toBeNull();
+    if (restored === null || 'kind' in restored) throw new Error('Expected the preserved legacy plan.');
     const ingredients = planIngredients(restored!);
     expect(ingredients.length).toBeGreaterThan(0);
     for (const ingredient of ingredients) {
@@ -115,6 +116,7 @@ describe('B03: saved menu identities survive the master catalogue audit', () => 
     const reopened = await loadMealPlan();
     expect(reopened).toEqual(fixture.expected);
     expect(reopened).not.toBe(restored);
+    if (reopened === null || 'kind' in reopened) throw new Error('Expected the preserved legacy plan after reopening.');
     expect(reopened!.recipeIds).not.toBe(restored!.recipeIds);
     expect([...values.entries()]).toEqual(before);
     expect(values.get(STORAGE_KEY)).toBe(fixture.serialized);

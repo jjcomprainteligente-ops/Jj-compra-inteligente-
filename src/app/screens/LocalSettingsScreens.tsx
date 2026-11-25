@@ -3,7 +3,7 @@ import { ActivityIndicator, Linking, Platform, Pressable, StyleSheet, Switch, Te
 import { ArrowUpRight, Bell, ChevronRight, ListChecks, Minus, Star, Store, Utensils } from 'lucide-react-native';
 import { deriveLocalNotices, STORE_IDS } from '../../domain/localPreferences';
 import { allPilotStoresSelected, publicStoreDestination, selectAllPilotStores, type StoreId } from '../../domain/stores';
-import type { MealPlan } from '../../domain/menus';
+import type { SavedMealPlan } from '../../domain/savedMealPlan';
 import type { ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { Button, Card, Notice, Pill, Section, c, f, ui } from '../components/ui';
@@ -90,7 +90,7 @@ type NoticeFilter = 'all' | 'list' | 'recipes';
 export function NotificationsScreen({ store, lists, mealPlan, onOpenList, onMenus }: {
   store: LocalPreferencesStore;
   lists: ShoppingList[];
-  mealPlan?: MealPlan | null;
+  mealPlan?: SavedMealPlan | null;
   onOpenList(id: string): void;
   onMenus(): void;
 }) {

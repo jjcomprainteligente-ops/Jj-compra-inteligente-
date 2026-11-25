@@ -1,4 +1,4 @@
-import type { MealPlan } from './menus';
+import type { SavedMealPlan } from './savedMealPlan';
 import type { ShoppingList } from './shopping';
 import { STORE_IDS, type StoreId } from './stores';
 
@@ -51,7 +51,7 @@ export type LocalNotice =
 
 /** Computed from saved app data on render: no delivery, scheduler or commercial source. */
 export function deriveLocalNotices(
-  preferences: LocalPreferences, lists: readonly ShoppingList[], mealPlan?: MealPlan | null,
+  preferences: LocalPreferences, lists: readonly ShoppingList[], mealPlan?: SavedMealPlan | null,
 ): LocalNotice[] {
   if (!preferences.inAppReminders) return [];
   const notices: LocalNotice[] = [];
@@ -59,8 +59,9 @@ export function deriveLocalNotices(
     const pendingCount = list.items.filter(item => !item.checked).length;
     if (pendingCount > 0) notices.push({ kind: 'list', id: list.id, listName: list.name, pendingCount });
   }
-  if (mealPlan && mealPlan.recipeIds.length > 0) {
-    notices.push({ kind: 'recipes', id: 'meal-plan', recipeCount: mealPlan.recipeIds.length, servings: mealPlan.servings });
+  const recipeCount = mealPlan ? ('kind' in mealPlan ? mealPlan.meals.length : mealPlan.recipeIds.length) : 0;
+  if (mealPlan && recipeCount > 0) {
+    notices.push({ kind: 'recipes', id: 'meal-plan', recipeCount, servings: mealPlan.servings });
   }
   return notices;
 }

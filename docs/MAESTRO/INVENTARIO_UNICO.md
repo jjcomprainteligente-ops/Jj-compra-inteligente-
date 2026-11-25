@@ -1,5 +1,9 @@
 # Inventario único | JJ Compra Inteligente
 
+**B05.4 publicada y comprobada · 25/11/2026:** menús de 1–14 comidas para 1–12 personas (propuesta inicial para revisión), planes anteriores conservados y confirmación explícita de propuestas variables y regeneraciones del plan completo. [PR #32](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/32), fuente `97d3168`, CI de fuente correcta. Staging protegida: cuatro idiomas/319 recursos y 24 casos nuevos WebKit correctos; local: 1.853 unitarias, 155 Python y 36 + 24 casos de navegador. Auditoría de pareja completada técnicamente; las 300 decisiones editoriales V3 y aceptación visual/física siguen pendientes. [Informe actual](BLOQUE05_4_MENUS_VARIABLES.md). Acceso temporal por conversación hasta 26/11/2026 22:27:14 UTC. Main y producción conservados; las anotaciones previas de publicación pendiente son checkpoints históricos.
+
+**B05.4 · 25/11/2026 · comprobación local actual:** N=1–14 y personas=1–12 en menús y recorrido por presupuesto. Se preservan V1, siete documentos y 157 recetas/fotos. Tipos, 1.853 unitarias, 155 Python, 36 casos nuevos y 24 regresiones pasan. GitHub/CI/staging pendientes en este checkpoint. [Informe](BLOQUE05_4_MENUS_VARIABLES.md) · [auditoría de pareja](AUDITORIA_PAREJA_B05_3_B05_4_2026-11-25.md). La propuesta de rango no cierra aceptación de producto ni las 300 decisiones editoriales; B06 no se abre automáticamente.
+
 **Registro maestro materializado en Bloque 01 · 13/11/2026.** El propietario autorizó consolidar la app existente, sin empezar de cero. Los hechos de partida proceden de la auditoría de lectura del Bloque 00, cerrada a las 16:43 UTC. [Plan aprobado recibido](fuentes/JJ_PLAN_MAESTRO_CODEX_2026-11-13.md) · [mensaje inicial de auditoría ya realizada](fuentes/JJ_MENSAJE_INICIAL_CODEX_2026-11-13.md). Las pruebas de aquella auditoría son lecturas de evidencia, no suites recién ejecutadas.
 
 ## B05.3 · candidata comprobada del 24/11/2026

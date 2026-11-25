@@ -1,10 +1,11 @@
 import { validateBudget } from './shopping';
 import { PILOT_STORE_IDS, type StoreId } from './stores';
+import { MAX_SAVED_MEALS, MIN_SAVED_MEALS } from './mealPlanLimits';
 
 /** A planning limit, never an expense, a quotation or a verified meal cost. */
 export interface PlanningRequest {
   budgetCents: number;
-  meals: 5;
+  meals: number;
   servings: number;
 }
 
@@ -12,6 +13,7 @@ export interface PlanningRequest {
 export interface PlanningContext {
   mode: 'recipes' | 'budget';
   budgetCents: number | null;
+  meals: number;
   servings: number;
   stores: StoreId[];
 }
@@ -41,13 +43,14 @@ export function validatePlanningRequest(input: { budget: string; meals: string; 
   if (budgetCents === null || !Number.isSafeInteger(budgetCents) || budgetCents <= 0) {
     throw new PurchaseJourneyError('mealJourney.invalidBudget');
   }
-  if (!own(input, 'meals') || !boundedText(input.meals) || !/^\d{1,2}$/.test(input.meals.trim()) || Number(input.meals.trim()) !== 5) {
+  if (!own(input, 'meals') || !boundedText(input.meals) || !/^[0-9]{1,2}$/.test(input.meals.trim())
+    || Number(input.meals.trim()) < MIN_SAVED_MEALS || Number(input.meals.trim()) > MAX_SAVED_MEALS) {
     throw new PurchaseJourneyError('mealJourney.invalidMeals');
   }
   if (!own(input, 'servings') || !boundedText(input.servings) || !/^(?:[1-9]|1[0-2])$/.test(input.servings.trim())) {
     throw new PurchaseJourneyError('mealJourney.invalidPeople');
   }
-  return { budgetCents, meals: 5, servings: Number(input.servings.trim()) };
+  return { budgetCents, meals: Number(input.meals.trim()), servings: Number(input.servings.trim()) };
 }
 
 /** A journey may have no stores; selection never changes saved favourites. */

@@ -7,6 +7,7 @@ import {
 } from '../../domain/purchaseJourney';
 import { PILOT_STORE_IDS, publicStoreDestination, type StoreId } from '../../domain/stores';
 import type { ShoppingList } from '../../domain/shopping';
+import { DEFAULT_SAVED_MEALS } from '../../domain/mealPlanLimits';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { Button, Card, Field, Notice, Section, Title, c, f, ui } from '../components/ui';
 
@@ -24,7 +25,7 @@ export function PlanBudgetScreen({ initial, initialServings = 2, draft, onDraftC
 }) {
   const { t, formatMoneyInput, translateError } = useI18n();
   const [budget, setBudget] = useState(() => draft?.budget ?? (initial ? formatMoneyInput(initial.budgetCents) : ''));
-  const [meals, setMeals] = useState(() => draft?.meals ?? '5');
+  const [meals, setMeals] = useState(() => draft?.meals ?? String(initial?.meals ?? DEFAULT_SAVED_MEALS));
   const [servings, setServings] = useState(() => draft?.servings ?? String(initial?.servings ?? initialServings));
   const [error, setError] = useState<unknown>(null);
   const change = (field: keyof PlanningFormDraft, value: string) => {
@@ -49,7 +50,7 @@ export function PlanBudgetScreen({ initial, initialServings = 2, draft, onDraftC
         placeholder={t('mealJourney.amountExample', { amount: formatMoneyInput(5000) })} />
       <Field label={t('mealJourney.meals')} testID="planning-meals"
         value={meals} onChangeText={value => change('meals', value)} editable={!busy}
-        inputMode="numeric" maxLength={2} hint={t('mealJourney.fiveOnlyHelp')} />
+        inputMode="numeric" maxLength={2} hint={t('variableMenus.countHint')} />
       <Field label={t('mealJourney.servings')} testID="planning-servings"
         value={servings} onChangeText={value => change('servings', value)} editable={!busy}
         inputMode="numeric" maxLength={2} hint={t('mealJourney.servingsHelp')} />

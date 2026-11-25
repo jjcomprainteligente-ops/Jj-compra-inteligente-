@@ -289,7 +289,7 @@ for (const language of ['es', 'en', 'de', 'fr'] as const) test.describe(language
     await page.getByTestId('menus-section-week').click();
     await page.getByTestId('prepare-menu').click();
     await expect(page.getByTestId('review-menu')).toBeVisible();
-    await page.getByRole('button', { name: t('menus.changeMealA11y', { day: t('menus.day.monday') }), exact: true }).click();
+    await page.getByRole('button', { name: t('variableMenus.changeMealA11y', { meal: t('variableMenus.mealIndex', { count: '1' }) }), exact: true }).click();
     sheet = page.getByTestId('menu-sheet');
     await sheet.getByRole('button', { name: translated.title, exact: true }).click();
     await expect(sheet).toHaveCount(0);
