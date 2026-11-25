@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-25T23:32:19.321062+00:00",
+  "phase": "SOURCE_CI_PROTECTED_STAGING_AND_PAIR_AUDIT_PASS_EDITORIAL_PENDING",
+  "source": {
+    "commit": "97d31680a8c135e415d0ab91c98a722edb5481ae",
+    "tree": "004ea32ff4f41fb5db0abbcc24b8f16bca86ce38",
+    "branch": "codex/b05-4-menus-variables-2026-11-25",
+    "applicationInputs": 411,
+    "scanFiles": 2045,
+    "sourceSnapshotMatched": true
+  },
+  "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/32",
+  "pullRequestBase": "codex/b05-3-revision-culinaria-2026-11-21",
+  "upstreamPR31Merged": false,
+  "localEvidence": {
+    "path": "local-preparation.json",
+    "sha256": "e7aaf194d62ada63727febdc7776fed353b6f745a6f6b9c4d037508367252911",
+    "executedDate": "2026-11-25",
+    "checks": {
+      "types": "PASS",
+      "unit": {
+        "numTotalTests": 1853,
+        "numPassedTests": 1853,
+        "numFailedTests": 0,
+        "numPendingTests": 0
+      },
+      "python": {
+        "passed": 155,
+        "failed": 0
+      },
+      "browser": {
+        "variable": {
+          "startTime": "2026-11-25T22:53:33.525Z",
+          "duration": 388266.20300000004,
+          "expected": 36,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        },
+        "legacy": {
+          "startTime": "2026-11-25T22:54:10.781Z",
+          "duration": 129277.768,
+          "expected": 24,
+          "skipped": 0,
+          "unexpected": 0,
+          "flaky": 0
+        }
+      },
+      "sourceAndEditorialReproduction": "PASS",
+      "expoCompatibility": "PASS",
+      "npmKnownAdvisories": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "independentSecurity": {
+        "negativeChecks": 30,
+        "twoWriterRace": "one write; stale writer rejected",
+        "blockersFound": 0
+      },
+      "visualInspection": "German 375 meal14/review and French430 budget14/12; existing tokens, scroll segments, no observed truncation"
+    }
+  },
+  "recovery": {
+    "appInputsMatched": 411,
+    "sourceSnapshotFilesMatched": 2045,
+    "sourceTreeMatched": "004ea32ff4f41fb5db0abbcc24b8f16bca86ce38",
+    "artifactHashesMatched": 4,
+    "packageFilesMatched": 313,
+    "independentReadOnlyCheck": "PASS"
+  },
+  "secretScan": {
+    "status": "SCAN_COMPLETE_ZERO_VERIFIED_SECRETS_WITH_FALSE_POSITIVES",
+    "toolVersion": "8.30.1",
+    "sourceCommit": "97d31680a8c135e415d0ab91c98a722edb5481ae",
+    "snapshotFiles": 2045,
+    "snapshotBytes": 264190456,
+    "snapshotManifestSHA256": "46621816dd98a90b84a8d288e4da42190979d669e4bed9b28a8e6770db003a96",
+    "originalExitCode": 1,
+    "rawFindings": 17,
+    "falsePositives": 17,
+    "verifiedSecrets": 0,
+    "unresolved": 0,
+    "historyScanned": false,
+    "archiveTraversal": false,
+    "ignoredOrRuntimeCredentialsInspected": false,
+    "allowlistChanges": false,
+    "scope": "all2045 sourcecommit files; default rules,100% redacted, inline allow comments ignored",
+    "toolSHA256": "88f91962aa2f93ac6ab281d553b9e125f5197bbbce38f9f2437f7299c32e5509",
+    "scannedAtUTC": "2026-11-25T23:02:56.781362+00:00"
+  },
+  "githubActions": [
+    {
+      "id": 45718485285,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 45718435874,
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_ETiXZZPa4wayg47aKF3XajzpVS7V",
+    "url": "jj-compra-inteligente-dcz5mwz4c-cmj2hwhc6b-1051.vercel.app",
+    "state": "READY",
+    "target": "staging",
+    "sourceCommit": "97d31680a8c135e415d0ab91c98a722edb5481ae"
+  },
+  "hostedHTTPS": {
+    "languages": 4,
+    "verifiedFiles": 319,
+    "errors": 0,
+    "bundleDecodedSHA256": "003344d3262d81539bf20f93f712f050e449994cd2f22bc39ba173038f78f6d3",
+    "bundleTransportSHA256": "ce03c8b45eb9f4c386de849199bbb0d6ee926af2406bbe0146b929ee377adba2",
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+    "reportSHA256": "57c3119f71dca36894ae169d1892eccb7d81fa881f4037b7458f2d0ab66f7b56"
+  },
+  "hostedWebKit": {
+    "projects": [
+      "webkit-375",
+      "webkit-430"
+    ],
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "variableMealCases": {
+      "startTime": "2026-11-25T23:27:24.357Z",
+      "duration": 273464.055,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "reportSHA256": "c858844ec1a5af5b81b0b5ecf7935589ba4f17ceee05bf006444e474f4cfdb9b",
+    "scope": [
+      "legacyV1 byte preservation, proposals/cancel/reload of1/5/14",
+      "strict vegan4 available vs14 requested",
+      "budget14/12 to1/1; reviewed list with independent quantity oracle"
+    ]
+  },
+  "shareAccessExpiresUTC": "2026-11-26T22:27:14Z",
+  "protectedAccessCredentialInRepository": false,
+  "provider": {
+    "project": "prj_6LgoBqJOykuqz8M1RHmbN7XfUiry",
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "mainCommit": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+    "mainMergedForThisDelivery": false,
+    "productionPromoted": false
+  },
+  "runtime": {
+    "mealCount": {
+      "min": 1,
+      "max": 14,
+      "default": 5,
+      "status": "Initial preview proposal; owner product acceptance pending"
+    },
+    "people": {
+      "min": 1,
+      "max": 12
+    },
+    "recipes": 157,
+    "v3Recipes": 150,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "businessDocuments": 7,
+    "storageKeyUnchanged": true,
+    "legacyV1AutoMigration": false,
+    "legacyFiveMealFirstSaveDirect": true,
+    "variableAndReplacementRequireConfirmation": true,
+    "hiddenRecoveryMetadata": false,
+    "newV3DietaryDecisions": 0,
+    "pendingEditorialDecisions": 300,
+    "confirmationScope": "First plans with N other than5 and regeneration of an existing full plan require proposal confirmation; individual dish substitution preserves prior explicit selection behavior."
+  },
+  "exports": {
+    "dist-b054-release-web": [
+      {
+        "file": "_expo/static/js/web/index-0d5d4dc5bd073fa1556bee700172d36e.js",
+        "bytes": 5655196,
+        "sha256": "003344d3262d81539bf20f93f712f050e449994cd2f22bc39ba173038f78f6d3"
+      }
+    ],
+    "dist-b054-release-platforms": [
+      {
+        "file": "_expo/static/js/ios/index-0c1ba14c7f2a0853f0999e79f5396e4e.hbc",
+        "bytes": 6805098,
+        "sha256": "17adf4e19c8aa39dfd59e126a0a5a783b510b7d5bacebd6c78281d756633cfa1"
+      },
+      {
+        "file": "_expo/static/js/web/index-def9979ab3dbf65c26dd611b2a764417.js",
+        "bytes": 5657147,
+        "sha256": "6f02d96912ec22e613ffa0c3af009338495a81b134ae4100dff189cdeb7cc16b"
+      },
+      {
+        "file": "_expo/static/js/android/index-bd71aaacd6920d2bff7b22f30b205cab.hbc",
+        "bytes": 6810151,
+        "sha256": "30306e16c584682cd9aa3fa8587cbaea1a6a6fba6d790c739ddc1cb4a04140b5"
+      }
+    ]
+  },
+  "limits": [
+    "Initial1–14 range is a preview proposal pending product acceptance.",
+    "150category and150dietary decisions still require editorial review.",
+    "WebKit Linux and exports do not certify physical iPhone/Safari, signed native app or TestFlight.",
+    "No absolute security guarantee or current live Supabase audit.",
+    "No main merge, production promotion, new services, dependencies or prices."
+  ]
+}
