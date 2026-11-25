@@ -377,7 +377,7 @@ for (const language of ['es', 'en', 'de', 'fr'] as const) test.describe(language
     for (const attempt of [
       { amount: '0', meals: '5', people: '4', key: 'mealJourney.invalidBudget' },
       { amount: '-1', meals: '5', people: '4', key: 'mealJourney.invalidBudget' },
-      { amount: '50', meals: '6', people: '4', key: 'mealJourney.invalidMeals' },
+      { amount: '50', meals: '15', people: '4', key: 'mealJourney.invalidMeals' },
       { amount: '50', meals: '5', people: '13', key: 'mealJourney.invalidPeople' },
     ]) {
       await form.getByTestId('planning-budget-amount').fill(attempt.amount);

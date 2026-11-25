@@ -30,6 +30,7 @@ describe('menú local en una clave independiente', () => {
     const restored = await loadMealPlan();
     expect(restored).toEqual(original);
     expect(restored).not.toBe(original);
+    if (restored === null || 'kind' in restored) throw new Error('Expected the original legacy five-meal shape.');
     expect(restored?.recipeIds).not.toBe(original.recipeIds);
   });
 
@@ -111,7 +112,7 @@ describe('datos inválidos o incompatibles no reemplazados', () => {
     expect(storage.setItem).not.toHaveBeenCalled();
   });
 
-  it.each([0, 2, 999])('preserva la versión %s sin migración implícita', async version => {
+  it.each([0, 3, 999])('preserva la versión %s sin migración implícita', async version => {
     storage.getItem.mockResolvedValue(JSON.stringify({ version, plan: createMealPlan(2) }));
     await expect(loadMealPlan()).rejects.toThrow('versión');
     expect(storage.setItem).not.toHaveBeenCalled();

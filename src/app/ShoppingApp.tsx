@@ -34,6 +34,7 @@ import { DataPrivacyScreen } from './screens/DataPrivacyScreen';
 import { ListShareSheet } from './components/ListShareSheet';
 import { PlanBudgetScreen, JourneyStorePicker, JourneyResultScreen, type PlanningFormDraft } from './screens/PlanningScreens';
 import { validateJourneyStores, type PlanningContext, type PlanningRequest } from '../domain/purchaseJourney';
+import { DEFAULT_SAVED_MEALS, MAX_SAVED_MEALS, MIN_SAVED_MEALS } from '../domain/mealPlanLimits';
 import type { StoreId } from '../domain/stores';
 import type { PrivacyScope } from '../domain/dataPrivacy';
 import { usePriceObservations } from './usePriceObservations';
@@ -222,7 +223,7 @@ function Workspace() {
   };
   const startJourney = (mode: 'recipes' | 'budget') => {
     if (navigationBusy || disabled) return;
-    setJourney({ mode, budgetCents: null, servings: 2, stores: [], listId: null });
+    setJourney({ mode, budgetCents: null, meals: DEFAULT_SAVED_MEALS, servings: 2, stores: [], listId: null });
     setPlanningFormDraft(null);
     budgetReturnsToMenus.current = false;
     setMenuSection(mode === 'budget' ? 'week' : 'discover');
@@ -230,7 +231,7 @@ function Workspace() {
   };
   const continueBudget = (request: PlanningRequest) => {
     if (navigationBusy || disabled) return;
-    setJourney(previous => ({ mode: 'budget', budgetCents: request.budgetCents, servings: request.servings,
+    setJourney(previous => ({ mode: 'budget', budgetCents: request.budgetCents, meals: request.meals, servings: request.servings,
       stores: previous?.stores ?? [], listId: null }));
     navigate('plan-stores', true);
   };
@@ -243,10 +244,16 @@ function Workspace() {
     if (navigationBusy || !Number.isInteger(servings) || servings < 1 || servings > 12) return;
     setJourney(previous => previous ? { ...previous, servings } : null);
   };
+  const changeJourneyMealCount = (meals: number) => {
+    if (navigationBusy || !Number.isInteger(meals) || meals < MIN_SAVED_MEALS || meals > MAX_SAVED_MEALS) return;
+    setJourney(previous => previous ? { ...previous, meals } : null);
+  };
   const editPlanningBudget = () => {
     if (navigationBusy) return;
     budgetReturnsToMenus.current = true;
-    setPlanningFormDraft(previous => previous && journey ? { ...previous, servings: String(journey.servings) } : previous);
+    setPlanningFormDraft(previous => previous && journey ? {
+      ...previous, meals: String(journey.meals), servings: String(journey.servings),
+    } : previous);
     navigate('plan-budget', true);
   };
   const backFromPlanningBudget = () => navigate(budgetReturnsToMenus.current ? 'menus' : 'home', budgetReturnsToMenus.current);
@@ -309,7 +316,7 @@ function Workspace() {
           {screen === 'plan-budget' ? <PlanBudgetScreen busy={navigationBusy || disabled}
             initialServings={journey?.servings ?? 2}
             draft={planningFormDraft} onDraftChange={setPlanningFormDraft}
-            initial={journey?.budgetCents != null ? { budgetCents: journey.budgetCents, meals: 5, servings: journey.servings } : null}
+            initial={journey?.budgetCents != null ? { budgetCents: journey.budgetCents, meals: journey.meals, servings: journey.servings } : null}
             onContinue={continueBudget} onBack={backFromPlanningBudget} /> :
           screen === 'plan-stores' ? <JourneyStorePicker selected={journey?.stores ?? []} busy={navigationBusy || disabled}
             continueLabel={journey?.listId ? 'mealJourney.continueReview' : 'mealJourney.continueMenus'}
@@ -339,6 +346,7 @@ function Workspace() {
             accessibilityElementsHidden={screen !== 'menus'} importantForAccessibility={screen === 'menus' ? 'auto' : 'no-hide-descendants'}>
             <MenuWorkspace budgetCents={journey.budgetCents} onBudget={editPlanningBudget}
               journey={journey} onJourneyStoresChange={changeJourneyStores} onJourneyServingsChange={changeJourneyServings}
+              onJourneyMealCountChange={changeJourneyMealCount}
               onIngredientsConfirmed={() => navigate('plan-result', true)}
               initialSection={menuSection} shopping={store.data} shoppingBusy={disabled} shoppingError={store.saveError}
               onApply={applyIngredients} onNavigateList={() => navigate('list')} onNavigateMain={navigate} />

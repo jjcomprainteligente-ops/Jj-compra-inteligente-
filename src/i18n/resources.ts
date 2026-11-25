@@ -28,9 +28,10 @@ import { storePilotMessages } from './catalogs/storePilot';
 import { listSharingMessages } from './catalogs/listSharing';
 import { recipePhotoMessages } from './catalogs/recipePhotos';
 import { purchaseJourneyMessages } from './catalogs/purchaseJourney';
+import { variableMenusMessages } from './catalogs/variableMenus';
 
 export const resources = mergeMessageCatalogs(
-  v3RecipeMessages, catalogV83UiMessages, recipePhotoMessages, purchaseJourneyMessages,
+  v3RecipeMessages, catalogV83UiMessages, recipePhotoMessages, purchaseJourneyMessages, variableMenusMessages,
   storePilotMessages, listSharingMessages,
   menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,

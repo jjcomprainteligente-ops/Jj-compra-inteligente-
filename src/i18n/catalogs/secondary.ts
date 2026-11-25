@@ -92,7 +92,7 @@ const es = {
   'secondary.help': 'Ayuda',
   'secondary.about': 'Sobre JJ Compra Inteligente',
   'secondary.helpTitle': 'Comprar con criterio',
-  'secondary.helpInfo': 'Crea una lista, añade productos, cantidades y precios opcionales. En Menús puedes preparar cinco cenas, ajustar personas y revisar los ingredientes antes de confirmar su destino. También puedes traer texto de ChatGPT para revisarlo sin conexión con una IA. Las estimaciones siguen separadas del gasto registrado. El hogar compartido está pendiente.',
+  'secondary.helpInfo': 'Crea una lista, añade productos, cantidades y precios opcionales. En Menús puedes planificar de 1 a 14 comidas, ajustar personas y revisar los ingredientes antes de confirmar su destino. También puedes traer texto de ChatGPT para revisarlo sin conexión con una IA. Las estimaciones siguen separadas del gasto registrado. El hogar compartido está pendiente.',
   'secondary.mealA11y': '{name}, {time}. Idea de ejemplo',
   'secondary.mealExampleMeta': '{time} · 2 personas · Ejemplo',
 };
@@ -190,7 +190,7 @@ const en: Record<keyof typeof es, string> = {
   'secondary.help': 'Help',
   'secondary.about': 'About JJ Compra Inteligente',
   'secondary.helpTitle': 'Shop thoughtfully',
-  'secondary.helpInfo': 'Create a list, add products, quantities and optional prices. In Menus you can prepare five dinners, change serving counts and review ingredients before confirming their destination. You can also bring text from ChatGPT to review without connecting to AI. Estimates remain separate from recorded spending. Shared households are still pending.',
+  'secondary.helpInfo': 'Create a list, add products, quantities and optional prices. In Menus you can plan from 1 to 14 meals, change serving counts and review ingredients before confirming their destination. You can also bring text from ChatGPT to review without connecting to AI. Estimates remain separate from recorded spending. Shared households are still pending.',
   'secondary.mealA11y': '{name}, {time}. Example idea',
   'secondary.mealExampleMeta': '{time} · 2 people · Example',
 };
@@ -288,7 +288,7 @@ const de: Record<keyof typeof es, string> = {
   'secondary.help': 'Hilfe',
   'secondary.about': 'Über JJ Compra Inteligente',
   'secondary.helpTitle': 'Bewusst einkaufen',
-  'secondary.helpInfo': 'Erstelle eine Liste und ergänze Produkte, Mengen und optionale Preise. Unter Menüs kannst du fünf Abendessen planen, Personenzahlen ändern und Zutaten vor der Bestätigung des Ziels prüfen. Du kannst auch Text aus ChatGPT mitbringen und ohne KI-Verbindung prüfen. Schätzungen bleiben von erfassten Ausgaben getrennt. Ein gemeinsamer Haushalt ist noch nicht verfügbar.',
+  'secondary.helpInfo': 'Erstelle eine Liste und ergänze Produkte, Mengen und optionale Preise. Unter Menüs kannst du zwischen 1 und 14 Mahlzeiten planen, Personenzahlen ändern und Zutaten vor der Bestätigung des Ziels prüfen. Du kannst auch Text aus ChatGPT mitbringen und ohne KI-Verbindung prüfen. Schätzungen bleiben von erfassten Ausgaben getrennt. Ein gemeinsamer Haushalt ist noch nicht verfügbar.',
   'secondary.mealA11y': '{name}, {time}. Beispielidee',
   'secondary.mealExampleMeta': '{time} · 2 Personen · Beispiel',
 };
@@ -386,7 +386,7 @@ const fr: Record<keyof typeof es, string> = {
   'secondary.help': 'Aide',
   'secondary.about': 'À propos de JJ Compra Inteligente',
   'secondary.helpTitle': 'Acheter avec discernement',
-  'secondary.helpInfo': 'Crée une liste et ajoute des produits, des quantités et des prix facultatifs. Dans Menus, tu peux préparer cinq dîners, ajuster le nombre de personnes et vérifier les ingrédients avant de confirmer leur destination. Tu peux aussi apporter du texte de ChatGPT et le vérifier sans connexion à une IA. Les estimations restent distinctes des dépenses enregistrées. Le foyer partagé reste à venir.',
+  'secondary.helpInfo': 'Crée une liste et ajoute des produits, des quantités et des prix facultatifs. Dans Menus, tu peux planifier de 1 à 14 repas, ajuster le nombre de personnes et vérifier les ingrédients avant de confirmer leur destination. Tu peux aussi apporter du texte de ChatGPT et le vérifier sans connexion à une IA. Les estimations restent distinctes des dépenses enregistrées. Le foyer partagé reste à venir.',
   'secondary.mealA11y': '{name}, {time}. Idée d’exemple',
   'secondary.mealExampleMeta': '{time} · 2 personnes · Exemple',
 };

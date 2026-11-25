@@ -108,7 +108,7 @@ test('prepara y edita cinco cenas sin red y conserva el plan al recargar', async
   await expect.poll(async () => (await readMenu(page))?.plan?.servings).toBe(3);
   await page.getByRole('button', { name: 'Aumentar personas', exact: true }).click();
   await expect.poll(async () => (await readMenu(page))?.plan?.servings).toBe(4);
-  await page.getByRole('button', { name: 'Cambiar plato del lunes', exact: true }).click();
+  await page.getByRole('button', { name: 'Cambiar plato de Comida 1', exact: true }).click();
   const change = page.getByTestId('menu-sheet');
   await change.getByRole('button', { name: 'Pollo con papas', exact: true }).click();
   await change.waitFor({ state: 'detached' });

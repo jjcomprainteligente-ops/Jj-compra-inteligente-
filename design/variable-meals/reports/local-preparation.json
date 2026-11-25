@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-25T23:02:23.314624+00:00",
+  "phase": "LOCAL_RELEASE_CHECKS_PASS_PUBLICATION_PENDING",
+  "base": "f4f458ec7de64d0b489f538eafd7b6fa01e7f335",
+  "branch": "codex/b05-4-menus-variables-2026-11-25",
+  "scope": {
+    "mealCount": {
+      "min": 1,
+      "max": 14,
+      "default": 5,
+      "status": "Initial preview proposal; owner product acceptance pending"
+    },
+    "people": {
+      "min": 1,
+      "max": 12
+    },
+    "recipes": 157,
+    "v3Recipes": 150,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "businessDocuments": 7,
+    "storageKeyUnchanged": true,
+    "legacyV1AutoMigration": false,
+    "legacyFiveMealFirstSaveDirect": true,
+    "variableAndReplacementRequireConfirmation": true,
+    "hiddenRecoveryMetadata": false,
+    "newV3DietaryDecisions": 0,
+    "pendingEditorialDecisions": 300
+  },
+  "preservation": {
+    "baselineTrackedFiles": 2035,
+    "missingBaselineFiles": [],
+    "changedBaselineFiles": [
+      "src/app/ShoppingApp.tsx",
+      "src/app/components/MenuFilterPanel.tsx",
+      "src/app/screens/LocalSettingsScreens.tsx",
+      "src/app/screens/MenuWorkspace.tsx",
+      "src/app/screens/PlanningScreens.tsx",
+      "src/app/useMealPlan.ts",
+      "src/domain/localPreferences.ts",
+      "src/domain/purchaseJourney.ts",
+      "src/i18n/catalogs/localSettings.ts",
+      "src/i18n/catalogs/purchaseJourney.ts",
+      "src/i18n/catalogs/secondary.ts",
+      "src/i18n/resources.ts",
+      "src/storage/menus.ts",
+      "tests/b03-menu-id-preservation.test.ts",
+      "tests/e2e/menus-privacy.spec.ts",
+      "tests/e2e/menus.spec.ts",
+      "tests/iphone-pilot/v83-recipes.spec.ts",
+      "tests/menus-storage.test.ts",
+      "tests/purchase-journey.test.ts",
+      "tests/purchase-journey/journey.spec.ts",
+      "tests/recipe-photos/photo-status.spec.ts"
+    ],
+    "applicationInputs": 411,
+    "applicationInputManifestSHA256": "e87de98f607e127390dbacac89b5fd5a2ac1cf6b2ea14267e6e06c25b6c37486",
+    "originalV3Photos": 150,
+    "derivedPhotos": 300,
+    "allRecipeAndPhotoSourcesUnchanged": true,
+    "referencesUnchanged": 304,
+    "assetFilesUnchanged": 301,
+    "dataModulesUnchanged": 5,
+    "editorialHandoffFilesUnchanged": 17,
+    "dependencyFilesUnchanged": true
+  },
+  "checks": {
+    "types": "PASS",
+    "unit": {
+      "numTotalTests": 1853,
+      "numPassedTests": 1853,
+      "numFailedTests": 0,
+      "numPendingTests": 0
+    },
+    "python": {
+      "passed": 155,
+      "failed": 0
+    },
+    "browser": {
+      "variable": {
+        "startTime": "2026-11-25T22:53:33.525Z",
+        "duration": 388266.20300000004,
+        "expected": 36,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "legacy": {
+        "startTime": "2026-11-25T22:54:10.781Z",
+        "duration": 129277.768,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      }
+    },
+    "sourceAndEditorialReproduction": "PASS",
+    "expoCompatibility": "PASS",
+    "npmKnownAdvisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "independentSecurity": {
+      "negativeChecks": 30,
+      "twoWriterRace": "one write; stale writer rejected",
+      "blockersFound": 0
+    },
+    "visualInspection": "German 375 meal14/review and French430 budget14/12; existing tokens, scroll segments, no observed truncation"
+  },
+  "exports": {
+    "dist-b054-release-web": [
+      {
+        "file": "_expo/static/js/web/index-0d5d4dc5bd073fa1556bee700172d36e.js",
+        "bytes": 5655196,
+        "sha256": "003344d3262d81539bf20f93f712f050e449994cd2f22bc39ba173038f78f6d3"
+      }
+    ],
+    "dist-b054-release-platforms": [
+      {
+        "file": "_expo/static/js/ios/index-0c1ba14c7f2a0853f0999e79f5396e4e.hbc",
+        "bytes": 6805098,
+        "sha256": "17adf4e19c8aa39dfd59e126a0a5a783b510b7d5bacebd6c78281d756633cfa1"
+      },
+      {
+        "file": "_expo/static/js/web/index-def9979ab3dbf65c26dd611b2a764417.js",
+        "bytes": 5657147,
+        "sha256": "6f02d96912ec22e613ffa0c3af009338495a81b134ae4100dff189cdeb7cc16b"
+      },
+      {
+        "file": "_expo/static/js/android/index-bd71aaacd6920d2bff7b22f30b205cab.hbc",
+        "bytes": 6810151,
+        "sha256": "30306e16c584682cd9aa3fa8587cbaea1a6a6fba6d790c739ddc1cb4a04140b5"
+      }
+    ]
+  },
+  "attemptsPreserved": [
+    {
+      "unitInitial": "1852 passed, one unchanged privacy UTF8/JSON case failed under parallel resource load; exact cause not established",
+      "followUp": "44 focused and two full1853 suites passed without app/assertion/timeout changes; last full suite binds release"
+    },
+    {
+      "browserInitial": "capture helper matched outer and labelled dialogs; one failed,35 unrun",
+      "fix": "test capture selects labelled last dialog; assertions and timeouts preserved",
+      "followUp": "36 passed before notification copy; final36 and24 rerun against release003344"
+    }
+  ],
+  "limits": [
+    "Hosted verification, GitHub CI and secret snapshot pending this checkpoint.",
+    "WebKit Linux and Hermes exports do not certify physical iPhone, signed native app or TestFlight.",
+    "Editorial diet/category decisions, official prices and commercial labels remain pending.",
+    "No absolute absence-of-vulnerability guarantee; no live Supabase security audit.",
+    "All-platform web differs; publish standalone web SHA003344 only."
+  ]
+}

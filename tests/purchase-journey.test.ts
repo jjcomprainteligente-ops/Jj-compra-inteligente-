@@ -23,15 +23,20 @@ describe('a bounded planning request without price or spending claims', () => {
     expect(validatePlanningRequest({ ...valid(), budget })).toEqual({ budgetCents, meals: 5, servings: 2 });
   });
 
-  it('accepts one through twelve diners and keeps the supported meal count explicit', () => {
+  it.each(Array.from({ length: 14 }, (_, index) => index + 1))('accepts %s meals independently from one through twelve diners', meals => {
     for (let servings = 1; servings <= 12; servings++) {
-      expect(validatePlanningRequest({ budget: '50', meals: '5', servings: String(servings) })).toEqual({
-        budgetCents: 5000, meals: 5, servings,
+      expect(validatePlanningRequest({ budget: '50', meals: String(meals), servings: String(servings) })).toEqual({
+        budgetCents: 5000, meals, servings,
       });
     }
+  });
+
+  it('retains bounded ASCII input compatibility without interpreting calendar days', () => {
     expect(validatePlanningRequest({ budget: '50', meals: '05', servings: ' 4 ' })).toEqual({
       budgetCents: 5000, meals: 5, servings: 4,
     });
+    expect(validatePlanningRequest({ budget: '50', meals: ' 14 ', servings: '2' }).meals).toBe(14);
+    expect(validatePlanningRequest({ budget: '50', meals: '01', servings: '2' }).meals).toBe(1);
   });
 
   it.each([
@@ -46,7 +51,9 @@ describe('a bounded planning request without price or spending claims', () => {
     rejects(() => validatePlanningRequest({ ...valid(), budget } as RequestInput), 'mealJourney.invalidBudget');
   });
 
-  it.each(['', '0', '1', '4', '6', '12', '5.0', '5,0', '+5', '5e0', '５', '5'.repeat(33), undefined, null, 5])(
+  it.each(['', '0', '00', '-1', '15', '99', '100', '014', '5.0', '5,0', '+5', '5e0', '0x5',
+    '５', '１４', '١٤', '1\u200b', '1 4', '1\u0000', '5'.repeat(33), ' '.repeat(33) + '5',
+    undefined, null, 5, NaN, Infinity, {}, [], new String('5')])(
     'rejects unsupported meal count %j instead of pretending to generate it', meals => {
       rejects(() => validatePlanningRequest({ ...valid(), meals } as RequestInput), 'mealJourney.invalidMeals');
     },
@@ -64,6 +71,8 @@ describe('a bounded planning request without price or spending claims', () => {
     }
     rejects(() => validatePlanningRequest({ budget: '50' } as RequestInput), 'mealJourney.invalidMeals');
     rejects(() => validatePlanningRequest({ budget: '50', meals: '5' } as RequestInput), 'mealJourney.invalidPeople');
+    const inheritedMeals = Object.assign(Object.create({ meals: '14' }), { budget: '50', servings: '2' });
+    rejects(() => validatePlanningRequest(inheritedMeals as RequestInput), 'mealJourney.invalidMeals');
   });
 
   it('returns a fresh minimal planning result without mutating input or carrying spending data', () => {
@@ -75,6 +84,15 @@ describe('a bounded planning request without price or spending claims', () => {
     first.budgetCents = 7000;
     expect(second.budgetCents).toBe(5000);
     expect(JSON.stringify(input)).toBe(before);
+  });
+
+  it('keeps the chosen variable count independent of later edits and ignores calendar or quotation fields', () => {
+    const input = Object.freeze({ budget: '50', meals: '14', servings: '12',
+      days: 7, quotedCostCents: 5000, expenseCents: 3000 });
+    const first = validatePlanningRequest(input), second = validatePlanningRequest(input);
+    first.meals = 1;
+    expect(second).toEqual({ budgetCents: 5000, meals: 14, servings: 12 });
+    expect(input.meals).toBe('14');
   });
 });
 
