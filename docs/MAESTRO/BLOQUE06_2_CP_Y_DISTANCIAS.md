@@ -3,6 +3,18 @@
 Estado: integración construida; cierre de pruebas y publicación en curso. Fecha de preparación: 26/11/2026.
 Continúa B06.1 sobre la aplicación existente. No inicia B07 ni sustituye los bloques históricos con numeración similar.
 
+## Revisión de compatibilidad durante el cierre
+
+La CI del primer origen `6c6eb48` pasó reproducción de fuentes, Python, tipos, 2.358 unitarias y auditoría,
+pero la recomendación online de Expo cambió el 26/11 y bloqueó la compatibilidad: pidió Expo `~58.1.0`
+y Expo Location `~58.0.23`. Se actualizan esas dos dependencias existentes y su lockfile, sin scripts de instalación.
+La versión nueva de fingerprint reintrodujo `minimatch` afectado por
+[GHSA-g3hv-75wg-m249](https://github.com/advisories/GHSA-g3hv-75wg-m249).
+Se traslada la corrección acotada del proyecto a `@expo/fingerprint@0.22.0 → minimatch 11.0.8`.
+El consumidor real de fingerprint supera 24 comprobaciones de patrones; npm audit vuelve a cero avisos
+y la comprobación oficial online de Expo pasa. No se desactiva ni reduce ningún control de CI.
+Se conservan los intentos previos y se repiten las exportaciones y pruebas de navegador de la versión actualizada.
+
 ## Comportamiento
 
 Perfil → Mis tiendas y el selector del recorrido de compra comparten una zona opcional durante la sesión.

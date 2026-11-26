@@ -50,3 +50,11 @@ El escaneo no cubre historial, ignorados, credenciales de ejecución ni interior
 ausencia absoluta de vulnerabilidades.
 
 B07 no comienza automáticamente. [Detalle B06.2](BLOQUE06_2_CP_Y_DISTANCIAS.md).
+
+## Revisión de SDK en la misma entrega
+
+El primer origen pasó 48 casos nuevos, 24 de B06.1 y 50 regresiones de tiendas/compartición.
+La CI pasó unitarias, fuentes y auditoría pero bloqueó una recomendación online nueva de Expo.
+Se mantienen el aviso y su salida, se actualizan Expo a 58.1.0 y Location a 58.0.23 y se conserva
+la corrección de minimatch para fingerprint 0.22.0. Esta actualización no cambia el diseño ni los
+documentos. El cierre final exige verificar otra vez el SDK, los permisos, el compilado y el navegador.
