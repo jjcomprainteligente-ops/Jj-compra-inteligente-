@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-26T09:03:14.633576+00:00",
+  "phase": "LOCAL_CHECKS_PASS_PARTIAL_DIRECTORY_PUBLICATION_PENDING",
+  "base": "9ef0c4ba06157b8351d0f4ba4c9a41818c5645bc",
+  "branch": "codex/b06-1-establecimientos-2026-11-26",
+  "scope": {
+    "masterPlanBlock": "B06.1 geography; distinct from historical B06.1price audit",
+    "records": 6,
+    "formatsRepresented": 4,
+    "pilotFormatsPreserved": 6,
+    "publishedLocations": 5,
+    "pendingLocations": 1,
+    "aldiAndMercadonaCoverage": "No checked records in this lot; not absence of actual stores",
+    "priceCoverage": "NO_VERIFICADA",
+    "businessDocuments": 7,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "newUIKeysPerLanguage": 24,
+    "sourceNetworkRequestsAutomatic": false,
+    "preciseLocationRequests": false,
+    "distanceCalculations": false,
+    "newPersistentDocument": false
+  },
+  "preservation": {
+    "baseTrackedFiles": 2046,
+    "missingFiles": 0,
+    "appInputs": 415,
+    "appInputManifestSHA256": "bd2135e11bcec1c2386eb5e83bd885dbf1e61d99da28af2d12c606d6e461e65c",
+    "originalDataModulesUnchanged": 5,
+    "assetFilesUnchanged": 301,
+    "originalReferencesUnchanged": 304,
+    "storageModulesUnchanged": 9,
+    "recipesPreserved": 157,
+    "originalPhotos": 150,
+    "photoDerivatives": 300,
+    "pendingCulinaryDecisionsPreserved": 300,
+    "dependencyFilesUnchanged": true,
+    "themeSheetAndFocusModulesUnchanged": true
+  },
+  "sourceEvidence": {
+    "manifest": "../../../referencias/tiendas/B06_1/source-manifest.json",
+    "sha256": "24ca6f7a1d984d7097b880e3c3072cabfadff36f39e7264e5e2d98b54c03eb15",
+    "individualOfficialHTTPPages": 6,
+    "HTTP200": 6,
+    "sourceDate": "2026-11-26",
+    "rawHTMLInRepository": false,
+    "usesOpenPricesOrOSM": false,
+    "rightsScope": "FACTUAL_REFERENCE_ONLY; not a general licence or feed authorization",
+    "postcodeConflict": "dinosol-162 keeps published38436, no runtime coordinates"
+  },
+  "checks": {
+    "types": "PASS",
+    "unit": {
+      "passed": 1975,
+      "failed": 0,
+      "pending": 0,
+      "newTests": 122,
+      "focusedSubsetPassed": 127,
+      "focusedIsNotAddedAgain": true
+    },
+    "browserNew": {
+      "startTime": "2026-11-26T08:57:40.237Z",
+      "duration": 172507.93,
+      "expected": 24,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "browserLegacy": {
+      "startTime": "2026-11-26T09:00:30.356Z",
+      "duration": 40993.299,
+      "expected": 16,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "npmKnownAdvisories": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "expoCompatibility": "PASS",
+    "V83V3EditorialReproduction": "PASS",
+    "pythonLocal": "155 passed25Nov on unchanged sources; not rerun26Nov locally; CI pending",
+    "independentReadOnlyReview": "PASS, no reproducible blockers, six HTTP sources independently checked",
+    "visualReview": "German375 source, pending postcode and empty panels inspected; segmented captures and geometry in matrix; owner acceptance pending"
+  },
+  "exports": {
+    "dist-b061-web": [
+      {
+        "file": "_expo/static/js/web/index-57674624e0d7353b23bb2dffd9c656c8.js",
+        "bytes": 5675316,
+        "sha256": "bce96bb188f2e1a5607c83d5376068bbdbd968cb71485eaabd7276dafc0bac5f"
+      }
+    ],
+    "dist-b061-platforms": [
+      {
+        "file": "_expo/static/js/ios/index-f80bf9a1f5b45e770d4f8f0e0369f499.hbc",
+        "bytes": 6837047,
+        "sha256": "0fe9489c77df150d6e6f79615d3eb6e06832efee7a6619f6777ae563f7813b8b"
+      },
+      {
+        "file": "_expo/static/js/web/index-57674624e0d7353b23bb2dffd9c656c8.js",
+        "bytes": 5675316,
+        "sha256": "bce96bb188f2e1a5607c83d5376068bbdbd968cb71485eaabd7276dafc0bac5f"
+      },
+      {
+        "file": "_expo/static/js/android/index-0d59a8165f94bdbf339f505815d760bc.hbc",
+        "bytes": 6839617,
+        "sha256": "a646de7c1fff6849dabae5a1d86c7316913f7f8d29b95e40b3b0a33fb5420589"
+      }
+    ]
+  },
+  "earlierAttempts": [
+    {
+      "stage": "Expo compatibility",
+      "result": "sandbox EPERM before export started",
+      "resolution": "retry with authorized network execution; compatible; logs retained"
+    },
+    {
+      "stage": "legacy store browser",
+      "passed": 1,
+      "unexpected": 1,
+      "skipped": 14,
+      "issue": "snapshot captured before async select-all save completed; disabled also means busy",
+      "fix": "await exact durable favourites before strict navigation baseline; no app/assertion/timeout weakening",
+      "laterResult": "16pass"
+    }
+  ],
+  "limits": [
+    "This is a partial directory, not complete coverage of six chains/Tenerife.",
+    "Official published coordinates do not certify physical position, route, travel time or prices.",
+    "GateUTC is evaluated at module load; an invalid/early client clock hides the directory until reload, preserving existing favourites/links.",
+    "External navigation intentions are stubbed in browser; six official source HTTP requests verified separately.",
+    "New preview origins have separate browser storage; no owner data is copied or uploaded.",
+    "WebKit Linux/HBC exports do not certify physical iPhone or signed native distribution.",
+    "Zero confirmed/known issues is not an absolute security guarantee.",
+    "B06.2 CP/radii and pair audit remain next; not automatically started in this delivery."
+  ]
+}

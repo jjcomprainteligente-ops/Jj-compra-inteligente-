@@ -96,6 +96,9 @@ test('consultar una tienda abre solo su destino público y no envía un carrito 
   await openStores(page);
   await page.getByTestId('stores-select-all').click();
   await expect(page.getByTestId('stores-select-all')).toBeDisabled();
+  // Disabled also covers an in-flight save. Establish the durable baseline
+  // before checking that external navigation performs no additional writes.
+  await expect.poll(() => savedStores(page)).toEqual(ids);
   const before = await page.evaluate(() => ({ ...localStorage }));
   expect(automaticRequests).toEqual([]);
   for (const id of ids) await page.getByTestId(`store-open-${id}`).click();
