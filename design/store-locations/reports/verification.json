@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-26T10:21:16.327719+00:00",
+  "phase": "B061_PARTIAL_DIRECTORY_PUBLISHED_VERIFIED_FULL_COVERAGE_AND_B062_PENDING",
+  "source": {
+    "commit": "d5df08290f12af3e85c4d64903194fd658bb7b84",
+    "tree": "0e7db768896378afc3d9facb79857c8007343c8c",
+    "branch": "codex/b06-1-establecimientos-2026-11-26",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-"
+  },
+  "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/33",
+  "pullRequestBase": "codex/b05-4-menus-variables-2026-11-25",
+  "upstreamPR32Merged": false,
+  "runtime": {
+    "masterPlanBlock": "B06.1 geography; distinct from historical B06.1price audit",
+    "records": 6,
+    "formatsRepresented": 4,
+    "pilotFormatsPreserved": 6,
+    "publishedLocations": 5,
+    "pendingLocations": 1,
+    "aldiAndMercadonaCoverage": "No checked records in this lot; not absence of actual stores",
+    "priceCoverage": "NO_VERIFICADA",
+    "businessDocuments": 7,
+    "uiLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "newUIKeysPerLanguage": 24,
+    "sourceNetworkRequestsAutomatic": false,
+    "preciseLocationRequests": false,
+    "distanceCalculations": false,
+    "newPersistentDocument": false
+  },
+  "localEvidence": {
+    "path": "local-preparation.json",
+    "sha256": "ef57644e093fa143fd6c9d83b7a33195611714571924b5927a35c612699b32ed",
+    "executedDate": "2026-11-26",
+    "checks": {
+      "types": "PASS",
+      "unit": {
+        "passed": 1975,
+        "failed": 0,
+        "pending": 0,
+        "newTests": 122,
+        "focusedSubsetPassed": 127,
+        "focusedIsNotAddedAgain": true
+      },
+      "browserNew": {
+        "startTime": "2026-11-26T08:57:40.237Z",
+        "duration": 172507.93,
+        "expected": 24,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "browserLegacy": {
+        "startTime": "2026-11-26T09:00:30.356Z",
+        "duration": 40993.299,
+        "expected": 16,
+        "skipped": 0,
+        "unexpected": 0,
+        "flaky": 0
+      },
+      "npmKnownAdvisories": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "expoCompatibility": "PASS",
+      "V83V3EditorialReproduction": "PASS",
+      "pythonLocal": "155 passed25Nov on unchanged sources; not rerun26Nov locally; CI pending",
+      "independentReadOnlyReview": "PASS, no reproducible blockers, six HTTP sources independently checked",
+      "visualReview": "German375 source, pending postcode and empty panels inspected; segmented captures and geometry in matrix; owner acceptance pending"
+    }
+  },
+  "sourceEvidence": {
+    "manifest": "../../../referencias/tiendas/B06_1/source-manifest.json",
+    "sha256": "24ca6f7a1d984d7097b880e3c3072cabfadff36f39e7264e5e2d98b54c03eb15",
+    "individualOfficialHTTPPages": 6,
+    "HTTP200": 6,
+    "sourceDate": "2026-11-26",
+    "rawHTMLInRepository": false,
+    "usesOpenPricesOrOSM": false,
+    "rightsScope": "FACTUAL_REFERENCE_ONLY; not a general licence or feed authorization",
+    "postcodeConflict": "dinosol-162 keeps published38436, no runtime coordinates"
+  },
+  "preservation": {
+    "baseTrackedFiles": 2046,
+    "missingFiles": 0,
+    "appInputs": 415,
+    "appInputManifestSHA256": "bd2135e11bcec1c2386eb5e83bd885dbf1e61d99da28af2d12c606d6e461e65c",
+    "originalDataModulesUnchanged": 5,
+    "assetFilesUnchanged": 301,
+    "originalReferencesUnchanged": 304,
+    "storageModulesUnchanged": 9,
+    "recipesPreserved": 157,
+    "originalPhotos": 150,
+    "photoDerivatives": 300,
+    "pendingCulinaryDecisionsPreserved": 300,
+    "dependencyFilesUnchanged": true,
+    "themeSheetAndFocusModulesUnchanged": true
+  },
+  "recovery": {
+    "sourceSnapshotFilesMatched": 2058,
+    "applicationInputsMatched": 415,
+    "packageFilesMatched": 313,
+    "sourceTreeMatched": "0e7db768896378afc3d9facb79857c8007343c8c",
+    "fourArtifactHashesMatched": true,
+    "duplicateDeploymentCreated": false
+  },
+  "secretScan": {
+    "snapshotFiles": 2058,
+    "snapshotBytes": 264325398,
+    "manifestSHA256": "6eae99d621c5c2d62ebff4bf7df89173e0754678dbc14a89a07a3306787d0ae6",
+    "toolSHA256": "88f91962aa2f93ac6ab281d553b9e125f5197bbbce38f9f2437f7299c32e5509",
+    "scannedAtUTC": "2026-11-26T09:04:16.014758+00:00",
+    "status": "SCAN_COMPLETE_ZERO_CONFIRMED_SECRETS_WITH_FALSE_POSITIVES",
+    "toolVersion": "8.30.1",
+    "originalExitCode": 1,
+    "rawFindings": 17,
+    "falsePositives": 17,
+    "confirmedSecrets": 0,
+    "unresolvedFindings": 0,
+    "historyScanned": false,
+    "archivesTraversed": false,
+    "ignoredFilesOrRuntimeCredentialsInspected": false,
+    "allowlistChanged": false,
+    "redactionPercent": 100,
+    "sourceCommit": "d5df08290f12af3e85c4d64903194fd658bb7b84"
+  },
+  "githubActions": [
+    {
+      "id": 45789026496,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "d5df08290f12af3e85c4d64903194fd658bb7b84"
+    },
+    {
+      "id": 45788870538,
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "d5df08290f12af3e85c4d64903194fd658bb7b84"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_DUhvSabd6ecAaNPL6FNyDRjr7d6z",
+    "url": "jj-compra-inteligente-fi62d0fc0-cmj2hwhc6b-1051.vercel.app",
+    "state": "READY",
+    "target": "staging",
+    "sourceCommit": "d5df08290f12af3e85c4d64903194fd658bb7b84"
+  },
+  "hostedHTTPS": {
+    "languages": 4,
+    "verifiedResourceURLs": 319,
+    "errors": 0,
+    "decodedBundleSHA256": "bce96bb188f2e1a5607c83d5376068bbdbd968cb71485eaabd7276dafc0bac5f",
+    "transportBundleSHA256": "d3aa3061fb4e8672e3b9486a90176446585fd34a220fd41ff2b7be45ac39eb1a",
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+    "reportSHA256": "5a7e7377c5f8b1a13d9c44d97359d7349415f0c714b7a28ae49f3fe14e18898a"
+  },
+  "hostedWebKit": {
+    "projects": [
+      "webkit-375",
+      "webkit-430"
+    ],
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "storeLocationCases": {
+      "startTime": "2026-11-26T10:16:14.662Z",
+      "duration": 185433.738,
+      "expected": 16,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "reportSHA256": "3db9b7667c4f5d59446881a53e527e80ee8ff0a980a1373a10ee4bd673047e97",
+    "scope": "Six source listings, pending/empty/unavailable states, source-error retry, offline, clock fallback, focus, no location request, no implicit write; preserves V1/V2 and seven documents."
+  },
+  "shareExpiresUTC": "2026-11-27T09:16:05+00:00",
+  "protectedAccessCredentialInRepository": false,
+  "provider": {
+    "project": "prj_6LgoBqJOykuqz8M1RHmbN7XfUiry",
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "mainCommit": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+    "mainMergedForThisDelivery": false,
+    "productionPromoted": false
+  },
+  "exports": {
+    "dist-b061-web": [
+      {
+        "file": "_expo/static/js/web/index-57674624e0d7353b23bb2dffd9c656c8.js",
+        "bytes": 5675316,
+        "sha256": "bce96bb188f2e1a5607c83d5376068bbdbd968cb71485eaabd7276dafc0bac5f"
+      }
+    ],
+    "dist-b061-platforms": [
+      {
+        "file": "_expo/static/js/ios/index-f80bf9a1f5b45e770d4f8f0e0369f499.hbc",
+        "bytes": 6837047,
+        "sha256": "0fe9489c77df150d6e6f79615d3eb6e06832efee7a6619f6777ae563f7813b8b"
+      },
+      {
+        "file": "_expo/static/js/web/index-57674624e0d7353b23bb2dffd9c656c8.js",
+        "bytes": 5675316,
+        "sha256": "bce96bb188f2e1a5607c83d5376068bbdbd968cb71485eaabd7276dafc0bac5f"
+      },
+      {
+        "file": "_expo/static/js/android/index-0d59a8165f94bdbf339f505815d760bc.hbc",
+        "bytes": 6839617,
+        "sha256": "a646de7c1fff6849dabae5a1d86c7316913f7f8d29b95e40b3b0a33fb5420589"
+      }
+    ]
+  },
+  "pairAudit": "B06.1 independently reviewed; complete pair audit after B06.2, not started automatically.",
+  "pending": [
+    "Full geographic inventory, including checked ALDI and Mercadona locations.",
+    "Clarify source postcode38436 for dinosol-162 before activating coordinates.",
+    "B06.2 postal input, radius and voluntary positioning with independently verified geography.",
+    "300 V3 category/dietary editorial decisions and remaining master-plan blocks.",
+    "Owner visual/physical acceptance and signed native distribution."
+  ],
+  "limits": [
+    "This is a partial directory, not complete coverage of six chains/Tenerife.",
+    "Official published coordinates do not certify physical position, route, travel time or prices.",
+    "GateUTC is evaluated at module load; an invalid/early client clock hides the directory until reload, preserving existing favourites/links.",
+    "External navigation intentions are stubbed in browser; six official source HTTP requests verified separately.",
+    "New preview origins have separate browser storage; no owner data is copied or uploaded.",
+    "WebKit Linux/HBC exports do not certify physical iPhone or signed native distribution.",
+    "Zero confirmed/known issues is not an absolute security guarantee.",
+    "B06.2 CP/radii and pair audit remain next; not automatically started in this delivery."
+  ]
+}
