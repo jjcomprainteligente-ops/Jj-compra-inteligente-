@@ -29,10 +29,11 @@ import { listSharingMessages } from './catalogs/listSharing';
 import { recipePhotoMessages } from './catalogs/recipePhotos';
 import { purchaseJourneyMessages } from './catalogs/purchaseJourney';
 import { variableMenusMessages } from './catalogs/variableMenus';
+import { storeLocationsMessages } from './catalogs/storeLocations';
 
 export const resources = mergeMessageCatalogs(
   v3RecipeMessages, catalogV83UiMessages, recipePhotoMessages, purchaseJourneyMessages, variableMenusMessages,
-  storePilotMessages, listSharingMessages,
+  storePilotMessages, storeLocationsMessages, listSharingMessages,
   menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,
   commonMessages, appMessages, menusMessages, pricesMessages, recipeMessages, legacyMessages, errorMessages, secondaryMessages, languageMessages, visualMessages, visualSecondaryMessages, visualMenusMessages,

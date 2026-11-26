@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import { ActivityIndicator, Linking, Platform, Pressable, StyleSheet, Switch, Text, View } from 'react-native';
-import { ArrowUpRight, Bell, ChevronRight, ListChecks, Minus, Star, Store, Utensils } from 'lucide-react-native';
+import { ArrowUpRight, Bell, ChevronRight, ListChecks, MapPin, Minus, Star, Store, Utensils } from 'lucide-react-native';
 import { deriveLocalNotices, STORE_IDS } from '../../domain/localPreferences';
-import { allPilotStoresSelected, publicStoreDestination, selectAllPilotStores, type StoreId } from '../../domain/stores';
+import { allPilotStoresSelected, publicStoreDestination, selectAllPilotStores, type PilotStoreId, type StoreId } from '../../domain/stores';
 import type { SavedMealPlan } from '../../domain/savedMealPlan';
 import type { ShoppingList } from '../../domain/shopping';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { Button, Card, Notice, Pill, Section, c, f, ui } from '../components/ui';
 import type { LocalPreferencesStore } from '../useLocalPreferences';
+import { StoreEstablishmentsSheet } from '../components/StoreEstablishmentsSheet';
 
 function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
   const { t, translateError } = useI18n();
@@ -24,6 +25,7 @@ function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
 export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack(): void }) {
   const { t, formatNumber } = useI18n();
   const [visitError, setVisitError] = useState(false);
+  const [locationsFormat, setLocationsFormat] = useState<PilotStoreId | null>(null);
   const disabled = store.loading || store.busy || !!store.loadError;
   const allSelected = allPilotStoresSelected(store.data.favoriteStores);
   const visit = async (id: StoreId) => {
@@ -73,6 +75,12 @@ export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack()
           <Button secondary label={t(`storePilot.${destination.kind}Action`, { store: name })} testID={`store-open-${id}`}
             icon={ArrowUpRight} disabled={disabled} onPress={() => { void visit(id); }} />
         </View>}
+        {destination && <View style={styles.destination}>
+          <Button secondary label={t('storeLocations.open')}
+            accessibilityLabel={t('storeLocations.openA11y', { store: name })}
+            testID={`store-locations-open-${id}`} icon={MapPin}
+            onPress={() => setLocationsFormat(id as PilotStoreId)} />
+        </View>}
       </View>;
     })}
     <Card style={styles.storeNote}>
@@ -82,6 +90,7 @@ export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack()
       <Text style={[ui.note, styles.noteText]}>{t('storePilot.externalPayment')}</Text>
       <Text style={[ui.note, styles.noteText]}>{t('storePilot.noCartTransfer')}</Text>
     </Card>
+    <StoreEstablishmentsSheet formatId={locationsFormat} onClose={() => setLocationsFormat(null)} />
   </View>;
 }
 

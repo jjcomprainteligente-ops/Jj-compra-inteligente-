@@ -1,0 +1,289 @@
+{
+  "schemaVersion": 1,
+  "checkedOn": "2026-11-26",
+  "coverage": "partial",
+  "summary": {
+    "records": 6,
+    "formatsRepresented": 4,
+    "pilotFormatsTotal": 6,
+    "publishedLocations": 5,
+    "pendingLocations": 1,
+    "recordsForAldi": 0,
+    "recordsForMercadona": 0,
+    "zeroRecordsDoesNotMeanNoActualStores": true
+  },
+  "scope": "Minimal factual references from six individually read official pages, not a retailer directory export, open-licensed dataset, API integration or complete Tenerife inventory.",
+  "rights": "FACTUAL_REFERENCE_ONLY",
+  "rawHtmlPublished": false,
+  "cookiesTokensScriptsPhoneNumbersProductsAndPricesPublished": false,
+  "communityOrHistoricalPriceSourcesUsed": false,
+  "sources": [
+    {
+      "recordId": "lidl-santa-cruz-general-sur",
+      "source": {
+        "url": "https://www.lidl.es/s/es-ES/tiendas/santa-cruz-de-tenerife/ctra-general-del-sur-s-n/",
+        "checkedOn": "2026-11-26",
+        "rights": "FACTUAL_REFERENCE_ONLY"
+      },
+      "http": {
+        "url": "https://www.lidl.es/s/es-ES/tiendas/santa-cruz-de-tenerife/ctra-general-del-sur-s-n/",
+        "checkedAt": "2026-11-26T08:41:12.062205+00:00",
+        "status": 200,
+        "finalURL": "https://www.lidl.es/s/es-ES/tiendas/santa-cruz-de-tenerife/ctra-general-del-sur-s-n/",
+        "bytes": 256121,
+        "sha256": "ffd4d85ed74131625900e43ce7352a89bc85efe711584cd5b93acf87b04c1dd4",
+        "contentType": "text/html",
+        "lastModified": null
+      },
+      "facts": {
+        "name": "Lidl - Santa Cruz de Tenerife, Ctra. General del Sur, s/n",
+        "formatId": "lidl",
+        "channel": "physical",
+        "address": {
+          "street": "Ctra. General del Sur, s/n",
+          "postalCode": "38107",
+          "locality": "Santa Cruz de Tenerife",
+          "municipality": "Santa Cruz de Tenerife",
+          "country": "ES",
+          "island": "tenerife"
+        },
+        "rawPublishedAddress": {
+          "streetAddress": "Ctra. General del Sur, s/n",
+          "postalCode": "38107",
+          "addressLocality": "Santa Cruz de Tenerife",
+          "addressRegion": "Canarias",
+          "addressCountry": "Spain"
+        }
+      },
+      "locationEvidence": {
+        "method": "official-jsonld",
+        "selector": "script[type=\"application/ld+json\"]: GroceryStore.geo",
+        "observedLatitude": 28.4217,
+        "observedLongitude": -16.31916,
+        "runtimeStatus": "published"
+      },
+      "normalisationNotes": []
+    },
+    {
+      "recordId": "lidl-santiago-quinto-centenario",
+      "source": {
+        "url": "https://www.lidl.es/s/es-ES/tiendas/santiago-del-teide-tenerife/avda-quinto-centenario-66/",
+        "checkedOn": "2026-11-26",
+        "rights": "FACTUAL_REFERENCE_ONLY"
+      },
+      "http": {
+        "url": "https://www.lidl.es/s/es-ES/tiendas/santiago-del-teide-tenerife/avda-quinto-centenario-66/",
+        "checkedAt": "2026-11-26T08:41:13.893717+00:00",
+        "status": 200,
+        "finalURL": "https://www.lidl.es/s/es-ES/tiendas/santiago-del-teide-tenerife/avda-quinto-centenario-66/",
+        "bytes": 254676,
+        "sha256": "ad754b1a55228177925491116305e4b866b048abef9b932f86037db4bd2d9ce3",
+        "contentType": "text/html",
+        "lastModified": null
+      },
+      "facts": {
+        "name": "Lidl - Santiago del Teide (Tenerife), Avda. Quinto Centenario, 66",
+        "formatId": "lidl",
+        "channel": "physical",
+        "address": {
+          "street": "Avda. Quinto Centenario, 66",
+          "postalCode": "38683",
+          "locality": "Santiago del Teide (Tenerife)",
+          "municipality": "Santiago del Teide",
+          "country": "ES",
+          "island": "tenerife"
+        },
+        "rawPublishedAddress": {
+          "streetAddress": "Avda. Quinto Centenario, 66",
+          "postalCode": "38683",
+          "addressLocality": "Santiago del Teide (Tenerife)",
+          "addressRegion": "Canarias",
+          "addressCountry": "Spain"
+        }
+      },
+      "locationEvidence": {
+        "method": "official-jsonld",
+        "selector": "script[type=\"application/ld+json\"]: GroceryStore.geo",
+        "observedLatitude": 28.23913,
+        "observedLongitude": -16.8391,
+        "runtimeStatus": "published"
+      },
+      "normalisationNotes": [
+        "Municipality normalises only the explicit island suffix (Tenerife); published addressLocality remains unchanged in locality."
+      ]
+    },
+    {
+      "recordId": "dinosol-231",
+      "source": {
+        "url": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/231/",
+        "checkedOn": "2026-11-26",
+        "rights": "FACTUAL_REFERENCE_ONLY"
+      },
+      "http": {
+        "url": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/231/",
+        "checkedAt": "2026-11-26T08:41:09.692773+00:00",
+        "status": 200,
+        "finalURL": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/231/",
+        "bytes": 480380,
+        "sha256": "1bb8b1e8fb00733d966b66c1d3839f0da9b70ac076ee9c280adb1778a7fad329",
+        "contentType": "text/html; charset=UTF-8",
+        "lastModified": null
+      },
+      "facts": {
+        "name": "HIPERDINO LOS VENEZOLANOS",
+        "formatId": "hiperdino",
+        "channel": "physical",
+        "address": {
+          "street": "Camino San Lázaro nº 13",
+          "postalCode": "38206",
+          "locality": null,
+          "municipality": "San Cristóbal de La Laguna",
+          "country": "ES",
+          "island": "tenerife"
+        },
+        "rawPublishedAddress": {
+          "addressText": "Camino San Lázaro nº 13, 38206, San Cristóbal de La Laguna"
+        }
+      },
+      "locationEvidence": {
+        "method": "official-embedded-map",
+        "selector": "div[data-store=\"231\"].tienda-231 data-lat/data-lon",
+        "observedLatitude": 28.4892,
+        "observedLongitude": -16.33,
+        "runtimeStatus": "published"
+      },
+      "normalisationNotes": []
+    },
+    {
+      "recordId": "dinosol-166",
+      "source": {
+        "url": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/166/",
+        "checkedOn": "2026-11-26",
+        "rights": "FACTUAL_REFERENCE_ONLY"
+      },
+      "http": {
+        "url": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/166/",
+        "checkedAt": "2026-11-26T08:41:07.571835+00:00",
+        "status": 200,
+        "finalURL": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/166/",
+        "bytes": 480379,
+        "sha256": "9dbea7ebc2203b988e11dc2e815b547099ef14c301777e3799a599de4c1c154e",
+        "contentType": "text/html; charset=UTF-8",
+        "lastModified": null
+      },
+      "facts": {
+        "name": "SUPERDINO GIGANSOL",
+        "formatId": "superdino",
+        "channel": "physical",
+        "address": {
+          "street": "C/ Petunia 3 Lc 7. Edif. Gigansol del Mar",
+          "postalCode": "38683",
+          "locality": "Puerto Santiago",
+          "municipality": "Santiago del Teide",
+          "country": "ES",
+          "island": "tenerife"
+        },
+        "rawPublishedAddress": {
+          "addressText": "C/ Petunia 3 Lc 7. Edif. Gigansol del Mar, Puerto Santiago, 38683, Santiago del Teide"
+        }
+      },
+      "locationEvidence": {
+        "method": "official-embedded-map",
+        "selector": "div[data-store=\"166\"].tienda-166 data-lat/data-lon",
+        "observedLatitude": 28.2409,
+        "observedLongitude": -16.8392,
+        "runtimeStatus": "published"
+      },
+      "normalisationNotes": []
+    },
+    {
+      "recordId": "dinosol-11",
+      "source": {
+        "url": "https://www.hiperdino.es/c9780/tiendas/index/detail/id/11/",
+        "checkedOn": "2026-11-26",
+        "rights": "FACTUAL_REFERENCE_ONLY"
+      },
+      "http": {
+        "url": "https://www.hiperdino.es/c9780/tiendas/index/detail/id/11/",
+        "checkedAt": "2026-11-26T08:41:10.632680+00:00",
+        "status": 200,
+        "finalURL": "https://www.hiperdino.es/c9780/tiendas/index/detail/id/11/",
+        "bytes": 337901,
+        "sha256": "5875b15dd0a128bd5186a5ba32e6721a5f5ea3c94541750ff173c6004d5f18ee",
+        "contentType": "text/html; charset=UTF-8",
+        "lastModified": null
+      },
+      "facts": {
+        "name": "HIPERDINO EXPRESS DELFÍN",
+        "formatId": "hiperdino-express",
+        "channel": "physical",
+        "address": {
+          "street": "C/ Poblado Marinero nº2 Local 8B.",
+          "postalCode": "38683",
+          "locality": "Acantilado Los Gigantes",
+          "municipality": "Santiago del Teide",
+          "country": "ES",
+          "island": "tenerife"
+        },
+        "rawPublishedAddress": {
+          "addressText": "C/ Poblado Marinero nº2 Local 8B. Acantilado Los Gigantes, 38683, Santiago del Teide"
+        }
+      },
+      "locationEvidence": {
+        "method": "official-embedded-map",
+        "selector": "div[data-store=\"11\"].tienda-11 data-lat/data-lon",
+        "observedLatitude": 28.2465,
+        "observedLongitude": -16.8423,
+        "runtimeStatus": "published"
+      },
+      "normalisationNotes": [
+        "Locality Acantilado Los Gigantes is explicitly present after the street sentence; no locality is derived from coordinates."
+      ]
+    },
+    {
+      "recordId": "dinosol-162",
+      "source": {
+        "url": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/162/",
+        "checkedOn": "2026-11-26",
+        "rights": "FACTUAL_REFERENCE_ONLY"
+      },
+      "http": {
+        "url": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/162/",
+        "checkedAt": "2026-11-26T08:41:06.077184+00:00",
+        "status": 200,
+        "finalURL": "https://www.hiperdino.es/c9494/tiendas/index/detail/id/162/",
+        "bytes": 480379,
+        "sha256": "9be61330ec649db57e2744b5a708198ca914a9007f5f41ddfdadb1eabe7d592f",
+        "contentType": "text/html; charset=UTF-8",
+        "lastModified": null
+      },
+      "facts": {
+        "name": "SUPERDINO LOS GIGANTES",
+        "formatId": "superdino",
+        "channel": "physical",
+        "address": {
+          "street": "Urb. San Francisco, Ctra. Gral. Alcalá - Tamaimo s/n",
+          "postalCode": "38436",
+          "locality": null,
+          "municipality": "Santiago del Teide",
+          "country": "ES",
+          "island": "tenerife"
+        },
+        "rawPublishedAddress": {
+          "addressText": "Urb. San Francisco, Ctra. Gral. Alcalá - Tamaimo s/n, 38436, Santiago del Teide"
+        }
+      },
+      "locationEvidence": {
+        "method": "official-embedded-map",
+        "selector": "div[data-store=\"162\"].tienda-162 data-lat/data-lon",
+        "observedLatitude": 28.2351,
+        "observedLongitude": -16.8325,
+        "runtimeStatus": "pending",
+        "conflict": "The published postal code 38436 requires clarification against the Santiago del Teide / Los Gigantes identity. Preserve the source value; do not correct it or use the observed point for proximity while pending."
+      },
+      "normalisationNotes": [
+        "Observed coordinates are retained only in this reference manifest; the runtime record deliberately has none."
+      ]
+    }
+  ]
+}
