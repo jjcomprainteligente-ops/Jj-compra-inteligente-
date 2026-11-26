@@ -1,0 +1,5 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "JJ Compra Inteligente verwendet deinen Standort einmal, um Geschäfte in der Nähe zu finden. Alternativ kannst du Postleitzahl oder Ort nutzen. Nur für diese Sitzung, ohne Ortung im Hintergrund."
+  }
+}

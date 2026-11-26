@@ -1,0 +1,5 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "JJ Compra Inteligente uses your location once to find nearby stores. You can use a postcode or place instead. It is used only for this session, with no background tracking."
+  }
+}

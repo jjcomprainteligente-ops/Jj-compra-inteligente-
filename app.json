@@ -6,8 +6,31 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "backgroundColor": "#FFF8E7",
-    "plugins": [["expo-localization", { "supportedLocales": ["es", "en", "de", "fr"] }]],
-    "ios": { "supportsTablet": true, "bundleIdentifier": "com.jjcompra.inteligente" },
+    "plugins": [
+      ["expo-localization", { "supportedLocales": ["es", "en", "de", "fr"] }],
+      ["expo-location", {
+        "locationWhenInUsePermission": "JJ Compra Inteligente usa tu ubicación una vez para buscar establecimientos cercanos. Puedes usar CP o localidad. Solo se usa durante esta sesión, sin seguimiento en segundo plano.",
+        "locationAlwaysPermission": false,
+        "locationAlwaysAndWhenInUsePermission": false,
+        "motionUsagePermission": false,
+        "locationFullAccuracyPermission": false,
+        "isIosBackgroundLocationEnabled": false,
+        "isAndroidBackgroundLocationEnabled": false,
+        "isAndroidForegroundServiceEnabled": false,
+        "isAndroidMotionActivityEnabled": false
+      }]
+    ],
+    "locales": {
+      "es": "./config/location-locales/es.json",
+      "en": "./config/location-locales/en.json",
+      "de": "./config/location-locales/de.json",
+      "fr": "./config/location-locales/fr.json"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jjcompra.inteligente",
+      "infoPlist": { "CFBundleDevelopmentRegion": "es" }
+    },
     "android": { "package": "com.jjcompra.inteligente" },
     "web": { "name": "JJ Compra Inteligente", "shortName": "JJ Compra", "backgroundColor": "#FFF8E7", "themeColor": "#103F2D" }
   }

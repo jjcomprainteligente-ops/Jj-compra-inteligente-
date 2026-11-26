@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-26T23:53:36.761714+00:00",
+  "phase": "B062_PUBLISHED_VERIFIED_PAIR_AUDIT_COMPLETE_WITH_COVERAGE_LIMITS",
+  "source": {
+    "commit": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d",
+    "tree": "81abe57100196794a8b819496708112db1a4f571",
+    "branch": "codex/b06-2-cp-y-distancias-2026-11-26",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-"
+  },
+  "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/34",
+  "basePR33Merged": false,
+  "scope": {
+    "postalReferences": 209,
+    "postalCodes": 129,
+    "municipalitiesWithReferences": 29,
+    "coverage": "partial",
+    "storeRecords": 6,
+    "publishedStorePoints": 5,
+    "pendingStorePoints": 1,
+    "formatsInDirectory": 4,
+    "selectableFormats": 6,
+    "radiusPresetsKm": [
+      5,
+      10,
+      20
+    ],
+    "customRadiusKm": [
+      1,
+      100
+    ],
+    "storage": "session-only",
+    "newDurableDocuments": 0,
+    "UIlanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "pricesVerified": false
+  },
+  "localEvidence": {
+    "path": "local-preparation.json",
+    "sha256": "b075c2c7619c84e060ca5906e46767db972b3afb3599524ee2247d650cce6d78",
+    "checks": {
+      "typescript": "passed",
+      "unitFiles": 43,
+      "unitTests": 2358,
+      "pythonTests": 178,
+      "newUnitTests": 383,
+      "newPostalPythonTests": 23,
+      "browser": {
+        "reviewed-browser": {
+          "stats": {
+            "startTime": "2026-11-26T23:25:27.014Z",
+            "duration": 397082.56799999997,
+            "expected": 48,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          },
+          "reportSHA256": "62eb9c1376eaf255665123227e2933a4ca7194ef2d1e54dd03b028e163012bb3",
+          "traces": "off"
+        },
+        "reviewed-directory": {
+          "stats": {
+            "startTime": "2026-11-26T23:25:26.743Z",
+            "duration": 352156.51700000005,
+            "expected": 24,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          },
+          "reportSHA256": "b6209b78c3677ab2412f5b85e51e85b154ecbfec5db47b718f9a2394066ce77a",
+          "traces": "off"
+        },
+        "reviewed-legacy": {
+          "stats": {
+            "startTime": "2026-11-26T23:25:28.294Z",
+            "duration": 223552.55,
+            "expected": 50,
+            "skipped": 0,
+            "unexpected": 0,
+            "flaky": 0
+          },
+          "reportSHA256": "f1b008a0a6716eee372c29389ca239dc14b894fb73cac9183c21b3202bc03daa",
+          "traces": "off"
+        }
+      },
+      "totalLocalBrowserCases": 122,
+      "npmAudit": {
+        "info": 0,
+        "low": 0,
+        "moderate": 0,
+        "high": 0,
+        "critical": 0,
+        "total": 0
+      },
+      "expoCompatibility": "passed online",
+      "fingerprintConsumer": {
+        "caller": "@expo/fingerprint@0.22.0",
+        "patchedMinimatch": "11.0.8",
+        "cases": 12,
+        "assertions": 24,
+        "status": "passed"
+      },
+      "sourceCI": [
+        {
+          "id": 45910501746,
+          "event": "pull_request",
+          "status": "completed",
+          "conclusion": "success",
+          "head": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d"
+        },
+        {
+          "id": 45910494891,
+          "event": "push",
+          "status": "completed",
+          "conclusion": "success",
+          "head": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d"
+        }
+      ],
+      "photoTool": "Pillow13.0.0 pinned hashes",
+      "photoRecipeEditorialAndPostalReproduction": "passed",
+      "nativePermissionTests": 7
+    }
+  },
+  "preservation": {
+    "base": "9768d6934120eb9f506b7351d92e5fb32b33a553",
+    "baselineFiles": 2059,
+    "unchanged": 2044,
+    "changedAuthorized": [
+      ".github/workflows/check.yml",
+      "README.md",
+      "app.json",
+      "docs/DECISIONES_Y_RIESGOS.md",
+      "docs/ESTADO_ACTUAL_Y_PENDIENTES.md",
+      "docs/MAESTRO/INVENTARIO_UNICO.md",
+      "docs/PLAN_Y_ESTADOS.md",
+      "index.ts",
+      "package-lock.json",
+      "package.json",
+      "src/app/ShoppingApp.tsx",
+      "src/app/components/StoreEstablishmentsSheet.tsx",
+      "src/app/screens/LocalSettingsScreens.tsx",
+      "src/app/screens/PlanningScreens.tsx",
+      "src/i18n/resources.ts"
+    ],
+    "missing": [],
+    "groupsUnchanged": {
+      "assets/": {
+        "files": 301,
+        "matched": 301
+      },
+      "referencias/recetas/": {
+        "files": 198,
+        "matched": 198
+      },
+      "src/storage/": {
+        "files": 9,
+        "matched": 9
+      },
+      "src/data/": {
+        "files": 6,
+        "matched": 6
+      }
+    },
+    "appInputsMatched": 428,
+    "recordedAt": "2026-11-26T23:30:19.746131+00:00"
+  },
+  "secretScan": {
+    "snapshotFiles": 2092,
+    "snapshotBytes": 265310372,
+    "toolVersion": "8.30.1",
+    "originalExitCode": 1,
+    "rawFindings": 17,
+    "falsePositives": 17,
+    "confirmedSecrets": 0,
+    "unresolvedFindings": 0,
+    "historyScanned": false,
+    "archivesTraversed": false,
+    "allowlistChanged": false,
+    "redactionPercent": 100,
+    "recordedAt": "2026-11-26T23:13:13.294522+00:00",
+    "deltaExitCode": 0,
+    "source": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d",
+    "snapshotSHA256": "bb8f98d5fedb345b43832810827cb9da9a274c747ffc71a67524866fbdb235c0",
+    "completeSourceUnionMatched": true,
+    "SDKDeltaFiles": 4,
+    "SDKDeltaExitCode": 0
+  },
+  "SDK": {
+    "expo": "58.1.0",
+    "expo-location": "58.0.23",
+    "scopedOverride": "@expo/fingerprint@0.22.0 -> minimatch11.0.8"
+  },
+  "githubActions": [
+    {
+      "id": 45910501746,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d"
+    },
+    {
+      "id": 45910494891,
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d"
+    }
+  ],
+  "deployment": {
+    "id": "dpl_AV1SFUdvc8Qz6rzFQzeW7G48rC1q",
+    "url": "jj-compra-inteligente-ezsf17vo7-cmj2hwhc6b-1051.vercel.app",
+    "state": "READY",
+    "target": "staging",
+    "sourceCommit": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d",
+    "ready": 1795736936703,
+    "createdAt": 1795736932691,
+    "protectionExpected": "all_except_custom_domains",
+    "productionPromoted": false
+  },
+  "hostedHTTPS": {
+    "languages": 4,
+    "verifiedResourceURLs": 319,
+    "errors": 0,
+    "bundle": {
+      "file": "_expo/static/js/web/index-28ef3c5f80ab134f90c0f589b5996586.js",
+      "size": 716312,
+      "sha1": "09c266a5d0bd4b76f8d63963abbff272d3ed2375",
+      "sha256": "760d2b98c2efd7878fd4568056539ce4f41eed957e9839616e263dbdb311bbe6",
+      "contentEncoding": "br",
+      "decodedSize": 5795409,
+      "decodedSha1": "43c30880f5690149bc412c83c9043c786161d80f",
+      "decodedSha256": "15750dba3b3d5c207a900c72361245ac1b8c5738adf8dadf94da75d487b3d2fc"
+    },
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+    "reportSHA256": "8a0d141a7e80ba65f93a148a80ad76d0f3a58a432981a145e0140f148bb379c4"
+  },
+  "hostedWebKit": {
+    "projects": [
+      "webkit-375",
+      "webkit-430"
+    ],
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "cases": {
+      "startTime": "2026-11-26T23:50:26.477Z",
+      "duration": 187073.694,
+      "expected": 32,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "reportSHA256": "0bc96e37cb3a1e1b7b04f3d6fdb36839ae6d78109d1248d5a528abe77b6bbd3c",
+    "physicalIPhone": false,
+    "scope": "Manual CP/locality, ambiguity, integer radius, sorted/pending directory, offline, mocked voluntary GPS denial/scope/late callback, privacy deletion, shared session, recipe review inline and seven preserved documents."
+  },
+  "shareExpiresUTC": "2026-11-27T22:49:28+00:00",
+  "protectedAccessCredentialInRepository": false,
+  "provider": {
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "mainCommit": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+    "productionPromoted": false
+  },
+  "exports": {
+    "dist-b062-sdk58-final/index.html": {
+      "bytes": 1222,
+      "sha256": "4adaa7280e739733769f29de07decfe3f876c6b73a61ce05156db2b83a81bc6b"
+    },
+    "dist-b062-sdk58-final/_expo/static/js/ios/index-d97a39c4c80344e5a94552415b1a1d56.hbc": {
+      "bytes": 6975420,
+      "sha256": "13add20b792542f79b8758766ef2995271128d8e8858670ce31007150fb98fba"
+    },
+    "dist-b062-sdk58-final/_expo/static/js/web/index-f4bef9f311b8a02d6f38f8816ebfbe22.js": {
+      "bytes": 5797374,
+      "sha256": "121fd13ad8908030104aa1e91bcff8e4e434a9bfc8f814783659793e27d4a39f"
+    },
+    "dist-b062-sdk58-final/_expo/static/js/android/index-0faeaff12d72db9611589d6297445fe7.hbc": {
+      "bytes": 6981460,
+      "sha256": "cc81bfc4d4646602e817cc72ce7be36e416e2ee6e4b326f3713556021320de56"
+    },
+    "dist-b062-web-final/index.html": {
+      "bytes": 1222,
+      "sha256": "8216f17d762b001acaf33c91831fa3d1932f3999fd1cef87474d99eba24f516f"
+    },
+    "dist-b062-web-final/_expo/static/js/web/index-28ef3c5f80ab134f90c0f589b5996586.js": {
+      "bytes": 5795409,
+      "sha256": "15750dba3b3d5c207a900c72361245ac1b8c5738adf8dadf94da75d487b3d2fc"
+    }
+  },
+  "applicationInputsMatched": 428,
+  "pairAudit": "B06.1/B06.2 technical audit complete within documented coverage; owner visual and physical acceptance pending",
+  "limits": [
+    "Partial store and geographic coverage; CP38436 unresolved",
+    "No verified prices, stock, routes or travel times",
+    "No physical iPhone, signed release, VoiceOver/TalkBack/DynamicType acceptance",
+    "Native release manifests and inherited Expo ATS configuration still require release audit",
+    "300 V3 category/diet editorial decisions pending",
+    "Gitleaks excludes history, ignored/runtime credentials and archive interiors; no absolute security guarantee"
+  ],
+  "nextBlockStarted": false,
+  "mainMerged": false,
+  "productionPromoted": false
+}

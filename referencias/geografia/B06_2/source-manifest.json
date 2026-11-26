@@ -1,0 +1,2580 @@
+{
+  "schemaVersion": 1,
+  "kind": "JJ_POSTAL_REFERENCES",
+  "checkedOn": "2026-11-26",
+  "coverage": "partial",
+  "attribution": {
+    "name": "GeoNames",
+    "url": "https://www.geonames.org/",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "adapted": true
+  },
+  "publicInputs": [
+    {
+      "file": "postal-ES.zip",
+      "bytes": 556019,
+      "sha256": "180d44a0609ce19f624e62e0f56f5f36e9d8a57673d6b47b5cf372c10061c1cc"
+    },
+    {
+      "file": "postal-readme.txt",
+      "bytes": 2893,
+      "sha256": "fff60148da20f4d182859d926518efa5b0f3949f3c3273a284901325f1f8f008"
+    },
+    {
+      "file": "gazetteer-reviewed.tsv",
+      "bytes": 457,
+      "sha256": "b23548b16bc99a8fd5d740c764dbc247951142a736aefaec09825e13e7341167"
+    },
+    {
+      "file": "gazetteer-readme.txt",
+      "bytes": 8843,
+      "sha256": "b1957379b6c1242c700c98ac9a8aa0a09f56c3c0a50ee72175527005f48ef2c5"
+    }
+  ],
+  "sourceReceipts": {
+    "postal": {
+      "url": "https://download.geonames.org/export/zip/ES.zip",
+      "finalURL": "https://download.geonames.org/export/zip/ES.zip",
+      "retrievedAt": "2026-11-26T14:22:54.990142+00:00",
+      "status": 200,
+      "bytes": 556019,
+      "sha256": "180d44a0609ce19f624e62e0f56f5f36e9d8a57673d6b47b5cf372c10061c1cc",
+      "contentType": "application/zip",
+      "lastModified": "Thu, 26 Nov 2026 03:03:47 GMT"
+    },
+    "postalReadme": {
+      "url": "https://download.geonames.org/export/zip/readme.txt",
+      "finalURL": "https://download.geonames.org/export/zip/readme.txt",
+      "retrievedAt": "2026-11-26T14:22:57.190694+00:00",
+      "status": 200,
+      "bytes": 2893,
+      "sha256": "fff60148da20f4d182859d926518efa5b0f3949f3c3273a284901325f1f8f008",
+      "contentType": "text/plain; charset=UTF-8",
+      "lastModified": "Thu, 26 Nov 2026 03:03:31 GMT"
+    },
+    "gazetteerArchive": {
+      "url": "https://download.geonames.org/export/dump/ES.zip",
+      "finalURL": "https://download.geonames.org/export/dump/ES.zip",
+      "retrievedAt": "2026-11-26T14:31:32.673075+00:00",
+      "status": 200,
+      "bytes": 3337891,
+      "sha256": "c139cfdbc434bc98086ab2a34d123d759c0b686fe7be38aeb6c69ae7174591d2",
+      "contentType": "application/zip",
+      "lastModified": "Thu, 26 Nov 2026 02:52:35 GMT"
+    },
+    "gazetteerReadme": {
+      "url": "https://download.geonames.org/export/dump/readme.txt",
+      "finalURL": "https://download.geonames.org/export/dump/readme.txt",
+      "retrievedAt": "2026-11-26T14:31:35.037465+00:00",
+      "status": 200,
+      "bytes": 8843,
+      "sha256": "b1957379b6c1242c700c98ac9a8aa0a09f56c3c0a50ee72175527005f48ef2c5",
+      "contentType": "text/plain; charset=utf-8",
+      "lastModified": "Thu, 26 Nov 2026 02:48:36 GMT"
+    },
+    "license": {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "finalURL": "https://creativecommons.org/licenses/by/4.0/",
+      "retrievedAt": "2026-11-26T14:22:58.090911+00:00",
+      "status": 200,
+      "bytes": 32767,
+      "sha256": "5b0b7a3b78c8696d653d519da73f1ac1eed684a434c3e81f4ac6279f750abb50",
+      "contentType": "text/html",
+      "lastModified": "Wed, 25 Nov 2026 17:44:07 GMT"
+    }
+  },
+  "postalMember": {
+    "file": "ES.txt",
+    "rows": 37867,
+    "bytes": 3237922,
+    "sha256": "c3f349b0ef1e40335bcf437d6a70bbef8df894d9bd9b6343922673f1ef37b367",
+    "columns": 12
+  },
+  "selectionPolicy": {
+    "country": "ES",
+    "postalAdmin1": "CN",
+    "postalAdmin2": "TF",
+    "postalCodePattern": "38[0-6][0-9][0-9]",
+    "municipalityCodes": [
+      "38001",
+      "38004",
+      "38005",
+      "38006",
+      "38010",
+      "38011",
+      "38012",
+      "38015",
+      "38017",
+      "38018",
+      "38019",
+      "38020",
+      "38022",
+      "38023",
+      "38025",
+      "38026",
+      "38028",
+      "38031",
+      "38032",
+      "38034",
+      "38035",
+      "38038",
+      "38039",
+      "38040",
+      "38041",
+      "38042",
+      "38043",
+      "38044",
+      "38046",
+      "38051",
+      "38052"
+    ],
+    "bounds": {
+      "latitude": [
+        27.98,
+        28.65
+      ],
+      "longitude": [
+        -16.95,
+        -16.07
+      ]
+    },
+    "postalQualityRequired": 4,
+    "knownNonemptyMunicipalityRequired": true,
+    "reviewedGazetteerClass": "P/PPL",
+    "gazetteerAdmin1": "53",
+    "gazetteerAdmin2": "TF",
+    "inferCoordinates": false,
+    "averageCoordinates": false,
+    "deduplicateCoordinates": false
+  },
+  "statistics": {
+    "sourcePostalRows": 37867,
+    "candidatePostalRows": 466,
+    "candidatePostalCodes": 162,
+    "candidateQualityCounts": {
+      "1": 77,
+      "3": 175,
+      "4": 214
+    },
+    "activePostalReferences": 207,
+    "activePostalCodes": 128,
+    "withheldPostalRows": 259,
+    "withheldByReason": {
+      "missing-municipality": 8,
+      "outside-tenerife-bounds": 4,
+      "quality-not-4": 252
+    },
+    "quality4MissingMunicipality": 7,
+    "activeReviewedGazetteerReferences": 2,
+    "activeReferences": 209,
+    "activePostalCodesIncludingReviewed": 129,
+    "activeMunicipalities": 29,
+    "uniqueReferenceIds": 209,
+    "duplicateCoordinatesPreserved": 43
+  },
+  "reviewedAssociations": [
+    {
+      "sourceId": "2514741",
+      "sourceLineSHA256": "1912862764eb804a54a6c58759b19737430c1eeb85e17b4343050e519c96e2b5",
+      "sourceModifiedOn": "2015-05-06",
+      "postalCode": "38650",
+      "gazetteerLocality": "Los Cristianos",
+      "postalLocality": "Playa De Los Cristianos",
+      "municipality": "Arona",
+      "municipalityCode": "38006",
+      "postalSourceId": "5a3cdcbb171399fad314d0d7d8a77b6221f9a82dccb37904412c00882f69c3f5",
+      "withheldPostalQuality": 1,
+      "basis": "Named P/PPL gazetteer point and explicit postal locality/municipality association; no coordinate averaging."
+    },
+    {
+      "sourceId": "6692470",
+      "sourceLineSHA256": "38863cba694c6a0184f34d88d68f15132a312ec519090d843b35277fa6ed944a",
+      "sourceModifiedOn": "2024-02-01",
+      "postalCode": "38683",
+      "gazetteerLocality": "Los Gigantes",
+      "postalLocality": "Acantilados De Los Gigantes",
+      "municipality": "Santiago del Teide",
+      "municipalityCode": "38040",
+      "postalSourceId": "9cbf418f73d0849539d039b047a7401722b632a33d90335b8de0448f607df69f",
+      "withheldPostalQuality": 3,
+      "basis": "Named P/PPL gazetteer point and explicit postal locality/municipality association; no coordinate averaging."
+    }
+  ],
+  "withheldPostalRows": [
+    {
+      "sourceId": "7a13d8e244b19834dfc20e127fd8bb1eba88f4f48408586365a22be2a123160c",
+      "postalCode": "38070",
+      "locality": "Santa Cruz De Tenerife",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "c3a031f1f3caf9e4bc3d04a4a8de88e9b814ad457786b4fa2a73775f99192a76",
+      "postalCode": "38071",
+      "locality": "Santa Cruz De Tenerife",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "83c71ce005aaeef61358b482217c65669e4430a261ea85b7083893e83cde7bff",
+      "postalCode": "38080",
+      "locality": "Santa Cruz De Tenerife",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "47ffb866145cf022ef5f1187ff91af1a9cbd6bc32609097f88c154a8c6983e1f",
+      "postalCode": "38107",
+      "locality": "Llano Del Moro (Santa Cruz) (Ver Callejero De Santa Cruz De Tenerife)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "263dc88ecaecc700f09bc66dab4af165523861bbe6cda0815326bd1e942758f0",
+      "postalCode": "38107",
+      "locality": "La Gallega",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ea411316bd17e5d10c0dd33aca83f7e528b8a1c8cb2fcb9e33598371369c7677",
+      "postalCode": "38107",
+      "locality": "El Sobradillo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "85e7ae64c8fc43199d1d7e260399a1f978a8f1ac9a16d87fd3e58ee1efd0fa47",
+      "postalCode": "38107",
+      "locality": "El Rosarito",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f43c5108cc99809675b01f92e9690f8b65b33bb1c6fbe9d3116856ba1f2f21cf",
+      "postalCode": "38107",
+      "locality": "Tincer",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "11e8a66afcf7444d50d3910a97774dc6c96e9a53f21bc9139d8d5ea4d9852aa0",
+      "postalCode": "38107",
+      "locality": "Las Veredillas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "31899cc3f7a1e9d06498376e7cbfbf32c5cb5d1c9af78bdd61eb4559669bcd3f",
+      "postalCode": "38108",
+      "locality": "San Matias",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "41f212b706138454658040fab9ead9b9aee6bd448299ef34c3f445ac63f01054",
+      "postalCode": "38108",
+      "locality": "Los Andenes",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8d90dcc1108d50ae569a5003adb923a8304f6d2ee9abd6c904a44cd3a9571c0f",
+      "postalCode": "38109",
+      "locality": "El Chorrillo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4f3841dd87d12ac9ba5d663ef677abdd091a6eabcdcbbec15acf65f08895aa86",
+      "postalCode": "38109",
+      "locality": "Campana, La (Poligono Industrial)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "27852139e05c2002ae38006011650e2fd6a3ebcf1384151985cb94e53f555d2d",
+      "postalCode": "38109",
+      "locality": "Bocacangrejo (El Rosario)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e21793e9653e46fcc3f0b95326665327542300de32b868a00441c6f8efa1d511",
+      "postalCode": "38109",
+      "locality": "San Isidro (El Rosario)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "aef3565a05164bbe5d1219909dafb764dda1fa380504ce3ce92a401bcfe375f4",
+      "postalCode": "38109",
+      "locality": "Radazul",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0af56bbd663266f00086936da9caf6dca147361c0c0702518429e10fc4821acc",
+      "postalCode": "38110",
+      "locality": "Mayorazgo, El (Poligono Industrial)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "97d6fb2f9b9326a7582dc490ae0948aaabcc3b71d808c3986dadd4dfa3128207",
+      "postalCode": "38111",
+      "locality": "Añaza",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b8394a3d01db9a8bfedd9c46351556b0bba91fbb7c38efb325283000472e7d65",
+      "postalCode": "38111",
+      "locality": "Alisios",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "00e67bb04290eac2f2504efd466ac66eab93ba2dad8909f95cb700bfddad69c7",
+      "postalCode": "38111",
+      "locality": "Acoran",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "a30f6c37422a5bc3a0357fc5160510cc89b50057bf53304c7e8894ccd66000d2",
+      "postalCode": "38129",
+      "locality": "El Suculum",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ad070c0525ff4c1e810ca06cd25304eddd20093c71dfda0d020f074876b444cb",
+      "postalCode": "38129",
+      "locality": "La Cumbrilla",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "70b81a8f990319698c7138bafcf91d8603bd7370dfe35997cfd4eaab08eb85de",
+      "postalCode": "38129",
+      "locality": "Roque Bermejo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7560c398ec2b12d733733d1edcb9600088bd74c96923e8b7a4ddd7ab5d5d8968",
+      "postalCode": "38129",
+      "locality": "El Bailadero",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "fc251f1c7c02c28cb24e7cb4a62fc0c1783867c6a09daaf1a11ee28e94c47048",
+      "postalCode": "38129",
+      "locality": "Benijo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ecc5cb784f7db8d4fdb0c08ca02c9dac26785a1023873d286dc370a87aa7e6bf",
+      "postalCode": "38139",
+      "locality": "Casas De La Cumbre",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1b3b6fbaf6d5eca9139d002c68e31cd97312bdc137bc2c24deadc083e4ff3b82",
+      "postalCode": "38139",
+      "locality": "Valle De Los Catalanes",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c71bd9f3fcf13059b89adfcf1ae7cd52c4244a168417c6f1734b067225801a68",
+      "postalCode": "38140",
+      "locality": "Igueste De San Andres",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e9566045d51c903194f2812e8b3fd7361dab1e97c4769d7be857c3598aa36093",
+      "postalCode": "38150",
+      "locality": "Valleseco",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "48709dea30645eb764d0224f364060b4c7b1b3bfd630d5327124e464279ceae6",
+      "postalCode": "38160",
+      "locality": "Valle Tahodio",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b339e7bd347805dc29029c866abf89f343ed602f004f73aea9810fa76fc27e42",
+      "postalCode": "38160",
+      "locality": "Santa Cruz De Tenerife",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f4c006c7d1cb1e4b08762ca8b70b10b9e070f68cdbe2b612428f3cb99ca955fd",
+      "postalCode": "38180",
+      "locality": "Darsena Pesquera",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "08462347f7c404d061c05186361c61dbc85746678a7f63952d3d11ad2fd50541",
+      "postalCode": "38190",
+      "locality": "Machado",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "15bdb18ec9bf0ae1c77d60079d4fdd2a1f8a1ddc578759467ebb2156b2aa4fa5",
+      "postalCode": "38190",
+      "locality": "Tabaiba (Urbanizacion)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ea8f212933d869e64f76992a1aa1fcb7de2587119c316b086f6002d139e26638",
+      "postalCode": "38200",
+      "locality": "San Cristobal De La Laguna",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "b0d51391598fc54bb4c6d49c799dec5a251ed0aa18a2efc4638a82bb729c3038",
+      "postalCode": "38290",
+      "locality": "Las Barreras",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4259d4c952748f9fd034d150c23a2b710cfb111fc75048ee952bd836d32b16b1",
+      "postalCode": "38290",
+      "locality": "Llano Del Moro (El Rosario)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "cb2212216058b68bb5ac1e14840e0920327cfd2f9d5c9f0db96a6bceac71607a",
+      "postalCode": "38290",
+      "locality": "Preventorio",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "539b213926009919014cb62bb9b8669442064acabb7f1115b9f924a6434d0d67",
+      "postalCode": "38290",
+      "locality": "Peñafiel",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "57c2910ce4a9b48d99c33780bbddd21549fb87b7a13d6e8502e3d0efb0f9f05a",
+      "postalCode": "38291",
+      "locality": "Mina",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "94bf4a9c65adfc07a393a69cb970ebb855ecc182f111704de82d18e5ab936efe",
+      "postalCode": "38292",
+      "locality": "Padilla Baja",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ede461285d989cbc2432a77e68e6d8cf7bd5fa06d0865b00af8a0edbe097d71d",
+      "postalCode": "38292",
+      "locality": "El Infierno",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "6232ee04a4c345c4fd9632fa01f7f22820db7869963bf8c7e6dacb33534b39a8",
+      "postalCode": "38293",
+      "locality": "Camino De Jardina",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "88f226a3100b7d7d682b0a8292a3b6f9d5ade83a57581827d957a9a2c005f7bb",
+      "postalCode": "38293",
+      "locality": "Mercedes, Las, De (Carretera)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0dd87a1c80ae1dd100629cafc88e9373adaa233f85d58607439e55e9c5fdc9d9",
+      "postalCode": "38294",
+      "locality": "Rio",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "65d48a49e3b8c26bb9e3ac9ca3b811e4ed9c21a9b789d7435b11f24ddc03cca3",
+      "postalCode": "38294",
+      "locality": "Bejia",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "fbea1372cf85a92b2e1adb6f6e8c568ff00505c37431068341fb58a278509d51",
+      "postalCode": "38297",
+      "locality": "Aeropuerto De Los Rodeos, Residencial (Zona)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "5c3269e91cee7452103a73c0d677de1abcccc8c4afedcbddc41149bb9c5112b6",
+      "postalCode": "38297",
+      "locality": "Hoya Del Camello",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3de166d7cac6ef3c904c89ea42966f64138fe293aca8eb475ce143458a7905de",
+      "postalCode": "38297",
+      "locality": "Garimba",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "720d65258ace5cbaf08b0bfed3e4a635c028fd146942e0a4359e4c9b0b43d948",
+      "postalCode": "38297",
+      "locality": "Ortigal",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c06d572257e4f912bf53e7a71ee85f3f7b2f056b408f997bcbfce40d30307d3a",
+      "postalCode": "38297",
+      "locality": "Aeropuerto De Los Rodeos (Santa Cruz De Tenerife)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4e161fa18e13280284979111599bb9171edd558d61bf5997a12189797c1ebcbb",
+      "postalCode": "38300",
+      "locality": "Las Cañadas Del Teide",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "d3e8220ae41d598d229642d2df3713f3b1855b6edcc25edbf0726b2045d99c51",
+      "postalCode": "38300",
+      "locality": "Parque Nacional Teide",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "9e17eb0806af238f3aecd1d7212e46e18919ebad5c57a86671d1e1cd1ecd07ca",
+      "postalCode": "38310",
+      "locality": "Posada De Montenegro",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "751020b7cc8053092fa4aa2de91434283810a9e5b318bafaa889649265a0bb30",
+      "postalCode": "38310",
+      "locality": "El Montijo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "adc33f7cfcb3cf726d780fbbcffb0c38891d45d47216d4d3b0c2de6a57dbac61",
+      "postalCode": "38310",
+      "locality": "La Sierra",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e7bfc8ab1278956ef9c43fcfcfc6159e0b6c9756bd4ceb2fb74d88b6e749b89d",
+      "postalCode": "38310",
+      "locality": "El Bebedero",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "85c6dccadb20ce28a5d0f836668a2c9d0a1c38f7e5c01aeb3ad7043ef3df6d01",
+      "postalCode": "38310",
+      "locality": "Pinoleris",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "026be28a4280bd9e19559eff585ba93ab2c6465ae657e5b9eb560ecd311d3ce8",
+      "postalCode": "38310",
+      "locality": "Chasna",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "a7b8744b33993ba7ba9451431720e7152e6bf695d9a3106d512644243c8461a0",
+      "postalCode": "38310",
+      "locality": "Hacienda Perdida",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3607301c49e1b87d49aa6480f08055f9826870fc4c267d85dceca2732f039602",
+      "postalCode": "38311",
+      "locality": "Los Frontones",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8df23f2c8cbc8dfad58afd1a152b52ac6e675a1245d2b152ded86dc475357959",
+      "postalCode": "38311",
+      "locality": "Dehesa Alta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "721c437ea05659ab306c693c3ed8959c6d070e0fac8adfbe4e7b64fe6f17f1f4",
+      "postalCode": "38311",
+      "locality": "Florida Alta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2c83195ebd9c422733881587d7334242d6b3ef384ba653ae417b865228ad3689",
+      "postalCode": "38311",
+      "locality": "Humboldt (Urbanizacion)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "dcafedc2392a3229f66da11844dc8697eaab375ee315bb87ea9b256cfd64debc",
+      "postalCode": "38311",
+      "locality": "Los Gomez",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b564a511d1f42095817f8fab276afdad89ccd1e7bdb8f78a03aea2c3cd313820",
+      "postalCode": "38311",
+      "locality": "La Hondura",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "be43a5071bd67ec86cdbcfe5fa079e2ad5a5e833700bf6a300cfde6f46582c9d",
+      "postalCode": "38311",
+      "locality": "Pino Alto",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "390784dc603067120770e72664f6b0b4a2184df355a3808079dc79f72cf25723",
+      "postalCode": "38312",
+      "locality": "Cruz De Los Martillos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7a25390bc95afed82fb07a82fc24f615d382739d2d0f76cd690f21b76e9686c5",
+      "postalCode": "38312",
+      "locality": "Las Candias",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "979c0022f2ec2a13e2137fdd43ad011faaa698db16feae2e3170aeb13e7da210",
+      "postalCode": "38312",
+      "locality": "San Jeronimo (La Orotava)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "461c6ca4f42757dc9ff6d8786308546a39b6f7ac277b5a88ccd6ac23dd1d15b4",
+      "postalCode": "38312",
+      "locality": "Arenas, Las (La Orotava)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "724bf3c094465cda984706592c3d8aa3cb8d8572e3fa69ab0a82f1fd6bec7caa",
+      "postalCode": "38313",
+      "locality": "Benijos",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "18e1098d1e183b089597c6f1fd382af2dad9f39428481859f70b0b4bad0e3e3d",
+      "postalCode": "38314",
+      "locality": "Los Rechazos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "687f9b21f0b039a51d97d050c8d72e879cff6e16591d7c3d754cbde23acef30b",
+      "postalCode": "38314",
+      "locality": "La Ratona",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8d5dbf9a71a64696eca93913cc3ecaf6c600f3d5d44a64005ba32d9c70c1b0a7",
+      "postalCode": "38315",
+      "locality": "La Aza",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7ef3ff5349daa3743e2dfcefd11f5a4c99054e688e59295751c46611f7194b0a",
+      "postalCode": "38320",
+      "locality": "La Cuesta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "81e8943973b8ce084b6c586d612988c8ad6a1bc21f2982d908a07702a5e40c33",
+      "postalCode": "38329",
+      "locality": "Valle Tabares",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b144894c80d666bec842db611909ef3418485e990e5de09f26a6e7a997e14fd6",
+      "postalCode": "38329",
+      "locality": "Valle Jimenez",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b76c5fe68cd6d612c4e86daf96029bc42d46b4808cbca91999489641f0ce574e",
+      "postalCode": "38329",
+      "locality": "Lomo De Las Casillas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "199897fc896f6723c17b0a5e524089202c44b3383c9c73f2394639aff9ab1be8",
+      "postalCode": "38330",
+      "locality": "El Pulpito",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1653a8935176c9f77434945114f979ffd3974fd4c293fbcbbfe7fc7305556a95",
+      "postalCode": "38340",
+      "locality": "Los Naranjeros",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7b4e786a7e26e61cbf7fcbdef7394254b5587c1dd38c5bb8d47698f58d051ca2",
+      "postalCode": "38340",
+      "locality": "Campo De Golf (Tacoronte)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c571a0ebb3baadb17d14978c0dbdca5cbffef736efde9b758474fa41093cc475",
+      "postalCode": "38340",
+      "locality": "Luz, La (Tacoronte)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "48d97ad0ebfbd9a51bc4165f037d4ea8c0322c4099734512cf281718ea9c3cba",
+      "postalCode": "38350",
+      "locality": "El Torreon",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0186d4d9b85c37add40a191a40e9d672df74d4554e476c1aa31d83ee71c66613",
+      "postalCode": "38355",
+      "locality": "Barranco De Las Lajas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "70100c2b168ae6f498807cfaa55a8f71d31798a46a352b975441c49112ec9ad7",
+      "postalCode": "38356",
+      "locality": "San Juan Perales",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b232f935930e3c1e4097dd6f7e18bdace870233b468776088d140ec6a14aa371",
+      "postalCode": "38357",
+      "locality": "Lomo Colorado",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "46e6748ea818ebefde11c95433d476261bb0d8714a34e5207107cb1d1bde307d",
+      "postalCode": "38357",
+      "locality": "El Adelantado",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "6057cee6e32af13995ca053a83d79a29545e423200f7036f210b9c7b0f431fcb",
+      "postalCode": "38357",
+      "locality": "Las Casas Altas",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c195ee0838ad48c4df694e306737edbbc33699d49604f0d337e53519be04eac1",
+      "postalCode": "38358",
+      "locality": "Santa Catalina Las Toscas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ed920d412d87ee5eeef2ca98914c9342ac4c3413bd3f9b409d83d4e656c1268a",
+      "postalCode": "38358",
+      "locality": "Juan Fernandez",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "5b8e6e8cbf9e11538c509edb651e00a2a1732483d4411820cc9f17ec0228334f",
+      "postalCode": "38358",
+      "locality": "Guayonje",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "667b2ca65f5acb2dc6158f96ab2be3996cdb657e22db95d6b13296e2f3f02eeb",
+      "postalCode": "38358",
+      "locality": "Tagoro",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "61c02fe824ade84becf3154eb1d0962069401063c328dee76b321e537a0bf026",
+      "postalCode": "38358",
+      "locality": "Mesa Del Mar (Urbanizacion)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c4cc6ee73fe9eb6935bd24bfc76566d3a4c5f2dbb0c27ca129768a8cebba2a0d",
+      "postalCode": "38358",
+      "locality": "El Pris",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4c5b57f1a22a79a2dc7d5ede14042febef44e3e71cbc98071785ebbe609356c6",
+      "postalCode": "38359",
+      "locality": "Ravelo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b08829ca29fbd61a2b3dc8a96e9523aa21f4d62f29a08b0e19a5cd2d5fd116e8",
+      "postalCode": "38359",
+      "locality": "Valle Forestal (Urbanizacion)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4f501e15d6f85a57710627fab8fc561caef085852c3fa55593ea14eb1120cb1f",
+      "postalCode": "38360",
+      "locality": "Angeles, Los (Urbanizacion)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4b4967cb176128b560d31b456f03200a974a1465d38f3e1e6d489c1fceb91b20",
+      "postalCode": "38379",
+      "locality": "San Antonio",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "17c9bf639408f3f650e38720f95fc466db363611f49cdf71000c7a3cf97c3516",
+      "postalCode": "38379",
+      "locality": "Chamiana",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7f0a57b82b26319a8f630dd9cb255f95b4889825bb4d1ff8f1220a89f4a9d604",
+      "postalCode": "38379",
+      "locality": "Jagre",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "fcf38038eab11d08f033b847dcb1cd6a38839f44fce9a49d9950259659896e9a",
+      "postalCode": "38379",
+      "locality": "Puntillo Del Sol",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c0c7c744dab851e6a2922f1485b55372b4bb6fc6f70b389bee06e53914aa1683",
+      "postalCode": "38379",
+      "locality": "Toscas De Guia",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ecdd68f48afa13e7bd01c323698198bae82d05a53ccbfea216ae6543a9136e04",
+      "postalCode": "38389",
+      "locality": "Los Altos-Arroyos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "fee000fc18b5d255b3100da15b03ee00572caff1c3cbe4c491404e423280b43b",
+      "postalCode": "38389",
+      "locality": "La Vera-Carril",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "024ea7565c38ebe16f461ea41efdd2e36c1f954137a8f97a4a8314410a99feed",
+      "postalCode": "38390",
+      "locality": "Lomo Roman",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "9cfa829432de7a2844642bec7b22f99726199e0e53b2f1defd9836d01aa37f12",
+      "postalCode": "38390",
+      "locality": "Cuesta De La Villa",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "433255a3c82db0eb24caa93ef8b73108c453e6830d96a5b6540575bcb2e8b693",
+      "postalCode": "38390",
+      "locality": "Quinta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "51e7cf5502e032b984553e5a3543b3d50ed80f576fa5b97e951e5755582a7051",
+      "postalCode": "38398",
+      "locality": "Tosca De Anamaria",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "02a0fd28567681bd014f6a3859f977ae044c2d3a477950a6b18cc62496ace16b",
+      "postalCode": "38398",
+      "locality": "Farrobillo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "832ae06a726902a72505d1f8d8eea78bd9d3fe70854591e04f151249f0b302a7",
+      "postalCode": "38398",
+      "locality": "Tosca De Barrio",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c15d46ed167981ed67ffb626383e51af6dcd1fc56854a2a947a2d08a03a90c1e",
+      "postalCode": "38399",
+      "locality": "Cantillo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "bf64791427f2afc668aae422255548a8985b95780c56d93cd6ee7732bc0dc8cd",
+      "postalCode": "38411",
+      "locality": "Mocan, El (Los Realejos)",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "7a6f8c8178684710da588270ca611a2825fb08975b22369fe413c6ed962cbdbd",
+      "postalCode": "38411",
+      "locality": "Horno, El (Los Realejos)",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "f89ceefbaa6557b16719e4dcb46fb6689e4e654c32a1d757ced650399d2598dd",
+      "postalCode": "38418",
+      "locality": "Longuera",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c28687e829986e74df80679fc73d81c1823ef792c5a768806939314db77240ac",
+      "postalCode": "38419",
+      "locality": "Zamora Alta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "a399bdf0e09093be37d1a59120bb4b021f7d9b898d8bf52acaf0371df9f19478",
+      "postalCode": "38419",
+      "locality": "Grimona, La (Urbanizacion)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "807e80963b5449f217d1c8ed355910046b012b5b4067de03b1078d0126df4d40",
+      "postalCode": "38419",
+      "locality": "La Carrera",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "d460a293d67bbf1f2c66167bbc35e4bb45e9c9838d044290a962604d52900d1c",
+      "postalCode": "38428",
+      "locality": "San Jose",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "a2a8d4005bbaafea0a3bcada4c715bfa3cdf4056d637adbe2c023c8f660b7011",
+      "postalCode": "38428",
+      "locality": "Los Quevedos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c0dd35acbe1f945864d14babab8cde4ba5b39b83ae3c25124c21ea6d7ee07399",
+      "postalCode": "38430",
+      "locality": "San Marcos, De (Playa)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "420112ed695a2ce7839205edf3599e05fa65cda8a8c0899876b3d4cd3c17a02e",
+      "postalCode": "38434",
+      "locality": "Peniche",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f47019f9b39c225d6697664049e1aaa9e491014f83cf9931dc260448e69c82b9",
+      "postalCode": "38434",
+      "locality": "Belmonte Bajo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "71ec028d9d224a81ac777573d660874288649ab59a5ccc1e3a870ae5a705d01e",
+      "postalCode": "38434",
+      "locality": "Florida, La (Icod)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "325facfa429fd3303e1eae9396ead903e8333c3b63e134cc68d7ac1948fba854",
+      "postalCode": "38434",
+      "locality": "Santa Barbara",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "a690958f5557f7d7a134f9140068789c83dbb2a0e25a654a30f7a35cff4da100",
+      "postalCode": "38434",
+      "locality": "Las Cañas",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c99b222daf1a271a303f1596d150ca530686158bcd6ebbc350542f6d4790842b",
+      "postalCode": "38434",
+      "locality": "La Mancha",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "dc52e2ad0c922b08132336e332c54942c2a7eecedd5c44948d211efa93489426",
+      "postalCode": "38434",
+      "locality": "Llanito Perera",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "90b74c7d31143f28fb9cf19f0bc5d8a4316fd2c8e662313dfc7ae115b0c7798d",
+      "postalCode": "38434",
+      "locality": "Buen Paso",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f69fc396f9e328a6cbc5d523b920bbcba99cedf99f5cf9b8f350f20e2ee5c091",
+      "postalCode": "38435",
+      "locality": "San Jose De Los Llanos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c7dd3272d1ea99fac3ba5c3968badb9df4a0c05025a2217d0735fad398f18474",
+      "postalCode": "38435",
+      "locality": "El Tanque",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4eac4f49044c204d063d7cec90eccf8fa4fca129d75e1f89d8f0a0358de5a146",
+      "postalCode": "38438",
+      "locality": "La Patita",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2ed41dc8777ddfbc2e9d93b7162d9ab381f04c4ff0454062e0c46810f019d962",
+      "postalCode": "38438",
+      "locality": "Pedregal",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "22d0b3eb282a84970d47e2a51de6936d4dae76dd4e5b36a1ed91580a69ce2a7c",
+      "postalCode": "38438",
+      "locality": "Cueva Del Viento",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4b2243bf5d6891210c4e5c15c5fc975e2ecc28a2b6f0d15d5642a521252e5293",
+      "postalCode": "38439",
+      "locality": "Mirabal",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4",
+        "outside-tenerife-bounds"
+      ]
+    },
+    {
+      "sourceId": "49f5e1d21151e84538d4bfc52694bb10c1afe04dcc9429f3923e8d273da3ef8f",
+      "postalCode": "38439",
+      "locality": "La Vega Alta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4",
+        "outside-tenerife-bounds"
+      ]
+    },
+    {
+      "sourceId": "39f5b526c9d6cc4a078f54cbe95ad852ee572a99df2066f40b9a204d0d6e5a33",
+      "postalCode": "38439",
+      "locality": "Fuente La Vega",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4",
+        "outside-tenerife-bounds"
+      ]
+    },
+    {
+      "sourceId": "daf57a318b2fd2f61f39bdd73e9a0a8579cdd884b60ecc2c0ed0672745cbe61f",
+      "postalCode": "38439",
+      "locality": "Cruz Del Camino",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4",
+        "outside-tenerife-bounds"
+      ]
+    },
+    {
+      "sourceId": "2579214e5253ff58ae81282ac4a1bea7a8f7710178fbfdd75b6c4438f9cb925a",
+      "postalCode": "38439",
+      "locality": "Las Abiertas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b3c12935fbbef67c0c2395fab588b16aab2227554dbaaceaf9533d2e95126ef7",
+      "postalCode": "38440",
+      "locality": "La Guancha",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "641627d9ef29be3426716afd9016177193918dcfdf02407882a8adaf133d4afb",
+      "postalCode": "38440",
+      "locality": "Lomo Blanco (Guancha, La)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "afaa8b6a86abb3af979dae7a7458950d442386eefbae29cf7a368259654cd6a2",
+      "postalCode": "38441",
+      "locality": "Santa Catalina (La Guancha)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "005356bca59dfa9643ec79876243b0d05333b0abe4331f17fb18c6d8668961e7",
+      "postalCode": "38441",
+      "locality": "Montañetas, Las (La Guancha)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "a4a27f6c1fb61b615ee4cf9ee46665d607fff6ee1f82000e012b69e941a3a535",
+      "postalCode": "38441",
+      "locality": "Crucitas, Las (La Guancha)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f42189c5e9a2a9db3fc6db3836594d0fdcf002fff3da94de822aca15c735cfac",
+      "postalCode": "38441",
+      "locality": "Tierra De Costa",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7d5558e7ac3a3fa5c4a07ef6999de44b48dc44e06fa64041e7888ae327ffb750",
+      "postalCode": "38441",
+      "locality": "Convento, El (La Guancha)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "5f83a901a11ce44963fc20576a2d4336ea14cb0d3a0aeb9f57baf4a9356ec5bd",
+      "postalCode": "38441",
+      "locality": "Las Longueras",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3b5e827caa61542741fd9d9baa4bfea4e82259b9102749a9ca0535b22f09c2cc",
+      "postalCode": "38441",
+      "locality": "Santo Domingo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "566b17308ebb6c8b79a005fd51b67321dd531fa5631fe799a35db7b42dc288c9",
+      "postalCode": "38449",
+      "locality": "El Pinalete",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7bcf6e114532d2b5d84c969daca0f32bfd07a87f135251b3c2cbcf335d4d76b0",
+      "postalCode": "38449",
+      "locality": "Hoya Pablos",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b1f3c88f36cda6b402ea401a5c4ac1e6c025ab76ae32e7fa686bba9a1057732b",
+      "postalCode": "38449",
+      "locality": "La Sorriba",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "125a64e359a6f39f87f64915eca9cc83121d4ba30d23d0ff4fab41b9a485e73f",
+      "postalCode": "38449",
+      "locality": "Llano Mendez",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "af09b7dec6384576bfa5aac38e3043608b65355a9eb50ae086b43a6c2c5d08b1",
+      "postalCode": "38458",
+      "locality": "Guincho, El (Garachico)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "811956fac2040281570bce499cdec4eb60ac76392d7a5a65e62aea687b04bb34",
+      "postalCode": "38460",
+      "locality": "La Caleta De Interian",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7fc5c6f66c162eef143a0f2fb7fccf0d93dc1053357cdc738158ba8332efe1ea",
+      "postalCode": "38460",
+      "locality": "Caleta De Silos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7826fde36dd1168f0e1a8bf611c5721ac77ff0727a2c35ad549d74971d9adbf4",
+      "postalCode": "38460",
+      "locality": "Cruces, Las (Garachico)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1dcc91506603bd0e68913f03751b9cdfd02b1eff2b168302af3fbf99608a4d76",
+      "postalCode": "38460",
+      "locality": "Casa Amarilla",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "415dc758cd15eb4fcb6c3192510b3a3084a8c1ac5b721d453ffa5052338e86ff",
+      "postalCode": "38470",
+      "locality": "El Casco",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "d91159aed73e76f959a411857f86ee96b48e7af2bd4ecc59e29ae4f2e6394fb1",
+      "postalCode": "38479",
+      "locality": "Puertito De Los Silos",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "cc967427012c85a5006a00041081e9977bb6a8b26c9c1eecd0bf7b861758fe09",
+      "postalCode": "38479",
+      "locality": "San Bernardo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "34947a02a2b08486a631f7cf13d4d57b72a8a26ec81c326ba72bfccada57b911",
+      "postalCode": "38479",
+      "locality": "Barrio De San Jose Bajo",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2e27a9e9dd7a9646520ec674747f2420ec7c0368352b87a099c8fc319ee4ea48",
+      "postalCode": "38479",
+      "locality": "Sibora",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "78e69bd14c263e767457944afaf25f3157d08e09be6d469c5f240120db910161",
+      "postalCode": "38489",
+      "locality": "Las Portelas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "77786a13acca8cbd3f510b5093b578aa93c984a58db94b8927f0618e2217480c",
+      "postalCode": "38489",
+      "locality": "El Palmar",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "80c65dfa2451457ffcce5653481e35652ebea505b5e99833fb22a12e128fee9f",
+      "postalCode": "38489",
+      "locality": "Lagunetas (Buenavista)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8c206fe53704cd7f7a695de93ce49ae7af72358657a219a5480bab057baef9c8",
+      "postalCode": "38508",
+      "locality": "Socorro, El (Guimar)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "73ccc1e8120d9bf345ca556de10ae30bd08bf06eb7e056881556edb63a0e7a26",
+      "postalCode": "38508",
+      "locality": "El Puertito De Guimar",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8d0e328f9e9d1b896878e61bf3a58a44c34a5b5c083eb336f266e1686a201e37",
+      "postalCode": "38509",
+      "locality": "Candelaria, Industrial (Paseo)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0cc2c8ca27d2ac6b6219834d167b2e7e938927f41f3b81764e5b943445b8d2c9",
+      "postalCode": "38509",
+      "locality": "Brillasol",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b5092cbb8b4d16b394b6c7e3a24cca1e6507418734fd40df15de5d26e54f14b7",
+      "postalCode": "38509",
+      "locality": "Aroba",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0bbe67b386023e9f59c49b57fcc3db9d2f13a7277e1592d5cc303a3436b29f6f",
+      "postalCode": "38560",
+      "locality": "Pajara (Guimar)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "942b54feae74deb50931319b52750afe7e7b5ab9d070626df08346592a22f220",
+      "postalCode": "38560",
+      "locality": "Punta Prieta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e4cdb0605542935a4b5bdc33e3bffc51468ddbcb471a1cc851ec7c46b0ce063a",
+      "postalCode": "38579",
+      "locality": "Sabina Alta (Fasnia)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "00a835937c37743afa2312c5853b204e5522fe22d8ade5c16c24ad635be14efb",
+      "postalCode": "38579",
+      "locality": "Sombrera, La (Fasnia)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "68071151b0f412db5f639c249ae4815af4e0d5fb1e264e3a6ae85c7e91d6f993",
+      "postalCode": "38579",
+      "locality": "La Zarza",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1e985269cac83843ed7fbd319df6f318065ffd7cf520761a6c39924100acd4b5",
+      "postalCode": "38580",
+      "locality": "Villa De Arico",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "486e460f0a56864a44c7f8eba5f62282060280c28fc35bd6e2b79ff1c6c9df00",
+      "postalCode": "38588",
+      "locality": "Punta De Abona",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b84381b5d8b735005b9fa3e6d1eb13528fb12a1426104b824a1bde0cb5f1282d",
+      "postalCode": "38588",
+      "locality": "Faro De Abona",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "55ff0f4acaa3f930a00d1a4db7f322d2fb14f765063c9ca579a14d6ab7f715b8",
+      "postalCode": "38588",
+      "locality": "San Miguel De Tajao",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0db57141572ca75721e7e8287f288904e4af433115896efa8bf3e920858fdcca",
+      "postalCode": "38588",
+      "locality": "La Jaca",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "18bdbf0f1b8117375fd559411e475ffa56421707f443c51f9f085b313b92a3f8",
+      "postalCode": "38589",
+      "locality": "Teguedite",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2faaf02ed9724c003b74299e4f397b79c484e1be8b028759cc7530a1e5847f79",
+      "postalCode": "38589",
+      "locality": "Arico El Viejo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "9faf39f1fc35e8cacd0b6451f8f4a5bd8362145f07e417fd478ca521bb19c5aa",
+      "postalCode": "38591",
+      "locality": "Aguerche",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b818f150d9fe08c76dfd32525ed33558007749b4ac6834f08caf9d544773afb2",
+      "postalCode": "38591",
+      "locality": "Chimaje",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "977a3da79e5efac00d16dc2f3f02f9be55b1462dc51bd27b6b855aecfae54e5d",
+      "postalCode": "38591",
+      "locality": "El Tablado",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ac154667638eb9c4d355b10994ca6c50ad14823b6df95919ee538e9581dd5c01",
+      "postalCode": "38594",
+      "locality": "Vegas, Las (Granadilla)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "deb459d52b626f569338fd1aaa9493fc848ec923287925c5a8ac679cd781d411",
+      "postalCode": "38594",
+      "locality": "Rosas, Las (Granadilla)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "6966cc338905bfcfbe7a1362bb4377a1e5f14730019ecec8915f1e543968fd0f",
+      "postalCode": "38610",
+      "locality": "Aeropuerto Reina Sofia (Santa Cruz De Tenerife)",
+      "quality": 4,
+      "reasons": [
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "df665dc70bba29e25ec96c496df0dfd4c3b1ba1694af96762364475fdac9ff81",
+      "postalCode": "38611",
+      "locality": "Chuchurumbache",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0741e7261b83caa5644083f22d46a956f5aa6fe2461430ea82b161b7c7dc9bf4",
+      "postalCode": "38611",
+      "locality": "Casablanca (Granadilla)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "fbb4ca4f504a9d768096b4075ad3a714fbb3eb2464e786616c074eb8aa06aaea",
+      "postalCode": "38611",
+      "locality": "Montaña De Yaco",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f03e6f1110e0c843f07e78394077e5e3f99be679468e3c76a057a2ac6221c57f",
+      "postalCode": "38611",
+      "locality": "Vistas De Yaco",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "941ad334a5fa3ed7dc02ad86b1020c7b41cddd097260963c4f0f59548aac7237",
+      "postalCode": "38614",
+      "locality": "La Escalona",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b342394c2be47daea823cf13b36ec89b4941392e3a8eb6d35c3b31c92223b3ff",
+      "postalCode": "38616",
+      "locality": "Los Barrancos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "219aecb1ec817b60c8da6d3454dd044493a16cae9ca49d4bada761b771e4a992",
+      "postalCode": "38616",
+      "locality": "Los Blanquitos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "d1d954aa7f90b0833821d28c276915a4d9ffe6cbff958366b37f350e0b9e1e80",
+      "postalCode": "38616",
+      "locality": "El Desierto",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "46550bbd46664724a99bdd46e83d14fb3c0a32176ab424c7f66618588bf4cd27",
+      "postalCode": "38616",
+      "locality": "Cruz De Tea (Granadilla)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7c2caedbac356c263825a390ce84f1404596a9e519c0f4bb17124deb3857069d",
+      "postalCode": "38616",
+      "locality": "Chavez",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "accf4f6544669655a3cb6079644d3f2c5e19a7c0b047b3920c1e72ea7d913f84",
+      "postalCode": "38616",
+      "locality": "Cruz De Las Animas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3d9b55e23094b4bff2dac50b176e16dcf22fa23ed2861392323bb5932bd60e98",
+      "postalCode": "38616",
+      "locality": "Higuera, La (Granadilla)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e58cfe2ed3eafea94110364d6cd053a8db859b9b2a2d1e7d36ddc36a41f1869e",
+      "postalCode": "38617",
+      "locality": "Llanos, Los (Granadilla)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "176c6779dda06e7771f292da14a6c9772a60df8db8dd74e0a17ee963128f09b3",
+      "postalCode": "38617",
+      "locality": "Vista Gorda",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "d2c0da42e58f14d49eaf6081c8e44594ded47a1f7f3afbb8b09ce02fea12442f",
+      "postalCode": "38617",
+      "locality": "El Salto",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3d0f18451d5bc2f27858ce14c6be3383b378ed0009f940cfb73a41f75b301f64",
+      "postalCode": "38617",
+      "locality": "Yaco",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ab305cdb0f025e76cadb1829a93ada26ecb4b0b548b02a8c428439407fcbbc2c",
+      "postalCode": "38619",
+      "locality": "Granadilla (Poligono Industrial)",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4",
+        "missing-municipality"
+      ]
+    },
+    {
+      "sourceId": "518fecbcb9904b961ec6a4cea3dbda5b28dab0007c87ff75ed4976ea126f7957",
+      "postalCode": "38620",
+      "locality": "San Miguel De Abona",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2612d49f13621537c6bca230bd1043e46ef9955fd281bc8a99b34800eeae30a1",
+      "postalCode": "38626",
+      "locality": "Cruz De Guanche",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "81dca9752bdd1be6aa65fb6a70f222c509cf7c29b6b9ce155557db46bbbafc9a",
+      "postalCode": "38627",
+      "locality": "Los Bebederos",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "6df2c37f8a1bf5410b6bd2cc92d6b506fbcbc0b706498c943bf48c745775159a",
+      "postalCode": "38627",
+      "locality": "Barranco Oscuro",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "853da5f36ac7ad281b08fd90a88361af2753bec80b0af65074f7ca51e28d0927",
+      "postalCode": "38627",
+      "locality": "La Camella",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b64ff5cd3a908ed69a7ee0f60ff0c4934bb741fb3f892948fd5bbbcf9cbb2755",
+      "postalCode": "38628",
+      "locality": "Asomada",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "53f5dc65a8783c4fcee76ea5d003083f8331c0a43e89ecbbe5b7cebb75743084",
+      "postalCode": "38628",
+      "locality": "Aldea Blanca",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "99ec850d366c4c7cb815669c4f050a42e4d48edd188a3df63839104b54162212",
+      "postalCode": "38628",
+      "locality": "Tamaide (San Miguel)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e054351f5628362b55f6ce12ea26603f7645a860e7b378aede247fd171a49f1b",
+      "postalCode": "38629",
+      "locality": "El Fronton",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1a66a29bcb0060215e0f9909b69caa36a4b661c1524dbdf6ea5c58c621b51a70",
+      "postalCode": "38629",
+      "locality": "Asomada Alta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1f00c23f6f07cce55a2b5a78ff6d5c769d5eafb2294b6ee97f4b534bb57b399b",
+      "postalCode": "38630",
+      "locality": "Ten-Bel (Urbanizacion)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "e683ca8922caf9e4273a1132fad98370421188d1c7294123601793676765e6b8",
+      "postalCode": "38632",
+      "locality": "Cho",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "791b3510150c64f6c9390822e040d71e058c257047379d4d2c002e401a1e23ec",
+      "postalCode": "38632",
+      "locality": "Palm-Mar",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "02865ac7717e19db29081ec1176cad19f293991879b34767f441ad9b27814c38",
+      "postalCode": "38632",
+      "locality": "Fraile",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "82e6b74d302843e157c3992e53ac606d69a1324c9854321b54365583282d09df",
+      "postalCode": "38632",
+      "locality": "Reina, La (Parque)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f1116fcb57240d92308f5e268676ee8d67c706339b8f4b24f71ea3883b609d06",
+      "postalCode": "38639",
+      "locality": "Guincho, El (San Miguel)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7e38f53830baddd0fa6407226f3f7a863b96170d991763f096d47c5d2e49121a",
+      "postalCode": "38639",
+      "locality": "Amarilla Golf",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "07b77d4581401bd9b1851a8b7bafaf3ae81eb8afd30272acfb988b1c29bcfda8",
+      "postalCode": "38639",
+      "locality": "Chafiras, Las (San Miguel De Abona)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "822b821898e606577377023c1346cf93474b0acfd72beac0b4776a45811ec4e9",
+      "postalCode": "38649",
+      "locality": "Vento",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2ab995d343bc5f9836751bdd874d3d043aae99a00b7f584fbe9d0348b08ff5b1",
+      "postalCode": "38649",
+      "locality": "Sabinita Alta",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "ce9b7b1f2e906f1ce91d89726b26690f2b0a2103a1409bad46ff28910c2c2664",
+      "postalCode": "38649",
+      "locality": "Tunez",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "af596abc040111d6988dbe38dfe4b023bbbc85d6beba1323fc8b705742e4d3c0",
+      "postalCode": "38649",
+      "locality": "Montaña Fria",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "5a3cdcbb171399fad314d0d7d8a77b6221f9a82dccb37904412c00882f69c3f5",
+      "postalCode": "38650",
+      "locality": "Playa De Los Cristianos",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "46371ba453edf492dc5a2518234a84b3f3d0624d9b89917eb556c3a431f3702f",
+      "postalCode": "38652",
+      "locality": "Chayofa",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "caf379dba254c02539e68a9133e5961bd54bc27ff509b208e3c0bd780f89884b",
+      "postalCode": "38660",
+      "locality": "La Caldera",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "11c03b022a11afc5bfaa7789f79b69fb7e6c2a2dc32b023fc26f5b28bff7d243",
+      "postalCode": "38660",
+      "locality": "Costa Adeje-San Eugenio",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f1a311ae20a49294fe8ca289f774f4939e1a5e0d5e5bd635395ec02594ba82d1",
+      "postalCode": "38660",
+      "locality": "Costa Adeje-Playas De Fañabe",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "32aa9e20bf2a34564801a946bed35f911fa334ca9b308301d830e8b7ecf440d0",
+      "postalCode": "38670",
+      "locality": "Las Torres",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "18421f0d64e5607898dc856724f1bf815b667b03670838b48212c16003e5e1f6",
+      "postalCode": "38670",
+      "locality": "Las Nieves",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "b3b127080f59a4d7fe56452965c37b9b33552758e059226a27d25e92d6553064",
+      "postalCode": "38670",
+      "locality": "Adeje Casco",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "42a0b45923bb2e888c2a0f1a8a24508012763b9914e97e6d77b413b6371c68cf",
+      "postalCode": "38677",
+      "locality": "Moraditas, Las (Adeje)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "bee15a1770241b430ae47a744126fdcfd582bd6c36a14eac3f0ea5e2a4046b42",
+      "postalCode": "38677",
+      "locality": "Quinta, La (Adeje)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "5e4143c3f635724e075e0b2d24ad04fa3ba186e09310468d969e6db841b91121",
+      "postalCode": "38677",
+      "locality": "Tijoco Alto",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "59e001c03b18c216f161232eaf2c6a76bfe7ef9caf2ef382fade72da103990f4",
+      "postalCode": "38677",
+      "locality": "Los Menores",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "22bff3c1e0e0e7da3011c66c4a6a731d6769ec73d46fd6110b40b2f8d2504f77",
+      "postalCode": "38677",
+      "locality": "Tijoco Bajo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3fd35340cd8bb11218c8bec51b752b9123dc03d1d57188375e39a78df8af5db8",
+      "postalCode": "38678",
+      "locality": "El Puertito De Adeje",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "66807ee52126f461b7860dbe0862be9ab90d511129063687cfb9a9b7750abc10",
+      "postalCode": "38678",
+      "locality": "Las Cancelas",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "3546a648ef26249d50c68efbc4a5fbafe4a134b6df7661da1977b2194c3096b2",
+      "postalCode": "38678",
+      "locality": "Marazul",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1b2cfb48b6c66e24f64db964bebb537393a868c24915a93e786e81c55bda7df5",
+      "postalCode": "38678",
+      "locality": "Armeñime",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "9cbf418f73d0849539d039b047a7401722b632a33d90335b8de0448f607df69f",
+      "postalCode": "38683",
+      "locality": "Acantilados De Los Gigantes",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8c4cefdfb6eb441dfb062f828832a151fcb88799ab77e000ada62553bc445990",
+      "postalCode": "38685",
+      "locality": "Tejina De Isora",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "7f442cbe2d6fc4002900caed1fb6f0057677b538e75e3983950d53ee3b4e331a",
+      "postalCode": "38686",
+      "locality": "Cueva Del Polvo",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "2fadcb39b2c42699c35138bd2ce8c6db5ea4ad19b5fd102cb4b7b81886ef99f2",
+      "postalCode": "38687",
+      "locality": "Piedra Hincada",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "365557c2ba4ed4b6779994fcc9c83f1a20b77956b2d636fd01bcd7e89dd2ca59",
+      "postalCode": "38687",
+      "locality": "Playa San Juan",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "cb4bde017a930206504067580810e40ed6a2f8da69d6a0f3724eb5e4ad7b9c63",
+      "postalCode": "38687",
+      "locality": "Abama",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8fe56faf10fcd323c70d84929ba95d814f4074c29227b1546965696ebf589185",
+      "postalCode": "38687",
+      "locality": "Aponte",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "4a6e8a09f7f0d05a1e451bb2f4f684bcc0f3c915a1fd5b2d633114f3d0c82880",
+      "postalCode": "38687",
+      "locality": "Fonsalia",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "9ff25a5f3d05c395c7b84564b946da5cbbd01079012454ade7db2d6d9da13f34",
+      "postalCode": "38687",
+      "locality": "Aguadulce",
+      "quality": 1,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "c3faf0f65d4ec04072fc03bd56c0281dda33c00e1001800f86909b2d008a80be",
+      "postalCode": "38688",
+      "locality": "Lomo Del Balo (Guia I.)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "0976643723f10323a64203317167044a328194e1ab301a4535d6bad57932c86f",
+      "postalCode": "38688",
+      "locality": "Pozo, El (Guia De Isora)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "8d5148159c7be0a5a0bc2335e6ed7f51f027c4e8dbd691723c23d5617fe50c93",
+      "postalCode": "38688",
+      "locality": "La Gambueza",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "f5f2f40cab4a0276945334d50374597a6ff68ce30aa57ec26c25923dfda0307f",
+      "postalCode": "38688",
+      "locality": "Vera De Erques",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1c4d80bc913ab9cafd234cebfe82dcfd1f7500fff1f2300f2e4daf44bba36522",
+      "postalCode": "38690",
+      "locality": "Retamar, El (Santiago Del Teide)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    },
+    {
+      "sourceId": "1c0894553e4f3238fc233b1889b09a9fe64a66203c9e6ea5b70eb2d15f9b57da",
+      "postalCode": "38690",
+      "locality": "Manchas, Las (Santiago Del Teide)",
+      "quality": 3,
+      "reasons": [
+        "quality-not-4"
+      ]
+    }
+  ],
+  "rightsAndScope": {
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "credit": "GeoNames — https://www.geonames.org/",
+    "changes": [
+      "Filtered Spanish postal rows to a partial Tenerife set with quality 4 and known municipality.",
+      "Selected two raw gazetteer P/PPL rows and explicitly associated each to a postal locality and municipality.",
+      "Created stable IDs and TypeScript data; preserved names and source coordinates without averaging."
+    ],
+    "limitations": [
+      "Approximate locality points, not postal centroids or exact homes.",
+      "Source quality 4 means geonameid, not physically checked coordinate accuracy.",
+      "checkedOn records source/licence review; sourceModifiedOn remains 2015/2024 for the two gazetteer points.",
+      "Partial coverage; unavailable or ambiguous rows are withheld. No storefront, stock or price verification."
+    ],
+    "fullGazetteerArchivePublished": false,
+    "licenseHTMLPublished": false
+  },
+  "safetyLimits": {
+    "maxCompressedBytes": 8388608,
+    "maxUncompressedBytes": 8388608,
+    "exactZipMembers": [
+      "readme.txt",
+      "ES.txt"
+    ],
+    "maxCompressionRatio": 200,
+    "maxPostalRows": 50000,
+    "maxReviewedRows": 2,
+    "maxRuntimeRecords": 1000,
+    "maxTSVLineBytes": 10000,
+    "extractFiles": false,
+    "executeDownloadedCode": false
+  },
+  "generated": {
+    "runtimeFile": "src/data/postalReferences.ts",
+    "bytes": 104415,
+    "sha256": "5ade03024bd8bb442cb27b27148c2482e13398d1a8adc251d03b90258ff4995b"
+  }
+}
