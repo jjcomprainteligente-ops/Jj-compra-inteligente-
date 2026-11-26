@@ -10,6 +10,9 @@ import type { ShoppingList } from '../../domain/shopping';
 import { DEFAULT_SAVED_MEALS } from '../../domain/mealPlanLimits';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { Button, Card, Field, Notice, Section, Title, c, f, ui } from '../components/ui';
+import { StoreAreaControls } from '../components/StoreAreaControls';
+import { StoreEstablishmentDirectory } from '../components/StoreEstablishmentsSheet';
+import { useStoreArea } from '../StoreAreaProvider';
 
 export interface PlanningFormDraft { budget: string; meals: string; servings: string }
 
@@ -78,6 +81,7 @@ export function JourneyStorePicker({ selected, busy, onChange, onContinue, onBac
   hideActions?: boolean;
 }) {
   const { t, formatNumber } = useI18n();
+  const { area } = useStoreArea();
   const selection = PILOT_STORE_IDS.filter(id => selected.includes(id));
   const update = (next: readonly StoreId[]) => {
     if (!busy) onChange(validateJourneyStores(next));
@@ -86,6 +90,7 @@ export function JourneyStorePicker({ selected, busy, onChange, onContinue, onBac
     {!hideActions && <Title kicker={t('mealJourney.kicker')} title={t('mealJourney.storesTitle')}
       subtitle={t('mealJourney.storesHelp')} />}
     {hideActions && <Text style={[ui.note, styles.pickerHelp]}>{t('mealJourney.storesHelp')}</Text>}
+    <StoreAreaControls idPrefix="journey-area" />
     <View style={styles.actions}>
       <Button secondary label={t('mealJourney.selectAll')} testID="planning-stores-all"
         disabled={busy || selection.length === PILOT_STORE_IDS.length}
@@ -118,6 +123,7 @@ export function JourneyStorePicker({ selected, busy, onChange, onContinue, onBac
     </View>
     {selection.length === 0 && <Notice title={t('mealJourney.noneSelected')}
       text={t('mealJourney.noStoresHelp')} />}
+    {area && selection.length > 0 && <StoreEstablishmentDirectory formatIds={selection} />}
     {!hideActions && <View style={styles.actions}>
       {onContinue && <Button label={t(selection.length ? continueLabel : 'mealJourney.continueWithoutStores')}
         testID="planning-stores-continue" disabled={busy} onPress={() => { if (!busy) onContinue(); }} />}

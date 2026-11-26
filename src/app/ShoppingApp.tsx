@@ -39,6 +39,7 @@ import type { StoreId } from '../domain/stores';
 import type { PrivacyScope } from '../domain/dataPrivacy';
 import { usePriceObservations } from './usePriceObservations';
 import type { Screen, SecondaryProps } from './types';
+import { useStoreArea } from './StoreAreaProvider';
 
 type Editor = { kind: 'list'; id?: string } | { kind: 'budget'; id: string } |
   { kind: 'item'; listId: string; id?: string } | { kind: 'choose' } |
@@ -73,6 +74,7 @@ export default function ShoppingApp() {
 }
 
 function Workspace() {
+  const { clear: clearStoreArea } = useStoreArea();
   const { t, formatMoneyInput, formatQuantity, translateError, categoryLabel, unitLabel,
     preferenceError, busy: languageBusy, retryPreferences } = useI18n();
   const store = useShopping();
@@ -277,6 +279,7 @@ function Workspace() {
     ...actualSpending, onLanguage: () => navigate('language'),
     onRecipe: () => info('app.recipePreviewTitle', 'app.recipePreviewBody') };
   const reloadDeletedScope = async (scope: PrivacyScope) => {
+    clearStoreArea();
     setJourney(null); setPlanningFormDraft(null); budgetReturnsToMenus.current = false;
     if (scope === 'shopping') await store.reload();
     else if (scope === 'observations') await priceStore.reload();

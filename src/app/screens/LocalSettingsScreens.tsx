@@ -9,6 +9,7 @@ import { useI18n } from '../../i18n/LanguageProvider';
 import { Button, Card, Notice, Pill, Section, c, f, ui } from '../components/ui';
 import type { LocalPreferencesStore } from '../useLocalPreferences';
 import { StoreEstablishmentsSheet } from '../components/StoreEstablishmentsSheet';
+import { StoreAreaControls } from '../components/StoreAreaControls';
 
 function StorageFeedback({ store }: { store: LocalPreferencesStore }) {
   const { t, translateError } = useI18n();
@@ -42,6 +43,7 @@ export function StoresScreen({ store }: { store: LocalPreferencesStore; onBack()
     <Text accessibilityRole="header" style={styles.heading}>{t('localSettings.stores')}</Text>
     <Pill label={t('localSettings.zone')} />
     <Text style={[ui.body, styles.noteText]}>{t('storePilot.chooseHelp')}</Text>
+    <StoreAreaControls />
     <View style={styles.feedback}><StorageFeedback store={store} /></View>
     <View style={styles.storeActions}>
       <Button secondary label={t('storePilot.selectAll')} testID="stores-select-all" disabled={disabled || allSelected}

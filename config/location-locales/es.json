@@ -1,0 +1,5 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "JJ Compra Inteligente usa tu ubicación una vez para buscar establecimientos cercanos. Puedes usar CP o localidad. Solo se usa durante esta sesión, sin seguimiento en segundo plano."
+  }
+}

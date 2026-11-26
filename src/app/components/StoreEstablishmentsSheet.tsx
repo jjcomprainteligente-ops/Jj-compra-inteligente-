@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { findNearbyEstablishments } from '../../domain/storeGeography';
+import { getStoreAreaPoint, useStoreArea } from '../StoreAreaProvider';
 import { Linking, Platform, Text, View } from 'react-native';
 import { ArrowUpRight } from 'lucide-react-native';
 import { storeEstablishmentRegistry } from '../../data/storeEstablishments';
@@ -11,20 +13,38 @@ import { Button, Card, Notice, Pill, Sheet, ui } from './ui';
 const directory = validateStoreEstablishmentRegistry(storeEstablishmentRegistry) ? storeEstablishmentRegistry : null;
 
 export function StoreEstablishmentsSheet({ formatId, onClose }: { formatId: PilotStoreId | null; onClose(): void }) {
-  const { t, formatDate } = useI18n();
+  const { t } = useI18n();
+  return <Sheet visible={formatId !== null}
+    title={formatId ? t('storeLocations.title', { store: t(`localSettings.store.${formatId}`) }) : t('localSettings.stores')}
+    testID="store-locations-sheet" onClose={onClose}
+    footer={<Button secondary icon={null} label={t('common.close')} testID="store-locations-close" onPress={onClose} />}>
+    <StoreEstablishmentDirectory formatIds={formatId ? [formatId] : []} />
+  </Sheet>;
+}
+
+/** Can also be shown inline inside an existing menu sheet, without nesting modals. */
+export function StoreEstablishmentDirectory({ formatIds }: { formatIds: readonly PilotStoreId[] }) {
+  const { t, formatDate, formatNumber } = useI18n();
+  const { area } = useStoreArea();
+  const [showOutside, setShowOutside] = useState(false);
+  const formatKey = formatIds.join('|');
+  useEffect(() => { setShowOutside(false); }, [area, formatKey]);
   const [failedSource, setFailedSource] = useState<string | null>(null);
   const mounted = useRef(true);
   const openRequest = useRef(0);
   useEffect(() => {
     mounted.current = true;
-    return () => { mounted.current = false; };
+    return () => { mounted.current = false; openRequest.current++; };
   }, []);
-  const records = directory && formatId ? establishmentsForFormat(directory, formatId) : [];
-  const close = () => {
-    openRequest.current++;
-    setFailedSource(null);
-    onClose();
-  };
+  const records = directory ? formatIds.flatMap(id => establishmentsForFormat(directory, id)) : [];
+  const point = area ? getStoreAreaPoint(area) : null;
+  const nearby = area && point && directory ? findNearbyEstablishments(directory, point, area.radiusKm, formatIds) : null;
+  const scoped = nearby?.status === 'ok' ? nearby : null;
+  const entries: { record: StoreEstablishment; distanceKm?: number }[] = scoped
+    ? [...scoped.within.map(item => ({ record: item.establishment, distanceKm: item.distanceKm })),
+      ...(showOutside ? scoped.outside.map(item => ({ record: item.establishment, distanceKm: item.distanceKm })) : []),
+      ...scoped.pending.map(record => ({ record }))]
+    : records.map(record => ({ record }));
   const openSource = async (record: StoreEstablishment) => {
     const request = ++openRequest.current;
     setFailedSource(null);
@@ -35,22 +55,30 @@ export function StoreEstablishmentsSheet({ formatId, onClose }: { formatId: Pilo
       if (mounted.current && request === openRequest.current) setFailedSource(record.id);
     }
   };
-  return <Sheet visible={formatId !== null}
-    title={formatId ? t('storeLocations.title', { store: t(`localSettings.store.${formatId}`) }) : t('localSettings.stores')}
-    testID="store-locations-sheet" onClose={close}
-    footer={<Button secondary icon={null} label={t('common.close')} testID="store-locations-close" onPress={close} />}>
-    <View testID="store-locations-content" style={{ gap: 16 }}>
+  return     <View testID="store-locations-content" style={{ gap: 16 }}>
       {!directory ? <View testID="store-locations-unavailable">
         <Notice kind="warning" title={t('storeLocations.unavailableTitle')} text={t('storeLocations.unavailableText')} />
       </View> : <>
         <Notice title={t('storeLocations.partialTitle')} text={t('storeLocations.partialHelp')} />
-        <Text style={ui.note}>{t('storeLocations.noDistance')}</Text>
+        <Text style={ui.note}>{t(area ? 'storeGeo.straightLine' : 'storeLocations.noDistance')}</Text>
+        {area && !scoped && <Notice kind="warning" title={t('storeGeo.errorTitle')} text={t('storeGeo.lookup.unavailable')} />}
+        {scoped && <>
+          <Text accessibilityRole="header" testID="store-nearby-title" style={ui.strong}>{t('storeGeo.withinTitle', { radius: formatNumber(area!.radiusKm) })}</Text>
+          {scoped.within.length === 0 && <View testID="store-nearby-empty"><Notice title={t('storeGeo.noNearbyTitle')} text={t('storeGeo.noNearbyText')} /></View>}
+          {scoped.outside.length > 0 && <Button secondary testID="store-nearby-outside" label={t(showOutside ? 'storeGeo.hideOutside' : 'storeGeo.showOutside')}
+            onPress={() => setShowOutside(value => !value)} />}
+        </>}
         {records.length === 0 && <View testID="store-locations-empty">
           <Notice title={t('storeLocations.emptyTitle')} text={t('storeLocations.emptyText')} />
         </View>}
-        {records.map(record => <View key={record.id} testID={`establishment-${record.id}`}>
+        {entries.map(({ record, distanceKm }) => <View key={record.id} testID={`establishment-${record.id}`}>
+          {scoped && record.location.status === 'pending' && <Text accessibilityRole="header" style={ui.strong}>{t('storeGeo.pendingTitle')}</Text>}
+          {scoped && distanceKm !== undefined && distanceKm > area!.radiusKm && <Text style={ui.note}>{t('storeGeo.outsideTitle')}</Text>}
           <Card style={{ gap: 12 }}>
             <Text accessibilityRole="header" style={ui.strong}>{record.name}</Text>
+            {distanceKm !== undefined && <Text testID={`establishment-distance-${record.id}`} style={ui.strong}>
+              {t('storeGeo.distance', { distance: formatNumber(distanceKm, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) })}
+            </Text>}
             <Text style={ui.note}>{t(`storeLocations.${record.channel}`)}</Text>
             <View style={{ gap: 4 }}>
               <Text style={ui.body}>{record.address.street}</Text>
@@ -82,6 +110,5 @@ export function StoreEstablishmentsSheet({ formatId, onClose }: { formatId: Pilo
           </Card>
         </View>)}
       </>}
-    </View>
-  </Sheet>;
+    </View>;
 }
