@@ -15,7 +15,7 @@ import { Button, Card, Field, IconButton, Notice, Pill, Section, Sheet, Title, c
 
 interface Props {
   onBack: () => void; onLegacy: () => void; store: ReturnType<typeof usePriceObservations>;
-  basketList?: ShoppingList; verifyBasketFresh: () => Promise<boolean>;
+  basketList?: ShoppingList; basketSourceSignature: string; verifyBasketFresh: () => Promise<boolean>;
 }
 type Panel = { kind: 'form'; id?: string } | { kind: 'reference' } | { kind: 'delete'; observation: PriceObservation };
 const cleanQuery = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().toLocaleLowerCase('es');
@@ -42,7 +42,7 @@ function observationInput(observation: PriceObservation, quantityLabel: (milli: 
 }
 
 /** Local observations and a separate, ephemeral, read-only basket review. */
-export function PriceWorkspace({ onBack, onLegacy, store, basketList, verifyBasketFresh }: Props) {
+export function PriceWorkspace({ onBack, onLegacy, store, basketList, basketSourceSignature, verifyBasketFresh }: Props) {
   const { t, formatMoney, formatMoneyInput, formatQuantity, formatNumber, translateError, unitLabel } = useI18n();
   const localMessage = (value: string) => value.startsWith('prices.') ? t(value) : translateError(value);
   const [today, setToday] = useState(() => todayISO());
@@ -133,7 +133,7 @@ export function PriceWorkspace({ onBack, onLegacy, store, basketList, verifyBask
   const panelError = error || (attempted ? store.saveError : '');
 
   if (basketOpen) return <ManualBasketReview list={basketList} observations={store.observations}
-    verifyFresh={verifyBasketFresh} onBack={() => setBasketOpen(false)} />;
+    sourceSignature={basketSourceSignature} verifyFresh={verifyBasketFresh} onBack={() => setBasketOpen(false)} />;
 
   return <View style={ui.page}>
     <Pressable accessibilityRole="button" accessibilityLabel={t('prices.back')} disabled={store.busy} onPress={onBack} style={styles.back}>
