@@ -765,3 +765,8 @@ Fuente `ee03a4b`, PR #35 sobre #34; CI push 45965905190/PR 45965969192 correcta.
 ### 27/11/2026 · B08.2 · comprobación local y auditoría de pareja
 
 B08.2 integra el motor B08.1 en una revisión manual efímera dentro de Mis precios; 2.574 unitarias, 178 Python y 52 casos locales correctos. Exports web/iOS/Android y conservación de siete documentos/308 recursos comprobados. Publicación GitHub/CI y staging pendiente de cierre; auditoría de pareja local completada, cierre HTTPS después. No se inicia otro bloque.
+
+
+### 27/11/2026 · B08.2 · publicación comprobada y auditoría conjunta
+
+Cierre de pareja B08.1/B08.2: **B08.2 publicado y auditado · 27/11/2026:** cesta manual disponible en Ahorro → Mis precios → Revisar cesta manual. Envases enteros, consumo/sobrante, cobertura y costes desconocidos; precios siempre no verificados. [PR #36](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/36), fuente `0af2637`, CI correcta. 2.574 unitarias, 178 Python y 52 casos locales; staging protegida: cuatro idiomas/319 recursos HTTPS y ocho casos nuevos WebKit correctos. Conserva siete documentos, 428 inputs anteriores y 308 recursos. Acceso temporal por conversación hasta **2026-11-28 13:59:52 UTC**. B07, ranking/reparto y aceptación estética/física siguen pendientes. No se fusiona main.

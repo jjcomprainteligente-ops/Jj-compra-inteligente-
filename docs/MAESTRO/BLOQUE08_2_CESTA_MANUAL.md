@@ -1,7 +1,7 @@
 # B08.2 · Revisión manual de cesta en una tienda
 
-**Comprobado localmente · 27/11/2026.** Continúa el motor B08.1 sobre la aplicación existente.
-GitHub/CI de la fuente y staging siguen pendientes en este checkpoint; la aceptación visual es humana.
+**Publicado, comprobado y auditado · 27/11/2026.** Cierra la pareja B08.1/B08.2 en el alcance manual declarado.
+La aprobación estética, las pruebas físicas y los precios comerciales conservan sus propios gates.
 
 ## Alcance y recorrido
 
@@ -51,11 +51,11 @@ Esta comprobación local no promete una transacción distribuida ni sincronizaci
 El día de referencia utiliza Atlantic/Canary. Etiquetas, accesibilidad, errores y motivos del
 motor se centralizan en español, inglés, alemán y francés, con el respaldo español existente.
 
-## Cierre pendiente
+## Criterios de cierre
 
 Auditoría conjunta B08.1/B08.2: tipos, unitarias, reproducción de referencias/fotos, seguridad,
 preservación de los siete documentos, flujos de navegador en cuatro idiomas y tamaños de iPhone,
-exportaciones y staging protegida. Se registrarán resultados reales y límites al cerrar.
+exportaciones y staging protegida. Los resultados reales y sus límites se registran en los apartados siguientes.
 Las pruebas físicas, distribución nativa y aprobación visual humana conservan su propio gate.
 
 ## Auditoría conjunta local B08.1/B08.2
@@ -70,4 +70,14 @@ Las pruebas físicas, distribución nativa y aprobación visual humana conservan
 - 428 de los 431 inputs B08.1 permanecen idénticos; tres puntos de integración y cuatro módulos nuevos (435 inputs). Los 308 recursos gráficos mantienen sus bytes y el logo oficial su SHA-256.
 - Revisión independiente del motor, adaptador, frescura y UI sin incidencia reproducible pendiente en el alcance manual declarado.
 
-Evidencia reproducible: [informe local](../../design/manual-basket/reports/local-preparation.json). Los contadores locales no se atribuyen a una comprobación HTTPS todavía pendiente.
+Evidencia reproducible: [informe local](../../design/manual-basket/reports/local-preparation.json). Los contadores locales se distinguen de las comprobaciones HTTPS del cierre siguiente.
+
+## Publicación comprobada y cierre de pareja
+
+Fuente `0af26370f9c576b301ee5abcf91520b2b435bd4f`, árbol `a489f5b690d87d73448c712923bf28639173187a`; PR #36 sobre #35, ambas sin fusionar. CI de push y PR correcta. Solo se publica el paquete web standalone: 313 archivos / 22.884.871 bytes, tres blobs nuevos y 310 reutilizados por SHA1 y tamaño. El código de aplicación queda congelado en los mismos 435 inputs comprobados.
+
+Staging `dpl_3EkPnuWqpSmTGXzH4qiHQrky5Dee` protegida y READY: comprobación HTTPS de cuatro idiomas/319 recursos y ocho casos nuevos de cesta en WebKit 375/430 correctos. Los ocho casos alojados prueban el recorrido completo sin conexión después de cargar la app; los errores, lectura fresca, parcialidad y cancelación tienen además su matriz local de 36 casos. Producción y SSO conservados. Acceso temporal por conversación hasta 2026-11-28 13:59:52 UTC; no se guardan URL de acceso ni credenciales en Git.
+
+Gitleaks 8.30.1 sobre 2.115 archivos / 265.559.252 bytes: exit original 1 por 17 namespaces de almacenamiento ya revisados como falsos positivos, mismas líneas por SHA-256; cero secretos confirmados o hallazgos pendientes. Sin ampliar allowlists. No se inspeccionan credenciales de runtime, ignorados, historial o interiores de ZIP. El cierre documental recibe comprobación adicional antes de commit.
+
+[Recibo público de verificación](../../design/manual-basket/reports/verification.json). No hay nuevo bloque iniciado, cambios en producción, feeds, DB, pagos, ranking ni compra repartida.

@@ -771,3 +771,8 @@ Fuente `ee03a4b`, PR #35 sobre #34; CI push 45965905190/PR 45965969192 correcta.
 ### 27/11/2026 · B08.2 · comprobación local y auditoría de pareja
 
 La tienda textual de una observación no acredita sucursal/CP/canal/promoción. B08.2 exige confirmación explícita, productos distintos y cero explícito para gastos/mínimos; demo/origen desconocido quedan fuera. Se bloquean nombres repetidos y más de 200 pendientes sin truncar ni escribir datos. Relectura de ambos documentos y guards de generación invalidan revisiones; no prometen transacción distribuida. B07, IGIC/stock/derechos, ranking/reparto, UI búlgara, prueba física y aceptación humana siguen pendientes.
+
+
+### 27/11/2026 · B08.2 · publicación comprobada y auditoría conjunta
+
+Staging y fuente verificadas conservan los siete documentos y los 435 inputs congelados. No se confunde prueba WebKit con iPhone físico ni precio manual con PVP verificado. La frescura compara snapshots locales y no promete atomicidad distribuida. Se mantiene main y producción; B07 y el resto de gates siguen pendientes.
