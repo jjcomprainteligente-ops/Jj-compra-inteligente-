@@ -3,6 +3,7 @@ import { commonMessages } from './catalogs/common';
 import { appMessages } from './catalogs/app';
 import { menusMessages } from './catalogs/menus';
 import { pricesMessages } from './catalogs/prices';
+import { manualBasketMessages } from './catalogs/manualBasket';
 import { recipeMessages } from './catalogs/recipes';
 import { v3RecipeMessages } from './catalogs/recipesV3';
 import { catalogV83UiMessages } from './catalogs/catalogV83Ui';
@@ -37,5 +38,5 @@ export const resources = mergeMessageCatalogs(
   storePilotMessages, storeLocationsMessages, storeGeographyMessages, listSharingMessages,
   menuFiltersMessages, privacyMessages,
   moneyMessages, moneyViewsMessages, entryMessages, localSettingsMessages, flowPagesMessages, statesMessages, shellMessages,
-  commonMessages, appMessages, menusMessages, pricesMessages, recipeMessages, legacyMessages, errorMessages, secondaryMessages, languageMessages, visualMessages, visualSecondaryMessages, visualMenusMessages,
+  commonMessages, appMessages, menusMessages, pricesMessages, manualBasketMessages, recipeMessages, legacyMessages, errorMessages, secondaryMessages, languageMessages, visualMessages, visualSecondaryMessages, visualMenusMessages,
 );

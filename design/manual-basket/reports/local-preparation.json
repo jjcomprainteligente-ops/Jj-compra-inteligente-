@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-27T10:10:23.436246+00:00",
+  "phase": "B082_LOCAL_VERIFIED_GITHUB_AND_STAGING_PENDING",
+  "base": "1ee96c42a4e8d4da0485672ac5def9817a81198c",
+  "scope": "Ephemeral manual basket for one store; no commercial price source, ranking or split shopping",
+  "unitTests": 2574,
+  "unitFiles": 47,
+  "newAdapterTests": 69,
+  "newFreshnessTests": 21,
+  "B081EngineAndBoundaryTestsRerun": 126,
+  "pythonTests": 178,
+  "reproductionsPassed": 6,
+  "typescript": "passed",
+  "localBrowserCases": {
+    "newFlow": 36,
+    "priceRegression": 8,
+    "journeyRegression": 8,
+    "total": 52,
+    "languages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "newFlowProjects": [
+      "Chromium desktop",
+      "WebKit 375",
+      "WebKit 430"
+    ]
+  },
+  "exports": [
+    "web",
+    "ios",
+    "android"
+  ],
+  "npmAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "expoCompatibility": "passed online",
+  "preservation": {
+    "oldInputs": 431,
+    "unchanged": 428,
+    "changed": [
+      "src/app/ShoppingApp.tsx",
+      "src/app/screens/PriceWorkspace.tsx",
+      "src/i18n/resources.ts"
+    ],
+    "new": [
+      "src/domain/manualBasket.ts",
+      "src/app/manualBasketFreshness.ts",
+      "src/app/screens/ManualBasketReview.tsx",
+      "src/i18n/catalogs/manualBasket.ts"
+    ],
+    "totalInputs": 435
+  },
+  "assets": {
+    "assetFiles": 308,
+    "allAssetBytesPreserved": true,
+    "officialLogoSHA256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596",
+    "sourceCatalogAndReferencesChanged": false,
+    "webBundleChanged": true,
+    "metadataOrDependenciesChanged": false
+  },
+  "sevenDocumentsUnchangedInBrowser": true,
+  "newFlowStorageWrites": 0,
+  "newFlowExternalRequests": 0,
+  "physicalDeviceValidated": false,
+  "nativeSignedDistribution": false,
+  "sourceCI": "pending",
+  "publication": "pending",
+  "limits": [
+    "Manual NOT_VERIFIED prices only",
+    "No automatic product/store equivalence",
+    "At most 200 pending lines; repeated names require explicit list review",
+    "Single presentation per product; no ranking or split basket",
+    "B07 commercial rights/current-price data pending",
+    "Human visual and physical-device acceptance pending"
+  ],
+  "evidenceHashes": {
+    "unit-first.log": "c568d6b8a924a081bcec513f6a2e0ee47ae87244bc71b1089c3ab5f09414b67c",
+    "types-final.log": "d6a82592403a49db17cd11d76d24a4cba27ed0ce9074afbc93eff199eaa533cd",
+    "reproductions.json": "fd478d3711b8aef8073123b46cee857d5b6b9905e796b20a17f10454b409e68c",
+    "exports.json": "91b5e071994580de94caaee7ab1de403f38aba2e1526e4f9110a1849d5ce64bf",
+    "browser-local/results.json": "bf2a983c3c4765848d009d16e1210f1543d183e0204bdb4ddc25c55b6d8c374d",
+    "regression/results.json": "03187054f7ee385fb106ddeb6dc18659478ff2ce4e9d479e87d68eafb55027a4",
+    "journey-regression/results.json": "72d7c5ec93f74dd21b3414291d4cd94032b7130b79455664d61fc1461f8bd2bb",
+    "app-inputs.json": "61baba4dffcdb75d2045e7708650dacadef5d908c4ad67d3ff42afc22fe29b3a"
+  }
+}
