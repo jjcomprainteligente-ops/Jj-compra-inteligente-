@@ -766,3 +766,13 @@ Tras B06.2 se prepara el cálculo puro permitido por el plan maestro, conservand
 ## 27/11/2026 · B08.1 preparado y publicación de control comprobada
 
 Fuente `ee03a4b`, PR #35 sobre #34; CI push 45965905190/PR 45965969192 correcta. 2.484 unitarias con 126 nuevas; tipos y revisión independiente correctos. Web idéntico a B06.2: JS/HTML/308 recursos y 428 inputs antiguos conservados; 431 incluyendo módulos nuevos no conectados a UI. Staging dpl_Eb9TR4aV6Jki5hxiUf2cZYjrdpPb READY/protegida: cuatro idiomas/319 recursos HTTPS correctos. No nuevas matrices de UI/nativo ni aprobación física inferida. Npm audit 0; Gitleaks 2.103 archivos, 17 falsos positivos anteriores, 0 confirmados/sin clasificar, salida 1 conservada y sin excepciones. Acceso fuera de Git hasta 28/11/2026 07:32:27 UTC. No se conectan feeds/precios/UI/storage/backend ni se fusionan main/PR anteriores; una presentación por línea, sin optimización mixta o ranking. B07, integración futura y aceptación humana pendientes; auditoría completa al terminar la pareja B08.1/B08.2; B08.2 no empieza automáticamente. [Informe](MAESTRO/BLOQUE08_1_MOTOR_CESTA.md) · [evidencia](../design/basket-engine/reports/verification.json).
+
+
+### 27/11/2026 · B08.2 · comprobación local y auditoría de pareja
+
+La tienda textual de una observación no acredita sucursal/CP/canal/promoción. B08.2 exige confirmación explícita, productos distintos y cero explícito para gastos/mínimos; demo/origen desconocido quedan fuera. Se bloquean nombres repetidos y más de 200 pendientes sin truncar ni escribir datos. Relectura de ambos documentos y guards de generación invalidan revisiones; no prometen transacción distribuida. B07, IGIC/stock/derechos, ranking/reparto, UI búlgara, prueba física y aceptación humana siguen pendientes.
+
+
+### 27/11/2026 · B08.2 · publicación comprobada y auditoría conjunta
+
+Staging y fuente verificadas conservan los siete documentos y los 435 inputs congelados. No se confunde prueba WebKit con iPhone físico ni precio manual con PVP verificado. La frescura compara snapshots locales y no promete atomicidad distribuida. Se mantiene main y producción; B07 y el resto de gates siguen pendientes.

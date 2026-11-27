@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-27T15:01:42.664171+00:00",
+  "phase": "B082_MANUAL_BASKET_PUBLISHED_PAIR_AUDIT_CLOSED_WITH_LIMITS",
+  "source": {
+    "commit": "0af26370f9c576b301ee5abcf91520b2b435bd4f",
+    "tree": "a489f5b690d87d73448c712923bf28639173187a",
+    "branch": "codex/b08-2-revision-cesta-2026-11-27",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-",
+    "recordedAt": "2026-11-27T14:55:07.483049+00:00"
+  },
+  "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/36",
+  "basePR35Merged": false,
+  "sourceCI": [
+    {
+      "id": 46020313731,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "0af26370f9c576b301ee5abcf91520b2b435bd4f"
+    },
+    {
+      "id": 46020247828,
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "0af26370f9c576b301ee5abcf91520b2b435bd4f"
+    }
+  ],
+  "localEvidence": {
+    "path": "local-preparation.json",
+    "sha256": "e1a83ab57d942b7c54b9664f9db2530f66201077b87c8f61645e1f239e601922",
+    "unitTests": 2574,
+    "pythonTests": 178,
+    "browserCases": 52
+  },
+  "hosted": {
+    "deployment": "dpl_3EkPnuWqpSmTGXzH4qiHQrky5Dee",
+    "origin": "https://jj-compra-inteligente-jtze0uzea-cmj2hwhc6b-1051.vercel.app",
+    "target": "staging",
+    "protected": true,
+    "assetsVerificationLanguages": [
+      "es",
+      "en",
+      "de",
+      "fr"
+    ],
+    "assetResourceChecks": 319,
+    "newBasketWebKitCases": 8,
+    "shareExpiryUTC": "2026-11-28 13:59:52 UTC",
+    "protectedAccessValuesPublishedInGit": false
+  },
+  "secretScan": {
+    "snapshotFiles": 2115,
+    "snapshotBytes": 265559252,
+    "toolVersion": "8.30.1",
+    "originalExitCode": 1,
+    "rawFindings": 17,
+    "falsePositives": 17,
+    "unresolvedFindings": 0,
+    "confirmedSecrets": 0,
+    "historyScanned": false,
+    "archivesTraversed": false,
+    "ignoredFilesOrRuntimeCredentialsInspected": false,
+    "allowlistChanged": false,
+    "redactionPercent": 100,
+    "recordedAt": "2026-11-27T10:10:28.900931+00:00"
+  },
+  "preservation": {
+    "applicationInputs": 435,
+    "unchangedPreviousInputs": 428,
+    "graphicalAssetsByteIdentical": 308,
+    "sevenDurableDocumentsPreserved": true,
+    "newStorageDocuments": 0,
+    "productionAliasPreserved": true,
+    "officialLogoSHA256": "ab7813942787048ff9a37ef86bce0b45bcf6e4a739e7427e679028e008c57596"
+  },
+  "independentReview": "No reproducible unresolved finding in declared manual scope; undefined-list guard and complete accessible statements corrected",
+  "nativeExports": [
+    "ios",
+    "android"
+  ],
+  "physicalDeviceValidated": false,
+  "signedNativeDistribution": false,
+  "pricing": "Manual NOT_VERIFIED only; no official feed, stock certification, automatic product/store equivalence, ranking or split basket",
+  "limits": [
+    "Manual NOT_VERIFIED prices only",
+    "No automatic product/store equivalence",
+    "At most 200 pending lines; repeated names require explicit list review",
+    "Single presentation per product; no ranking or split basket",
+    "B07 commercial rights/current-price data pending",
+    "Human visual and physical-device acceptance pending"
+  ],
+  "mainMerged": false,
+  "nextBlockStarted": false
+}

@@ -760,3 +760,13 @@ Tras B06.2 se prepara el cálculo puro permitido por el plan maestro, conservand
 ## 27/11/2026 · B08.1 preparado y publicación de control comprobada
 
 Fuente `ee03a4b`, PR #35 sobre #34; CI push 45965905190/PR 45965969192 correcta. 2.484 unitarias con 126 nuevas; tipos y revisión independiente correctos. Web idéntico a B06.2: JS/HTML/308 recursos y 428 inputs antiguos conservados; 431 incluyendo módulos nuevos no conectados a UI. Staging dpl_Eb9TR4aV6Jki5hxiUf2cZYjrdpPb READY/protegida: cuatro idiomas/319 recursos HTTPS correctos. No nuevas matrices de UI/nativo ni aprobación física inferida. Npm audit 0; Gitleaks 2.103 archivos, 17 falsos positivos anteriores, 0 confirmados/sin clasificar, salida 1 conservada y sin excepciones. Acceso fuera de Git hasta 28/11/2026 07:32:27 UTC. No se conectan feeds/precios/UI/storage/backend ni se fusionan main/PR anteriores; una presentación por línea, sin optimización mixta o ranking. B07, integración futura y aceptación humana pendientes; auditoría completa al terminar la pareja B08.1/B08.2; B08.2 no empieza automáticamente. [Informe](MAESTRO/BLOQUE08_1_MOTOR_CESTA.md) · [evidencia](../design/basket-engine/reports/verification.json).
+
+
+### 27/11/2026 · B08.2 · comprobación local y auditoría de pareja
+
+B08.2 integra el motor B08.1 en una revisión manual efímera dentro de Mis precios; 2.574 unitarias, 178 Python y 52 casos locales correctos. Exports web/iOS/Android y conservación de siete documentos/308 recursos comprobados. Publicación GitHub/CI y staging pendiente de cierre; auditoría de pareja local completada, cierre HTTPS después. No se inicia otro bloque.
+
+
+### 27/11/2026 · B08.2 · publicación comprobada y auditoría conjunta
+
+Cierre de pareja B08.1/B08.2: **B08.2 publicado y auditado · 27/11/2026:** cesta manual disponible en Ahorro → Mis precios → Revisar cesta manual. Envases enteros, consumo/sobrante, cobertura y costes desconocidos; precios siempre no verificados. [PR #36](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/36), fuente `0af2637`, CI correcta. 2.574 unitarias, 178 Python y 52 casos locales; staging protegida: cuatro idiomas/319 recursos HTTPS y ocho casos nuevos WebKit correctos. Conserva siete documentos, 428 inputs anteriores y 308 recursos. Acceso temporal por conversación hasta **2026-11-28 13:59:52 UTC**. B07, ranking/reparto y aceptación estética/física siguen pendientes. No se fusiona main.
