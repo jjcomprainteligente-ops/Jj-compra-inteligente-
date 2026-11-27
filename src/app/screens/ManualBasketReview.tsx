@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { AppState, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
 import { ArrowLeft, Check, ChevronDown } from 'lucide-react-native';
 import { quoteSingleStoreBasket } from '../../domain/basketQuote';
-import { MAX_BASKET_LINES, type BasketQuote, type BasketTarget } from '../../domain/basketQuoteContracts';
+import { MAX_BASKET_LINES, type BasketTarget } from '../../domain/basketQuoteContracts';
 import { parseAmount } from '../../domain/comparisons';
 import { expenseToday } from '../../domain/expenses';
 import { buildManualBasketRequest, type ManualBasketBinding } from '../../domain/manualBasket';
@@ -11,10 +11,12 @@ import type { ShoppingList } from '../../domain/shopping';
 import { PILOT_STORE_IDS, type PilotStoreId } from '../../domain/stores';
 import { useI18n } from '../../i18n/LanguageProvider';
 import { Button, Card, Field, Notice, Pill, Section, Title, c, f, ui } from '../components/ui';
+import { ManualBasketComparison, RetainedBasketSummary, snapshotManualBasketReview, type ManualBasketSnapshot } from './ManualBasketComparison';
 
 interface Props {
   list: ShoppingList | undefined;
   observations: PriceObservation[];
+  sourceSignature: string;
   onBack: () => void;
   verifyFresh: () => Promise<boolean>;
 }
@@ -23,7 +25,7 @@ const cleanQuery = (value: string) => value.normalize('NFD').replace(/[\u0300-\u
 const PAGE_SIZE = 20;
 
 /** Ephemeral, read-only review. The caller supplies a fresh local-storage check. */
-export function ManualBasketReview({ list, observations, onBack, verifyFresh }: Props) {
+export function ManualBasketReview({ list, observations, sourceSignature, onBack, verifyFresh }: Props) {
   const { t, formatQuantity, formatMoney, formatDate, formatNumber, unitLabel } = useI18n();
   const [storeName, setStoreName] = useState('');
   const [formatId, setFormatId] = useState<PilotStoreId | null>(null);
@@ -37,7 +39,8 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
   const [query, setQuery] = useState('');
   const [page, setPage] = useState(0);
   const [asOf, setAsOf] = useState(expenseToday);
-  const [result, setResult] = useState<{ quote: BasketQuote; signature: string } | null>(null);
+  const [result, setResult] = useState<ManualBasketSnapshot | null>(null);
+  const [retained, setRetained] = useState<ManualBasketSnapshot | null>(null);
   const [error, setError] = useState('');
   const [invalidated, setInvalidated] = useState(false);
   const [checking, setChecking] = useState(false);
@@ -46,7 +49,7 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
   const calculating = useRef(false);
   const day = useRef(asOf);
   // Include every field, including checked products and source metadata.
-  const signature = JSON.stringify([list, observations]);
+  const signature = useMemo(() => JSON.stringify([sourceSignature, list, observations]), [sourceSignature, list, observations]);
   const latestSignature = useRef(signature);
   latestSignature.current = signature;
   const previousSignature = useRef(signature);
@@ -66,8 +69,9 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
     setDistinct(false);
   }, [clearResult]);
   const invalidate = useCallback(() => {
-    clearConfirmations(); setInvalidated(true);
+    clearConfirmations(); setRetained(null); setInvalidated(true);
   }, [clearConfirmations]);
+  const freshnessFailed = useCallback(() => { invalidate(); setError('basket.freshnessFailed'); }, [invalidate]);
 
   useEffect(() => {
     mounted.current = true;
@@ -104,7 +108,13 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
     setBindings(previous => [...previous.filter(binding => binding.itemId !== itemId),
       ...(observationId === null ? [] : [{ itemId, observationId, confirmed }])]);
   };
-  const back = () => { ++generation.current; calculating.current = false; onBack(); };
+  const back = () => { clearResult(); setRetained(null); setBindings([]); setDistinct(false); onBack(); };
+  const retain = () => {
+    if (!result || result.sourceSignature !== signature || result.request.asOf !== expenseToday()) return;
+    setRetained(result); clearResult(); setBindings([]); setDistinct(false);
+    setStoreName(''); setFormatId(null); setChannel(null); setPostalCode(''); setFees(''); setMinimum('');
+    setPicker(null); setQuery(''); setPage(0);
+  };
   const calculate = async () => {
     if (calculating.current) return;
     clearResult();
@@ -126,20 +136,29 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
     try {
       const fresh = await verifyFresh();
       if (!mounted.current || revision !== generation.current || signature !== latestSignature.current) return;
-      if (!fresh) { clearConfirmations(); setError('basket.freshnessFailed'); return; }
+      if (!fresh) { freshnessFailed(); return; }
       if (expenseToday() !== today) { day.current = expenseToday(); setAsOf(day.current); invalidate(); return; }
       const quote = quoteSingleStoreBasket(prepared.request);
-      if (quote.status === 'calculated') { setResult({ quote, signature }); setInvalidated(false); }
+      if (quote.status === 'calculated') {
+        setResult(snapshotManualBasketReview({ quote, request: prepared.request, sourceSignature: signature, reviewRevision: revision,
+          storeName, bindings, observations, items }));
+        setInvalidated(false);
+      }
       else setError(quote.status === 'numeric-limit' ? 'basket.error.numericLimit' : 'basket.error.engineInput');
     } catch {
       if (mounted.current && revision === generation.current) {
-        clearConfirmations(); setError('basket.freshnessFailed');
+        freshnessFailed();
       }
     } finally {
       if (mounted.current && revision === generation.current) { calculating.current = false; setChecking(false); }
     }
   };
-  const quote = result?.signature === signature && result.quote.asOf === asOf ? result.quote : null;
+  // Render guards hide stale reviews before effects run, including the midnight interval.
+  const today = expenseToday();
+  const currentResult = result?.sourceSignature === signature && result.request.asOf === today && result.request.asOf === asOf ? result : null;
+  const currentRetained = retained?.sourceSignature === signature && retained.request.asOf === today && retained.request.asOf === asOf ? retained : null;
+  const quote = currentResult?.quote ?? null;
+  const retainedObservationIds = new Set(currentRetained?.bindings.map(binding => binding.observationId) ?? []);
 
   return <View style={ui.page}>
     <Pressable testID="basket-back" accessibilityRole="button" accessibilityLabel={t('basket.back')} onPress={back} style={styles.back}>
@@ -149,7 +168,9 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
     <Notice title={t('basket.introTitle')} text={t('basket.introBody')} />
     {invalidated && <View testID="basket-stale"><Notice kind="warning" title={t('basket.invalidatedTitle')} text={t('basket.invalidatedBody')} /></View>}
     {list && <Card><Text style={ui.strong}>{t('basket.listLabel', { name: list.name })}</Text><Text style={ui.note}>{t('basket.itemsHint')}</Text></Card>}
+    {currentRetained && <RetainedBasketSummary review={currentRetained} onDiscard={() => { setRetained(null); clearResult(); }} />}
     {items.length > MAX_BASKET_LINES ? <View style={styles.empty}><Notice kind="error" title={t('basket.errorTitle')} text={t('basket.error.lineLimit')} /></View> : !items.length ? <View style={styles.empty}><Notice title={t('basket.emptyTitle')} text={t('basket.emptyBody')} /></View> : <>
+      {currentRetained && <Section title={t('comp.newReviewTitle')} />}
       <Section title={t('basket.targetTitle')} />
       <Field testID="basket-store" label={t('basket.storeLabel')} hint={t('basket.storeHint')} value={storeName} maxLength={120} editable={!checking}
         onChangeText={value => changeTarget(() => setStoreName(value))} />
@@ -198,9 +219,13 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
                   t('basket.observationPrice', { price: option.priceCents === null ? t('basket.unknownPrice') : formatMoney(option.priceCents) }),
                   t('basket.observationDate', { date: formatDate(option.observedOn) }),
                   t('basket.observationSource', { reference: option.sourceReference }), option.url,
-                ].filter(Boolean).join('. ')} disabled={checking}
-                onPress={() => { changeBinding(item.id, option.id); setPicker(null); }} style={styles.option}>
+                  retainedObservationIds.has(option.id) ? t('comp.reusedObservationA11y', { product: option.product }) : '',
+                ].filter(Boolean).join('. ')} disabled={checking || retainedObservationIds.has(option.id)}
+                accessibilityState={{ disabled: checking || retainedObservationIds.has(option.id) }}
+                onPress={() => { if (retainedObservationIds.has(option.id)) return; changeBinding(item.id, option.id); setPicker(null); }}
+                style={[styles.option, retainedObservationIds.has(option.id) && styles.disabled]}>
                 <ObservationDetails observation={option} />
+                {retainedObservationIds.has(option.id) && <Text style={ui.note}>{t('comp.reusedObservation')}</Text>}
               </Pressable>)}
               {page > 0 && <Button testID="basket-previous-observations" label={t('basket.previous')} secondary disabled={checking} onPress={() => setPage(value => value - 1)} />}
               {(page + 1) * PAGE_SIZE < options.length && <Button testID="basket-more-observations" label={t('basket.more')} secondary disabled={checking} onPress={() => setPage(value => value + 1)} />}
@@ -244,7 +269,11 @@ export function ManualBasketReview({ list, observations, onBack, verifyFresh }: 
           })}
         </>}
         <Notice title={t('basket.manualBadge')} text={t('basket.rightsNote')} />
+        {!currentRetained && <Button testID="basket-retain" label={t('comp.retain')} secondary onPress={retain} />}
       </View>}
+      {currentRetained && currentResult && <ManualBasketComparison key={`${currentRetained.reviewRevision}:${currentResult.reviewRevision}`}
+        first={currentRetained} second={currentResult}
+        sourceSignature={signature} verifyFresh={verifyFresh} onFreshnessFailure={freshnessFailed} />}
     </>}
     <Text style={[ui.note, styles.closeNote]}>{t('basket.closeNote')}</Text>
   </View>;

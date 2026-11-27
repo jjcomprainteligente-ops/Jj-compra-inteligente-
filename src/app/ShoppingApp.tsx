@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from 'react';
+import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { ActivityIndicator, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { StatusBar } from 'expo-status-bar';
@@ -41,6 +41,7 @@ import { usePriceObservations } from './usePriceObservations';
 import type { Screen, SecondaryProps } from './types';
 import { useStoreArea } from './StoreAreaProvider';
 import { manualBasketIsFresh } from './manualBasketFreshness';
+import { storageSignature } from '../storage/writeCoordinator';
 
 type Editor = { kind: 'list'; id?: string } | { kind: 'budget'; id: string } |
   { kind: 'item'; listId: string; id?: string } | { kind: 'choose' } |
@@ -112,6 +113,11 @@ function Workspace() {
   const scroll = useRef<React.ElementRef<typeof ScrollView>>(null);
   const active = store.data.lists.find(list => list.id === store.data.activeListId) ?? store.data.lists[0];
   const disabled = store.busy || store.loading || !!store.loadError;
+  // A retained review belongs to both complete source documents. Changes to a
+  // different list must also revoke it, even before the next read-only check.
+  const basketSourceSignature = useMemo(() => screen === 'prices'
+    ? storageSignature([store.data, priceStore.observations]) : '',
+  [screen, store.data, priceStore.observations]);
   const verifyBasketFresh = useCallback(async () => {
     if (store.busy || store.loading || store.loadError || priceStore.busy || priceStore.loading || priceStore.loadError) return false;
     return manualBasketIsFresh(store.data, priceStore.observations);
@@ -335,7 +341,7 @@ function Workspace() {
             onBack={() => navigate('plan-stores', true)} onOpenList={() => navigate('list')}
             onManualPrices={() => navigate('prices', true)} onStores={() => navigate('plan-stores', true)} /> :
           screen === 'home' ? <HomeScreen {...common} /> : screen === 'list' ? <ListScreen {...common} /> : screen === 'savings' ? <SavingsScreen {...secondary} /> : screen === 'prices' ?
-            <PriceWorkspace store={priceStore} basketList={journey?.listId ? planningList : active} verifyBasketFresh={verifyBasketFresh}
+            <PriceWorkspace store={priceStore} basketList={journey?.listId ? planningList : active} basketSourceSignature={basketSourceSignature} verifyBasketFresh={verifyBasketFresh}
               onBack={() => navigate(journey?.listId ? 'plan-result' : 'savings', !!journey?.listId)} onLegacy={() => navigate('comparisons')} /> : screen === 'menus' ?
             journey ? null : <MenuWorkspace budgetCents={active?.budgetCents ?? null}
               onBudget={active ? editBudget : createList}
