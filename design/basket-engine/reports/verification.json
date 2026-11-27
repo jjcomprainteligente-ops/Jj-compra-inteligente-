@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-11-27T08:35:25.135638+00:00",
+  "phase": "B081_PURE_ENGINE_PREPARED_PUBLISHED_VERIFIED_NOT_ACTIVE_IN_UI",
+  "source": {
+    "commit": "ee03a4baaf5d9d3706125969f72470ed06589cd1",
+    "tree": "244e6cce0d7d6fe3d7120fe356079c5677bcdfc2",
+    "branch": "codex/b08-1-motor-cesta-2026-11-27",
+    "repository": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-",
+    "recordedAt": "2026-11-27T08:28:07.098917+00:00"
+  },
+  "pullRequest": "https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/35",
+  "basePR34Merged": false,
+  "engine": "Manual/test-fixture only; one presentation per line, whole packs, exact consumption ratio, known/unknown fees/minima and complete line coverage",
+  "runtimeConsumerAdded": false,
+  "sourceCI": [
+    {
+      "id": 45965969192,
+      "event": "pull_request",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "ee03a4baaf5d9d3706125969f72470ed06589cd1"
+    },
+    {
+      "id": 45965905190,
+      "event": "push",
+      "status": "completed",
+      "conclusion": "success",
+      "head": "ee03a4baaf5d9d3706125969f72470ed06589cd1"
+    }
+  ],
+  "localEvidence": {
+    "path": "local-preparation.json",
+    "sha256": "f5040787cb0fe30ec410c5d811749bbb6f8cce751e89f6611d6533c5dbf57241",
+    "unitTests": 2484,
+    "unitFiles": 45,
+    "newArithmeticTests": 50,
+    "newBoundaryTests": 76,
+    "typescript": "passed"
+  },
+  "preservation": {
+    "baselineSource": "37a5979d787ef50d17c88fd3bba67c51f0c4b40d",
+    "baselineFilesMatched": 310,
+    "assetFiles": 308,
+    "HTMLmatched": true,
+    "JavaScriptMatched": true,
+    "decodedBundleSHA256": "15750dba3b3d5c207a900c72361245ac1b8c5738adf8dadf94da75d487b3d2fc",
+    "existingAppInputsMatched": 428,
+    "newUnwiredDomainModules": 3,
+    "appInputs": 431,
+    "newRuntimeRoutesOrImports": 0,
+    "nativeReexportRun": false,
+    "physicalDeviceValidated": false
+  },
+  "secretScan": {
+    "snapshotFiles": 2103,
+    "snapshotBytes": 265409987,
+    "toolVersion": "8.30.1",
+    "toolSHA256": "88f91962aa2f93ac6ab281d553b9e125f5197bbbce38f9f2437f7299c32e5509",
+    "originalExitCode": 1,
+    "rawFindings": 17,
+    "falsePositives": 17,
+    "confirmedSecrets": 0,
+    "unresolvedFindings": 0,
+    "allowlistChanged": false,
+    "redactionPercent": 100,
+    "historyScanned": false,
+    "archivesTraversed": false,
+    "ignoredFilesOrRuntimeCredentialsInspected": false,
+    "snapshotManifestSHA256": "2432e544e3001c962cde06bc60d77b36ab95131c1fbc74c3205c53a04cd9228f"
+  },
+  "npmVulnerabilities": 0,
+  "dependenciesChanged": false,
+  "deployment": {
+    "id": "dpl_Eb9TR4aV6Jki5hxiUf2cZYjrdpPb",
+    "url": "jj-compra-inteligente-49oesyhvu-cmj2hwhc6b-1051.vercel.app",
+    "state": "READY",
+    "target": "staging",
+    "sourceCommit": "ee03a4baaf5d9d3706125969f72470ed06589cd1",
+    "createdAt": 1795768305210,
+    "ready": 1795768309417,
+    "productionPromoted": false
+  },
+  "hostedHTTPS": {
+    "languages": 4,
+    "resourceURLs": 319,
+    "errors": 0,
+    "method": "Chromium mobile viewport; Node verifies HTTPS with the inherited proxy/CA, checks Brotli response headers and decoded hashes, and bridges decoded bodies with normalized transport headers. No persistent authentication state or trust-store changes. Not physical iPhone, native iOS, or Safari.",
+    "reportSHA256": "318738aa06abfe7f8231f8869bbdfec1afe30f8eafd4d28bd28a5ad310dc1664",
+    "bundle": {
+      "file": "_expo/static/js/web/index-28ef3c5f80ab134f90c0f589b5996586.js",
+      "size": 716312,
+      "sha1": "09c266a5d0bd4b76f8d63963abbff272d3ed2375",
+      "sha256": "760d2b98c2efd7878fd4568056539ce4f41eed957e9839616e263dbdb311bbe6",
+      "contentEncoding": "br",
+      "decodedSize": 5795409,
+      "decodedSha1": "43c30880f5690149bc412c83c9043c786161d80f",
+      "decodedSha256": "15750dba3b3d5c207a900c72361245ac1b8c5738adf8dadf94da75d487b3d2fc"
+    }
+  },
+  "freshLocalBrowserMatrixRun": false,
+  "reason": "No screen/runtime changes: all310webfiles including HTML/JS/308assets match B06.2; new deployment HTTPS checked in four languages",
+  "previousB062BrowserEvidenceIsHistorical": true,
+  "nativeReexportRun": false,
+  "physicalIPhoneValidated": false,
+  "provider": {
+    "protection": {
+      "enabled": true,
+      "deploymentType": "all_except_custom_domains"
+    },
+    "production": "dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3",
+    "mainCommit": "daa3f09a02f16c72a700b1a3d3d54888a67e2179",
+    "productionPromoted": false
+  },
+  "applicationInputsMatched": 431,
+  "previousAppInputsUnchanged": 428,
+  "shareExpiresUTC": "2026-11-28T07:32:27+00:00",
+  "privateShareCredentialInRepository": false,
+  "limitations": [
+    "Not connected to UI yet",
+    "No verified retailer prices, feed, backend, network or storage",
+    "No mixed-pack optimization, split-store basket, cross-store rank or conditional promotion",
+    "No independent proof of SKU equivalence, location, IGIC, stock, fees or rights",
+    "B07 permissions/data and B08 follow-up integration still pending",
+    "No new signed-native/physical/visual approval"
+  ],
+  "nextBlockStarted": false,
+  "pairAudit": "B06.1/B06.2 closed previously. First small block of new pair; next full pair audit after next delivery."
+}

@@ -1,5 +1,9 @@
 # B08.1 · Motor aislado de cesta para una tienda
 
+**B08.1 preparado, probado y publicado · 27/11/2026:** motor interno de cesta para una tienda: envases enteros, consumo/sobrante y cobertura; costes desconocidos permanecen en null. **Todavía no conectado a pantallas**, sin precios oficiales ni ranking. [PR #35](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/35), fuente `ee03a4b`, CI correcta. 2.484 unitarias (126 nuevas); JS/HTML/308 recursos y 428 inputs anteriores idénticos a B06.2. Staging protegida: cuatro idiomas/319 recursos HTTPS correctos; no se atribuyen como nuevas las matrices anteriores. [Informe](BLOQUE08_1_MOTOR_CESTA.md). Acceso por conversación hasta **28/11/2026 07:32:27 UTC**. Integración visible posterior; B07, B08 completo y aceptación física siguen pendientes.
+
+## Preparación conservada anterior a la publicación
+
 **27/11/2026 · preparado y probado localmente; publicación en curso.** Continúa la app existente desde
 `a01f2a76101ed669f5456a2dfc2d9e5f127cb403`, cierre B06.2. Rama `codex/b08-1-motor-cesta-2026-11-27`.
 Es el Bloque 08 del plan maestro, distinto del antiguo bloque B08 de QA/piloto.
@@ -102,3 +106,16 @@ GitHub, CI y staging se registrarán al cerrar la publicación; la nueva vista w
 interfaz porque el motor aún no se importa desde pantallas. La siguiente entrega podrá preparar su
 integración mediante revisión explícita. B08 completo, compra repartida, fuentes oficiales, aceptación
 visual/física y distribución nativa conservan sus dependencias; no se activan por terminar este motor.
+
+
+## Publicación comprobada · 27/11/2026
+
+Fuente `ee03a4baaf5d9d3706125969f72470ed06589cd1`, árbol `244e6cce0d7d6fe3d7120fe356079c5677bcdfc2`. [PR #35](https://github.com/jjcomprainteligente-ops/Jj-compra-inteligente-/pull/35) sobre #34, sin fusionar. CI de fuente: push 45965905190 y PR 45965969192 correctas, con sus propias comprobaciones Python, reproducción, tipos, 2.484 unitarias, auditoría y compilación web.
+
+Staging `dpl_Eb9TR4aV6Jki5hxiUf2cZYjrdpPb`, READY/protegida: **cuatro idiomas y 319 recursos/URLs correctos por HTTPS**, sin relajar TLS/CA. Los 313 archivos publicados coinciden con los del bloque anterior; solo cambia la referencia Git que incorpora el motor. No se añaden datos de ejemplo a la interfaz. El web tiene el mismo SHA-256 `15750dba3b3d5c207a900c72361245ac1b8c5738adf8dadf94da75d487b3d2fc`. No se necesitó subir blobs nuevos; se reutilizaron sus hashes inmutables, sin alterar despliegues anteriores. Acceso temporal fuera de Git hasta **28/11/2026 07:32:27 UTC**.
+
+Gitleaks oficial 8.30.1 revisó **2.103 archivos/265.409.987 bytes**, con reglas predeterminadas y redacción 100%. Conserva salida 1 por los mismos 17 falsos positivos de nombres de almacenamiento; cero secretos confirmados o sin clasificar. No se añadieron excepciones. El alcance no incluye historial, ignorados, credenciales de ejecución o interiores de ZIP, ni garantiza seguridad absoluta. Consulta npm y compatibilidad Expo correctas, sin cambios de dependencias.
+
+Los 431 inputs, incluidos los tres módulos nuevos todavía sin consumidor de pantalla, quedan comprobados por hash. Los 428 anteriores y los siete documentos conservan sus contratos. No se repitieron exportaciones nativas ni se presenta la UI anterior como nueva aceptación física/visual. La auditoría completa de pareja B06.1/B06.2 mantiene su cierre; este es el primer subbloque de la pareja siguiente, cuya auditoría completa se hará tras la próxima entrega. B08.2 no iniciado por este cierre.
+
+Main `daa3f09` y producción `dpl_8V7A8qAdyCukCV7ug5pYYUqo4mF3` se conservan, con protección `all_except_custom_domains`. B07 necesita permisos/datos; una presentación por línea no es optimización combinatoria ni ranking. La integración visible, compra repartida, pruebas físicas y salida nativa quedan pendientes. [Evidencia publicada](../../design/basket-engine/reports/verification.json).
